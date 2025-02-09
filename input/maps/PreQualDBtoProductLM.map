@@ -1,0 +1,35 @@
+map "http://smart.who.int/icvp/StructureMap/PreQualDBtoProductLM" = "PreQualDBtoProductLM"
+uses "http://smart.who.int/icvp/StructureDefinition/PreQualDBwithIds" alias PreQualDB as source
+uses "http://smart.who.int/icvp/StructureDefinition/Product" alias Product as target
+
+
+
+group PreQualDBtoProductLM(source prequal: PreQualDB, target product : Product) {
+   prequal.number as number
+        -> product.number  = number "set prod num";
+   prequal.commercialName as name
+   	-> product.name  = name "set prod name";
+
+   prequal.index as index 
+        -> product.identifier  = id('https://extranet.who.int/prequal/vaccines/prequalified-vaccines',index) "set product id";
+
+
+   prequal.numDoses as numDoses then {
+	   product.doseQuantity as dq -> dq.value = numDoses "set number of doses";
+   } "set num dose";
+
+   product.unitOfUse as uou then {
+            uou.coding as coding -> coding.code = "doses" "set doses unit";
+   } "set num doses";
+
+   prequal.manufacturerReference as manufacturerReference
+   	-> product.manufacturer  = manufacturerReference "set manufacturer reference";
+   prequal.manufacturer as manufacturer then {
+         product.manufacturer as man -> man.text = manufacturer "set mnf";
+   } "set man";
+
+   prequal.vaxTypeCode as vaxTypeCode
+        -> product.classification = vaxTypeCode "set vaccine type as product clasification";
+   prequal.presentation as presentation
+   	-> product.dosageForm = presentation "set presentation";
+}

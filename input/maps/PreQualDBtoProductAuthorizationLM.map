@@ -1,0 +1,35 @@
+map "http://smart.who.int/icvp/StructureMap/PreQualDBtoProductAuthorizationLM" = "PreQualDBtoProductAuthorizationLM"
+uses "http://smart.who.int/icvp/StructureDefinition/PreQualDBwithIds" alias PreQualDB as source
+uses "http://smart.who.int/icvp/StructureDefinition/ProductAuthorization" alias ProductAuthorization as target
+
+
+
+
+group PreQualDBtoProductAuthorizationLM(source prequal: PreQualDB, target productAuth : ProductAuthoization) {
+    productAuth.status as status
+       -> status = "active";
+    productAuth.type as type
+      -> type = "prequal" "set prequal";
+    prequal.responsibleNRAReference as respNRARef then {
+   	respNRARef as respNRARef -> productAuth.holder = respNRARef "set national regulatory authority holder";
+    } "process nra";
+    prequal.validityPeriod as validityPeriod then {
+        validityPeriod as validityPeriod -> productAuth.validityPeriod = validityPeriod "set validity period";
+    } "process validity period";
+
+
+    productAuth.jurisdiction as j then {
+       j.coding as coding -> coding.display  = "WHO" "set WHO";
+    } "process juris";
+    
+    prequal.index as index
+      -> productAuth.number = index "set number/index";
+
+    prequal.productReference as prodRef
+      -> productAuth.product = prodRef "set prod ref";
+//    prequal.index as index then {
+//         prequal.vaxTypeCode as vaxTypeCode
+//	    -> productAuth.product = reference(vaxTypeCode + "Product" + index.value )  "Set Product reference";
+//    } "set index";
+
+}
