@@ -105,7 +105,7 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '
     uniq | \
     awk  '{
 
-  CMD="echo \""$0"\" | md5sum | sed '\''s/[\\s\\-]*//g'\''"
+  CMD="echo \""$0"\" | md5sum | sed '\''s/\\s*\\-$//g'\''"
   CMD|getline MD5
   close(CMD)
   print ""
@@ -129,7 +129,7 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, 'NR>1  {
     awk '{
 
 
-  CMD="echo \""$0"\" | md5sum | sed '\''s/[\\s\\-]*//g'\''"
+  CMD="echo \""$0"\" | md5sum | sed '\''s/\\s*\\-$//g'\''"
   CMD|getline MD5
   close(CMD)
   print ""
@@ -171,12 +171,12 @@ NR > 1{
   VDATE = gensub(/^([0-9]{1,2})\/([0-9]{1,2})\/([0-9]{4})/,"\\3-\\2-\\1","g",$1)
 
   MANUFACTURER=gensub(/"/, "", "g" , $6)
-  CMD="echo \""MANUFACTURER"\" | md5sum | sed '\''s/[\\s\\-]*//g'\''"
+  CMD="echo \""MANUFACTURER"\" | md5sum | sed '\''s/\\s*\\-$//g'\''"
   CMD|getline MD5MANUFACTURER
   close(CMD)
 
   HOLDER=gensub(/"/, "", "g" , $7)
-  CMD="echo \""HOLDER"\" | md5sum | sed '\''s/[\\s\\-]*//g'\''"
+  CMD="echo \""HOLDER"\" | md5sum | sed '\''s/\\s*\\-$//g'\''"
   CMD|getline MD5HOLDER
   close(CMD)
 
@@ -194,7 +194,7 @@ NR > 1{
 
   MD5SRC=gensub(/"/, "", "g", $1) VAX COMMERCIALNAME PRESENTATION $5 MANUFACTURER HOLDER
   STRIPPED=gensub(/"/, "", "g" , MD5SRC)
-  CMD="echo \""MD5SRC"\" | md5sum | sed '\''s/[\\s\\-]*//g'\''"
+  CMD="echo \""MD5SRC"\" | md5sum | sed '\''s/\\s*\\-$//g'\''"
   CMD|getline MD5
   close(CMD)
 
@@ -261,7 +261,8 @@ NR > 1{
 
 
 
-echo "Alias: \$PreQualProductIds = http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds
+echo "
+Alias: \$PreQualProductIds = http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds
 CodeSystem: PreQualProductIds
 Title : \"WHO PreQualificaiton Vaccine Product Ids\"
 Description: \"WHO PreQualificaiton Vaccine Product Ids\"
@@ -297,6 +298,13 @@ NR > 1{
 #  7:Responsible NRA  -> HOLDER, MD5HOLDER
 
   VAX=gensub(/"/, "", "g" , $2)
+
+  CMD="echo \""VAX"\" | sed '\''s/[^[:alnum:]]//g'\''"
+  CMD|getline VAXTYPESRC
+  close(CMD)
+  VAXTYPE=substr(VAXTYPESRC,1,24)
+
+
   PRESENTATION=gensub(/"/, "", "g" , $4)
 
   # change dd/mm/yyyy 2/3/2015 to yyyy/mm/dd 2015/3/2
@@ -311,11 +319,13 @@ NR > 1{
 
   MD5SRC=gensub(/"/, "", "g", $1) VAX COMMERCIALNAME PRESENTATION $5 MANUFACTURER HOLDER
   STRIPPED=gensub(/"/, "", "g" , MD5SRC)
-  CMD="echo \""MD5SRC"\" | md5sum | sed '\''s/[\\s\\-]*//g'\''"
+  CMD="echo \""MD5SRC"\" | md5sum | sed '\''s/\\s*\\-$//g'\''"
   CMD|getline MD5
   close(CMD)
 
-  print "* #" MD5 "\"" MD5SRC"\""
+  PRODID=VAXTYPE"Product"MD5
+
+  print "* #" PRODID " \"" MD5SRC"\""
 
 
 }' data/prequalified_vaccines.csv >>  input/fsh/codesystems/prequal_database_products_identifiers.fsh

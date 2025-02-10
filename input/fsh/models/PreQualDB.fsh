@@ -27,6 +27,7 @@ Columns of the CSV are as follows
 
 Logical: 	PreQualDBwithIds
 Parent:		PreQualDB
+Title:		"WHO Vaccine PreQual DB with IDs"
 Description:    """Logical model for WHO PreQual DB as CSV file available at:
      https://extranet.who.int/prequal/vaccines/prequalified-vaccines
 Columns of the CSV are as follows
