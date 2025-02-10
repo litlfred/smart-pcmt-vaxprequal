@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="Holderd4e6bca678dea34fa256538a18200187"/>
+  <meta>
+    <profile value="https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization Holderd4e6bca678dea34fa256538a18200187</b></p><a name="Holderd4e6bca678dea34fa256538a18200187"> </a><a name="hcHolderd4e6bca678dea34fa256538a18200187"> </a><a name="Holderd4e6bca678dea34fa256538a18200187-en-US"> </a><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/organization-type govt}">Government</span></p><p><b>name</b>: Ministry of Food and Drug Safety</p></div>
+  </text>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="govt"/>
+    </coding>
+  </type>
+  <name value="Ministry of Food and Drug Safety"/>
+</Organization>

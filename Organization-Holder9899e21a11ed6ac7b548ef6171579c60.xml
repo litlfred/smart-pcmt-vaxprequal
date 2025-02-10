@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="Holder9899e21a11ed6ac7b548ef6171579c60"/>
+  <meta>
+    <profile value="https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization Holder9899e21a11ed6ac7b548ef6171579c60</b></p><a name="Holder9899e21a11ed6ac7b548ef6171579c60"> </a><a name="hcHolder9899e21a11ed6ac7b548ef6171579c60"> </a><a name="Holder9899e21a11ed6ac7b548ef6171579c60-en-US"> </a><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/organization-type govt}">Government</span></p><p><b>name</b>: National Agency of Drug and Food Control Indonesia</p></div>
+  </text>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="govt"/>
+    </coding>
+  </type>
+  <name value="National Agency of Drug and Food Control Indonesia"/>
+</Organization>

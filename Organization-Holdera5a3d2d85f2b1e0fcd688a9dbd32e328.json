@@ -1,0 +1,19 @@
+{
+  "resourceType" : "Organization",
+  "id" : "Holdera5a3d2d85f2b1e0fcd688a9dbd32e328",
+  "meta" : {
+    "profile" : ["https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: Organization Holdera5a3d2d85f2b1e0fcd688a9dbd32e328</b></p><a name=\"Holdera5a3d2d85f2b1e0fcd688a9dbd32e328\"> </a><a name=\"hcHoldera5a3d2d85f2b1e0fcd688a9dbd32e328\"> </a><a name=\"Holdera5a3d2d85f2b1e0fcd688a9dbd32e328-en-US\"> </a><p><b>active</b>: true</p><p><b>type</b>: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/organization-type govt}\">Government</span></p><p><b>name</b>: Danish Medicines Agency</p></div>"
+  },
+  "active" : true,
+  "type" : [{
+    "coding" : [{
+      "system" : "http://terminology.hl7.org/CodeSystem/organization-type",
+      "code" : "govt"
+    }]
+  }],
+  "name" : "Danish Medicines Agency"
+}

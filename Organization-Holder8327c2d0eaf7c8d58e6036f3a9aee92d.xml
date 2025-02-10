@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Organization xmlns="http://hl7.org/fhir">
+  <id value="Holder8327c2d0eaf7c8d58e6036f3a9aee92d"/>
+  <meta>
+    <profile value="https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: Organization Holder8327c2d0eaf7c8d58e6036f3a9aee92d</b></p><a name="Holder8327c2d0eaf7c8d58e6036f3a9aee92d"> </a><a name="hcHolder8327c2d0eaf7c8d58e6036f3a9aee92d"> </a><a name="Holder8327c2d0eaf7c8d58e6036f3a9aee92d-en-US"> </a><p><b>active</b>: true</p><p><b>type</b>: <span title="Codes:{http://terminology.hl7.org/CodeSystem/organization-type govt}">Government</span></p><p><b>name</b>: Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation</p></div>
+  </text>
+  <active value="true"/>
+  <type>
+    <coding>
+      <system value="http://terminology.hl7.org/CodeSystem/organization-type"/>
+      <code value="govt"/>
+    </coding>
+  </type>
+  <name value="Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation"/>
+</Organization>
