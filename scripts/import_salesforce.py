@@ -1,11 +1,11 @@
 #!/usr/bin/env python3
-"""Import WHO Vaccine PreQual data from Salesforce backend API.
+"""Import WHO Vaccine PreQual data from the backend API.
 
-Downloads paginated results from the Salesforce API and generates:
-  - FSH logical model instances (PreQualDBSalesforceWithRefs)
+Downloads paginated results from the PreQual API and generates:
+  - FSH logical model instances (PreQualDBAPIWithRefs)
   - FHIR Product and ProductAuthorization instances
   - CodeSystem and ValueSet FSH files
-  - ConceptMap from old CSV MD5-based IDs to authoritative Salesforce IDs
+  - ConceptMap from old CSV MD5-based IDs to authoritative vaccine product IDs
 
 Environment variables:
   PREQUAL_API_ENDPOINT  - API endpoint URL
@@ -403,7 +403,7 @@ def generate_products_and_authorizations(products, output_dir):
             prod_id = f"{vax_type}Product{safe_sf_id}"
 
             f.write(f"\n// Source Record Row //: {i}\n")
-            f.write(f'//  Salesforce ID: ({sf_id})\n')
+            f.write(f'//  Vaccine Product ID: ({sf_id})\n')
             f.write(f'//  Product Name: ({sf_name})\n')
             f.write(f'//  Date of Prequalification: ({date})\n')
             f.write(f'//  Vaccine Type: ({vax})\n')
@@ -416,7 +416,7 @@ def generate_products_and_authorizations(products, output_dir):
 
             # LM Instance
             f.write(f"Instance: PreQualDB{safe_sf_id}\n")
-            f.write("InstanceOf: PreQualDBSalesforceWithRefs\n")
+            f.write("InstanceOf: PreQualDBAPIWithRefs\n")
             if date:
                 f.write(f"* dateOfPrequal = {date}\n")
             if vax_type:
@@ -561,7 +561,7 @@ def compute_csv_md5(csv_row):
 
 
 def generate_concept_map(api_products, csv_path, output_dir):
-    """Generate ConceptMap from old CSV MD5-based IDs to Salesforce IDs.
+    """Generate ConceptMap from old CSV MD5-based IDs to authoritative vaccine product IDs.
 
     This attempts to match API products to CSV rows by comparing key fields
     (vaccine type, commercial name, manufacturer, presentation, doses).
@@ -602,16 +602,16 @@ def generate_concept_map(api_products, csv_path, output_dir):
                 if sf_id:
                     mappings.append((csv_md5, sf_id, sf_name, csv_row))
 
-    cm_path = os.path.join(output_dir, "concept_maps", "prequal_csv_to_salesforce.fsh")
+    cm_path = os.path.join(output_dir, "concept_maps", "prequal_csv_to_api.fsh")
     os.makedirs(os.path.dirname(cm_path), exist_ok=True)
 
     with open(cm_path, "w", encoding="utf-8") as f:
-        f.write('Instance: PreQualCSVtoSalesforceConceptMap\n')
+        f.write('Instance: PreQualCSVtoAPIConceptMap\n')
         f.write("InstanceOf: ConceptMap\n")
         f.write("Usage: #definition\n")
-        f.write('* name = "PreQualCSVtoSalesforceConceptMap"\n')
-        f.write('* title = "PreQual CSV to Salesforce ID Concept Map"\n')
-        f.write('* description = "Maps old CSV export MD5-based identifiers to authoritative Salesforce IDs"\n')
+        f.write('* name = "PreQualCSVtoAPIConceptMap"\n')
+        f.write('* title = "PreQual CSV to Vaccine Product ID Concept Map"\n')
+        f.write('* description = "Maps old CSV export MD5-based identifiers to authoritative vaccine product IDs"\n')
         f.write("* status = #draft\n")
         f.write("* experimental = true\n")
         f.write('* sourceUri = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"\n')
@@ -634,7 +634,7 @@ def generate_concept_map(api_products, csv_path, output_dir):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="Import WHO Vaccine PreQual data from Salesforce API"
+        description="Import WHO Vaccine PreQual data from the backend API"
     )
     parser.add_argument(
         "--output-dir",
@@ -692,7 +692,7 @@ def main():
     generate_holders(products, args.output_dir)
     generate_products_and_authorizations(products, args.output_dir)
 
-    # Generate concept map from old CSV IDs to Salesforce IDs
+    # Generate concept map from old CSV IDs to authoritative vaccine product IDs
     generate_concept_map(products, args.csv_file, args.output_dir)
 
     logger.info("All FSH files generated successfully in %s", args.output_dir)

@@ -191,7 +191,7 @@ class TestGenerateFSH(unittest.TestCase):
         self.assertTrue(os.path.exists(vs_path))
 
         content = open(examples_path).read()
-        self.assertIn("InstanceOf: PreQualDBSalesforceWithRefs", content)
+        self.assertIn("InstanceOf: PreQualDBAPIWithRefs", content)
         self.assertIn("InstanceOf: $Product", content)
         self.assertIn("InstanceOf: $ProductAuthorization", content)
         self.assertIn("a3K3X000005atRtUAI", content)
@@ -235,12 +235,12 @@ class TestConceptMap(unittest.TestCase):
         generate_concept_map(products, csv_path, tmpdir)
 
         cm_path = os.path.join(
-            tmpdir, "concept_maps", "prequal_csv_to_salesforce.fsh"
+            tmpdir, "concept_maps", "prequal_csv_to_api.fsh"
         )
         self.assertTrue(os.path.exists(cm_path))
         content = open(cm_path).read()
         self.assertIn("ConceptMap", content)
-        self.assertIn("PreQualCSVtoSalesforceConceptMap", content)
+        self.assertIn("PreQualCSVtoAPIConceptMap", content)
 
 
 if __name__ == "__main__":

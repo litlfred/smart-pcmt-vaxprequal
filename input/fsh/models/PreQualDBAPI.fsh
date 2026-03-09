@@ -1,15 +1,15 @@
 Alias: $Product = http://smart.who.int/pcmt/StructureDefinition/Product
 Alias: $ProductAuthorization = http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization
 
-Logical: 	PreQualDBSalesforce
-Title: 		"WHO Vaccine PreQual DB (Salesforce)"
-Description:	"""WHO Vaccine PreQual DB (Salesforce API).  
-Logical model for the WHO PreQual DB as provided by the Salesforce backend API at:
+Logical: 	PreQualDBAPI
+Title: 		"WHO Vaccine PreQual DB (API)"
+Description:	"""WHO Vaccine PreQual DB (API).  
+Logical model for the WHO PreQual DB as provided by the backend API at:
      https://extranet.who.int/prequal/vaccines/prequalified-vaccines
-This model provides authoritative IDs from the Salesforce database and a richer data structure compared to the CSV export.
+This model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.
 
 Key fields from the API (FinishedVaccineProducts):
-  ProductDetails.Identification.Id - Salesforce Product ID (authoritative)
+  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)
   ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)
   ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification
   ProductDetails.AssessmentProcedure - Assessment procedure used
@@ -22,7 +22,7 @@ Key fields from the API (FinishedVaccineProducts):
   ProductDetails.StorageDetails - Storage temperature and shelf life
   ProductDetails.Status - Prequalification status
 """
-* productId 1..1 Identifier "Salesforce Product ID (authoritative)"
+* productId 1..1 Identifier "Vaccine Product ID (authoritative)"
 * productName 1..1 string "Product reference name (e.g. FVP-P-447)"
 * dateOfPrequal 1..1 dateTime "Date of prequalification acceptance"
 * assessmentProcedure 0..1 string "Assessment procedure (e.g. Prequalification - Standard)"
@@ -33,12 +33,12 @@ Key fields from the API (FinishedVaccineProducts):
 * vaccineFullName 0..1 string "Vaccine full name"
 * vaccineAbbreviatedName 0..1 string "Vaccine abbreviated name"
 * vaccineCommercialName 1..1 string "Vaccine commercial name"
-* vaccineTypeId 0..1 Identifier "Salesforce vaccine type ID"
+* vaccineTypeId 0..1 Identifier "Vaccine type ID"
 * routeOfAdministration 0..1 string "Route of administration"
-* applicantId 0..1 Identifier "Salesforce applicant/manufacturer organization ID (may be absent if not yet assigned in Salesforce)"
+* applicantId 0..1 Identifier "Applicant/manufacturer organization ID (may be absent if not yet assigned)"
 * applicantName 1..1 string "Applicant/manufacturer organization name (always present from API data)"
 * applicantAddress 0..1 Address "Applicant organization address"
-* nraId 0..1 Identifier "Salesforce NRA organization ID (may be absent if not yet assigned in Salesforce)"
+* nraId 0..1 Identifier "NRA organization ID (may be absent if not yet assigned)"
 * nraName 1..1 string "Responsible NRA name (always present from API data)"
 * nraCountry 0..1 string "NRA country"
 * shelfLife 0..1 string "Shelf life (e.g. 24 months)"
@@ -49,10 +49,10 @@ Key fields from the API (FinishedVaccineProducts):
 
 
 
-Logical: 	PreQualDBSalesforceWithRefs
-Parent:		PreQualDBSalesforce
-Title:		"WHO Vaccine PreQual DB (Salesforce) with References"
-Description:    """Logical model for WHO PreQual DB from Salesforce API
+Logical: 	PreQualDBAPIWithRefs
+Parent:		PreQualDBAPI
+Title:		"WHO Vaccine PreQual DB (API) with References"
+Description:    """Logical model for WHO PreQual DB from the backend API
 with additional data fields for referencing associated FHIR data objects
 """
 * manufacturerReference 1..1 Reference(IHE.mCSD.Organization) "Manufacturer reference"
