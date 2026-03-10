@@ -14,21 +14,19 @@
 Instance: PreQualDBa3K3X000005atRtUAI
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2023-12-19
-* vaccineType.coding.code = #Malaria
-* vaccineType.coding.display = "Malaria"
-* commercialName = "CYVAC"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 2
-* manufacturer.text = "Serum Institute of India"
-* responsibleNRA.text = "Central Drugs Standard Control Organization (CDSCO)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000005atRtUAI"
 * productName = "FVP-P-447"
 * vaccineFullName = "Recombinant malaria vaccine"
 * vaccineAbbreviatedName = "Malaria"
 * vaccineCommercialName = "CYVAC"
+* applicantName = "Serum Institute of India"
+* nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * productReference = Reference(MalariaProducta3K3X000005atRtUAI)
@@ -77,21 +75,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000005atSwUAI
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2023-12-19
-* vaccineType.coding.code = #Malaria
-* vaccineType.coding.display = "Malaria"
-* commercialName = "CYVAC"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 1
-* manufacturer.text = "Serum Institute of India"
-* responsibleNRA.text = "Central Drugs Standard Control Organization (CDSCO)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000005atSwUAI"
 * productName = "FVP-P-446"
 * vaccineFullName = "Recombinant malaria vaccine"
 * vaccineAbbreviatedName = "Malaria"
 * vaccineCommercialName = "CYVAC"
+* applicantName = "Serum Institute of India"
+* nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * productReference = Reference(MalariaProducta3K3X000005atSwUAI)
@@ -140,21 +136,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MihsUAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2007-01-29
-* vaccineType.coding.code = #LARV
-* vaccineType.coding.display = "LARV"
-* commercialName = "Rotarix"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Plastictube
 * presentation.coding.display = "Plastic tube"
 * numDoses = 1
-* manufacturer.text = "GlaxoSmithKline Biologicals SA"
-* responsibleNRA.text = "Federal Agency for Medicines and Health Products  (FAMPH)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MihsUAC"
 * productName = "FVP-P-62"
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "Rotarix"
+* applicantName = "GlaxoSmithKline Biologicals SA"
+* nraName = "Federal Agency for Medicines and Health Products  (FAMPH)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p3gQAA)
 * responsibleNRAReference = Reference(Holder0013X0000498p67QAA) // Federal Agency for Medicines and Health Products  (FAMPH)
 * productReference = Reference(LARVProducta3K3X000006MihsUAC)
@@ -203,21 +197,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MihtUAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2006-02-02
-* vaccineType.coding.code = #tOPV
-* vaccineType.coding.display = "tOPV"
-* commercialName = "Polioviral vaccine"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 20
-* manufacturer.text = "Haffkine Bio Pharmaceutical Corporation Ltd"
-* responsibleNRA.text = "Central Drugs Standard Control Organization (CDSCO)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MihtUAC"
 * productName = "FVP-P-63"
 * vaccineFullName = "Poliomyelitis vaccines (trivalent live, oral, innactivated, type 1,2, 3)"
 * vaccineAbbreviatedName = "tOPV"
 * vaccineCommercialName = "Polioviral vaccine"
+* applicantName = "Haffkine Bio Pharmaceutical Corporation Ltd"
+* nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2wQAA)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * productReference = Reference(tOPVProducta3K3X000006MihtUAC)
@@ -266,21 +258,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MihuUAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2001-03-20
-* vaccineType.coding.code = #YF
-* vaccineType.coding.display = "YF"
-* commercialName = "Stabilized Yellow Fever Vaccine"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Ampoule
 * presentation.coding.display = "Ampoule"
 * numDoses = 5
-* manufacturer.text = "Institut Pasteur de Dakar (IPD)"
-* responsibleNRA.text = "Ministère de la Santé publique (DPM)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MihuUAC"
 * productName = "FVP-P-64"
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "Stabilized Yellow Fever Vaccine"
+* applicantName = "Institut Pasteur de Dakar (IPD)"
+* nraName = "Ministère de la Santé publique (DPM)"
 * manufacturerReference = Reference(Manufacturer0013X000049bJ9SQAU)
 * responsibleNRAReference = Reference(Holder0013X0000498p53QAA) // Ministère de la Santé publique (DPM)
 * productReference = Reference(YFProducta3K3X000006MihuUAC)
@@ -329,21 +319,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MihvUAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2001-03-20
-* vaccineType.coding.code = #YF
-* vaccineType.coding.display = "YF"
-* commercialName = "Stabilized Yellow Fever Vaccine"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Ampoule
 * presentation.coding.display = "Ampoule"
 * numDoses = 20
-* manufacturer.text = "Institut Pasteur de Dakar (IPD)"
-* responsibleNRA.text = "Ministère de la Santé publique (DPM)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MihvUAC"
 * productName = "FVP-P-65"
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "Stabilized Yellow Fever Vaccine"
+* applicantName = "Institut Pasteur de Dakar (IPD)"
+* nraName = "Ministère de la Santé publique (DPM)"
 * manufacturerReference = Reference(Manufacturer0013X000049bJ9SQAU)
 * responsibleNRAReference = Reference(Holder0013X0000498p53QAA) // Ministère de la Santé publique (DPM)
 * productReference = Reference(YFProducta3K3X000006MihvUAC)
@@ -392,21 +380,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MihwUAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2001-03-20
-* vaccineType.coding.code = #YF
-* vaccineType.coding.display = "YF"
-* commercialName = "Stabilized Yellow Fever Vaccine"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Ampoule
 * presentation.coding.display = "Ampoule"
 * numDoses = 10
-* manufacturer.text = "Institut Pasteur de Dakar (IPD)"
-* responsibleNRA.text = "Ministère de la Santé publique (DPM)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MihwUAC"
 * productName = "FVP-P-66"
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "Stabilized Yellow Fever Vaccine"
+* applicantName = "Institut Pasteur de Dakar (IPD)"
+* nraName = "Ministère de la Santé publique (DPM)"
 * manufacturerReference = Reference(Manufacturer0013X000049bJ9SQAU)
 * responsibleNRAReference = Reference(Holder0013X0000498p53QAA) // Ministère de la Santé publique (DPM)
 * productReference = Reference(YFProducta3K3X000006MihwUAC)
@@ -455,21 +441,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MihxUAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 1987-01-01
-* vaccineType.coding.code = #BCG
-* vaccineType.coding.display = "BCG"
-* commercialName = "BCG Freeze Dried Glutamate vaccine"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Ampoule
 * presentation.coding.display = "Ampoule"
 * numDoses = 20
-* manufacturer.text = "Japan BCG Laboratory (JBL)"
-* responsibleNRA.text = "Pharmaceutical and Medical Devices Agency (PMDA)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MihxUAC"
 * productName = "FVP-P-67"
 * vaccineFullName = "BCG"
 * vaccineAbbreviatedName = "BCG"
 * vaccineCommercialName = "BCG Freeze Dried Glutamate vaccine"
+* applicantName = "Japan BCG Laboratory (JBL)"
+* nraName = "Pharmaceutical and Medical Devices Agency (PMDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p4ZQAQ)
 * responsibleNRAReference = Reference(Holder0013X0000498p4mQAA) // Pharmaceutical and Medical Devices Agency (PMDA)
 * productReference = Reference(BCGProducta3K3X000006MihxUAC)
@@ -518,21 +502,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MihyUAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 1996-11-22
-* vaccineType.coding.code = #HepB
-* vaccineType.coding.display = "HepB"
-* commercialName = "Euvax B"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 1
-* manufacturer.text = "LG Chem Ltd (LGC)"
-* responsibleNRA.text = "Ministry of Food and Drug Safety (MFDS)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MihyUAC"
 * productName = "FVP-P-68"
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Euvax B"
+* applicantName = "LG Chem Ltd (LGC)"
+* nraName = "Ministry of Food and Drug Safety (MFDS)"
 * manufacturerReference = Reference(Manufacturer0013X00004993qnQAA)
 * responsibleNRAReference = Reference(Holder0013X00004993qyQAA) // Ministry of Food and Drug Safety (MFDS)
 * productReference = Reference(HepBProducta3K3X000006MihyUAC)
@@ -580,16 +562,16 @@ Usage: #example
 
 Instance: PreQualDBa3K3X000006MihzUAC
 InstanceOf: PreQualProduct
-* commercialName = ""
+* status = "Withdrawn: Was Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #
 * presentation.coding.display = ""
-* manufacturer.text = ""
-* responsibleNRA.text = ""
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MihzUAC"
 * productName = "FVP-P-27"
 * vaccineCommercialName = ""
+* applicantName = ""
+* nraName = ""
 * manufacturerReference = Reference(Manufacturerd41d8cd98f00b204e9800998ecf8427e)
 * responsibleNRAReference = Reference(Holderd41d8cd98f00b204e9800998ecf8427e) // 
 * productReference = Reference(Producta3K3X000006MihzUAC)
@@ -634,21 +616,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006Mii0UAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2001-03-09
-* vaccineType.coding.code = #MMR
-* vaccineType.coding.display = "MMR"
-* commercialName = "Priorix"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 1
-* manufacturer.text = "GlaxoSmithKline Biologicals SA"
-* responsibleNRA.text = "Federal Agency for Medicines and Health Products  (FAMPH)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006Mii0UAC"
 * productName = "FVP-P-61"
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Priorix"
+* applicantName = "GlaxoSmithKline Biologicals SA"
+* nraName = "Federal Agency for Medicines and Health Products  (FAMPH)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p3gQAA)
 * responsibleNRAReference = Reference(Holder0013X0000498p67QAA) // Federal Agency for Medicines and Health Products  (FAMPH)
 * productReference = Reference(MMRProducta3K3X000006Mii0UAC)
@@ -697,21 +677,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006Mii1UAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2006-05-09
-* vaccineType.coding.code = #TT
-* vaccineType.coding.display = "TT"
-* commercialName = "Tetatox"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 10
-* manufacturer.text = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
-* responsibleNRA.text = "Bulgarian Drug Agency (BDA)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006Mii1UAC"
 * productName = "FVP-P-75"
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "Tetatox"
+* applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
+* nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
 * productReference = Reference(TTProducta3K3X000006Mii1UAC)
@@ -760,21 +738,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006Mii2UAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2006-05-09
-* vaccineType.coding.code = #TT
-* vaccineType.coding.display = "TT"
-* commercialName = "Tetatox"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 20
-* manufacturer.text = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
-* responsibleNRA.text = "Bulgarian Drug Agency (BDA)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006Mii2UAC"
 * productName = "FVP-P-76"
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "Tetatox"
+* applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
+* nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
 * productReference = Reference(TTProducta3K3X000006Mii2UAC)
@@ -823,21 +799,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006Mii3UAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2006-05-09
-* vaccineType.coding.code = #DT
-* vaccineType.coding.display = "DT"
-* commercialName = "Diftet"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 10
-* manufacturer.text = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
-* responsibleNRA.text = "Bulgarian Drug Agency (BDA)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006Mii3UAC"
 * productName = "FVP-P-77"
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DT"
 * vaccineCommercialName = "Diftet"
+* applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
+* nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
 * productReference = Reference(DTProducta3K3X000006Mii3UAC)
@@ -885,16 +859,16 @@ Usage: #example
 
 Instance: PreQualDBa3K3X000006Mii4UAC
 InstanceOf: PreQualProduct
-* commercialName = ""
+* status = "Withdrawn: Was Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #
 * presentation.coding.display = ""
-* manufacturer.text = ""
-* responsibleNRA.text = ""
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006Mii4UAC"
 * productName = "FVP-P-292"
 * vaccineCommercialName = ""
+* applicantName = ""
+* nraName = ""
 * manufacturerReference = Reference(Manufacturerd41d8cd98f00b204e9800998ecf8427e)
 * responsibleNRAReference = Reference(Holderd41d8cd98f00b204e9800998ecf8427e) // 
 * productReference = Reference(Producta3K3X000006Mii4UAC)
@@ -939,21 +913,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006Mii5UAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2017-12-22
-* vaccineType.coding.code = #HepA
-* vaccineType.coding.display = "HepA"
-* commercialName = "HEALIVE"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 1
-* manufacturer.text = "Sinovac Biotech Co. Ltd"
-* responsibleNRA.text = "National Medical Products Administration  (NMPA)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006Mii5UAC"
 * productName = "FVP-P-311"
 * vaccineFullName = "Hepatitis A vaccine (inactivated)"
 * vaccineAbbreviatedName = "HepA"
 * vaccineCommercialName = "HEALIVE"
+* applicantName = "Sinovac Biotech Co. Ltd"
+* nraName = "National Medical Products Administration  (NMPA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p3ZQAQ)
 * responsibleNRAReference = Reference(Holder0013X0000498p4wQAA) // National Medical Products Administration  (NMPA)
 * productReference = Reference(HepAProducta3K3X000006Mii5UAC)
@@ -1002,21 +974,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006Mii6UAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2017-12-21
-* vaccineType.coding.code = #bOPV
-* vaccineType.coding.display = "bOPV"
-* commercialName = "Poliomyelitis Vaccine (live oral attenuated human Diploid Cell) type 1 and 3"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 20
-* manufacturer.text = "Beijing Institute of Biological Products Co., Ltd."
-* responsibleNRA.text = "National Medical Products Administration  (NMPA)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006Mii6UAC"
 * productName = "FVP-P-319"
 * vaccineFullName = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineAbbreviatedName = "bOPV"
 * vaccineCommercialName = "Poliomyelitis Vaccine (live oral attenuated human Diploid Cell) type 1 and 3"
+* applicantName = "Beijing Institute of Biological Products Co., Ltd."
+* nraName = "National Medical Products Administration  (NMPA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p4LQAQ)
 * responsibleNRAReference = Reference(Holder0013X0000498p4wQAA) // National Medical Products Administration  (NMPA)
 * productReference = Reference(bOPVProducta3K3X000006Mii6UAC)
@@ -1065,21 +1035,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006Mii7UAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 1996-11-22
-* vaccineType.coding.code = #HepB
-* vaccineType.coding.display = "HepB"
-* commercialName = "Euvax B"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 10
-* manufacturer.text = "LG Chem Ltd (LGC)"
-* responsibleNRA.text = "Ministry of Food and Drug Safety (MFDS)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006Mii7UAC"
 * productName = "FVP-P-71"
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Euvax B"
+* applicantName = "LG Chem Ltd (LGC)"
+* nraName = "Ministry of Food and Drug Safety (MFDS)"
 * manufacturerReference = Reference(Manufacturer0013X00004993qnQAA)
 * responsibleNRAReference = Reference(Holder0013X00004993qyQAA) // Ministry of Food and Drug Safety (MFDS)
 * productReference = Reference(HepBProducta3K3X000006Mii7UAC)
@@ -1128,21 +1096,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006Mii8UAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2006-05-09
-* vaccineType.coding.code = #DT
-* vaccineType.coding.display = "DT"
-* commercialName = "Diftet"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 20
-* manufacturer.text = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
-* responsibleNRA.text = "Bulgarian Drug Agency (BDA)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006Mii8UAC"
 * productName = "FVP-P-78"
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DT"
 * vaccineCommercialName = "Diftet"
+* applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
+* nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
 * productReference = Reference(DTProducta3K3X000006Mii8UAC)
@@ -1191,21 +1157,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006Mii9UAC
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2006-05-09
-* vaccineType.coding.code = #dT
-* vaccineType.coding.display = "dT"
-* commercialName = "Tetadif"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 10
-* manufacturer.text = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
-* responsibleNRA.text = "Bulgarian Drug Agency (BDA)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006Mii9UAC"
 * productName = "FVP-P-79"
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineAbbreviatedName = "dT"
 * vaccineCommercialName = "Tetadif"
+* applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
+* nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
 * productReference = Reference(dTProducta3K3X000006Mii9UAC)
@@ -1254,21 +1218,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MiiAUAS
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2006-05-09
-* vaccineType.coding.code = #dT
-* vaccineType.coding.display = "dT"
-* commercialName = "Tetadif"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 20
-* manufacturer.text = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
-* responsibleNRA.text = "Bulgarian Drug Agency (BDA)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MiiAUAS"
 * productName = "FVP-P-80"
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineAbbreviatedName = "dT"
 * vaccineCommercialName = "Tetadif"
+* applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
+* nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
 * productReference = Reference(dTProducta3K3X000006MiiAUAS)
@@ -1317,21 +1279,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MiiBUAS
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2020-03-25
-* vaccineType.coding.code = #TDV
-* vaccineType.coding.display = "TDV"
-* commercialName = "Dengvaxia"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Twovialsetactiveexcipient
 * presentation.coding.display = "Two vial set (active + excipient)"
 * numDoses = 5
-* manufacturer.text = "Sanofi Pasteur SA"
-* responsibleNRA.text = "Agence nationale de sécurité du médicament et des produits de santé (ANSM)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MiiBUAS"
 * productName = "FVP-P-329"
 * vaccineFullName = "Dengue tetravalent vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "TDV"
 * vaccineCommercialName = "Dengvaxia"
+* applicantName = "Sanofi Pasteur SA"
+* nraName = "Agence nationale de sécurité du médicament et des produits de santé (ANSM)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p3PQAQ)
 * responsibleNRAReference = Reference(Holder0013X0000498p4bQAA) // Agence nationale de sécurité du médicament et des produits de santé (ANSM)
 * productReference = Reference(TDVProducta3K3X000006MiiBUAS)
@@ -1380,21 +1340,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MiiCUAS
 InstanceOf: PreQualProduct
 * dateOfPrequal = 1991-02-01
-* vaccineType.coding.code = #BCG
-* vaccineType.coding.display = "BCG"
-* commercialName = "BCG Vaccine"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Ampoule
 * presentation.coding.display = "Ampoule"
 * numDoses = 10
-* manufacturer.text = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
-* responsibleNRA.text = "Bulgarian Drug Agency (BDA)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MiiCUAS"
 * productName = "FVP-P-73"
 * vaccineFullName = "BCG"
 * vaccineAbbreviatedName = "BCG"
 * vaccineCommercialName = "BCG Vaccine"
+* applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
+* nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
 * productReference = Reference(BCGProducta3K3X000006MiiCUAS)
@@ -1443,21 +1401,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MiiDUAS
 InstanceOf: PreQualProduct
 * dateOfPrequal = 1991-02-01
-* vaccineType.coding.code = #BCG
-* vaccineType.coding.display = "BCG"
-* commercialName = "BCG Vaccine"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Ampoule
 * presentation.coding.display = "Ampoule"
 * numDoses = 20
-* manufacturer.text = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
-* responsibleNRA.text = "Bulgarian Drug Agency (BDA)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MiiDUAS"
 * productName = "FVP-P-74"
 * vaccineFullName = "BCG"
 * vaccineAbbreviatedName = "BCG"
 * vaccineCommercialName = "BCG Vaccine"
+* applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
+* nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
 * productReference = Reference(BCGProducta3K3X000006MiiDUAS)
@@ -1506,21 +1462,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MiiEUAS
 InstanceOf: PreQualProduct
 * dateOfPrequal = 1993-02-15
-* vaccineType.coding.code = #MR
-* vaccineType.coding.display = "MR"
-* commercialName = "Measles and Rubella Vaccine Live Attenuated"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 1
-* manufacturer.text = "Serum Institute of India"
-* responsibleNRA.text = "Central Drugs Standard Control Organization (CDSCO)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MiiEUAS"
 * productName = "FVP-P-137"
 * vaccineFullName = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MR"
 * vaccineCommercialName = "Measles and Rubella Vaccine Live Attenuated"
+* applicantName = "Serum Institute of India"
+* nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * productReference = Reference(MRProducta3K3X000006MiiEUAS)
@@ -1569,21 +1523,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MiiFUAS
 InstanceOf: PreQualProduct
 * dateOfPrequal = 1995-04-04
-* vaccineType.coding.code = #TT
-* vaccineType.coding.display = "TT"
-* commercialName = "Tetanus  Toxoid Vaccine Adsorbed"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 20
-* manufacturer.text = "Serum Institute of India"
-* responsibleNRA.text = "Central Drugs Standard Control Organization (CDSCO)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MiiFUAS"
 * productName = "FVP-P-136"
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "Tetanus  Toxoid Vaccine Adsorbed"
+* applicantName = "Serum Institute of India"
+* nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * productReference = Reference(TTProducta3K3X000006MiiFUAS)
@@ -1632,21 +1584,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MiiGUAS
 InstanceOf: PreQualProduct
 * dateOfPrequal = 1993-02-15
-* vaccineType.coding.code = #MR
-* vaccineType.coding.display = "MR"
-* commercialName = "Measles and Rubella Vaccine Live Attenuated"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 2
-* manufacturer.text = "Serum Institute of India"
-* responsibleNRA.text = "Central Drugs Standard Control Organization (CDSCO)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MiiGUAS"
 * productName = "FVP-P-138"
 * vaccineFullName = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MR"
 * vaccineCommercialName = "Measles and Rubella Vaccine Live Attenuated"
+* applicantName = "Serum Institute of India"
+* nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * productReference = Reference(MRProducta3K3X000006MiiGUAS)
@@ -1695,21 +1645,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MiiHUAS
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2003-08-08
-* vaccineType.coding.code = #MMR
-* vaccineType.coding.display = "MMR"
-* commercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 1
-* manufacturer.text = "Serum Institute of India"
-* responsibleNRA.text = "Central Drugs Standard Control Organization (CDSCO)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MiiHUAS"
 * productName = "FVP-P-141"
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* applicantName = "Serum Institute of India"
+* nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * productReference = Reference(MMRProducta3K3X000006MiiHUAS)
@@ -1758,21 +1706,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MiiIUAS
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2003-08-08
-* vaccineType.coding.code = #MMR
-* vaccineType.coding.display = "MMR"
-* commercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 2
-* manufacturer.text = "Serum Institute of India"
-* responsibleNRA.text = "Central Drugs Standard Control Organization (CDSCO)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MiiIUAS"
 * productName = "FVP-P-142"
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* applicantName = "Serum Institute of India"
+* nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * productReference = Reference(MMRProducta3K3X000006MiiIUAS)
@@ -1821,21 +1767,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MiiJUAS
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2003-08-08
-* vaccineType.coding.code = #MMR
-* vaccineType.coding.display = "MMR"
-* commercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 10
-* manufacturer.text = "Serum Institute of India"
-* responsibleNRA.text = "Central Drugs Standard Control Organization (CDSCO)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MiiJUAS"
 * productName = "FVP-P-144"
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* applicantName = "Serum Institute of India"
+* nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * productReference = Reference(MMRProducta3K3X000006MiiJUAS)
@@ -1884,21 +1828,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MiiKUAS
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2003-08-08
-* vaccineType.coding.code = #MMR
-* vaccineType.coding.display = "MMR"
-* commercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 5
-* manufacturer.text = "Serum Institute of India"
-* responsibleNRA.text = "Central Drugs Standard Control Organization (CDSCO)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MiiKUAS"
 * productName = "FVP-P-143"
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* applicantName = "Serum Institute of India"
+* nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * productReference = Reference(MMRProducta3K3X000006MiiKUAS)
@@ -1947,21 +1889,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MiiLUAS
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2013-10-09
-* vaccineType.coding.code = #JE
-* vaccineType.coding.display = "JE"
-* commercialName = "Japanese Encephalitis Vaccine Live (SA14-14-2)"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Twovialsetactiveexcipient
 * presentation.coding.display = "Two vial set (active + excipient)"
 * numDoses = 5
-* manufacturer.text = "Chengdu Institute of Biological Products Co. Ltd"
-* responsibleNRA.text = "National Medical Products Administration  (NMPA)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MiiLUAS"
 * productName = "FVP-P-272"
 * vaccineFullName = "Japanese encephalitis vaccine (live, attenuated) for human use"
 * vaccineAbbreviatedName = "JE"
 * vaccineCommercialName = "Japanese Encephalitis Vaccine Live (SA14-14-2)"
+* applicantName = "Chengdu Institute of Biological Products Co. Ltd"
+* nraName = "National Medical Products Administration  (NMPA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2qQAA)
 * responsibleNRAReference = Reference(Holder0013X0000498p4wQAA) // National Medical Products Administration  (NMPA)
 * productReference = Reference(JEProducta3K3X000006MiiLUAS)
@@ -2010,21 +1950,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MiiMUAS
 InstanceOf: PreQualProduct
 * dateOfPrequal = 1993-02-15
-* vaccineType.coding.code = #M
-* vaccineType.coding.display = "M"
-* commercialName = "Measles Vaccine Live Attenuated"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 1
-* manufacturer.text = "Serum Institute of India"
-* responsibleNRA.text = "Central Drugs Standard Control Organization (CDSCO)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MiiMUAS"
 * productName = "FVP-P-145"
 * vaccineFullName = "Measles vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "M"
 * vaccineCommercialName = "Measles Vaccine Live Attenuated"
+* applicantName = "Serum Institute of India"
+* nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * productReference = Reference(MProducta3K3X000006MiiMUAS)
@@ -2073,21 +2011,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MiiNUAS
 InstanceOf: PreQualProduct
 * dateOfPrequal = 1995-04-04
-* vaccineType.coding.code = #DTwP
-* vaccineType.coding.display = "DTwP"
-* commercialName = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Ampoule
 * presentation.coding.display = "Ampoule"
 * numDoses = 1
-* manufacturer.text = "Serum Institute of India"
-* responsibleNRA.text = "Central Drugs Standard Control Organization (CDSCO)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MiiNUAS"
 * productName = "FVP-P-124"
 * vaccineFullName = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP"
 * vaccineCommercialName = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
+* applicantName = "Serum Institute of India"
+* nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * productReference = Reference(DTwPProducta3K3X000006MiiNUAS)
@@ -2136,21 +2072,19 @@ Usage: #example
 Instance: PreQualDBa3K3X000006MiiOUAS
 InstanceOf: PreQualProduct
 * dateOfPrequal = 1995-04-04
-* vaccineType.coding.code = #DTwP
-* vaccineType.coding.display = "DTwP"
-* commercialName = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 10
-* manufacturer.text = "Serum Institute of India"
-* responsibleNRA.text = "Central Drugs Standard Control Organization (CDSCO)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000006MiiOUAS"
 * productName = "FVP-P-125"
 * vaccineFullName = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP"
 * vaccineCommercialName = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
+* applicantName = "Serum Institute of India"
+* nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * productReference = Reference(DTwPProducta3K3X000006MiiOUAS)

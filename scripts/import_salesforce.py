@@ -555,21 +555,17 @@ def generate_products_and_authorizations(products, output_dir):
             f.write(f"//\n\n")
 
             # LM Instance
+            status = p.get("status", "") or "Prequalified"
             f.write(f"Instance: PreQualDB{safe_sf_id}\n")
             f.write("InstanceOf: PreQualProduct\n")
             if date:
                 f.write(f"* dateOfPrequal = {date}\n")
-            if vax_type:
-                f.write(f"* vaccineType.coding.code = #{vax_type}\n")
-                f.write(f'* vaccineType.coding.display = "{fsh_escape(vax)}"\n')
-            f.write(f'* commercialName = "{fsh_escape(commercial_name)}"\n')
+            f.write(f'* status = "{fsh_escape(status)}"\n')
             f.write(f'* presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"\n')
             f.write(f"* presentation.coding.code = #{pres_code}\n")
             f.write(f'* presentation.coding.display = "{fsh_escape(presentation)}"\n')
             if num_doses:
                 f.write(f"* numDoses = {num_doses}\n")
-            f.write(f'* manufacturer.text = "{fsh_escape(manufacturer)}"\n')
-            f.write(f'* responsibleNRA.text = "{fsh_escape(holder)}"\n')
             f.write(f'* productId.system = "https://extranet.who.int/prequal/api"\n')
             f.write(f'* productId.value = "{fsh_escape(sf_id)}"\n')
             f.write(f'* productName = "{fsh_escape(sf_name)}"\n')
@@ -578,6 +574,8 @@ def generate_products_and_authorizations(products, output_dir):
             if p.get("vaccine_abbreviated_name"):
                 f.write(f'* vaccineAbbreviatedName = "{fsh_escape(p["vaccine_abbreviated_name"])}"\n')
             f.write(f'* vaccineCommercialName = "{fsh_escape(commercial_name)}"\n')
+            f.write(f'* applicantName = "{fsh_escape(manufacturer)}"\n')
+            f.write(f'* nraName = "{fsh_escape(holder)}"\n')
             f.write(f"* manufacturerReference = Reference(Manufacturer{mfr_ref_id})\n")
             f.write(f"* responsibleNRAReference = Reference(Holder{holder_ref_id}) // {fsh_escape(holder)}\n")
             f.write(f"* productReference = Reference({prod_id})\n")

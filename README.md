@@ -57,21 +57,19 @@ Here is a sample for the CYVAC malaria vaccine showing the product and its refer
 Instance: PreQualDBa3K3X000005atRtUAI
 InstanceOf: PreQualProduct
 * dateOfPrequal = 2023-12-19
-* vaccineType.coding.code = #Malaria
-* vaccineType.coding.display = "Malaria"
-* commercialName = "CYVAC"
+* status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
 * numDoses = 2
-* manufacturer.text = "Serum Institute of India"
-* responsibleNRA.text = "Central Drugs Standard Control Organization (CDSCO)"
 * productId.system = "https://extranet.who.int/prequal/api"
 * productId.value = "a3K3X000005atRtUAI"
 * productName = "FVP-P-447"
 * vaccineFullName = "Recombinant malaria vaccine"
 * vaccineAbbreviatedName = "Malaria"
 * vaccineCommercialName = "CYVAC"
+* applicantName = "Serum Institute of India"
+* nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA)
 * productReference = Reference(MalariaProducta3K3X000005atRtUAI)

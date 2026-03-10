@@ -207,6 +207,17 @@ class TestGenerateFSH(unittest.TestCase):
         self.assertIn("a3K3X000005atRtUAI", content)
         self.assertIn("CYVAC", content)
 
+        # Verify required PreQualDBAPI fields are present
+        self.assertIn('status = "Prequalified"', content)
+        self.assertIn('applicantName = "Serum Institute of India"', content)
+        self.assertIn('nraName = "Central Drugs Standard Control Organization (CDSCO)"', content)
+
+        # Verify old CSV-model fields are NOT present
+        self.assertNotIn("vaccineType.coding", content)
+        self.assertNotIn("commercialName", content)
+        self.assertNotIn("manufacturer.text", content)
+        self.assertNotIn("responsibleNRA.text", content)
+
         # Verify LM linkages
         self.assertIn("manufacturerLM = Reference(PreQualManufacturer", content)
         self.assertIn("nraLM = Reference(PreQualNRA", content)
