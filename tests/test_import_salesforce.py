@@ -202,8 +202,6 @@ class TestGenerateFSH(unittest.TestCase):
 
         content = open(examples_path).read()
         self.assertIn("InstanceOf: PreQualProduct", content)
-        self.assertIn("InstanceOf: $Product", content)
-        self.assertIn("InstanceOf: $ProductAuthorization", content)
         self.assertIn("a3K3X000005atRtUAI", content)
         self.assertIn("CYVAC", content)
 
@@ -217,6 +215,11 @@ class TestGenerateFSH(unittest.TestCase):
         self.assertNotIn("commercialName", content)
         self.assertNotIn("manufacturer.text", content)
         self.assertNotIn("responsibleNRA.text", content)
+
+        # Verify $Product and $ProductAuthorization instances are NOT generated
+        # (these depend on external pcmt dependency which may not be available)
+        self.assertNotIn("InstanceOf: $Product", content)
+        self.assertNotIn("InstanceOf: $ProductAuthorization", content)
 
         # Verify LM linkages
         self.assertIn("manufacturerLM = Reference(PreQualManufacturer", content)
@@ -315,6 +318,43 @@ class TestConceptMap(unittest.TestCase):
         content = open(cm_path).read()
         self.assertIn("ConceptMap", content)
         self.assertIn("PreQualCSVtoAPIConceptMap", content)
+
+        # Verify FHIR R5 syntax is used (not R4)
+        self.assertIn("sourceScopeUri", content)
+        self.assertIn("targetScopeUri", content)
+        self.assertIn("relationship = #equivalent", content)
+        self.assertNotIn("sourceUri", content)
+        self.assertNotIn("targetUri", content)
+        self.assertNotIn("equivalence", content)
+
+
+class TestSkipWithdrawnProducts(unittest.TestCase):
+    def test_skip_products_with_missing_essential_data(self):
+        """Products with empty commercial name, applicant, and NRA should be skipped."""
+        tmpdir = tempfile.mkdtemp()
+        # Create a withdrawn product with all essential fields empty
+        withdrawn = extract_product_fields({
+            "ProductDetails": {
+                "Identification": {"Id": "a3K3X000006MihzUAC", "Name": "FVP-P-27"},
+                "Status": "Withdrawn: Was Prequalified",
+                "VaccineDetails": {"VaccineName": {}},
+                "ApplicantOrganization": {"Identification": {}},
+                "NRADetails": {"Identification": {}},
+            }
+        })
+        normal = extract_product_fields(SAMPLE_PRODUCT)
+        products = [withdrawn, normal]
+
+        generate_products_and_authorizations(products, tmpdir)
+
+        examples_path = os.path.join(
+            tmpdir, "examples", "prequal_database_products.fsh"
+        )
+        content = open(examples_path).read()
+        # The withdrawn product should be skipped
+        self.assertNotIn("a3K3X000006MihzUAC", content)
+        # The normal product should still be present
+        self.assertIn("a3K3X000005atRtUAI", content)
 
 
 if __name__ == "__main__":

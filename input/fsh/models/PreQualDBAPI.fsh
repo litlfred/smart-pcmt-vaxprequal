@@ -1,5 +1,3 @@
-Alias: $Product = http://smart.who.int/pcmt/StructureDefinition/Product
-Alias: $ProductAuthorization = http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization
 
 Logical: 	PreQualDBAPI
 Title: 		"WHO Vaccine PreQual DB (API)"
@@ -57,7 +55,7 @@ with additional data fields for referencing associated FHIR and logical model da
 """
 * manufacturerReference 1..1 Reference(IHE.mCSD.Organization) "Manufacturer FHIR Organization reference"
 * responsibleNRAReference 1..1 Reference(IHE.mCSD.Organization) "Responsible NRA FHIR Organization reference"
-* productReference 1..1 Reference($Product) "Product FHIR reference"
+* productReference 0..1 Reference "Product FHIR reference (when available from pcmt dependency)"
 * manufacturerLM 0..1 Reference "Manufacturer logical model instance reference"
 * nraLM 0..1 Reference "NRA logical model instance reference"
 * vaccineLM 0..1 Reference "Vaccine logical model instance reference"

@@ -519,6 +519,7 @@ def generate_products_and_authorizations(products, output_dir):
     os.makedirs(os.path.dirname(vs_path), exist_ok=True)
 
     cs_entries = []
+    generated_count = 0
 
     with open(examples_path, "w", encoding="utf-8") as f:
         for i, p in enumerate(products, 1):
@@ -536,11 +537,14 @@ def generate_products_and_authorizations(products, output_dir):
             holder = p["nra_name"]
             holder_sf_id = p.get("nra_id", "")
 
+            # Skip products with missing essential data (e.g. withdrawn products)
+            if not commercial_name and not manufacturer and not holder:
+                logger.info("Skipping product %s (%s): missing essential data", sf_id, sf_name)
+                continue
+
             safe_sf_id = sanitize_code(sf_id) if sf_id else md5hash(str(i))
             mfr_ref_id = sanitize_code(manufacturer_sf_id) if manufacturer_sf_id else md5hash(manufacturer)
             holder_ref_id = sanitize_code(holder_sf_id) if holder_sf_id else md5hash(holder)
-
-            prod_id = f"{vax_type}Product{safe_sf_id}"
 
             f.write(f"\n// Source Record Row //: {i}\n")
             f.write(f'//  Vaccine Product ID: ({sf_id})\n')
@@ -561,9 +565,10 @@ def generate_products_and_authorizations(products, output_dir):
             if date:
                 f.write(f"* dateOfPrequal = {date}\n")
             f.write(f'* status = "{fsh_escape(status)}"\n')
-            f.write(f'* presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"\n')
-            f.write(f"* presentation.coding.code = #{pres_code}\n")
-            f.write(f'* presentation.coding.display = "{fsh_escape(presentation)}"\n')
+            if pres_code:
+                f.write(f'* presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"\n')
+                f.write(f"* presentation.coding.code = #{pres_code}\n")
+                f.write(f'* presentation.coding.display = "{fsh_escape(presentation)}"\n')
             if num_doses:
                 f.write(f"* numDoses = {num_doses}\n")
             f.write(f'* productId.system = "https://extranet.who.int/prequal/api"\n')
@@ -578,7 +583,6 @@ def generate_products_and_authorizations(products, output_dir):
             f.write(f'* nraName = "{fsh_escape(holder)}"\n')
             f.write(f"* manufacturerReference = Reference(Manufacturer{mfr_ref_id})\n")
             f.write(f"* responsibleNRAReference = Reference(Holder{holder_ref_id}) // {fsh_escape(holder)}\n")
-            f.write(f"* productReference = Reference({prod_id})\n")
 
             # LM instance references
             f.write(f"* manufacturerLM = Reference(PreQualManufacturer{mfr_ref_id})\n")
@@ -589,40 +593,8 @@ def generate_products_and_authorizations(products, output_dir):
                 f.write(f"* vaccineLM = Reference(PreQualVaccine{vax_lm_ref_id})\n")
             f.write("\n")
 
-            # Product Instance
-            f.write(f"Instance: {prod_id}\n")
-            f.write("InstanceOf: $Product\n")
-            f.write("Usage: #example\n")
-            f.write("* status = #active\n")
-            f.write("* name\n")
-            f.write("  * nameType = #official\n")
-            f.write(f'  * value = "{fsh_escape(commercial_name)}"\n')
-            f.write(f"* manufacturer = Reference(Manufacturer{mfr_ref_id}) // {fsh_escape(manufacturer)}\n")
-            if num_doses:
-                f.write(f"* doseQuantity =  {num_doses} 'doses'\n")
-            if vax_type:
-                f.write(f"* classification = #{vax_type}\n")
-            f.write("* unitOfUse.coding.code = #doses\n")
-            f.write(f"* dosageForm.coding.code = #{pres_code}\n")
-            if sf_id:
-                f.write(f'* identifier.system = "https://extranet.who.int/prequal/api"\n')
-                f.write(f'* identifier.value = "{fsh_escape(sf_id)}"\n')
-            f.write("\n")
-
-            # ProductAuthorization Instance
-            f.write(f"Instance: PreQual{safe_sf_id}\n")
-            f.write("InstanceOf: $ProductAuthorization\n")
-            f.write("Usage: #example\n")
-            f.write("* status = #active\n")
-            f.write("* type = #prequal\n")
-            f.write('* jurisdiction.coding.display = "WHO"\n')
-            f.write(f"* holder = Reference(Holder{holder_ref_id}) // {fsh_escape(holder)}\n")
-            if date:
-                f.write(f"* validityPeriod.start = {date}\n")
-            f.write(f"* product  = Reference({prod_id})\n")
-            f.write("\n")
-
-            cs_entries.append((prod_id, sf_id, sf_name))
+            generated_count += 1
+            cs_entries.append((safe_sf_id, sf_id, sf_name))
 
     # CodeSystem for product identifiers
     with open(cs_path, "w", encoding="utf-8") as f:
@@ -635,8 +607,8 @@ def generate_products_and_authorizations(products, output_dir):
         f.write("* ^caseSensitive = false\n")
         f.write('* ^name = "PreQualProductIds"\n')
         f.write("* ^status = #active\n\n\n")
-        for prod_id, sf_id, sf_name in cs_entries:
-            f.write(f'* #{prod_id} "{fsh_escape(sf_name)} ({fsh_escape(sf_id)})"\n')
+        for entry_id, sf_id, sf_name in cs_entries:
+            f.write(f'* #{entry_id} "{fsh_escape(sf_name)} ({fsh_escape(sf_id)})"\n')
 
     # ValueSet for product identifiers
     with open(vs_path, "w", encoding="utf-8") as f:
@@ -647,7 +619,7 @@ def generate_products_and_authorizations(products, output_dir):
         f.write('Description: "WHO PreQualificaiton Vaccine Product Ids"\n')
         f.write("* include codes from system $PreQualProductIds\n")
 
-    logger.info("Generated %d product instances", len(products))
+    logger.info("Generated %d product instances", generated_count)
 
 
 def load_csv_products(csv_path):
@@ -760,8 +732,8 @@ def generate_concept_map(api_products, csv_path, output_dir):
         f.write('* description = "Maps old CSV export MD5-based identifiers to authoritative vaccine product IDs"\n')
         f.write("* status = #draft\n")
         f.write("* experimental = true\n")
-        f.write('* sourceUri = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"\n')
-        f.write('* targetUri = "https://extranet.who.int/prequal/api"\n')
+        f.write('* sourceScopeUri = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"\n')
+        f.write('* targetScopeUri = "https://extranet.who.int/prequal/api"\n')
         f.write("* group\n")
         f.write('  * source = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"\n')
         f.write('  * target = "https://extranet.who.int/prequal/api"\n')
@@ -773,7 +745,7 @@ def generate_concept_map(api_products, csv_path, output_dir):
             f.write(f'    * target\n')
             f.write(f'      * code = #{sanitize_code(sf_id)}\n')
             f.write(f'      * display = "{fsh_escape(sf_name)}"\n')
-            f.write(f'      * equivalence = #equivalent\n')
+            f.write(f'      * relationship = #equivalent\n')
 
     logger.info("Generated concept map with %d mappings", len(mappings))
 

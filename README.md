@@ -43,13 +43,13 @@ python3 -m unittest tests/test_import_salesforce.py -v
 
 For each product in the WHO PreQual database, the import script generates:
 1. A `PreQualProduct` logical model instance (with references to Manufacturer, NRA, and Vaccine LM instances)
-2. A `Product` resource instance
-3. A `ProductAuthorization` resource instance
 
 Additionally, for each unique referenced object, the script generates:
 - `PreQualManufacturer` LM instances (11 unique manufacturers with full address and contact info)
 - `PreQualNRA` LM instances (8 unique NRAs with country and website)
 - `PreQualVaccine` LM instances (17 unique vaccine types with full and abbreviated names)
+
+Products with missing essential data (e.g. withdrawn products) are automatically skipped.
 
 Here is a sample for the CYVAC malaria vaccine showing the product and its referenced LM instances:
 
@@ -72,7 +72,6 @@ InstanceOf: PreQualProduct
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA)
-* productReference = Reference(MalariaProducta3K3X000005atRtUAI)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpnUAE)

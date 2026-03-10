@@ -29,35 +29,9 @@ InstanceOf: PreQualProduct
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* productReference = Reference(MalariaProducta3K3X000005atRtUAI)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpnUAE)
-
-Instance: MalariaProducta3K3X000005atRtUAI
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "CYVAC"
-* manufacturer = Reference(Manufacturer0013X00003cPkzfQAC) // Serum Institute of India
-* doseQuantity =  2 'doses'
-* classification = #Malaria
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000005atRtUAI"
-
-Instance: PreQuala3K3X000005atRtUAI
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* validityPeriod.start = 2023-12-19
-* product  = Reference(MalariaProducta3K3X000005atRtUAI)
 
 
 // Source Record Row //: 2
@@ -90,35 +64,9 @@ InstanceOf: PreQualProduct
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* productReference = Reference(MalariaProducta3K3X000005atSwUAI)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpnUAE)
-
-Instance: MalariaProducta3K3X000005atSwUAI
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "CYVAC"
-* manufacturer = Reference(Manufacturer0013X00003cPkzfQAC) // Serum Institute of India
-* doseQuantity =  1 'doses'
-* classification = #Malaria
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000005atSwUAI"
-
-Instance: PreQuala3K3X000005atSwUAI
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* validityPeriod.start = 2023-12-19
-* product  = Reference(MalariaProducta3K3X000005atSwUAI)
 
 
 // Source Record Row //: 3
@@ -151,35 +99,9 @@ InstanceOf: PreQualProduct
 * nraName = "Federal Agency for Medicines and Health Products  (FAMPH)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p3gQAA)
 * responsibleNRAReference = Reference(Holder0013X0000498p67QAA) // Federal Agency for Medicines and Health Products  (FAMPH)
-* productReference = Reference(LARVProducta3K3X000006MihsUAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p3gQAA)
 * nraLM = Reference(PreQualNRA0013X0000498p67QAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpYUAU)
-
-Instance: LARVProducta3K3X000006MihsUAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Rotarix"
-* manufacturer = Reference(Manufacturer0013X0000498p3gQAA) // GlaxoSmithKline Biologicals SA
-* doseQuantity =  1 'doses'
-* classification = #LARV
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Plastictube
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MihsUAC"
-
-Instance: PreQuala3K3X000006MihsUAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p67QAA) // Federal Agency for Medicines and Health Products  (FAMPH)
-* validityPeriod.start = 2007-01-29
-* product  = Reference(LARVProducta3K3X000006MihsUAC)
 
 
 // Source Record Row //: 4
@@ -212,35 +134,9 @@ InstanceOf: PreQualProduct
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2wQAA)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* productReference = Reference(tOPVProducta3K3X000006MihtUAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2wQAA)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpjUAE)
-
-Instance: tOPVProducta3K3X000006MihtUAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Polioviral vaccine"
-* manufacturer = Reference(Manufacturer0013X0000498p2wQAA) // Haffkine Bio Pharmaceutical Corporation Ltd
-* doseQuantity =  20 'doses'
-* classification = #tOPV
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MihtUAC"
-
-Instance: PreQuala3K3X000006MihtUAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* validityPeriod.start = 2006-02-02
-* product  = Reference(tOPVProducta3K3X000006MihtUAC)
 
 
 // Source Record Row //: 5
@@ -273,35 +169,9 @@ InstanceOf: PreQualProduct
 * nraName = "Ministère de la Santé publique (DPM)"
 * manufacturerReference = Reference(Manufacturer0013X000049bJ9SQAU)
 * responsibleNRAReference = Reference(Holder0013X0000498p53QAA) // Ministère de la Santé publique (DPM)
-* productReference = Reference(YFProducta3K3X000006MihuUAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X000049bJ9SQAU)
 * nraLM = Reference(PreQualNRA0013X0000498p53QAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpuUAE)
-
-Instance: YFProducta3K3X000006MihuUAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Stabilized Yellow Fever Vaccine"
-* manufacturer = Reference(Manufacturer0013X000049bJ9SQAU) // Institut Pasteur de Dakar (IPD)
-* doseQuantity =  5 'doses'
-* classification = #YF
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Ampoule
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MihuUAC"
-
-Instance: PreQuala3K3X000006MihuUAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p53QAA) // Ministère de la Santé publique (DPM)
-* validityPeriod.start = 2001-03-20
-* product  = Reference(YFProducta3K3X000006MihuUAC)
 
 
 // Source Record Row //: 6
@@ -334,35 +204,9 @@ InstanceOf: PreQualProduct
 * nraName = "Ministère de la Santé publique (DPM)"
 * manufacturerReference = Reference(Manufacturer0013X000049bJ9SQAU)
 * responsibleNRAReference = Reference(Holder0013X0000498p53QAA) // Ministère de la Santé publique (DPM)
-* productReference = Reference(YFProducta3K3X000006MihvUAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X000049bJ9SQAU)
 * nraLM = Reference(PreQualNRA0013X0000498p53QAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpuUAE)
-
-Instance: YFProducta3K3X000006MihvUAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Stabilized Yellow Fever Vaccine"
-* manufacturer = Reference(Manufacturer0013X000049bJ9SQAU) // Institut Pasteur de Dakar (IPD)
-* doseQuantity =  20 'doses'
-* classification = #YF
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Ampoule
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MihvUAC"
-
-Instance: PreQuala3K3X000006MihvUAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p53QAA) // Ministère de la Santé publique (DPM)
-* validityPeriod.start = 2001-03-20
-* product  = Reference(YFProducta3K3X000006MihvUAC)
 
 
 // Source Record Row //: 7
@@ -395,35 +239,9 @@ InstanceOf: PreQualProduct
 * nraName = "Ministère de la Santé publique (DPM)"
 * manufacturerReference = Reference(Manufacturer0013X000049bJ9SQAU)
 * responsibleNRAReference = Reference(Holder0013X0000498p53QAA) // Ministère de la Santé publique (DPM)
-* productReference = Reference(YFProducta3K3X000006MihwUAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X000049bJ9SQAU)
 * nraLM = Reference(PreQualNRA0013X0000498p53QAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpuUAE)
-
-Instance: YFProducta3K3X000006MihwUAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Stabilized Yellow Fever Vaccine"
-* manufacturer = Reference(Manufacturer0013X000049bJ9SQAU) // Institut Pasteur de Dakar (IPD)
-* doseQuantity =  10 'doses'
-* classification = #YF
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Ampoule
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MihwUAC"
-
-Instance: PreQuala3K3X000006MihwUAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p53QAA) // Ministère de la Santé publique (DPM)
-* validityPeriod.start = 2001-03-20
-* product  = Reference(YFProducta3K3X000006MihwUAC)
 
 
 // Source Record Row //: 8
@@ -456,35 +274,9 @@ InstanceOf: PreQualProduct
 * nraName = "Pharmaceutical and Medical Devices Agency (PMDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p4ZQAQ)
 * responsibleNRAReference = Reference(Holder0013X0000498p4mQAA) // Pharmaceutical and Medical Devices Agency (PMDA)
-* productReference = Reference(BCGProducta3K3X000006MihxUAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p4ZQAQ)
 * nraLM = Reference(PreQualNRA0013X0000498p4mQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSogUAE)
-
-Instance: BCGProducta3K3X000006MihxUAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "BCG Freeze Dried Glutamate vaccine"
-* manufacturer = Reference(Manufacturer0013X0000498p4ZQAQ) // Japan BCG Laboratory (JBL)
-* doseQuantity =  20 'doses'
-* classification = #BCG
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Ampoule
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MihxUAC"
-
-Instance: PreQuala3K3X000006MihxUAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4mQAA) // Pharmaceutical and Medical Devices Agency (PMDA)
-* validityPeriod.start = 1987-01-01
-* product  = Reference(BCGProducta3K3X000006MihxUAC)
 
 
 // Source Record Row //: 9
@@ -517,88 +309,9 @@ InstanceOf: PreQualProduct
 * nraName = "Ministry of Food and Drug Safety (MFDS)"
 * manufacturerReference = Reference(Manufacturer0013X00004993qnQAA)
 * responsibleNRAReference = Reference(Holder0013X00004993qyQAA) // Ministry of Food and Drug Safety (MFDS)
-* productReference = Reference(HepBProducta3K3X000006MihyUAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X00004993qnQAA)
 * nraLM = Reference(PreQualNRA0013X00004993qyQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpJUAU)
-
-Instance: HepBProducta3K3X000006MihyUAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Euvax B"
-* manufacturer = Reference(Manufacturer0013X00004993qnQAA) // LG Chem Ltd (LGC)
-* doseQuantity =  1 'doses'
-* classification = #HepB
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MihyUAC"
-
-Instance: PreQuala3K3X000006MihyUAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X00004993qyQAA) // Ministry of Food and Drug Safety (MFDS)
-* validityPeriod.start = 1996-11-22
-* product  = Reference(HepBProducta3K3X000006MihyUAC)
-
-
-// Source Record Row //: 10
-//  Vaccine Product ID: (a3K3X000006MihzUAC)
-//  Product Name: (FVP-P-27)
-//  Date of Prequalification: ()
-//  Vaccine Type: ()
-//  Commercial Name: ()
-//  Presentation: ()
-//  No. of doses: ()
-//  Manufacturer: ()
-//  Responsible NRA: ()
-//
-
-Instance: PreQualDBa3K3X000006MihzUAC
-InstanceOf: PreQualProduct
-* status = "Withdrawn: Was Prequalified"
-* presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
-* presentation.coding.code = #
-* presentation.coding.display = ""
-* productId.system = "https://extranet.who.int/prequal/api"
-* productId.value = "a3K3X000006MihzUAC"
-* productName = "FVP-P-27"
-* vaccineCommercialName = ""
-* applicantName = ""
-* nraName = ""
-* manufacturerReference = Reference(Manufacturerd41d8cd98f00b204e9800998ecf8427e)
-* responsibleNRAReference = Reference(Holderd41d8cd98f00b204e9800998ecf8427e) // 
-* productReference = Reference(Producta3K3X000006MihzUAC)
-* manufacturerLM = Reference(PreQualManufacturerd41d8cd98f00b204e9800998ecf8427e)
-* nraLM = Reference(PreQualNRAd41d8cd98f00b204e9800998ecf8427e)
-
-Instance: Producta3K3X000006MihzUAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = ""
-* manufacturer = Reference(Manufacturerd41d8cd98f00b204e9800998ecf8427e) // 
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MihzUAC"
-
-Instance: PreQuala3K3X000006MihzUAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holderd41d8cd98f00b204e9800998ecf8427e) // 
-* product  = Reference(Producta3K3X000006MihzUAC)
 
 
 // Source Record Row //: 11
@@ -631,35 +344,9 @@ InstanceOf: PreQualProduct
 * nraName = "Federal Agency for Medicines and Health Products  (FAMPH)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p3gQAA)
 * responsibleNRAReference = Reference(Holder0013X0000498p67QAA) // Federal Agency for Medicines and Health Products  (FAMPH)
-* productReference = Reference(MMRProducta3K3X000006Mii0UAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p3gQAA)
 * nraLM = Reference(PreQualNRA0013X0000498p67QAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpaUAE)
-
-Instance: MMRProducta3K3X000006Mii0UAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Priorix"
-* manufacturer = Reference(Manufacturer0013X0000498p3gQAA) // GlaxoSmithKline Biologicals SA
-* doseQuantity =  1 'doses'
-* classification = #MMR
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006Mii0UAC"
-
-Instance: PreQuala3K3X000006Mii0UAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p67QAA) // Federal Agency for Medicines and Health Products  (FAMPH)
-* validityPeriod.start = 2001-03-09
-* product  = Reference(MMRProducta3K3X000006Mii0UAC)
 
 
 // Source Record Row //: 12
@@ -692,35 +379,9 @@ InstanceOf: PreQualProduct
 * nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* productReference = Reference(TTProducta3K3X000006Mii1UAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpqUAE)
-
-Instance: TTProducta3K3X000006Mii1UAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Tetatox"
-* manufacturer = Reference(Manufacturer0013X0000498p2jQAA) // Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.
-* doseQuantity =  10 'doses'
-* classification = #TT
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006Mii1UAC"
-
-Instance: PreQuala3K3X000006Mii1UAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* validityPeriod.start = 2006-05-09
-* product  = Reference(TTProducta3K3X000006Mii1UAC)
 
 
 // Source Record Row //: 13
@@ -753,35 +414,9 @@ InstanceOf: PreQualProduct
 * nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* productReference = Reference(TTProducta3K3X000006Mii2UAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpqUAE)
-
-Instance: TTProducta3K3X000006Mii2UAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Tetatox"
-* manufacturer = Reference(Manufacturer0013X0000498p2jQAA) // Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.
-* doseQuantity =  20 'doses'
-* classification = #TT
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006Mii2UAC"
-
-Instance: PreQuala3K3X000006Mii2UAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* validityPeriod.start = 2006-05-09
-* product  = Reference(TTProducta3K3X000006Mii2UAC)
 
 
 // Source Record Row //: 14
@@ -814,88 +449,9 @@ InstanceOf: PreQualProduct
 * nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* productReference = Reference(DTProducta3K3X000006Mii3UAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSojUAE)
-
-Instance: DTProducta3K3X000006Mii3UAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Diftet"
-* manufacturer = Reference(Manufacturer0013X0000498p2jQAA) // Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.
-* doseQuantity =  10 'doses'
-* classification = #DT
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006Mii3UAC"
-
-Instance: PreQuala3K3X000006Mii3UAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* validityPeriod.start = 2006-05-09
-* product  = Reference(DTProducta3K3X000006Mii3UAC)
-
-
-// Source Record Row //: 15
-//  Vaccine Product ID: (a3K3X000006Mii4UAC)
-//  Product Name: (FVP-P-292)
-//  Date of Prequalification: ()
-//  Vaccine Type: ()
-//  Commercial Name: ()
-//  Presentation: ()
-//  No. of doses: ()
-//  Manufacturer: ()
-//  Responsible NRA: ()
-//
-
-Instance: PreQualDBa3K3X000006Mii4UAC
-InstanceOf: PreQualProduct
-* status = "Withdrawn: Was Prequalified"
-* presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
-* presentation.coding.code = #
-* presentation.coding.display = ""
-* productId.system = "https://extranet.who.int/prequal/api"
-* productId.value = "a3K3X000006Mii4UAC"
-* productName = "FVP-P-292"
-* vaccineCommercialName = ""
-* applicantName = ""
-* nraName = ""
-* manufacturerReference = Reference(Manufacturerd41d8cd98f00b204e9800998ecf8427e)
-* responsibleNRAReference = Reference(Holderd41d8cd98f00b204e9800998ecf8427e) // 
-* productReference = Reference(Producta3K3X000006Mii4UAC)
-* manufacturerLM = Reference(PreQualManufacturerd41d8cd98f00b204e9800998ecf8427e)
-* nraLM = Reference(PreQualNRAd41d8cd98f00b204e9800998ecf8427e)
-
-Instance: Producta3K3X000006Mii4UAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = ""
-* manufacturer = Reference(Manufacturerd41d8cd98f00b204e9800998ecf8427e) // 
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006Mii4UAC"
-
-Instance: PreQuala3K3X000006Mii4UAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holderd41d8cd98f00b204e9800998ecf8427e) // 
-* product  = Reference(Producta3K3X000006Mii4UAC)
 
 
 // Source Record Row //: 16
@@ -928,35 +484,9 @@ InstanceOf: PreQualProduct
 * nraName = "National Medical Products Administration  (NMPA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p3ZQAQ)
 * responsibleNRAReference = Reference(Holder0013X0000498p4wQAA) // National Medical Products Administration  (NMPA)
-* productReference = Reference(HepAProducta3K3X000006Mii5UAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p3ZQAQ)
 * nraLM = Reference(PreQualNRA0013X0000498p4wQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpIUAU)
-
-Instance: HepAProducta3K3X000006Mii5UAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "HEALIVE"
-* manufacturer = Reference(Manufacturer0013X0000498p3ZQAQ) // Sinovac Biotech Co. Ltd
-* doseQuantity =  1 'doses'
-* classification = #HepA
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006Mii5UAC"
-
-Instance: PreQuala3K3X000006Mii5UAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4wQAA) // National Medical Products Administration  (NMPA)
-* validityPeriod.start = 2017-12-22
-* product  = Reference(HepAProducta3K3X000006Mii5UAC)
 
 
 // Source Record Row //: 17
@@ -989,35 +519,9 @@ InstanceOf: PreQualProduct
 * nraName = "National Medical Products Administration  (NMPA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p4LQAQ)
 * responsibleNRAReference = Reference(Holder0013X0000498p4wQAA) // National Medical Products Administration  (NMPA)
-* productReference = Reference(bOPVProducta3K3X000006Mii6UAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p4LQAQ)
 * nraLM = Reference(PreQualNRA0013X0000498p4wQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpiUAE)
-
-Instance: bOPVProducta3K3X000006Mii6UAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Poliomyelitis Vaccine (live oral attenuated human Diploid Cell) type 1 and 3"
-* manufacturer = Reference(Manufacturer0013X0000498p4LQAQ) // Beijing Institute of Biological Products Co., Ltd.
-* doseQuantity =  20 'doses'
-* classification = #bOPV
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006Mii6UAC"
-
-Instance: PreQuala3K3X000006Mii6UAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4wQAA) // National Medical Products Administration  (NMPA)
-* validityPeriod.start = 2017-12-21
-* product  = Reference(bOPVProducta3K3X000006Mii6UAC)
 
 
 // Source Record Row //: 18
@@ -1050,35 +554,9 @@ InstanceOf: PreQualProduct
 * nraName = "Ministry of Food and Drug Safety (MFDS)"
 * manufacturerReference = Reference(Manufacturer0013X00004993qnQAA)
 * responsibleNRAReference = Reference(Holder0013X00004993qyQAA) // Ministry of Food and Drug Safety (MFDS)
-* productReference = Reference(HepBProducta3K3X000006Mii7UAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X00004993qnQAA)
 * nraLM = Reference(PreQualNRA0013X00004993qyQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpJUAU)
-
-Instance: HepBProducta3K3X000006Mii7UAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Euvax B"
-* manufacturer = Reference(Manufacturer0013X00004993qnQAA) // LG Chem Ltd (LGC)
-* doseQuantity =  10 'doses'
-* classification = #HepB
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006Mii7UAC"
-
-Instance: PreQuala3K3X000006Mii7UAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X00004993qyQAA) // Ministry of Food and Drug Safety (MFDS)
-* validityPeriod.start = 1996-11-22
-* product  = Reference(HepBProducta3K3X000006Mii7UAC)
 
 
 // Source Record Row //: 19
@@ -1111,35 +589,9 @@ InstanceOf: PreQualProduct
 * nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* productReference = Reference(DTProducta3K3X000006Mii8UAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSojUAE)
-
-Instance: DTProducta3K3X000006Mii8UAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Diftet"
-* manufacturer = Reference(Manufacturer0013X0000498p2jQAA) // Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.
-* doseQuantity =  20 'doses'
-* classification = #DT
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006Mii8UAC"
-
-Instance: PreQuala3K3X000006Mii8UAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* validityPeriod.start = 2006-05-09
-* product  = Reference(DTProducta3K3X000006Mii8UAC)
 
 
 // Source Record Row //: 20
@@ -1172,35 +624,9 @@ InstanceOf: PreQualProduct
 * nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* productReference = Reference(dTProducta3K3X000006Mii9UAC)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSokUAE)
-
-Instance: dTProducta3K3X000006Mii9UAC
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Tetadif"
-* manufacturer = Reference(Manufacturer0013X0000498p2jQAA) // Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.
-* doseQuantity =  10 'doses'
-* classification = #dT
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006Mii9UAC"
-
-Instance: PreQuala3K3X000006Mii9UAC
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* validityPeriod.start = 2006-05-09
-* product  = Reference(dTProducta3K3X000006Mii9UAC)
 
 
 // Source Record Row //: 21
@@ -1233,35 +659,9 @@ InstanceOf: PreQualProduct
 * nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* productReference = Reference(dTProducta3K3X000006MiiAUAS)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSokUAE)
-
-Instance: dTProducta3K3X000006MiiAUAS
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Tetadif"
-* manufacturer = Reference(Manufacturer0013X0000498p2jQAA) // Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.
-* doseQuantity =  20 'doses'
-* classification = #dT
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MiiAUAS"
-
-Instance: PreQuala3K3X000006MiiAUAS
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* validityPeriod.start = 2006-05-09
-* product  = Reference(dTProducta3K3X000006MiiAUAS)
 
 
 // Source Record Row //: 22
@@ -1294,35 +694,9 @@ InstanceOf: PreQualProduct
 * nraName = "Agence nationale de sécurité du médicament et des produits de santé (ANSM)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p3PQAQ)
 * responsibleNRAReference = Reference(Holder0013X0000498p4bQAA) // Agence nationale de sécurité du médicament et des produits de santé (ANSM)
-* productReference = Reference(TDVProducta3K3X000006MiiBUAS)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p3PQAQ)
 * nraLM = Reference(PreQualNRA0013X0000498p4bQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSoiUAE)
-
-Instance: TDVProducta3K3X000006MiiBUAS
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Dengvaxia"
-* manufacturer = Reference(Manufacturer0013X0000498p3PQAQ) // Sanofi Pasteur SA
-* doseQuantity =  5 'doses'
-* classification = #TDV
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Twovialsetactiveexcipient
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MiiBUAS"
-
-Instance: PreQuala3K3X000006MiiBUAS
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4bQAA) // Agence nationale de sécurité du médicament et des produits de santé (ANSM)
-* validityPeriod.start = 2020-03-25
-* product  = Reference(TDVProducta3K3X000006MiiBUAS)
 
 
 // Source Record Row //: 23
@@ -1355,35 +729,9 @@ InstanceOf: PreQualProduct
 * nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* productReference = Reference(BCGProducta3K3X000006MiiCUAS)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSogUAE)
-
-Instance: BCGProducta3K3X000006MiiCUAS
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "BCG Vaccine"
-* manufacturer = Reference(Manufacturer0013X0000498p2jQAA) // Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.
-* doseQuantity =  10 'doses'
-* classification = #BCG
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Ampoule
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MiiCUAS"
-
-Instance: PreQuala3K3X000006MiiCUAS
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* validityPeriod.start = 1991-02-01
-* product  = Reference(BCGProducta3K3X000006MiiCUAS)
 
 
 // Source Record Row //: 24
@@ -1416,35 +764,9 @@ InstanceOf: PreQualProduct
 * nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* productReference = Reference(BCGProducta3K3X000006MiiDUAS)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSogUAE)
-
-Instance: BCGProducta3K3X000006MiiDUAS
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "BCG Vaccine"
-* manufacturer = Reference(Manufacturer0013X0000498p2jQAA) // Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.
-* doseQuantity =  20 'doses'
-* classification = #BCG
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Ampoule
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MiiDUAS"
-
-Instance: PreQuala3K3X000006MiiDUAS
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
-* validityPeriod.start = 1991-02-01
-* product  = Reference(BCGProducta3K3X000006MiiDUAS)
 
 
 // Source Record Row //: 25
@@ -1477,35 +799,9 @@ InstanceOf: PreQualProduct
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* productReference = Reference(MRProducta3K3X000006MiiEUAS)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpbUAE)
-
-Instance: MRProducta3K3X000006MiiEUAS
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Measles and Rubella Vaccine Live Attenuated"
-* manufacturer = Reference(Manufacturer0013X00003cPkzfQAC) // Serum Institute of India
-* doseQuantity =  1 'doses'
-* classification = #MR
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MiiEUAS"
-
-Instance: PreQuala3K3X000006MiiEUAS
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* validityPeriod.start = 1993-02-15
-* product  = Reference(MRProducta3K3X000006MiiEUAS)
 
 
 // Source Record Row //: 26
@@ -1538,35 +834,9 @@ InstanceOf: PreQualProduct
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* productReference = Reference(TTProducta3K3X000006MiiFUAS)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpqUAE)
-
-Instance: TTProducta3K3X000006MiiFUAS
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Tetanus  Toxoid Vaccine Adsorbed"
-* manufacturer = Reference(Manufacturer0013X00003cPkzfQAC) // Serum Institute of India
-* doseQuantity =  20 'doses'
-* classification = #TT
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MiiFUAS"
-
-Instance: PreQuala3K3X000006MiiFUAS
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* validityPeriod.start = 1995-04-04
-* product  = Reference(TTProducta3K3X000006MiiFUAS)
 
 
 // Source Record Row //: 27
@@ -1599,35 +869,9 @@ InstanceOf: PreQualProduct
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* productReference = Reference(MRProducta3K3X000006MiiGUAS)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpbUAE)
-
-Instance: MRProducta3K3X000006MiiGUAS
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Measles and Rubella Vaccine Live Attenuated"
-* manufacturer = Reference(Manufacturer0013X00003cPkzfQAC) // Serum Institute of India
-* doseQuantity =  2 'doses'
-* classification = #MR
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MiiGUAS"
-
-Instance: PreQuala3K3X000006MiiGUAS
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* validityPeriod.start = 1993-02-15
-* product  = Reference(MRProducta3K3X000006MiiGUAS)
 
 
 // Source Record Row //: 28
@@ -1660,35 +904,9 @@ InstanceOf: PreQualProduct
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* productReference = Reference(MMRProducta3K3X000006MiiHUAS)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpaUAE)
-
-Instance: MMRProducta3K3X000006MiiHUAS
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Measles Mumps and Rubella Vaccine Live Attenuated"
-* manufacturer = Reference(Manufacturer0013X00003cPkzfQAC) // Serum Institute of India
-* doseQuantity =  1 'doses'
-* classification = #MMR
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MiiHUAS"
-
-Instance: PreQuala3K3X000006MiiHUAS
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* validityPeriod.start = 2003-08-08
-* product  = Reference(MMRProducta3K3X000006MiiHUAS)
 
 
 // Source Record Row //: 29
@@ -1721,35 +939,9 @@ InstanceOf: PreQualProduct
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* productReference = Reference(MMRProducta3K3X000006MiiIUAS)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpaUAE)
-
-Instance: MMRProducta3K3X000006MiiIUAS
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Measles Mumps and Rubella Vaccine Live Attenuated"
-* manufacturer = Reference(Manufacturer0013X00003cPkzfQAC) // Serum Institute of India
-* doseQuantity =  2 'doses'
-* classification = #MMR
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MiiIUAS"
-
-Instance: PreQuala3K3X000006MiiIUAS
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* validityPeriod.start = 2003-08-08
-* product  = Reference(MMRProducta3K3X000006MiiIUAS)
 
 
 // Source Record Row //: 30
@@ -1782,35 +974,9 @@ InstanceOf: PreQualProduct
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* productReference = Reference(MMRProducta3K3X000006MiiJUAS)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpaUAE)
-
-Instance: MMRProducta3K3X000006MiiJUAS
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Measles Mumps and Rubella Vaccine Live Attenuated"
-* manufacturer = Reference(Manufacturer0013X00003cPkzfQAC) // Serum Institute of India
-* doseQuantity =  10 'doses'
-* classification = #MMR
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MiiJUAS"
-
-Instance: PreQuala3K3X000006MiiJUAS
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* validityPeriod.start = 2003-08-08
-* product  = Reference(MMRProducta3K3X000006MiiJUAS)
 
 
 // Source Record Row //: 31
@@ -1843,35 +1009,9 @@ InstanceOf: PreQualProduct
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* productReference = Reference(MMRProducta3K3X000006MiiKUAS)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpaUAE)
-
-Instance: MMRProducta3K3X000006MiiKUAS
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Measles Mumps and Rubella Vaccine Live Attenuated"
-* manufacturer = Reference(Manufacturer0013X00003cPkzfQAC) // Serum Institute of India
-* doseQuantity =  5 'doses'
-* classification = #MMR
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MiiKUAS"
-
-Instance: PreQuala3K3X000006MiiKUAS
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* validityPeriod.start = 2003-08-08
-* product  = Reference(MMRProducta3K3X000006MiiKUAS)
 
 
 // Source Record Row //: 32
@@ -1904,35 +1044,9 @@ InstanceOf: PreQualProduct
 * nraName = "National Medical Products Administration  (NMPA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2qQAA)
 * responsibleNRAReference = Reference(Holder0013X0000498p4wQAA) // National Medical Products Administration  (NMPA)
-* productReference = Reference(JEProducta3K3X000006MiiLUAS)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2qQAA)
 * nraLM = Reference(PreQualNRA0013X0000498p4wQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpXUAU)
-
-Instance: JEProducta3K3X000006MiiLUAS
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Japanese Encephalitis Vaccine Live (SA14-14-2)"
-* manufacturer = Reference(Manufacturer0013X0000498p2qQAA) // Chengdu Institute of Biological Products Co. Ltd
-* doseQuantity =  5 'doses'
-* classification = #JE
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Twovialsetactiveexcipient
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MiiLUAS"
-
-Instance: PreQuala3K3X000006MiiLUAS
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4wQAA) // National Medical Products Administration  (NMPA)
-* validityPeriod.start = 2013-10-09
-* product  = Reference(JEProducta3K3X000006MiiLUAS)
 
 
 // Source Record Row //: 33
@@ -1965,35 +1079,9 @@ InstanceOf: PreQualProduct
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* productReference = Reference(MProducta3K3X000006MiiMUAS)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpZUAU)
-
-Instance: MProducta3K3X000006MiiMUAS
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Measles Vaccine Live Attenuated"
-* manufacturer = Reference(Manufacturer0013X00003cPkzfQAC) // Serum Institute of India
-* doseQuantity =  1 'doses'
-* classification = #M
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MiiMUAS"
-
-Instance: PreQuala3K3X000006MiiMUAS
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* validityPeriod.start = 1993-02-15
-* product  = Reference(MProducta3K3X000006MiiMUAS)
 
 
 // Source Record Row //: 34
@@ -2026,35 +1114,9 @@ InstanceOf: PreQualProduct
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* productReference = Reference(DTwPProducta3K3X000006MiiNUAS)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSomUAE)
-
-Instance: DTwPProducta3K3X000006MiiNUAS
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
-* manufacturer = Reference(Manufacturer0013X00003cPkzfQAC) // Serum Institute of India
-* doseQuantity =  1 'doses'
-* classification = #DTwP
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Ampoule
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MiiNUAS"
-
-Instance: PreQuala3K3X000006MiiNUAS
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* validityPeriod.start = 1995-04-04
-* product  = Reference(DTwPProducta3K3X000006MiiNUAS)
 
 
 // Source Record Row //: 35
@@ -2087,33 +1149,7 @@ InstanceOf: PreQualProduct
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* productReference = Reference(DTwPProducta3K3X000006MiiOUAS)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSomUAE)
-
-Instance: DTwPProducta3K3X000006MiiOUAS
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
-* manufacturer = Reference(Manufacturer0013X00003cPkzfQAC) // Serum Institute of India
-* doseQuantity =  10 'doses'
-* classification = #DTwP
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000006MiiOUAS"
-
-Instance: PreQuala3K3X000006MiiOUAS
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
-* validityPeriod.start = 1995-04-04
-* product  = Reference(DTwPProducta3K3X000006MiiOUAS)
 
