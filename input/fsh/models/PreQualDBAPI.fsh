@@ -53,9 +53,55 @@ Logical: 	PreQualProduct
 Parent:		PreQualDBAPI
 Title:		"WHO PreQual Product"
 Description:    """Logical model for WHO PreQual Product from the backend API
-with additional data fields for referencing associated FHIR data objects
+with additional data fields for referencing associated FHIR and logical model data objects.
 """
-* manufacturerReference 1..1 Reference(IHE.mCSD.Organization) "Manufacturer reference"
-* responsibleNRAReference 1..1 Reference(IHE.mCSD.Organization) "Responsible NRA reference"
-* productReference 1..1 Reference($Product) "Product reference"
+* manufacturerReference 1..1 Reference(IHE.mCSD.Organization) "Manufacturer FHIR Organization reference"
+* responsibleNRAReference 1..1 Reference(IHE.mCSD.Organization) "Responsible NRA FHIR Organization reference"
+* productReference 1..1 Reference($Product) "Product FHIR reference"
+* manufacturerLM 0..1 Reference "Manufacturer logical model instance reference"
+* nraLM 0..1 Reference "NRA logical model instance reference"
+* vaccineLM 0..1 Reference "Vaccine logical model instance reference"
+
+
+Logical:	PreQualManufacturer
+Title:		"WHO PreQual Manufacturer"
+Description:	"""Logical model for the manufacturer/applicant organization
+from the WHO PreQual API (ProductDetails.ApplicantOrganization).
+"""
+* manufacturerId 0..1 Identifier "Manufacturer organization ID"
+* name 1..1 string "Organization name"
+* addressLine1 0..1 string "Address line 1"
+* city 0..1 string "City"
+* state 0..1 string "State/Province"
+* country 0..1 string "Country"
+* postalCode 0..1 string "Postal code"
+* isoCountryCode 0..1 string "ISO country code"
+* region 0..1 string "WHO region"
+* website 0..1 string "Website URL"
+* organizationReference 1..1 Reference(IHE.mCSD.Organization) "FHIR Organization reference"
+
+
+Logical:	PreQualNRA
+Title:		"WHO PreQual NRA"
+Description:	"""Logical model for the responsible National Regulatory Authority (NRA)
+from the WHO PreQual API (ProductDetails.NRADetails).
+"""
+* nraId 0..1 Identifier "NRA organization ID"
+* name 1..1 string "Organization name"
+* addressLine1 0..1 string "Address line 1"
+* country 0..1 string "Country"
+* website 0..1 string "Website URL"
+* organizationReference 1..1 Reference(IHE.mCSD.Organization) "FHIR Organization reference"
+
+
+Logical:	PreQualVaccine
+Title:		"WHO PreQual Vaccine"
+Description:	"""Logical model for the vaccine type details
+from the WHO PreQual API (ProductDetails.VaccineDetails).
+Contains only vaccine-type-level fields that are stable across products.
+Product-specific fields (CommercialName, RouteOfAdministration) remain on PreQualProduct.
+"""
+* vaccineId 0..1 Identifier "Vaccine type ID"
+* fullName 0..1 string "Vaccine full name"
+* abbreviatedName 0..1 string "Vaccine abbreviated name"
 

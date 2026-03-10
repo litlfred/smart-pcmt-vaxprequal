@@ -15,9 +15,12 @@ from import_salesforce import (
     fsh_escape,
     generate_concept_map,
     generate_holders,
+    generate_manufacturer_lm_instances,
     generate_manufacturers,
+    generate_nra_lm_instances,
     generate_presentations_codesystem,
     generate_products_and_authorizations,
+    generate_vaccine_lm_instances,
     generate_vaccine_types_codesystem,
     load_json_file,
     md5hash,
@@ -119,6 +122,13 @@ class TestExtractProductFields(unittest.TestCase):
         self.assertEqual(fields["vaccine_full_name"], "Recombinant malaria vaccine")
         self.assertEqual(fields["status"], "Prequalified")
         self.assertEqual(fields["pharmaceutical_form"], "Liquid: Ready to use")
+        # Referenced object fields
+        self.assertEqual(fields["applicant_website"], "http://www.seruminstitute.com/")
+        self.assertEqual(fields["applicant_city"], "Pune")
+        self.assertEqual(fields["applicant_state"], "Maharashtra")
+        self.assertEqual(fields["nra_website"], "www.cdsco.nic.in")
+        self.assertEqual(fields["nra_country"], "India")
+        self.assertEqual(fields["vaccine_type_id"], "a3S3X000003cSpnUAE")
 
     def test_empty_product(self):
         fields = extract_product_fields({})
@@ -197,11 +207,64 @@ class TestGenerateFSH(unittest.TestCase):
         self.assertIn("a3K3X000005atRtUAI", content)
         self.assertIn("CYVAC", content)
 
+        # Verify LM linkages
+        self.assertIn("manufacturerLM = Reference(PreQualManufacturer", content)
+        self.assertIn("nraLM = Reference(PreQualNRA", content)
+        self.assertIn("vaccineLM = Reference(PreQualVaccine", content)
+
         cs_content = open(cs_path).read()
         self.assertIn("CodeSystem: PreQualProductIds", cs_content)
 
         vs_content = open(vs_path).read()
         self.assertIn("ValueSet: PreQualProductIds", vs_content)
+
+
+class TestGenerateLMInstances(unittest.TestCase):
+    def setUp(self):
+        self.tmpdir = tempfile.mkdtemp()
+        self.products = [extract_product_fields(SAMPLE_PRODUCT)]
+
+    def test_generate_manufacturer_lm_instances(self):
+        generate_manufacturer_lm_instances(self.products, self.tmpdir)
+        path = os.path.join(
+            self.tmpdir, "examples", "prequal_database_manufacturer_lm.fsh"
+        )
+        self.assertTrue(os.path.exists(path))
+        content = open(path).read()
+        self.assertIn("InstanceOf: PreQualManufacturer", content)
+        self.assertIn("Serum Institute of India", content)
+        self.assertIn("0013X00003cPkzfQAC", content)
+        self.assertIn('city = "Pune"', content)
+        self.assertIn('state = "Maharashtra"', content)
+        self.assertIn('country = "India"', content)
+        self.assertIn('website = "http://www.seruminstitute.com/"', content)
+        self.assertIn("organizationReference = Reference(Manufacturer", content)
+
+    def test_generate_nra_lm_instances(self):
+        generate_nra_lm_instances(self.products, self.tmpdir)
+        path = os.path.join(
+            self.tmpdir, "examples", "prequal_database_nra_lm.fsh"
+        )
+        self.assertTrue(os.path.exists(path))
+        content = open(path).read()
+        self.assertIn("InstanceOf: PreQualNRA", content)
+        self.assertIn("Central Drugs Standard Control Organization (CDSCO)", content)
+        self.assertIn("0013X0000498p4fQAA", content)
+        self.assertIn('country = "India"', content)
+        self.assertIn('website = "www.cdsco.nic.in"', content)
+        self.assertIn("organizationReference = Reference(Holder", content)
+
+    def test_generate_vaccine_lm_instances(self):
+        generate_vaccine_lm_instances(self.products, self.tmpdir)
+        path = os.path.join(
+            self.tmpdir, "examples", "prequal_database_vaccine_lm.fsh"
+        )
+        self.assertTrue(os.path.exists(path))
+        content = open(path).read()
+        self.assertIn("InstanceOf: PreQualVaccine", content)
+        self.assertIn("a3S3X000003cSpnUAE", content)
+        self.assertIn('fullName = "Recombinant malaria vaccine"', content)
+        self.assertIn('abbreviatedName = "Malaria"', content)
 
 
 class TestLoadJsonFile(unittest.TestCase):

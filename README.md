@@ -24,8 +24,11 @@ python3 scripts/import_salesforce.py --json-file data/prequal.json
 
 This reads 35 products from `data/prequal.json` and writes generated FSH files into `input/fsh/`:
 - `input/fsh/examples/prequal_database_products.fsh` — PreQualProduct, Product, and ProductAuthorization instances
-- `input/fsh/examples/prequal_database_manufacturers.fsh` — Manufacturer Organization instances
-- `input/fsh/examples/prequal_database_holders.fsh` — NRA/Holder Organization instances
+- `input/fsh/examples/prequal_database_manufacturers.fsh` — Manufacturer FHIR Organization instances
+- `input/fsh/examples/prequal_database_holders.fsh` — NRA/Holder FHIR Organization instances
+- `input/fsh/examples/prequal_database_manufacturer_lm.fsh` — PreQualManufacturer LM instances (full address, website)
+- `input/fsh/examples/prequal_database_nra_lm.fsh` — PreQualNRA LM instances (country, website)
+- `input/fsh/examples/prequal_database_vaccine_lm.fsh` — PreQualVaccine LM instances (vaccine type details)
 - `input/fsh/codesystems/` — CodeSystems for presentations, vaccine types, and product identifiers
 - `input/fsh/valuesets/` — ValueSet for product identifiers
 - `input/fsh/concept_maps/` — ConceptMap from CSV IDs to API IDs
@@ -36,14 +39,19 @@ To run tests:
 python3 -m unittest tests/test_import_salesforce.py -v
 ```
 
-## Sample Generated Instance
+## Sample Generated Instances
 
-For each product in the WHO PreQual database, the import script generates three FSH instances:
-1. A `PreQualProduct` logical model instance (capturing all API fields plus FHIR references)
+For each product in the WHO PreQual database, the import script generates:
+1. A `PreQualProduct` logical model instance (with references to Manufacturer, NRA, and Vaccine LM instances)
 2. A `Product` resource instance
 3. A `ProductAuthorization` resource instance
 
-Here is a sample for the CYVAC malaria vaccine:
+Additionally, for each unique referenced object, the script generates:
+- `PreQualManufacturer` LM instances (11 unique manufacturers with full address and contact info)
+- `PreQualNRA` LM instances (8 unique NRAs with country and website)
+- `PreQualVaccine` LM instances (17 unique vaccine types with full and abbreviated names)
+
+Here is a sample for the CYVAC malaria vaccine showing the product and its referenced LM instances:
 
 ```fsh
 Instance: PreQualDBa3K3X000005atRtUAI
@@ -67,31 +75,40 @@ InstanceOf: PreQualProduct
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA)
 * productReference = Reference(MalariaProducta3K3X000005atRtUAI)
+* manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
+* nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
+* vaccineLM = Reference(PreQualVaccinea3S3X000003cSpnUAE)
 
-Instance: MalariaProducta3K3X000005atRtUAI
-InstanceOf: $Product
-Usage: #example
-* status = #active
-* name
-  * nameType = #official
-  * value = "CYVAC"
-* manufacturer = Reference(Manufacturer0013X00003cPkzfQAC)
-* doseQuantity =  2 'doses'
-* classification = #Malaria
-* unitOfUse.coding.code = #doses
-* dosageForm.coding.code = #Vial
-* identifier.system = "https://extranet.who.int/prequal/api"
-* identifier.value = "a3K3X000005atRtUAI"
+Instance: PreQualManufacturer0013X00003cPkzfQAC
+InstanceOf: PreQualManufacturer
+* manufacturerId.system = "https://extranet.who.int/prequal/api"
+* manufacturerId.value = "0013X00003cPkzfQAC"
+* name = "Serum Institute of India"
+* addressLine1 = "SERUM BIO-PHARMA PARK SEZ UNIT-1, 212/2 Off Soli Poonawala Road, Hadaspar"
+* city = "Pune"
+* state = "Maharashtra"
+* country = "India"
+* postalCode = "411 028"
+* isoCountryCode = "IND"
+* region = "SEARO"
+* website = "http://www.seruminstitute.com/"
+* organizationReference = Reference(Manufacturer0013X00003cPkzfQAC)
 
-Instance: PreQuala3K3X000005atRtUAI
-InstanceOf: $ProductAuthorization
-Usage: #example
-* status = #active
-* type = #prequal
-* jurisdiction.coding.display = "WHO"
-* holder = Reference(Holder0013X0000498p4fQAA)
-* validityPeriod.start = 2023-12-19
-* product  = Reference(MalariaProducta3K3X000005atRtUAI)
+Instance: PreQualNRA0013X0000498p4fQAA
+InstanceOf: PreQualNRA
+* nraId.system = "https://extranet.who.int/prequal/api"
+* nraId.value = "0013X0000498p4fQAA"
+* name = "Central Drugs Standard Control Organization (CDSCO)"
+* country = "India"
+* website = "www.cdsco.nic.in"
+* organizationReference = Reference(Holder0013X0000498p4fQAA)
+
+Instance: PreQualVaccinea3S3X000003cSpnUAE
+InstanceOf: PreQualVaccine
+* vaccineId.system = "https://extranet.who.int/prequal/api"
+* vaccineId.value = "a3S3X000003cSpnUAE"
+* fullName = "Recombinant malaria vaccine"
+* abbreviatedName = "Malaria"
 ```
 
 ## Changes and feedback
