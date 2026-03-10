@@ -191,7 +191,7 @@ class TestGenerateFSH(unittest.TestCase):
         self.assertTrue(os.path.exists(vs_path))
 
         content = open(examples_path).read()
-        self.assertIn("InstanceOf: PreQualDBAPIWithRefs", content)
+        self.assertIn("InstanceOf: PreQualProduct", content)
         self.assertIn("InstanceOf: $Product", content)
         self.assertIn("InstanceOf: $ProductAuthorization", content)
         self.assertIn("a3K3X000005atRtUAI", content)

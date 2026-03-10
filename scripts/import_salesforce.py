@@ -2,7 +2,7 @@
 """Import WHO Vaccine PreQual data from the backend API.
 
 Downloads paginated results from the PreQual API and generates:
-  - FSH logical model instances (PreQualDBAPIWithRefs)
+  - FSH logical model instances (PreQualProduct)
   - FHIR Product and ProductAuthorization instances
   - CodeSystem and ValueSet FSH files
   - ConceptMap from old CSV MD5-based IDs to authoritative vaccine product IDs
@@ -416,7 +416,7 @@ def generate_products_and_authorizations(products, output_dir):
 
             # LM Instance
             f.write(f"Instance: PreQualDB{safe_sf_id}\n")
-            f.write("InstanceOf: PreQualDBAPIWithRefs\n")
+            f.write("InstanceOf: PreQualProduct\n")
             if date:
                 f.write(f"* dateOfPrequal = {date}\n")
             if vax_type:

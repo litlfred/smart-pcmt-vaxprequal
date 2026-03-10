@@ -49,10 +49,10 @@ Key fields from the API (FinishedVaccineProducts):
 
 
 
-Logical: 	PreQualDBAPIWithRefs
+Logical: 	PreQualProduct
 Parent:		PreQualDBAPI
-Title:		"WHO Vaccine PreQual DB (API) with References"
-Description:    """Logical model for WHO PreQual DB from the backend API
+Title:		"WHO PreQual Product"
+Description:    """Logical model for WHO PreQual Product from the backend API
 with additional data fields for referencing associated FHIR data objects
 """
 * manufacturerReference 1..1 Reference(IHE.mCSD.Organization) "Manufacturer reference"

@@ -12,7 +12,7 @@
 //
 
 Instance: PreQualDBa3K3X000005atRtUAI
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2023-12-19
 * vaccineType.coding.code = #Malaria
 * vaccineType.coding.display = "Malaria"
@@ -72,7 +72,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000005atSwUAI
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2023-12-19
 * vaccineType.coding.code = #Malaria
 * vaccineType.coding.display = "Malaria"
@@ -132,7 +132,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MihsUAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2007-01-29
 * vaccineType.coding.code = #LARV
 * vaccineType.coding.display = "LARV"
@@ -192,7 +192,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MihtUAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2006-02-02
 * vaccineType.coding.code = #tOPV
 * vaccineType.coding.display = "tOPV"
@@ -252,7 +252,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MihuUAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2001-03-20
 * vaccineType.coding.code = #YF
 * vaccineType.coding.display = "YF"
@@ -312,7 +312,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MihvUAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2001-03-20
 * vaccineType.coding.code = #YF
 * vaccineType.coding.display = "YF"
@@ -372,7 +372,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MihwUAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2001-03-20
 * vaccineType.coding.code = #YF
 * vaccineType.coding.display = "YF"
@@ -432,7 +432,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MihxUAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 1987-01-01
 * vaccineType.coding.code = #BCG
 * vaccineType.coding.display = "BCG"
@@ -492,7 +492,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MihyUAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 1996-11-22
 * vaccineType.coding.code = #HepB
 * vaccineType.coding.display = "HepB"
@@ -552,7 +552,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MihzUAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * commercialName = ""
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #
@@ -603,7 +603,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006Mii0UAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2001-03-09
 * vaccineType.coding.code = #MMR
 * vaccineType.coding.display = "MMR"
@@ -663,7 +663,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006Mii1UAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2006-05-09
 * vaccineType.coding.code = #TT
 * vaccineType.coding.display = "TT"
@@ -723,7 +723,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006Mii2UAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2006-05-09
 * vaccineType.coding.code = #TT
 * vaccineType.coding.display = "TT"
@@ -783,7 +783,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006Mii3UAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2006-05-09
 * vaccineType.coding.code = #DT
 * vaccineType.coding.display = "DT"
@@ -843,7 +843,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006Mii4UAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * commercialName = ""
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #
@@ -894,7 +894,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006Mii5UAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2017-12-22
 * vaccineType.coding.code = #HepA
 * vaccineType.coding.display = "HepA"
@@ -954,7 +954,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006Mii6UAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2017-12-21
 * vaccineType.coding.code = #bOPV
 * vaccineType.coding.display = "bOPV"
@@ -1014,7 +1014,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006Mii7UAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 1996-11-22
 * vaccineType.coding.code = #HepB
 * vaccineType.coding.display = "HepB"
@@ -1074,7 +1074,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006Mii8UAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2006-05-09
 * vaccineType.coding.code = #DT
 * vaccineType.coding.display = "DT"
@@ -1134,7 +1134,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006Mii9UAC
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2006-05-09
 * vaccineType.coding.code = #dT
 * vaccineType.coding.display = "dT"
@@ -1194,7 +1194,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MiiAUAS
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2006-05-09
 * vaccineType.coding.code = #dT
 * vaccineType.coding.display = "dT"
@@ -1254,7 +1254,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MiiBUAS
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2020-03-25
 * vaccineType.coding.code = #TDV
 * vaccineType.coding.display = "TDV"
@@ -1314,7 +1314,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MiiCUAS
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 1991-02-01
 * vaccineType.coding.code = #BCG
 * vaccineType.coding.display = "BCG"
@@ -1374,7 +1374,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MiiDUAS
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 1991-02-01
 * vaccineType.coding.code = #BCG
 * vaccineType.coding.display = "BCG"
@@ -1434,7 +1434,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MiiEUAS
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 1993-02-15
 * vaccineType.coding.code = #MR
 * vaccineType.coding.display = "MR"
@@ -1494,7 +1494,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MiiFUAS
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 1995-04-04
 * vaccineType.coding.code = #TT
 * vaccineType.coding.display = "TT"
@@ -1554,7 +1554,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MiiGUAS
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 1993-02-15
 * vaccineType.coding.code = #MR
 * vaccineType.coding.display = "MR"
@@ -1614,7 +1614,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MiiHUAS
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2003-08-08
 * vaccineType.coding.code = #MMR
 * vaccineType.coding.display = "MMR"
@@ -1674,7 +1674,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MiiIUAS
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2003-08-08
 * vaccineType.coding.code = #MMR
 * vaccineType.coding.display = "MMR"
@@ -1734,7 +1734,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MiiJUAS
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2003-08-08
 * vaccineType.coding.code = #MMR
 * vaccineType.coding.display = "MMR"
@@ -1794,7 +1794,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MiiKUAS
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2003-08-08
 * vaccineType.coding.code = #MMR
 * vaccineType.coding.display = "MMR"
@@ -1854,7 +1854,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MiiLUAS
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 2013-10-09
 * vaccineType.coding.code = #JE
 * vaccineType.coding.display = "JE"
@@ -1914,7 +1914,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MiiMUAS
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 1993-02-15
 * vaccineType.coding.code = #M
 * vaccineType.coding.display = "M"
@@ -1974,7 +1974,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MiiNUAS
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 1995-04-04
 * vaccineType.coding.code = #DTwP
 * vaccineType.coding.display = "DTwP"
@@ -2034,7 +2034,7 @@ Usage: #example
 //
 
 Instance: PreQualDBa3K3X000006MiiOUAS
-InstanceOf: PreQualDBAPIWithRefs
+InstanceOf: PreQualProduct
 * dateOfPrequal = 1995-04-04
 * vaccineType.coding.code = #DTwP
 * vaccineType.coding.display = "DTwP"
