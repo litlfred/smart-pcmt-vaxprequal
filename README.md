@@ -14,6 +14,28 @@ This is an empty framework, to be used to create SMART Implementation Guides.
 Please see these [instructions](https://smart.who.int/ig-starter-kit/ig_setup.html#github-setup)
 
 
+## Generating Instances Locally
+
+To generate FSH logical model instances from the sample data (no API credentials needed):
+
+```bash
+python3 scripts/import_salesforce.py --json-file data/prequal.json
+```
+
+This reads 35 products from `data/prequal.json` and writes generated FSH files into `input/fsh/`:
+- `input/fsh/examples/prequal_database_products.fsh` — PreQualProduct, Product, and ProductAuthorization instances
+- `input/fsh/examples/prequal_database_manufacturers.fsh` — Manufacturer Organization instances
+- `input/fsh/examples/prequal_database_holders.fsh` — NRA/Holder Organization instances
+- `input/fsh/codesystems/` — CodeSystems for presentations, vaccine types, and product identifiers
+- `input/fsh/valuesets/` — ValueSet for product identifiers
+- `input/fsh/concept_maps/` — ConceptMap from CSV IDs to API IDs
+
+To run tests:
+
+```bash
+python3 -m unittest tests/test_import_salesforce.py -v
+```
+
 ## Sample Generated Instance
 
 For each product in the WHO PreQual database, the import script generates three FSH instances:
