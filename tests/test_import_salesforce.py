@@ -576,6 +576,83 @@ class TestSkipWithdrawnProducts(unittest.TestCase):
         self.assertIn("a3K3X000005atRtUAI", content)
 
 
+class TestNullSubObjectIds(unittest.TestCase):
+    """When a sub-object's Identification.Id is null, don't generate or link to its LM instance."""
+
+    def test_manufacturer_lm_not_generated_without_id(self):
+        """Manufacturer LM instances should only be generated when applicant ID is non-null."""
+        tmpdir = tempfile.mkdtemp()
+        product_no_id = extract_product_fields({
+            "ProductDetails": {
+                "Identification": {"Id": "PROD1", "Name": "Test"},
+                "ApplicantOrganization": {
+                    "Identification": {"Id": None, "Name": "NoIdManufacturer"},
+                },
+                "NRADetails": {"Identification": {}},
+                "VaccineDetails": {"VaccineName": {}},
+            }
+        })
+        products = [product_no_id]
+        generate_manufacturer_lm_instances(products, tmpdir)
+        path = os.path.join(tmpdir, "examples", "prequal_database_manufacturer_lm.fsh")
+        # File should be empty (no instances) since the only manufacturer has no ID
+        content = open(path).read()
+        self.assertNotIn("InstanceOf: PreQualManufacturer", content)
+
+    def test_nra_lm_not_generated_without_id(self):
+        """NRA LM instances should only be generated when NRA ID is non-null."""
+        tmpdir = tempfile.mkdtemp()
+        product_no_id = extract_product_fields({
+            "ProductDetails": {
+                "Identification": {"Id": "PROD1", "Name": "Test"},
+                "ApplicantOrganization": {"Identification": {}},
+                "NRADetails": {
+                    "Identification": {"Id": None, "Name": "NoIdNRA"},
+                },
+                "VaccineDetails": {"VaccineName": {}},
+            }
+        })
+        products = [product_no_id]
+        generate_nra_lm_instances(products, tmpdir)
+        path = os.path.join(tmpdir, "examples", "prequal_database_nra_lm.fsh")
+        content = open(path).read()
+        self.assertNotIn("InstanceOf: PreQualNRA", content)
+
+    def test_product_does_not_link_null_id_lm(self):
+        """Product instances should not link to LMs when sub-object IDs are null."""
+        tmpdir = tempfile.mkdtemp()
+        product_null_ids = extract_product_fields({
+            "ProductDetails": {
+                "Identification": {"Id": "a3K_NULL_TEST", "Name": "FVP-NULL"},
+                "Type": "Finished Vaccine Product",
+                "DateOfPreQualifiedAcceptance": "2024-01-01",
+                "Status": "Prequalified",
+                "ApplicantOrganization": {
+                    "Identification": {"Id": None, "Name": "SomeManufacturer"},
+                },
+                "NRADetails": {
+                    "Identification": {"Id": None, "Name": "SomeNRA"},
+                },
+                "VaccineDetails": {
+                    "Identification": {"Id": None},
+                    "VaccineName": {"CommercialName": "TestVax"},
+                },
+            }
+        })
+        generate_products_and_authorizations([product_null_ids], tmpdir)
+        path = os.path.join(tmpdir, "examples", "prequal_database_products.fsh")
+        content = open(path).read()
+        # Product should exist
+        self.assertIn("a3K_NULL_TEST", content)
+        # But should NOT link to manufacturer/NRA/vaccine LMs
+        self.assertNotIn("manufacturerLM", content)
+        self.assertNotIn("nraLM", content)
+        self.assertNotIn("vaccineLM", content)
+        # Should still have FHIR Organization references (those use md5 fallback)
+        self.assertIn("manufacturerReference = Reference(Manufacturer", content)
+        self.assertIn("responsibleNRAReference = Reference(Holder", content)
+
+
 class TestAdditiveCodeSystems(unittest.TestCase):
     """CodeSystem generation must preserve existing codes that are not in current data."""
 

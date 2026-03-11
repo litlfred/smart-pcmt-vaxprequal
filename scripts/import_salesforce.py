@@ -469,7 +469,7 @@ def generate_manufacturer_lm_instances(products, output_dir):
     for p in products:
         name = p.get("applicant_name", "")
         sf_id = p.get("applicant_id", "")
-        if name and name not in seen:
+        if name and sf_id and name not in seen:
             seen[name] = p
 
     path = os.path.join(output_dir, "examples", "prequal_database_manufacturer_lm.fsh")
@@ -478,7 +478,7 @@ def generate_manufacturer_lm_instances(products, output_dir):
     with open(path, "w", encoding="utf-8") as f:
         for name, p in sorted(seen.items()):
             sf_id = p.get("applicant_id", "")
-            instance_id = sanitize_code(sf_id) if sf_id else md5hash(name)
+            instance_id = sanitize_code(sf_id)
             mfr_org_ref = f"Manufacturer{instance_id}"
 
             f.write(f"\nInstance: PreQualManufacturer{instance_id}\n")
@@ -527,7 +527,7 @@ def generate_nra_lm_instances(products, output_dir):
     for p in products:
         name = p.get("nra_name", "")
         sf_id = p.get("nra_id", "")
-        if name and name not in seen:
+        if name and sf_id and name not in seen:
             seen[name] = p
 
     path = os.path.join(output_dir, "examples", "prequal_database_nra_lm.fsh")
@@ -536,7 +536,7 @@ def generate_nra_lm_instances(products, output_dir):
     with open(path, "w", encoding="utf-8") as f:
         for name, p in sorted(seen.items()):
             sf_id = p.get("nra_id", "")
-            instance_id = sanitize_code(sf_id) if sf_id else md5hash(name)
+            instance_id = sanitize_code(sf_id)
             holder_org_ref = f"Holder{instance_id}"
 
             f.write(f"\nInstance: PreQualNRA{instance_id}\n")
@@ -1142,9 +1142,11 @@ def generate_products_and_authorizations(products, output_dir):
             f.write(f"* manufacturerReference = Reference(Manufacturer{mfr_ref_id})\n")
             f.write(f"* responsibleNRAReference = Reference(Holder{holder_ref_id}) // {fsh_escape(holder)}\n")
 
-            # LM instance references
-            f.write(f"* manufacturerLM = Reference(PreQualManufacturer{mfr_ref_id})\n")
-            f.write(f"* nraLM = Reference(PreQualNRA{holder_ref_id})\n")
+            # LM instance references (only when sub-object has a non-null ID)
+            if manufacturer_sf_id:
+                f.write(f"* manufacturerLM = Reference(PreQualManufacturer{mfr_ref_id})\n")
+            if holder_sf_id:
+                f.write(f"* nraLM = Reference(PreQualNRA{holder_ref_id})\n")
             vax_type_id = p.get("vaccine_type_id", "")
             if vax_type_id:
                 vax_lm_ref_id = sanitize_code(vax_type_id)

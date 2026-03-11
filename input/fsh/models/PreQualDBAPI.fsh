@@ -1,11 +1,12 @@
 
-Logical: 	PreQualDBAPI
-Title: 		"WHO Vaccine PreQual DB (API)"
+Logical: 	FinishedVaccineProducts
+Title: 		"WHO Vaccine PreQual DB - Finished Vaccine Products"
 Characteristics: #can-be-target
-Description:	"""WHO Vaccine PreQual DB (API).  
+Description:	"""WHO Vaccine PreQual DB - Finished Vaccine Products.  
 Logical model for the WHO PreQual DB as provided by the backend API at:
      https://extranet.who.int/prequal/vaccines/prequalified-vaccines
 This model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.
+Sub-objects with Identification.Id are modeled as separate logical models and linked via references.
 
 Key fields from the API (FinishedVaccineProducts):
   ProductDetails.Identification.Id - Vaccine Product ID (authoritative)
@@ -49,27 +50,27 @@ Key fields from the API (FinishedVaccineProducts):
 * publishingRemarks 0..1 string "Publishing remarks"
 * preservative 0..1 string "Preservative name (e.g. Thiomersal)"
 * preservativeConcentration 0..1 string "Preservative concentration (e.g. 0.01%)"
-
-
-
-Logical: 	PreQualProduct
-Parent:		PreQualDBAPI
-Title:		"WHO PreQual Product"
-Characteristics: #can-be-target
-Description:    """Logical model for WHO PreQual Product from the backend API
-with additional data fields for referencing associated FHIR and logical model data objects.
-"""
-* manufacturerReference 1..1 Reference(IHE.mCSD.Organization) "Manufacturer FHIR Organization reference"
-* responsibleNRAReference 1..1 Reference(IHE.mCSD.Organization) "Responsible NRA FHIR Organization reference"
-* productReference 0..1 Reference "Product FHIR reference (when available from pcmt dependency)"
-* manufacturerLM 0..1 Reference "Manufacturer logical model instance reference"
-* nraLM 0..1 Reference "NRA logical model instance reference"
-* vaccineLM 0..1 Reference "Vaccine logical model instance reference"
-* bulkSupplierLM 0..1 Reference "Bulk supplier logical model instance reference"
+* manufacturerLM 0..1 Reference "Manufacturer logical model instance reference (linked when ApplicantOrganization.Identification.Id is non-null)"
+* nraLM 0..1 Reference "NRA logical model instance reference (linked when NRADetails.Identification.Id is non-null)"
+* vaccineLM 0..1 Reference "Vaccine logical model instance reference (linked when VaccineDetails.Identification.Id is non-null)"
+* bulkSupplierLM 0..1 Reference "Bulk supplier logical model instance reference (linked when BulkSupplier.Id is non-null)"
 * packagingLM 0..* Reference "Product packaging logical model instance references"
 * documentLM 0..* Reference "Document detail logical model instance references"
 * siteLM 0..* Reference "Site detail logical model instance references"
 * ingredientLM 0..* Reference "Product ingredient logical model instance references"
+
+
+
+Logical: 	PreQualProduct
+Parent:		FinishedVaccineProducts
+Title:		"WHO PreQual Product"
+Characteristics: #can-be-target
+Description:    """Logical model for WHO PreQual Product from the backend API
+with additional data fields for referencing associated FHIR resource data objects.
+"""
+* manufacturerReference 1..1 Reference(IHE.mCSD.Organization) "Manufacturer FHIR Organization reference"
+* responsibleNRAReference 1..1 Reference(IHE.mCSD.Organization) "Responsible NRA FHIR Organization reference"
+* productReference 0..1 Reference "Product FHIR reference (when available from pcmt dependency)"
 
 
 Logical:	PreQualManufacturer
