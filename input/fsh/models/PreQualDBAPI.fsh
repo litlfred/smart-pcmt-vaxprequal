@@ -1,6 +1,7 @@
 
 Logical: 	PreQualDBAPI
 Title: 		"WHO Vaccine PreQual DB (API)"
+Characteristics: #can-be-target
 Description:	"""WHO Vaccine PreQual DB (API).  
 Logical model for the WHO PreQual DB as provided by the backend API at:
      https://extranet.who.int/prequal/vaccines/prequalified-vaccines
@@ -54,6 +55,7 @@ Key fields from the API (FinishedVaccineProducts):
 Logical: 	PreQualProduct
 Parent:		PreQualDBAPI
 Title:		"WHO PreQual Product"
+Characteristics: #can-be-target
 Description:    """Logical model for WHO PreQual Product from the backend API
 with additional data fields for referencing associated FHIR and logical model data objects.
 """
@@ -72,6 +74,7 @@ with additional data fields for referencing associated FHIR and logical model da
 
 Logical:	PreQualManufacturer
 Title:		"WHO PreQual Manufacturer"
+Characteristics: #can-be-target
 Description:	"""Logical model for the manufacturer/applicant organization
 from the WHO PreQual API (ProductDetails.ApplicantOrganization).
 """
@@ -90,6 +93,7 @@ from the WHO PreQual API (ProductDetails.ApplicantOrganization).
 
 Logical:	PreQualNRA
 Title:		"WHO PreQual NRA"
+Characteristics: #can-be-target
 Description:	"""Logical model for the responsible National Regulatory Authority (NRA)
 from the WHO PreQual API (ProductDetails.NRADetails).
 """
@@ -103,6 +107,7 @@ from the WHO PreQual API (ProductDetails.NRADetails).
 
 Logical:	PreQualVaccine
 Title:		"WHO PreQual Vaccine"
+Characteristics: #can-be-target
 Description:	"""Logical model for the vaccine type details
 from the WHO PreQual API (ProductDetails.VaccineDetails).
 Contains only vaccine-type-level fields that are stable across products.
@@ -115,6 +120,7 @@ Product-specific fields (CommercialName, RouteOfAdministration) remain on PreQua
 
 Logical:	PreQualBulkSupplier
 Title:		"WHO PreQual Bulk Supplier"
+Characteristics: #can-be-target
 Description:	"""Logical model for the bulk supplier organization
 from the WHO PreQual API (ProductDetails.BulkSupplier).
 """
@@ -124,6 +130,7 @@ from the WHO PreQual API (ProductDetails.BulkSupplier).
 
 Logical:	PreQualProductPackaging
 Title:		"WHO PreQual Product Packaging"
+Characteristics: #can-be-target
 Description:	"""Logical model for product packaging details
 from the WHO PreQual API (ProductPackaging).
 """
@@ -143,6 +150,7 @@ from the WHO PreQual API (ProductPackaging).
 
 Logical:	PreQualDocumentDetail
 Title:		"WHO PreQual Document Detail"
+Characteristics: #can-be-target
 Description:	"""Logical model for document details
 from the WHO PreQual API (DocumentDetails).
 """
@@ -156,6 +164,7 @@ from the WHO PreQual API (DocumentDetails).
 
 Logical:	PreQualSiteDetail
 Title:		"WHO PreQual Site Detail"
+Characteristics: #can-be-target
 Description:	"""Logical model for manufacturing site details
 from the WHO PreQual API (SiteDetails).
 """
@@ -172,6 +181,7 @@ from the WHO PreQual API (SiteDetails).
 
 Logical:	PreQualProductIngredient
 Title:		"WHO PreQual Product Ingredient"
+Characteristics: #can-be-target
 Description:	"""Logical model for product ingredient details
 from the WHO PreQual API (ProductIngredients).
 """
