@@ -13,13 +13,19 @@ sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "scripts"))
 from import_salesforce import (
     extract_product_fields,
     fsh_escape,
+    generate_bulk_supplier_lm_instances,
     generate_concept_map,
+    generate_document_lm_instances,
     generate_holders,
+    generate_ingredient_lm_instances,
     generate_manufacturer_lm_instances,
     generate_manufacturers,
+    generate_metadata_codesystem,
     generate_nra_lm_instances,
+    generate_packaging_lm_instances,
     generate_presentations_codesystem,
     generate_products_and_authorizations,
+    generate_site_lm_instances,
     generate_vaccine_lm_instances,
     generate_vaccine_types_codesystem,
     load_json_file,
@@ -80,7 +86,103 @@ SAMPLE_PRODUCT = {
         "PreservativeConcentartionDetails": {"Id": None},
         "LastPublishingDate": "2024-09-10T14:16:34.000Z",
         "PublishingRemarks": None,
-    }
+    },
+    "ProductPackaging": [
+        {
+            "Id": "a3HNN0000007wYl2AI",
+            "ComponentPacked": "Active (Vaccine)",
+            "ShippingContainer": {
+                "Configuration": "Shipping box",
+                "Volume": "71.5 x 60.5 x 63.5",
+                "TotalDoses": "3600",
+                "TotalContainers": "1800",
+            },
+            "FVPPackagingType": "Shipping Container",
+        }
+    ],
+    "DocumentDetails": [
+        {
+            "Identification": {
+                "Id": "069NN000005lDn4YAE",
+                "Name": "-FVP-P-446-447_R21Malaria_SIIPL_PI-2023_2",
+            },
+            "Type": "Product Insert",
+            "VersionId": "068NN0000061zZCYAY",
+            "FileExtension": "pdf",
+            "FileType": "PDF",
+        }
+    ],
+}
+
+# Product with bulk supplier, sites, and ingredients
+SAMPLE_PRODUCT_WITH_EXTRAS = {
+    "ProductDetails": {
+        "Identification": {"Id": "a3K3X000006MihtUAC", "Name": "FVP-P-63"},
+        "Type": "Finished Vaccine Product",
+        "DateOfPreQualifiedAcceptance": "2008-12-01",
+        "AssessmentProcedure": "Prequalification - Standard",
+        "ApplicantOrganization": {
+            "Identification": {
+                "Id": "0013X0000498p2wQAA",
+                "Name": "Haffkine Bio Pharmaceutical Corporation Ltd",
+            },
+            "Address": {"City": "Mumbai", "Country": "India"},
+            "Contact": [],
+        },
+        "BulkSupplier": {"Id": "0013X0000498p3IQAQ", "Name": "PT Bio Farma (Persero)"},
+        "ConsumptionDetails": {"Diluent": None},
+        "DosageDetails": {"NoOfDosagesPerPrimaryContainer": "20"},
+        "StorageDetails": {"ShelfLife": "24 months", "Temperature": "2 - 8\u00b0C"},
+        "PharmaceuticalForm": "Liquid: Ready to use",
+        "Presentation": "Vial",
+        "NRADetails": {
+            "Identification": {
+                "Id": "0013X0000498p4bQAA",
+                "Name": "Central Drugs Standard Control Organization (CDSCO)",
+            },
+            "Address": {"Country": "India"},
+            "Contact": [],
+        },
+        "VaccineDetails": {
+            "Identification": {"Id": "a3S3X000003cSogUAE"},
+            "VaccineName": {
+                "FullName": "BCG Vaccine",
+                "AbbreviatedName": "BCG",
+                "CommercialName": "BCG Vaccine",
+            },
+            "RouteOfAdministrationVx": "Intradermal",
+        },
+        "Status": "Prequalified",
+        "PreservativeDetails": {"Id": "None"},
+        "PreservativeConcentartionDetails": {"Id": None},
+    },
+    "SiteDetails": [
+        {
+            "Organization": {
+                "Identification": {
+                    "Id": "0013X0000498p2wQAA",
+                    "Name": "Haffkine Bio Pharmaceutical Corporation Ltd",
+                },
+                "Address": {
+                    "AddressLine1": "Acharya Donde Marg, Parel",
+                    "City": "Mumbai",
+                    "Country": "India",
+                },
+            },
+            "Status": "Accepted",
+            "SiteActivity": "FVP Manufacture",
+        }
+    ],
+    "ProductIngredients": [
+        {
+            "Identification": {"Id": None},
+            "Type": "Vx FVP",
+            "Unit": "%",
+            "Product": "a3K3X000006MihtUAC",
+            "ProductComponentType": "Diluent",
+            "Function": None,
+        }
+    ],
 }
 
 
@@ -109,6 +211,7 @@ class TestExtractProductFields(unittest.TestCase):
         fields = extract_product_fields(SAMPLE_PRODUCT)
         self.assertEqual(fields["sf_product_id"], "a3K3X000005atRtUAI")
         self.assertEqual(fields["sf_product_name"], "FVP-P-447")
+        self.assertEqual(fields["product_type"], "Finished Vaccine Product")
         self.assertEqual(fields["date_of_prequal"], "2023-12-19")
         self.assertEqual(fields["presentation"], "Vial")
         self.assertEqual(fields["num_doses"], "2")
@@ -122,6 +225,8 @@ class TestExtractProductFields(unittest.TestCase):
         self.assertEqual(fields["vaccine_full_name"], "Recombinant malaria vaccine")
         self.assertEqual(fields["status"], "Prequalified")
         self.assertEqual(fields["pharmaceutical_form"], "Liquid: Ready to use")
+        self.assertEqual(fields["assessment_procedure"], "Prequalification - Standard")
+        self.assertEqual(fields["route_of_administration"], "Intramuscular")
         # Referenced object fields
         self.assertEqual(fields["applicant_website"], "http://www.seruminstitute.com/")
         self.assertEqual(fields["applicant_city"], "Pune")
@@ -129,11 +234,28 @@ class TestExtractProductFields(unittest.TestCase):
         self.assertEqual(fields["nra_website"], "www.cdsco.nic.in")
         self.assertEqual(fields["nra_country"], "India")
         self.assertEqual(fields["vaccine_type_id"], "a3S3X000003cSpnUAE")
+        # Preservative fields (None -> empty string)
+        self.assertEqual(fields["preservative"], "")
+        self.assertEqual(fields["preservative_concentration"], "")
+        # Bulk supplier fields (None -> empty string)
+        self.assertEqual(fields["bulk_supplier_id"], "")
+        self.assertEqual(fields["bulk_supplier_name"], "")
+        # Packaging/document lists
+        self.assertEqual(len(fields["packaging"]), 1)
+        self.assertEqual(len(fields["documents"]), 1)
+
+    def test_product_with_extras(self):
+        fields = extract_product_fields(SAMPLE_PRODUCT_WITH_EXTRAS)
+        self.assertEqual(fields["bulk_supplier_id"], "0013X0000498p3IQAQ")
+        self.assertEqual(fields["bulk_supplier_name"], "PT Bio Farma (Persero)")
+        self.assertEqual(len(fields["sites"]), 1)
+        self.assertEqual(len(fields["ingredients"]), 1)
 
     def test_empty_product(self):
         fields = extract_product_fields({})
         self.assertEqual(fields["sf_product_id"], "")
         self.assertEqual(fields["presentation"], "")
+        self.assertEqual(fields["product_type"], "")
 
 
 class TestGenerateFSH(unittest.TestCase):
@@ -205,8 +327,14 @@ class TestGenerateFSH(unittest.TestCase):
         self.assertIn("a3K3X000005atRtUAI", content)
         self.assertIn("CYVAC", content)
 
-        # Verify required PreQualDBAPI fields are present
-        self.assertIn('status = "Prequalified"', content)
+        # Verify coded metadata fields use code syntax (not string)
+        self.assertIn("productType = #FinishedVaccineProduct", content)
+        self.assertIn("status = #Prequalified", content)
+        self.assertIn("assessmentProcedure = #PrequalificationStandard", content)
+        self.assertIn("pharmaceuticalForm = #LiquidReadytouse", content)
+        self.assertIn("routeOfAdministration = #Intramuscular", content)
+
+        # Verify string fields still use string syntax
         self.assertIn('applicantName = "Serum Institute of India"', content)
         self.assertIn('nraName = "Central Drugs Standard Control Organization (CDSCO)"', content)
 
@@ -217,7 +345,6 @@ class TestGenerateFSH(unittest.TestCase):
         self.assertNotIn("responsibleNRA.text", content)
 
         # Verify $Product and $ProductAuthorization instances are NOT generated
-        # (these depend on external pcmt dependency which may not be available)
         self.assertNotIn("InstanceOf: $Product", content)
         self.assertNotIn("InstanceOf: $ProductAuthorization", content)
 
@@ -226,11 +353,40 @@ class TestGenerateFSH(unittest.TestCase):
         self.assertIn("nraLM = Reference(PreQualNRA", content)
         self.assertIn("vaccineLM = Reference(PreQualVaccine", content)
 
+        # Verify packaging and document LM linkages
+        self.assertIn("packagingLM = Reference(PreQualPackaging", content)
+        self.assertIn("documentLM = Reference(PreQualDocument", content)
+
         cs_content = open(cs_path).read()
         self.assertIn("CodeSystem: PreQualProductIds", cs_content)
 
         vs_content = open(vs_path).read()
         self.assertIn("ValueSet: PreQualProductIds", vs_content)
+
+
+class TestGenerateMetadataCodeSystem(unittest.TestCase):
+    def test_generate_metadata_codesystem(self):
+        tmpdir = tempfile.mkdtemp()
+        products = [extract_product_fields(SAMPLE_PRODUCT)]
+        generate_metadata_codesystem(products, tmpdir)
+
+        cs_path = os.path.join(tmpdir, "codesystems", "prequal_database_metadata.fsh")
+        self.assertTrue(os.path.exists(cs_path))
+        content = open(cs_path).read()
+        self.assertIn("CodeSystem: PreQualDatabaseMetadata", content)
+        self.assertIn('#FinishedVaccineProduct "Finished Vaccine Product"', content)
+        self.assertIn('#PrequalificationStandard "Prequalification - Standard"', content)
+        self.assertIn('#Prequalified "Prequalified"', content)
+        self.assertIn('#LiquidReadytouse "Liquid: Ready to use"', content)
+        self.assertIn('#Intramuscular "Intramuscular"', content)
+        self.assertIn('#ShippingContainer "Shipping Container"', content)
+        self.assertIn('#ActiveVaccine "Active (Vaccine)"', content)
+        self.assertIn('#ProductInsert "Product Insert"', content)
+
+        vs_path = os.path.join(tmpdir, "valuesets", "prequal_database_metadata.fsh")
+        self.assertTrue(os.path.exists(vs_path))
+        vs_content = open(vs_path).read()
+        self.assertIn("ValueSet: PreQualDatabaseMetadata", vs_content)
 
 
 class TestGenerateLMInstances(unittest.TestCase):
@@ -279,6 +435,68 @@ class TestGenerateLMInstances(unittest.TestCase):
         self.assertIn("a3S3X000003cSpnUAE", content)
         self.assertIn('fullName = "Recombinant malaria vaccine"', content)
         self.assertIn('abbreviatedName = "Malaria"', content)
+
+    def test_generate_packaging_lm_instances(self):
+        generate_packaging_lm_instances(self.products, self.tmpdir)
+        path = os.path.join(
+            self.tmpdir, "examples", "prequal_database_packaging_lm.fsh"
+        )
+        self.assertTrue(os.path.exists(path))
+        content = open(path).read()
+        self.assertIn("InstanceOf: PreQualProductPackaging", content)
+        self.assertIn("a3HNN0000007wYl2AI", content)
+        self.assertIn("packagingType = #ShippingContainer", content)
+        self.assertIn("componentPacked = #ActiveVaccine", content)
+
+    def test_generate_document_lm_instances(self):
+        generate_document_lm_instances(self.products, self.tmpdir)
+        path = os.path.join(
+            self.tmpdir, "examples", "prequal_database_document_lm.fsh"
+        )
+        self.assertTrue(os.path.exists(path))
+        content = open(path).read()
+        self.assertIn("InstanceOf: PreQualDocumentDetail", content)
+        self.assertIn("069NN000005lDn4YAE", content)
+        self.assertIn("documentType = #ProductInsert", content)
+        self.assertIn('fileExtension = "pdf"', content)
+
+    def test_generate_bulk_supplier_lm_instances(self):
+        products = [extract_product_fields(SAMPLE_PRODUCT_WITH_EXTRAS)]
+        generate_bulk_supplier_lm_instances(products, self.tmpdir)
+        path = os.path.join(
+            self.tmpdir, "examples", "prequal_database_bulk_supplier_lm.fsh"
+        )
+        self.assertTrue(os.path.exists(path))
+        content = open(path).read()
+        self.assertIn("InstanceOf: PreQualBulkSupplier", content)
+        self.assertIn("0013X0000498p3IQAQ", content)
+        self.assertIn('name = "PT Bio Farma (Persero)"', content)
+
+    def test_generate_site_lm_instances(self):
+        products = [extract_product_fields(SAMPLE_PRODUCT_WITH_EXTRAS)]
+        generate_site_lm_instances(products, self.tmpdir)
+        path = os.path.join(
+            self.tmpdir, "examples", "prequal_database_site_lm.fsh"
+        )
+        self.assertTrue(os.path.exists(path))
+        content = open(path).read()
+        self.assertIn("InstanceOf: PreQualSiteDetail", content)
+        self.assertIn("0013X0000498p2wQAA", content)
+        self.assertIn('siteOrganizationName = "Haffkine Bio Pharmaceutical Corporation Ltd"', content)
+        self.assertIn("siteStatus = #Accepted", content)
+        self.assertIn("siteActivity = #FVPManufacture", content)
+
+    def test_generate_ingredient_lm_instances(self):
+        products = [extract_product_fields(SAMPLE_PRODUCT_WITH_EXTRAS)]
+        generate_ingredient_lm_instances(products, self.tmpdir)
+        path = os.path.join(
+            self.tmpdir, "examples", "prequal_database_ingredient_lm.fsh"
+        )
+        self.assertTrue(os.path.exists(path))
+        content = open(path).read()
+        self.assertIn("InstanceOf: PreQualProductIngredient", content)
+        self.assertIn("ingredientType = #VxFVP", content)
+        self.assertIn("productComponentType = #Diluent", content)
 
 
 class TestLoadJsonFile(unittest.TestCase):

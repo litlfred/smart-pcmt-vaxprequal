@@ -13,8 +13,11 @@
 
 Instance: PreQualDBa3K3X000005atRtUAI
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2023-12-19
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -25,6 +28,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Recombinant malaria vaccine"
 * vaccineAbbreviatedName = "Malaria"
 * vaccineCommercialName = "CYVAC"
+* routeOfAdministration = #Intramuscular
 * applicantName = "Serum Institute of India"
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
@@ -32,6 +36,10 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpnUAE)
+* packagingLM = Reference(PreQualPackaginga3HNN0000007wYl2AI)
+* packagingLM = Reference(PreQualPackaginga3HNN0000007wYk2AI)
+* packagingLM = Reference(PreQualPackaginga3HNN0000007wYj2AI)
+* documentLM = Reference(PreQualDocument069NN000005lDn4YAE)
 
 
 // Source Record Row //: 2
@@ -48,8 +56,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000005atSwUAI
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2023-12-19
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -60,6 +71,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Recombinant malaria vaccine"
 * vaccineAbbreviatedName = "Malaria"
 * vaccineCommercialName = "CYVAC"
+* routeOfAdministration = #Intramuscular
 * applicantName = "Serum Institute of India"
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
@@ -67,6 +79,10 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpnUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000002OBWgUAO)
+* packagingLM = Reference(PreQualPackaginga3H3X000002OBWfUAO)
+* packagingLM = Reference(PreQualPackaginga3H3X000002OBWeUAO)
+* documentLM = Reference(PreQualDocument069NN000005lDwoYAE)
 
 
 // Source Record Row //: 3
@@ -83,8 +99,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MihsUAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2007-01-29
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Plastictube
 * presentation.coding.display = "Plastic tube"
@@ -95,6 +114,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Rotavirus vaccine (live attenuated) (oral)"
 * vaccineAbbreviatedName = "LARV"
 * vaccineCommercialName = "Rotarix"
+* routeOfAdministration = #Oral
 * applicantName = "GlaxoSmithKline Biologicals SA"
 * nraName = "Federal Agency for Medicines and Health Products  (FAMPH)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p3gQAA)
@@ -102,6 +122,18 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p3gQAA)
 * nraLM = Reference(PreQualNRA0013X0000498p67QAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpYUAU)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaGUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaFUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaEUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaDUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaCUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaBUAS)
+* documentLM = Reference(PreQualDocument069NN000005hwh7YAA)
+* documentLM = Reference(PreQualDocument069NN000005hxOcYAI)
+* documentLM = Reference(PreQualDocument069NN000005hzzuYAA)
+* documentLM = Reference(PreQualDocument069NN000005i287YAA)
+* documentLM = Reference(PreQualDocument069NN000005i3fGYAQ)
+* siteLM = Reference(PreQualSite0013X0000498p3gQAA)
 
 
 // Source Record Row //: 4
@@ -118,8 +150,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MihtUAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-02-02
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -130,6 +165,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Poliomyelitis vaccines (trivalent live, oral, innactivated, type 1,2, 3)"
 * vaccineAbbreviatedName = "tOPV"
 * vaccineCommercialName = "Polioviral vaccine"
+* routeOfAdministration = #Oral
 * applicantName = "Haffkine Bio Pharmaceutical Corporation Ltd"
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2wQAA)
@@ -137,6 +173,14 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2wQAA)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpjUAE)
+* bulkSupplierLM = Reference(PreQualBulkSupplier0013X0000498p3IQAQ)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaHUAS)
+* documentLM = Reference(PreQualDocument069NN000005hsVMYAY)
+* documentLM = Reference(PreQualDocument069NN000005hykYYAQ)
+* documentLM = Reference(PreQualDocument069NN000005i3IgYAI)
+* documentLM = Reference(PreQualDocument069NN000005i48IYAQ)
+* siteLM = Reference(PreQualSite0013X0000498p2wQAA)
+* siteLM = Reference(PreQualSite0013X0000498p3IQAQ)
 
 
 // Source Record Row //: 5
@@ -153,8 +197,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MihuUAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2001-03-20
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Ampoule
 * presentation.coding.display = "Ampoule"
@@ -165,6 +212,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "Stabilized Yellow Fever Vaccine"
+* routeOfAdministration = #Intramuscularorsubcutaneous
 * applicantName = "Institut Pasteur de Dakar (IPD)"
 * nraName = "Ministère de la Santé publique (DPM)"
 * manufacturerReference = Reference(Manufacturer0013X000049bJ9SQAU)
@@ -172,6 +220,10 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X000049bJ9SQAU)
 * nraLM = Reference(PreQualNRA0013X0000498p53QAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpuUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaIUAS)
+* documentLM = Reference(PreQualDocument069NN000005i24tYAA)
+* siteLM = Reference(PreQualSite0013X000049bJ9SQAU)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MihuUACIng1)
 
 
 // Source Record Row //: 6
@@ -188,8 +240,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MihvUAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2001-03-20
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Ampoule
 * presentation.coding.display = "Ampoule"
@@ -200,6 +255,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "Stabilized Yellow Fever Vaccine"
+* routeOfAdministration = #Intramuscularorsubcutaneous
 * applicantName = "Institut Pasteur de Dakar (IPD)"
 * nraName = "Ministère de la Santé publique (DPM)"
 * manufacturerReference = Reference(Manufacturer0013X000049bJ9SQAU)
@@ -207,6 +263,13 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X000049bJ9SQAU)
 * nraLM = Reference(PreQualNRA0013X0000498p53QAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpuUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaJUAS)
+* documentLM = Reference(PreQualDocument069NN000005i1dXYAQ)
+* documentLM = Reference(PreQualDocument069NN000005i2OIYAY)
+* documentLM = Reference(PreQualDocument069NN000005i2svYAA)
+* documentLM = Reference(PreQualDocument069NN000005i4HzYAI)
+* siteLM = Reference(PreQualSite0013X000049bJ9SQAU)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MihvUACIng1)
 
 
 // Source Record Row //: 7
@@ -223,8 +286,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MihwUAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2001-03-20
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Ampoule
 * presentation.coding.display = "Ampoule"
@@ -235,6 +301,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Yellow fever vaccine (live attenuated)"
 * vaccineAbbreviatedName = "YF"
 * vaccineCommercialName = "Stabilized Yellow Fever Vaccine"
+* routeOfAdministration = #Intramuscularorsubcutaneous
 * applicantName = "Institut Pasteur de Dakar (IPD)"
 * nraName = "Ministère de la Santé publique (DPM)"
 * manufacturerReference = Reference(Manufacturer0013X000049bJ9SQAU)
@@ -242,6 +309,13 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X000049bJ9SQAU)
 * nraLM = Reference(PreQualNRA0013X0000498p53QAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpuUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaKUAS)
+* documentLM = Reference(PreQualDocument069NN000005hzTfYAI)
+* documentLM = Reference(PreQualDocument069NN000005i0W8YAI)
+* documentLM = Reference(PreQualDocument069NN000005i4hmYAA)
+* documentLM = Reference(PreQualDocument069NN000005i57cYAA)
+* siteLM = Reference(PreQualSite0013X000049bJ9SQAU)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MihwUACIng1)
 
 
 // Source Record Row //: 8
@@ -258,8 +332,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MihxUAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 1987-01-01
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Ampoule
 * presentation.coding.display = "Ampoule"
@@ -270,6 +347,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "BCG"
 * vaccineAbbreviatedName = "BCG"
 * vaccineCommercialName = "BCG Freeze Dried Glutamate vaccine"
+* routeOfAdministration = #Intradermal
 * applicantName = "Japan BCG Laboratory (JBL)"
 * nraName = "Pharmaceutical and Medical Devices Agency (PMDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p4ZQAQ)
@@ -277,6 +355,16 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p4ZQAQ)
 * nraLM = Reference(PreQualNRA0013X0000498p4mQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSogUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaOUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaNUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaMUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaLUAS)
+* documentLM = Reference(PreQualDocument069NN000005hzjwYAA)
+* documentLM = Reference(PreQualDocument069NN000005i0uTYAQ)
+* documentLM = Reference(PreQualDocument069NN000005i6DJYAY)
+* siteLM = Reference(PreQualSite0013X0000498p4ZQAQ)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MihxUACIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MihxUACIng2)
 
 
 // Source Record Row //: 9
@@ -293,8 +381,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MihyUAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 1996-11-22
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -305,13 +396,25 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Euvax B"
+* routeOfAdministration = #Intramuscular
 * applicantName = "LG Chem Ltd (LGC)"
 * nraName = "Ministry of Food and Drug Safety (MFDS)"
+* preservative = "Thiomersal"
+* preservativeConcentration = "0.01%"
 * manufacturerReference = Reference(Manufacturer0013X00004993qnQAA)
 * responsibleNRAReference = Reference(Holder0013X00004993qyQAA) // Ministry of Food and Drug Safety (MFDS)
 * manufacturerLM = Reference(PreQualManufacturer0013X00004993qnQAA)
 * nraLM = Reference(PreQualNRA0013X00004993qyQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpJUAU)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaQUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaPUAS)
+* documentLM = Reference(PreQualDocument069NN000005hwyuYAA)
+* documentLM = Reference(PreQualDocument069NN000005hyvmYAA)
+* documentLM = Reference(PreQualDocument069NN000005i2jEYAQ)
+* documentLM = Reference(PreQualDocument069NN000005i5QyYAI)
+* siteLM = Reference(PreQualSite0013X00004993qnQAA)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MihyUACIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MihyUACIng2)
 
 
 // Source Record Row //: 11
@@ -328,8 +431,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006Mii0UAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2001-03-09
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -340,6 +446,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Priorix"
+* routeOfAdministration = #Intramuscularorsubcutaneous
 * applicantName = "GlaxoSmithKline Biologicals SA"
 * nraName = "Federal Agency for Medicines and Health Products  (FAMPH)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p3gQAA)
@@ -347,6 +454,19 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p3gQAA)
 * nraLM = Reference(PreQualNRA0013X0000498p67QAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpaUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaYUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaXUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaWUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaVUAS)
+* documentLM = Reference(PreQualDocument069NN000005hpfqYAA)
+* documentLM = Reference(PreQualDocument069NN000005huAeYAI)
+* documentLM = Reference(PreQualDocument069NN000005hvDPYAY)
+* documentLM = Reference(PreQualDocument069NN000005hx6rYAA)
+* siteLM = Reference(PreQualSite0013X0000498p3gQAA)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii0UACIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii0UACIng2)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii0UACIng3)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii0UACIng4)
 
 
 // Source Record Row //: 12
@@ -363,8 +483,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006Mii1UAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -375,13 +498,24 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "Tetatox"
+* routeOfAdministration = #Intramuscular
 * applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * nraName = "Bulgarian Drug Agency (BDA)"
+* preservative = "Thiomersal"
+* preservativeConcentration = "0.1 mg/mL"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpqUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaaUAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaZUAS)
+* documentLM = Reference(PreQualDocument069NN000005i1aFYAQ)
+* documentLM = Reference(PreQualDocument069NN000005i7PWYAY)
+* documentLM = Reference(PreQualDocument069NN000005i9CoYAI)
+* siteLM = Reference(PreQualSite0013X0000498p2jQAA)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii1UACIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii1UACIng2)
 
 
 // Source Record Row //: 13
@@ -398,8 +532,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006Mii2UAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -410,13 +547,24 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "Tetatox"
+* routeOfAdministration = #Intramuscular
 * applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * nraName = "Bulgarian Drug Agency (BDA)"
+* preservative = "Thiomersal"
+* preservativeConcentration = "0.1 mg/mL"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpqUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaacUAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaabUAC)
+* documentLM = Reference(PreQualDocument069NN000005hyzMYAQ)
+* documentLM = Reference(PreQualDocument069NN000005i0HgYAI)
+* documentLM = Reference(PreQualDocument069NN000005i5igYAA)
+* siteLM = Reference(PreQualSite0013X0000498p2jQAA)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii2UACIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii2UACIng2)
 
 
 // Source Record Row //: 14
@@ -433,8 +581,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006Mii3UAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -445,13 +596,25 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DT"
 * vaccineCommercialName = "Diftet"
+* routeOfAdministration = #Intramuscular
 * applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * nraName = "Bulgarian Drug Agency (BDA)"
+* preservative = "Thiomersal"
+* preservativeConcentration = "0.01%"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSojUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaeUAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaadUAC)
+* documentLM = Reference(PreQualDocument069NN000005i51DYAQ)
+* documentLM = Reference(PreQualDocument069NN000005i55zYAA)
+* documentLM = Reference(PreQualDocument069NN000005i5CfYAI)
+* siteLM = Reference(PreQualSite0013X0000498p2jQAA)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii3UACIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii3UACIng2)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii3UACIng3)
 
 
 // Source Record Row //: 16
@@ -468,8 +631,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006Mii5UAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2017-12-22
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -480,6 +646,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Hepatitis A vaccine (inactivated)"
 * vaccineAbbreviatedName = "HepA"
 * vaccineCommercialName = "HEALIVE"
+* routeOfAdministration = #Intramuscular
 * applicantName = "Sinovac Biotech Co. Ltd"
 * nraName = "National Medical Products Administration  (NMPA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p3ZQAQ)
@@ -487,6 +654,14 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p3ZQAQ)
 * nraLM = Reference(PreQualNRA0013X0000498p4wQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpIUAU)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaanUAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaamUAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaalUAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaakUAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaajUAC)
+* documentLM = Reference(PreQualDocument069NN000005kHUSYA2)
+* siteLM = Reference(PreQualSite0013X0000498p3ZQAQ)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii5UACIng1)
 
 
 // Source Record Row //: 17
@@ -503,8 +678,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006Mii6UAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2017-12-21
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -515,6 +693,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
 * vaccineAbbreviatedName = "bOPV"
 * vaccineCommercialName = "Poliomyelitis Vaccine (live oral attenuated human Diploid Cell) type 1 and 3"
+* routeOfAdministration = #Oral
 * applicantName = "Beijing Institute of Biological Products Co., Ltd."
 * nraName = "National Medical Products Administration  (NMPA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p4LQAQ)
@@ -522,6 +701,15 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p4LQAQ)
 * nraLM = Reference(PreQualNRA0013X0000498p4wQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpiUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaapUAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaoUAC)
+* documentLM = Reference(PreQualDocument069NN000005kFnaYAE)
+* documentLM = Reference(PreQualDocument069NN000005kGJsYAM)
+* documentLM = Reference(PreQualDocument069NN000005kJG6YAM)
+* documentLM = Reference(PreQualDocument069NN000005kJhVYAU)
+* siteLM = Reference(PreQualSite0013X0000498p4LQAQ)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii6UACIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii6UACIng2)
 
 
 // Source Record Row //: 18
@@ -538,8 +726,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006Mii7UAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 1996-11-22
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -550,13 +741,26 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Hepatitis B vaccine (recombinant)"
 * vaccineAbbreviatedName = "HepB"
 * vaccineCommercialName = "Euvax B"
+* routeOfAdministration = #Intramuscular
 * applicantName = "LG Chem Ltd (LGC)"
 * nraName = "Ministry of Food and Drug Safety (MFDS)"
+* preservative = "Thiomersal"
+* preservativeConcentration = "0.01%"
 * manufacturerReference = Reference(Manufacturer0013X00004993qnQAA)
 * responsibleNRAReference = Reference(Holder0013X00004993qyQAA) // Ministry of Food and Drug Safety (MFDS)
 * manufacturerLM = Reference(PreQualManufacturer0013X00004993qnQAA)
 * nraLM = Reference(PreQualNRA0013X00004993qyQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpJUAU)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaasUAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaarUAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaqUAC)
+* documentLM = Reference(PreQualDocument069NN000005i2XxYAI)
+* documentLM = Reference(PreQualDocument069NN000005i2ZZYAY)
+* documentLM = Reference(PreQualDocument069NN000005i3AhYAI)
+* documentLM = Reference(PreQualDocument069NN000005i4mdYAA)
+* documentLM = Reference(PreQualDocument069NN000005i5aeYAA)
+* siteLM = Reference(PreQualSite0013X00004993qnQAA)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii7UACIng1)
 
 
 // Source Record Row //: 19
@@ -573,8 +777,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006Mii8UAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -585,13 +792,25 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DT"
 * vaccineCommercialName = "Diftet"
+* routeOfAdministration = #Intramuscular
 * applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * nraName = "Bulgarian Drug Agency (BDA)"
+* preservative = "Thiomersal"
+* preservativeConcentration = "0.01%"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSojUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaauUAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaatUAC)
+* documentLM = Reference(PreQualDocument069NN000005i4gCYAQ)
+* documentLM = Reference(PreQualDocument069NN000005i9hYYAQ)
+* documentLM = Reference(PreQualDocument069NN000005iAIXYA2)
+* siteLM = Reference(PreQualSite0013X0000498p2jQAA)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii8UACIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii8UACIng2)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii8UACIng3)
 
 
 // Source Record Row //: 20
@@ -608,8 +827,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006Mii9UAC
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -620,13 +842,25 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineAbbreviatedName = "dT"
 * vaccineCommercialName = "Tetadif"
+* routeOfAdministration = #Intramuscular
 * applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * nraName = "Bulgarian Drug Agency (BDA)"
+* preservative = "Thiomersal"
+* preservativeConcentration = "0.01%"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSokUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaawUAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaavUAC)
+* documentLM = Reference(PreQualDocument069NN000005i5UHYAY)
+* documentLM = Reference(PreQualDocument069NN000005i65LYAQ)
+* documentLM = Reference(PreQualDocument069NN000005iAAVYA2)
+* siteLM = Reference(PreQualSite0013X0000498p2jQAA)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii9UACIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii9UACIng2)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006Mii9UACIng3)
 
 
 // Source Record Row //: 21
@@ -643,8 +877,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MiiAUAS
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -655,13 +892,25 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
 * vaccineAbbreviatedName = "dT"
 * vaccineCommercialName = "Tetadif"
+* routeOfAdministration = #Intramuscular
 * applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * nraName = "Bulgarian Drug Agency (BDA)"
+* preservative = "Thiomersal"
+* preservativeConcentration = "0.01%"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
 * responsibleNRAReference = Reference(Holder0013X00003cPkgXQAS) // Bulgarian Drug Agency (BDA)
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSokUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaayUAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaaxUAC)
+* documentLM = Reference(PreQualDocument069NN000005i0mQYAQ)
+* documentLM = Reference(PreQualDocument069NN000005i4mgYAA)
+* documentLM = Reference(PreQualDocument069NN000005i5XUYAY)
+* siteLM = Reference(PreQualSite0013X0000498p2jQAA)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiAUASIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiAUASIng2)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiAUASIng3)
 
 
 // Source Record Row //: 22
@@ -678,8 +927,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MiiBUAS
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2020-03-25
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Twovialsetactiveexcipient
 * presentation.coding.display = "Two vial set (active + excipient)"
@@ -690,6 +942,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Dengue tetravalent vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "TDV"
 * vaccineCommercialName = "Dengvaxia"
+* routeOfAdministration = #Subcutaneous
 * applicantName = "Sanofi Pasteur SA"
 * nraName = "Agence nationale de sécurité du médicament et des produits de santé (ANSM)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p3PQAQ)
@@ -697,6 +950,15 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p3PQAQ)
 * nraLM = Reference(PreQualNRA0013X0000498p4bQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSoiUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001Vab0UAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VaazUAC)
+* documentLM = Reference(PreQualDocument069NN000005knsbYAA)
+* siteLM = Reference(PreQualSite0013X0000498p3PQAQ)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiBUASIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiBUASIng2)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiBUASIng3)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiBUASIng4)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiBUASIng5)
 
 
 // Source Record Row //: 23
@@ -713,8 +975,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MiiCUAS
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 1991-02-01
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Ampoule
 * presentation.coding.display = "Ampoule"
@@ -725,6 +990,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "BCG"
 * vaccineAbbreviatedName = "BCG"
 * vaccineCommercialName = "BCG Vaccine"
+* routeOfAdministration = #Intradermal
 * applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
@@ -732,6 +998,17 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSogUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001Vab4UAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001Vab3UAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001Vab2UAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001Vab1UAC)
+* documentLM = Reference(PreQualDocument069NN000005huyhYAA)
+* documentLM = Reference(PreQualDocument069NN000005hziIYAQ)
+* documentLM = Reference(PreQualDocument069NN000005i0XuYAI)
+* documentLM = Reference(PreQualDocument069NN000005i873YAA)
+* siteLM = Reference(PreQualSite0013X0000498p2jQAA)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiCUASIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiCUASIng2)
 
 
 // Source Record Row //: 24
@@ -748,8 +1025,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MiiDUAS
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 1991-02-01
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Ampoule
 * presentation.coding.display = "Ampoule"
@@ -760,6 +1040,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "BCG"
 * vaccineAbbreviatedName = "BCG"
 * vaccineCommercialName = "BCG Vaccine"
+* routeOfAdministration = #Intradermal
 * applicantName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * nraName = "Bulgarian Drug Agency (BDA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2jQAA)
@@ -767,6 +1048,17 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2jQAA)
 * nraLM = Reference(PreQualNRA0013X00003cPkgXQAS)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSogUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001Vab8UAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001Vab7UAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001Vab6UAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001Vab5UAC)
+* documentLM = Reference(PreQualDocument069NN000005i1VTYAY)
+* documentLM = Reference(PreQualDocument069NN000005i1nFYAQ)
+* documentLM = Reference(PreQualDocument069NN000005i2JVYAY)
+* documentLM = Reference(PreQualDocument069NN000005i4umYAA)
+* siteLM = Reference(PreQualSite0013X0000498p2jQAA)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiDUASIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiDUASIng2)
 
 
 // Source Record Row //: 25
@@ -783,8 +1075,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MiiEUAS
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 1993-02-15
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -795,6 +1090,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MR"
 * vaccineCommercialName = "Measles and Rubella Vaccine Live Attenuated"
+* routeOfAdministration = #Subcutaneous
 * applicantName = "Serum Institute of India"
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
@@ -802,6 +1098,17 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpbUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabBUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabAUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001Vab9UAC)
+* documentLM = Reference(PreQualDocument069NN000005iDEtYAM)
+* documentLM = Reference(PreQualDocument069NN000005iJyYYAU)
+* documentLM = Reference(PreQualDocument069NN000005iKMmYAM)
+* documentLM = Reference(PreQualDocument069NN000005iKxrYAE)
+* siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiEUASIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiEUASIng2)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiEUASIng3)
 
 
 // Source Record Row //: 26
@@ -818,8 +1125,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MiiFUAS
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 1995-04-04
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -830,13 +1140,25 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Tetanus vaccine (adsorbed)"
 * vaccineAbbreviatedName = "TT"
 * vaccineCommercialName = "Tetanus  Toxoid Vaccine Adsorbed"
+* routeOfAdministration = #Intramuscular
 * applicantName = "Serum Institute of India"
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
+* preservative = "Thiomersal"
+* preservativeConcentration = "0.01%"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpqUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabDUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabCUAS)
+* documentLM = Reference(PreQualDocument069NN000005iHaBYAU)
+* documentLM = Reference(PreQualDocument069NN000005iJ7LYAU)
+* documentLM = Reference(PreQualDocument069NN000005iJTxYAM)
+* documentLM = Reference(PreQualDocument069NN000005iLDxYAM)
+* siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiFUASIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiFUASIng2)
 
 
 // Source Record Row //: 27
@@ -853,8 +1175,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MiiGUAS
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 1993-02-15
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -865,6 +1190,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Measles, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MR"
 * vaccineCommercialName = "Measles and Rubella Vaccine Live Attenuated"
+* routeOfAdministration = #Subcutaneous
 * applicantName = "Serum Institute of India"
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
@@ -872,6 +1198,17 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpbUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabGUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabFUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabEUAS)
+* documentLM = Reference(PreQualDocument069NN000005iGB5YAM)
+* documentLM = Reference(PreQualDocument069NN000005iH8nYAE)
+* documentLM = Reference(PreQualDocument069NN000005iHf1YAE)
+* documentLM = Reference(PreQualDocument069NN000005iLInYAM)
+* siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiGUASIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiGUASIng2)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiGUASIng3)
 
 
 // Source Record Row //: 28
@@ -888,8 +1225,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MiiHUAS
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2003-08-08
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -900,6 +1240,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* routeOfAdministration = #Subcutaneous
 * applicantName = "Serum Institute of India"
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
@@ -907,6 +1248,18 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpaUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabJUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabIUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabHUAS)
+* documentLM = Reference(PreQualDocument069NN000005iGEMYA2)
+* documentLM = Reference(PreQualDocument069NN000005iK8HYAU)
+* documentLM = Reference(PreQualDocument069NN000005iKWQYA2)
+* documentLM = Reference(PreQualDocument069NN000005iKrOYAU)
+* siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiHUASIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiHUASIng2)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiHUASIng3)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiHUASIng4)
 
 
 // Source Record Row //: 29
@@ -923,8 +1276,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MiiIUAS
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2003-08-08
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -935,6 +1291,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* routeOfAdministration = #Subcutaneous
 * applicantName = "Serum Institute of India"
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
@@ -942,6 +1299,18 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpaUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabMUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabLUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabKUAS)
+* documentLM = Reference(PreQualDocument069NN000005iEvgYAE)
+* documentLM = Reference(PreQualDocument069NN000005iJiVYAU)
+* documentLM = Reference(PreQualDocument069NN000005iL9AYAU)
+* documentLM = Reference(PreQualDocument069NN000005iLkDYAU)
+* siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiIUASIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiIUASIng2)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiIUASIng3)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiIUASIng4)
 
 
 // Source Record Row //: 30
@@ -958,8 +1327,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MiiJUAS
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2003-08-08
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -970,6 +1342,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* routeOfAdministration = #Subcutaneous
 * applicantName = "Serum Institute of India"
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
@@ -977,6 +1350,18 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpaUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabPUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabOUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabNUAS)
+* documentLM = Reference(PreQualDocument069NN000005iCqdYAE)
+* documentLM = Reference(PreQualDocument069NN000005iKTCYA2)
+* documentLM = Reference(PreQualDocument069NN000005iKkwYAE)
+* documentLM = Reference(PreQualDocument069NN000005iLcCYAU)
+* siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiJUASIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiJUASIng2)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiJUASIng3)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiJUASIng4)
 
 
 // Source Record Row //: 31
@@ -993,8 +1378,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MiiKUAS
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2003-08-08
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -1005,6 +1393,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "MMR"
 * vaccineCommercialName = "Measles Mumps and Rubella Vaccine Live Attenuated"
+* routeOfAdministration = #Subcutaneous
 * applicantName = "Serum Institute of India"
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
@@ -1012,6 +1401,18 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpaUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabSUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabRUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabQUAS)
+* documentLM = Reference(PreQualDocument069NN000005iGiyYAE)
+* documentLM = Reference(PreQualDocument069NN000005iIUfYAM)
+* documentLM = Reference(PreQualDocument069NN000005iKRaYAM)
+* documentLM = Reference(PreQualDocument069NN000005iLQxYAM)
+* siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiKUASIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiKUASIng2)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiKUASIng3)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiKUASIng4)
 
 
 // Source Record Row //: 32
@@ -1028,8 +1429,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MiiLUAS
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 2013-10-09
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Twovialsetactiveexcipient
 * presentation.coding.display = "Two vial set (active + excipient)"
@@ -1040,6 +1444,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Japanese encephalitis vaccine (live, attenuated) for human use"
 * vaccineAbbreviatedName = "JE"
 * vaccineCommercialName = "Japanese Encephalitis Vaccine Live (SA14-14-2)"
+* routeOfAdministration = #Subcutaneous
 * applicantName = "Chengdu Institute of Biological Products Co. Ltd"
 * nraName = "National Medical Products Administration  (NMPA)"
 * manufacturerReference = Reference(Manufacturer0013X0000498p2qQAA)
@@ -1047,6 +1452,14 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X0000498p2qQAA)
 * nraLM = Reference(PreQualNRA0013X0000498p4wQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpXUAU)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabUUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabTUAS)
+* documentLM = Reference(PreQualDocument069NN000005kEI2YAM)
+* documentLM = Reference(PreQualDocument069NN000005kEQ6YAM)
+* documentLM = Reference(PreQualDocument069NN000005kEZlYAM)
+* documentLM = Reference(PreQualDocument069NN000005kErVYAU)
+* siteLM = Reference(PreQualSite0013X0000498p2qQAA)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiLUASIng1)
 
 
 // Source Record Row //: 33
@@ -1063,8 +1476,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MiiMUAS
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 1993-02-15
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -1075,6 +1491,7 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Measles vaccine (live, attenuated)"
 * vaccineAbbreviatedName = "M"
 * vaccineCommercialName = "Measles Vaccine Live Attenuated"
+* routeOfAdministration = #Subcutaneous
 * applicantName = "Serum Institute of India"
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
@@ -1082,6 +1499,16 @@ InstanceOf: PreQualProduct
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSpZUAU)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabXUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabWUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabVUAS)
+* documentLM = Reference(PreQualDocument069NN000005iA7QYAU)
+* documentLM = Reference(PreQualDocument069NN000005iK6fYAE)
+* documentLM = Reference(PreQualDocument069NN000005iLQyYAM)
+* documentLM = Reference(PreQualDocument069NN000005iLnTYAU)
+* siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiMUASIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiMUASIng2)
 
 
 // Source Record Row //: 34
@@ -1098,8 +1525,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MiiNUAS
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 1995-04-04
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Ampoule
 * presentation.coding.display = "Ampoule"
@@ -1110,13 +1540,27 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP"
 * vaccineCommercialName = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
+* routeOfAdministration = #Intramuscular
 * applicantName = "Serum Institute of India"
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
+* preservative = "Thiomersal"
+* preservativeConcentration = "0.01%"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSomUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabZUAS)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabYUAS)
+* documentLM = Reference(PreQualDocument069NN000005i60aYAA)
+* documentLM = Reference(PreQualDocument069NN000005iAiPYAU)
+* documentLM = Reference(PreQualDocument069NN000005iFlFYAU)
+* documentLM = Reference(PreQualDocument069NN000005iFy9YAE)
+* siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiNUASIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiNUASIng2)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiNUASIng3)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiNUASIng4)
 
 
 // Source Record Row //: 35
@@ -1133,8 +1577,11 @@ InstanceOf: PreQualProduct
 
 Instance: PreQualDBa3K3X000006MiiOUAS
 InstanceOf: PreQualProduct
+* productType = #FinishedVaccineProduct
 * dateOfPrequal = 1995-04-04
-* status = "Prequalified"
+* assessmentProcedure = #PrequalificationStandard
+* status = #Prequalified
+* pharmaceuticalForm = #LiquidReadytouse
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"
 * presentation.coding.code = #Vial
 * presentation.coding.display = "Vial"
@@ -1145,11 +1592,25 @@ InstanceOf: PreQualProduct
 * vaccineFullName = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
 * vaccineAbbreviatedName = "DTwP"
 * vaccineCommercialName = "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed"
+* routeOfAdministration = #Intramuscular
 * applicantName = "Serum Institute of India"
 * nraName = "Central Drugs Standard Control Organization (CDSCO)"
+* preservative = "Thiomersal"
+* preservativeConcentration = "0.01%"
 * manufacturerReference = Reference(Manufacturer0013X00003cPkzfQAC)
 * responsibleNRAReference = Reference(Holder0013X0000498p4fQAA) // Central Drugs Standard Control Organization (CDSCO)
 * manufacturerLM = Reference(PreQualManufacturer0013X00003cPkzfQAC)
 * nraLM = Reference(PreQualNRA0013X0000498p4fQAA)
 * vaccineLM = Reference(PreQualVaccinea3S3X000003cSomUAE)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabbUAC)
+* packagingLM = Reference(PreQualPackaginga3H3X000001VabaUAC)
+* documentLM = Reference(PreQualDocument069NN000005i8GtYAI)
+* documentLM = Reference(PreQualDocument069NN000005i8GuYAI)
+* documentLM = Reference(PreQualDocument069NN000005iC2hYAE)
+* documentLM = Reference(PreQualDocument069NN000005iGHVYA2)
+* siteLM = Reference(PreQualSite0013X00003cPkzfQAC)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiOUASIng1)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiOUASIng2)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiOUASIng3)
+* ingredientLM = Reference(PreQualIngredienta3K3X000006MiiOUASIng4)
 
