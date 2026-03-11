@@ -30,6 +30,7 @@ from import_salesforce import (
     generate_vaccine_types_codesystem,
     load_json_file,
     md5hash,
+    read_existing_codes,
     sanitize_alpha,
     sanitize_code,
 )
@@ -572,6 +573,94 @@ class TestSkipWithdrawnProducts(unittest.TestCase):
         # The withdrawn product should be skipped
         self.assertNotIn("a3K3X000006MihzUAC", content)
         # The normal product should still be present
+        self.assertIn("a3K3X000005atRtUAI", content)
+
+
+class TestAdditiveCodeSystems(unittest.TestCase):
+    """CodeSystem generation must preserve existing codes that are not in current data."""
+
+    def test_read_existing_codes(self):
+        tmpdir = tempfile.mkdtemp()
+        cs_path = os.path.join(tmpdir, "test.fsh")
+        with open(cs_path, "w") as f:
+            f.write('CodeSystem: Test\n')
+            f.write('* #Foo "Foo label"\n')
+            f.write('* #Bar "Bar label"\n')
+        codes = read_existing_codes(cs_path)
+        self.assertIn("Foo", codes)
+        self.assertIn("Bar", codes)
+        self.assertEqual(codes["Foo"], '* #Foo "Foo label"')
+
+    def test_read_existing_codes_nonexistent_file(self):
+        codes = read_existing_codes("/tmp/nonexistent_file_xyz.fsh")
+        self.assertEqual(len(codes), 0)
+
+    def test_presentations_preserves_existing_codes(self):
+        tmpdir = tempfile.mkdtemp()
+        os.makedirs(os.path.join(tmpdir, "codesystems"), exist_ok=True)
+        os.makedirs(os.path.join(tmpdir, "valuesets"), exist_ok=True)
+        # Pre-populate with extra code not in current data
+        cs_path = os.path.join(tmpdir, "codesystems", "prequal_presentation.fsh")
+        with open(cs_path, "w") as f:
+            f.write('CodeSystem: PreQualPresentation\n')
+            f.write('* #Vial "Vial"\n')
+            f.write('* #Syringe "Pre-filled Syringe"\n')  # not in sample data
+
+        products = [extract_product_fields(SAMPLE_PRODUCT)]
+        generate_presentations_codesystem(products, tmpdir)
+        content = open(cs_path).read()
+        # Existing code preserved
+        self.assertIn('#Syringe "Pre-filled Syringe"', content)
+        # New/current code still present
+        self.assertIn('#Vial "Vial"', content)
+
+    def test_vaccine_types_preserves_existing_codes(self):
+        tmpdir = tempfile.mkdtemp()
+        os.makedirs(os.path.join(tmpdir, "codesystems"), exist_ok=True)
+        os.makedirs(os.path.join(tmpdir, "valuesets"), exist_ok=True)
+        cs_path = os.path.join(tmpdir, "codesystems", "preQualVaccineTypes.fsh")
+        with open(cs_path, "w") as f:
+            f.write('CodeSystem: PreQualVaccineType\n')
+            f.write('* #Malaria "Malaria"\n')
+            f.write('* #COVID19 "COVID-19"\n')  # not in sample data
+
+        products = [extract_product_fields(SAMPLE_PRODUCT)]
+        generate_vaccine_types_codesystem(products, tmpdir)
+        content = open(cs_path).read()
+        self.assertIn('#COVID19 "COVID-19"', content)
+        self.assertIn('#Malaria "Malaria"', content)
+
+    def test_metadata_preserves_existing_codes(self):
+        tmpdir = tempfile.mkdtemp()
+        os.makedirs(os.path.join(tmpdir, "codesystems"), exist_ok=True)
+        os.makedirs(os.path.join(tmpdir, "valuesets"), exist_ok=True)
+        cs_path = os.path.join(tmpdir, "codesystems", "prequal_database_metadata.fsh")
+        with open(cs_path, "w") as f:
+            f.write('CodeSystem: PreQualDatabaseMetadata\n')
+            f.write('* #Prequalified "Prequalified"\n')
+            f.write('* #OldLegacyCode "Some old value"\n')  # not in sample data
+
+        products = [extract_product_fields(SAMPLE_PRODUCT)]
+        generate_metadata_codesystem(products, tmpdir)
+        content = open(cs_path).read()
+        self.assertIn('#OldLegacyCode "Some old value"', content)
+        self.assertIn('#Prequalified "Prequalified"', content)
+
+    def test_product_ids_preserves_existing_codes(self):
+        tmpdir = tempfile.mkdtemp()
+        os.makedirs(os.path.join(tmpdir, "codesystems"), exist_ok=True)
+        os.makedirs(os.path.join(tmpdir, "valuesets"), exist_ok=True)
+        os.makedirs(os.path.join(tmpdir, "examples"), exist_ok=True)
+        cs_path = os.path.join(tmpdir, "codesystems", "prequal_database_products_identifiers.fsh")
+        with open(cs_path, "w") as f:
+            f.write('CodeSystem: PreQualProductIds\n')
+            f.write('* #a3K3X000005atRtUAI "FVP-P-447 (a3K3X000005atRtUAI)"\n')
+            f.write('* #OldRemovedProduct "Old Product (OldRemovedProduct)"\n')
+
+        products = [extract_product_fields(SAMPLE_PRODUCT)]
+        generate_products_and_authorizations(products, tmpdir)
+        content = open(cs_path).read()
+        self.assertIn('#OldRemovedProduct "Old Product (OldRemovedProduct)"', content)
         self.assertIn("a3K3X000005atRtUAI", content)
 
 

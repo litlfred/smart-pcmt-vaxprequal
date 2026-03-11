@@ -55,5 +55,4 @@ Description: "Coded metadata values from the WHO PreQualification database"
 
 // ProductComponentType
 * #Active "Active"
-* #Diluent "Diluent"
 

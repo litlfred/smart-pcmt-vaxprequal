@@ -55,6 +55,38 @@ def fsh_escape(text):
     return text.replace("\\", "\\\\").replace('"', '\\"')
 
 
+def read_existing_codes(filepath):
+    """Read existing FSH code entries from a CodeSystem file.
+
+    Parses lines matching ``* #<code> "<display>"`` and returns them
+    as an ordered dict so that previously generated codes are preserved
+    when the file is regenerated with new data.
+
+    Args:
+        filepath: Path to the .fsh file.
+
+    Returns:
+        OrderedDict mapping code string to full line (including the
+        ``* #`` prefix).  Comment lines that immediately precede a
+        block of codes (``// Category``) are stored with a key of
+        ``__comment__<n>`` so they can be reproduced in order.
+    """
+    from collections import OrderedDict
+    codes = OrderedDict()
+    if not os.path.exists(filepath):
+        return codes
+    try:
+        with open(filepath, "r", encoding="utf-8") as f:
+            for line in f:
+                stripped = line.rstrip("\n")
+                m = re.match(r'^\* #(\S+)\s', stripped)
+                if m:
+                    codes[m.group(1)] = stripped
+    except OSError:
+        pass
+    return codes
+
+
 def fetch_api_page(endpoint, username, password, page=1, page_size=100):
     """Fetch a single page of results from the API.
 
@@ -263,23 +295,38 @@ def build_csv_md5_key(fields):
 def generate_presentations_codesystem(products, output_dir):
     """Generate presentations CodeSystem and ValueSet FSH files.
 
+    Preserves any existing codes in the file that are not in the current data.
+
     Args:
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    presentations = sorted({p["presentation"] for p in products if p["presentation"]})
-
     cs_path = os.path.join(output_dir, "codesystems", "prequal_presentation.fsh")
     os.makedirs(os.path.dirname(cs_path), exist_ok=True)
+
+    existing = read_existing_codes(cs_path)
+
+    # Build new codes from data
+    new_codes = {}
+    for p in products:
+        pres = p.get("presentation", "")
+        if pres:
+            code = sanitize_alpha(pres)
+            new_codes[code] = f'* #{code} "{fsh_escape(pres)}"'
+
+    # Merge: existing first, then new
+    merged = dict(existing)
+    for code, line in new_codes.items():
+        if code not in merged:
+            merged[code] = line
 
     with open(cs_path, "w", encoding="utf-8") as f:
         f.write('Alias: $presentation = http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation\n')
         f.write("CodeSystem: PreQualPresentation\n")
         f.write('Title : "WHO PreQualificaiton Vaccine Presentations"\n')
         f.write('Description: "WHO PreQualificaiton Vaccine Presentations"\n\n')
-        for pres in presentations:
-            code = sanitize_alpha(pres)
-            f.write(f'* #{code} "{fsh_escape(pres)}"\n')
+        for code in sorted(merged):
+            f.write(f'{merged[code]}\n')
 
     vs_path = os.path.join(output_dir, "valuesets", "prequal_presentation.fsh")
     os.makedirs(os.path.dirname(vs_path), exist_ok=True)
@@ -291,33 +338,44 @@ def generate_presentations_codesystem(products, output_dir):
         f.write('Description: "WHO PreQualificaiton Presentation"\n\n\n')
         f.write("* include codes from system $preQualPresentation\n\n")
 
-    logger.info("Generated presentations CodeSystem with %d codes", len(presentations))
+    logger.info("Generated presentations CodeSystem with %d codes", len(merged))
 
 
 def generate_vaccine_types_codesystem(products, output_dir):
     """Generate vaccine types CodeSystem and ValueSet FSH files.
 
+    Preserves any existing codes in the file that are not in the current data.
+
     Args:
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    vaccine_types = sorted({
-        p["vaccine_abbreviated_name"]
-        for p in products
-        if p.get("vaccine_abbreviated_name")
-    })
-
     cs_path = os.path.join(output_dir, "codesystems", "preQualVaccineTypes.fsh")
     os.makedirs(os.path.dirname(cs_path), exist_ok=True)
+
+    existing = read_existing_codes(cs_path)
+
+    # Build new codes from data
+    new_codes = {}
+    for p in products:
+        vax = p.get("vaccine_abbreviated_name", "")
+        if vax:
+            code = sanitize_code(vax)
+            new_codes[code] = f'* #{code} "{fsh_escape(vax)}"'
+
+    # Merge: existing first, then new
+    merged = dict(existing)
+    for code, line in new_codes.items():
+        if code not in merged:
+            merged[code] = line
 
     with open(cs_path, "w", encoding="utf-8") as f:
         f.write('Alias: $vaccinetype = http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType\n')
         f.write("CodeSystem: PreQualVaccineType\n")
         f.write('Title : "WHO PreQualificaiton Vaccine VaccineTypes"\n')
         f.write('Description: "WHO PreQualificaiton Vaccine VaccineTypes"\n\n')
-        for vax in vaccine_types:
-            code = sanitize_code(vax)
-            f.write(f'* #{code} "{fsh_escape(vax)}"\n')
+        for code in sorted(merged):
+            f.write(f'{merged[code]}\n')
 
     vs_path = os.path.join(output_dir, "valuesets", "PreQualVacccineTypes.fsh")
     os.makedirs(os.path.dirname(vs_path), exist_ok=True)
@@ -329,7 +387,7 @@ def generate_vaccine_types_codesystem(products, output_dir):
         f.write('Description: "WHO PreQualificaiton VaccineType"\n\n\n')
         f.write("* include codes from system $preQualVaccineType\n\n")
 
-    logger.info("Generated vaccine types CodeSystem with %d codes", len(vaccine_types))
+    logger.info("Generated vaccine types CodeSystem with %d codes", len(merged))
 
 
 def generate_manufacturers(products, output_dir):
@@ -543,6 +601,8 @@ def generate_metadata_codesystem(products, output_dir):
     RouteOfAdministration, PackagingType, ComponentPacked, DocumentType,
     SiteActivity, SiteStatus, IngredientType, ProductComponentType.
 
+    Preserves any existing codes in the file that are not in the current data.
+
     Args:
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
@@ -606,6 +666,8 @@ def generate_metadata_codesystem(products, output_dir):
     cs_path = os.path.join(output_dir, "codesystems", "prequal_database_metadata.fsh")
     os.makedirs(os.path.dirname(cs_path), exist_ok=True)
 
+    existing = read_existing_codes(cs_path)
+
     categories = [
         ("ProductType", sorted(product_types)),
         ("AssessmentProcedure", sorted(assessment_procedures)),
@@ -621,6 +683,28 @@ def generate_metadata_codesystem(products, output_dir):
         ("ProductComponentType", sorted(product_component_types)),
     ]
 
+    # Build new codes from data, organized by category
+    new_codes = {}
+    for category, values in categories:
+        for val in values:
+            code = sanitize_code(val)
+            new_codes[code] = f'* #{code} "{fsh_escape(val)}"'
+
+    # Merge: existing codes preserved, new codes added
+    merged = dict(existing)
+    for code, line in new_codes.items():
+        if code not in merged:
+            merged[code] = line
+
+    # Build category membership for output formatting
+    code_to_category = {}
+    for category, values in categories:
+        for val in values:
+            code = sanitize_code(val)
+            code_to_category[code] = category
+    # For existing codes not in new data, try to preserve category from file
+    # (they'll go into an "Other" section if not matched)
+
     total_codes = 0
     with open(cs_path, "w", encoding="utf-8") as f:
         f.write('Alias: $prequal-metadata = http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata\n')
@@ -631,14 +715,33 @@ def generate_metadata_codesystem(products, output_dir):
         f.write("* ^caseSensitive = true\n")
         f.write('* ^name = "PreQualDatabaseMetadata"\n')
         f.write("* ^status = #active\n\n")
+
+        # Write codes organized by category
+        written_codes = set()
         for category, values in categories:
-            if values:
+            # Collect codes for this category, skipping duplicates from earlier categories
+            cat_codes = {}
+            for val in values:
+                code = sanitize_code(val)
+                if code not in written_codes:
+                    cat_codes[code] = merged[code]
+
+            if cat_codes:
                 f.write(f"// {category}\n")
-                for val in values:
-                    code = sanitize_code(val)
-                    f.write(f'* #{code} "{fsh_escape(val)}"\n')
+                for code in sorted(cat_codes):
+                    f.write(f'{cat_codes[code]}\n')
+                    written_codes.add(code)
                     total_codes += 1
                 f.write("\n")
+
+        # Write any existing codes that weren't categorized
+        uncategorized = {c: l for c, l in merged.items() if c not in written_codes}
+        if uncategorized:
+            f.write("// Other\n")
+            for code in sorted(uncategorized):
+                f.write(f'{uncategorized[code]}\n')
+                total_codes += 1
+            f.write("\n")
 
     vs_path = os.path.join(output_dir, "valuesets", "prequal_database_metadata.fsh")
     os.makedirs(os.path.dirname(vs_path), exist_ok=True)
@@ -1089,7 +1192,17 @@ def generate_products_and_authorizations(products, output_dir):
             generated_count += 1
             cs_entries.append((safe_sf_id, sf_id, sf_name))
 
-    # CodeSystem for product identifiers
+    # CodeSystem for product identifiers (additive — preserve existing codes)
+    existing_ids = read_existing_codes(cs_path)
+    new_id_codes = {}
+    for entry_id, sf_id, sf_name in cs_entries:
+        new_id_codes[entry_id] = f'* #{entry_id} "{fsh_escape(sf_name)} ({fsh_escape(sf_id)})"'
+
+    merged_ids = dict(existing_ids)
+    for code, line in new_id_codes.items():
+        if code not in merged_ids:
+            merged_ids[code] = line
+
     with open(cs_path, "w", encoding="utf-8") as f:
         f.write("\n")
         f.write("Alias: $PreQualProductIds = http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds\n")
@@ -1100,8 +1213,8 @@ def generate_products_and_authorizations(products, output_dir):
         f.write("* ^caseSensitive = false\n")
         f.write('* ^name = "PreQualProductIds"\n')
         f.write("* ^status = #active\n\n\n")
-        for entry_id, sf_id, sf_name in cs_entries:
-            f.write(f'* #{entry_id} "{fsh_escape(sf_name)} ({fsh_escape(sf_id)})"\n')
+        for code in sorted(merged_ids):
+            f.write(f'{merged_ids[code]}\n')
 
     # ValueSet for product identifiers
     with open(vs_path, "w", encoding="utf-8") as f:
