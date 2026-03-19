@@ -2,6 +2,8 @@
 Instance: PreQualManufacturer0013X0000498p4LQAQ
 InstanceOf: PreQualManufacturer
 Usage: #example
+Title: "Manufacturer: Beijing Institute of Biological Products Co., Ltd."
+Description: "WHO PreQual Manufacturer: Beijing Institute of Biological Products Co., Ltd. (China)"
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p4LQAQ"
 * name = "Beijing Institute of Biological Products Co., Ltd."
@@ -16,6 +18,8 @@ Usage: #example
 Instance: PreQualManufacturer0013X0000498p2jQAA
 InstanceOf: PreQualManufacturer
 Usage: #example
+Title: "Manufacturer: Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
+Description: "WHO PreQual Manufacturer: Bul Bio-National Center of Infectious and Parasitic Diseases Ltd. (Bulgaria)"
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p2jQAA"
 * name = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
@@ -31,6 +35,8 @@ Usage: #example
 Instance: PreQualManufacturer0013X0000498p2qQAA
 InstanceOf: PreQualManufacturer
 Usage: #example
+Title: "Manufacturer: Chengdu Institute of Biological Products Co. Ltd"
+Description: "WHO PreQual Manufacturer: Chengdu Institute of Biological Products Co. Ltd (China)"
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p2qQAA"
 * name = "Chengdu Institute of Biological Products Co. Ltd"
@@ -46,6 +52,8 @@ Usage: #example
 Instance: PreQualManufacturer0013X0000498p3gQAA
 InstanceOf: PreQualManufacturer
 Usage: #example
+Title: "Manufacturer: GlaxoSmithKline Biologicals SA"
+Description: "WHO PreQual Manufacturer: GlaxoSmithKline Biologicals SA (Belgium)"
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p3gQAA"
 * name = "GlaxoSmithKline Biologicals SA"
@@ -61,6 +69,8 @@ Usage: #example
 Instance: PreQualManufacturer0013X0000498p2wQAA
 InstanceOf: PreQualManufacturer
 Usage: #example
+Title: "Manufacturer: Haffkine Bio Pharmaceutical Corporation Ltd"
+Description: "WHO PreQual Manufacturer: Haffkine Bio Pharmaceutical Corporation Ltd (India)"
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p2wQAA"
 * name = "Haffkine Bio Pharmaceutical Corporation Ltd"
@@ -76,6 +86,8 @@ Usage: #example
 Instance: PreQualManufacturer0013X000049bJ9SQAU
 InstanceOf: PreQualManufacturer
 Usage: #example
+Title: "Manufacturer: Institut Pasteur de Dakar (IPD)"
+Description: "WHO PreQual Manufacturer: Institut Pasteur de Dakar (IPD) (Senegal)"
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X000049bJ9SQAU"
 * name = "Institut Pasteur de Dakar (IPD)"
@@ -90,6 +102,8 @@ Usage: #example
 Instance: PreQualManufacturer0013X0000498p4ZQAQ
 InstanceOf: PreQualManufacturer
 Usage: #example
+Title: "Manufacturer: Japan BCG Laboratory (JBL)"
+Description: "WHO PreQual Manufacturer: Japan BCG Laboratory (JBL) (Japan)"
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p4ZQAQ"
 * name = "Japan BCG Laboratory (JBL)"
@@ -105,6 +119,8 @@ Usage: #example
 Instance: PreQualManufacturer0013X00004993qnQAA
 InstanceOf: PreQualManufacturer
 Usage: #example
+Title: "Manufacturer: LG Chem Ltd (LGC)"
+Description: "WHO PreQual Manufacturer: LG Chem Ltd (LGC) (Republic of Korea)"
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X00004993qnQAA"
 * name = "LG Chem Ltd (LGC)"
@@ -120,6 +136,8 @@ Usage: #example
 Instance: PreQualManufacturer0013X0000498p3PQAQ
 InstanceOf: PreQualManufacturer
 Usage: #example
+Title: "Manufacturer: Sanofi Pasteur SA"
+Description: "WHO PreQual Manufacturer: Sanofi Pasteur SA (France)"
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p3PQAQ"
 * name = "Sanofi Pasteur SA"
@@ -135,6 +153,8 @@ Usage: #example
 Instance: PreQualManufacturer0013X00003cPkzfQAC
 InstanceOf: PreQualManufacturer
 Usage: #example
+Title: "Manufacturer: Serum Institute of India"
+Description: "WHO PreQual Manufacturer: Serum Institute of India (India)"
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X00003cPkzfQAC"
 * name = "Serum Institute of India"
@@ -151,6 +171,8 @@ Usage: #example
 Instance: PreQualManufacturer0013X0000498p3ZQAQ
 InstanceOf: PreQualManufacturer
 Usage: #example
+Title: "Manufacturer: Sinovac Biotech Co. Ltd"
+Description: "WHO PreQual Manufacturer: Sinovac Biotech Co. Ltd (China)"
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p3ZQAQ"
 * name = "Sinovac Biotech Co. Ltd"

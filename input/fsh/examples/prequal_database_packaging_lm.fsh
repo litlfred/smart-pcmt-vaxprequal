@@ -2,6 +2,8 @@
 Instance: PreQualPackaginga3HNN0000007wYl2AI
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "ShippingContainer"
+Description: "WHO PreQual Product Packaging: ShippingContainer"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3HNN0000007wYl2AI"
 * packagingType = #ShippingContainer
@@ -13,6 +15,8 @@ Usage: #example
 Instance: PreQualPackaginga3HNN0000007wYk2AI
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box containing 300 vials (600 doses). Dimensions: 31 x 19 x 9.3 cm"
+Description: "WHO PreQual Product Packaging: Box containing 300 vials (600 doses). Dimensions: 31 x 19 x 9.3 cm"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3HNN0000007wYk2AI"
 * packagingType = #Tertiary
@@ -25,6 +29,8 @@ Usage: #example
 Instance: PreQualPackaginga3HNN0000007wYj2AI
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 vials (100 doses). Dimensions: 18.5 x 9.5 x 4.0 cm"
+Description: "WHO PreQual Product Packaging: Carton of 50 vials (100 doses). Dimensions: 18.5 x 9.5 x 4.0 cm"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3HNN0000007wYj2AI"
 * packagingType = #Secondary
@@ -39,6 +45,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000002OBWgUAO
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 300 vials (300 doses). Dimensions: 31 x 19 x 9.3 cm"
+Description: "WHO PreQual Product Packaging: Box of 300 vials (300 doses). Dimensions: 31 x 19 x 9.3 cm"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000002OBWgUAO"
 * packagingType = #Tertiary
@@ -51,6 +59,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000002OBWfUAO
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "ShippingContainer"
+Description: "WHO PreQual Product Packaging: ShippingContainer"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000002OBWfUAO"
 * packagingType = #ShippingContainer
@@ -62,6 +72,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000002OBWeUAO
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 vials (50 doses). Dimensions 18.5 x 9.5 x 4.0 cm"
+Description: "WHO PreQual Product Packaging: Carton of 50 vials (50 doses). Dimensions 18.5 x 9.5 x 4.0 cm"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000002OBWeUAO"
 * packagingType = #Secondary
@@ -76,6 +88,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaGUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 30 cartons (1500 doses) [Dimensions: 34.2 x 25.1 x 43.1 cm]"
+Description: "WHO PreQual Product Packaging: Box of 30 cartons (1500 doses) [Dimensions: 34.2 x 25.1 x 43.1 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaGUAS"
 * packagingType = #Tertiary
@@ -88,6 +102,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaFUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 68 cartons (680 doses) [Dimensions: 34.2 x 25.1 x 43.1 cm]"
+Description: "WHO PreQual Product Packaging: Box of 68 cartons (680 doses) [Dimensions: 34.2 x 25.1 x 43.1 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaFUAS"
 * packagingType = #Tertiary
@@ -100,6 +116,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaEUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 220 cartons (220 doses) [Dimensions: 34.2 x 25.1 x 43.1 cm]"
+Description: "WHO PreQual Product Packaging: Box of 220 cartons (220 doses) [Dimensions: 34.2 x 25.1 x 43.1 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaEUAS"
 * packagingType = #Tertiary
@@ -112,6 +130,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaDUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 tubes [Dimensions: 14.6 x 8.5 x 6.9 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 50 tubes [Dimensions: 14.6 x 8.5 x 6.9 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaDUAS"
 * packagingType = #Secondary
@@ -126,6 +146,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaCUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 10 tubes [Dimensions: 12.8 x 8.7 x 2.5 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 10 tubes [Dimensions: 12.8 x 8.7 x 2.5 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaCUAS"
 * packagingType = #Secondary
@@ -140,6 +162,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaBUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 1 tube [Dimensions: 5.3 x 8.7 x 2.5 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 1 tube [Dimensions: 5.3 x 8.7 x 2.5 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaBUAS"
 * packagingType = #Secondary
@@ -154,6 +178,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaHUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "50"
+Description: "WHO PreQual Product Packaging: 50"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaHUAS"
 * packagingType = #Secondary
@@ -165,6 +191,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaIUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "10"
+Description: "WHO PreQual Product Packaging: 10"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaIUAS"
 * packagingType = #Secondary
@@ -176,6 +204,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaJUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "10"
+Description: "WHO PreQual Product Packaging: 10"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaJUAS"
 * packagingType = #Secondary
@@ -187,6 +217,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaKUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "20"
+Description: "WHO PreQual Product Packaging: 20"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaKUAS"
 * packagingType = #Secondary
@@ -198,6 +230,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaOUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Diluent: Box containing 5000 amps (100 000 doses)[Dimensions: 75 x 41 x 37 cm]"
+Description: "WHO PreQual Product Packaging: Diluent: Box containing 5000 amps (100 000 doses)[Dimensions: 75 x 41 x 37 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaOUAS"
 * packagingType = #Tertiary
@@ -210,6 +244,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaNUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Active: Box containing 4 000 amps. (80 000 doses)[Dimensions: 61 x 76 x 43 cm]"
+Description: "WHO PreQual Product Packaging: Active: Box containing 4 000 amps. (80 000 doses)[Dimensions: 61 x 76 x 43 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaNUAS"
 * packagingType = #Tertiary
@@ -222,6 +258,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaMUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Diluent:Carton of 100 ampoules (2 000 doses)[Dimensions: 13.6 x 13.3 x 6.6 cm]"
+Description: "WHO PreQual Product Packaging: Diluent:Carton of 100 ampoules (2 000 doses)[Dimensions: 13.6 x 13.3 x 6.6 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaMUAS"
 * packagingType = #Secondary
@@ -236,6 +274,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaLUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Active: Carton of 100 ampoules (2 000 doses)[Dimensions: 13.6 x 13.3 x 8 cm]"
+Description: "WHO PreQual Product Packaging: Active: Carton of 100 ampoules (2 000 doses)[Dimensions: 13.6 x 13.3 x 8 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaLUAS"
 * packagingType = #Secondary
@@ -250,6 +290,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaQUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 220 cartons of 10 vials (2 200 doses) [Dimensions: 57.5 x 53.5 x 49.0 cm]"
+Description: "WHO PreQual Product Packaging: Box of 220 cartons of 10 vials (2 200 doses) [Dimensions: 57.5 x 53.5 x 49.0 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaQUAS"
 * packagingType = #Tertiary
@@ -262,6 +304,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaPUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 10 vials (10 doses) [Dimensions: 8.5 x 3.8 x 4.5 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 10 vials (10 doses) [Dimensions: 8.5 x 3.8 x 4.5 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaPUAS"
 * packagingType = #Secondary
@@ -276,6 +320,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaYUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 8 cartons of 100 ampoules/800 doses (diluent) [Dimensions 32 x 20 x 39 cm]"
+Description: "WHO PreQual Product Packaging: Box of 8 cartons of 100 ampoules/800 doses (diluent) [Dimensions 32 x 20 x 39 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaYUAS"
 * packagingType = #Tertiary
@@ -288,6 +334,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaXUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 24 cartons of 100 vials (active) (2400 vials/ 2400 doses)[Dimensions 34 x 25 x 43 cm]"
+Description: "WHO PreQual Product Packaging: Box of 24 cartons of 100 vials (active) (2400 vials/ 2400 doses)[Dimensions 34 x 25 x 43 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaXUAS"
 * packagingType = #Tertiary
@@ -300,6 +348,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaWUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 100 ampoules (diluent) [Dimensions 19 x 18 x 7.5 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 100 ampoules (diluent) [Dimensions 19 x 18 x 7.5 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaWUAS"
 * packagingType = #Secondary
@@ -314,6 +364,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaVUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 100 vials (active) [Dimensions 17.8 x 14.7 x 3.7 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 100 vials (active) [Dimensions 17.8 x 14.7 x 3.7 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaVUAS"
 * packagingType = #Secondary
@@ -328,6 +380,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaaUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box containing 192 cartons of 10 vials (19200 doses / 1920 vials)[Dimensions: 5.8 x 5.8 x 5.3 cm]"
+Description: "WHO PreQual Product Packaging: Box containing 192 cartons of 10 vials (19200 doses / 1920 vials)[Dimensions: 5.8 x 5.8 x 5.3 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaaUAC"
 * packagingType = #Tertiary
@@ -340,6 +394,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaZUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 10 vials (100 doses)[Dimensions: 12.5 x 5.5 x 5.7 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 10 vials (100 doses)[Dimensions: 12.5 x 5.5 x 5.7 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaZUAS"
 * packagingType = #Secondary
@@ -354,6 +410,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaacUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box containing 192 cartons of 10 vials (38 400 doses /    1 920 vials)[Dimensions: 5.8 x 5.8 x 5.3 cm]"
+Description: "WHO PreQual Product Packaging: Box containing 192 cartons of 10 vials (38 400 doses /    1 920 vials)[Dimensions: 5.8 x 5.8 x 5.3 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaacUAC"
 * packagingType = #Tertiary
@@ -366,6 +424,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaabUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 10 vials (200 doses)[Dimensions: 12.5 x 5.5 x 5.7 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 10 vials (200 doses)[Dimensions: 12.5 x 5.5 x 5.7 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaabUAC"
 * packagingType = #Secondary
@@ -380,6 +440,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaeUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box containing 192 cartons of 10 vials (19 200 doses /     1 920 vials)  [Dimensions: 58 x 58 x 53 cm]"
+Description: "WHO PreQual Product Packaging: Box containing 192 cartons of 10 vials (19 200 doses /     1 920 vials)  [Dimensions: 58 x 58 x 53 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaeUAC"
 * packagingType = #Tertiary
@@ -392,6 +454,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaadUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 10 vials (100 doses) [Dimensions: 12.5 x 5.5 x 5.7 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 10 vials (100 doses) [Dimensions: 12.5 x 5.5 x 5.7 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaadUAC"
 * packagingType = #Secondary
@@ -406,6 +470,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaanUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box containing 1500 vials (1500 doses)[Dimensions: 60 x 50 x 45 cm]"
+Description: "WHO PreQual Product Packaging: Box containing 1500 vials (1500 doses)[Dimensions: 60 x 50 x 45 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaanUAC"
 * packagingType = #Tertiary
@@ -418,6 +484,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaamUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box containing 1600 single dose cartons (1600 doses)[Dimensions: 84 x 64 x 71 cm]"
+Description: "WHO PreQual Product Packaging: Box containing 1600 single dose cartons (1600 doses)[Dimensions: 84 x 64 x 71 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaamUAC"
 * packagingType = #Tertiary
@@ -430,6 +498,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaalUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box containing 400 single dose cartons (400 doses)[Dimensions: 47 x 38 x 38 cm]."
+Description: "WHO PreQual Product Packaging: Box containing 400 single dose cartons (400 doses)[Dimensions: 47 x 38 x 38 cm]."
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaalUAC"
 * packagingType = #Tertiary
@@ -442,6 +512,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaakUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 single dose vials (50 doses)[Dimensions: 16.3 x 8.5 x 4.4 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 50 single dose vials (50 doses)[Dimensions: 16.3 x 8.5 x 4.4 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaakUAC"
 * packagingType = #Secondary
@@ -456,6 +528,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaajUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 1 single dose vial [Dimensions 3.0 x 2.0 x 5.4 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 1 single dose vial [Dimensions 3.0 x 2.0 x 5.4 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaajUAC"
 * packagingType = #Secondary
@@ -470,6 +544,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaapUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 20 wrapped cartons containing 10 boxes of 3 vials each (600 vials/12000 doses)[Dimensions: 46 x 29.5 x 14 cm]"
+Description: "WHO PreQual Product Packaging: Box of 20 wrapped cartons containing 10 boxes of 3 vials each (600 vials/12000 doses)[Dimensions: 46 x 29.5 x 14 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaapUAC"
 * packagingType = #Tertiary
@@ -482,6 +558,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaoUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton containing 3 vials (60 doses)[Dimensions: 5.4 x 5.3 x 2.2 cm]"
+Description: "WHO PreQual Product Packaging: Carton containing 3 vials (60 doses)[Dimensions: 5.4 x 5.3 x 2.2 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaoUAC"
 * packagingType = #Secondary
@@ -496,6 +574,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaasUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "box of 120 cartons of 10 vials (12000 doses) [dimensions: 57.5 x 53.5 x 49.0 cm]"
+Description: "WHO PreQual Product Packaging: box of 120 cartons of 10 vials (12000 doses) [dimensions: 57.5 x 53.5 x 49.0 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaasUAC"
 * packagingType = #Tertiary
@@ -508,6 +588,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaarUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 10 vials (100 adult doses) [Dimensions: 13.5x5.4x6.7 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 10 vials (100 adult doses) [Dimensions: 13.5x5.4x6.7 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaarUAC"
 * packagingType = #Secondary
@@ -522,6 +604,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaqUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 10 vials (100 paediatric doses) [Dimensions: 11.5 x 4.7 x 5.3 cm]."
+Description: "WHO PreQual Product Packaging: Carton of 10 vials (100 paediatric doses) [Dimensions: 11.5 x 4.7 x 5.3 cm]."
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaqUAC"
 * packagingType = #Secondary
@@ -536,6 +620,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaauUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box containing 192 cartons of 10 vials (38 400 doses /    1920 vials) [Dimensions: 58 x 58 x 53 cm]"
+Description: "WHO PreQual Product Packaging: Box containing 192 cartons of 10 vials (38 400 doses /    1920 vials) [Dimensions: 58 x 58 x 53 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaauUAC"
 * packagingType = #Tertiary
@@ -548,6 +634,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaatUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 10 vials (200 doses)  [Dimensions: 12.5 x 5.5 x 5.7 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 10 vials (200 doses)  [Dimensions: 12.5 x 5.5 x 5.7 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaatUAC"
 * packagingType = #Secondary
@@ -562,6 +650,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaawUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box containing 192 cartons of 10 vials (19 200 doses /     1 920 vials)  [Dimensions: 58 x 58 x 53 cm]"
+Description: "WHO PreQual Product Packaging: Box containing 192 cartons of 10 vials (19 200 doses /     1 920 vials)  [Dimensions: 58 x 58 x 53 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaawUAC"
 * packagingType = #Tertiary
@@ -574,6 +664,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaavUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 10 vials (100 doses) [Dimensions: 12.5 x 5.5 x 5.7 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 10 vials (100 doses) [Dimensions: 12.5 x 5.5 x 5.7 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaavUAC"
 * packagingType = #Secondary
@@ -588,6 +680,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaayUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box containing 192 cartons of 10 vials (38 400 doses /    1920 vials) [Dimensions: 58 x 58 x 53 cm]"
+Description: "WHO PreQual Product Packaging: Box containing 192 cartons of 10 vials (38 400 doses /    1920 vials) [Dimensions: 58 x 58 x 53 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaayUAC"
 * packagingType = #Tertiary
@@ -600,6 +694,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaaxUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 10 vials (200 doses)  [Dimensions: 12.5 x 5.5 x 5.7 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 10 vials (200 doses)  [Dimensions: 12.5 x 5.5 x 5.7 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaxUAC"
 * packagingType = #Secondary
@@ -614,6 +710,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001Vab0UAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box containing 80 cartons of 5 vials (400 vials/2000 doses)[Dimensions: 393 x 147 x 207 cm]"
+Description: "WHO PreQual Product Packaging: Box containing 80 cartons of 5 vials (400 vials/2000 doses)[Dimensions: 393 x 147 x 207 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab0UAC"
 * packagingType = #Tertiary
@@ -626,6 +724,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VaazUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 5 vials (25 dose)[Dimensions: 77 x 35 x 48.5 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 5 vials (25 dose)[Dimensions: 77 x 35 x 48.5 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaazUAC"
 * packagingType = #Secondary
@@ -640,6 +740,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001Vab4UAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Diluent: Box containing 175 cartons of 20 ampoules (35000 doses/3500 ampoules)[Dimensions: 46x x 31 x 33 cm]"
+Description: "WHO PreQual Product Packaging: Diluent: Box containing 175 cartons of 20 ampoules (35000 doses/3500 ampoules)[Dimensions: 46x x 31 x 33 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab4UAC"
 * packagingType = #Tertiary
@@ -652,6 +754,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001Vab3UAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Active: Box containing 175 cartons of 20 ampoules (35000 doses/ 3500 ampoules)[Dimensions: 58 x 58 x 53 cm]"
+Description: "WHO PreQual Product Packaging: Active: Box containing 175 cartons of 20 ampoules (35000 doses/ 3500 ampoules)[Dimensions: 58 x 58 x 53 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab3UAC"
 * packagingType = #Tertiary
@@ -664,6 +768,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001Vab2UAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Diluent:Carton of 20 ampoules (200 doses)[Dimensions: 14.5 x 5.7 x 2.6 cm]"
+Description: "WHO PreQual Product Packaging: Diluent:Carton of 20 ampoules (200 doses)[Dimensions: 14.5 x 5.7 x 2.6 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab2UAC"
 * packagingType = #Secondary
@@ -678,6 +784,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001Vab1UAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Active: Carton of 20 ampoules (200 doses)[Dimensions: 14.5 x 9.8 x 2.8 cm]"
+Description: "WHO PreQual Product Packaging: Active: Carton of 20 ampoules (200 doses)[Dimensions: 14.5 x 9.8 x 2.8 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab1UAC"
 * packagingType = #Secondary
@@ -692,6 +800,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001Vab8UAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Diluent: Box containing 175 cartons of 20 ampoules (70 000 doses/ 3500 ampoules)[Dimensions: 46 x 31 x 33 cm]"
+Description: "WHO PreQual Product Packaging: Diluent: Box containing 175 cartons of 20 ampoules (70 000 doses/ 3500 ampoules)[Dimensions: 46 x 31 x 33 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab8UAC"
 * packagingType = #Tertiary
@@ -704,6 +814,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001Vab7UAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Active: Box containing 175 cartons of 20 ampoules ( 70 000 doses/ 3500 ampoules )[Dimensions: 58 x 58 x 53 cm]"
+Description: "WHO PreQual Product Packaging: Active: Box containing 175 cartons of 20 ampoules ( 70 000 doses/ 3500 ampoules )[Dimensions: 58 x 58 x 53 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab7UAC"
 * packagingType = #Tertiary
@@ -716,6 +828,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001Vab6UAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Diluent:Carton of 20 ampoules (400 doses)[Dimensions: 14.5 x 5.7 x 2.6 cm]"
+Description: "WHO PreQual Product Packaging: Diluent:Carton of 20 ampoules (400 doses)[Dimensions: 14.5 x 5.7 x 2.6 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab6UAC"
 * packagingType = #Secondary
@@ -730,6 +844,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001Vab5UAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Active: Carton of 20 ampoules (400 doses)[Dimensions: 14.5 x 9.8 x 2.8 cm]"
+Description: "WHO PreQual Product Packaging: Active: Carton of 20 ampoules (400 doses)[Dimensions: 14.5 x 9.8 x 2.8 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab5UAC"
 * packagingType = #Secondary
@@ -744,6 +860,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabBUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 24 cartons of 50 vials (1200 vials / 1200 doses) [Dimensions 60x48x41 cm]"
+Description: "WHO PreQual Product Packaging: Box of 24 cartons of 50 vials (1200 vials / 1200 doses) [Dimensions 60x48x41 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabBUAS"
 * packagingType = #Tertiary
@@ -756,6 +874,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabAUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 ampoules (diluent) [Dimesions 14.5x6.0x7.2 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 50 ampoules (diluent) [Dimesions 14.5x6.0x7.2 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabAUAS"
 * packagingType = #Secondary
@@ -770,6 +890,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001Vab9UAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 vials (active)(50 doses) [Dimensions 18.5x9.5x6.0 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 50 vials (active)(50 doses) [Dimensions 18.5x9.5x6.0 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab9UAC"
 * packagingType = #Secondary
@@ -784,6 +906,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabDUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 24 cartons of 25 vials (600 vials/12000 doses) [Dimensions 60x48x41 cm]"
+Description: "WHO PreQual Product Packaging: Box of 24 cartons of 25 vials (600 vials/12000 doses) [Dimensions 60x48x41 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabDUAS"
 * packagingType = #Tertiary
@@ -796,6 +920,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabCUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 25 vials (500 doses) [Dimensions 13.3x13.3x6.0 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 25 vials (500 doses) [Dimensions 13.3x13.3x6.0 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabCUAS"
 * packagingType = #Secondary
@@ -810,6 +936,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabGUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 24 cartons of 50 vials (1200 vials/2400 doses) [Dimensions 60x48x41 cm]"
+Description: "WHO PreQual Product Packaging: Box of 24 cartons of 50 vials (1200 vials/2400 doses) [Dimensions 60x48x41 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabGUAS"
 * packagingType = #Tertiary
@@ -822,6 +950,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabFUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 ampoules (diluent) [Dimensions 14.5x6.0x7.2 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 50 ampoules (diluent) [Dimensions 14.5x6.0x7.2 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabFUAS"
 * packagingType = #Secondary
@@ -836,6 +966,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabEUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 vials (active)(100 doses) [Dimensions 18.5x9.5x6.0 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 50 vials (active)(100 doses) [Dimensions 18.5x9.5x6.0 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabEUAS"
 * packagingType = #Secondary
@@ -850,6 +982,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabJUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 24 cartons of 50 vials (1200 vials/1200 doses) [Dimensions 60x48x41 cm]"
+Description: "WHO PreQual Product Packaging: Box of 24 cartons of 50 vials (1200 vials/1200 doses) [Dimensions 60x48x41 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabJUAS"
 * packagingType = #Tertiary
@@ -862,6 +996,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabIUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 ampoules (diluent) [Dimensions 14.5x6.0x7.2 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 50 ampoules (diluent) [Dimensions 14.5x6.0x7.2 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabIUAS"
 * packagingType = #Secondary
@@ -876,6 +1012,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabHUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 vials (active)(50 doses) [Dimensions 18.5x9.5x6.0]"
+Description: "WHO PreQual Product Packaging: Carton of 50 vials (active)(50 doses) [Dimensions 18.5x9.5x6.0]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabHUAS"
 * packagingType = #Secondary
@@ -890,6 +1028,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabMUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 24 cartons of 50 vials (1200 vials/2400 doses) [Dimensions 60x48x41 cm]"
+Description: "WHO PreQual Product Packaging: Box of 24 cartons of 50 vials (1200 vials/2400 doses) [Dimensions 60x48x41 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabMUAS"
 * packagingType = #Tertiary
@@ -902,6 +1042,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabLUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 ampoules (diluent) [dimensions 14.5x6.0x7.2 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 50 ampoules (diluent) [dimensions 14.5x6.0x7.2 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabLUAS"
 * packagingType = #Secondary
@@ -916,6 +1058,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabKUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 vials (active)(100 doses) [Dimensions 18.5x9.5x6.0 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 50 vials (active)(100 doses) [Dimensions 18.5x9.5x6.0 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabKUAS"
 * packagingType = #Secondary
@@ -930,6 +1074,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabPUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 24 cartons of 50 vials (1200 vials / 12000 doses) [Dimensions 60x48x41 cm]"
+Description: "WHO PreQual Product Packaging: Box of 24 cartons of 50 vials (1200 vials / 12000 doses) [Dimensions 60x48x41 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabPUAS"
 * packagingType = #Tertiary
@@ -942,6 +1088,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabOUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 ampoules (diluent) [Dimensions 10.5x8.7x17.2 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 50 ampoules (diluent) [Dimensions 10.5x8.7x17.2 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabOUAS"
 * packagingType = #Secondary
@@ -956,6 +1104,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabNUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 vials (active)(500 doses) [Dimensions 18.5x9.5x6.0 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 50 vials (active)(500 doses) [Dimensions 18.5x9.5x6.0 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabNUAS"
 * packagingType = #Secondary
@@ -970,6 +1120,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabSUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 24 cartons of 50 vials (1200 vials/6000 doses) [Dimensions 60x48x41 cm]"
+Description: "WHO PreQual Product Packaging: Box of 24 cartons of 50 vials (1200 vials/6000 doses) [Dimensions 60x48x41 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabSUAS"
 * packagingType = #Tertiary
@@ -982,6 +1134,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabRUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 ampoules (diluent) [Dimensions 10.5x8.7x15.0 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 50 ampoules (diluent) [Dimensions 10.5x8.7x15.0 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabRUAS"
 * packagingType = #Secondary
@@ -996,6 +1150,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabQUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 vials (active)(250 doses) [Dimensions 18.5x9.5x6.0 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 50 vials (active)(250 doses) [Dimensions 18.5x9.5x6.0 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabQUAS"
 * packagingType = #Secondary
@@ -1010,6 +1166,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabUUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "ShippingContainer"
+Description: "WHO PreQual Product Packaging: ShippingContainer"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabUUAS"
 * packagingType = #ShippingContainer
@@ -1021,6 +1179,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabTUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 10 vials (active) [Dimensions 8.3 x 4.35 x 3.85 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 10 vials (active) [Dimensions 8.3 x 4.35 x 3.85 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabTUAS"
 * packagingType = #Secondary
@@ -1035,6 +1195,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabXUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 24 cartons of 50 vials (1200 vials/1200 doses) [Dimensions 60x48x41 cm]"
+Description: "WHO PreQual Product Packaging: Box of 24 cartons of 50 vials (1200 vials/1200 doses) [Dimensions 60x48x41 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabXUAS"
 * packagingType = #Tertiary
@@ -1047,6 +1209,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabWUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 ampoules (diluent) [Dimensions 14.5x6.0x7.2 cm]"
+Description: "WHO PreQual Product Packaging: Carton of 50 ampoules (diluent) [Dimensions 14.5x6.0x7.2 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabWUAS"
 * packagingType = #Secondary
@@ -1061,6 +1225,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabVUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Carton of 50 vials (active)(50 doses) [Dimensions 18.5x9.5x6.0]"
+Description: "WHO PreQual Product Packaging: Carton of 50 vials (active)(50 doses) [Dimensions 18.5x9.5x6.0]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabVUAS"
 * packagingType = #Secondary
@@ -1075,6 +1241,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabZUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "Box of 36 cartons of 50 ampoules (1800 ampoules/1800 doses) [Dimensions 60x48x41 cm]"
+Description: "WHO PreQual Product Packaging: Box of 36 cartons of 50 ampoules (1800 ampoules/1800 doses) [Dimensions 60x48x41 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabZUAS"
 * packagingType = #Tertiary
@@ -1087,6 +1255,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabYUAS
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "carton of 50 ampoules (50 doses) [Dimensions 14.5x6.0x7.0]"
+Description: "WHO PreQual Product Packaging: carton of 50 ampoules (50 doses) [Dimensions 14.5x6.0x7.0]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabYUAS"
 * packagingType = #Secondary
@@ -1101,6 +1271,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabbUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "24 cartons of 50 vials (1200 vials/12000 doses) [Dimensions 60x48x41 cm]"
+Description: "WHO PreQual Product Packaging: 24 cartons of 50 vials (1200 vials/12000 doses) [Dimensions 60x48x41 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabbUAC"
 * packagingType = #Tertiary
@@ -1113,6 +1285,8 @@ Usage: #example
 Instance: PreQualPackaginga3H3X000001VabaUAC
 InstanceOf: PreQualProductPackaging
 Usage: #example
+Title: "carton of 50 vials (500 doses) [Dimensions 18.5x9.5x6.0 cm]"
+Description: "WHO PreQual Product Packaging: carton of 50 vials (500 doses) [Dimensions 18.5x9.5x6.0 cm]"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabaUAC"
 * packagingType = #Secondary
