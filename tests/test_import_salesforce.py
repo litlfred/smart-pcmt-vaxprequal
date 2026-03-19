@@ -81,6 +81,8 @@ SAMPLE_PRODUCT = {
                 "CommercialName": "CYVAC",
             },
             "RouteOfAdministrationVx": "Intramuscular",
+            "VialMonitor": "Type 14",
+            "MultidoseVialPolicy": "WHO recommends that opened vials of this vaccine should be discarded 6 hours after opening or at the end of the immunization session, whichever comes first.",
         },
         "Status": "Prequalified",
         "PreservativeDetails": {"Id": "None"},
@@ -228,6 +230,8 @@ class TestExtractProductFields(unittest.TestCase):
         self.assertEqual(fields["pharmaceutical_form"], "Liquid: Ready to use")
         self.assertEqual(fields["assessment_procedure"], "Prequalification - Standard")
         self.assertEqual(fields["route_of_administration"], "Intramuscular")
+        self.assertEqual(fields["vial_monitor"], "Type 14")
+        self.assertIn("WHO recommends", fields["multidose_vial_policy"])
         # Referenced object fields
         self.assertEqual(fields["applicant_website"], "http://www.seruminstitute.com/")
         self.assertEqual(fields["applicant_city"], "Pune")
@@ -338,6 +342,16 @@ class TestGenerateFSH(unittest.TestCase):
         # Verify string fields still use string syntax
         self.assertIn('applicantName = "Serum Institute of India"', content)
         self.assertIn('nraName = "Central Drugs Standard Control Organization (CDSCO)"', content)
+
+        # Verify new fields are written
+        self.assertIn('vialMonitor = "Type 14"', content)
+        self.assertIn('multidoseVialPolicy = "WHO recommends', content)
+        self.assertIn('shelfLife = "24 months"', content)
+        self.assertIn('nraCountry = "India"', content)
+        self.assertIn("lastPublishingDate = 2024-09-10", content)
+        self.assertIn('vaccineTypeId.value = "a3S3X000003cSpnUAE"', content)
+        self.assertIn('applicantId.value = "0013X00003cPkzfQAC"', content)
+        self.assertIn('nraId.value = "0013X0000498p4fQAA"', content)
 
         # Verify old CSV-model fields are NOT present
         self.assertNotIn("vaccineType.coding", content)

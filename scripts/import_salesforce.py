@@ -87,22 +87,24 @@ def read_existing_codes(filepath):
     return codes
 
 
-def fetch_api_page(endpoint, username, password, page=1, page_size=100):
-    """Fetch a single page of results from the API.
+def fetch_api_page(endpoint, username, password, offset=0, limit=100):
+    """Fetch a single page of results from the API using offset/limit pagination.
+
+    The API returns an AdditionalInfo object with OffSet, Limit, and TotalRecords.
 
     Args:
         endpoint: Base API URL.
         username: API username.
         password: API password.
-        page: Page number (1-based).
-        page_size: Number of results per page.
+        offset: Record offset (0-based).
+        limit: Maximum number of results to return.
 
     Returns:
         Parsed JSON response.
     """
     separator = "&" if "?" in endpoint else "?"
-    url = f"{endpoint}{separator}page={page}&pageSize={page_size}"
-    logger.info("Fetching page %d from %s", page, url)
+    url = f"{endpoint}{separator}offset={offset}&limit={limit}"
+    logger.info("Fetching offset=%d limit=%d from %s", offset, limit, url)
 
     req = urllib.request.Request(url)
     credentials = base64.b64encode(f"{username}:{password}".encode("utf-8")).decode("ascii")
@@ -114,27 +116,44 @@ def fetch_api_page(endpoint, username, password, page=1, page_size=100):
 
 
 def download_all_pages(endpoint, username, password, page_size=100):
-    """Download all pages of results from the API.
+    """Download all pages of results from the API using offset/limit pagination.
+
+    Uses AdditionalInfo.TotalRecords from the API response to determine
+    when all records have been fetched.
 
     Args:
         endpoint: Base API URL.
         username: API username.
         password: API password.
-        page_size: Number of results per page.
+        page_size: Number of results per request.
 
     Returns:
         List of FinishedVaccineProduct records.
     """
     all_products = []
-    page = 1
+    offset = 0
+    total_records = None
     while True:
-        data = fetch_api_page(endpoint, username, password, page, page_size)
+        data = fetch_api_page(endpoint, username, password, offset, page_size)
         products = data.get("FinishedVaccineProducts", [])
         if not products:
             break
         all_products.extend(products)
-        logger.info("Downloaded %d products (page %d)", len(products), page)
-        page += 1
+
+        # Use TotalRecords from API response to know when we're done
+        additional_info = data.get("AdditionalInfo", {})
+        if total_records is None:
+            total_records = additional_info.get("TotalRecords")
+            if total_records is not None:
+                logger.info("API reports %d total records", total_records)
+
+        logger.info("Downloaded %d products (offset=%d)", len(products), offset)
+        offset += len(products)
+
+        # Stop if we've fetched all records
+        if total_records is not None and offset >= total_records:
+            break
+
     logger.info("Total products downloaded: %d", len(all_products))
     return all_products
 
@@ -223,6 +242,8 @@ def extract_product_fields(product):
         "vaccine_commercial_name": vaccine_name.get("CommercialName", ""),
         "vaccine_type_id": vaccine_ident.get("Id", ""),
         "route_of_administration": vaccine.get("RouteOfAdministrationVx", ""),
+        "vial_monitor": vaccine.get("VialMonitor", ""),
+        "multidose_vial_policy": vaccine.get("MultidoseVialPolicy", ""),
         "applicant_id": applicant_ident.get("Id", ""),
         "applicant_name": applicant_ident.get("Name", ""),
         "applicant_address_line1": applicant_addr.get("AddressLine1", ""),
@@ -1105,6 +1126,15 @@ def generate_products_and_authorizations(products, output_dir):
             route = p.get("route_of_administration", "")
             preservative = p.get("preservative", "")
             preservative_conc = p.get("preservative_concentration", "")
+            vial_monitor = p.get("vial_monitor", "") or ""
+            multidose_policy = p.get("multidose_vial_policy", "") or ""
+            presentation_other = p.get("presentation_other", "") or ""
+            shelf_life = p.get("shelf_life", "") or ""
+            temperature = p.get("temperature", "") or ""
+            diluent_val = p.get("diluent", "") or ""
+            last_pub_date = p.get("last_publishing_date", "") or ""
+            pub_remarks = p.get("publishing_remarks", "") or ""
+            nra_country = p.get("nra_country", "") or ""
 
             f.write(f"Instance: PreQualDB{safe_sf_id}\n")
             f.write("InstanceOf: FinishedVaccineProducts\n")
@@ -1121,6 +1151,8 @@ def generate_products_and_authorizations(products, output_dir):
                 f.write(f'* presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"\n')
                 f.write(f"* presentation.coding.code = #{pres_code}\n")
                 f.write(f'* presentation.coding.display = "{fsh_escape(presentation)}"\n')
+            if presentation_other:
+                f.write(f'* presentationOther = "{fsh_escape(presentation_other)}"\n')
             if num_doses:
                 f.write(f"* numDoses = {num_doses}\n")
             f.write(f'* productId.system = "https://extranet.who.int/prequal/api"\n')
@@ -1131,10 +1163,38 @@ def generate_products_and_authorizations(products, output_dir):
             if p.get("vaccine_abbreviated_name"):
                 f.write(f'* vaccineAbbreviatedName = "{fsh_escape(p["vaccine_abbreviated_name"])}"\n')
             f.write(f'* vaccineCommercialName = "{fsh_escape(commercial_name)}"\n')
+            vax_type_id = p.get("vaccine_type_id", "")
+            if vax_type_id:
+                f.write(f'* vaccineTypeId.system = "https://extranet.who.int/prequal/api"\n')
+                f.write(f'* vaccineTypeId.value = "{fsh_escape(vax_type_id)}"\n')
             if route:
                 f.write(f"* routeOfAdministration = #{sanitize_code(route)}\n")
+            if vial_monitor and vial_monitor.lower() != "none":
+                f.write(f'* vialMonitor = "{fsh_escape(vial_monitor)}"\n')
+            if multidose_policy and multidose_policy.lower() != "not applicable":
+                f.write(f'* multidoseVialPolicy = "{fsh_escape(multidose_policy)}"\n')
+            if manufacturer_sf_id:
+                f.write(f'* applicantId.system = "https://extranet.who.int/prequal/api"\n')
+                f.write(f'* applicantId.value = "{fsh_escape(manufacturer_sf_id)}"\n')
             f.write(f'* applicantName = "{fsh_escape(manufacturer)}"\n')
+            if holder_sf_id:
+                f.write(f'* nraId.system = "https://extranet.who.int/prequal/api"\n')
+                f.write(f'* nraId.value = "{fsh_escape(holder_sf_id)}"\n')
             f.write(f'* nraName = "{fsh_escape(holder)}"\n')
+            if nra_country:
+                f.write(f'* nraCountry = "{fsh_escape(nra_country)}"\n')
+            if shelf_life:
+                f.write(f'* shelfLife = "{fsh_escape(shelf_life)}"\n')
+            if temperature:
+                f.write(f'* storageTemperature = "{fsh_escape(temperature)}"\n')
+            if diluent_val and diluent_val.upper() != "N/A":
+                f.write(f'* diluent = "{fsh_escape(diluent_val)}"\n')
+            if last_pub_date:
+                # Trim timestamp to date only if it has a T
+                pub_date = last_pub_date.split("T")[0] if "T" in last_pub_date else last_pub_date
+                f.write(f"* lastPublishingDate = {pub_date}\n")
+            if pub_remarks:
+                f.write(f'* publishingRemarks = "{fsh_escape(pub_remarks)}"\n')
             if preservative:
                 f.write(f'* preservative = "{fsh_escape(preservative)}"\n')
             if preservative_conc:
@@ -1147,7 +1207,6 @@ def generate_products_and_authorizations(products, output_dir):
                 f.write(f"* manufacturerLM = Reference(PreQualManufacturer{mfr_ref_id})\n")
             if holder_sf_id:
                 f.write(f"* nraLM = Reference(PreQualNRA{holder_ref_id})\n")
-            vax_type_id = p.get("vaccine_type_id", "")
             if vax_type_id:
                 vax_lm_ref_id = sanitize_code(vax_type_id)
                 f.write(f"* vaccineLM = Reference(PreQualVaccine{vax_lm_ref_id})\n")
