@@ -23,7 +23,7 @@ python3 scripts/import_salesforce.py --json-file data/prequal.json
 ```
 
 This reads 35 products from `data/prequal.json` and writes generated FSH files into `input/fsh/`:
-- `input/fsh/examples/prequal_database_products.fsh` — PreQualProduct, Product, and ProductAuthorization instances
+- `input/fsh/examples/prequal_database_products.fsh` — FinishedVaccineProducts, Product, and ProductAuthorization instances
 - `input/fsh/examples/prequal_database_manufacturers.fsh` — Manufacturer FHIR Organization instances
 - `input/fsh/examples/prequal_database_holders.fsh` — NRA/Holder FHIR Organization instances
 - `input/fsh/examples/prequal_database_manufacturer_lm.fsh` — PreQualManufacturer LM instances (full address, website)
@@ -42,7 +42,7 @@ python3 -m unittest tests/test_import_salesforce.py -v
 ## Sample Generated Instances
 
 For each product in the WHO PreQual database, the import script generates:
-1. A `PreQualProduct` logical model instance (with references to Manufacturer, NRA, and Vaccine LM instances)
+1. A `FinishedVaccineProducts` logical model instance (with references to Manufacturer, NRA, and Vaccine LM instances)
 
 Additionally, for each unique referenced object, the script generates:
 - `PreQualManufacturer` LM instances (11 unique manufacturers with full address and contact info)
@@ -55,7 +55,7 @@ Here is a sample for the CYVAC malaria vaccine showing the product and its refer
 
 ```fsh
 Instance: PreQualDBa3K3X000005atRtUAI
-InstanceOf: PreQualProduct
+InstanceOf: FinishedVaccineProducts
 * dateOfPrequal = 2023-12-19
 * status = "Prequalified"
 * presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"

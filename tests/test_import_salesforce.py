@@ -324,7 +324,7 @@ class TestGenerateFSH(unittest.TestCase):
         self.assertTrue(os.path.exists(vs_path))
 
         content = open(examples_path).read()
-        self.assertIn("InstanceOf: PreQualProduct", content)
+        self.assertIn("InstanceOf: FinishedVaccineProducts", content)
         self.assertIn("a3K3X000005atRtUAI", content)
         self.assertIn("CYVAC", content)
 

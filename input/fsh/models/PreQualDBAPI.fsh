@@ -58,16 +58,6 @@ Key fields from the API (FinishedVaccineProducts):
 * documentLM 0..* Reference(PreQualDocumentDetail) "Document detail logical model instance references"
 * siteLM 0..* Reference(PreQualSiteDetail) "Site detail logical model instance references"
 * ingredientLM 0..* Reference(PreQualProductIngredient) "Product ingredient logical model instance references"
-
-
-
-Logical: 	PreQualProduct
-Parent:		FinishedVaccineProducts
-Title:		"WHO PreQual Product"
-Characteristics: #can-be-target
-Description:    """Logical model for WHO PreQual Product from the backend API
-with additional data fields for referencing associated FHIR resource data objects.
-"""
 * manufacturerReference 1..1 Reference(IHE.mCSD.Organization) "Manufacturer FHIR Organization reference"
 * responsibleNRAReference 1..1 Reference(IHE.mCSD.Organization) "Responsible NRA FHIR Organization reference"
 * productReference 0..1 Reference "Product FHIR reference (when available from pcmt dependency)"
@@ -112,7 +102,7 @@ Characteristics: #can-be-target
 Description:	"""Logical model for the vaccine type details
 from the WHO PreQual API (ProductDetails.VaccineDetails).
 Contains only vaccine-type-level fields that are stable across products.
-Product-specific fields (CommercialName, RouteOfAdministration) remain on PreQualProduct.
+Product-specific fields (CommercialName, RouteOfAdministration) remain on FinishedVaccineProducts.
 """
 * vaccineId 0..1 Identifier "Vaccine type ID"
 * fullName 0..1 string "Vaccine full name"
