@@ -50,14 +50,14 @@ Key fields from the API (FinishedVaccineProducts):
 * publishingRemarks 0..1 string "Publishing remarks"
 * preservative 0..1 string "Preservative name (e.g. Thiomersal)"
 * preservativeConcentration 0..1 string "Preservative concentration (e.g. 0.01%)"
-* manufacturerLM 0..1 Reference "Manufacturer logical model instance reference (linked when ApplicantOrganization.Identification.Id is non-null)"
-* nraLM 0..1 Reference "NRA logical model instance reference (linked when NRADetails.Identification.Id is non-null)"
-* vaccineLM 0..1 Reference "Vaccine logical model instance reference (linked when VaccineDetails.Identification.Id is non-null)"
-* bulkSupplierLM 0..1 Reference "Bulk supplier logical model instance reference (linked when BulkSupplier.Id is non-null)"
-* packagingLM 0..* Reference "Product packaging logical model instance references"
-* documentLM 0..* Reference "Document detail logical model instance references"
-* siteLM 0..* Reference "Site detail logical model instance references"
-* ingredientLM 0..* Reference "Product ingredient logical model instance references"
+* manufacturerLM 0..1 Reference(PreQualManufacturer) "Manufacturer logical model instance reference (linked when ApplicantOrganization.Identification.Id is non-null)"
+* nraLM 0..1 Reference(PreQualNRA) "NRA logical model instance reference (linked when NRADetails.Identification.Id is non-null)"
+* vaccineLM 0..1 Reference(PreQualVaccine) "Vaccine logical model instance reference (linked when VaccineDetails.Identification.Id is non-null)"
+* bulkSupplierLM 0..1 Reference(PreQualBulkSupplier) "Bulk supplier logical model instance reference (linked when BulkSupplier.Id is non-null)"
+* packagingLM 0..* Reference(PreQualProductPackaging) "Product packaging logical model instance references"
+* documentLM 0..* Reference(PreQualDocumentDetail) "Document detail logical model instance references"
+* siteLM 0..* Reference(PreQualSiteDetail) "Site detail logical model instance references"
+* ingredientLM 0..* Reference(PreQualProductIngredient) "Product ingredient logical model instance references"
 
 
 
