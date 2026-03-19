@@ -13,6 +13,7 @@
 
 Instance: PreQualDBa3K3X000005atRtUAI
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2023-12-19
 * assessmentProcedure = #PrequalificationStandard
@@ -68,6 +69,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000005atSwUAI
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2023-12-19
 * assessmentProcedure = #PrequalificationStandard
@@ -122,6 +124,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MihsUAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2007-01-29
 * assessmentProcedure = #PrequalificationStandard
@@ -184,6 +187,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MihtUAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-02-02
 * assessmentProcedure = #PrequalificationStandard
@@ -243,6 +247,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MihuUAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2001-03-20
 * assessmentProcedure = #PrequalificationStandard
@@ -298,6 +303,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MihvUAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2001-03-20
 * assessmentProcedure = #PrequalificationStandard
@@ -356,6 +362,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MihwUAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2001-03-20
 * assessmentProcedure = #PrequalificationStandard
@@ -414,6 +421,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MihxUAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1987-01-01
 * assessmentProcedure = #PrequalificationStandard
@@ -477,6 +485,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MihyUAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1996-11-22
 * assessmentProcedure = #PrequalificationStandard
@@ -538,6 +547,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006Mii0UAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2001-03-09
 * assessmentProcedure = #PrequalificationStandard
@@ -603,6 +613,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006Mii1UAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
 * assessmentProcedure = #PrequalificationStandard
@@ -664,6 +675,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006Mii2UAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
 * assessmentProcedure = #PrequalificationStandard
@@ -725,6 +737,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006Mii3UAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
 * assessmentProcedure = #PrequalificationStandard
@@ -787,6 +800,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006Mii5UAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2017-12-22
 * assessmentProcedure = #PrequalificationStandard
@@ -846,6 +860,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006Mii6UAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2017-12-21
 * assessmentProcedure = #PrequalificationStandard
@@ -906,6 +921,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006Mii7UAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1996-11-22
 * assessmentProcedure = #PrequalificationStandard
@@ -969,6 +985,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006Mii8UAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
 * assessmentProcedure = #PrequalificationStandard
@@ -1032,6 +1049,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006Mii9UAC
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
 * assessmentProcedure = #PrequalificationStandard
@@ -1094,6 +1112,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MiiAUAS
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
 * assessmentProcedure = #PrequalificationStandard
@@ -1156,6 +1175,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MiiBUAS
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2020-03-25
 * assessmentProcedure = #PrequalificationStandard
@@ -1217,6 +1237,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MiiCUAS
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1991-02-01
 * assessmentProcedure = #PrequalificationStandard
@@ -1281,6 +1302,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MiiDUAS
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1991-02-01
 * assessmentProcedure = #PrequalificationStandard
@@ -1345,6 +1367,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MiiEUAS
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1993-02-15
 * assessmentProcedure = #PrequalificationStandard
@@ -1408,6 +1431,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MiiFUAS
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1995-04-04
 * assessmentProcedure = #PrequalificationStandard
@@ -1470,6 +1494,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MiiGUAS
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1993-02-15
 * assessmentProcedure = #PrequalificationStandard
@@ -1534,6 +1559,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MiiHUAS
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2003-08-08
 * assessmentProcedure = #PrequalificationStandard
@@ -1598,6 +1624,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MiiIUAS
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2003-08-08
 * assessmentProcedure = #PrequalificationStandard
@@ -1663,6 +1690,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MiiJUAS
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2003-08-08
 * assessmentProcedure = #PrequalificationStandard
@@ -1728,6 +1756,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MiiKUAS
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2003-08-08
 * assessmentProcedure = #PrequalificationStandard
@@ -1793,6 +1822,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MiiLUAS
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2013-10-09
 * assessmentProcedure = #PrequalificationStandard
@@ -1853,6 +1883,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MiiMUAS
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1993-02-15
 * assessmentProcedure = #PrequalificationStandard
@@ -1915,6 +1946,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MiiNUAS
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1995-04-04
 * assessmentProcedure = #PrequalificationStandard
@@ -1977,6 +2009,7 @@ InstanceOf: FinishedVaccineProducts
 
 Instance: PreQualDBa3K3X000006MiiOUAS
 InstanceOf: FinishedVaccineProducts
+Usage: #example
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1995-04-04
 * assessmentProcedure = #PrequalificationStandard

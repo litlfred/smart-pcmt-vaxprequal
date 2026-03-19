@@ -504,6 +504,7 @@ def generate_manufacturer_lm_instances(products, output_dir):
 
             f.write(f"\nInstance: PreQualManufacturer{instance_id}\n")
             f.write("InstanceOf: PreQualManufacturer\n")
+            f.write("Usage: #example\n")
             if sf_id:
                 f.write(f'* manufacturerId.system = "https://extranet.who.int/prequal/api"\n')
                 f.write(f'* manufacturerId.value = "{fsh_escape(sf_id)}"\n')
@@ -562,6 +563,7 @@ def generate_nra_lm_instances(products, output_dir):
 
             f.write(f"\nInstance: PreQualNRA{instance_id}\n")
             f.write("InstanceOf: PreQualNRA\n")
+            f.write("Usage: #example\n")
             if sf_id:
                 f.write(f'* nraId.system = "https://extranet.who.int/prequal/api"\n')
                 f.write(f'* nraId.value = "{fsh_escape(sf_id)}"\n')
@@ -602,6 +604,7 @@ def generate_vaccine_lm_instances(products, output_dir):
 
             f.write(f"\nInstance: PreQualVaccine{instance_id}\n")
             f.write("InstanceOf: PreQualVaccine\n")
+            f.write("Usage: #example\n")
             f.write(f'* vaccineId.system = "https://extranet.who.int/prequal/api"\n')
             f.write(f'* vaccineId.value = "{fsh_escape(vax_id)}"\n')
             full_name = p.get("vaccine_full_name")
@@ -803,6 +806,7 @@ def generate_bulk_supplier_lm_instances(products, output_dir):
             instance_id = sanitize_code(bs_id)
             f.write(f"\nInstance: PreQualBulkSupplier{instance_id}\n")
             f.write("InstanceOf: PreQualBulkSupplier\n")
+            f.write("Usage: #example\n")
             f.write(f'* bulkSupplierId.system = "https://extranet.who.int/prequal/api"\n')
             f.write(f'* bulkSupplierId.value = "{fsh_escape(bs_id)}"\n')
             if bs_name:
@@ -853,6 +857,7 @@ def generate_packaging_lm_instances(products, output_dir):
 
             f.write(f"\nInstance: PreQualPackaging{instance_id}\n")
             f.write("InstanceOf: PreQualProductPackaging\n")
+            f.write("Usage: #example\n")
             f.write(f'* packagingId.system = "https://extranet.who.int/prequal/api"\n')
             f.write(f'* packagingId.value = "{fsh_escape(pkg_id)}"\n')
             if pkg_type:
@@ -920,6 +925,7 @@ def generate_document_lm_instances(products, output_dir):
 
             f.write(f"\nInstance: PreQualDocument{instance_id}\n")
             f.write("InstanceOf: PreQualDocumentDetail\n")
+            f.write("Usage: #example\n")
             f.write(f'* documentId.system = "https://extranet.who.int/prequal/api"\n')
             f.write(f'* documentId.value = "{fsh_escape(doc_id)}"\n')
             if doc_name:
@@ -976,6 +982,7 @@ def generate_site_lm_instances(products, output_dir):
 
             f.write(f"\nInstance: PreQualSite{instance_id}\n")
             f.write("InstanceOf: PreQualSiteDetail\n")
+            f.write("Usage: #example\n")
             f.write(f'* siteOrganizationId.system = "https://extranet.who.int/prequal/api"\n')
             f.write(f'* siteOrganizationId.value = "{fsh_escape(org_id)}"\n')
             if org_name:
@@ -1039,6 +1046,7 @@ def generate_ingredient_lm_instances(products, output_dir):
 
             f.write(f"\nInstance: PreQualIngredient{instance_id}\n")
             f.write("InstanceOf: PreQualProductIngredient\n")
+            f.write("Usage: #example\n")
             if ing_id:
                 f.write(f'* ingredientId.system = "https://extranet.who.int/prequal/api"\n')
                 f.write(f'* ingredientId.value = "{fsh_escape(ing_id)}"\n')
@@ -1138,6 +1146,7 @@ def generate_products_and_authorizations(products, output_dir):
 
             f.write(f"Instance: PreQualDB{safe_sf_id}\n")
             f.write("InstanceOf: FinishedVaccineProducts\n")
+            f.write("Usage: #example\n")
             if product_type:
                 f.write(f"* productType = #{sanitize_code(product_type)}\n")
             if date:

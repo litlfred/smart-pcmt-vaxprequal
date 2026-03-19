@@ -1,6 +1,7 @@
 
 Instance: PreQualManufacturer0013X0000498p4LQAQ
 InstanceOf: PreQualManufacturer
+Usage: #example
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p4LQAQ"
 * name = "Beijing Institute of Biological Products Co., Ltd."
@@ -14,6 +15,7 @@ InstanceOf: PreQualManufacturer
 
 Instance: PreQualManufacturer0013X0000498p2jQAA
 InstanceOf: PreQualManufacturer
+Usage: #example
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p2jQAA"
 * name = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
@@ -28,6 +30,7 @@ InstanceOf: PreQualManufacturer
 
 Instance: PreQualManufacturer0013X0000498p2qQAA
 InstanceOf: PreQualManufacturer
+Usage: #example
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p2qQAA"
 * name = "Chengdu Institute of Biological Products Co. Ltd"
@@ -42,6 +45,7 @@ InstanceOf: PreQualManufacturer
 
 Instance: PreQualManufacturer0013X0000498p3gQAA
 InstanceOf: PreQualManufacturer
+Usage: #example
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p3gQAA"
 * name = "GlaxoSmithKline Biologicals SA"
@@ -56,6 +60,7 @@ InstanceOf: PreQualManufacturer
 
 Instance: PreQualManufacturer0013X0000498p2wQAA
 InstanceOf: PreQualManufacturer
+Usage: #example
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p2wQAA"
 * name = "Haffkine Bio Pharmaceutical Corporation Ltd"
@@ -70,6 +75,7 @@ InstanceOf: PreQualManufacturer
 
 Instance: PreQualManufacturer0013X000049bJ9SQAU
 InstanceOf: PreQualManufacturer
+Usage: #example
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X000049bJ9SQAU"
 * name = "Institut Pasteur de Dakar (IPD)"
@@ -83,6 +89,7 @@ InstanceOf: PreQualManufacturer
 
 Instance: PreQualManufacturer0013X0000498p4ZQAQ
 InstanceOf: PreQualManufacturer
+Usage: #example
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p4ZQAQ"
 * name = "Japan BCG Laboratory (JBL)"
@@ -97,6 +104,7 @@ InstanceOf: PreQualManufacturer
 
 Instance: PreQualManufacturer0013X00004993qnQAA
 InstanceOf: PreQualManufacturer
+Usage: #example
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X00004993qnQAA"
 * name = "LG Chem Ltd (LGC)"
@@ -111,6 +119,7 @@ InstanceOf: PreQualManufacturer
 
 Instance: PreQualManufacturer0013X0000498p3PQAQ
 InstanceOf: PreQualManufacturer
+Usage: #example
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p3PQAQ"
 * name = "Sanofi Pasteur SA"
@@ -125,6 +134,7 @@ InstanceOf: PreQualManufacturer
 
 Instance: PreQualManufacturer0013X00003cPkzfQAC
 InstanceOf: PreQualManufacturer
+Usage: #example
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X00003cPkzfQAC"
 * name = "Serum Institute of India"
@@ -140,6 +150,7 @@ InstanceOf: PreQualManufacturer
 
 Instance: PreQualManufacturer0013X0000498p3ZQAQ
 InstanceOf: PreQualManufacturer
+Usage: #example
 * manufacturerId.system = "https://extranet.who.int/prequal/api"
 * manufacturerId.value = "0013X0000498p3ZQAQ"
 * name = "Sinovac Biotech Co. Ltd"

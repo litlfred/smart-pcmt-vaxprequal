@@ -1,6 +1,7 @@
 
 Instance: PreQualSite0013X0000498p3gQAA
 InstanceOf: PreQualSiteDetail
+Usage: #example
 * siteOrganizationId.system = "https://extranet.who.int/prequal/api"
 * siteOrganizationId.value = "0013X0000498p3gQAA"
 * siteOrganizationName = "GlaxoSmithKline Biologicals SA"
@@ -13,6 +14,7 @@ InstanceOf: PreQualSiteDetail
 
 Instance: PreQualSite0013X0000498p2wQAA
 InstanceOf: PreQualSiteDetail
+Usage: #example
 * siteOrganizationId.system = "https://extranet.who.int/prequal/api"
 * siteOrganizationId.value = "0013X0000498p2wQAA"
 * siteOrganizationName = "Haffkine Bio Pharmaceutical Corporation Ltd"
@@ -25,6 +27,7 @@ InstanceOf: PreQualSiteDetail
 
 Instance: PreQualSite0013X0000498p3IQAQ
 InstanceOf: PreQualSiteDetail
+Usage: #example
 * siteOrganizationId.system = "https://extranet.who.int/prequal/api"
 * siteOrganizationId.value = "0013X0000498p3IQAQ"
 * siteOrganizationName = "PT Bio Farma (Persero)"
@@ -37,6 +40,7 @@ InstanceOf: PreQualSiteDetail
 
 Instance: PreQualSite0013X000049bJ9SQAU
 InstanceOf: PreQualSiteDetail
+Usage: #example
 * siteOrganizationId.system = "https://extranet.who.int/prequal/api"
 * siteOrganizationId.value = "0013X000049bJ9SQAU"
 * siteOrganizationName = "Institut Pasteur de Dakar (IPD)"
@@ -48,6 +52,7 @@ InstanceOf: PreQualSiteDetail
 
 Instance: PreQualSite0013X0000498p4ZQAQ
 InstanceOf: PreQualSiteDetail
+Usage: #example
 * siteOrganizationId.system = "https://extranet.who.int/prequal/api"
 * siteOrganizationId.value = "0013X0000498p4ZQAQ"
 * siteOrganizationName = "Japan BCG Laboratory (JBL)"
@@ -60,6 +65,7 @@ InstanceOf: PreQualSiteDetail
 
 Instance: PreQualSite0013X00004993qnQAA
 InstanceOf: PreQualSiteDetail
+Usage: #example
 * siteOrganizationId.system = "https://extranet.who.int/prequal/api"
 * siteOrganizationId.value = "0013X00004993qnQAA"
 * siteOrganizationName = "LG Chem Ltd (LGC)"
@@ -72,6 +78,7 @@ InstanceOf: PreQualSiteDetail
 
 Instance: PreQualSite0013X0000498p2jQAA
 InstanceOf: PreQualSiteDetail
+Usage: #example
 * siteOrganizationId.system = "https://extranet.who.int/prequal/api"
 * siteOrganizationId.value = "0013X0000498p2jQAA"
 * siteOrganizationName = "Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
@@ -84,6 +91,7 @@ InstanceOf: PreQualSiteDetail
 
 Instance: PreQualSite0013X0000498p3ZQAQ
 InstanceOf: PreQualSiteDetail
+Usage: #example
 * siteOrganizationId.system = "https://extranet.who.int/prequal/api"
 * siteOrganizationId.value = "0013X0000498p3ZQAQ"
 * siteOrganizationName = "Sinovac Biotech Co. Ltd"
@@ -96,6 +104,7 @@ InstanceOf: PreQualSiteDetail
 
 Instance: PreQualSite0013X0000498p4LQAQ
 InstanceOf: PreQualSiteDetail
+Usage: #example
 * siteOrganizationId.system = "https://extranet.who.int/prequal/api"
 * siteOrganizationId.value = "0013X0000498p4LQAQ"
 * siteOrganizationName = "Beijing Institute of Biological Products Co., Ltd."
@@ -108,6 +117,7 @@ InstanceOf: PreQualSiteDetail
 
 Instance: PreQualSite0013X0000498p3PQAQ
 InstanceOf: PreQualSiteDetail
+Usage: #example
 * siteOrganizationId.system = "https://extranet.who.int/prequal/api"
 * siteOrganizationId.value = "0013X0000498p3PQAQ"
 * siteOrganizationName = "Sanofi Pasteur SA"
@@ -120,6 +130,7 @@ InstanceOf: PreQualSiteDetail
 
 Instance: PreQualSite0013X00003cPkzfQAC
 InstanceOf: PreQualSiteDetail
+Usage: #example
 * siteOrganizationId.system = "https://extranet.who.int/prequal/api"
 * siteOrganizationId.value = "0013X00003cPkzfQAC"
 * siteOrganizationName = "Serum Institute of India"
@@ -133,6 +144,7 @@ InstanceOf: PreQualSiteDetail
 
 Instance: PreQualSite0013X0000498p2qQAA
 InstanceOf: PreQualSiteDetail
+Usage: #example
 * siteOrganizationId.system = "https://extranet.who.int/prequal/api"
 * siteOrganizationId.value = "0013X0000498p2qQAA"
 * siteOrganizationName = "Chengdu Institute of Biological Products Co. Ltd"

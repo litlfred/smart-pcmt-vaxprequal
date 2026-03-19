@@ -1,6 +1,7 @@
 
 Instance: PreQualVaccinea3S3X000003cSogUAE
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSogUAE"
 * fullName = "BCG"
@@ -8,6 +9,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSoiUAE
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSoiUAE"
 * fullName = "Dengue tetravalent vaccine (live, attenuated)"
@@ -15,6 +17,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSojUAE
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSojUAE"
 * fullName = "Diphtheria and tetanus vaccine (adsorbed)"
@@ -22,6 +25,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSokUAE
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSokUAE"
 * fullName = "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
@@ -29,6 +33,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSomUAE
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSomUAE"
 * fullName = "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
@@ -36,6 +41,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSpIUAU
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSpIUAU"
 * fullName = "Hepatitis A vaccine (inactivated)"
@@ -43,6 +49,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSpJUAU
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSpJUAU"
 * fullName = "Hepatitis B vaccine (recombinant)"
@@ -50,6 +57,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSpXUAU
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSpXUAU"
 * fullName = "Japanese encephalitis vaccine (live, attenuated) for human use"
@@ -57,6 +65,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSpYUAU
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSpYUAU"
 * fullName = "Rotavirus vaccine (live attenuated) (oral)"
@@ -64,6 +73,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSpZUAU
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSpZUAU"
 * fullName = "Measles vaccine (live, attenuated)"
@@ -71,6 +81,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSpaUAE
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSpaUAE"
 * fullName = "Measles, mumps, rubella combined vaccine (live, attenuated)"
@@ -78,6 +89,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSpbUAE
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSpbUAE"
 * fullName = "Measles, rubella combined vaccine (live, attenuated)"
@@ -85,6 +97,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSpiUAE
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSpiUAE"
 * fullName = "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
@@ -92,6 +105,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSpjUAE
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSpjUAE"
 * fullName = "Poliomyelitis vaccines (trivalent live, oral, innactivated, type 1,2, 3)"
@@ -99,6 +113,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSpnUAE
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSpnUAE"
 * fullName = "Recombinant malaria vaccine"
@@ -106,6 +121,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSpqUAE
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSpqUAE"
 * fullName = "Tetanus vaccine (adsorbed)"
@@ -113,6 +129,7 @@ InstanceOf: PreQualVaccine
 
 Instance: PreQualVaccinea3S3X000003cSpuUAE
 InstanceOf: PreQualVaccine
+Usage: #example
 * vaccineId.system = "https://extranet.who.int/prequal/api"
 * vaccineId.value = "a3S3X000003cSpuUAE"
 * fullName = "Yellow fever vaccine (live attenuated)"

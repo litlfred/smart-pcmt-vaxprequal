@@ -1,6 +1,7 @@
 
 Instance: PreQualNRA0013X0000498p4bQAA
 InstanceOf: PreQualNRA
+Usage: #example
 * nraId.system = "https://extranet.who.int/prequal/api"
 * nraId.value = "0013X0000498p4bQAA"
 * name = "Agence nationale de sécurité du médicament et des produits de santé (ANSM)"
@@ -10,6 +11,7 @@ InstanceOf: PreQualNRA
 
 Instance: PreQualNRA0013X00003cPkgXQAS
 InstanceOf: PreQualNRA
+Usage: #example
 * nraId.system = "https://extranet.who.int/prequal/api"
 * nraId.value = "0013X00003cPkgXQAS"
 * name = "Bulgarian Drug Agency (BDA)"
@@ -19,6 +21,7 @@ InstanceOf: PreQualNRA
 
 Instance: PreQualNRA0013X0000498p4fQAA
 InstanceOf: PreQualNRA
+Usage: #example
 * nraId.system = "https://extranet.who.int/prequal/api"
 * nraId.value = "0013X0000498p4fQAA"
 * name = "Central Drugs Standard Control Organization (CDSCO)"
@@ -28,6 +31,7 @@ InstanceOf: PreQualNRA
 
 Instance: PreQualNRA0013X0000498p67QAA
 InstanceOf: PreQualNRA
+Usage: #example
 * nraId.system = "https://extranet.who.int/prequal/api"
 * nraId.value = "0013X0000498p67QAA"
 * name = "Federal Agency for Medicines and Health Products  (FAMPH)"
@@ -37,6 +41,7 @@ InstanceOf: PreQualNRA
 
 Instance: PreQualNRA0013X00004993qyQAA
 InstanceOf: PreQualNRA
+Usage: #example
 * nraId.system = "https://extranet.who.int/prequal/api"
 * nraId.value = "0013X00004993qyQAA"
 * name = "Ministry of Food and Drug Safety (MFDS)"
@@ -46,6 +51,7 @@ InstanceOf: PreQualNRA
 
 Instance: PreQualNRA0013X0000498p53QAA
 InstanceOf: PreQualNRA
+Usage: #example
 * nraId.system = "https://extranet.who.int/prequal/api"
 * nraId.value = "0013X0000498p53QAA"
 * name = "Ministère de la Santé publique (DPM)"
@@ -54,6 +60,7 @@ InstanceOf: PreQualNRA
 
 Instance: PreQualNRA0013X0000498p4wQAA
 InstanceOf: PreQualNRA
+Usage: #example
 * nraId.system = "https://extranet.who.int/prequal/api"
 * nraId.value = "0013X0000498p4wQAA"
 * name = "National Medical Products Administration  (NMPA)"
@@ -63,6 +70,7 @@ InstanceOf: PreQualNRA
 
 Instance: PreQualNRA0013X0000498p4mQAA
 InstanceOf: PreQualNRA
+Usage: #example
 * nraId.system = "https://extranet.who.int/prequal/api"
 * nraId.value = "0013X0000498p4mQAA"
 * name = "Pharmaceutical and Medical Devices Agency (PMDA)"

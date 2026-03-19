@@ -1,6 +1,7 @@
 
 Instance: PreQualPackaginga3HNN0000007wYl2AI
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3HNN0000007wYl2AI"
 * packagingType = #ShippingContainer
@@ -11,6 +12,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3HNN0000007wYk2AI
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3HNN0000007wYk2AI"
 * packagingType = #Tertiary
@@ -22,6 +24,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3HNN0000007wYj2AI
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3HNN0000007wYj2AI"
 * packagingType = #Secondary
@@ -35,6 +38,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000002OBWgUAO
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000002OBWgUAO"
 * packagingType = #Tertiary
@@ -46,6 +50,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000002OBWfUAO
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000002OBWfUAO"
 * packagingType = #ShippingContainer
@@ -56,6 +61,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000002OBWeUAO
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000002OBWeUAO"
 * packagingType = #Secondary
@@ -69,6 +75,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaGUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaGUAS"
 * packagingType = #Tertiary
@@ -80,6 +87,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaFUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaFUAS"
 * packagingType = #Tertiary
@@ -91,6 +99,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaEUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaEUAS"
 * packagingType = #Tertiary
@@ -102,6 +111,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaDUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaDUAS"
 * packagingType = #Secondary
@@ -115,6 +125,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaCUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaCUAS"
 * packagingType = #Secondary
@@ -128,6 +139,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaBUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaBUAS"
 * packagingType = #Secondary
@@ -141,6 +153,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaHUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaHUAS"
 * packagingType = #Secondary
@@ -151,6 +164,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaIUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaIUAS"
 * packagingType = #Secondary
@@ -161,6 +175,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaJUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaJUAS"
 * packagingType = #Secondary
@@ -171,6 +186,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaKUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaKUAS"
 * packagingType = #Secondary
@@ -181,6 +197,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaOUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaOUAS"
 * packagingType = #Tertiary
@@ -192,6 +209,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaNUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaNUAS"
 * packagingType = #Tertiary
@@ -203,6 +221,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaMUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaMUAS"
 * packagingType = #Secondary
@@ -216,6 +235,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaLUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaLUAS"
 * packagingType = #Secondary
@@ -229,6 +249,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaQUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaQUAS"
 * packagingType = #Tertiary
@@ -240,6 +261,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaPUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaPUAS"
 * packagingType = #Secondary
@@ -253,6 +275,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaYUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaYUAS"
 * packagingType = #Tertiary
@@ -264,6 +287,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaXUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaXUAS"
 * packagingType = #Tertiary
@@ -275,6 +299,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaWUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaWUAS"
 * packagingType = #Secondary
@@ -288,6 +313,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaVUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaVUAS"
 * packagingType = #Secondary
@@ -301,6 +327,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaaUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaaUAC"
 * packagingType = #Tertiary
@@ -312,6 +339,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaZUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaZUAS"
 * packagingType = #Secondary
@@ -325,6 +353,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaacUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaacUAC"
 * packagingType = #Tertiary
@@ -336,6 +365,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaabUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaabUAC"
 * packagingType = #Secondary
@@ -349,6 +379,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaeUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaeUAC"
 * packagingType = #Tertiary
@@ -360,6 +391,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaadUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaadUAC"
 * packagingType = #Secondary
@@ -373,6 +405,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaanUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaanUAC"
 * packagingType = #Tertiary
@@ -384,6 +417,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaamUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaamUAC"
 * packagingType = #Tertiary
@@ -395,6 +429,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaalUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaalUAC"
 * packagingType = #Tertiary
@@ -406,6 +441,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaakUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaakUAC"
 * packagingType = #Secondary
@@ -419,6 +455,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaajUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaajUAC"
 * packagingType = #Secondary
@@ -432,6 +469,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaapUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaapUAC"
 * packagingType = #Tertiary
@@ -443,6 +481,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaoUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaoUAC"
 * packagingType = #Secondary
@@ -456,6 +495,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaasUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaasUAC"
 * packagingType = #Tertiary
@@ -467,6 +507,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaarUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaarUAC"
 * packagingType = #Secondary
@@ -480,6 +521,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaqUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaqUAC"
 * packagingType = #Secondary
@@ -493,6 +535,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaauUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaauUAC"
 * packagingType = #Tertiary
@@ -504,6 +547,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaatUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaatUAC"
 * packagingType = #Secondary
@@ -517,6 +561,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaawUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaawUAC"
 * packagingType = #Tertiary
@@ -528,6 +573,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaavUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaavUAC"
 * packagingType = #Secondary
@@ -541,6 +587,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaayUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaayUAC"
 * packagingType = #Tertiary
@@ -552,6 +599,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaaxUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaaxUAC"
 * packagingType = #Secondary
@@ -565,6 +613,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001Vab0UAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab0UAC"
 * packagingType = #Tertiary
@@ -576,6 +625,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VaazUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VaazUAC"
 * packagingType = #Secondary
@@ -589,6 +639,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001Vab4UAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab4UAC"
 * packagingType = #Tertiary
@@ -600,6 +651,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001Vab3UAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab3UAC"
 * packagingType = #Tertiary
@@ -611,6 +663,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001Vab2UAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab2UAC"
 * packagingType = #Secondary
@@ -624,6 +677,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001Vab1UAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab1UAC"
 * packagingType = #Secondary
@@ -637,6 +691,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001Vab8UAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab8UAC"
 * packagingType = #Tertiary
@@ -648,6 +703,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001Vab7UAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab7UAC"
 * packagingType = #Tertiary
@@ -659,6 +715,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001Vab6UAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab6UAC"
 * packagingType = #Secondary
@@ -672,6 +729,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001Vab5UAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab5UAC"
 * packagingType = #Secondary
@@ -685,6 +743,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabBUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabBUAS"
 * packagingType = #Tertiary
@@ -696,6 +755,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabAUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabAUAS"
 * packagingType = #Secondary
@@ -709,6 +769,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001Vab9UAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001Vab9UAC"
 * packagingType = #Secondary
@@ -722,6 +783,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabDUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabDUAS"
 * packagingType = #Tertiary
@@ -733,6 +795,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabCUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabCUAS"
 * packagingType = #Secondary
@@ -746,6 +809,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabGUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabGUAS"
 * packagingType = #Tertiary
@@ -757,6 +821,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabFUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabFUAS"
 * packagingType = #Secondary
@@ -770,6 +835,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabEUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabEUAS"
 * packagingType = #Secondary
@@ -783,6 +849,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabJUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabJUAS"
 * packagingType = #Tertiary
@@ -794,6 +861,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabIUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabIUAS"
 * packagingType = #Secondary
@@ -807,6 +875,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabHUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabHUAS"
 * packagingType = #Secondary
@@ -820,6 +889,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabMUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabMUAS"
 * packagingType = #Tertiary
@@ -831,6 +901,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabLUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabLUAS"
 * packagingType = #Secondary
@@ -844,6 +915,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabKUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabKUAS"
 * packagingType = #Secondary
@@ -857,6 +929,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabPUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabPUAS"
 * packagingType = #Tertiary
@@ -868,6 +941,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabOUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabOUAS"
 * packagingType = #Secondary
@@ -881,6 +955,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabNUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabNUAS"
 * packagingType = #Secondary
@@ -894,6 +969,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabSUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabSUAS"
 * packagingType = #Tertiary
@@ -905,6 +981,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabRUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabRUAS"
 * packagingType = #Secondary
@@ -918,6 +995,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabQUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabQUAS"
 * packagingType = #Secondary
@@ -931,6 +1009,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabUUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabUUAS"
 * packagingType = #ShippingContainer
@@ -941,6 +1020,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabTUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabTUAS"
 * packagingType = #Secondary
@@ -954,6 +1034,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabXUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabXUAS"
 * packagingType = #Tertiary
@@ -965,6 +1046,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabWUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabWUAS"
 * packagingType = #Secondary
@@ -978,6 +1060,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabVUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabVUAS"
 * packagingType = #Secondary
@@ -991,6 +1074,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabZUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabZUAS"
 * packagingType = #Tertiary
@@ -1002,6 +1086,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabYUAS
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabYUAS"
 * packagingType = #Secondary
@@ -1015,6 +1100,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabbUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabbUAC"
 * packagingType = #Tertiary
@@ -1026,6 +1112,7 @@ InstanceOf: PreQualProductPackaging
 
 Instance: PreQualPackaginga3H3X000001VabaUAC
 InstanceOf: PreQualProductPackaging
+Usage: #example
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabaUAC"
 * packagingType = #Secondary
