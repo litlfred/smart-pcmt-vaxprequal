@@ -14,7 +14,7 @@
 Instance: PreQualDBa3K3X000005atRtUAI
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "CYVAC - Malaria"
+Title: "PreQual Product: CYVAC - Malaria"
 Description: "CYVAC (Malaria) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2023-12-19
@@ -72,7 +72,7 @@ Description: "CYVAC (Malaria) by Serum Institute of India"
 Instance: PreQualDBa3K3X000005atSwUAI
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "CYVAC - Malaria"
+Title: "PreQual Product: CYVAC - Malaria"
 Description: "CYVAC (Malaria) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2023-12-19
@@ -129,7 +129,7 @@ Description: "CYVAC (Malaria) by Serum Institute of India"
 Instance: PreQualDBa3K3X000006MihsUAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Rotarix - LARV"
+Title: "PreQual Product: Rotarix - LARV"
 Description: "Rotarix (LARV) by GlaxoSmithKline Biologicals SA"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2007-01-29
@@ -194,7 +194,7 @@ Description: "Rotarix (LARV) by GlaxoSmithKline Biologicals SA"
 Instance: PreQualDBa3K3X000006MihtUAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Polioviral vaccine - tOPV"
+Title: "PreQual Product: Polioviral vaccine - tOPV"
 Description: "Polioviral vaccine (tOPV) by Haffkine Bio Pharmaceutical Corporation Ltd"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-02-02
@@ -256,7 +256,7 @@ Description: "Polioviral vaccine (tOPV) by Haffkine Bio Pharmaceutical Corporati
 Instance: PreQualDBa3K3X000006MihuUAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Stabilized Yellow Fever Vaccine - YF"
+Title: "PreQual Product: Stabilized Yellow Fever Vaccine - YF"
 Description: "Stabilized Yellow Fever Vaccine (YF) by Institut Pasteur de Dakar (IPD)"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2001-03-20
@@ -314,7 +314,7 @@ Description: "Stabilized Yellow Fever Vaccine (YF) by Institut Pasteur de Dakar 
 Instance: PreQualDBa3K3X000006MihvUAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Stabilized Yellow Fever Vaccine - YF"
+Title: "PreQual Product: Stabilized Yellow Fever Vaccine - YF"
 Description: "Stabilized Yellow Fever Vaccine (YF) by Institut Pasteur de Dakar (IPD)"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2001-03-20
@@ -375,7 +375,7 @@ Description: "Stabilized Yellow Fever Vaccine (YF) by Institut Pasteur de Dakar 
 Instance: PreQualDBa3K3X000006MihwUAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Stabilized Yellow Fever Vaccine - YF"
+Title: "PreQual Product: Stabilized Yellow Fever Vaccine - YF"
 Description: "Stabilized Yellow Fever Vaccine (YF) by Institut Pasteur de Dakar (IPD)"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2001-03-20
@@ -436,7 +436,7 @@ Description: "Stabilized Yellow Fever Vaccine (YF) by Institut Pasteur de Dakar 
 Instance: PreQualDBa3K3X000006MihxUAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "BCG Freeze Dried Glutamate vaccine - BCG"
+Title: "PreQual Product: BCG Freeze Dried Glutamate vaccine - BCG"
 Description: "BCG Freeze Dried Glutamate vaccine (BCG) by Japan BCG Laboratory (JBL)"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1987-01-01
@@ -502,7 +502,7 @@ Description: "BCG Freeze Dried Glutamate vaccine (BCG) by Japan BCG Laboratory (
 Instance: PreQualDBa3K3X000006MihyUAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Euvax B - HepB"
+Title: "PreQual Product: Euvax B - HepB"
 Description: "Euvax B (HepB) by LG Chem Ltd (LGC)"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1996-11-22
@@ -566,7 +566,7 @@ Description: "Euvax B (HepB) by LG Chem Ltd (LGC)"
 Instance: PreQualDBa3K3X000006Mii0UAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Priorix - MMR"
+Title: "PreQual Product: Priorix - MMR"
 Description: "Priorix (MMR) by GlaxoSmithKline Biologicals SA"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2001-03-09
@@ -634,7 +634,7 @@ Description: "Priorix (MMR) by GlaxoSmithKline Biologicals SA"
 Instance: PreQualDBa3K3X000006Mii1UAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Tetatox - TT"
+Title: "PreQual Product: Tetatox - TT"
 Description: "Tetatox (TT) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
@@ -698,7 +698,7 @@ Description: "Tetatox (TT) by Bul Bio-National Center of Infectious and Parasiti
 Instance: PreQualDBa3K3X000006Mii2UAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Tetatox - TT"
+Title: "PreQual Product: Tetatox - TT"
 Description: "Tetatox (TT) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
@@ -762,7 +762,7 @@ Description: "Tetatox (TT) by Bul Bio-National Center of Infectious and Parasiti
 Instance: PreQualDBa3K3X000006Mii3UAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Diftet - DT"
+Title: "PreQual Product: Diftet - DT"
 Description: "Diftet (DT) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
@@ -827,7 +827,7 @@ Description: "Diftet (DT) by Bul Bio-National Center of Infectious and Parasitic
 Instance: PreQualDBa3K3X000006Mii5UAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "HEALIVE - HepA"
+Title: "PreQual Product: HEALIVE - HepA"
 Description: "HEALIVE (HepA) by Sinovac Biotech Co. Ltd"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2017-12-22
@@ -889,7 +889,7 @@ Description: "HEALIVE (HepA) by Sinovac Biotech Co. Ltd"
 Instance: PreQualDBa3K3X000006Mii6UAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Poliomyelitis Vaccine (live oral attenuated human Diploid Cell) type 1 and 3 - bOPV"
+Title: "PreQual Product: Poliomyelitis Vaccine (live oral attenuated human Diploid Cell) type 1 and 3 - bOPV"
 Description: "Poliomyelitis Vaccine (live oral attenuated human Diploid Cell) type 1 and 3 (bOPV) by Beijing Institute of Biological Products Co., Ltd."
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2017-12-21
@@ -952,7 +952,7 @@ Description: "Poliomyelitis Vaccine (live oral attenuated human Diploid Cell) ty
 Instance: PreQualDBa3K3X000006Mii7UAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Euvax B - HepB"
+Title: "PreQual Product: Euvax B - HepB"
 Description: "Euvax B (HepB) by LG Chem Ltd (LGC)"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1996-11-22
@@ -1018,7 +1018,7 @@ Description: "Euvax B (HepB) by LG Chem Ltd (LGC)"
 Instance: PreQualDBa3K3X000006Mii8UAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Diftet - DT"
+Title: "PreQual Product: Diftet - DT"
 Description: "Diftet (DT) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
@@ -1084,7 +1084,7 @@ Description: "Diftet (DT) by Bul Bio-National Center of Infectious and Parasitic
 Instance: PreQualDBa3K3X000006Mii9UAC
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Tetadif - dT"
+Title: "PreQual Product: Tetadif - dT"
 Description: "Tetadif (dT) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
@@ -1149,7 +1149,7 @@ Description: "Tetadif (dT) by Bul Bio-National Center of Infectious and Parasiti
 Instance: PreQualDBa3K3X000006MiiAUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Tetadif - dT"
+Title: "PreQual Product: Tetadif - dT"
 Description: "Tetadif (dT) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2006-05-09
@@ -1214,7 +1214,7 @@ Description: "Tetadif (dT) by Bul Bio-National Center of Infectious and Parasiti
 Instance: PreQualDBa3K3X000006MiiBUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Dengvaxia - TDV"
+Title: "PreQual Product: Dengvaxia - TDV"
 Description: "Dengvaxia (TDV) by Sanofi Pasteur SA"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2020-03-25
@@ -1278,7 +1278,7 @@ Description: "Dengvaxia (TDV) by Sanofi Pasteur SA"
 Instance: PreQualDBa3K3X000006MiiCUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "BCG Vaccine - BCG"
+Title: "PreQual Product: BCG Vaccine - BCG"
 Description: "BCG Vaccine (BCG) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1991-02-01
@@ -1345,7 +1345,7 @@ Description: "BCG Vaccine (BCG) by Bul Bio-National Center of Infectious and Par
 Instance: PreQualDBa3K3X000006MiiDUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "BCG Vaccine - BCG"
+Title: "PreQual Product: BCG Vaccine - BCG"
 Description: "BCG Vaccine (BCG) by Bul Bio-National Center of Infectious and Parasitic Diseases Ltd."
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1991-02-01
@@ -1412,7 +1412,7 @@ Description: "BCG Vaccine (BCG) by Bul Bio-National Center of Infectious and Par
 Instance: PreQualDBa3K3X000006MiiEUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Measles and Rubella Vaccine Live Attenuated - MR"
+Title: "PreQual Product: Measles and Rubella Vaccine Live Attenuated - MR"
 Description: "Measles and Rubella Vaccine Live Attenuated (MR) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1993-02-15
@@ -1478,7 +1478,7 @@ Description: "Measles and Rubella Vaccine Live Attenuated (MR) by Serum Institut
 Instance: PreQualDBa3K3X000006MiiFUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Tetanus  Toxoid Vaccine Adsorbed - TT"
+Title: "PreQual Product: Tetanus  Toxoid Vaccine Adsorbed - TT"
 Description: "Tetanus  Toxoid Vaccine Adsorbed (TT) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1995-04-04
@@ -1543,7 +1543,7 @@ Description: "Tetanus  Toxoid Vaccine Adsorbed (TT) by Serum Institute of India"
 Instance: PreQualDBa3K3X000006MiiGUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Measles and Rubella Vaccine Live Attenuated - MR"
+Title: "PreQual Product: Measles and Rubella Vaccine Live Attenuated - MR"
 Description: "Measles and Rubella Vaccine Live Attenuated (MR) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1993-02-15
@@ -1610,7 +1610,7 @@ Description: "Measles and Rubella Vaccine Live Attenuated (MR) by Serum Institut
 Instance: PreQualDBa3K3X000006MiiHUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Measles Mumps and Rubella Vaccine Live Attenuated - MMR"
+Title: "PreQual Product: Measles Mumps and Rubella Vaccine Live Attenuated - MMR"
 Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2003-08-08
@@ -1677,7 +1677,7 @@ Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum I
 Instance: PreQualDBa3K3X000006MiiIUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Measles Mumps and Rubella Vaccine Live Attenuated - MMR"
+Title: "PreQual Product: Measles Mumps and Rubella Vaccine Live Attenuated - MMR"
 Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2003-08-08
@@ -1745,7 +1745,7 @@ Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum I
 Instance: PreQualDBa3K3X000006MiiJUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Measles Mumps and Rubella Vaccine Live Attenuated - MMR"
+Title: "PreQual Product: Measles Mumps and Rubella Vaccine Live Attenuated - MMR"
 Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2003-08-08
@@ -1813,7 +1813,7 @@ Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum I
 Instance: PreQualDBa3K3X000006MiiKUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Measles Mumps and Rubella Vaccine Live Attenuated - MMR"
+Title: "PreQual Product: Measles Mumps and Rubella Vaccine Live Attenuated - MMR"
 Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2003-08-08
@@ -1881,7 +1881,7 @@ Description: "Measles Mumps and Rubella Vaccine Live Attenuated (MMR) by Serum I
 Instance: PreQualDBa3K3X000006MiiLUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Japanese Encephalitis Vaccine Live (SA14-14-2) - JE"
+Title: "PreQual Product: Japanese Encephalitis Vaccine Live (SA14-14-2) - JE"
 Description: "Japanese Encephalitis Vaccine Live (SA14-14-2) (JE) by Chengdu Institute of Biological Products Co. Ltd"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 2013-10-09
@@ -1944,7 +1944,7 @@ Description: "Japanese Encephalitis Vaccine Live (SA14-14-2) (JE) by Chengdu Ins
 Instance: PreQualDBa3K3X000006MiiMUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Measles Vaccine Live Attenuated - M"
+Title: "PreQual Product: Measles Vaccine Live Attenuated - M"
 Description: "Measles Vaccine Live Attenuated (M) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1993-02-15
@@ -2009,7 +2009,7 @@ Description: "Measles Vaccine Live Attenuated (M) by Serum Institute of India"
 Instance: PreQualDBa3K3X000006MiiNUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed - DTwP"
+Title: "PreQual Product: Diphtheria-Tetanus-Pertussis Vaccine Adsorbed - DTwP"
 Description: "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed (DTwP) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1995-04-04
@@ -2074,7 +2074,7 @@ Description: "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed (DTwP) by Serum Inst
 Instance: PreQualDBa3K3X000006MiiOUAS
 InstanceOf: FinishedVaccineProducts
 Usage: #example
-Title: "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed - DTwP"
+Title: "PreQual Product: Diphtheria-Tetanus-Pertussis Vaccine Adsorbed - DTwP"
 Description: "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed (DTwP) by Serum Institute of India"
 * productType = #FinishedVaccineProduct
 * dateOfPrequal = 1995-04-04
