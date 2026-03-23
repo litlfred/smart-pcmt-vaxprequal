@@ -11,6 +11,36 @@ The `litlfred/smart-pcmt-vaxprequal` fork has diverged from `WorldHealthOrganiza
 - Conflict resolution strategy: **Salesforce API over CSV** — litlfred's API-generated FSH data was preserved, WHO's infrastructure/config changes were adopted
 - Commit: `2db7ce2` — ready for PR into litlfred/main
 
+## URGENT: Existing PR #3 Has Merge Conflicts
+
+**PR:** https://github.com/WorldHealthOrganization/smart-pcmt-vaxprequal/pull/3
+**Title:** "Merge" (litlfred/main → WHO/main)
+**State:** Open, NOT mergeable
+**Created:** 2026-03-19
+
+### Conflicting Files
+1. `README.md` — WHO has minimal README, litlfred has extensive API generation docs
+2. `input/fsh/examples/prequal_database_holders.fsh` — WHO has CSV-generated (with `#definition`), litlfred has API-generated (with `#example`)
+3. `input/fsh/examples/prequal_database_manufacturers.fsh` — same as above
+4. `input/fsh/examples/prequal_database_products.fsh` — WHO has CSV-generated PreQualDBwithIds, litlfred has API-generated FinishedVaccineProducts
+
+### Resolution Strategy
+For ALL conflicting files, **take litlfred's version** (Salesforce API is the master):
+- The FSH examples should use the API-generated instances (FinishedVaccineProducts model, Salesforce IDs)
+- BUT update `Usage: #example` → `Usage: #definition` in litlfred's versions to match WHO's intent
+- For README.md, take litlfred's version (has generation docs) but keep WHO's CI Build link (already done in this session)
+
+### How to Resolve
+Option A: Close PR #3, create a fresh PR from a branch where conflicts are pre-resolved
+Option B: Use GitHub web editor or CLI to resolve conflicts directly on the PR
+
+The litlfred fork (after merging this session's `claude/sync-litlfred-who-PIIn2` branch) already has all WHO's config changes incorporated. So a fresh PR from the merged litlfred/main should have fewer conflicts.
+
+**Recommended workflow:**
+1. Merge `claude/sync-litlfred-who-PIIn2` into litlfred/main first
+2. Close PR #3
+3. Open a new PR from litlfred/main → WHO/main — this should be clean or near-clean
+
 ## What Needs Doing (Next Session — WHO Repo)
 
 The WHO repo (`WorldHealthOrganization/smart-pcmt-vaxprequal`) is **missing all of litlfred's Salesforce API work**. The goal is to get litlfred's changes into the WHO repo.
