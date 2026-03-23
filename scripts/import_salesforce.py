@@ -434,7 +434,7 @@ def generate_manufacturers(products, output_dir):
             instance_id = sf_id if sf_id else md5hash(name)
             f.write(f"\nInstance: Manufacturer{sanitize_code(instance_id)}\n")
             f.write("InstanceOf: IHE.mCSD.Organization\n")
-            f.write("Usage: #example\n")
+            f.write("Usage: #definition\n")
             f.write(f'Title: "PreQual Manufacturer: {fsh_escape(name)}"\n')
             f.write(f'Description: "Vaccine Manufacturer Organization: {fsh_escape(name)}"\n')
             f.write("* active = true\n")
@@ -470,7 +470,7 @@ def generate_holders(products, output_dir):
             instance_id = sf_id if sf_id else md5hash(name)
             f.write(f"\nInstance: Holder{sanitize_code(instance_id)}\n")
             f.write("InstanceOf: IHE.mCSD.Organization\n")
-            f.write("Usage: #example\n")
+            f.write("Usage: #definition\n")
             f.write(f'Title: "PreQual NRA/Holder: {fsh_escape(name)}"\n')
             f.write(f'Description: "National Regulatory Authority: {fsh_escape(name)}"\n')
             f.write("* active = true\n")
@@ -510,7 +510,7 @@ def generate_manufacturer_lm_instances(products, output_dir):
             title_suffix = f" ({country})" if country else ""
             f.write(f"\nInstance: PreQualManufacturer{instance_id}\n")
             f.write("InstanceOf: PreQualManufacturer\n")
-            f.write("Usage: #example\n")
+            f.write("Usage: #definition\n")
             f.write(f'Title: "PreQual Manufacturer: {fsh_escape(name)}"\n')
             f.write(f'Description: "WHO PreQual Manufacturer: {fsh_escape(name)}{fsh_escape(title_suffix)}"\n')
             if sf_id:
@@ -573,7 +573,7 @@ def generate_nra_lm_instances(products, output_dir):
             title_suffix = f" ({nra_country})" if nra_country else ""
             f.write(f"\nInstance: PreQualNRA{instance_id}\n")
             f.write("InstanceOf: PreQualNRA\n")
-            f.write("Usage: #example\n")
+            f.write("Usage: #definition\n")
             f.write(f'Title: "PreQual NRA: {fsh_escape(name)}"\n')
             f.write(f'Description: "WHO PreQual NRA: {fsh_escape(name)}{fsh_escape(title_suffix)}"\n')
             if sf_id:
@@ -621,7 +621,7 @@ def generate_vaccine_lm_instances(products, output_dir):
             vax_desc = " ".join(part for part in vax_desc_parts if part).strip()
             f.write(f"\nInstance: PreQualVaccine{instance_id}\n")
             f.write("InstanceOf: PreQualVaccine\n")
-            f.write("Usage: #example\n")
+            f.write("Usage: #definition\n")
             f.write(f'Title: "PreQual Vaccine: {fsh_escape(vax_title)}"\n')
             f.write(f'Description: "WHO PreQual Vaccine: {fsh_escape(vax_desc)}"\n')
             f.write(f'* vaccineId.system = "https://extranet.who.int/prequal/api"\n')
@@ -826,7 +826,7 @@ def generate_bulk_supplier_lm_instances(products, output_dir):
             bs_title = bs_name or bs_id
             f.write(f"\nInstance: PreQualBulkSupplier{instance_id}\n")
             f.write("InstanceOf: PreQualBulkSupplier\n")
-            f.write("Usage: #example\n")
+            f.write("Usage: #definition\n")
             f.write(f'Title: "PreQual Bulk Supplier: {fsh_escape(bs_title)}"\n')
             f.write(f'Description: "WHO PreQual Bulk Supplier: {fsh_escape(bs_title)}"\n')
             f.write(f'* bulkSupplierId.system = "https://extranet.who.int/prequal/api"\n')
@@ -882,7 +882,7 @@ def generate_packaging_lm_instances(products, output_dir):
             pkg_title = pkg_desc_text or pkg_type or "Packaging"
             f.write(f"\nInstance: PreQualPackaging{instance_id}\n")
             f.write("InstanceOf: PreQualProductPackaging\n")
-            f.write("Usage: #example\n")
+            f.write("Usage: #definition\n")
             f.write(f'Title: "PreQual Packaging: {fsh_escape(pkg_title)}"\n')
             f.write(f'Description: "WHO PreQual Product Packaging: {fsh_escape(pkg_title)}"\n')
             f.write(f'* packagingId.system = "https://extranet.who.int/prequal/api"\n')
@@ -955,7 +955,7 @@ def generate_document_lm_instances(products, output_dir):
             doc_type_label = f" ({doc_type_val})" if doc_type_val else ""
             f.write(f"\nInstance: PreQualDocument{instance_id}\n")
             f.write("InstanceOf: PreQualDocumentDetail\n")
-            f.write("Usage: #example\n")
+            f.write("Usage: #definition\n")
             f.write(f'Title: "PreQual Document: {fsh_escape(doc_title)}"\n')
             f.write(f'Description: "WHO PreQual Document: {fsh_escape(doc_title)}{fsh_escape(doc_type_label)}"\n')
             f.write(f'* documentId.system = "https://extranet.who.int/prequal/api"\n')
@@ -1017,7 +1017,7 @@ def generate_site_lm_instances(products, output_dir):
             site_suffix = f" ({site_country})" if site_country else ""
             f.write(f"\nInstance: PreQualSite{instance_id}\n")
             f.write("InstanceOf: PreQualSiteDetail\n")
-            f.write("Usage: #example\n")
+            f.write("Usage: #definition\n")
             f.write(f'Title: "PreQual Site: {fsh_escape(site_title)}"\n')
             f.write(f'Description: "WHO PreQual Manufacturing Site: {fsh_escape(site_title)}{fsh_escape(site_suffix)}"\n')
             f.write(f'* siteOrganizationId.system = "https://extranet.who.int/prequal/api"\n')
@@ -1091,7 +1091,7 @@ def generate_ingredient_lm_instances(products, output_dir):
             ing_desc = " ".join(ing_desc_parts)
             f.write(f"\nInstance: PreQualIngredient{instance_id}\n")
             f.write("InstanceOf: PreQualProductIngredient\n")
-            f.write("Usage: #example\n")
+            f.write("Usage: #definition\n")
             f.write(f'Title: "PreQual Ingredient: {fsh_escape(ing_title)}"\n')
             f.write(f'Description: "WHO PreQual Product Ingredient: {fsh_escape(ing_desc)}"\n')
             if ing_id:
@@ -1195,7 +1195,7 @@ def generate_products_and_authorizations(products, output_dir):
             product_desc = f"{commercial_name} ({vax}) by {manufacturer}" if commercial_name else sf_name
             f.write(f"Instance: PreQualDB{safe_sf_id}\n")
             f.write("InstanceOf: FinishedVaccineProducts\n")
-            f.write("Usage: #example\n")
+            f.write("Usage: #definition\n")
             f.write(f'Title: "PreQual Product: {fsh_escape(product_title)}"\n')
             f.write(f'Description: "{fsh_escape(product_desc)}"\n')
             if product_type:
