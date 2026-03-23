@@ -111,7 +111,7 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, '
   print ""
   print "Instance: Manufacturer"MD5
   print "InstanceOf: IHE.mCSD.Organization"
-  print "Usage: #example"
+  print "Usage: #definition"
   print "* active = true"
   print "* name = \""$0"\""
   print "* type = $orgType#other"
@@ -135,7 +135,7 @@ awk -vFPAT='([^,]*)|("[^"]+")' -vOFS=, 'NR>1  {
   print ""
   print "Instance: Holder"MD5
   print "InstanceOf: IHE.mCSD.Organization"
-  print "Usage: #example"
+  print "Usage: #definition"
   print "* active = true"
   print "* name = \""$0"\""
   print "* type = $orgType#govt"
@@ -214,6 +214,7 @@ NR > 1{
   print ""
   print "Instance: PreQualDB"MD5
   print "InstanceOf: PreQualDBwithIds"
+  print "Usage: #definition"
   print "* dateOfPrequal = "VDATE
   print "* vaccineType.coding.code = #"VAXTYPE
   print "* vaccineType.coding.display = \""VAX"\"" 
@@ -233,7 +234,7 @@ NR > 1{
   print ""    
   print "Instance: "PRODID
   print "InstanceOf: $Product"
-  print "Usage: #example"
+  print "Usage: #definition"
   print "* status = #active"
   print "* name"
   print "  * nameType = #official"
@@ -248,7 +249,7 @@ NR > 1{
   print ""
   print "Instance: PreQual" MD5
   print "InstanceOf: $ProductAuthorization"
-  print "Usage: #example"
+  print "Usage: #definition"
   print "* status = #active"
   print "* type = #prequal"
   print "* jurisdiction.coding.display = \"WHO\""
