@@ -36,7 +36,6 @@ This reads 35 products from `data/prequal.json` and writes generated FSH files i
 - `input/fsh/examples/prequal_database_vaccine_lm.fsh` — PreQualVaccine LM instances (vaccine type details)
 - `input/fsh/codesystems/` — CodeSystems for presentations, vaccine types, and product identifiers
 - `input/fsh/valuesets/` — ValueSet for product identifiers
-- `input/fsh/concept_maps/` — ConceptMap from CSV IDs to API IDs
 
 To run tests:
 
@@ -59,7 +58,7 @@ Products with missing essential data (e.g. withdrawn products) are automatically
 Here is a sample for the CYVAC malaria vaccine showing the product and its referenced LM instances:
 
 ```fsh
-Instance: PreQualDBa3K3X000005atRtUAI
+Instance: FinishedProducta3K3X000005atRtUAI
 InstanceOf: FinishedVaccineProducts
 * dateOfPrequal = 2023-12-19
 * status = "Prequalified"
