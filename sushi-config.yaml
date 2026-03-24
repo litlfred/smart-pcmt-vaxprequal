@@ -60,6 +60,8 @@ pages:
       title: Indicators and Measures
     codings.md:
       title: Codings
+    prequal-data.md:
+      title: PreQual Data
   deployment.md:
     title: Deployment
     security-privacy.md:
@@ -105,6 +107,7 @@ menu:
     Transactions: transactions.html
     Indicators and Measures: indicators-measures.html
     Codings: codings.html
+    PreQual Data: prequal-data.html
   Deployment:
     Security and Privacy Considerations: security-privacy.html
     Testing: testing.html
