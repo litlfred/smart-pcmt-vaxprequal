@@ -1,12 +1,11 @@
 
-Logical: 	FinishedVaccineProducts
+Resource: 	FinishedVaccineProducts
 Title: 		"WHO Vaccine PreQual DB - Finished Vaccine Products"
-Characteristics: #can-be-target
 Description:	"""WHO Vaccine PreQual DB - Finished Vaccine Products.
-Logical model for the WHO PreQual DB as provided by the backend API at:
+Custom resource for the WHO PreQual DB as provided by the backend API at:
      https://extranet.who.int/prequal/vaccines/prequalified-vaccines
 This model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.
-Sub-objects with Identification.Id are modeled as separate logical models and linked via references.
+Sub-objects with Identification.Id are modeled as separate resources and linked via references.
 
 Key fields from the API (FinishedVaccineProducts):
   ProductDetails.Identification.Id - Vaccine Product ID (authoritative)
@@ -23,7 +22,6 @@ Key fields from the API (FinishedVaccineProducts):
   ProductDetails.StorageDetails - Storage temperature and shelf life
   ProductDetails.Status - Prequalification status code
 """
-* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * productId 1..1 Identifier "Vaccine Product ID (authoritative)"
 * productName 1..1 string "Product reference name (e.g. FVP-P-447)"
 * productType 1..1 code "Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)"
@@ -67,13 +65,11 @@ Key fields from the API (FinishedVaccineProducts):
 * productReference 0..1 Reference "Product FHIR reference (when available from pcmt dependency)"
 
 
-Logical:	PreQualManufacturer
+Resource:	PreQualManufacturer
 Title:		"WHO PreQual Manufacturer"
-Characteristics: #can-be-target
-Description:	"""Logical model for the manufacturer/applicant organization
+Description:	"""Custom resource for the manufacturer/applicant organization
 from the WHO PreQual API (ProductDetails.ApplicantOrganization).
 """
-* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * manufacturerId 0..1 Identifier "Manufacturer organization ID"
 * name 1..1 string "Organization name"
 * addressLine1 0..1 string "Address line 1"
@@ -87,13 +83,11 @@ from the WHO PreQual API (ProductDetails.ApplicantOrganization).
 * organizationReference 1..1 Reference(IHE.mCSD.Organization) "FHIR Organization reference"
 
 
-Logical:	PreQualNRA
+Resource:	PreQualNRA
 Title:		"WHO PreQual NRA"
-Characteristics: #can-be-target
-Description:	"""Logical model for the responsible National Regulatory Authority (NRA)
+Description:	"""Custom resource for the responsible National Regulatory Authority (NRA)
 from the WHO PreQual API (ProductDetails.NRADetails).
 """
-* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * nraId 0..1 Identifier "NRA organization ID"
 * name 1..1 string "Organization name"
 * addressLine1 0..1 string "Address line 1"
@@ -102,38 +96,32 @@ from the WHO PreQual API (ProductDetails.NRADetails).
 * organizationReference 1..1 Reference(IHE.mCSD.Organization) "FHIR Organization reference"
 
 
-Logical:	PreQualVaccine
+Resource:	PreQualVaccine
 Title:		"WHO PreQual Vaccine"
-Characteristics: #can-be-target
-Description:	"""Logical model for the vaccine type details
+Description:	"""Custom resource for the vaccine type details
 from the WHO PreQual API (ProductDetails.VaccineDetails).
 Contains only vaccine-type-level fields that are stable across products.
 Product-specific fields (CommercialName, RouteOfAdministration) remain on FinishedVaccineProducts.
 """
-* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * vaccineId 0..1 Identifier "Vaccine type ID"
 * fullName 0..1 string "Vaccine full name"
 * abbreviatedName 0..1 string "Vaccine abbreviated name"
 
 
-Logical:	PreQualBulkSupplier
+Resource:	PreQualBulkSupplier
 Title:		"WHO PreQual Bulk Supplier"
-Characteristics: #can-be-target
-Description:	"""Logical model for the bulk supplier organization
+Description:	"""Custom resource for the bulk supplier organization
 from the WHO PreQual API (ProductDetails.BulkSupplier).
 """
-* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * bulkSupplierId 0..1 Identifier "Bulk supplier organization ID"
 * name 0..1 string "Organization name"
 
 
-Logical:	PreQualProductPackaging
+Resource:	PreQualProductPackaging
 Title:		"WHO PreQual Product Packaging"
-Characteristics: #can-be-target
-Description:	"""Logical model for product packaging details
+Description:	"""Custom resource for product packaging details
 from the WHO PreQual API (ProductPackaging).
 """
-* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * packagingId 1..1 Identifier "Packaging record ID"
 * packagingType 0..1 code "Packaging type code from PreQualDatabaseMetadata (e.g. Secondary, Tertiary, ShippingContainer)"
 * componentPacked 0..1 code "Component packed code from PreQualDatabaseMetadata (e.g. ActiveVaccine, Diluent)"
@@ -148,13 +136,11 @@ from the WHO PreQual API (ProductPackaging).
 * primaryContainers 0..1 string "Number of primary containers"
 
 
-Logical:	PreQualDocumentDetail
+Resource:	PreQualDocumentDetail
 Title:		"WHO PreQual Document Detail"
-Characteristics: #can-be-target
-Description:	"""Logical model for document details
+Description:	"""Custom resource for document details
 from the WHO PreQual API (DocumentDetails).
 """
-* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * documentId 0..1 Identifier "Document ID"
 * documentName 0..1 string "Document name"
 * documentType 0..1 code "Document type code from PreQualDatabaseMetadata (e.g. ProductInsert, Photo, VSPAR)"
@@ -163,13 +149,11 @@ from the WHO PreQual API (DocumentDetails).
 * fileType 0..1 string "File type (e.g. PDF, JPEG)"
 
 
-Logical:	PreQualSiteDetail
+Resource:	PreQualSiteDetail
 Title:		"WHO PreQual Site Detail"
-Characteristics: #can-be-target
-Description:	"""Logical model for manufacturing site details
+Description:	"""Custom resource for manufacturing site details
 from the WHO PreQual API (SiteDetails).
 """
-* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * siteOrganizationId 0..1 Identifier "Site organization ID"
 * siteOrganizationName 0..1 string "Site organization name"
 * addressLine1 0..1 string "Address line 1"
@@ -181,13 +165,11 @@ from the WHO PreQual API (SiteDetails).
 * siteActivity 0..1 code "Site activity code from PreQualDatabaseMetadata (e.g. FVPManufacture)"
 
 
-Logical:	PreQualProductIngredient
+Resource:	PreQualProductIngredient
 Title:		"WHO PreQual Product Ingredient"
-Characteristics: #can-be-target
-Description:	"""Logical model for product ingredient details
+Description:	"""Custom resource for product ingredient details
 from the WHO PreQual API (ProductIngredients).
 """
-* ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * ingredientId 0..1 Identifier "Ingredient ID"
 * ingredientType 0..1 code "Ingredient type code from PreQualDatabaseMetadata (e.g. VxFVP)"
 * unit 0..1 string "Measurement unit"
