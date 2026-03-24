@@ -2,8 +2,8 @@
 Instance: PreQualPackaginga3HNN0000007wYl2AI
 InstanceOf: PreQualProductPackaging
 Usage: #definition
-Title: "PreQual Packaging: ShippingContainer"
-Description: "WHO PreQual Product Packaging: ShippingContainer"
+Title: "PreQual Packaging: Shipping Container"
+Description: "WHO PreQual Product Packaging: Shipping Container"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3HNN0000007wYl2AI"
 * packagingType = #ShippingContainer
@@ -59,8 +59,8 @@ Description: "WHO PreQual Product Packaging: Box of 300 vials (300 doses). Dimen
 Instance: PreQualPackaginga3H3X000002OBWfUAO
 InstanceOf: PreQualProductPackaging
 Usage: #definition
-Title: "PreQual Packaging: ShippingContainer"
-Description: "WHO PreQual Product Packaging: ShippingContainer"
+Title: "PreQual Packaging: Shipping Container"
+Description: "WHO PreQual Product Packaging: Shipping Container"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000002OBWfUAO"
 * packagingType = #ShippingContainer
@@ -1166,8 +1166,8 @@ Description: "WHO PreQual Product Packaging: Carton of 50 vials (active)(250 dos
 Instance: PreQualPackaginga3H3X000001VabUUAS
 InstanceOf: PreQualProductPackaging
 Usage: #definition
-Title: "PreQual Packaging: ShippingContainer"
-Description: "WHO PreQual Product Packaging: ShippingContainer"
+Title: "PreQual Packaging: Shipping Container"
+Description: "WHO PreQual Product Packaging: Shipping Container"
 * packagingId.system = "https://extranet.who.int/prequal/api"
 * packagingId.value = "a3H3X000001VabUUAS"
 * packagingType = #ShippingContainer

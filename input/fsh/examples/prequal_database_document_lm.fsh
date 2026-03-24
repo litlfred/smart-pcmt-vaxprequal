@@ -3,7 +3,7 @@ Instance: PreQualDocument069NN000005lDn4YAE
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: -FVP-P-446-447_R21Malaria_SIIPL_PI-2023_2"
-Description: "WHO PreQual Document: -FVP-P-446-447_R21Malaria_SIIPL_PI-2023_2 (ProductInsert)"
+Description: "WHO PreQual Document: -FVP-P-446-447_R21Malaria_SIIPL_PI-2023_2 (Product Insert)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005lDn4YAE"
 * documentName = "-FVP-P-446-447_R21Malaria_SIIPL_PI-2023_2"
@@ -16,7 +16,7 @@ Instance: PreQualDocument069NN000005lDwoYAE
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: -FVP-P-446-447_R21Malaria_SIIPL_PI-2023_1"
-Description: "WHO PreQual Document: -FVP-P-446-447_R21Malaria_SIIPL_PI-2023_1 (ProductInsert)"
+Description: "WHO PreQual Document: -FVP-P-446-447_R21Malaria_SIIPL_PI-2023_1 (Product Insert)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005lDwoYAE"
 * documentName = "-FVP-P-446-447_R21Malaria_SIIPL_PI-2023_1"
@@ -29,7 +29,7 @@ Instance: PreQualDocument069NN000005hwh7YAA
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_63_Rota_GSK_container%20image_2Dbarcode_2021"
-Description: "WHO PreQual Document: pq_63_Rota_GSK_container%20image_2Dbarcode_2021 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_63_Rota_GSK_container%20image_2Dbarcode_2021 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005hwh7YAA"
 * documentName = "pq_63_Rota_GSK_container%20image_2Dbarcode_2021"
@@ -55,7 +55,7 @@ Instance: PreQualDocument069NN000005hzzuYAA
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: General-pq_63_Rotavirus_1dose_GSK_plastic_tube_instruction_sheet"
-Description: "WHO PreQual Document: General-pq_63_Rotavirus_1dose_GSK_plastic_tube_instruction_sheet (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: General-pq_63_Rotavirus_1dose_GSK_plastic_tube_instruction_sheet (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005hzzuYAA"
 * documentName = "General-pq_63_Rotavirus_1dose_GSK_plastic_tube_instruction_sheet"
@@ -81,7 +81,7 @@ Instance: PreQualDocument069NN000005i3fGYAQ
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_63%20Rota_liquid_1dose_GSK_PI_tube-2022"
-Description: "WHO PreQual Document: Package Insert-pq_63%20Rota_liquid_1dose_GSK_PI_tube-2022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_63%20Rota_liquid_1dose_GSK_PI_tube-2022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i3fGYAQ"
 * documentName = "Package Insert-pq_63%20Rota_liquid_1dose_GSK_PI_tube-2022"
@@ -107,7 +107,7 @@ Instance: PreQualDocument069NN000005hykYYAQ
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_64_OPV_20dose_Haffkine_vials_image_580"
-Description: "WHO PreQual Document: pq_64_OPV_20dose_Haffkine_vials_image_580 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_64_OPV_20dose_Haffkine_vials_image_580 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005hykYYAQ"
 * documentName = "pq_64_OPV_20dose_Haffkine_vials_image_580"
@@ -120,7 +120,7 @@ Instance: PreQualDocument069NN000005i3IgYAI
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_64_OPV_20dose_Haffkine_PI"
-Description: "WHO PreQual Document: Package Insert-pq_64_OPV_20dose_Haffkine_PI (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_64_OPV_20dose_Haffkine_PI (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i3IgYAI"
 * documentName = "Package Insert-pq_64_OPV_20dose_Haffkine_PI"
@@ -146,7 +146,7 @@ Instance: PreQualDocument069NN000005i24tYAA
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_65_66_67_YF_5dose_IPD_PI"
-Description: "WHO PreQual Document: Package Insert-pq_65_66_67_YF_5dose_IPD_PI (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_65_66_67_YF_5dose_IPD_PI (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i24tYAA"
 * documentName = "Package Insert-pq_65_66_67_YF_5dose_IPD_PI"
@@ -172,7 +172,7 @@ Instance: PreQualDocument069NN000005i2OIYAY
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_65_66_67_YF_5dose_IPD_PI"
-Description: "WHO PreQual Document: Package Insert-pq_65_66_67_YF_5dose_IPD_PI (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_65_66_67_YF_5dose_IPD_PI (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i2OIYAY"
 * documentName = "Package Insert-pq_65_66_67_YF_5dose_IPD_PI"
@@ -198,7 +198,7 @@ Instance: PreQualDocument069NN000005i4HzYAI
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_66_YF_20dose_IPD_carton%2Bampl_image_580"
-Description: "WHO PreQual Document: pq_66_YF_20dose_IPD_carton%2Bampl_image_580 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_66_YF_20dose_IPD_carton%2Bampl_image_580 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i4HzYAI"
 * documentName = "pq_66_YF_20dose_IPD_carton%2Bampl_image_580"
@@ -211,7 +211,7 @@ Instance: PreQualDocument069NN000005hzTfYAI
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_67_YF_10dose_IPD_carton%2Bampl_image_580"
-Description: "WHO PreQual Document: pq_67_YF_10dose_IPD_carton%2Bampl_image_580 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_67_YF_10dose_IPD_carton%2Bampl_image_580 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005hzTfYAI"
 * documentName = "pq_67_YF_10dose_IPD_carton%2Bampl_image_580"
@@ -237,7 +237,7 @@ Instance: PreQualDocument069NN000005i4hmYAA
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_65_66_67_YF_5dose_IPD_PI"
-Description: "WHO PreQual Document: Package Insert-pq_65_66_67_YF_5dose_IPD_PI (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_65_66_67_YF_5dose_IPD_PI (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i4hmYAA"
 * documentName = "Package Insert-pq_65_66_67_YF_5dose_IPD_PI"
@@ -263,7 +263,7 @@ Instance: PreQualDocument069NN000005hzjwYAA
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_68_317_BCG_JBL_vial%26ampoule_image-2020"
-Description: "WHO PreQual Document: pq_68_317_BCG_JBL_vial%26ampoule_image-2020 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_68_317_BCG_JBL_vial%26ampoule_image-2020 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005hzjwYAA"
 * documentName = "pq_68_317_BCG_JBL_vial%26ampoule_image-2020"
@@ -289,7 +289,7 @@ Instance: PreQualDocument069NN000005i6DJYAY
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_68_317_BCG_JapanBCG_PI_082022"
-Description: "WHO PreQual Document: Package Insert-pq_68_317_BCG_JapanBCG_PI_082022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_68_317_BCG_JapanBCG_PI_082022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i6DJYAY"
 * documentName = "Package Insert-pq_68_317_BCG_JapanBCG_PI_082022"
@@ -302,7 +302,7 @@ Instance: PreQualDocument069NN000005hwyuYAA
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_69_HepB_1dose_LG_PI-2020_UNICEF"
-Description: "WHO PreQual Document: Package Insert-pq_69_HepB_1dose_LG_PI-2020_UNICEF (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_69_HepB_1dose_LG_PI-2020_UNICEF (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005hwyuYAA"
 * documentName = "Package Insert-pq_69_HepB_1dose_LG_PI-2020_UNICEF"
@@ -315,7 +315,7 @@ Instance: PreQualDocument069NN000005hyvmYAA
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_69_EuvaxB_1dose%28adult%29_LG_carton%26vial_image"
-Description: "WHO PreQual Document: pq_69_EuvaxB_1dose%28adult%29_LG_carton%26vial_image (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_69_EuvaxB_1dose%28adult%29_LG_carton%26vial_image (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005hyvmYAA"
 * documentName = "pq_69_EuvaxB_1dose%28adult%29_LG_carton%26vial_image"
@@ -328,7 +328,7 @@ Instance: PreQualDocument069NN000005i2jEYAQ
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_69_HepB_1dose_LG_PI-2020_PAHO"
-Description: "WHO PreQual Document: Package Insert-pq_69_HepB_1dose_LG_PI-2020_PAHO (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_69_HepB_1dose_LG_PI-2020_PAHO (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i2jEYAQ"
 * documentName = "Package Insert-pq_69_HepB_1dose_LG_PI-2020_PAHO"
@@ -367,7 +367,7 @@ Instance: PreQualDocument069NN000005huAeYAI
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_62_MMR_1dose_GSK_vial%2Bampl_image_510"
-Description: "WHO PreQual Document: pq_62_MMR_1dose_GSK_vial%2Bampl_image_510 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_62_MMR_1dose_GSK_vial%2Bampl_image_510 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005huAeYAI"
 * documentName = "pq_62_MMR_1dose_GSK_vial%2Bampl_image_510"
@@ -393,7 +393,7 @@ Instance: PreQualDocument069NN000005hx6rYAA
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_62_252_MMR_GSK_PI_2019"
-Description: "WHO PreQual Document: Package Insert-pq_62_252_MMR_GSK_PI_2019 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_62_252_MMR_GSK_PI_2019 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005hx6rYAA"
 * documentName = "Package Insert-pq_62_252_MMR_GSK_PI_2019"
@@ -406,7 +406,7 @@ Instance: PreQualDocument069NN000005i1aFYAQ
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_76_TT_10dose_BB-NCIPD_container_image"
-Description: "WHO PreQual Document: pq_76_TT_10dose_BB-NCIPD_container_image (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_76_TT_10dose_BB-NCIPD_container_image (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i1aFYAQ"
 * documentName = "pq_76_TT_10dose_BB-NCIPD_container_image"
@@ -432,7 +432,7 @@ Instance: PreQualDocument069NN000005i9CoYAI
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_76_77_TT_BB-NCIPD_PI-2020"
-Description: "WHO PreQual Document: Package Insert-pq_76_77_TT_BB-NCIPD_PI-2020 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_76_77_TT_BB-NCIPD_PI-2020 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i9CoYAI"
 * documentName = "Package Insert-pq_76_77_TT_BB-NCIPD_PI-2020"
@@ -458,7 +458,7 @@ Instance: PreQualDocument069NN000005i0HgYAI
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_76_77_TT_BB-NCIPD_PI-2020"
-Description: "WHO PreQual Document: Package Insert-pq_76_77_TT_BB-NCIPD_PI-2020 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_76_77_TT_BB-NCIPD_PI-2020 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i0HgYAI"
 * documentName = "Package Insert-pq_76_77_TT_BB-NCIPD_PI-2020"
@@ -471,7 +471,7 @@ Instance: PreQualDocument069NN000005i5igYAA
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_77_TT_20dose_BB-NCIPD_container_image"
-Description: "WHO PreQual Document: pq_77_TT_20dose_BB-NCIPD_container_image (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_77_TT_20dose_BB-NCIPD_container_image (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i5igYAA"
 * documentName = "pq_77_TT_20dose_BB-NCIPD_container_image"
@@ -497,7 +497,7 @@ Instance: PreQualDocument069NN000005i55zYAA
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_78_DT_10dose_BB-NCIPD_carton_image"
-Description: "WHO PreQual Document: pq_78_DT_10dose_BB-NCIPD_carton_image (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_78_DT_10dose_BB-NCIPD_carton_image (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i55zYAA"
 * documentName = "pq_78_DT_10dose_BB-NCIPD_carton_image"
@@ -523,7 +523,7 @@ Instance: PreQualDocument069NN000005kHUSYA2
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_323-324_HepA_1dose_Sinovac_PI-2022"
-Description: "WHO PreQual Document: Package Insert-pq_323-324_HepA_1dose_Sinovac_PI-2022 (ProductInsert)"
+Description: "WHO PreQual Document: Package Insert-pq_323-324_HepA_1dose_Sinovac_PI-2022 (Product Insert)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005kHUSYA2"
 * documentName = "Package Insert-pq_323-324_HepA_1dose_Sinovac_PI-2022"
@@ -536,7 +536,7 @@ Instance: PreQualDocument069NN000005kFnaYAE
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_325_bOPV_1%263_20dose_BIBP_vial%26carton_image"
-Description: "WHO PreQual Document: pq_325_bOPV_1%263_20dose_BIBP_vial%26carton_image (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_325_bOPV_1%263_20dose_BIBP_vial%26carton_image (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005kFnaYAE"
 * documentName = "pq_325_bOPV_1%263_20dose_BIBP_vial%26carton_image"
@@ -562,7 +562,7 @@ Instance: PreQualDocument069NN000005kJG6YAM
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: General-pq_325_bOPV_shipping%20box%20configuration-2023"
-Description: "WHO PreQual Document: General-pq_325_bOPV_shipping%20box%20configuration-2023 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: General-pq_325_bOPV_shipping%20box%20configuration-2023 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005kJG6YAM"
 * documentName = "General-pq_325_bOPV_shipping%20box%20configuration-2023"
@@ -575,7 +575,7 @@ Instance: PreQualDocument069NN000005kJhVYAU
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_325_bOPV_1%263_20dose_BIBP_PI-2019"
-Description: "WHO PreQual Document: Package Insert-pq_325_bOPV_1%263_20dose_BIBP_PI-2019 (ProductInsert)"
+Description: "WHO PreQual Document: Package Insert-pq_325_bOPV_1%263_20dose_BIBP_PI-2019 (Product Insert)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005kJhVYAU"
 * documentName = "Package Insert-pq_325_bOPV_1%263_20dose_BIBP_PI-2019"
@@ -588,7 +588,7 @@ Instance: PreQualDocument069NN000005i2XxYAI
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_72_HepB_10doses_LG_PI-2020_UNICEF"
-Description: "WHO PreQual Document: Package Insert-pq_72_HepB_10doses_LG_PI-2020_UNICEF (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_72_HepB_10doses_LG_PI-2020_UNICEF (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i2XxYAI"
 * documentName = "Package Insert-pq_72_HepB_10doses_LG_PI-2020_UNICEF"
@@ -614,7 +614,7 @@ Instance: PreQualDocument069NN000005i3AhYAI
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_72_EuvaxB_10dose%28adult%29_LG_carton%26vial_image"
-Description: "WHO PreQual Document: pq_72_EuvaxB_10dose%28adult%29_LG_carton%26vial_image (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_72_EuvaxB_10dose%28adult%29_LG_carton%26vial_image (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i3AhYAI"
 * documentName = "pq_72_EuvaxB_10dose%28adult%29_LG_carton%26vial_image"
@@ -627,7 +627,7 @@ Instance: PreQualDocument069NN000005i4mdYAA
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_72_HepB_10doses_LG_PI-2020_PAHO"
-Description: "WHO PreQual Document: Package Insert-pq_72_HepB_10doses_LG_PI-2020_PAHO (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_72_HepB_10doses_LG_PI-2020_PAHO (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i4mdYAA"
 * documentName = "Package Insert-pq_72_HepB_10doses_LG_PI-2020_PAHO"
@@ -653,7 +653,7 @@ Instance: PreQualDocument069NN000005i4gCYAQ
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_79_DT_20dose_BB-NCIPD_carton_image"
-Description: "WHO PreQual Document: pq_79_DT_20dose_BB-NCIPD_carton_image (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_79_DT_20dose_BB-NCIPD_carton_image (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i4gCYAQ"
 * documentName = "pq_79_DT_20dose_BB-NCIPD_carton_image"
@@ -692,7 +692,7 @@ Instance: PreQualDocument069NN000005i5UHYAY
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_80_Td_10dose_BB-NCIPD_container_image"
-Description: "WHO PreQual Document: pq_80_Td_10dose_BB-NCIPD_container_image (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_80_Td_10dose_BB-NCIPD_container_image (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i5UHYAY"
 * documentName = "pq_80_Td_10dose_BB-NCIPD_container_image"
@@ -731,7 +731,7 @@ Instance: PreQualDocument069NN000005i0mQYAQ
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_80_81_Td_BB-NCIPD_PI-2020"
-Description: "WHO PreQual Document: Package Insert-pq_80_81_Td_BB-NCIPD_PI-2020 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_80_81_Td_BB-NCIPD_PI-2020 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i0mQYAQ"
 * documentName = "Package Insert-pq_80_81_Td_BB-NCIPD_PI-2020"
@@ -757,7 +757,7 @@ Instance: PreQualDocument069NN000005i5XUYAY
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_81_Td_20dose_BB-NCIPD_container_image"
-Description: "WHO PreQual Document: pq_81_Td_20dose_BB-NCIPD_container_image (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_81_Td_20dose_BB-NCIPD_container_image (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i5XUYAY"
 * documentName = "pq_81_Td_20dose_BB-NCIPD_container_image"
@@ -770,7 +770,7 @@ Instance: PreQualDocument069NN000005knsbYAA
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_357_Dengue_5dose_SP_PL-2022"
-Description: "WHO PreQual Document: Package Insert-pq_357_Dengue_5dose_SP_PL-2022 (ProductInsert)"
+Description: "WHO PreQual Document: Package Insert-pq_357_Dengue_5dose_SP_PL-2022 (Product Insert)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005knsbYAA"
 * documentName = "Package Insert-pq_357_Dengue_5dose_SP_PL-2022"
@@ -783,7 +783,7 @@ Instance: PreQualDocument069NN000005huyhYAA
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_74_75_BCG_BB-NCIPD_PI-2019"
-Description: "WHO PreQual Document: Package Insert-pq_74_75_BCG_BB-NCIPD_PI-2019 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_74_75_BCG_BB-NCIPD_PI-2019 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005huyhYAA"
 * documentName = "Package Insert-pq_74_75_BCG_BB-NCIPD_PI-2019"
@@ -822,7 +822,7 @@ Instance: PreQualDocument069NN000005i873YAA
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_74_BCG_10dose_BB-NCIPD_container_image_active"
-Description: "WHO PreQual Document: pq_74_BCG_10dose_BB-NCIPD_container_image_active (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_74_BCG_10dose_BB-NCIPD_container_image_active (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i873YAA"
 * documentName = "pq_74_BCG_10dose_BB-NCIPD_container_image_active"
@@ -848,7 +848,7 @@ Instance: PreQualDocument069NN000005i1nFYAQ
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_74_75_BCG_BB-NCIPD_PI-2019"
-Description: "WHO PreQual Document: Package Insert-pq_74_75_BCG_BB-NCIPD_PI-2019 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_74_75_BCG_BB-NCIPD_PI-2019 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i1nFYAQ"
 * documentName = "Package Insert-pq_74_75_BCG_BB-NCIPD_PI-2019"
@@ -874,7 +874,7 @@ Instance: PreQualDocument069NN000005i4umYAA
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_74_BCG_10dose_BB-NCIPD_container_image_active"
-Description: "WHO PreQual Document: pq_74_BCG_10dose_BB-NCIPD_container_image_active (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_74_BCG_10dose_BB-NCIPD_container_image_active (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i4umYAA"
 * documentName = "pq_74_BCG_10dose_BB-NCIPD_container_image_active"
@@ -887,7 +887,7 @@ Instance: PreQualDocument069NN000005iDEtYAM
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_138_139_140_141_MR_SII_PI-UNICEF_2022"
-Description: "WHO PreQual Document: Package Insert-pq_138_139_140_141_MR_SII_PI-UNICEF_2022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_138_139_140_141_MR_SII_PI-UNICEF_2022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iDEtYAM"
 * documentName = "Package Insert-pq_138_139_140_141_MR_SII_PI-UNICEF_2022"
@@ -913,7 +913,7 @@ Instance: PreQualDocument069NN000005iKMmYAM
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_138_139_140_141_MR_SII_PI-PAHO_2022"
-Description: "WHO PreQual Document: Package Insert-pq_138_139_140_141_MR_SII_PI-PAHO_2022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_138_139_140_141_MR_SII_PI-PAHO_2022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iKMmYAM"
 * documentName = "Package Insert-pq_138_139_140_141_MR_SII_PI-PAHO_2022"
@@ -926,7 +926,7 @@ Instance: PreQualDocument069NN000005iKxrYAE
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_138_MR_1dose_SII_vial%26ampoule_image-2022"
-Description: "WHO PreQual Document: pq_138_MR_1dose_SII_vial%26ampoule_image-2022 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_138_MR_1dose_SII_vial%26ampoule_image-2022 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iKxrYAE"
 * documentName = "pq_138_MR_1dose_SII_vial%26ampoule_image-2022"
@@ -939,7 +939,7 @@ Instance: PreQualDocument069NN000005iHaBYAU
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_135_136_137_TT_SII_PI-2020"
-Description: "WHO PreQual Document: Package Insert-pq_135_136_137_TT_SII_PI-2020 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_135_136_137_TT_SII_PI-2020 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iHaBYAU"
 * documentName = "Package Insert-pq_135_136_137_TT_SII_PI-2020"
@@ -952,7 +952,7 @@ Instance: PreQualDocument069NN000005iJ7LYAU
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_137_TT_20dose_SII_continer_image_VVM_580"
-Description: "WHO PreQual Document: pq_137_TT_20dose_SII_continer_image_VVM_580 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_137_TT_20dose_SII_continer_image_VVM_580 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iJ7LYAU"
 * documentName = "pq_137_TT_20dose_SII_continer_image_VVM_580"
@@ -1004,7 +1004,7 @@ Instance: PreQualDocument069NN000005iH8nYAE
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_139_MR_2dose_SII_vial%26ampoule_image-2022"
-Description: "WHO PreQual Document: pq_139_MR_2dose_SII_vial%26ampoule_image-2022 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_139_MR_2dose_SII_vial%26ampoule_image-2022 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iH8nYAE"
 * documentName = "pq_139_MR_2dose_SII_vial%26ampoule_image-2022"
@@ -1017,7 +1017,7 @@ Instance: PreQualDocument069NN000005iHf1YAE
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_138_139_140_141_MR_SII_PI-PAHO_2022"
-Description: "WHO PreQual Document: Package Insert-pq_138_139_140_141_MR_SII_PI-PAHO_2022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_138_139_140_141_MR_SII_PI-PAHO_2022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iHf1YAE"
 * documentName = "Package Insert-pq_138_139_140_141_MR_SII_PI-PAHO_2022"
@@ -1030,7 +1030,7 @@ Instance: PreQualDocument069NN000005iLInYAM
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_138_139_140_141_MR_SII_PI-UNICEF_2022"
-Description: "WHO PreQual Document: Package Insert-pq_138_139_140_141_MR_SII_PI-UNICEF_2022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_138_139_140_141_MR_SII_PI-UNICEF_2022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iLInYAM"
 * documentName = "Package Insert-pq_138_139_140_141_MR_SII_PI-UNICEF_2022"
@@ -1043,7 +1043,7 @@ Instance: PreQualDocument069NN000005iGEMYA2
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022"
-Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iGEMYA2"
 * documentName = "Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022"
@@ -1069,7 +1069,7 @@ Instance: PreQualDocument069NN000005iKWQYA2
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_142_MMR_1dose_SIIPL_vial%26diluent_image-2022"
-Description: "WHO PreQual Document: pq_142_MMR_1dose_SIIPL_vial%26diluent_image-2022 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_142_MMR_1dose_SIIPL_vial%26diluent_image-2022 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iKWQYA2"
 * documentName = "pq_142_MMR_1dose_SIIPL_vial%26diluent_image-2022"
@@ -1082,7 +1082,7 @@ Instance: PreQualDocument069NN000005iKrOYAU
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022"
-Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iKrOYAU"
 * documentName = "Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022"
@@ -1095,7 +1095,7 @@ Instance: PreQualDocument069NN000005iEvgYAE
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_143_MMR_2dose_SII_vial%26diluent_image-2022"
-Description: "WHO PreQual Document: pq_143_MMR_2dose_SII_vial%26diluent_image-2022 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_143_MMR_2dose_SII_vial%26diluent_image-2022 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iEvgYAE"
 * documentName = "pq_143_MMR_2dose_SII_vial%26diluent_image-2022"
@@ -1108,7 +1108,7 @@ Instance: PreQualDocument069NN000005iJiVYAU
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022"
-Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iJiVYAU"
 * documentName = "Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022"
@@ -1121,7 +1121,7 @@ Instance: PreQualDocument069NN000005iL9AYAU
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022"
-Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iL9AYAU"
 * documentName = "Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022"
@@ -1147,7 +1147,7 @@ Instance: PreQualDocument069NN000005iCqdYAE
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022"
-Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iCqdYAE"
 * documentName = "Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022"
@@ -1160,7 +1160,7 @@ Instance: PreQualDocument069NN000005iKTCYA2
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_145_MMR_10dose_SII_vial%26diluent_image-2022"
-Description: "WHO PreQual Document: pq_145_MMR_10dose_SII_vial%26diluent_image-2022 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_145_MMR_10dose_SII_vial%26diluent_image-2022 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iKTCYA2"
 * documentName = "pq_145_MMR_10dose_SII_vial%26diluent_image-2022"
@@ -1186,7 +1186,7 @@ Instance: PreQualDocument069NN000005iLcCYAU
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022"
-Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iLcCYAU"
 * documentName = "Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022"
@@ -1212,7 +1212,7 @@ Instance: PreQualDocument069NN000005iIUfYAM
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022"
-Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iIUfYAM"
 * documentName = "Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022"
@@ -1225,7 +1225,7 @@ Instance: PreQualDocument069NN000005iKRaYAM
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_144_MMR_5dose_SII_vial%26diluent_image-2022"
-Description: "WHO PreQual Document: pq_144_MMR_5dose_SII_vial%26diluent_image-2022 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_144_MMR_5dose_SII_vial%26diluent_image-2022 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iKRaYAM"
 * documentName = "pq_144_MMR_5dose_SII_vial%26diluent_image-2022"
@@ -1238,7 +1238,7 @@ Instance: PreQualDocument069NN000005iLQxYAM
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022"
-Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iLQxYAM"
 * documentName = "Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_PAHO-2022"
@@ -1264,7 +1264,7 @@ Instance: PreQualDocument069NN000005kEQ6YAM
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_271_JE_live_5dose_Chengdu_PI-2019"
-Description: "WHO PreQual Document: Package Insert-pq_271_JE_live_5dose_Chengdu_PI-2019 (ProductInsert)"
+Description: "WHO PreQual Document: Package Insert-pq_271_JE_live_5dose_Chengdu_PI-2019 (Product Insert)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005kEQ6YAM"
 * documentName = "Package Insert-pq_271_JE_live_5dose_Chengdu_PI-2019"
@@ -1277,7 +1277,7 @@ Instance: PreQualDocument069NN000005kEZlYAM
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_271_JE_live_5doses_Chengdu_vials_image_580"
-Description: "WHO PreQual Document: pq_271_JE_live_5doses_Chengdu_vials_image_580 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_271_JE_live_5doses_Chengdu_vials_image_580 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005kEZlYAM"
 * documentName = "pq_271_JE_live_5doses_Chengdu_vials_image_580"
@@ -1316,7 +1316,7 @@ Instance: PreQualDocument069NN000005iK6fYAE
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_146_147_148_149_Measles_SII_PI_PAHO-2022"
-Description: "WHO PreQual Document: Package Insert-pq_146_147_148_149_Measles_SII_PI_PAHO-2022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_146_147_148_149_Measles_SII_PI_PAHO-2022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iK6fYAE"
 * documentName = "Package Insert-pq_146_147_148_149_Measles_SII_PI_PAHO-2022"
@@ -1329,7 +1329,7 @@ Instance: PreQualDocument069NN000005iLQyYAM
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_146_Measles%20_1dose_SII_%20vial%26ampoule_image-2022"
-Description: "WHO PreQual Document: pq_146_Measles%20_1dose_SII_%20vial%26ampoule_image-2022 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_146_Measles%20_1dose_SII_%20vial%26ampoule_image-2022 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iLQyYAM"
 * documentName = "pq_146_Measles%20_1dose_SII_%20vial%26ampoule_image-2022"
@@ -1342,7 +1342,7 @@ Instance: PreQualDocument069NN000005iLnTYAU
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_146_147_148_149_Measles_SII_PI_UNICEF-2022"
-Description: "WHO PreQual Document: Package Insert-pq_146_147_148_149_Measles_SII_PI_UNICEF-2022 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_146_147_148_149_Measles_SII_PI_UNICEF-2022 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iLnTYAU"
 * documentName = "Package Insert-pq_146_147_148_149_Measles_SII_PI_UNICEF-2022"
@@ -1381,7 +1381,7 @@ Instance: PreQualDocument069NN000005iFlFYAU
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_125_DTP_1dose_SII_container_image_580"
-Description: "WHO PreQual Document: pq_125_DTP_1dose_SII_container_image_580 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_125_DTP_1dose_SII_container_image_580 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iFlFYAU"
 * documentName = "pq_125_DTP_1dose_SII_container_image_580"
@@ -1394,7 +1394,7 @@ Instance: PreQualDocument069NN000005iFy9YAE
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_125_126_127_DTP_SII_PI-2020"
-Description: "WHO PreQual Document: Package Insert-pq_125_126_127_DTP_SII_PI-2020 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_125_126_127_DTP_SII_PI-2020 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iFy9YAE"
 * documentName = "Package Insert-pq_125_126_127_DTP_SII_PI-2020"
@@ -1407,7 +1407,7 @@ Instance: PreQualDocument069NN000005i8GtYAI
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: pq_126_DTP_10dose_SII_container_image_580"
-Description: "WHO PreQual Document: pq_126_DTP_10dose_SII_container_image_580 (PhotoMainImage)"
+Description: "WHO PreQual Document: pq_126_DTP_10dose_SII_container_image_580 (Photo-Main Image)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005i8GtYAI"
 * documentName = "pq_126_DTP_10dose_SII_container_image_580"
@@ -1433,7 +1433,7 @@ Instance: PreQualDocument069NN000005iC2hYAE
 InstanceOf: PreQualDocumentDetail
 Usage: #definition
 Title: "PreQual Document: Package Insert-pq_125_126_127_DTP_SII_PI-2020"
-Description: "WHO PreQual Document: Package Insert-pq_125_126_127_DTP_SII_PI-2020 (VaccineGeneralDocument)"
+Description: "WHO PreQual Document: Package Insert-pq_125_126_127_DTP_SII_PI-2020 (Vaccine General Document)"
 * documentId.system = "https://extranet.who.int/prequal/api"
 * documentId.value = "069NN000005iC2hYAE"
 * documentName = "Package Insert-pq_125_126_127_DTP_SII_PI-2020"
