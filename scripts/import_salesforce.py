@@ -2,7 +2,8 @@
 """Import WHO Vaccine PreQual data from the backend API.
 
 Downloads paginated results from the PreQual API and generates:
-  - FHIR Organization instances (manufacturers and holders)
+  - FSH logical model instances (FinishedVaccineProducts)
+  - FHIR Product and ProductAuthorization instances
   - CodeSystem and ValueSet FSH files
 
 Environment variables:
@@ -442,6 +443,157 @@ def generate_holders(products, output_dir):
     logger.info("Generated %d holder instances", len(seen))
 
 
+def generate_manufacturer_lm_instances(products, output_dir):
+    """Generate PreQualManufacturer logical model instances FSH file.
+
+    Args:
+        products: List of normalized product field dicts.
+        output_dir: Base output directory (e.g. input/fsh).
+    """
+    seen = {}
+    for p in products:
+        name = p.get("applicant_name", "")
+        sf_id = p.get("applicant_id", "")
+        if name and sf_id and name not in seen:
+            seen[name] = p
+
+    path = os.path.join(output_dir, "examples", "prequal_database_manufacturer_lm.fsh")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    with open(path, "w", encoding="utf-8") as f:
+        for name, p in sorted(seen.items()):
+            sf_id = p.get("applicant_id", "")
+            instance_id = sanitize_code(sf_id)
+            mfr_org_ref = f"Manufacturer{instance_id}"
+
+            country = p.get("applicant_country", "") or ""
+            title_suffix = f" ({country})" if country else ""
+            f.write(f"\nInstance: PreQualManufacturer{instance_id}\n")
+            f.write("InstanceOf: PreQualManufacturer\n")
+            f.write("Usage: #definition\n")
+            f.write(f'Title: "PreQual Manufacturer: {fsh_escape(name)}"\n')
+            f.write(f'Description: "WHO PreQual Manufacturer: {fsh_escape(name)}{fsh_escape(title_suffix)}"\n')
+            if sf_id:
+                f.write(f'* manufacturerId.system = "https://extranet.who.int/prequal/api"\n')
+                f.write(f'* manufacturerId.value = "{fsh_escape(sf_id)}"\n')
+            f.write(f'* name = "{fsh_escape(name)}"\n')
+            addr = p.get("applicant_address_line1")
+            if addr:
+                f.write(f'* addressLine1 = "{fsh_escape(addr)}"\n')
+            city = p.get("applicant_city")
+            if city:
+                f.write(f'* city = "{fsh_escape(city)}"\n')
+            state = p.get("applicant_state")
+            if state:
+                f.write(f'* state = "{fsh_escape(state)}"\n')
+            country = p.get("applicant_country")
+            if country:
+                f.write(f'* country = "{fsh_escape(country)}"\n')
+            postal = p.get("applicant_postal_code")
+            if postal:
+                f.write(f'* postalCode = "{fsh_escape(postal)}"\n')
+            iso = p.get("applicant_iso_country")
+            if iso:
+                f.write(f'* isoCountryCode = "{fsh_escape(iso)}"\n')
+            region = p.get("applicant_region")
+            if region:
+                f.write(f'* region = "{fsh_escape(region)}"\n')
+            website = p.get("applicant_website")
+            if website:
+                f.write(f'* website = "{fsh_escape(website)}"\n')
+            f.write(f"* organizationReference = Reference({mfr_org_ref})\n")
+
+    logger.info("Generated %d manufacturer LM instances", len(seen))
+
+
+def generate_nra_lm_instances(products, output_dir):
+    """Generate PreQualNRA logical model instances FSH file.
+
+    Args:
+        products: List of normalized product field dicts.
+        output_dir: Base output directory (e.g. input/fsh).
+    """
+    seen = {}
+    for p in products:
+        name = p.get("nra_name", "")
+        sf_id = p.get("nra_id", "")
+        if name and sf_id and name not in seen:
+            seen[name] = p
+
+    path = os.path.join(output_dir, "examples", "prequal_database_nra_lm.fsh")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    with open(path, "w", encoding="utf-8") as f:
+        for name, p in sorted(seen.items()):
+            sf_id = p.get("nra_id", "")
+            instance_id = sanitize_code(sf_id)
+            holder_org_ref = f"Holder{instance_id}"
+
+            nra_country = p.get("nra_country", "") or ""
+            title_suffix = f" ({nra_country})" if nra_country else ""
+            f.write(f"\nInstance: PreQualNRA{instance_id}\n")
+            f.write("InstanceOf: PreQualNRA\n")
+            f.write("Usage: #definition\n")
+            f.write(f'Title: "PreQual NRA: {fsh_escape(name)}"\n')
+            f.write(f'Description: "WHO PreQual NRA: {fsh_escape(name)}{fsh_escape(title_suffix)}"\n')
+            if sf_id:
+                f.write(f'* nraId.system = "https://extranet.who.int/prequal/api"\n')
+                f.write(f'* nraId.value = "{fsh_escape(sf_id)}"\n')
+            f.write(f'* name = "{fsh_escape(name)}"\n')
+            addr = p.get("nra_address_line1")
+            if addr:
+                f.write(f'* addressLine1 = "{fsh_escape(addr)}"\n')
+            country = p.get("nra_country")
+            if country:
+                f.write(f'* country = "{fsh_escape(country)}"\n')
+            website = p.get("nra_website")
+            if website:
+                f.write(f'* website = "{fsh_escape(website)}"\n')
+            f.write(f"* organizationReference = Reference({holder_org_ref})\n")
+
+    logger.info("Generated %d NRA LM instances", len(seen))
+
+
+def generate_vaccine_lm_instances(products, output_dir):
+    """Generate PreQualVaccine logical model instances FSH file.
+
+    Args:
+        products: List of normalized product field dicts.
+        output_dir: Base output directory (e.g. input/fsh).
+    """
+    seen = {}
+    for p in products:
+        vax_id = p.get("vaccine_type_id", "")
+        if vax_id and vax_id not in seen:
+            seen[vax_id] = p
+
+    path = os.path.join(output_dir, "examples", "prequal_database_vaccine_lm.fsh")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    with open(path, "w", encoding="utf-8") as f:
+        for vax_id, p in sorted(seen.items()):
+            instance_id = sanitize_code(vax_id)
+
+            full_name = p.get("vaccine_full_name", "") or ""
+            abbr_name = p.get("vaccine_abbreviated_name", "") or ""
+            vax_title = full_name or abbr_name or vax_id
+            vax_desc_parts = [full_name, f"({abbr_name})" if abbr_name else ""]
+            vax_desc = " ".join(part for part in vax_desc_parts if part).strip()
+            f.write(f"\nInstance: PreQualVaccine{instance_id}\n")
+            f.write("InstanceOf: PreQualVaccine\n")
+            f.write("Usage: #definition\n")
+            f.write(f'Title: "PreQual Vaccine: {fsh_escape(vax_title)}"\n')
+            f.write(f'Description: "WHO PreQual Vaccine: {fsh_escape(vax_desc)}"\n')
+            f.write(f'* vaccineId.system = "https://extranet.who.int/prequal/api"\n')
+            f.write(f'* vaccineId.value = "{fsh_escape(vax_id)}"\n')
+            full_name = p.get("vaccine_full_name")
+            if full_name:
+                f.write(f'* fullName = "{fsh_escape(full_name)}"\n')
+            abbr_name = p.get("vaccine_abbreviated_name")
+            if abbr_name:
+                f.write(f'* abbreviatedName = "{fsh_escape(abbr_name)}"\n')
+
+    logger.info("Generated %d vaccine LM instances", len(seen))
 
 
 def generate_metadata_codesystem(products, output_dir):
@@ -607,37 +759,519 @@ def generate_metadata_codesystem(products, output_dir):
     logger.info("Generated metadata CodeSystem with %d codes", total_codes)
 
 
-
-
-def generate_product_identifiers(products, output_dir):
-    """Generate product identifiers CodeSystem and ValueSet FSH files.
+def generate_bulk_supplier_lm_instances(products, output_dir):
+    """Generate PreQualBulkSupplier logical model instances FSH file.
 
     Args:
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
+    seen = {}
+    for p in products:
+        bs_id = p.get("bulk_supplier_id", "")
+        bs_name = p.get("bulk_supplier_name", "")
+        if bs_id and bs_id not in seen:
+            seen[bs_id] = bs_name
+
+    if not seen:
+        logger.info("No bulk supplier LM instances to generate")
+        return
+
+    path = os.path.join(output_dir, "examples", "prequal_database_bulk_supplier_lm.fsh")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    with open(path, "w", encoding="utf-8") as f:
+        for bs_id, bs_name in sorted(seen.items()):
+            instance_id = sanitize_code(bs_id)
+            bs_title = bs_name or bs_id
+            f.write(f"\nInstance: PreQualBulkSupplier{instance_id}\n")
+            f.write("InstanceOf: PreQualBulkSupplier\n")
+            f.write("Usage: #definition\n")
+            f.write(f'Title: "PreQual Bulk Supplier: {fsh_escape(bs_title)}"\n')
+            f.write(f'Description: "WHO PreQual Bulk Supplier: {fsh_escape(bs_title)}"\n')
+            f.write(f'* bulkSupplierId.system = "https://extranet.who.int/prequal/api"\n')
+            f.write(f'* bulkSupplierId.value = "{fsh_escape(bs_id)}"\n')
+            if bs_name:
+                f.write(f'* name = "{fsh_escape(bs_name)}"\n')
+
+    logger.info("Generated %d bulk supplier LM instances", len(seen))
+
+
+def generate_packaging_lm_instances(products, output_dir):
+    """Generate PreQualProductPackaging logical model instances FSH file.
+
+    Args:
+        products: List of normalized product field dicts.
+        output_dir: Base output directory (e.g. input/fsh).
+    """
+    all_pkgs = []
+    for p in products:
+        for pkg in p.get("packaging", []) or []:
+            pkg_id = pkg.get("Id", "")
+            if pkg_id:
+                all_pkgs.append(pkg)
+
+    if not all_pkgs:
+        logger.info("No packaging LM instances to generate")
+        return
+
+    path = os.path.join(output_dir, "examples", "prequal_database_packaging_lm.fsh")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    with open(path, "w", encoding="utf-8") as f:
+        for pkg in all_pkgs:
+            pkg_id = pkg["Id"]
+            instance_id = sanitize_code(pkg_id)
+            pkg_type = pkg.get("FVPPackagingType", "")
+            component = pkg.get("ComponentPacked", "")
+            cold_chain = pkg.get("ColdChainVolume", "")
+
+            # Extract packaging details from the appropriate level
+            secondary = pkg.get("SecondaryPackaging", {}) or {}
+            tertiary = pkg.get("TertiaryPackaging", {}) or {}
+            shipping = pkg.get("ShippingContainer", {}) or {}
+            # Merge: take whatever detail level is present
+            detail = {}
+            for src in [secondary, tertiary, shipping]:
+                for k, v in src.items():
+                    if v and k not in detail:
+                        detail[k] = v
+
+            # Build title from packaging details
+            pkg_desc_text = detail.get("Description", "")
+            pkg_title = pkg_desc_text or pkg_type or "Packaging"
+            f.write(f"\nInstance: PreQualPackaging{instance_id}\n")
+            f.write("InstanceOf: PreQualProductPackaging\n")
+            f.write("Usage: #definition\n")
+            f.write(f'Title: "PreQual Packaging: {fsh_escape(pkg_title)}"\n')
+            f.write(f'Description: "WHO PreQual Product Packaging: {fsh_escape(pkg_title)}"\n')
+            f.write(f'* packagingId.system = "https://extranet.who.int/prequal/api"\n')
+            f.write(f'* packagingId.value = "{fsh_escape(pkg_id)}"\n')
+            if pkg_type:
+                f.write(f"* packagingType = #{sanitize_code(pkg_type)}\n")
+            if component:
+                f.write(f"* componentPacked = #{sanitize_code(component)}\n")
+            if cold_chain:
+                f.write(f'* coldChainVolume = "{fsh_escape(cold_chain)}"\n')
+            desc = detail.get("Description", "")
+            if desc:
+                f.write(f'* description = "{fsh_escape(desc)}"\n')
+            vol = detail.get("Volume", "")
+            if vol:
+                f.write(f'* volume = "{fsh_escape(vol)}"\n')
+            td = detail.get("TotalDoses", "")
+            if td:
+                f.write(f'* totalDoses = "{fsh_escape(td)}"\n')
+            tc = detail.get("TotalContainers", "")
+            if tc:
+                f.write(f'* totalContainers = "{fsh_escape(tc)}"\n')
+            h = detail.get("Height", "")
+            if h:
+                f.write(f'* height = "{fsh_escape(h)}"\n')
+            le = detail.get("Length", "")
+            if le:
+                f.write(f'* length = "{fsh_escape(le)}"\n')
+            w = detail.get("Width", "")
+            if w:
+                f.write(f'* width = "{fsh_escape(w)}"\n')
+            pc = detail.get("PrimaryContainers", "")
+            if pc:
+                f.write(f'* primaryContainers = "{fsh_escape(pc)}"\n')
+
+    logger.info("Generated %d packaging LM instances", len(all_pkgs))
+
+
+def generate_document_lm_instances(products, output_dir):
+    """Generate PreQualDocumentDetail logical model instances FSH file.
+
+    Args:
+        products: List of normalized product field dicts.
+        output_dir: Base output directory (e.g. input/fsh).
+    """
+    all_docs = []
+    for p in products:
+        for doc in p.get("documents", []) or []:
+            doc_ident = doc.get("Identification", {})
+            doc_id = doc_ident.get("Id", "")
+            if doc_id:
+                all_docs.append(doc)
+
+    if not all_docs:
+        logger.info("No document LM instances to generate")
+        return
+
+    path = os.path.join(output_dir, "examples", "prequal_database_document_lm.fsh")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    with open(path, "w", encoding="utf-8") as f:
+        for doc in all_docs:
+            doc_ident = doc.get("Identification", {})
+            doc_id = doc_ident.get("Id", "")
+            doc_name = doc_ident.get("Name", "")
+            instance_id = sanitize_code(doc_id)
+
+            doc_type_val = doc.get("Type", "")
+            doc_title = doc_name or doc_id
+            doc_type_label = f" ({doc_type_val})" if doc_type_val else ""
+            f.write(f"\nInstance: PreQualDocument{instance_id}\n")
+            f.write("InstanceOf: PreQualDocumentDetail\n")
+            f.write("Usage: #definition\n")
+            f.write(f'Title: "PreQual Document: {fsh_escape(doc_title)}"\n')
+            f.write(f'Description: "WHO PreQual Document: {fsh_escape(doc_title)}{fsh_escape(doc_type_label)}"\n')
+            f.write(f'* documentId.system = "https://extranet.who.int/prequal/api"\n')
+            f.write(f'* documentId.value = "{fsh_escape(doc_id)}"\n')
+            if doc_name:
+                f.write(f'* documentName = "{fsh_escape(doc_name)}"\n')
+            doc_type = doc.get("Type", "")
+            if doc_type:
+                f.write(f"* documentType = #{sanitize_code(doc_type)}\n")
+            version_id = doc.get("VersionId", "")
+            if version_id:
+                f.write(f'* versionId = "{fsh_escape(version_id)}"\n')
+            ext = doc.get("FileExtension", "")
+            if ext:
+                f.write(f'* fileExtension = "{fsh_escape(ext)}"\n')
+            ft = doc.get("FileType", "")
+            if ft:
+                f.write(f'* fileType = "{fsh_escape(ft)}"\n')
+
+    logger.info("Generated %d document LM instances", len(all_docs))
+
+
+def generate_site_lm_instances(products, output_dir):
+    """Generate PreQualSiteDetail logical model instances FSH file.
+
+    Args:
+        products: List of normalized product field dicts.
+        output_dir: Base output directory (e.g. input/fsh).
+    """
+    all_sites = []
+    seen_ids = set()
+    for p in products:
+        for site in p.get("sites", []) or []:
+            org = site.get("Organization", {})
+            org_ident = org.get("Identification", {})
+            org_id = org_ident.get("Id", "")
+            if org_id and org_id not in seen_ids:
+                seen_ids.add(org_id)
+                all_sites.append(site)
+
+    if not all_sites:
+        logger.info("No site LM instances to generate")
+        return
+
+    path = os.path.join(output_dir, "examples", "prequal_database_site_lm.fsh")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    with open(path, "w", encoding="utf-8") as f:
+        for site in all_sites:
+            org = site.get("Organization", {})
+            org_ident = org.get("Identification", {})
+            org_id = org_ident.get("Id", "")
+            org_name = org_ident.get("Name", "")
+            org_addr = org.get("Address", {})
+            instance_id = sanitize_code(org_id)
+
+            site_country = org_addr.get("Country", "") or ""
+            site_title = org_name or org_id
+            site_suffix = f" ({site_country})" if site_country else ""
+            f.write(f"\nInstance: PreQualSite{instance_id}\n")
+            f.write("InstanceOf: PreQualSiteDetail\n")
+            f.write("Usage: #definition\n")
+            f.write(f'Title: "PreQual Site: {fsh_escape(site_title)}"\n')
+            f.write(f'Description: "WHO PreQual Manufacturing Site: {fsh_escape(site_title)}{fsh_escape(site_suffix)}"\n')
+            f.write(f'* siteOrganizationId.system = "https://extranet.who.int/prequal/api"\n')
+            f.write(f'* siteOrganizationId.value = "{fsh_escape(org_id)}"\n')
+            if org_name:
+                f.write(f'* siteOrganizationName = "{fsh_escape(org_name)}"\n')
+            addr = org_addr.get("AddressLine1", "")
+            if addr:
+                f.write(f'* addressLine1 = "{fsh_escape(addr)}"\n')
+            city = org_addr.get("City", "")
+            if city:
+                f.write(f'* city = "{fsh_escape(city)}"\n')
+            state = org_addr.get("State", "")
+            if state:
+                f.write(f'* state = "{fsh_escape(state)}"\n')
+            country = org_addr.get("Country", "")
+            if country:
+                f.write(f'* country = "{fsh_escape(country)}"\n')
+            postal = org_addr.get("PostalCode", "")
+            if postal:
+                f.write(f'* postalCode = "{fsh_escape(postal)}"\n')
+            status = site.get("Status", "")
+            if status:
+                f.write(f"* siteStatus = #{sanitize_code(status)}\n")
+            activity = site.get("SiteActivity", "")
+            if activity:
+                f.write(f"* siteActivity = #{sanitize_code(activity)}\n")
+
+    logger.info("Generated %d site LM instances", len(all_sites))
+
+
+def generate_ingredient_lm_instances(products, output_dir):
+    """Generate PreQualProductIngredient logical model instances FSH file.
+
+    Args:
+        products: List of normalized product field dicts.
+        output_dir: Base output directory (e.g. input/fsh).
+    """
+    all_ingredients = []
+    for p in products:
+        sf_id = p.get("sf_product_id", "")
+        per_product_idx = 0
+        for ing in p.get("ingredients", []) or []:
+            ing_ident = ing.get("Identification", {})
+            ing_id = ing_ident.get("Id", "")
+            # Some ingredients don't have IDs, use product+index as fallback
+            per_product_idx += 1
+            all_ingredients.append((sf_id, per_product_idx, ing_id, ing))
+
+    if not all_ingredients:
+        logger.info("No ingredient LM instances to generate")
+        return
+
+    path = os.path.join(output_dir, "examples", "prequal_database_ingredient_lm.fsh")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    with open(path, "w", encoding="utf-8") as f:
+        for sf_id, idx, ing_id, ing in all_ingredients:
+            if ing_id:
+                instance_id = sanitize_code(ing_id)
+            else:
+                instance_id = f"{sanitize_code(sf_id)}Ing{idx}"
+
+            ing_type_val = ing.get("Type", "")
+            ing_func = ing.get("Function", "")
+            ing_title = ing_func or ing_type_val or f"Ingredient {idx}"
+            ing_pct = ing.get("ProductComponentType", "")
+            ing_desc_parts = [ing_title]
+            if ing_pct:
+                ing_desc_parts.append(f"({ing_pct})")
+            ing_desc = " ".join(ing_desc_parts)
+            f.write(f"\nInstance: PreQualIngredient{instance_id}\n")
+            f.write("InstanceOf: PreQualProductIngredient\n")
+            f.write("Usage: #definition\n")
+            f.write(f'Title: "PreQual Ingredient: {fsh_escape(ing_title)}"\n')
+            f.write(f'Description: "WHO PreQual Product Ingredient: {fsh_escape(ing_desc)}"\n')
+            if ing_id:
+                f.write(f'* ingredientId.system = "https://extranet.who.int/prequal/api"\n')
+                f.write(f'* ingredientId.value = "{fsh_escape(ing_id)}"\n')
+            ing_type = ing.get("Type", "")
+            if ing_type:
+                f.write(f"* ingredientType = #{sanitize_code(ing_type)}\n")
+            unit = ing.get("Unit", "")
+            if unit:
+                f.write(f'* unit = "{fsh_escape(unit)}"\n')
+            product_ref = ing.get("Product", "")
+            if product_ref:
+                f.write(f'* product = "{fsh_escape(product_ref)}"\n')
+            pct = ing.get("ProductComponentType", "")
+            if pct:
+                f.write(f"* productComponentType = #{sanitize_code(pct)}\n")
+            func = ing.get("Function", "")
+            if func:
+                f.write(f'* function = "{fsh_escape(func)}"\n')
+
+    logger.info("Generated %d ingredient LM instances", len(all_ingredients))
+
+
+def generate_products_and_authorizations(products, output_dir):
+    """Generate Product, ProductAuthorization, and LM instance FSH files.
+
+    Also generates the product identifiers CodeSystem and ValueSet.
+
+    Args:
+        products: List of normalized product field dicts.
+        output_dir: Base output directory (e.g. input/fsh).
+    """
+    examples_path = os.path.join(output_dir, "examples", "prequal_database_products.fsh")
     cs_path = os.path.join(output_dir, "codesystems", "prequal_database_products_identifiers.fsh")
     vs_path = os.path.join(output_dir, "valuesets", "prequal_database_products_identifiers.fsh")
 
+    os.makedirs(os.path.dirname(examples_path), exist_ok=True)
     os.makedirs(os.path.dirname(cs_path), exist_ok=True)
     os.makedirs(os.path.dirname(vs_path), exist_ok=True)
 
     cs_entries = []
+    generated_count = 0
 
-    for i, p in enumerate(products, 1):
-        sf_id = p["sf_product_id"]
-        sf_name = p["sf_product_name"]
-        commercial_name = p["vaccine_commercial_name"]
-        manufacturer = p["applicant_name"]
-        holder = p["nra_name"]
+    with open(examples_path, "w", encoding="utf-8") as f:
+        for i, p in enumerate(products, 1):
+            sf_id = p["sf_product_id"]
+            sf_name = p["sf_product_name"]
+            date = p["date_of_prequal"]
+            vax = p.get("vaccine_abbreviated_name", "") or ""
+            vax_type = sanitize_code(vax)[:24]
+            commercial_name = p["vaccine_commercial_name"]
+            presentation = p["presentation"]
+            pres_code = sanitize_alpha(presentation)
+            num_doses = p["num_doses"]
+            manufacturer = p["applicant_name"]
+            manufacturer_sf_id = p.get("applicant_id", "")
+            holder = p["nra_name"]
+            holder_sf_id = p.get("nra_id", "")
 
-        # Skip products with missing essential data (e.g. withdrawn products)
-        if not commercial_name and not manufacturer and not holder:
-            logger.info("Skipping product %s (%s): missing essential data", sf_id, sf_name)
-            continue
+            # Skip products with missing essential data (e.g. withdrawn products)
+            if not commercial_name and not manufacturer and not holder:
+                logger.info("Skipping product %s (%s): missing essential data", sf_id, sf_name)
+                continue
 
-        safe_sf_id = sanitize_code(sf_id) if sf_id else md5hash(str(i))
-        cs_entries.append((safe_sf_id, sf_id, sf_name))
+            safe_sf_id = sanitize_code(sf_id) if sf_id else md5hash(str(i))
+            mfr_ref_id = sanitize_code(manufacturer_sf_id) if manufacturer_sf_id else md5hash(manufacturer)
+            holder_ref_id = sanitize_code(holder_sf_id) if holder_sf_id else md5hash(holder)
+
+            f.write(f"\n// Source Record Row //: {i}\n")
+            f.write(f'//  Vaccine Product ID: ({sf_id})\n')
+            f.write(f'//  Product Name: ({sf_name})\n')
+            f.write(f'//  Date of Prequalification: ({date})\n')
+            f.write(f'//  Vaccine Type: ({vax})\n')
+            f.write(f'//  Commercial Name: ({commercial_name})\n')
+            f.write(f'//  Presentation: ({presentation})\n')
+            f.write(f'//  No. of doses: ({num_doses})\n')
+            f.write(f'//  Manufacturer: ({manufacturer})\n')
+            f.write(f'//  Responsible NRA: ({holder})\n')
+            f.write(f"//\n\n")
+
+            # LM Instance
+            status = p.get("status", "") or "Prequalified"
+            product_type = p.get("product_type", "")
+            assessment = p.get("assessment_procedure", "")
+            pharm_form = p.get("pharmaceutical_form", "")
+            route = p.get("route_of_administration", "")
+            preservative = p.get("preservative", "")
+            preservative_conc = p.get("preservative_concentration", "")
+            vial_monitor = p.get("vial_monitor", "") or ""
+            multidose_policy = p.get("multidose_vial_policy", "") or ""
+            presentation_other = p.get("presentation_other", "") or ""
+            shelf_life = p.get("shelf_life", "") or ""
+            temperature = p.get("temperature", "") or ""
+            diluent_val = p.get("diluent", "") or ""
+            last_pub_date = p.get("last_publishing_date", "") or ""
+            pub_remarks = p.get("publishing_remarks", "") or ""
+            nra_country = p.get("nra_country", "") or ""
+
+            product_title = f"{commercial_name} - {vax}" if commercial_name and vax else commercial_name or sf_name
+            product_desc = f"{commercial_name} ({vax}) by {manufacturer}" if commercial_name else sf_name
+            f.write(f"Instance: FinishedProduct{safe_sf_id}\n")
+            f.write("InstanceOf: FinishedVaccineProducts\n")
+            f.write("Usage: #definition\n")
+            f.write(f'Title: "PreQual Product: {fsh_escape(product_title)}"\n')
+            f.write(f'Description: "{fsh_escape(product_desc)}"\n')
+            if product_type:
+                f.write(f"* productType = #{sanitize_code(product_type)}\n")
+            if date:
+                f.write(f"* dateOfPrequal = {date}\n")
+            if assessment:
+                f.write(f"* assessmentProcedure = #{sanitize_code(assessment)}\n")
+            f.write(f"* status = #{sanitize_code(status)}\n")
+            if pharm_form:
+                f.write(f"* pharmaceuticalForm = #{sanitize_code(pharm_form)}\n")
+            if pres_code:
+                f.write(f'* presentation.coding.system = "https://extranet.who.int/prequal/vaccines/prequalified-vaccines"\n')
+                f.write(f"* presentation.coding.code = #{pres_code}\n")
+                f.write(f'* presentation.coding.display = "{fsh_escape(presentation)}"\n')
+            if presentation_other:
+                f.write(f'* presentationOther = "{fsh_escape(presentation_other)}"\n')
+            if num_doses:
+                f.write(f"* numDoses = {num_doses}\n")
+            f.write(f'* productId.system = "https://extranet.who.int/prequal/api"\n')
+            f.write(f'* productId.value = "{fsh_escape(sf_id)}"\n')
+            f.write(f'* productName = "{fsh_escape(sf_name)}"\n')
+            if p.get("vaccine_full_name"):
+                f.write(f'* vaccineFullName = "{fsh_escape(p["vaccine_full_name"])}"\n')
+            if p.get("vaccine_abbreviated_name"):
+                f.write(f'* vaccineAbbreviatedName = "{fsh_escape(p["vaccine_abbreviated_name"])}"\n')
+            f.write(f'* vaccineCommercialName = "{fsh_escape(commercial_name)}"\n')
+            vax_type_id = p.get("vaccine_type_id", "")
+            if vax_type_id:
+                f.write(f'* vaccineTypeId.system = "https://extranet.who.int/prequal/api"\n')
+                f.write(f'* vaccineTypeId.value = "{fsh_escape(vax_type_id)}"\n')
+            if route:
+                f.write(f"* routeOfAdministration = #{sanitize_code(route)}\n")
+            if vial_monitor and vial_monitor.lower() != "none":
+                f.write(f'* vialMonitor = "{fsh_escape(vial_monitor)}"\n')
+            if multidose_policy and multidose_policy.lower() != "not applicable":
+                f.write(f'* multidoseVialPolicy = "{fsh_escape(multidose_policy)}"\n')
+            if manufacturer_sf_id:
+                f.write(f'* applicantId.system = "https://extranet.who.int/prequal/api"\n')
+                f.write(f'* applicantId.value = "{fsh_escape(manufacturer_sf_id)}"\n')
+            f.write(f'* applicantName = "{fsh_escape(manufacturer)}"\n')
+            if holder_sf_id:
+                f.write(f'* nraId.system = "https://extranet.who.int/prequal/api"\n')
+                f.write(f'* nraId.value = "{fsh_escape(holder_sf_id)}"\n')
+            f.write(f'* nraName = "{fsh_escape(holder)}"\n')
+            if nra_country:
+                f.write(f'* nraCountry = "{fsh_escape(nra_country)}"\n')
+            if shelf_life:
+                f.write(f'* shelfLife = "{fsh_escape(shelf_life)}"\n')
+            if temperature:
+                f.write(f'* storageTemperature = "{fsh_escape(temperature)}"\n')
+            if diluent_val and diluent_val.upper() != "N/A":
+                f.write(f'* diluent = "{fsh_escape(diluent_val)}"\n')
+            if last_pub_date:
+                # Trim timestamp to date only if it has a T
+                pub_date = last_pub_date.split("T")[0] if "T" in last_pub_date else last_pub_date
+                f.write(f"* lastPublishingDate = {pub_date}\n")
+            if pub_remarks:
+                f.write(f'* publishingRemarks = "{fsh_escape(pub_remarks)}"\n')
+            if preservative:
+                f.write(f'* preservative = "{fsh_escape(preservative)}"\n')
+            if preservative_conc:
+                f.write(f'* preservativeConcentration = "{fsh_escape(preservative_conc)}"\n')
+            f.write(f"* manufacturerReference = Reference(Manufacturer{mfr_ref_id})\n")
+            f.write(f"* responsibleNRAReference = Reference(Holder{holder_ref_id}) // {fsh_escape(holder)}\n")
+
+            # LM instance references (only when sub-object has a non-null ID)
+            if manufacturer_sf_id:
+                f.write(f"* manufacturerLM = Reference(PreQualManufacturer{mfr_ref_id})\n")
+            if holder_sf_id:
+                f.write(f"* nraLM = Reference(PreQualNRA{holder_ref_id})\n")
+            if vax_type_id:
+                vax_lm_ref_id = sanitize_code(vax_type_id)
+                f.write(f"* vaccineLM = Reference(PreQualVaccine{vax_lm_ref_id})\n")
+
+            # Bulk supplier LM reference
+            bs_id = p.get("bulk_supplier_id", "")
+            if bs_id:
+                f.write(f"* bulkSupplierLM = Reference(PreQualBulkSupplier{sanitize_code(bs_id)})\n")
+
+            # Packaging LM references
+            for pkg in p.get("packaging", []) or []:
+                pkg_id = pkg.get("Id", "")
+                if pkg_id:
+                    f.write(f"* packagingLM = Reference(PreQualPackaging{sanitize_code(pkg_id)})\n")
+
+            # Document LM references
+            for doc in p.get("documents", []) or []:
+                doc_ident = doc.get("Identification", {})
+                doc_id = doc_ident.get("Id", "")
+                if doc_id:
+                    f.write(f"* documentLM = Reference(PreQualDocument{sanitize_code(doc_id)})\n")
+
+            # Site LM references
+            for site in p.get("sites", []) or []:
+                org = site.get("Organization", {})
+                org_ident = org.get("Identification", {})
+                org_id = org_ident.get("Id", "")
+                if org_id:
+                    f.write(f"* siteLM = Reference(PreQualSite{sanitize_code(org_id)})\n")
+
+            # Ingredient LM references
+            ing_idx = 0
+            for ing in p.get("ingredients", []) or []:
+                ing_ident = ing.get("Identification", {})
+                ing_id = ing_ident.get("Id", "")
+                ing_idx += 1
+                if ing_id:
+                    f.write(f"* ingredientLM = Reference(PreQualIngredient{sanitize_code(ing_id)})\n")
+                else:
+                    f.write(f"* ingredientLM = Reference(PreQualIngredient{sanitize_code(sf_id)}Ing{ing_idx})\n")
+
+            f.write("\n")
+
+            generated_count += 1
+            cs_entries.append((safe_sf_id, sf_id, sf_name))
 
     # CodeSystem for product identifiers (additive — preserve existing codes)
     existing_ids = read_existing_codes(cs_path)
@@ -672,7 +1306,7 @@ def generate_product_identifiers(products, output_dir):
         f.write('Description: "WHO PreQualificaiton Vaccine Product Ids"\n')
         f.write("* include codes from system $PreQualProductIds\n")
 
-    logger.info("Generated product identifiers CodeSystem/ValueSet with %d entries", len(cs_entries))
+    logger.info("Generated %d product instances", generated_count)
 
 
 def main():
@@ -729,7 +1363,15 @@ def main():
     generate_vaccine_types_codesystem(products, args.output_dir)
     generate_manufacturers(products, args.output_dir)
     generate_holders(products, args.output_dir)
-    generate_product_identifiers(products, args.output_dir)
+    generate_manufacturer_lm_instances(products, args.output_dir)
+    generate_nra_lm_instances(products, args.output_dir)
+    generate_vaccine_lm_instances(products, args.output_dir)
+    generate_bulk_supplier_lm_instances(products, args.output_dir)
+    generate_packaging_lm_instances(products, args.output_dir)
+    generate_document_lm_instances(products, args.output_dir)
+    generate_site_lm_instances(products, args.output_dir)
+    generate_ingredient_lm_instances(products, args.output_dir)
+    generate_products_and_authorizations(products, args.output_dir)
 
     logger.info("All FSH files generated successfully in %s", args.output_dir)
 
