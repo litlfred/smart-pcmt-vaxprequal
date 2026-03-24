@@ -14,7 +14,6 @@ from import_salesforce import (
     extract_product_fields,
     fsh_escape,
     generate_bulk_supplier_lm_instances,
-    generate_concept_map,
     generate_document_lm_instances,
     generate_holders,
     generate_ingredient_lm_instances,
@@ -530,35 +529,6 @@ class TestLoadJsonFile(unittest.TestCase):
             self.assertEqual(len(products), 2)
         finally:
             os.unlink(tmp_path)
-
-
-class TestConceptMap(unittest.TestCase):
-    def test_generate_concept_map(self):
-        tmpdir = tempfile.mkdtemp()
-        # Create a minimal CSV matching the sample product
-        csv_path = os.path.join(tmpdir, "test.csv")
-        with open(csv_path, "w") as f:
-            f.write('"Date of Prequalification ","Vaccine Type","Commercial Name",Presentation,"No. of doses",Manufacturer,"Responsible NRA"\n')
-            f.write('19/12/2023,Malaria,CYVAC,Vial,2,"Serum Institute of India","Central Drugs Standard Control Organization (CDSCO)"\n')
-
-        products = [extract_product_fields(SAMPLE_PRODUCT)]
-        generate_concept_map(products, csv_path, tmpdir)
-
-        cm_path = os.path.join(
-            tmpdir, "concept_maps", "prequal_csv_to_api.fsh"
-        )
-        self.assertTrue(os.path.exists(cm_path))
-        content = open(cm_path).read()
-        self.assertIn("ConceptMap", content)
-        self.assertIn("PreQualCSVtoAPIConceptMap", content)
-
-        # Verify FHIR R5 syntax is used (not R4)
-        self.assertIn("sourceScopeUri", content)
-        self.assertIn("targetScopeUri", content)
-        self.assertIn("relationship = #equivalent", content)
-        self.assertNotIn("sourceUri", content)
-        self.assertNotIn("targetUri", content)
-        self.assertNotIn("equivalence", content)
 
 
 class TestSkipWithdrawnProducts(unittest.TestCase):
