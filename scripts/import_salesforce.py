@@ -1153,7 +1153,7 @@ def generate_products_and_authorizations(products, output_dir):
 
             product_title = f"{commercial_name} - {vax}" if commercial_name and vax else commercial_name or sf_name
             product_desc = f"{commercial_name} ({vax}) by {manufacturer}" if commercial_name else sf_name
-            f.write(f"Instance: PreQualDB{safe_sf_id}\n")
+            f.write(f"Instance: FinishedProduct{safe_sf_id}\n")
             f.write("InstanceOf: FinishedVaccineProducts\n")
             f.write("Usage: #definition\n")
             f.write(f'Title: "PreQual Product: {fsh_escape(product_title)}"\n')

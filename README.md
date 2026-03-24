@@ -58,7 +58,7 @@ Products with missing essential data (e.g. withdrawn products) are automatically
 Here is a sample for the CYVAC malaria vaccine showing the product and its referenced LM instances:
 
 ```fsh
-Instance: PreQualDBa3K3X000005atRtUAI
+Instance: FinishedProducta3K3X000005atRtUAI
 InstanceOf: FinishedVaccineProducts
 * dateOfPrequal = 2023-12-19
 * status = "Prequalified"
