@@ -1,0 +1,19 @@
+{
+  "resourceType": "DAK",
+  "resourceDefinition": "http://smart.who.int/base/StructureDefinition/DAK",
+  "id": "smart.who.int.pcmt-vaxprequal",
+  "name": "PCMTVAXPreQual",
+  "title": "SMART Product Dataset for Prequalified Vaccines",
+  "description": "Data exchange specifications for Product Catalog supporting the SMART Guidelines",
+  "version": "0.2.0",
+  "status": "draft",
+  "publicationUrl": "https://smart.who.int/pcmt-vaxprequal",
+  "previewUrl": "https://worldhealthorganization.github.io/smart-pcmt-vaxprequal",
+  "canonicalUrl": "http://smart.who.int/pcmt-vaxprequal",
+  "license": "CC-BY-SA-3.0-IGO",
+  "copyrightYear": "2023+",
+  "publisher": {
+    "name": "WHO",
+    "url": "http://who.int"
+  }
+}
