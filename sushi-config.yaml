@@ -6,7 +6,7 @@ description: Data exchange specifications for Product Catalog supporting the SMA
   Guidelines
 status: draft
 version: 0.2.0
-fhirVersion: 4.0.1
+fhirVersion: 5.0.0
 copyrightYear: 2023+
 releaseLabel: ci-build
 publisher:
