@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "validityPeriod": {
+    "start": "2023-12-19"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/MalariaProduct34cd73607a9432893b41df94a5a9d0d2"
+    }
+  ]
+}

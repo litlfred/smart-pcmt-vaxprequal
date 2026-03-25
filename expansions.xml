@@ -1,0 +1,2276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Bundle xmlns="http://hl7.org/fhir">
+  <id value="0202e5f1-e946-4ec9-9482-a3b79d663402"/>
+  <meta>
+    <lastUpdated value="2026-03-25T13:07:53.098+00:00"/>
+  </meta>
+  <type value="collection"/>
+  <entry>
+    <fullUrl value="http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualDatabaseMetadata"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-PreQualDatabaseMetadata.html">codesystem WHO PreQualification Database Metadata v0.2.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata|0.2.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 25 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-FinishedVaccineProduct"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-FinishedVaccineProduct">FinishedVaccineProduct</a>
+                </td>
+                <td>Finished Vaccine Product</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;FinishedVaccineProduct&quot;, &quot;display&quot;: &quot;Finished Vaccine Product&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;FinishedVaccineProduct&quot;&gt;&lt;display value=&quot;Finished Vaccine Product&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-PrequalificationStandard"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-PrequalificationStandard">PrequalificationStandard</a>
+                </td>
+                <td>Prequalification - Standard</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;PrequalificationStandard&quot;, &quot;display&quot;: &quot;Prequalification - Standard&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;PrequalificationStandard&quot;&gt;&lt;display value=&quot;Prequalification - Standard&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-Prequalified"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-Prequalified">Prequalified</a>
+                </td>
+                <td>Prequalified</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Prequalified&quot;, &quot;display&quot;: &quot;Prequalified&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Prequalified&quot;&gt;&lt;display value=&quot;Prequalified&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-WithdrawnWasPrequalified"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-WithdrawnWasPrequalified">WithdrawnWasPrequalified</a>
+                </td>
+                <td>Withdrawn: Was Prequalified</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;WithdrawnWasPrequalified&quot;, &quot;display&quot;: &quot;Withdrawn: Was Prequalified&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;WithdrawnWasPrequalified&quot;&gt;&lt;display value=&quot;Withdrawn: Was Prequalified&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-LiquidReadytouse"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-LiquidReadytouse">LiquidReadytouse</a>
+                </td>
+                <td>Liquid: Ready to use</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;LiquidReadytouse&quot;, &quot;display&quot;: &quot;Liquid: Ready to use&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;LiquidReadytouse&quot;&gt;&lt;display value=&quot;Liquid: Ready to use&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse">Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse</a>
+                </td>
+                <td>Lyophilised active component to be reconstituted with excipient diluent before use</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse&quot;, &quot;display&quot;: &quot;Lyophilised active component to be reconstituted with excipient diluent before use&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse&quot;&gt;&lt;display value=&quot;Lyophilised active component to be reconstituted with excipient diluent before use&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-Intradermal"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-Intradermal">Intradermal</a>
+                </td>
+                <td>Intradermal</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Intradermal&quot;, &quot;display&quot;: &quot;Intradermal&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Intradermal&quot;&gt;&lt;display value=&quot;Intradermal&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-Intramuscular"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-Intramuscular">Intramuscular</a>
+                </td>
+                <td>Intramuscular</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Intramuscular&quot;, &quot;display&quot;: &quot;Intramuscular&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Intramuscular&quot;&gt;&lt;display value=&quot;Intramuscular&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-Intramuscularorsubcutaneous"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-Intramuscularorsubcutaneous">Intramuscularorsubcutaneous</a>
+                </td>
+                <td>Intramuscular or subcutaneous</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Intramuscularorsubcutaneous&quot;, &quot;display&quot;: &quot;Intramuscular or subcutaneous&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Intramuscularorsubcutaneous&quot;&gt;&lt;display value=&quot;Intramuscular or subcutaneous&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-Oral"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-Oral">Oral</a>
+                </td>
+                <td>Oral</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Oral&quot;, &quot;display&quot;: &quot;Oral&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Oral&quot;&gt;&lt;display value=&quot;Oral&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-Subcutaneous"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-Subcutaneous">Subcutaneous</a>
+                </td>
+                <td>Subcutaneous</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Subcutaneous&quot;, &quot;display&quot;: &quot;Subcutaneous&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Subcutaneous&quot;&gt;&lt;display value=&quot;Subcutaneous&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-Secondary"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-Secondary">Secondary</a>
+                </td>
+                <td>Secondary</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Secondary&quot;, &quot;display&quot;: &quot;Secondary&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Secondary&quot;&gt;&lt;display value=&quot;Secondary&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-ShippingContainer"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-ShippingContainer">ShippingContainer</a>
+                </td>
+                <td>Shipping Container</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;ShippingContainer&quot;, &quot;display&quot;: &quot;Shipping Container&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;ShippingContainer&quot;&gt;&lt;display value=&quot;Shipping Container&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-Tertiary"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-Tertiary">Tertiary</a>
+                </td>
+                <td>Tertiary</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Tertiary&quot;, &quot;display&quot;: &quot;Tertiary&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Tertiary&quot;&gt;&lt;display value=&quot;Tertiary&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-ActiveVaccine"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-ActiveVaccine">ActiveVaccine</a>
+                </td>
+                <td>Active (Vaccine)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;ActiveVaccine&quot;, &quot;display&quot;: &quot;Active (Vaccine)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;ActiveVaccine&quot;&gt;&lt;display value=&quot;Active (Vaccine)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-Diluent"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-Diluent">Diluent</a>
+                </td>
+                <td>Diluent</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Diluent&quot;, &quot;display&quot;: &quot;Diluent&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Diluent&quot;&gt;&lt;display value=&quot;Diluent&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-Photo"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-Photo">Photo</a>
+                </td>
+                <td>Photo</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Photo&quot;, &quot;display&quot;: &quot;Photo&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Photo&quot;&gt;&lt;display value=&quot;Photo&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-PhotoMainImage"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-PhotoMainImage">PhotoMainImage</a>
+                </td>
+                <td>Photo-Main Image</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;PhotoMainImage&quot;, &quot;display&quot;: &quot;Photo-Main Image&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;PhotoMainImage&quot;&gt;&lt;display value=&quot;Photo-Main Image&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-ProductInsert"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-ProductInsert">ProductInsert</a>
+                </td>
+                <td>Product Insert</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;ProductInsert&quot;, &quot;display&quot;: &quot;Product Insert&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;ProductInsert&quot;&gt;&lt;display value=&quot;Product Insert&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-VSPAR"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-VSPAR">VSPAR</a>
+                </td>
+                <td>VSPAR</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;VSPAR&quot;, &quot;display&quot;: &quot;VSPAR&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;VSPAR&quot;&gt;&lt;display value=&quot;VSPAR&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-VaccineGeneralDocument"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-VaccineGeneralDocument">VaccineGeneralDocument</a>
+                </td>
+                <td>Vaccine General Document</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;VaccineGeneralDocument&quot;, &quot;display&quot;: &quot;Vaccine General Document&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;VaccineGeneralDocument&quot;&gt;&lt;display value=&quot;Vaccine General Document&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-FVPManufacture"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-FVPManufacture">FVPManufacture</a>
+                </td>
+                <td>FVP Manufacture</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;FVPManufacture&quot;, &quot;display&quot;: &quot;FVP Manufacture&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;FVPManufacture&quot;&gt;&lt;display value=&quot;FVP Manufacture&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-Accepted"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-Accepted">Accepted</a>
+                </td>
+                <td>Accepted</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Accepted&quot;, &quot;display&quot;: &quot;Accepted&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Accepted&quot;&gt;&lt;display value=&quot;Accepted&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-VxFVP"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-VxFVP">VxFVP</a>
+                </td>
+                <td>Vx FVP</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;VxFVP&quot;, &quot;display&quot;: &quot;Vx FVP&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;VxFVP&quot;&gt;&lt;display value=&quot;Vx FVP&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata-Active"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualDatabaseMetadata.html#PreQualDatabaseMetadata-Active">Active</a>
+                </td>
+                <td>Active</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Active&quot;, &quot;display&quot;: &quot;Active&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Active&quot;&gt;&lt;display value=&quot;Active&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualDatabaseMetadata"/>
+        <version value="0.2.0"/>
+        <name value="PreQualDatabaseMetadata"/>
+        <title value="WHO PreQualification Database Metadata"/>
+        <status value="draft"/>
+        <date value="2026-03-25T13:07:53+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:5d83ee6f-0f37-416b-86ad-3007a9eae0ff"/>
+          <timestamp value="2026-03-25T13:10:01+00:00"/>
+          <total value="25"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-experimental"/>
+            <valueUri value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata|0.2.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="FinishedVaccineProduct"/>
+            <display value="Finished Vaccine Product"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="PrequalificationStandard"/>
+            <display value="Prequalification - Standard"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="Prequalified"/>
+            <display value="Prequalified"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="WithdrawnWasPrequalified"/>
+            <display value="Withdrawn: Was Prequalified"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="LiquidReadytouse"/>
+            <display value="Liquid: Ready to use"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse"/>
+            <display value="Lyophilised active component to be reconstituted with excipient diluent before use"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="Intradermal"/>
+            <display value="Intradermal"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="Intramuscular"/>
+            <display value="Intramuscular"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="Intramuscularorsubcutaneous"/>
+            <display value="Intramuscular or subcutaneous"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="Oral"/>
+            <display value="Oral"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="Subcutaneous"/>
+            <display value="Subcutaneous"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="Secondary"/>
+            <display value="Secondary"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="ShippingContainer"/>
+            <display value="Shipping Container"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="Tertiary"/>
+            <display value="Tertiary"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="ActiveVaccine"/>
+            <display value="Active (Vaccine)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="Diluent"/>
+            <display value="Diluent"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="Photo"/>
+            <display value="Photo"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="PhotoMainImage"/>
+            <display value="Photo-Main Image"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="ProductInsert"/>
+            <display value="Product Insert"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="VSPAR"/>
+            <display value="VSPAR"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="VaccineGeneralDocument"/>
+            <display value="Vaccine General Document"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="FVPManufacture"/>
+            <display value="FVP Manufacture"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="Accepted"/>
+            <display value="Accepted"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="VxFVP"/>
+            <display value="Vx FVP"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+            <code value="Active"/>
+            <display value="Active"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualPresentation"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-PreQualPresentation.html">codesystem WHO PreQualificaiton Vaccine Presentations v0.2.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation|0.2.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 4 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation-Ampoule"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualPresentation.html#PreQualPresentation-Ampoule">Ampoule</a>
+                </td>
+                <td>Ampoule</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Ampoule&quot;, &quot;display&quot;: &quot;Ampoule&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Ampoule&quot;&gt;&lt;display value=&quot;Ampoule&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation-Plastictube"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualPresentation.html#PreQualPresentation-Plastictube">Plastictube</a>
+                </td>
+                <td>Plastic tube</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Plastictube&quot;, &quot;display&quot;: &quot;Plastic tube&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Plastictube&quot;&gt;&lt;display value=&quot;Plastic tube&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation-Twovialsetactiveexcipient"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualPresentation.html#PreQualPresentation-Twovialsetactiveexcipient">Twovialsetactiveexcipient</a>
+                </td>
+                <td>Two vial set (active + excipient)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Twovialsetactiveexcipient&quot;, &quot;display&quot;: &quot;Two vial set (active + excipient)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Twovialsetactiveexcipient&quot;&gt;&lt;display value=&quot;Two vial set (active + excipient)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation-Vial"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualPresentation.html#PreQualPresentation-Vial">Vial</a>
+                </td>
+                <td>Vial</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Vial&quot;, &quot;display&quot;: &quot;Vial&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Vial&quot;&gt;&lt;display value=&quot;Vial&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualPresentation"/>
+        <version value="0.2.0"/>
+        <name value="PreQualPresentation"/>
+        <title value="WHO PreQualificaiton Presentation "/>
+        <status value="draft"/>
+        <date value="2026-03-25T13:07:53+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:f3f568ec-6649-4f11-aed3-12249645e63f"/>
+          <timestamp value="2026-03-25T13:10:01+00:00"/>
+          <total value="4"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"/>
+            <code value="Ampoule"/>
+            <display value="Ampoule"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"/>
+            <code value="Plastictube"/>
+            <display value="Plastic tube"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"/>
+            <code value="Twovialsetactiveexcipient"/>
+            <display value="Two vial set (active + excipient)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"/>
+            <code value="Vial"/>
+            <display value="Vial"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualProductIds"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-PreQualProductIds.html">codesystem WHO PreQualificaiton Vaccine Product Ids v0.2.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds|0.2.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 33 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000005atRtUAI"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000005atRtUAI">a3K3X000005atRtUAI</a>
+                </td>
+                <td>FVP-P-447 (a3K3X000005atRtUAI)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000005atRtUAI&quot;, &quot;display&quot;: &quot;FVP-P-447 (a3K3X000005atRtUAI)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000005atRtUAI&quot;&gt;&lt;display value=&quot;FVP-P-447 (a3K3X000005atRtUAI)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000005atSwUAI"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000005atSwUAI">a3K3X000005atSwUAI</a>
+                </td>
+                <td>FVP-P-446 (a3K3X000005atSwUAI)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000005atSwUAI&quot;, &quot;display&quot;: &quot;FVP-P-446 (a3K3X000005atSwUAI)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000005atSwUAI&quot;&gt;&lt;display value=&quot;FVP-P-446 (a3K3X000005atSwUAI)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MihsUAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MihsUAC">a3K3X000006MihsUAC</a>
+                </td>
+                <td>FVP-P-62 (a3K3X000006MihsUAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MihsUAC&quot;, &quot;display&quot;: &quot;FVP-P-62 (a3K3X000006MihsUAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MihsUAC&quot;&gt;&lt;display value=&quot;FVP-P-62 (a3K3X000006MihsUAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MihtUAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MihtUAC">a3K3X000006MihtUAC</a>
+                </td>
+                <td>FVP-P-63 (a3K3X000006MihtUAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MihtUAC&quot;, &quot;display&quot;: &quot;FVP-P-63 (a3K3X000006MihtUAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MihtUAC&quot;&gt;&lt;display value=&quot;FVP-P-63 (a3K3X000006MihtUAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MihuUAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MihuUAC">a3K3X000006MihuUAC</a>
+                </td>
+                <td>FVP-P-64 (a3K3X000006MihuUAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MihuUAC&quot;, &quot;display&quot;: &quot;FVP-P-64 (a3K3X000006MihuUAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MihuUAC&quot;&gt;&lt;display value=&quot;FVP-P-64 (a3K3X000006MihuUAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MihvUAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MihvUAC">a3K3X000006MihvUAC</a>
+                </td>
+                <td>FVP-P-65 (a3K3X000006MihvUAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MihvUAC&quot;, &quot;display&quot;: &quot;FVP-P-65 (a3K3X000006MihvUAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MihvUAC&quot;&gt;&lt;display value=&quot;FVP-P-65 (a3K3X000006MihvUAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MihwUAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MihwUAC">a3K3X000006MihwUAC</a>
+                </td>
+                <td>FVP-P-66 (a3K3X000006MihwUAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MihwUAC&quot;, &quot;display&quot;: &quot;FVP-P-66 (a3K3X000006MihwUAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MihwUAC&quot;&gt;&lt;display value=&quot;FVP-P-66 (a3K3X000006MihwUAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MihxUAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MihxUAC">a3K3X000006MihxUAC</a>
+                </td>
+                <td>FVP-P-67 (a3K3X000006MihxUAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MihxUAC&quot;, &quot;display&quot;: &quot;FVP-P-67 (a3K3X000006MihxUAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MihxUAC&quot;&gt;&lt;display value=&quot;FVP-P-67 (a3K3X000006MihxUAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MihyUAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MihyUAC">a3K3X000006MihyUAC</a>
+                </td>
+                <td>FVP-P-68 (a3K3X000006MihyUAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MihyUAC&quot;, &quot;display&quot;: &quot;FVP-P-68 (a3K3X000006MihyUAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MihyUAC&quot;&gt;&lt;display value=&quot;FVP-P-68 (a3K3X000006MihyUAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006Mii0UAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006Mii0UAC">a3K3X000006Mii0UAC</a>
+                </td>
+                <td>FVP-P-61 (a3K3X000006Mii0UAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006Mii0UAC&quot;, &quot;display&quot;: &quot;FVP-P-61 (a3K3X000006Mii0UAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006Mii0UAC&quot;&gt;&lt;display value=&quot;FVP-P-61 (a3K3X000006Mii0UAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006Mii1UAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006Mii1UAC">a3K3X000006Mii1UAC</a>
+                </td>
+                <td>FVP-P-75 (a3K3X000006Mii1UAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006Mii1UAC&quot;, &quot;display&quot;: &quot;FVP-P-75 (a3K3X000006Mii1UAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006Mii1UAC&quot;&gt;&lt;display value=&quot;FVP-P-75 (a3K3X000006Mii1UAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006Mii2UAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006Mii2UAC">a3K3X000006Mii2UAC</a>
+                </td>
+                <td>FVP-P-76 (a3K3X000006Mii2UAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006Mii2UAC&quot;, &quot;display&quot;: &quot;FVP-P-76 (a3K3X000006Mii2UAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006Mii2UAC&quot;&gt;&lt;display value=&quot;FVP-P-76 (a3K3X000006Mii2UAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006Mii3UAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006Mii3UAC">a3K3X000006Mii3UAC</a>
+                </td>
+                <td>FVP-P-77 (a3K3X000006Mii3UAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006Mii3UAC&quot;, &quot;display&quot;: &quot;FVP-P-77 (a3K3X000006Mii3UAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006Mii3UAC&quot;&gt;&lt;display value=&quot;FVP-P-77 (a3K3X000006Mii3UAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006Mii5UAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006Mii5UAC">a3K3X000006Mii5UAC</a>
+                </td>
+                <td>FVP-P-311 (a3K3X000006Mii5UAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006Mii5UAC&quot;, &quot;display&quot;: &quot;FVP-P-311 (a3K3X000006Mii5UAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006Mii5UAC&quot;&gt;&lt;display value=&quot;FVP-P-311 (a3K3X000006Mii5UAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006Mii6UAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006Mii6UAC">a3K3X000006Mii6UAC</a>
+                </td>
+                <td>FVP-P-319 (a3K3X000006Mii6UAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006Mii6UAC&quot;, &quot;display&quot;: &quot;FVP-P-319 (a3K3X000006Mii6UAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006Mii6UAC&quot;&gt;&lt;display value=&quot;FVP-P-319 (a3K3X000006Mii6UAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006Mii7UAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006Mii7UAC">a3K3X000006Mii7UAC</a>
+                </td>
+                <td>FVP-P-71 (a3K3X000006Mii7UAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006Mii7UAC&quot;, &quot;display&quot;: &quot;FVP-P-71 (a3K3X000006Mii7UAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006Mii7UAC&quot;&gt;&lt;display value=&quot;FVP-P-71 (a3K3X000006Mii7UAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006Mii8UAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006Mii8UAC">a3K3X000006Mii8UAC</a>
+                </td>
+                <td>FVP-P-78 (a3K3X000006Mii8UAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006Mii8UAC&quot;, &quot;display&quot;: &quot;FVP-P-78 (a3K3X000006Mii8UAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006Mii8UAC&quot;&gt;&lt;display value=&quot;FVP-P-78 (a3K3X000006Mii8UAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006Mii9UAC"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006Mii9UAC">a3K3X000006Mii9UAC</a>
+                </td>
+                <td>FVP-P-79 (a3K3X000006Mii9UAC)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006Mii9UAC&quot;, &quot;display&quot;: &quot;FVP-P-79 (a3K3X000006Mii9UAC)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006Mii9UAC&quot;&gt;&lt;display value=&quot;FVP-P-79 (a3K3X000006Mii9UAC)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MiiAUAS"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MiiAUAS">a3K3X000006MiiAUAS</a>
+                </td>
+                <td>FVP-P-80 (a3K3X000006MiiAUAS)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MiiAUAS&quot;, &quot;display&quot;: &quot;FVP-P-80 (a3K3X000006MiiAUAS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MiiAUAS&quot;&gt;&lt;display value=&quot;FVP-P-80 (a3K3X000006MiiAUAS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MiiBUAS"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MiiBUAS">a3K3X000006MiiBUAS</a>
+                </td>
+                <td>FVP-P-329 (a3K3X000006MiiBUAS)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MiiBUAS&quot;, &quot;display&quot;: &quot;FVP-P-329 (a3K3X000006MiiBUAS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MiiBUAS&quot;&gt;&lt;display value=&quot;FVP-P-329 (a3K3X000006MiiBUAS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MiiCUAS"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MiiCUAS">a3K3X000006MiiCUAS</a>
+                </td>
+                <td>FVP-P-73 (a3K3X000006MiiCUAS)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MiiCUAS&quot;, &quot;display&quot;: &quot;FVP-P-73 (a3K3X000006MiiCUAS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MiiCUAS&quot;&gt;&lt;display value=&quot;FVP-P-73 (a3K3X000006MiiCUAS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MiiDUAS"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MiiDUAS">a3K3X000006MiiDUAS</a>
+                </td>
+                <td>FVP-P-74 (a3K3X000006MiiDUAS)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MiiDUAS&quot;, &quot;display&quot;: &quot;FVP-P-74 (a3K3X000006MiiDUAS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MiiDUAS&quot;&gt;&lt;display value=&quot;FVP-P-74 (a3K3X000006MiiDUAS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MiiEUAS"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MiiEUAS">a3K3X000006MiiEUAS</a>
+                </td>
+                <td>FVP-P-137 (a3K3X000006MiiEUAS)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MiiEUAS&quot;, &quot;display&quot;: &quot;FVP-P-137 (a3K3X000006MiiEUAS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MiiEUAS&quot;&gt;&lt;display value=&quot;FVP-P-137 (a3K3X000006MiiEUAS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MiiFUAS"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MiiFUAS">a3K3X000006MiiFUAS</a>
+                </td>
+                <td>FVP-P-136 (a3K3X000006MiiFUAS)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MiiFUAS&quot;, &quot;display&quot;: &quot;FVP-P-136 (a3K3X000006MiiFUAS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MiiFUAS&quot;&gt;&lt;display value=&quot;FVP-P-136 (a3K3X000006MiiFUAS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MiiGUAS"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MiiGUAS">a3K3X000006MiiGUAS</a>
+                </td>
+                <td>FVP-P-138 (a3K3X000006MiiGUAS)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MiiGUAS&quot;, &quot;display&quot;: &quot;FVP-P-138 (a3K3X000006MiiGUAS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MiiGUAS&quot;&gt;&lt;display value=&quot;FVP-P-138 (a3K3X000006MiiGUAS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MiiHUAS"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MiiHUAS">a3K3X000006MiiHUAS</a>
+                </td>
+                <td>FVP-P-141 (a3K3X000006MiiHUAS)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MiiHUAS&quot;, &quot;display&quot;: &quot;FVP-P-141 (a3K3X000006MiiHUAS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MiiHUAS&quot;&gt;&lt;display value=&quot;FVP-P-141 (a3K3X000006MiiHUAS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MiiIUAS"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MiiIUAS">a3K3X000006MiiIUAS</a>
+                </td>
+                <td>FVP-P-142 (a3K3X000006MiiIUAS)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MiiIUAS&quot;, &quot;display&quot;: &quot;FVP-P-142 (a3K3X000006MiiIUAS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MiiIUAS&quot;&gt;&lt;display value=&quot;FVP-P-142 (a3K3X000006MiiIUAS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MiiJUAS"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MiiJUAS">a3K3X000006MiiJUAS</a>
+                </td>
+                <td>FVP-P-144 (a3K3X000006MiiJUAS)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MiiJUAS&quot;, &quot;display&quot;: &quot;FVP-P-144 (a3K3X000006MiiJUAS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MiiJUAS&quot;&gt;&lt;display value=&quot;FVP-P-144 (a3K3X000006MiiJUAS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MiiKUAS"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MiiKUAS">a3K3X000006MiiKUAS</a>
+                </td>
+                <td>FVP-P-143 (a3K3X000006MiiKUAS)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MiiKUAS&quot;, &quot;display&quot;: &quot;FVP-P-143 (a3K3X000006MiiKUAS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MiiKUAS&quot;&gt;&lt;display value=&quot;FVP-P-143 (a3K3X000006MiiKUAS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MiiLUAS"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MiiLUAS">a3K3X000006MiiLUAS</a>
+                </td>
+                <td>FVP-P-272 (a3K3X000006MiiLUAS)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MiiLUAS&quot;, &quot;display&quot;: &quot;FVP-P-272 (a3K3X000006MiiLUAS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MiiLUAS&quot;&gt;&lt;display value=&quot;FVP-P-272 (a3K3X000006MiiLUAS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MiiMUAS"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MiiMUAS">a3K3X000006MiiMUAS</a>
+                </td>
+                <td>FVP-P-145 (a3K3X000006MiiMUAS)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MiiMUAS&quot;, &quot;display&quot;: &quot;FVP-P-145 (a3K3X000006MiiMUAS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MiiMUAS&quot;&gt;&lt;display value=&quot;FVP-P-145 (a3K3X000006MiiMUAS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MiiNUAS"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MiiNUAS">a3K3X000006MiiNUAS</a>
+                </td>
+                <td>FVP-P-124 (a3K3X000006MiiNUAS)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MiiNUAS&quot;, &quot;display&quot;: &quot;FVP-P-124 (a3K3X000006MiiNUAS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MiiNUAS&quot;&gt;&lt;display value=&quot;FVP-P-124 (a3K3X000006MiiNUAS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds-a3K3X000006MiiOUAS"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualProductIds.html#PreQualProductIds-a3K3X000006MiiOUAS">a3K3X000006MiiOUAS</a>
+                </td>
+                <td>FVP-P-125 (a3K3X000006MiiOUAS)</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;a3K3X000006MiiOUAS&quot;, &quot;display&quot;: &quot;FVP-P-125 (a3K3X000006MiiOUAS)&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;a3K3X000006MiiOUAS&quot;&gt;&lt;display value=&quot;FVP-P-125 (a3K3X000006MiiOUAS)&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualProductIds"/>
+        <version value="0.2.0"/>
+        <name value="PreQualProductIds"/>
+        <title value="WHO PreQualificaiton Vaccine Product Ids"/>
+        <status value="draft"/>
+        <date value="2026-03-25T13:07:53+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:29e6f18e-de9a-4b48-b8a9-2f84aed54a32"/>
+          <timestamp value="2026-03-25T13:10:01+00:00"/>
+          <total value="33"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="warning-experimental"/>
+            <valueUri value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds|0.2.0"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000005atRtUAI"/>
+            <display value="FVP-P-447 (a3K3X000005atRtUAI)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000005atSwUAI"/>
+            <display value="FVP-P-446 (a3K3X000005atSwUAI)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MihsUAC"/>
+            <display value="FVP-P-62 (a3K3X000006MihsUAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MihtUAC"/>
+            <display value="FVP-P-63 (a3K3X000006MihtUAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MihuUAC"/>
+            <display value="FVP-P-64 (a3K3X000006MihuUAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MihvUAC"/>
+            <display value="FVP-P-65 (a3K3X000006MihvUAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MihwUAC"/>
+            <display value="FVP-P-66 (a3K3X000006MihwUAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MihxUAC"/>
+            <display value="FVP-P-67 (a3K3X000006MihxUAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MihyUAC"/>
+            <display value="FVP-P-68 (a3K3X000006MihyUAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006Mii0UAC"/>
+            <display value="FVP-P-61 (a3K3X000006Mii0UAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006Mii1UAC"/>
+            <display value="FVP-P-75 (a3K3X000006Mii1UAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006Mii2UAC"/>
+            <display value="FVP-P-76 (a3K3X000006Mii2UAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006Mii3UAC"/>
+            <display value="FVP-P-77 (a3K3X000006Mii3UAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006Mii5UAC"/>
+            <display value="FVP-P-311 (a3K3X000006Mii5UAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006Mii6UAC"/>
+            <display value="FVP-P-319 (a3K3X000006Mii6UAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006Mii7UAC"/>
+            <display value="FVP-P-71 (a3K3X000006Mii7UAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006Mii8UAC"/>
+            <display value="FVP-P-78 (a3K3X000006Mii8UAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006Mii9UAC"/>
+            <display value="FVP-P-79 (a3K3X000006Mii9UAC)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MiiAUAS"/>
+            <display value="FVP-P-80 (a3K3X000006MiiAUAS)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MiiBUAS"/>
+            <display value="FVP-P-329 (a3K3X000006MiiBUAS)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MiiCUAS"/>
+            <display value="FVP-P-73 (a3K3X000006MiiCUAS)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MiiDUAS"/>
+            <display value="FVP-P-74 (a3K3X000006MiiDUAS)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MiiEUAS"/>
+            <display value="FVP-P-137 (a3K3X000006MiiEUAS)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MiiFUAS"/>
+            <display value="FVP-P-136 (a3K3X000006MiiFUAS)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MiiGUAS"/>
+            <display value="FVP-P-138 (a3K3X000006MiiGUAS)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MiiHUAS"/>
+            <display value="FVP-P-141 (a3K3X000006MiiHUAS)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MiiIUAS"/>
+            <display value="FVP-P-142 (a3K3X000006MiiIUAS)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MiiJUAS"/>
+            <display value="FVP-P-144 (a3K3X000006MiiJUAS)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MiiKUAS"/>
+            <display value="FVP-P-143 (a3K3X000006MiiKUAS)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MiiLUAS"/>
+            <display value="FVP-P-272 (a3K3X000006MiiLUAS)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MiiMUAS"/>
+            <display value="FVP-P-145 (a3K3X000006MiiMUAS)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MiiNUAS"/>
+            <display value="FVP-P-124 (a3K3X000006MiiNUAS)"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"/>
+            <code value="a3K3X000006MiiOUAS"/>
+            <display value="FVP-P-125 (a3K3X000006MiiOUAS)"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+  <entry>
+    <fullUrl value="http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualVaccineType"/>
+    <resource>
+      <ValueSet>
+        <text>
+          <status value="generated"/>
+          <div xmlns="http://www.w3.org/1999/xhtml" data-fhir="generated">
+            <p class="res-header-id"/>
+            <p style="border: black 1px dotted; background-color: #EEEEEE; padding: 8px; margin-bottom: 8px">Expansion performed internally based on 
+              <a href="CodeSystem-PreQualVaccineType.html">codesystem WHO PreQualificaiton Vaccine VaccineTypes v0.2.0 (CodeSystem)</a>
+              <span class="copy-text-inline">
+                <button data-clipboard-text="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType|0.2.0" title="Click to Copy URL" class="btn-copy"> </button>
+              </span>
+            </p>
+            <p>This value set contains 17 concepts</p>
+            <table class="codes" data-fhir="generated">
+              <tr>
+                <td>
+                  <b>System</b>
+                </td>
+                <td style="white-space:nowrap">
+                  <b>Code</b>
+                </td>
+                <td>
+                  <b>Display (en)</b>
+                </td>
+                <td>
+                  <b>JSON</b>
+                </td>
+                <td>
+                  <b>XML</b>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-BCG"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-BCG">BCG</a>
+                </td>
+                <td>BCG</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;BCG&quot;, &quot;display&quot;: &quot;BCG&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;BCG&quot;&gt;&lt;display value=&quot;BCG&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-DT"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-DT">DT</a>
+                </td>
+                <td>DT</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;DT&quot;, &quot;display&quot;: &quot;DT&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;DT&quot;&gt;&lt;display value=&quot;DT&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-DTwP"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-DTwP">DTwP</a>
+                </td>
+                <td>DTwP</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;DTwP&quot;, &quot;display&quot;: &quot;DTwP&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;DTwP&quot;&gt;&lt;display value=&quot;DTwP&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-HepA"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-HepA">HepA</a>
+                </td>
+                <td>HepA</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;HepA&quot;, &quot;display&quot;: &quot;HepA&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;HepA&quot;&gt;&lt;display value=&quot;HepA&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-HepB"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-HepB">HepB</a>
+                </td>
+                <td>HepB</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;HepB&quot;, &quot;display&quot;: &quot;HepB&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;HepB&quot;&gt;&lt;display value=&quot;HepB&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-JE"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-JE">JE</a>
+                </td>
+                <td>JE</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;JE&quot;, &quot;display&quot;: &quot;JE&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;JE&quot;&gt;&lt;display value=&quot;JE&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-LARV"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-LARV">LARV</a>
+                </td>
+                <td>LARV</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;LARV&quot;, &quot;display&quot;: &quot;LARV&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;LARV&quot;&gt;&lt;display value=&quot;LARV&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-M"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-M">M</a>
+                </td>
+                <td>M</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;M&quot;, &quot;display&quot;: &quot;M&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;M&quot;&gt;&lt;display value=&quot;M&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-MMR"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-MMR">MMR</a>
+                </td>
+                <td>MMR</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;MMR&quot;, &quot;display&quot;: &quot;MMR&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;MMR&quot;&gt;&lt;display value=&quot;MMR&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-MR"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-MR">MR</a>
+                </td>
+                <td>MR</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;MR&quot;, &quot;display&quot;: &quot;MR&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;MR&quot;&gt;&lt;display value=&quot;MR&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-Malaria"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-Malaria">Malaria</a>
+                </td>
+                <td>Malaria</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;Malaria&quot;, &quot;display&quot;: &quot;Malaria&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;Malaria&quot;&gt;&lt;display value=&quot;Malaria&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-TDV"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-TDV">TDV</a>
+                </td>
+                <td>TDV</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;TDV&quot;, &quot;display&quot;: &quot;TDV&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;TDV&quot;&gt;&lt;display value=&quot;TDV&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-TT"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-TT">TT</a>
+                </td>
+                <td>TT</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;TT&quot;, &quot;display&quot;: &quot;TT&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;TT&quot;&gt;&lt;display value=&quot;TT&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-YF"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-YF">YF</a>
+                </td>
+                <td>YF</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;YF&quot;, &quot;display&quot;: &quot;YF&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;YF&quot;&gt;&lt;display value=&quot;YF&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-bOPV"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-bOPV">bOPV</a>
+                </td>
+                <td>bOPV</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;bOPV&quot;, &quot;display&quot;: &quot;bOPV&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;bOPV&quot;&gt;&lt;display value=&quot;bOPV&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-dT"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-dT">dT</a>
+                </td>
+                <td>dT</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;dT&quot;, &quot;display&quot;: &quot;dT&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;dT&quot;&gt;&lt;display value=&quot;dT&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <a name="x-http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType-tOPV"> </a>
+                  <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code>
+                </td>
+                <td style="white-space:nowrap">  
+                  <a href="CodeSystem-PreQualVaccineType.html#PreQualVaccineType-tOPV">tOPV</a>
+                </td>
+                <td>tOPV</td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;, &quot;version&quot;: &quot;0.2.0&quot;, &quot;code&quot;: &quot;tOPV&quot;, &quot;display&quot;: &quot;tOPV&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+                <td>
+                  <span class="copy-text-inline">
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType&quot;&gt;&lt;version value=&quot;0.2.0&quot;&gt;&lt;code value=&quot;tOPV&quot;&gt;&lt;display value=&quot;tOPV&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                  </span>
+                </td>
+              </tr>
+            </table>
+          </div>
+        </text>
+        <url value="http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualVaccineType"/>
+        <version value="0.2.0"/>
+        <name value="PreQualVaccineType"/>
+        <title value="WHO PreQualificaiton VaccineType "/>
+        <status value="draft"/>
+        <date value="2026-03-25T13:07:53+00:00"/>
+        <expansion>
+          <identifier value="urn:uuid:9130276f-b86d-4485-ab04-85fcf621cb26"/>
+          <timestamp value="2026-03-25T13:10:01+00:00"/>
+          <total value="17"/>
+          <offset value="0"/>
+          <parameter>
+            <name value="displayLanguage"/>
+            <valueCode value="en"/>
+          </parameter>
+          <parameter>
+            <name value="count"/>
+            <valueInteger value="1000"/>
+          </parameter>
+          <parameter>
+            <name value="offset"/>
+            <valueInteger value="0"/>
+          </parameter>
+          <parameter>
+            <name value="excludeNested"/>
+            <valueBoolean value="false"/>
+          </parameter>
+          <parameter>
+            <name value="used-codesystem"/>
+            <valueUri value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType|0.2.0"/>
+          </parameter>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="BCG"/>
+            <display value="BCG"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="DT"/>
+            <display value="DT"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="DTwP"/>
+            <display value="DTwP"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="HepA"/>
+            <display value="HepA"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="HepB"/>
+            <display value="HepB"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="JE"/>
+            <display value="JE"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="LARV"/>
+            <display value="LARV"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="M"/>
+            <display value="M"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="MMR"/>
+            <display value="MMR"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="MR"/>
+            <display value="MR"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="Malaria"/>
+            <display value="Malaria"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="TDV"/>
+            <display value="TDV"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="TT"/>
+            <display value="TT"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="YF"/>
+            <display value="YF"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="bOPV"/>
+            <display value="bOPV"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="dT"/>
+            <display value="dT"/>
+          </contains>
+          <contains>
+            <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+            <code value="tOPV"/>
+            <display value="tOPV"/>
+          </contains>
+        </expansion>
+      </ValueSet>
+    </resource>
+  </entry>
+</Bundle>

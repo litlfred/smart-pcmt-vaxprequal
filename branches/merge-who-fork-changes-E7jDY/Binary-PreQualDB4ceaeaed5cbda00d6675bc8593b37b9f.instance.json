@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "1995-04-04",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "DiphtheriaTetanus",
+        "display": "Diphtheria-Tetanus"
+      }
+    ]
+  },
+  "commercialName": "Diphtheria and Tetanus Vaccine Adsorbed (Paediatric)",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Ampoule",
+        "display": "Ampoule"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Serum Institute of India Pvt. Ltd."
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "4ceaeaed5cbda00d6675bc8593b37b9f"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer35b3de1add41b53c8e37ce338f2ba545"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/DiphtheriaTetanusProduct4ceaeaed5cbda00d6675bc8593b37b9f"
+  }
+}

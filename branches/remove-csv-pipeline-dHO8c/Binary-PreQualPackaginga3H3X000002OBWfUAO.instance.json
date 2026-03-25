@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "description": "WHO PreQual Product Packaging: Shipping Container",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000002OBWfUAO"
+  },
+  "packagingType": "ShippingContainer",
+  "componentPacked": "ActiveVaccine",
+  "volume": "71.5 x 60.5 x 63.5",
+  "totalDoses": "1800",
+  "totalContainers": "1800"
+}

@@ -1,0 +1,64 @@
+# PreQualDB8b13b5fcf5e9268b345775be7c3f077c - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDB8b13b5fcf5e9268b345775be7c3f077c**
+
+## Binary: PreQualDB8b13b5fcf5e9268b345775be7c3f077c
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2022-04-22",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "PolioVaccineInactivatedI",
+        "display": "Polio Vaccine - Inactivated (IPV)"
+      }
+    ]
+  },
+  "commercialName": "ShanIPV™",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "Sanofi Healthcare India Private Limited"
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "8b13b5fcf5e9268b345775be7c3f077c"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer323393ea6ca912a5ae580eddb032cd99"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/PolioVaccineInactivatedIProduct8b13b5fcf5e9268b345775be7c3f077c"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

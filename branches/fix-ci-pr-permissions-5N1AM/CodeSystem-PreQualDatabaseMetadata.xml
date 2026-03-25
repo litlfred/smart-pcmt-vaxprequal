@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="PreQualDatabaseMetadata"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem PreQualDatabaseMetadata</b></p><a name="PreQualDatabaseMetadata"> </a><a name="hcPreQualDatabaseMetadata"> </a><p>This case-sensitive code system <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">FinishedVaccineProduct<a name="PreQualDatabaseMetadata-FinishedVaccineProduct"> </a></td><td>Finished Vaccine Product</td></tr><tr><td style="white-space:nowrap">PrequalificationStandard<a name="PreQualDatabaseMetadata-PrequalificationStandard"> </a></td><td>Prequalification - Standard</td></tr><tr><td style="white-space:nowrap">Prequalified<a name="PreQualDatabaseMetadata-Prequalified"> </a></td><td>Prequalified</td></tr><tr><td style="white-space:nowrap">WithdrawnWasPrequalified<a name="PreQualDatabaseMetadata-WithdrawnWasPrequalified"> </a></td><td>Withdrawn: Was Prequalified</td></tr><tr><td style="white-space:nowrap">LiquidReadytouse<a name="PreQualDatabaseMetadata-LiquidReadytouse"> </a></td><td>Liquid: Ready to use</td></tr><tr><td style="white-space:nowrap">Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse<a name="PreQualDatabaseMetadata-Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse"> </a></td><td>Lyophilised active component to be reconstituted with excipient diluent before use</td></tr><tr><td style="white-space:nowrap">Intradermal<a name="PreQualDatabaseMetadata-Intradermal"> </a></td><td>Intradermal</td></tr><tr><td style="white-space:nowrap">Intramuscular<a name="PreQualDatabaseMetadata-Intramuscular"> </a></td><td>Intramuscular</td></tr><tr><td style="white-space:nowrap">Intramuscularorsubcutaneous<a name="PreQualDatabaseMetadata-Intramuscularorsubcutaneous"> </a></td><td>Intramuscular or subcutaneous</td></tr><tr><td style="white-space:nowrap">Oral<a name="PreQualDatabaseMetadata-Oral"> </a></td><td>Oral</td></tr><tr><td style="white-space:nowrap">Subcutaneous<a name="PreQualDatabaseMetadata-Subcutaneous"> </a></td><td>Subcutaneous</td></tr><tr><td style="white-space:nowrap">Secondary<a name="PreQualDatabaseMetadata-Secondary"> </a></td><td>Secondary</td></tr><tr><td style="white-space:nowrap">ShippingContainer<a name="PreQualDatabaseMetadata-ShippingContainer"> </a></td><td>Shipping Container</td></tr><tr><td style="white-space:nowrap">Tertiary<a name="PreQualDatabaseMetadata-Tertiary"> </a></td><td>Tertiary</td></tr><tr><td style="white-space:nowrap">ActiveVaccine<a name="PreQualDatabaseMetadata-ActiveVaccine"> </a></td><td>Active (Vaccine)</td></tr><tr><td style="white-space:nowrap">Diluent<a name="PreQualDatabaseMetadata-Diluent"> </a></td><td>Diluent</td></tr><tr><td style="white-space:nowrap">Photo<a name="PreQualDatabaseMetadata-Photo"> </a></td><td>Photo</td></tr><tr><td style="white-space:nowrap">PhotoMainImage<a name="PreQualDatabaseMetadata-PhotoMainImage"> </a></td><td>Photo-Main Image</td></tr><tr><td style="white-space:nowrap">ProductInsert<a name="PreQualDatabaseMetadata-ProductInsert"> </a></td><td>Product Insert</td></tr><tr><td style="white-space:nowrap">VSPAR<a name="PreQualDatabaseMetadata-VSPAR"> </a></td><td>VSPAR</td></tr><tr><td style="white-space:nowrap">VaccineGeneralDocument<a name="PreQualDatabaseMetadata-VaccineGeneralDocument"> </a></td><td>Vaccine General Document</td></tr><tr><td style="white-space:nowrap">FVPManufacture<a name="PreQualDatabaseMetadata-FVPManufacture"> </a></td><td>FVP Manufacture</td></tr><tr><td style="white-space:nowrap">Accepted<a name="PreQualDatabaseMetadata-Accepted"> </a></td><td>Accepted</td></tr><tr><td style="white-space:nowrap">VxFVP<a name="PreQualDatabaseMetadata-VxFVP"> </a></td><td>Vx FVP</td></tr><tr><td style="white-space:nowrap">Active<a name="PreQualDatabaseMetadata-Active"> </a></td><td>Active</td></tr></table></div>
+  </text>
+  <url value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+  <version value="0.2.0"/>
+  <name value="PreQualDatabaseMetadata"/>
+  <title value="WHO PreQualification Database Metadata"/>
+  <status value="active"/>
+  <experimental value="true"/>
+  <date value="2026-03-24T15:01:31+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="Coded metadata values from the WHO PreQualification database"/>
+  <caseSensitive value="true"/>
+  <content value="complete"/>
+  <count value="25"/>
+  <concept>
+    <code value="FinishedVaccineProduct"/>
+    <display value="Finished Vaccine Product"/>
+  </concept>
+  <concept>
+    <code value="PrequalificationStandard"/>
+    <display value="Prequalification - Standard"/>
+  </concept>
+  <concept>
+    <code value="Prequalified"/>
+    <display value="Prequalified"/>
+  </concept>
+  <concept>
+    <code value="WithdrawnWasPrequalified"/>
+    <display value="Withdrawn: Was Prequalified"/>
+  </concept>
+  <concept>
+    <code value="LiquidReadytouse"/>
+    <display value="Liquid: Ready to use"/>
+  </concept>
+  <concept>
+    <code value="Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse"/>
+    <display value="Lyophilised active component to be reconstituted with excipient diluent before use"/>
+  </concept>
+  <concept>
+    <code value="Intradermal"/>
+    <display value="Intradermal"/>
+  </concept>
+  <concept>
+    <code value="Intramuscular"/>
+    <display value="Intramuscular"/>
+  </concept>
+  <concept>
+    <code value="Intramuscularorsubcutaneous"/>
+    <display value="Intramuscular or subcutaneous"/>
+  </concept>
+  <concept>
+    <code value="Oral"/>
+    <display value="Oral"/>
+  </concept>
+  <concept>
+    <code value="Subcutaneous"/>
+    <display value="Subcutaneous"/>
+  </concept>
+  <concept>
+    <code value="Secondary"/>
+    <display value="Secondary"/>
+  </concept>
+  <concept>
+    <code value="ShippingContainer"/>
+    <display value="Shipping Container"/>
+  </concept>
+  <concept>
+    <code value="Tertiary"/>
+    <display value="Tertiary"/>
+  </concept>
+  <concept>
+    <code value="ActiveVaccine"/>
+    <display value="Active (Vaccine)"/>
+  </concept>
+  <concept>
+    <code value="Diluent"/>
+    <display value="Diluent"/>
+  </concept>
+  <concept>
+    <code value="Photo"/>
+    <display value="Photo"/>
+  </concept>
+  <concept>
+    <code value="PhotoMainImage"/>
+    <display value="Photo-Main Image"/>
+  </concept>
+  <concept>
+    <code value="ProductInsert"/>
+    <display value="Product Insert"/>
+  </concept>
+  <concept>
+    <code value="VSPAR"/>
+    <display value="VSPAR"/>
+  </concept>
+  <concept>
+    <code value="VaccineGeneralDocument"/>
+    <display value="Vaccine General Document"/>
+  </concept>
+  <concept>
+    <code value="FVPManufacture"/>
+    <display value="FVP Manufacture"/>
+  </concept>
+  <concept>
+    <code value="Accepted"/>
+    <display value="Accepted"/>
+  </concept>
+  <concept>
+    <code value="VxFVP"/>
+    <display value="Vx FVP"/>
+  </concept>
+  <concept>
+    <code value="Active"/>
+    <display value="Active"/>
+  </concept>
+</CodeSystem>

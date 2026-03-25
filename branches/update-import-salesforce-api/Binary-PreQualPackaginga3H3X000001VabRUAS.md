@@ -1,0 +1,40 @@
+# PreQualPackaginga3H3X000001VabRUAS - SMART Product Catalog v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualPackaginga3H3X000001VabRUAS**
+
+## Example Binary: PreQualPackaginga3H3X000001VabRUAS
+
+This content is an example of the [WHO PreQual Product Packaging](StructureDefinition-PreQualProductPackaging.md) Logical Model and is not a FHIR Resource
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VabRUAS"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "Diluent",
+  "coldChainVolume": "5.48",
+  "description": "Carton of 50 ampoules (diluent) [Dimensions 10.5x8.7x15.0 cm]",
+  "height": "8.7",
+  "length": "10.5",
+  "width": "15.0",
+  "primaryContainers": "50"
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

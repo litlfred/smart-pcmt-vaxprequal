@@ -1,0 +1,126 @@
+[{
+  "id" : "PreQualDatabaseMetadata",
+  "type" : "CodeSystem",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata",
+  "version" : "0.2.0",
+  "name" : "PreQualDatabaseMetadata"
+},
+{
+  "id" : "PreQualPresentation",
+  "type" : "CodeSystem",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation",
+  "version" : "0.2.0",
+  "name" : "PreQualPresentation"
+},
+{
+  "id" : "PreQualProductIds",
+  "type" : "CodeSystem",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds",
+  "version" : "0.2.0",
+  "name" : "PreQualProductIds"
+},
+{
+  "id" : "PreQualVaccineType",
+  "type" : "CodeSystem",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
+  "version" : "0.2.0",
+  "name" : "PreQualVaccineType"
+},
+{
+  "id" : "smart.who.int.pcmt-vaxprequal",
+  "type" : "ImplementationGuide",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/ImplementationGuide/smart.who.int.pcmt-vaxprequal",
+  "version" : "0.2.0",
+  "name" : "PCMTVAXPreQual"
+},
+{
+  "id" : "FinishedVaccineProducts",
+  "type" : "StructureDefinition",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "version" : "0.2.0",
+  "name" : "FinishedVaccineProducts"
+},
+{
+  "id" : "PreQualBulkSupplier",
+  "type" : "StructureDefinition",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualBulkSupplier",
+  "version" : "0.2.0",
+  "name" : "PreQualBulkSupplier"
+},
+{
+  "id" : "PreQualDocumentDetail",
+  "type" : "StructureDefinition",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "version" : "0.2.0",
+  "name" : "PreQualDocumentDetail"
+},
+{
+  "id" : "PreQualManufacturer",
+  "type" : "StructureDefinition",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "version" : "0.2.0",
+  "name" : "PreQualManufacturer"
+},
+{
+  "id" : "PreQualNRA",
+  "type" : "StructureDefinition",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "version" : "0.2.0",
+  "name" : "PreQualNRA"
+},
+{
+  "id" : "PreQualProductIngredient",
+  "type" : "StructureDefinition",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient",
+  "version" : "0.2.0",
+  "name" : "PreQualProductIngredient"
+},
+{
+  "id" : "PreQualProductPackaging",
+  "type" : "StructureDefinition",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "version" : "0.2.0",
+  "name" : "PreQualProductPackaging"
+},
+{
+  "id" : "PreQualSiteDetail",
+  "type" : "StructureDefinition",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "version" : "0.2.0",
+  "name" : "PreQualSiteDetail"
+},
+{
+  "id" : "PreQualVaccine",
+  "type" : "StructureDefinition",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine",
+  "version" : "0.2.0",
+  "name" : "PreQualVaccine"
+},
+{
+  "id" : "PreQualDatabaseMetadata",
+  "type" : "ValueSet",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualDatabaseMetadata",
+  "version" : "0.2.0",
+  "name" : "PreQualDatabaseMetadata"
+},
+{
+  "id" : "PreQualPresentation",
+  "type" : "ValueSet",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualPresentation",
+  "version" : "0.2.0",
+  "name" : "PreQualPresentation"
+},
+{
+  "id" : "PreQualProductIds",
+  "type" : "ValueSet",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualProductIds",
+  "version" : "0.2.0",
+  "name" : "PreQualProductIds"
+},
+{
+  "id" : "PreQualVaccineType",
+  "type" : "ValueSet",
+  "url" : "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualVaccineType",
+  "version" : "0.2.0",
+  "name" : "PreQualVaccineType"
+}]

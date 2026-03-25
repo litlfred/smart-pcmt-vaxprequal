@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3gQAA"
+  },
+  "name": "GlaxoSmithKline Biologicals SA",
+  "addressLine1": "20 Avenue Fleming 1300 Wavre  Belgium",
+  "city": "Wavre",
+  "country": "Belgium",
+  "postalCode": "B-1300",
+  "isoCountryCode": "BEL",
+  "region": "EURO",
+  "website": "www.gsk.com",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X0000498p3gQAA"
+  }
+}

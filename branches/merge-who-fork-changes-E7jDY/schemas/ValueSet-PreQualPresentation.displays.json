@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualPresentation.displays.json",
+  "title": "WHO PreQualificaiton Presentation  Display Values",
+  "description": "Display values for WHO PreQualificaiton Presentation  ValueSet codes. Generated from FHIR expansions.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes using IRI format to match JSON schema enum values",
+      "patternProperties": {
+        "^https?://.*": {
+          "type": "object",
+          "description": "Display values for a specific IRI-formatted code by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#Ampoule": {
+      "en": "Ampoule"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#AmpouleorVial": {
+      "en": "Ampoule or Vial"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#Applicator": {
+      "en": "Applicator"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#PlasticTube": {
+      "en": "Plastic Tube"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#Sprayer": {
+      "en": "Sprayer"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#Twovialsetactiveactive": {
+      "en": "Two vial set (active + active)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#Twovialsetactiveexcipient": {
+      "en": "Two vial set (active + excipient)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#Uniject": {
+      "en": "Uniject"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#Vial": {
+      "en": "Vial"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#VialAmpoule": {
+      "en": "Vial + Ampoule"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation#VialBufferSachet": {
+      "en": "Vial + Buffer Sachet"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualPresentation",
+  "fhir:version": "0.2.0",
+  "fhir:expansionTimestamp": "2026-03-23T16:55:16.628683"
+}

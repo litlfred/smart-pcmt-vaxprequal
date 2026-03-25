@@ -1,0 +1,64 @@
+# PreQualDBe447fe0b4d8469dedecdf17870fdae80 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDBe447fe0b4d8469dedecdf17870fdae80**
+
+## Binary: PreQualDBe447fe0b4d8469dedecdf17870fdae80
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2021-04-27",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "EbolavaccineMVABNFilorec",
+        "display": "Ebola vaccine (MVA-BN-Filo [recombinant])"
+      }
+    ]
+  },
+  "commercialName": "Mvabea",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Janssen Cilag International N.V."
+  },
+  "responsibleNRA": {
+    "text": "European Medicines Agency"
+  },
+  "index": {
+    "value": "e447fe0b4d8469dedecdf17870fdae80"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufactureraca8ee84737803adc7e1b19a498b8fb9"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder06fc63d243e39d8519007322a0fddc52"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/EbolavaccineMVABNFilorecProducte447fe0b4d8469dedecdf17870fdae80"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

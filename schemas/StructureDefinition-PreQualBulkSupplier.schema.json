@@ -1,0 +1,27 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/base/StructureDefinition-PreQualBulkSupplier.schema.json",
+  "title": "WHO PreQual Bulk Supplier",
+  "description": "Logical model for the bulk supplier organization\nfrom the WHO PreQual API (ProductDetails.BulkSupplier).",
+  "type": "object",
+  "properties": {
+    "resourceType": {
+      "type": "string",
+      "const": "PreQualBulkSupplier",
+      "description": "Resource type identifier for PreQualBulkSupplier logical model"
+    },
+    "bulkSupplierId": {
+      "type": "object",
+      "description": "Bulk supplier organization ID"
+    },
+    "name": {
+      "type": "string",
+      "description": "Organization name"
+    }
+  },
+  "required": [
+    "resourceType"
+  ],
+  "resourceDefinition": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualBulkSupplier",
+  "fhir:parent": "http://hl7.org/fhir/StructureDefinition/Base"
+}

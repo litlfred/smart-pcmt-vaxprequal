@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holder6f85b90926148cce1ad5a1fa8afe673a"
+  },
+  "validityPeriod": {
+    "start": "2022-11-03"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/VaricellaProduct0997806769699913a3f450d32a1932b4"
+    }
+  ]
+}

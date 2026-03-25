@@ -1,0 +1,21 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "a1677029-8296-4043-bd1f-7d001720b3f2-3",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/a1677029-8296-4043-bd1f-7d001720b3f2-3",
+  "name" : "IntersectionPreQualPresentationAndPreQualPresentation",
+  "title" : "Intersection of WHO PreQualificaiton Vaccine Presentations And WHO PreQualificaiton Vaccine Presentations",
+  "status" : "active",
+  "date" : "2026-03-11T13:47:11+00:00",
+  "concept" : [{
+    "code" : "Ampoule",
+    "display" : "Ampoule"
+  },
+  {
+    "code" : "Twovialsetactiveexcipient",
+    "display" : "Two vial set (active + excipient)"
+  },
+  {
+    "code" : "Vial",
+    "display" : "Vial"
+  }]
+}

@@ -1,0 +1,114 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "WHO PreQual Manufacturer API",
+    "description": "Logical model for the manufacturer/applicant organization\nfrom the WHO PreQual API (ProductDetails.ApplicantOrganization).",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/StructureDefinition-PreQualManufacturer.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the Logical Model StructureDefinition-PreQualManufacturer",
+        "description": "This endpoint serves the JSON Schema definition for the Logical Model StructureDefinition-PreQualManufacturer.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for StructureDefinition-PreQualManufacturer",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./StructureDefinition-PreQualManufacturer.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "StructureDefinition-PreQualManufacturer": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/base/StructureDefinition-PreQualManufacturer.schema.json",
+        "title": "WHO PreQual Manufacturer",
+        "description": "Logical model for the manufacturer/applicant organization\nfrom the WHO PreQual API (ProductDetails.ApplicantOrganization).",
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "PreQualManufacturer",
+            "description": "Resource type identifier for PreQualManufacturer logical model"
+          },
+          "manufacturerId": {
+            "type": "object",
+            "description": "Manufacturer organization ID"
+          },
+          "name": {
+            "type": "string",
+            "description": "Organization name"
+          },
+          "addressLine1": {
+            "type": "string",
+            "description": "Address line 1"
+          },
+          "city": {
+            "type": "string",
+            "description": "City"
+          },
+          "state": {
+            "type": "string",
+            "description": "State/Province"
+          },
+          "country": {
+            "type": "string",
+            "description": "Country"
+          },
+          "postalCode": {
+            "type": "string",
+            "description": "Postal code"
+          },
+          "isoCountryCode": {
+            "type": "string",
+            "description": "ISO country code"
+          },
+          "region": {
+            "type": "string",
+            "description": "WHO region"
+          },
+          "website": {
+            "type": "string",
+            "description": "Website URL"
+          },
+          "organizationReference": {
+            "type": "object",
+            "description": "FHIR Organization reference"
+          }
+        },
+        "required": [
+          "resourceType",
+          "name",
+          "organizationReference"
+        ],
+        "allOf": [
+          {
+            "$ref": "./StructureDefinition-FHIRSchemaBase.schema.json"
+          },
+          {
+            "type": "object",
+            "properties": {
+              "resourceDefinition": {
+                "type": "string",
+                "format": "uri",
+                "const": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer"
+              },
+              "fhir:parent": {
+                "type": "string",
+                "const": "http://hl7.org/fhir/StructureDefinition/Base"
+              }
+            }
+          }
+        ]
+      }
+    }
+  }
+}

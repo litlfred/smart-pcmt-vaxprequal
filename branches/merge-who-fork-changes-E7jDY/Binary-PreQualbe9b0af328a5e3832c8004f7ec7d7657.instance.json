@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "validityPeriod": {
+    "start": "2003-08-08"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/MeaslesMumpsandRubellaProductbe9b0af328a5e3832c8004f7ec7d7657"
+    }
+  ]
+}

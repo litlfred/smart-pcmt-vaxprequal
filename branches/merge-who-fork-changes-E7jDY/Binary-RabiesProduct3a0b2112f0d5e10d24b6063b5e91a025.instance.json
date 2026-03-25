@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "VaxiRab N"
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturer71815e49a163acdd61581f32aa32c1b8"
+  },
+  "doseQuantity": {
+    "value": 1,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "Rabies"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "Vial"
+      }
+    ]
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "Rotateq"
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturer764b91fadf395103d4ce901372cc0882"
+  },
+  "doseQuantity": {
+    "value": 1,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "Rotavirus"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "PlasticTube"
+      }
+    ]
+  }
+}

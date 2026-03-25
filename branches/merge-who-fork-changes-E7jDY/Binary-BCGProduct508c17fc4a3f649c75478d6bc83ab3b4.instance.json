@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "BCG Vaccine"
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturer809ba2c9dd16700daf4b638fb948b814"
+  },
+  "doseQuantity": {
+    "value": 20,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "BCG"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "VialAmpoule"
+      }
+    ]
+  }
+}

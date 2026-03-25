@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holder2ca9bea235654620194199f17ca78e94"
+  },
+  "validityPeriod": {
+    "start": "2009-12-17"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/InfluenzaPandemicH1N1Product8cb910c5702efa28db66bc22c8243188"
+    }
+  ]
+}

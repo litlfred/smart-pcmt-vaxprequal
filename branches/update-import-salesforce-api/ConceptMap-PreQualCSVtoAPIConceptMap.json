@@ -1,0 +1,39 @@
+{
+  "resourceType" : "ConceptMap",
+  "id" : "PreQualCSVtoAPIConceptMap",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap PreQualCSVtoAPIConceptMap</b></p><a name=\"PreQualCSVtoAPIConceptMap\"> </a><a name=\"hcPreQualCSVtoAPIConceptMap\"> </a><p>Mapping from <a href=\"CodeSystem-PreQualProductIds.html\">http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</a> to https://extranet.who.int/prequal/api</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-PreQualProductIds.html\">WHO PreQualificaiton Vaccine Product Ids</a> to <code>https://extranet.who.int/prequal/api</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>8d4be0b798546e105e856d14b7910ccb (HEALIVE - Sinovac Biotech Co. Ltd)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>a3K3X000006Mii5UAC (FVP-P-311)</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/pcmt-vaxprequal/ConceptMap/PreQualCSVtoAPIConceptMap",
+  "version" : "0.1.0",
+  "name" : "PreQualCSVtoAPIConceptMap",
+  "title" : "PreQual CSV to Vaccine Product ID Concept Map",
+  "status" : "draft",
+  "experimental" : true,
+  "date" : "2026-03-11T13:44:05+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "Maps old CSV export MD5-based identifiers to authoritative vaccine product IDs",
+  "sourceScopeUri" : "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds",
+  "targetScopeUri" : "https://extranet.who.int/prequal/api",
+  "group" : [{
+    "source" : "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds",
+    "target" : "https://extranet.who.int/prequal/api",
+    "element" : [{
+      "code" : "8d4be0b798546e105e856d14b7910ccb",
+      "display" : "HEALIVE - Sinovac Biotech Co. Ltd",
+      "target" : [{
+        "code" : "a3K3X000006Mii5UAC",
+        "display" : "FVP-P-311",
+        "relationship" : "equivalent"
+      }]
+    }]
+  }]
+}

@@ -1,0 +1,64 @@
+# PreQualDBdcbfa0a541c65032a917c39fa762c2f9 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDBdcbfa0a541c65032a917c39fa762c2f9**
+
+## Binary: PreQualDBdcbfa0a541c65032a917c39fa762c2f9
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2017-12-21",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "PolioVaccineOralOPVBival",
+        "display": "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+      }
+    ]
+  },
+  "commercialName": "Poliomyelitis Vaccine (live, oral attenuated, human Diploid Cell), type 1 and 3",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 20,
+  "manufacturer": {
+    "text": "Beijing Institute of Biological Products Co., Ltd."
+  },
+  "responsibleNRA": {
+    "text": "National Medical Products Administration"
+  },
+  "index": {
+    "value": "dcbfa0a541c65032a917c39fa762c2f9"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturereb31bd403f002800b14da9b2662b321c"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder6f85b90926148cce1ad5a1fa8afe673a"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/PolioVaccineOralOPVBivalProductdcbfa0a541c65032a917c39fa762c2f9"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

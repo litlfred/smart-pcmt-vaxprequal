@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "1999-03-11",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "TetanusToxoid",
+        "display": "Tetanus Toxoid"
+      }
+    ]
+  },
+  "commercialName": "TT vaccine",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 20,
+  "manufacturer": {
+    "text": "PT Bio Farma (Persero)"
+  },
+  "responsibleNRA": {
+    "text": "National Agency of Drug and Food Control Indonesia"
+  },
+  "index": {
+    "value": "f8b5e42854cc1ae2255649171e9a8e5c"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer3ad507e03b3c8420f83f895f7122255f"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder9899e21a11ed6ac7b548ef6171579c60"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/TetanusToxoidProductf8b5e42854cc1ae2255649171e9a8e5c"
+  }
+}

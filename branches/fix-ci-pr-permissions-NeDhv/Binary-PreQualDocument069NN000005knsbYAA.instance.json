@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005knsbYAA"
+  },
+  "documentName": "Package Insert-pq_357_Dengue_5dose_SP_PL-2022",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000061ZgLYAU",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

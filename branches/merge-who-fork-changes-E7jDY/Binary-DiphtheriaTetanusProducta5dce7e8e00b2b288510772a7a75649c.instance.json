@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "Diftet"
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturer7e1075439f93207b76e283af4e5a96d5"
+  },
+  "doseQuantity": {
+    "value": 20,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "DiphtheriaTetanus"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "Vial"
+      }
+    ]
+  }
+}

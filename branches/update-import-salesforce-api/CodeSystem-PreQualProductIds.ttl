@@ -1,0 +1,140 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PreQualProductIds"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PreQualProductIds</b></p><a name=\"PreQualProductIds\"> </a><a name=\"hcPreQualProductIds\"> </a><p>This case-insensitive code system <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">a3K3X000005atRtUAI<a name=\"PreQualProductIds-a3K3X000005atRtUAI\"> </a></td><td>FVP-P-447 (a3K3X000005atRtUAI)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000005atSwUAI<a name=\"PreQualProductIds-a3K3X000005atSwUAI\"> </a></td><td>FVP-P-446 (a3K3X000005atSwUAI)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MihsUAC<a name=\"PreQualProductIds-a3K3X000006MihsUAC\"> </a></td><td>FVP-P-62 (a3K3X000006MihsUAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MihtUAC<a name=\"PreQualProductIds-a3K3X000006MihtUAC\"> </a></td><td>FVP-P-63 (a3K3X000006MihtUAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MihuUAC<a name=\"PreQualProductIds-a3K3X000006MihuUAC\"> </a></td><td>FVP-P-64 (a3K3X000006MihuUAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MihvUAC<a name=\"PreQualProductIds-a3K3X000006MihvUAC\"> </a></td><td>FVP-P-65 (a3K3X000006MihvUAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MihwUAC<a name=\"PreQualProductIds-a3K3X000006MihwUAC\"> </a></td><td>FVP-P-66 (a3K3X000006MihwUAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MihxUAC<a name=\"PreQualProductIds-a3K3X000006MihxUAC\"> </a></td><td>FVP-P-67 (a3K3X000006MihxUAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MihyUAC<a name=\"PreQualProductIds-a3K3X000006MihyUAC\"> </a></td><td>FVP-P-68 (a3K3X000006MihyUAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii0UAC<a name=\"PreQualProductIds-a3K3X000006Mii0UAC\"> </a></td><td>FVP-P-61 (a3K3X000006Mii0UAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii1UAC<a name=\"PreQualProductIds-a3K3X000006Mii1UAC\"> </a></td><td>FVP-P-75 (a3K3X000006Mii1UAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii2UAC<a name=\"PreQualProductIds-a3K3X000006Mii2UAC\"> </a></td><td>FVP-P-76 (a3K3X000006Mii2UAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii3UAC<a name=\"PreQualProductIds-a3K3X000006Mii3UAC\"> </a></td><td>FVP-P-77 (a3K3X000006Mii3UAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii5UAC<a name=\"PreQualProductIds-a3K3X000006Mii5UAC\"> </a></td><td>FVP-P-311 (a3K3X000006Mii5UAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii6UAC<a name=\"PreQualProductIds-a3K3X000006Mii6UAC\"> </a></td><td>FVP-P-319 (a3K3X000006Mii6UAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii7UAC<a name=\"PreQualProductIds-a3K3X000006Mii7UAC\"> </a></td><td>FVP-P-71 (a3K3X000006Mii7UAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii8UAC<a name=\"PreQualProductIds-a3K3X000006Mii8UAC\"> </a></td><td>FVP-P-78 (a3K3X000006Mii8UAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii9UAC<a name=\"PreQualProductIds-a3K3X000006Mii9UAC\"> </a></td><td>FVP-P-79 (a3K3X000006Mii9UAC)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiAUAS<a name=\"PreQualProductIds-a3K3X000006MiiAUAS\"> </a></td><td>FVP-P-80 (a3K3X000006MiiAUAS)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiBUAS<a name=\"PreQualProductIds-a3K3X000006MiiBUAS\"> </a></td><td>FVP-P-329 (a3K3X000006MiiBUAS)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiCUAS<a name=\"PreQualProductIds-a3K3X000006MiiCUAS\"> </a></td><td>FVP-P-73 (a3K3X000006MiiCUAS)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiDUAS<a name=\"PreQualProductIds-a3K3X000006MiiDUAS\"> </a></td><td>FVP-P-74 (a3K3X000006MiiDUAS)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiEUAS<a name=\"PreQualProductIds-a3K3X000006MiiEUAS\"> </a></td><td>FVP-P-137 (a3K3X000006MiiEUAS)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiFUAS<a name=\"PreQualProductIds-a3K3X000006MiiFUAS\"> </a></td><td>FVP-P-136 (a3K3X000006MiiFUAS)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiGUAS<a name=\"PreQualProductIds-a3K3X000006MiiGUAS\"> </a></td><td>FVP-P-138 (a3K3X000006MiiGUAS)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiHUAS<a name=\"PreQualProductIds-a3K3X000006MiiHUAS\"> </a></td><td>FVP-P-141 (a3K3X000006MiiHUAS)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiIUAS<a name=\"PreQualProductIds-a3K3X000006MiiIUAS\"> </a></td><td>FVP-P-142 (a3K3X000006MiiIUAS)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiJUAS<a name=\"PreQualProductIds-a3K3X000006MiiJUAS\"> </a></td><td>FVP-P-144 (a3K3X000006MiiJUAS)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiKUAS<a name=\"PreQualProductIds-a3K3X000006MiiKUAS\"> </a></td><td>FVP-P-143 (a3K3X000006MiiKUAS)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiLUAS<a name=\"PreQualProductIds-a3K3X000006MiiLUAS\"> </a></td><td>FVP-P-272 (a3K3X000006MiiLUAS)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiMUAS<a name=\"PreQualProductIds-a3K3X000006MiiMUAS\"> </a></td><td>FVP-P-145 (a3K3X000006MiiMUAS)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiNUAS<a name=\"PreQualProductIds-a3K3X000006MiiNUAS\"> </a></td><td>FVP-P-124 (a3K3X000006MiiNUAS)</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiOUAS<a name=\"PreQualProductIds-a3K3X000006MiiOUAS\"> </a></td><td>FVP-P-125 (a3K3X000006MiiOUAS)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"^^xsd:anyURI ;
+     fhir:l <http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PreQualProductIds"] ; # 
+  fhir:title [ fhir:v "WHO PreQualificaiton Vaccine Product Ids"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-03-11T13:44:05+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "WHO PreQualificaiton Vaccine Product Ids"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "33"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "a3K3X000005atRtUAI" ] ;
+     fhir:display [ fhir:v "FVP-P-447 (a3K3X000005atRtUAI)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000005atSwUAI" ] ;
+     fhir:display [ fhir:v "FVP-P-446 (a3K3X000005atSwUAI)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MihsUAC" ] ;
+     fhir:display [ fhir:v "FVP-P-62 (a3K3X000006MihsUAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MihtUAC" ] ;
+     fhir:display [ fhir:v "FVP-P-63 (a3K3X000006MihtUAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MihuUAC" ] ;
+     fhir:display [ fhir:v "FVP-P-64 (a3K3X000006MihuUAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MihvUAC" ] ;
+     fhir:display [ fhir:v "FVP-P-65 (a3K3X000006MihvUAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MihwUAC" ] ;
+     fhir:display [ fhir:v "FVP-P-66 (a3K3X000006MihwUAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MihxUAC" ] ;
+     fhir:display [ fhir:v "FVP-P-67 (a3K3X000006MihxUAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MihyUAC" ] ;
+     fhir:display [ fhir:v "FVP-P-68 (a3K3X000006MihyUAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii0UAC" ] ;
+     fhir:display [ fhir:v "FVP-P-61 (a3K3X000006Mii0UAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii1UAC" ] ;
+     fhir:display [ fhir:v "FVP-P-75 (a3K3X000006Mii1UAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii2UAC" ] ;
+     fhir:display [ fhir:v "FVP-P-76 (a3K3X000006Mii2UAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii3UAC" ] ;
+     fhir:display [ fhir:v "FVP-P-77 (a3K3X000006Mii3UAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii5UAC" ] ;
+     fhir:display [ fhir:v "FVP-P-311 (a3K3X000006Mii5UAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii6UAC" ] ;
+     fhir:display [ fhir:v "FVP-P-319 (a3K3X000006Mii6UAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii7UAC" ] ;
+     fhir:display [ fhir:v "FVP-P-71 (a3K3X000006Mii7UAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii8UAC" ] ;
+     fhir:display [ fhir:v "FVP-P-78 (a3K3X000006Mii8UAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii9UAC" ] ;
+     fhir:display [ fhir:v "FVP-P-79 (a3K3X000006Mii9UAC)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiAUAS" ] ;
+     fhir:display [ fhir:v "FVP-P-80 (a3K3X000006MiiAUAS)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiBUAS" ] ;
+     fhir:display [ fhir:v "FVP-P-329 (a3K3X000006MiiBUAS)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiCUAS" ] ;
+     fhir:display [ fhir:v "FVP-P-73 (a3K3X000006MiiCUAS)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiDUAS" ] ;
+     fhir:display [ fhir:v "FVP-P-74 (a3K3X000006MiiDUAS)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiEUAS" ] ;
+     fhir:display [ fhir:v "FVP-P-137 (a3K3X000006MiiEUAS)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiFUAS" ] ;
+     fhir:display [ fhir:v "FVP-P-136 (a3K3X000006MiiFUAS)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiGUAS" ] ;
+     fhir:display [ fhir:v "FVP-P-138 (a3K3X000006MiiGUAS)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiHUAS" ] ;
+     fhir:display [ fhir:v "FVP-P-141 (a3K3X000006MiiHUAS)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiIUAS" ] ;
+     fhir:display [ fhir:v "FVP-P-142 (a3K3X000006MiiIUAS)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiJUAS" ] ;
+     fhir:display [ fhir:v "FVP-P-144 (a3K3X000006MiiJUAS)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiKUAS" ] ;
+     fhir:display [ fhir:v "FVP-P-143 (a3K3X000006MiiKUAS)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiLUAS" ] ;
+     fhir:display [ fhir:v "FVP-P-272 (a3K3X000006MiiLUAS)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiMUAS" ] ;
+     fhir:display [ fhir:v "FVP-P-145 (a3K3X000006MiiMUAS)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiNUAS" ] ;
+     fhir:display [ fhir:v "FVP-P-124 (a3K3X000006MiiNUAS)" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiOUAS" ] ;
+     fhir:display [ fhir:v "FVP-P-125 (a3K3X000006MiiOUAS)" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

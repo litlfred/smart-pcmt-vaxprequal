@@ -1,0 +1,9 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "0c62c5ef-655f-43d7-aeb6-68db0c2c6483-15",
+  "url" : "http://hl7.org/fhir/comparison/ValueSet/0c62c5ef-655f-43d7-aeb6-68db0c2c6483-15",
+  "name" : "IntersectionPreQualProductIdsAndPreQualProductIds",
+  "title" : "Intersection of WHO PreQualificaiton Vaccine Product Ids And WHO PreQualificaiton Vaccine Product Ids",
+  "status" : "active",
+  "date" : "2026-03-19T19:10:25+00:00"
+}

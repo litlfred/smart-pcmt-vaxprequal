@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VabFUAS"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "Diluent",
+  "coldChainVolume": "6.26",
+  "description": "Carton of 50 ampoules (diluent) [Dimensions 14.5x6.0x7.2 cm]",
+  "height": "6.0",
+  "length": "14.5",
+  "width": "7.2",
+  "primaryContainers": "50"
+}

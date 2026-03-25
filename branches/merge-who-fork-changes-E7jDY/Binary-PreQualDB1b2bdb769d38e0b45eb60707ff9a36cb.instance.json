@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2011-05-11",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "PolioVaccineOralOPVMonov",
+        "display": "Polio Vaccine - Oral (OPV) Monovalent Type 2"
+      }
+    ]
+  },
+  "commercialName": "Polio Sabin Mono Two (oral)",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "GlaxoSmithKline Biologicals SA"
+  },
+  "responsibleNRA": {
+    "text": "Federal Agency for Medicines and Health Products"
+  },
+  "index": {
+    "value": "1b2bdb769d38e0b45eb60707ff9a36cb"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer214b31a3bf30c1816fab7b3f39ca25c9"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holdere0e3ed9114ce62feea705c24aceb2ee2"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/PolioVaccineOralOPVMonovProduct1b2bdb769d38e0b45eb60707ff9a36cb"
+  }
+}

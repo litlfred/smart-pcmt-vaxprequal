@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "Nimenrix"
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturer0f92a4144844f2cd6ed7fe33dc8d7b1c"
+  },
+  "doseQuantity": {
+    "value": 1,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "MeningococcalACYW135conj"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "VialAmpoule"
+      }
+    ]
+  }
+}

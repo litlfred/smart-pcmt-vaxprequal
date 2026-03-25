@@ -1,0 +1,64 @@
+# PreQualDB2ce0838fa87a21625f2bb12e269b26a2 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDB2ce0838fa87a21625f2bb12e269b26a2**
+
+## Binary: PreQualDB2ce0838fa87a21625f2bb12e269b26a2
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2024-08-02",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "HumanPapillomavirusBival",
+        "display": "Human Papillomavirus (Bivalent)"
+      }
+    ]
+  },
+  "commercialName": "Walrinvax®",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Yuxi Zerun Biotechnology Co., Ltd"
+  },
+  "responsibleNRA": {
+    "text": "National Medical Products Administration"
+  },
+  "index": {
+    "value": "2ce0838fa87a21625f2bb12e269b26a2"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer04d9a670e03eceddfeaf6cf84699e754"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder6f85b90926148cce1ad5a1fa8afe673a"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/HumanPapillomavirusBivalProduct2ce0838fa87a21625f2bb12e269b26a2"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

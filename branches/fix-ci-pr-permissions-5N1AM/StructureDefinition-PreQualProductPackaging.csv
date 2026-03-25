@@ -1,0 +1,28 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"PreQualProductPackaging","PreQualProductPackaging","","","",0,*,"","","","null {[]} {[]}
+","WHO PreQual Product Packaging","Logical model for product packaging details
+from the WHO PreQual API (ProductPackaging).","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"PreQualProductPackaging.packagingId","PreQualProductPackaging.packagingId","","","",1,1,"","","","Identifier {[]} {[]}
+","Packaging record ID","Packaging record ID","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.packagingId",1,1,"",""
+"PreQualProductPackaging.packagingType","PreQualProductPackaging.packagingType","","","",0,1,"","","","code {[]} {[]}
+","Packaging type code from PreQualDatabaseMetadata (e.g. Secondary, Tertiary, ShippingContainer)","Packaging type code from PreQualDatabaseMetadata (e.g. Secondary, Tertiary, ShippingContainer)","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.packagingType",0,1,"",""
+"PreQualProductPackaging.componentPacked","PreQualProductPackaging.componentPacked","","","",0,1,"","","","code {[]} {[]}
+","Component packed code from PreQualDatabaseMetadata (e.g. ActiveVaccine, Diluent)","Component packed code from PreQualDatabaseMetadata (e.g. ActiveVaccine, Diluent)","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.componentPacked",0,1,"",""
+"PreQualProductPackaging.coldChainVolume","PreQualProductPackaging.coldChainVolume","","","",0,1,"","","","string {[]} {[]}
+","Cold chain volume per dose","Cold chain volume per dose","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.coldChainVolume",0,1,"",""
+"PreQualProductPackaging.description","PreQualProductPackaging.description","","","",0,1,"","","","string {[]} {[]}
+","Packaging description","Packaging description","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.description",0,1,"",""
+"PreQualProductPackaging.volume","PreQualProductPackaging.volume","","","",0,1,"","","","string {[]} {[]}
+","Packaging volume/dimensions","Packaging volume/dimensions","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.volume",0,1,"",""
+"PreQualProductPackaging.totalDoses","PreQualProductPackaging.totalDoses","","","",0,1,"","","","string {[]} {[]}
+","Total doses in packaging","Total doses in packaging","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.totalDoses",0,1,"",""
+"PreQualProductPackaging.totalContainers","PreQualProductPackaging.totalContainers","","","",0,1,"","","","string {[]} {[]}
+","Total containers in packaging","Total containers in packaging","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.totalContainers",0,1,"",""
+"PreQualProductPackaging.height","PreQualProductPackaging.height","","","",0,1,"","","","string {[]} {[]}
+","Height","Height","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.height",0,1,"",""
+"PreQualProductPackaging.length","PreQualProductPackaging.length","","","",0,1,"","","","string {[]} {[]}
+","Length","Length","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.length",0,1,"",""
+"PreQualProductPackaging.width","PreQualProductPackaging.width","","","",0,1,"","","","string {[]} {[]}
+","Width","Width","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.width",0,1,"",""
+"PreQualProductPackaging.primaryContainers","PreQualProductPackaging.primaryContainers","","","",0,1,"","","","string {[]} {[]}
+","Number of primary containers","Number of primary containers","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.primaryContainers",0,1,"",""

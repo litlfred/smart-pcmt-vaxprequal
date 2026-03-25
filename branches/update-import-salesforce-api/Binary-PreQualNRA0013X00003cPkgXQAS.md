@@ -1,0 +1,38 @@
+# PreQualNRA0013X00003cPkgXQAS - SMART Product Catalog v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualNRA0013X00003cPkgXQAS**
+
+## Example Binary: PreQualNRA0013X00003cPkgXQAS
+
+This content is an example of the [WHO PreQual NRA](StructureDefinition-PreQualNRA.md) Logical Model and is not a FHIR Resource
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00003cPkgXQAS"
+  },
+  "name": "Bulgarian Drug Agency (BDA)",
+  "country": "Bulgaria",
+  "website": "www.bda.bg",
+  "organizationReference": {
+    "reference": "Organization/Holder0013X00003cPkgXQAS"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

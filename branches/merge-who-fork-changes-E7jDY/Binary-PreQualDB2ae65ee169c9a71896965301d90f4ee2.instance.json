@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2020-12-04",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "TyphoidConjugate",
+        "display": "Typhoid (Conjugate)"
+      }
+    ]
+  },
+  "commercialName": "TYPHIBEV®",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Biological E. Limited"
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "2ae65ee169c9a71896965301d90f4ee2"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer54a4cbdf74f251158fb034e8f5e1ff5b"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/TyphoidConjugateProduct2ae65ee169c9a71896965301d90f4ee2"
+  }
+}

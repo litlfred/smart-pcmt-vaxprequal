@@ -1,0 +1,14 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3ZQAQ"
+  },
+  "siteOrganizationName": "Sinovac Biotech Co. Ltd",
+  "addressLine1": "No. 39 Shangdi Xi Rd.  Haidian District",
+  "city": "Beijing",
+  "country": "China",
+  "postalCode": "100085",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

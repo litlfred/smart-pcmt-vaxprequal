@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005i24tYAA"
+  },
+  "documentName": "Package Insert-pq_65_66_67_YF_5dose_IPD_PI",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005ylPPYAY",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

@@ -1,0 +1,16 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"PreQualNRA","PreQualNRA","","","",0,*,"","","","null {[]} {[]}
+","WHO PreQual NRA","Logical model for the responsible National Regulatory Authority (NRA)
+from the WHO PreQual API (ProductDetails.NRADetails).","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"PreQualNRA.nraId","PreQualNRA.nraId","","","",0,1,"","","","Identifier {[]} {[]}
+","NRA organization ID","NRA organization ID","","","","","","","","","",,,,,"",,,,"PreQualNRA.nraId",0,1,"",""
+"PreQualNRA.name","PreQualNRA.name","","","",1,1,"","","","string {[]} {[]}
+","Organization name","Organization name","","","","","","","","","",,,,,"",,,,"PreQualNRA.name",1,1,"",""
+"PreQualNRA.addressLine1","PreQualNRA.addressLine1","","","",0,1,"","","","string {[]} {[]}
+","Address line 1","Address line 1","","","","","","","","","",,,,,"",,,,"PreQualNRA.addressLine1",0,1,"",""
+"PreQualNRA.country","PreQualNRA.country","","","",0,1,"","","","string {[]} {[]}
+","Country","Country","","","","","","","","","",,,,,"",,,,"PreQualNRA.country",0,1,"",""
+"PreQualNRA.website","PreQualNRA.website","","","",0,1,"","","","string {[]} {[]}
+","Website URL","Website URL","","","","","","","","","",,,,,"",,,,"PreQualNRA.website",0,1,"",""
+"PreQualNRA.organizationReference","PreQualNRA.organizationReference","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization]]}
+","FHIR Organization reference","FHIR Organization reference","","","","","","","","","",,,,,"",,,,"PreQualNRA.organizationReference",1,1,"",""

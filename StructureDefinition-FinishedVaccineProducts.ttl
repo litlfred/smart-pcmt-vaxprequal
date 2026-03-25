@@ -1,0 +1,1464 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "FinishedVaccineProducts"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition FinishedVaccineProducts</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts\" title=\"WHO Vaccine PreQual DB - Finished Vaccine Products.#xA;Logical model for the WHO PreQual DB as provided by the backend API at:#xA;     https://extranet.who.int/prequal/vaccines/prequalified-vaccines#xA;This model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.#xA;Sub-objects with Identification.Id are modeled as separate logical models and linked via references.#xA;#xA;Key fields from the API (FinishedVaccineProducts):#xA;  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)#xA;  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)#xA;  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)#xA;  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification#xA;  ProductDetails.AssessmentProcedure - Assessment procedure code#xA;  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address#xA;  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)#xA;  ProductDetails.PharmaceuticalForm - Pharmaceutical form details#xA;  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses#xA;  ProductDetails.NRADetails - Responsible NRA with ID, name, address#xA;  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names#xA;  ProductDetails.StorageDetails - Storage temperature and shelf life#xA;  ProductDetails.Status - Prequalification status code\">FinishedVaccineProducts</a><a name=\"FinishedVaccineProducts\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">WHO Vaccine PreQual DB - Finished Vaccine Products<br/><span style=\"font-weight:bold\">Instances of this logical model can be the target of a Reference</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.productId\" title=\"Vaccine Product ID (authoritative)\">productId</a><a name=\"FinishedVaccineProducts.productId\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine Product ID (authoritative)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.productName\" title=\"Product reference name (e.g. FVP-P-447)\">productName</a><a name=\"FinishedVaccineProducts.productName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Product reference name (e.g. FVP-P-447)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.productType\" title=\"Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)\">productType</a><a name=\"FinishedVaccineProducts.productType\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.dateOfPrequal\" title=\"Date of prequalification acceptance\">dateOfPrequal</a><a name=\"FinishedVaccineProducts.dateOfPrequal\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date of prequalification acceptance</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.assessmentProcedure\" title=\"Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)\">assessmentProcedure</a><a name=\"FinishedVaccineProducts.assessmentProcedure\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.status\" title=\"Product status code from PreQualDatabaseMetadata (e.g. Prequalified)\">status</a><a name=\"FinishedVaccineProducts.status\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Product status code from PreQualDatabaseMetadata (e.g. Prequalified)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.pharmaceuticalForm\" title=\"Pharmaceutical form code from PreQualDatabaseMetadata\">pharmaceuticalForm</a><a name=\"FinishedVaccineProducts.pharmaceuticalForm\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Pharmaceutical form code from PreQualDatabaseMetadata</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.presentation\" title=\"Presentation (e.g. Vial, Ampoule)\">presentation</a><a name=\"FinishedVaccineProducts.presentation\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Presentation (e.g. Vial, Ampoule)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.numDoses\" title=\"Number of doses per primary container\">numDoses</a><a name=\"FinishedVaccineProducts.numDoses\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Number of doses per primary container</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.vaccineFullName\" title=\"Vaccine full name\">vaccineFullName</a><a name=\"FinishedVaccineProducts.vaccineFullName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine full name</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.vaccineAbbreviatedName\" title=\"Vaccine abbreviated name\">vaccineAbbreviatedName</a><a name=\"FinishedVaccineProducts.vaccineAbbreviatedName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine abbreviated name</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.vaccineCommercialName\" title=\"Vaccine commercial name\">vaccineCommercialName</a><a name=\"FinishedVaccineProducts.vaccineCommercialName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine commercial name</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.vaccineTypeId\" title=\"Vaccine type ID\">vaccineTypeId</a><a name=\"FinishedVaccineProducts.vaccineTypeId\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine type ID</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.routeOfAdministration\" title=\"Route of administration code from PreQualDatabaseMetadata\">routeOfAdministration</a><a name=\"FinishedVaccineProducts.routeOfAdministration\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Route of administration code from PreQualDatabaseMetadata</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.vialMonitor\" title=\"Vial monitor type (e.g. Type 14, Type 30)\">vialMonitor</a><a name=\"FinishedVaccineProducts.vialMonitor\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vial monitor type (e.g. Type 14, Type 30)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.multidoseVialPolicy\" title=\"Multidose vial policy text\">multidoseVialPolicy</a><a name=\"FinishedVaccineProducts.multidoseVialPolicy\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Multidose vial policy text</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.presentationOther\" title=\"Alternative presentation description when Presentation is 'Other'\">presentationOther</a><a name=\"FinishedVaccineProducts.presentationOther\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Alternative presentation description when Presentation is 'Other'</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.applicantId\" title=\"Applicant/manufacturer organization ID (may be absent if not yet assigned)\">applicantId</a><a name=\"FinishedVaccineProducts.applicantId\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Applicant/manufacturer organization ID (may be absent if not yet assigned)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.applicantName\" title=\"Applicant/manufacturer organization name (always present from API data)\">applicantName</a><a name=\"FinishedVaccineProducts.applicantName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Applicant/manufacturer organization name (always present from API data)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.applicantAddress\" title=\"Applicant organization address\">applicantAddress</a><a name=\"FinishedVaccineProducts.applicantAddress\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Address\">Address</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Applicant organization address</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.nraId\" title=\"NRA organization ID (may be absent if not yet assigned)\">nraId</a><a name=\"FinishedVaccineProducts.nraId\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">NRA organization ID (may be absent if not yet assigned)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.nraName\" title=\"Responsible NRA name (always present from API data)\">nraName</a><a name=\"FinishedVaccineProducts.nraName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Responsible NRA name (always present from API data)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.nraCountry\" title=\"NRA country\">nraCountry</a><a name=\"FinishedVaccineProducts.nraCountry\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">NRA country</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.shelfLife\" title=\"Shelf life (e.g. 24 months)\">shelfLife</a><a name=\"FinishedVaccineProducts.shelfLife\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Shelf life (e.g. 24 months)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.storageTemperature\" title=\"Storage temperature (e.g. 2 - 8°C)\">storageTemperature</a><a name=\"FinishedVaccineProducts.storageTemperature\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Storage temperature (e.g. 2 - 8°C)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.diluent\" title=\"Diluent information\">diluent</a><a name=\"FinishedVaccineProducts.diluent\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Diluent information</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.lastPublishingDate\" title=\"Last publishing date\">lastPublishingDate</a><a name=\"FinishedVaccineProducts.lastPublishingDate\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Last publishing date</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.publishingRemarks\" title=\"Publishing remarks\">publishingRemarks</a><a name=\"FinishedVaccineProducts.publishingRemarks\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Publishing remarks</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.preservative\" title=\"Preservative name (e.g. Thiomersal)\">preservative</a><a name=\"FinishedVaccineProducts.preservative\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Preservative name (e.g. Thiomersal)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.preservativeConcentration\" title=\"Preservative concentration (e.g. 0.01%)\">preservativeConcentration</a><a name=\"FinishedVaccineProducts.preservativeConcentration\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Preservative concentration (e.g. 0.01%)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.manufacturerLM\" title=\"Manufacturer logical model instance reference (linked when ApplicantOrganization.Identification.Id is non-null)\">manufacturerLM</a><a name=\"FinishedVaccineProducts.manufacturerLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"StructureDefinition-PreQualManufacturer.html\">WHO PreQual Manufacturer</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Manufacturer logical model instance reference (linked when ApplicantOrganization.Identification.Id is non-null)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.nraLM\" title=\"NRA logical model instance reference (linked when NRADetails.Identification.Id is non-null)\">nraLM</a><a name=\"FinishedVaccineProducts.nraLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"StructureDefinition-PreQualNRA.html\">WHO PreQual NRA</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">NRA logical model instance reference (linked when NRADetails.Identification.Id is non-null)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.vaccineLM\" title=\"Vaccine logical model instance reference (linked when VaccineDetails.Identification.Id is non-null)\">vaccineLM</a><a name=\"FinishedVaccineProducts.vaccineLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"StructureDefinition-PreQualVaccine.html\">WHO PreQual Vaccine</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine logical model instance reference (linked when VaccineDetails.Identification.Id is non-null)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.bulkSupplierLM\" title=\"Bulk supplier logical model instance reference (linked when BulkSupplier.Id is non-null)\">bulkSupplierLM</a><a name=\"FinishedVaccineProducts.bulkSupplierLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"StructureDefinition-PreQualBulkSupplier.html\">WHO PreQual Bulk Supplier</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Bulk supplier logical model instance reference (linked when BulkSupplier.Id is non-null)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.packagingLM\" title=\"Product packaging logical model instance references\">packagingLM</a><a name=\"FinishedVaccineProducts.packagingLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"StructureDefinition-PreQualProductPackaging.html\">WHO PreQual Product Packaging</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Product packaging logical model instance references<br/></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.documentLM\" title=\"Document detail logical model instance references\">documentLM</a><a name=\"FinishedVaccineProducts.documentLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"StructureDefinition-PreQualDocumentDetail.html\">WHO PreQual Document Detail</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Document detail logical model instance references<br/></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.siteLM\" title=\"Site detail logical model instance references\">siteLM</a><a name=\"FinishedVaccineProducts.siteLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"StructureDefinition-PreQualSiteDetail.html\">WHO PreQual Site Detail</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Site detail logical model instance references<br/></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.ingredientLM\" title=\"Product ingredient logical model instance references\">ingredientLM</a><a name=\"FinishedVaccineProducts.ingredientLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"StructureDefinition-PreQualProductIngredient.html\">WHO PreQual Product Ingredient</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Product ingredient logical model instance references<br/></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.manufacturerReference\" title=\"Manufacturer FHIR Organization reference\">manufacturerReference</a><a name=\"FinishedVaccineProducts.manufacturerReference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"https://profiles.ihe.net/ITI/mCSD/4.0.0/StructureDefinition-IHE.mCSD.Organization.html\">mCSD Organization</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Manufacturer FHIR Organization reference</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.responsibleNRAReference\" title=\"Responsible NRA FHIR Organization reference\">responsibleNRAReference</a><a name=\"FinishedVaccineProducts.responsibleNRAReference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"https://profiles.ihe.net/ITI/mCSD/4.0.0/StructureDefinition-IHE.mCSD.Organization.html\">mCSD Organization</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Responsible NRA FHIR Organization reference</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-FinishedVaccineProducts-definitions.html#FinishedVaccineProducts.productReference\" title=\"Product FHIR reference (when available from pcmt dependency)\">productReference</a><a name=\"FinishedVaccineProducts.productReference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>()</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Product FHIR reference (when available from pcmt dependency)</td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "can-be-target"
+     ]
+  ] [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/tools/StructureDefinition/logical-target"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/tools/StructureDefinition/logical-target>
+     ] ;
+     fhir:value [
+       a fhir:Boolean ;
+       fhir:v true
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts"^^xsd:anyURI ;
+     fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts>
+  ] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "FinishedVaccineProducts"] ; # 
+  fhir:title [ fhir:v "WHO Vaccine PreQual DB - Finished Vaccine Products"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-25T13:07:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "WHO Vaccine PreQual DB - Finished Vaccine Products.\nLogical model for the WHO PreQual DB as provided by the backend API at:\n     https://extranet.who.int/prequal/vaccines/prequalified-vaccines\nThis model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.\nSub-objects with Identification.Id are modeled as separate logical models and linked via references.\n\nKey fields from the API (FinishedVaccineProducts):\n  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)\n  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)\n  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)\n  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification\n  ProductDetails.AssessmentProcedure - Assessment procedure code\n  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address\n  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)\n  ProductDetails.PharmaceuticalForm - Pharmaceutical form details\n  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses\n  ProductDetails.NRADetails - Responsible NRA with ID, name, address\n  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names\n  ProductDetails.StorageDetails - Storage temperature and shelf life\n  ProductDetails.Status - Prequalification status code"] ; # 
+  fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
+  fhir:mapping ( [
+     fhir:identity [ fhir:v "rim" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/v3"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/v3>
+     ] ;
+     fhir:name [ fhir:v "RIM Mapping" ]
+  ] ) ; # 
+  fhir:kind [ fhir:v "logical"] ; # 
+  fhir:abstract [ fhir:v false] ; # 
+  fhir:type [
+     fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts"^^xsd:anyURI ;
+     fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts>
+  ] ; # 
+  fhir:baseDefinition [
+     fhir:v "http://hl7.org/fhir/StructureDefinition/Base"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/StructureDefinition/Base>
+  ] ; # 
+  fhir:derivation [ fhir:v "specialization"] ; # 
+  fhir:snapshot [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version>
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "5.0.0"
+       ]
+     ] ) ;
+     fhir:element ( [
+       fhir:id [ fhir:v "FinishedVaccineProducts" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts" ] ;
+       fhir:short [ fhir:v "WHO Vaccine PreQual DB - Finished Vaccine Products" ] ;
+       fhir:definition [ fhir:v "WHO Vaccine PreQual DB - Finished Vaccine Products.\nLogical model for the WHO PreQual DB as provided by the backend API at:\n     https://extranet.who.int/prequal/vaccines/prequalified-vaccines\nThis model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.\nSub-objects with Identification.Id are modeled as separate logical models and linked via references.\n\nKey fields from the API (FinishedVaccineProducts):\n  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)\n  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)\n  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)\n  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification\n  ProductDetails.AssessmentProcedure - Assessment procedure code\n  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address\n  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)\n  ProductDetails.PharmaceuticalForm - Pharmaceutical form details\n  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses\n  ProductDetails.NRADetails - Responsible NRA with ID, name, address\n  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names\n  ProductDetails.StorageDetails - Storage temperature and shelf life\n  ProductDetails.Status - Prequalification status code" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Base" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.productId" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.productId" ] ;
+       fhir:short [ fhir:v "Vaccine Product ID (authoritative)" ] ;
+       fhir:definition [ fhir:v "Vaccine Product ID (authoritative)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.productId" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.productName" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.productName" ] ;
+       fhir:short [ fhir:v "Product reference name (e.g. FVP-P-447)" ] ;
+       fhir:definition [ fhir:v "Product reference name (e.g. FVP-P-447)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.productName" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.productType" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.productType" ] ;
+       fhir:short [ fhir:v "Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)" ] ;
+       fhir:definition [ fhir:v "Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.productType" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.dateOfPrequal" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.dateOfPrequal" ] ;
+       fhir:short [ fhir:v "Date of prequalification acceptance" ] ;
+       fhir:definition [ fhir:v "Date of prequalification acceptance" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.dateOfPrequal" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.assessmentProcedure" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.assessmentProcedure" ] ;
+       fhir:short [ fhir:v "Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)" ] ;
+       fhir:definition [ fhir:v "Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.assessmentProcedure" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.status" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.status" ] ;
+       fhir:short [ fhir:v "Product status code from PreQualDatabaseMetadata (e.g. Prequalified)" ] ;
+       fhir:definition [ fhir:v "Product status code from PreQualDatabaseMetadata (e.g. Prequalified)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.status" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.pharmaceuticalForm" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.pharmaceuticalForm" ] ;
+       fhir:short [ fhir:v "Pharmaceutical form code from PreQualDatabaseMetadata" ] ;
+       fhir:definition [ fhir:v "Pharmaceutical form code from PreQualDatabaseMetadata" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.pharmaceuticalForm" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.presentation" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.presentation" ] ;
+       fhir:short [ fhir:v "Presentation (e.g. Vial, Ampoule)" ] ;
+       fhir:definition [ fhir:v "Presentation (e.g. Vial, Ampoule)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.presentation" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.numDoses" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.numDoses" ] ;
+       fhir:short [ fhir:v "Number of doses per primary container" ] ;
+       fhir:definition [ fhir:v "Number of doses per primary container" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.numDoses" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.vaccineFullName" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.vaccineFullName" ] ;
+       fhir:short [ fhir:v "Vaccine full name" ] ;
+       fhir:definition [ fhir:v "Vaccine full name" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.vaccineFullName" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.vaccineAbbreviatedName" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.vaccineAbbreviatedName" ] ;
+       fhir:short [ fhir:v "Vaccine abbreviated name" ] ;
+       fhir:definition [ fhir:v "Vaccine abbreviated name" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.vaccineAbbreviatedName" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.vaccineCommercialName" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.vaccineCommercialName" ] ;
+       fhir:short [ fhir:v "Vaccine commercial name" ] ;
+       fhir:definition [ fhir:v "Vaccine commercial name" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.vaccineCommercialName" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.vaccineTypeId" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.vaccineTypeId" ] ;
+       fhir:short [ fhir:v "Vaccine type ID" ] ;
+       fhir:definition [ fhir:v "Vaccine type ID" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.vaccineTypeId" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.routeOfAdministration" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.routeOfAdministration" ] ;
+       fhir:short [ fhir:v "Route of administration code from PreQualDatabaseMetadata" ] ;
+       fhir:definition [ fhir:v "Route of administration code from PreQualDatabaseMetadata" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.routeOfAdministration" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.vialMonitor" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.vialMonitor" ] ;
+       fhir:short [ fhir:v "Vial monitor type (e.g. Type 14, Type 30)" ] ;
+       fhir:definition [ fhir:v "Vial monitor type (e.g. Type 14, Type 30)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.vialMonitor" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.multidoseVialPolicy" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.multidoseVialPolicy" ] ;
+       fhir:short [ fhir:v "Multidose vial policy text" ] ;
+       fhir:definition [ fhir:v "Multidose vial policy text" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.multidoseVialPolicy" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.presentationOther" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.presentationOther" ] ;
+       fhir:short [ fhir:v "Alternative presentation description when Presentation is 'Other'" ] ;
+       fhir:definition [ fhir:v "Alternative presentation description when Presentation is 'Other'" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.presentationOther" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.applicantId" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.applicantId" ] ;
+       fhir:short [ fhir:v "Applicant/manufacturer organization ID (may be absent if not yet assigned)" ] ;
+       fhir:definition [ fhir:v "Applicant/manufacturer organization ID (may be absent if not yet assigned)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.applicantId" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.applicantName" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.applicantName" ] ;
+       fhir:short [ fhir:v "Applicant/manufacturer organization name (always present from API data)" ] ;
+       fhir:definition [ fhir:v "Applicant/manufacturer organization name (always present from API data)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.applicantName" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.applicantAddress" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.applicantAddress" ] ;
+       fhir:short [ fhir:v "Applicant organization address" ] ;
+       fhir:definition [ fhir:v "Applicant organization address" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.applicantAddress" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Address"^^xsd:anyURI ;
+           fhir:l fhir:Address
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.nraId" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.nraId" ] ;
+       fhir:short [ fhir:v "NRA organization ID (may be absent if not yet assigned)" ] ;
+       fhir:definition [ fhir:v "NRA organization ID (may be absent if not yet assigned)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.nraId" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.nraName" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.nraName" ] ;
+       fhir:short [ fhir:v "Responsible NRA name (always present from API data)" ] ;
+       fhir:definition [ fhir:v "Responsible NRA name (always present from API data)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.nraName" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.nraCountry" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.nraCountry" ] ;
+       fhir:short [ fhir:v "NRA country" ] ;
+       fhir:definition [ fhir:v "NRA country" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.nraCountry" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.shelfLife" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.shelfLife" ] ;
+       fhir:short [ fhir:v "Shelf life (e.g. 24 months)" ] ;
+       fhir:definition [ fhir:v "Shelf life (e.g. 24 months)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.shelfLife" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.storageTemperature" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.storageTemperature" ] ;
+       fhir:short [ fhir:v "Storage temperature (e.g. 2 - 8°C)" ] ;
+       fhir:definition [ fhir:v "Storage temperature (e.g. 2 - 8°C)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.storageTemperature" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.diluent" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.diluent" ] ;
+       fhir:short [ fhir:v "Diluent information" ] ;
+       fhir:definition [ fhir:v "Diluent information" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.diluent" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.lastPublishingDate" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.lastPublishingDate" ] ;
+       fhir:short [ fhir:v "Last publishing date" ] ;
+       fhir:definition [ fhir:v "Last publishing date" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.lastPublishingDate" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.publishingRemarks" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.publishingRemarks" ] ;
+       fhir:short [ fhir:v "Publishing remarks" ] ;
+       fhir:definition [ fhir:v "Publishing remarks" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.publishingRemarks" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.preservative" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.preservative" ] ;
+       fhir:short [ fhir:v "Preservative name (e.g. Thiomersal)" ] ;
+       fhir:definition [ fhir:v "Preservative name (e.g. Thiomersal)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.preservative" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.preservativeConcentration" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.preservativeConcentration" ] ;
+       fhir:short [ fhir:v "Preservative concentration (e.g. 0.01%)" ] ;
+       fhir:definition [ fhir:v "Preservative concentration (e.g. 0.01%)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.preservativeConcentration" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.manufacturerLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.manufacturerLM" ] ;
+       fhir:short [ fhir:v "Manufacturer logical model instance reference (linked when ApplicantOrganization.Identification.Id is non-null)" ] ;
+       fhir:definition [ fhir:v "Manufacturer logical model instance reference (linked when ApplicantOrganization.Identification.Id is non-null)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.manufacturerLM" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.nraLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.nraLM" ] ;
+       fhir:short [ fhir:v "NRA logical model instance reference (linked when NRADetails.Identification.Id is non-null)" ] ;
+       fhir:definition [ fhir:v "NRA logical model instance reference (linked when NRADetails.Identification.Id is non-null)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.nraLM" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.vaccineLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.vaccineLM" ] ;
+       fhir:short [ fhir:v "Vaccine logical model instance reference (linked when VaccineDetails.Identification.Id is non-null)" ] ;
+       fhir:definition [ fhir:v "Vaccine logical model instance reference (linked when VaccineDetails.Identification.Id is non-null)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.vaccineLM" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.bulkSupplierLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.bulkSupplierLM" ] ;
+       fhir:short [ fhir:v "Bulk supplier logical model instance reference (linked when BulkSupplier.Id is non-null)" ] ;
+       fhir:definition [ fhir:v "Bulk supplier logical model instance reference (linked when BulkSupplier.Id is non-null)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.bulkSupplierLM" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualBulkSupplier"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualBulkSupplier>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.packagingLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.packagingLM" ] ;
+       fhir:short [ fhir:v "Product packaging logical model instance references" ] ;
+       fhir:definition [ fhir:v "Product packaging logical model instance references" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.packagingLM" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.documentLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.documentLM" ] ;
+       fhir:short [ fhir:v "Document detail logical model instance references" ] ;
+       fhir:definition [ fhir:v "Document detail logical model instance references" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.documentLM" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.siteLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.siteLM" ] ;
+       fhir:short [ fhir:v "Site detail logical model instance references" ] ;
+       fhir:definition [ fhir:v "Site detail logical model instance references" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.siteLM" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.ingredientLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.ingredientLM" ] ;
+       fhir:short [ fhir:v "Product ingredient logical model instance references" ] ;
+       fhir:definition [ fhir:v "Product ingredient logical model instance references" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.ingredientLM" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.manufacturerReference" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.manufacturerReference" ] ;
+       fhir:short [ fhir:v "Manufacturer FHIR Organization reference" ] ;
+       fhir:definition [ fhir:v "Manufacturer FHIR Organization reference" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.manufacturerReference" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"^^xsd:anyURI ;
+           fhir:l <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.responsibleNRAReference" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.responsibleNRAReference" ] ;
+       fhir:short [ fhir:v "Responsible NRA FHIR Organization reference" ] ;
+       fhir:definition [ fhir:v "Responsible NRA FHIR Organization reference" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.responsibleNRAReference" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"^^xsd:anyURI ;
+           fhir:l <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.productReference" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.productReference" ] ;
+       fhir:short [ fhir:v "Product FHIR reference (when available from pcmt dependency)" ] ;
+       fhir:definition [ fhir:v "Product FHIR reference (when available from pcmt dependency)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "FinishedVaccineProducts.productReference" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:differential [
+     fhir:element ( [
+       fhir:id [ fhir:v "FinishedVaccineProducts" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts" ] ;
+       fhir:short [ fhir:v "WHO Vaccine PreQual DB - Finished Vaccine Products" ] ;
+       fhir:definition [ fhir:v "WHO Vaccine PreQual DB - Finished Vaccine Products.\nLogical model for the WHO PreQual DB as provided by the backend API at:\n     https://extranet.who.int/prequal/vaccines/prequalified-vaccines\nThis model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.\nSub-objects with Identification.Id are modeled as separate logical models and linked via references.\n\nKey fields from the API (FinishedVaccineProducts):\n  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)\n  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)\n  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)\n  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification\n  ProductDetails.AssessmentProcedure - Assessment procedure code\n  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address\n  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)\n  ProductDetails.PharmaceuticalForm - Pharmaceutical form details\n  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses\n  ProductDetails.NRADetails - Responsible NRA with ID, name, address\n  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names\n  ProductDetails.StorageDetails - Storage temperature and shelf life\n  ProductDetails.Status - Prequalification status code" ]
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.productId" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.productId" ] ;
+       fhir:short [ fhir:v "Vaccine Product ID (authoritative)" ] ;
+       fhir:definition [ fhir:v "Vaccine Product ID (authoritative)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.productName" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.productName" ] ;
+       fhir:short [ fhir:v "Product reference name (e.g. FVP-P-447)" ] ;
+       fhir:definition [ fhir:v "Product reference name (e.g. FVP-P-447)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.productType" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.productType" ] ;
+       fhir:short [ fhir:v "Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)" ] ;
+       fhir:definition [ fhir:v "Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.dateOfPrequal" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.dateOfPrequal" ] ;
+       fhir:short [ fhir:v "Date of prequalification acceptance" ] ;
+       fhir:definition [ fhir:v "Date of prequalification acceptance" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.assessmentProcedure" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.assessmentProcedure" ] ;
+       fhir:short [ fhir:v "Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)" ] ;
+       fhir:definition [ fhir:v "Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.status" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.status" ] ;
+       fhir:short [ fhir:v "Product status code from PreQualDatabaseMetadata (e.g. Prequalified)" ] ;
+       fhir:definition [ fhir:v "Product status code from PreQualDatabaseMetadata (e.g. Prequalified)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.pharmaceuticalForm" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.pharmaceuticalForm" ] ;
+       fhir:short [ fhir:v "Pharmaceutical form code from PreQualDatabaseMetadata" ] ;
+       fhir:definition [ fhir:v "Pharmaceutical form code from PreQualDatabaseMetadata" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.presentation" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.presentation" ] ;
+       fhir:short [ fhir:v "Presentation (e.g. Vial, Ampoule)" ] ;
+       fhir:definition [ fhir:v "Presentation (e.g. Vial, Ampoule)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.numDoses" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.numDoses" ] ;
+       fhir:short [ fhir:v "Number of doses per primary container" ] ;
+       fhir:definition [ fhir:v "Number of doses per primary container" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.vaccineFullName" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.vaccineFullName" ] ;
+       fhir:short [ fhir:v "Vaccine full name" ] ;
+       fhir:definition [ fhir:v "Vaccine full name" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.vaccineAbbreviatedName" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.vaccineAbbreviatedName" ] ;
+       fhir:short [ fhir:v "Vaccine abbreviated name" ] ;
+       fhir:definition [ fhir:v "Vaccine abbreviated name" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.vaccineCommercialName" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.vaccineCommercialName" ] ;
+       fhir:short [ fhir:v "Vaccine commercial name" ] ;
+       fhir:definition [ fhir:v "Vaccine commercial name" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.vaccineTypeId" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.vaccineTypeId" ] ;
+       fhir:short [ fhir:v "Vaccine type ID" ] ;
+       fhir:definition [ fhir:v "Vaccine type ID" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.routeOfAdministration" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.routeOfAdministration" ] ;
+       fhir:short [ fhir:v "Route of administration code from PreQualDatabaseMetadata" ] ;
+       fhir:definition [ fhir:v "Route of administration code from PreQualDatabaseMetadata" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.vialMonitor" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.vialMonitor" ] ;
+       fhir:short [ fhir:v "Vial monitor type (e.g. Type 14, Type 30)" ] ;
+       fhir:definition [ fhir:v "Vial monitor type (e.g. Type 14, Type 30)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.multidoseVialPolicy" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.multidoseVialPolicy" ] ;
+       fhir:short [ fhir:v "Multidose vial policy text" ] ;
+       fhir:definition [ fhir:v "Multidose vial policy text" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.presentationOther" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.presentationOther" ] ;
+       fhir:short [ fhir:v "Alternative presentation description when Presentation is 'Other'" ] ;
+       fhir:definition [ fhir:v "Alternative presentation description when Presentation is 'Other'" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.applicantId" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.applicantId" ] ;
+       fhir:short [ fhir:v "Applicant/manufacturer organization ID (may be absent if not yet assigned)" ] ;
+       fhir:definition [ fhir:v "Applicant/manufacturer organization ID (may be absent if not yet assigned)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.applicantName" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.applicantName" ] ;
+       fhir:short [ fhir:v "Applicant/manufacturer organization name (always present from API data)" ] ;
+       fhir:definition [ fhir:v "Applicant/manufacturer organization name (always present from API data)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.applicantAddress" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.applicantAddress" ] ;
+       fhir:short [ fhir:v "Applicant organization address" ] ;
+       fhir:definition [ fhir:v "Applicant organization address" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Address"^^xsd:anyURI ;
+           fhir:l fhir:Address
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.nraId" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.nraId" ] ;
+       fhir:short [ fhir:v "NRA organization ID (may be absent if not yet assigned)" ] ;
+       fhir:definition [ fhir:v "NRA organization ID (may be absent if not yet assigned)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.nraName" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.nraName" ] ;
+       fhir:short [ fhir:v "Responsible NRA name (always present from API data)" ] ;
+       fhir:definition [ fhir:v "Responsible NRA name (always present from API data)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.nraCountry" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.nraCountry" ] ;
+       fhir:short [ fhir:v "NRA country" ] ;
+       fhir:definition [ fhir:v "NRA country" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.shelfLife" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.shelfLife" ] ;
+       fhir:short [ fhir:v "Shelf life (e.g. 24 months)" ] ;
+       fhir:definition [ fhir:v "Shelf life (e.g. 24 months)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.storageTemperature" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.storageTemperature" ] ;
+       fhir:short [ fhir:v "Storage temperature (e.g. 2 - 8°C)" ] ;
+       fhir:definition [ fhir:v "Storage temperature (e.g. 2 - 8°C)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.diluent" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.diluent" ] ;
+       fhir:short [ fhir:v "Diluent information" ] ;
+       fhir:definition [ fhir:v "Diluent information" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.lastPublishingDate" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.lastPublishingDate" ] ;
+       fhir:short [ fhir:v "Last publishing date" ] ;
+       fhir:definition [ fhir:v "Last publishing date" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.publishingRemarks" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.publishingRemarks" ] ;
+       fhir:short [ fhir:v "Publishing remarks" ] ;
+       fhir:definition [ fhir:v "Publishing remarks" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.preservative" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.preservative" ] ;
+       fhir:short [ fhir:v "Preservative name (e.g. Thiomersal)" ] ;
+       fhir:definition [ fhir:v "Preservative name (e.g. Thiomersal)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.preservativeConcentration" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.preservativeConcentration" ] ;
+       fhir:short [ fhir:v "Preservative concentration (e.g. 0.01%)" ] ;
+       fhir:definition [ fhir:v "Preservative concentration (e.g. 0.01%)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.manufacturerLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.manufacturerLM" ] ;
+       fhir:short [ fhir:v "Manufacturer logical model instance reference (linked when ApplicantOrganization.Identification.Id is non-null)" ] ;
+       fhir:definition [ fhir:v "Manufacturer logical model instance reference (linked when ApplicantOrganization.Identification.Id is non-null)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.nraLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.nraLM" ] ;
+       fhir:short [ fhir:v "NRA logical model instance reference (linked when NRADetails.Identification.Id is non-null)" ] ;
+       fhir:definition [ fhir:v "NRA logical model instance reference (linked when NRADetails.Identification.Id is non-null)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.vaccineLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.vaccineLM" ] ;
+       fhir:short [ fhir:v "Vaccine logical model instance reference (linked when VaccineDetails.Identification.Id is non-null)" ] ;
+       fhir:definition [ fhir:v "Vaccine logical model instance reference (linked when VaccineDetails.Identification.Id is non-null)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.bulkSupplierLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.bulkSupplierLM" ] ;
+       fhir:short [ fhir:v "Bulk supplier logical model instance reference (linked when BulkSupplier.Id is non-null)" ] ;
+       fhir:definition [ fhir:v "Bulk supplier logical model instance reference (linked when BulkSupplier.Id is non-null)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualBulkSupplier"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualBulkSupplier>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.packagingLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.packagingLM" ] ;
+       fhir:short [ fhir:v "Product packaging logical model instance references" ] ;
+       fhir:definition [ fhir:v "Product packaging logical model instance references" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.documentLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.documentLM" ] ;
+       fhir:short [ fhir:v "Document detail logical model instance references" ] ;
+       fhir:definition [ fhir:v "Document detail logical model instance references" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.siteLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.siteLM" ] ;
+       fhir:short [ fhir:v "Site detail logical model instance references" ] ;
+       fhir:definition [ fhir:v "Site detail logical model instance references" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.ingredientLM" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.ingredientLM" ] ;
+       fhir:short [ fhir:v "Product ingredient logical model instance references" ] ;
+       fhir:definition [ fhir:v "Product ingredient logical model instance references" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"^^xsd:anyURI ;
+           fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.manufacturerReference" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.manufacturerReference" ] ;
+       fhir:short [ fhir:v "Manufacturer FHIR Organization reference" ] ;
+       fhir:definition [ fhir:v "Manufacturer FHIR Organization reference" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"^^xsd:anyURI ;
+           fhir:l <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.responsibleNRAReference" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.responsibleNRAReference" ] ;
+       fhir:short [ fhir:v "Responsible NRA FHIR Organization reference" ] ;
+       fhir:definition [ fhir:v "Responsible NRA FHIR Organization reference" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ] ;
+         fhir:targetProfile ( [
+           fhir:v "https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"^^xsd:anyURI ;
+           fhir:l <https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization>
+         ] )
+       ] )
+     ] [
+       fhir:id [ fhir:v "FinishedVaccineProducts.productReference" ] ;
+       fhir:path [ fhir:v "FinishedVaccineProducts.productReference" ] ;
+       fhir:short [ fhir:v "Product FHIR reference (when available from pcmt dependency)" ] ;
+       fhir:definition [ fhir:v "Product FHIR reference (when available from pcmt dependency)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Reference"^^xsd:anyURI ;
+           fhir:l fhir:Reference
+         ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

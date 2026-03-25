@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "Stabilized Yellow Fever Vaccine"
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturer4ce2190fca5ae4fbb2ce66bf52affe15"
+  },
+  "doseQuantity": {
+    "value": 20,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "YellowFever"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "Ampoule"
+      }
+    ]
+  }
+}

@@ -1,0 +1,941 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBAPI> a fhir:StructureDefinition ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PreQualDBAPI"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "extensions" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition PreQualDBAPI</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI\" title=\"WHO Vaccine PreQual DB (API).  #xA;Logical model for the WHO PreQual DB as provided by the backend API at:#xA;     https://extranet.who.int/prequal/vaccines/prequalified-vaccines#xA;This model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.#xA;#xA;Key fields from the API (FinishedVaccineProducts):#xA;  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)#xA;  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)#xA;  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)#xA;  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification#xA;  ProductDetails.AssessmentProcedure - Assessment procedure code#xA;  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address#xA;  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)#xA;  ProductDetails.PharmaceuticalForm - Pharmaceutical form details#xA;  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses#xA;  ProductDetails.NRADetails - Responsible NRA with ID, name, address#xA;  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names#xA;  ProductDetails.StorageDetails - Storage temperature and shelf life#xA;  ProductDetails.Status - Prequalification status code\">PreQualDBAPI</a><a name=\"PreQualDBAPI\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/types.html#Base\">Base</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">WHO Vaccine PreQual DB (API)<br/><span style=\"font-weight:bold\">Instances of this logical model can be the target of a Reference</span></td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.productId\" title=\"Vaccine Product ID (authoritative)\">productId</a><a name=\"PreQualDBAPI.productId\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine Product ID (authoritative)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.productName\" title=\"Product reference name (e.g. FVP-P-447)\">productName</a><a name=\"PreQualDBAPI.productName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Product reference name (e.g. FVP-P-447)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.productType\" title=\"Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)\">productType</a><a name=\"PreQualDBAPI.productType\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.dateOfPrequal\" title=\"Date of prequalification acceptance\">dateOfPrequal</a><a name=\"PreQualDBAPI.dateOfPrequal\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Date of prequalification acceptance</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.assessmentProcedure\" title=\"Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)\">assessmentProcedure</a><a name=\"PreQualDBAPI.assessmentProcedure\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.status\" title=\"Product status code from PreQualDatabaseMetadata (e.g. Prequalified)\">status</a><a name=\"PreQualDBAPI.status\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Product status code from PreQualDatabaseMetadata (e.g. Prequalified)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.pharmaceuticalForm\" title=\"Pharmaceutical form code from PreQualDatabaseMetadata\">pharmaceuticalForm</a><a name=\"PreQualDBAPI.pharmaceuticalForm\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Pharmaceutical form code from PreQualDatabaseMetadata</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.presentation\" title=\"Presentation (e.g. Vial, Ampoule)\">presentation</a><a name=\"PreQualDBAPI.presentation\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#CodeableConcept\">CodeableConcept</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Presentation (e.g. Vial, Ampoule)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.numDoses\" title=\"Number of doses per primary container\">numDoses</a><a name=\"PreQualDBAPI.numDoses\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#decimal\">decimal</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Number of doses per primary container</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.vaccineFullName\" title=\"Vaccine full name\">vaccineFullName</a><a name=\"PreQualDBAPI.vaccineFullName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine full name</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.vaccineAbbreviatedName\" title=\"Vaccine abbreviated name\">vaccineAbbreviatedName</a><a name=\"PreQualDBAPI.vaccineAbbreviatedName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine abbreviated name</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.vaccineCommercialName\" title=\"Vaccine commercial name\">vaccineCommercialName</a><a name=\"PreQualDBAPI.vaccineCommercialName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine commercial name</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.vaccineTypeId\" title=\"Vaccine type ID\">vaccineTypeId</a><a name=\"PreQualDBAPI.vaccineTypeId\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine type ID</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.routeOfAdministration\" title=\"Route of administration code from PreQualDatabaseMetadata\">routeOfAdministration</a><a name=\"PreQualDBAPI.routeOfAdministration\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#code\">code</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Route of administration code from PreQualDatabaseMetadata</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.applicantId\" title=\"Applicant/manufacturer organization ID (may be absent if not yet assigned)\">applicantId</a><a name=\"PreQualDBAPI.applicantId\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Applicant/manufacturer organization ID (may be absent if not yet assigned)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.applicantName\" title=\"Applicant/manufacturer organization name (always present from API data)\">applicantName</a><a name=\"PreQualDBAPI.applicantName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Applicant/manufacturer organization name (always present from API data)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.applicantAddress\" title=\"Applicant organization address\">applicantAddress</a><a name=\"PreQualDBAPI.applicantAddress\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Address\">Address</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Applicant organization address</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_datatype.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.nraId\" title=\"NRA organization ID (may be absent if not yet assigned)\">nraId</a><a name=\"PreQualDBAPI.nraId\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#Identifier\">Identifier</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">NRA organization ID (may be absent if not yet assigned)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.nraName\" title=\"Responsible NRA name (always present from API data)\">nraName</a><a name=\"PreQualDBAPI.nraName\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Responsible NRA name (always present from API data)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.nraCountry\" title=\"NRA country\">nraCountry</a><a name=\"PreQualDBAPI.nraCountry\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">NRA country</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.shelfLife\" title=\"Shelf life (e.g. 24 months)\">shelfLife</a><a name=\"PreQualDBAPI.shelfLife\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Shelf life (e.g. 24 months)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.storageTemperature\" title=\"Storage temperature (e.g. 2 - 8°C)\">storageTemperature</a><a name=\"PreQualDBAPI.storageTemperature\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Storage temperature (e.g. 2 - 8°C)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.diluent\" title=\"Diluent information\">diluent</a><a name=\"PreQualDBAPI.diluent\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Diluent information</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.lastPublishingDate\" title=\"Last publishing date\">lastPublishingDate</a><a name=\"PreQualDBAPI.lastPublishingDate\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#dateTime\">dateTime</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Last publishing date</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.publishingRemarks\" title=\"Publishing remarks\">publishingRemarks</a><a name=\"PreQualDBAPI.publishingRemarks\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Publishing remarks</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.preservative\" title=\"Preservative name (e.g. Thiomersal)\">preservative</a><a name=\"PreQualDBAPI.preservative\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Preservative name (e.g. Thiomersal)</td></tr>#xD;\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_primitive.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Primitive Data Type\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.preservativeConcentration\" title=\"Preservative concentration (e.g. 0.01%)\">preservativeConcentration</a><a name=\"PreQualDBAPI.preservativeConcentration\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/datatypes.html#string\">string</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Preservative concentration (e.g. 0.01%)</td></tr>#xD;\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:extension ( [
+     fhir:url [
+       fhir:v "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics>
+     ] ;
+     fhir:value [
+       a fhir:Code ;
+       fhir:v "can-be-target"
+     ]
+  ] ) ; # 
+  fhir:url [
+     fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBAPI"^^xsd:anyURI ;
+     fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBAPI>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PreQualDBAPI"] ; # 
+  fhir:title [ fhir:v "WHO Vaccine PreQual DB (API)"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-11T13:44:05+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "WHO Vaccine PreQual DB (API).  \nLogical model for the WHO PreQual DB as provided by the backend API at:\n     https://extranet.who.int/prequal/vaccines/prequalified-vaccines\nThis model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.\n\nKey fields from the API (FinishedVaccineProducts):\n  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)\n  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)\n  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)\n  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification\n  ProductDetails.AssessmentProcedure - Assessment procedure code\n  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address\n  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)\n  ProductDetails.PharmaceuticalForm - Pharmaceutical form details\n  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses\n  ProductDetails.NRADetails - Responsible NRA with ID, name, address\n  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names\n  ProductDetails.StorageDetails - Storage temperature and shelf life\n  ProductDetails.Status - Prequalification status code"] ; # 
+  fhir:fhirVersion [ fhir:v "5.0.0"] ; # 
+  fhir:mapping ( [
+     fhir:identity [ fhir:v "rim" ] ;
+     fhir:uri [
+       fhir:v "http://hl7.org/v3"^^xsd:anyURI ;
+       fhir:l <http://hl7.org/v3>
+     ] ;
+     fhir:name [ fhir:v "RIM Mapping" ]
+  ] ) ; # 
+  fhir:kind [ fhir:v "logical"] ; # 
+  fhir:abstract [ fhir:v false] ; # 
+  fhir:type [
+     fhir:v "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBAPI"^^xsd:anyURI ;
+     fhir:l <http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBAPI>
+  ] ; # 
+  fhir:baseDefinition [
+     fhir:v "http://hl7.org/fhir/StructureDefinition/Base"^^xsd:anyURI ;
+     fhir:l <http://hl7.org/fhir/StructureDefinition/Base>
+  ] ; # 
+  fhir:derivation [ fhir:v "specialization"] ; # 
+  fhir:snapshot [
+     fhir:extension ( [
+       fhir:url [
+         fhir:v "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version"^^xsd:anyURI ;
+         fhir:l <http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version>
+       ] ;
+       fhir:value [
+         a fhir:String ;
+         fhir:v "5.0.0"
+       ]
+     ] ) ;
+     fhir:element ( [
+       fhir:id [ fhir:v "PreQualDBAPI" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI" ] ;
+       fhir:short [ fhir:v "WHO Vaccine PreQual DB (API)" ] ;
+       fhir:definition [ fhir:v "WHO Vaccine PreQual DB (API).  \nLogical model for the WHO PreQual DB as provided by the backend API at:\n     https://extranet.who.int/prequal/vaccines/prequalified-vaccines\nThis model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.\n\nKey fields from the API (FinishedVaccineProducts):\n  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)\n  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)\n  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)\n  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification\n  ProductDetails.AssessmentProcedure - Assessment procedure code\n  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address\n  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)\n  ProductDetails.PharmaceuticalForm - Pharmaceutical form details\n  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses\n  ProductDetails.NRADetails - Responsible NRA with ID, name, address\n  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names\n  ProductDetails.StorageDetails - Storage temperature and shelf life\n  ProductDetails.Status - Prequalification status code" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "*" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "Base" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "*" ]
+       ] ;
+       fhir:isModifier [ fhir:v false ] ;
+       fhir:mapping ( [
+         fhir:identity [ fhir:v "rim" ] ;
+         fhir:map [ fhir:v "n/a" ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.productId" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.productId" ] ;
+       fhir:short [ fhir:v "Vaccine Product ID (authoritative)" ] ;
+       fhir:definition [ fhir:v "Vaccine Product ID (authoritative)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.productId" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.productName" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.productName" ] ;
+       fhir:short [ fhir:v "Product reference name (e.g. FVP-P-447)" ] ;
+       fhir:definition [ fhir:v "Product reference name (e.g. FVP-P-447)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.productName" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.productType" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.productType" ] ;
+       fhir:short [ fhir:v "Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)" ] ;
+       fhir:definition [ fhir:v "Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.productType" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.dateOfPrequal" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.dateOfPrequal" ] ;
+       fhir:short [ fhir:v "Date of prequalification acceptance" ] ;
+       fhir:definition [ fhir:v "Date of prequalification acceptance" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.dateOfPrequal" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.assessmentProcedure" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.assessmentProcedure" ] ;
+       fhir:short [ fhir:v "Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)" ] ;
+       fhir:definition [ fhir:v "Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.assessmentProcedure" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.status" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.status" ] ;
+       fhir:short [ fhir:v "Product status code from PreQualDatabaseMetadata (e.g. Prequalified)" ] ;
+       fhir:definition [ fhir:v "Product status code from PreQualDatabaseMetadata (e.g. Prequalified)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.status" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.pharmaceuticalForm" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.pharmaceuticalForm" ] ;
+       fhir:short [ fhir:v "Pharmaceutical form code from PreQualDatabaseMetadata" ] ;
+       fhir:definition [ fhir:v "Pharmaceutical form code from PreQualDatabaseMetadata" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.pharmaceuticalForm" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.presentation" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.presentation" ] ;
+       fhir:short [ fhir:v "Presentation (e.g. Vial, Ampoule)" ] ;
+       fhir:definition [ fhir:v "Presentation (e.g. Vial, Ampoule)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.presentation" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.numDoses" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.numDoses" ] ;
+       fhir:short [ fhir:v "Number of doses per primary container" ] ;
+       fhir:definition [ fhir:v "Number of doses per primary container" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.numDoses" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.vaccineFullName" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.vaccineFullName" ] ;
+       fhir:short [ fhir:v "Vaccine full name" ] ;
+       fhir:definition [ fhir:v "Vaccine full name" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.vaccineFullName" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.vaccineAbbreviatedName" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.vaccineAbbreviatedName" ] ;
+       fhir:short [ fhir:v "Vaccine abbreviated name" ] ;
+       fhir:definition [ fhir:v "Vaccine abbreviated name" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.vaccineAbbreviatedName" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.vaccineCommercialName" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.vaccineCommercialName" ] ;
+       fhir:short [ fhir:v "Vaccine commercial name" ] ;
+       fhir:definition [ fhir:v "Vaccine commercial name" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.vaccineCommercialName" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.vaccineTypeId" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.vaccineTypeId" ] ;
+       fhir:short [ fhir:v "Vaccine type ID" ] ;
+       fhir:definition [ fhir:v "Vaccine type ID" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.vaccineTypeId" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.routeOfAdministration" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.routeOfAdministration" ] ;
+       fhir:short [ fhir:v "Route of administration code from PreQualDatabaseMetadata" ] ;
+       fhir:definition [ fhir:v "Route of administration code from PreQualDatabaseMetadata" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.routeOfAdministration" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.applicantId" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.applicantId" ] ;
+       fhir:short [ fhir:v "Applicant/manufacturer organization ID (may be absent if not yet assigned)" ] ;
+       fhir:definition [ fhir:v "Applicant/manufacturer organization ID (may be absent if not yet assigned)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.applicantId" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.applicantName" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.applicantName" ] ;
+       fhir:short [ fhir:v "Applicant/manufacturer organization name (always present from API data)" ] ;
+       fhir:definition [ fhir:v "Applicant/manufacturer organization name (always present from API data)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.applicantName" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.applicantAddress" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.applicantAddress" ] ;
+       fhir:short [ fhir:v "Applicant organization address" ] ;
+       fhir:definition [ fhir:v "Applicant organization address" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.applicantAddress" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Address"^^xsd:anyURI ;
+           fhir:l fhir:Address
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.nraId" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.nraId" ] ;
+       fhir:short [ fhir:v "NRA organization ID (may be absent if not yet assigned)" ] ;
+       fhir:definition [ fhir:v "NRA organization ID (may be absent if not yet assigned)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.nraId" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.nraName" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.nraName" ] ;
+       fhir:short [ fhir:v "Responsible NRA name (always present from API data)" ] ;
+       fhir:definition [ fhir:v "Responsible NRA name (always present from API data)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.nraName" ] ;
+         fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.nraCountry" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.nraCountry" ] ;
+       fhir:short [ fhir:v "NRA country" ] ;
+       fhir:definition [ fhir:v "NRA country" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.nraCountry" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.shelfLife" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.shelfLife" ] ;
+       fhir:short [ fhir:v "Shelf life (e.g. 24 months)" ] ;
+       fhir:definition [ fhir:v "Shelf life (e.g. 24 months)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.shelfLife" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.storageTemperature" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.storageTemperature" ] ;
+       fhir:short [ fhir:v "Storage temperature (e.g. 2 - 8°C)" ] ;
+       fhir:definition [ fhir:v "Storage temperature (e.g. 2 - 8°C)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.storageTemperature" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.diluent" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.diluent" ] ;
+       fhir:short [ fhir:v "Diluent information" ] ;
+       fhir:definition [ fhir:v "Diluent information" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.diluent" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.lastPublishingDate" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.lastPublishingDate" ] ;
+       fhir:short [ fhir:v "Last publishing date" ] ;
+       fhir:definition [ fhir:v "Last publishing date" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.lastPublishingDate" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.publishingRemarks" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.publishingRemarks" ] ;
+       fhir:short [ fhir:v "Publishing remarks" ] ;
+       fhir:definition [ fhir:v "Publishing remarks" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.publishingRemarks" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.preservative" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.preservative" ] ;
+       fhir:short [ fhir:v "Preservative name (e.g. Thiomersal)" ] ;
+       fhir:definition [ fhir:v "Preservative name (e.g. Thiomersal)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.preservative" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.preservativeConcentration" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.preservativeConcentration" ] ;
+       fhir:short [ fhir:v "Preservative concentration (e.g. 0.01%)" ] ;
+       fhir:definition [ fhir:v "Preservative concentration (e.g. 0.01%)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:base [
+         fhir:path [ fhir:v "PreQualDBAPI.preservativeConcentration" ] ;
+         fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+         fhir:max [ fhir:v "1" ]
+       ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] )
+  ] ; # 
+  fhir:differential [
+     fhir:element ( [
+       fhir:id [ fhir:v "PreQualDBAPI" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI" ] ;
+       fhir:short [ fhir:v "WHO Vaccine PreQual DB (API)" ] ;
+       fhir:definition [ fhir:v "WHO Vaccine PreQual DB (API).  \nLogical model for the WHO PreQual DB as provided by the backend API at:\n     https://extranet.who.int/prequal/vaccines/prequalified-vaccines\nThis model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.\n\nKey fields from the API (FinishedVaccineProducts):\n  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)\n  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)\n  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)\n  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification\n  ProductDetails.AssessmentProcedure - Assessment procedure code\n  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address\n  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)\n  ProductDetails.PharmaceuticalForm - Pharmaceutical form details\n  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses\n  ProductDetails.NRADetails - Responsible NRA with ID, name, address\n  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names\n  ProductDetails.StorageDetails - Storage temperature and shelf life\n  ProductDetails.Status - Prequalification status code" ]
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.productId" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.productId" ] ;
+       fhir:short [ fhir:v "Vaccine Product ID (authoritative)" ] ;
+       fhir:definition [ fhir:v "Vaccine Product ID (authoritative)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.productName" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.productName" ] ;
+       fhir:short [ fhir:v "Product reference name (e.g. FVP-P-447)" ] ;
+       fhir:definition [ fhir:v "Product reference name (e.g. FVP-P-447)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.productType" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.productType" ] ;
+       fhir:short [ fhir:v "Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)" ] ;
+       fhir:definition [ fhir:v "Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.dateOfPrequal" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.dateOfPrequal" ] ;
+       fhir:short [ fhir:v "Date of prequalification acceptance" ] ;
+       fhir:definition [ fhir:v "Date of prequalification acceptance" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.assessmentProcedure" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.assessmentProcedure" ] ;
+       fhir:short [ fhir:v "Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)" ] ;
+       fhir:definition [ fhir:v "Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.status" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.status" ] ;
+       fhir:short [ fhir:v "Product status code from PreQualDatabaseMetadata (e.g. Prequalified)" ] ;
+       fhir:definition [ fhir:v "Product status code from PreQualDatabaseMetadata (e.g. Prequalified)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.pharmaceuticalForm" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.pharmaceuticalForm" ] ;
+       fhir:short [ fhir:v "Pharmaceutical form code from PreQualDatabaseMetadata" ] ;
+       fhir:definition [ fhir:v "Pharmaceutical form code from PreQualDatabaseMetadata" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.presentation" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.presentation" ] ;
+       fhir:short [ fhir:v "Presentation (e.g. Vial, Ampoule)" ] ;
+       fhir:definition [ fhir:v "Presentation (e.g. Vial, Ampoule)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "CodeableConcept"^^xsd:anyURI ;
+           fhir:l fhir:CodeableConcept
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.numDoses" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.numDoses" ] ;
+       fhir:short [ fhir:v "Number of doses per primary container" ] ;
+       fhir:definition [ fhir:v "Number of doses per primary container" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "decimal"^^xsd:anyURI ;
+           fhir:l fhir:decimal
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.vaccineFullName" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.vaccineFullName" ] ;
+       fhir:short [ fhir:v "Vaccine full name" ] ;
+       fhir:definition [ fhir:v "Vaccine full name" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.vaccineAbbreviatedName" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.vaccineAbbreviatedName" ] ;
+       fhir:short [ fhir:v "Vaccine abbreviated name" ] ;
+       fhir:definition [ fhir:v "Vaccine abbreviated name" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.vaccineCommercialName" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.vaccineCommercialName" ] ;
+       fhir:short [ fhir:v "Vaccine commercial name" ] ;
+       fhir:definition [ fhir:v "Vaccine commercial name" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.vaccineTypeId" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.vaccineTypeId" ] ;
+       fhir:short [ fhir:v "Vaccine type ID" ] ;
+       fhir:definition [ fhir:v "Vaccine type ID" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.routeOfAdministration" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.routeOfAdministration" ] ;
+       fhir:short [ fhir:v "Route of administration code from PreQualDatabaseMetadata" ] ;
+       fhir:definition [ fhir:v "Route of administration code from PreQualDatabaseMetadata" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "code"^^xsd:anyURI ;
+           fhir:l fhir:code
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.applicantId" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.applicantId" ] ;
+       fhir:short [ fhir:v "Applicant/manufacturer organization ID (may be absent if not yet assigned)" ] ;
+       fhir:definition [ fhir:v "Applicant/manufacturer organization ID (may be absent if not yet assigned)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.applicantName" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.applicantName" ] ;
+       fhir:short [ fhir:v "Applicant/manufacturer organization name (always present from API data)" ] ;
+       fhir:definition [ fhir:v "Applicant/manufacturer organization name (always present from API data)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.applicantAddress" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.applicantAddress" ] ;
+       fhir:short [ fhir:v "Applicant organization address" ] ;
+       fhir:definition [ fhir:v "Applicant organization address" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Address"^^xsd:anyURI ;
+           fhir:l fhir:Address
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.nraId" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.nraId" ] ;
+       fhir:short [ fhir:v "NRA organization ID (may be absent if not yet assigned)" ] ;
+       fhir:definition [ fhir:v "NRA organization ID (may be absent if not yet assigned)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "Identifier"^^xsd:anyURI ;
+           fhir:l fhir:Identifier
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.nraName" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.nraName" ] ;
+       fhir:short [ fhir:v "Responsible NRA name (always present from API data)" ] ;
+       fhir:definition [ fhir:v "Responsible NRA name (always present from API data)" ] ;
+       fhir:min [ fhir:v "1"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.nraCountry" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.nraCountry" ] ;
+       fhir:short [ fhir:v "NRA country" ] ;
+       fhir:definition [ fhir:v "NRA country" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.shelfLife" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.shelfLife" ] ;
+       fhir:short [ fhir:v "Shelf life (e.g. 24 months)" ] ;
+       fhir:definition [ fhir:v "Shelf life (e.g. 24 months)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.storageTemperature" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.storageTemperature" ] ;
+       fhir:short [ fhir:v "Storage temperature (e.g. 2 - 8°C)" ] ;
+       fhir:definition [ fhir:v "Storage temperature (e.g. 2 - 8°C)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.diluent" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.diluent" ] ;
+       fhir:short [ fhir:v "Diluent information" ] ;
+       fhir:definition [ fhir:v "Diluent information" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.lastPublishingDate" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.lastPublishingDate" ] ;
+       fhir:short [ fhir:v "Last publishing date" ] ;
+       fhir:definition [ fhir:v "Last publishing date" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "dateTime"^^xsd:anyURI ;
+           fhir:l fhir:dateTime
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.publishingRemarks" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.publishingRemarks" ] ;
+       fhir:short [ fhir:v "Publishing remarks" ] ;
+       fhir:definition [ fhir:v "Publishing remarks" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.preservative" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.preservative" ] ;
+       fhir:short [ fhir:v "Preservative name (e.g. Thiomersal)" ] ;
+       fhir:definition [ fhir:v "Preservative name (e.g. Thiomersal)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] [
+       fhir:id [ fhir:v "PreQualDBAPI.preservativeConcentration" ] ;
+       fhir:path [ fhir:v "PreQualDBAPI.preservativeConcentration" ] ;
+       fhir:short [ fhir:v "Preservative concentration (e.g. 0.01%)" ] ;
+       fhir:definition [ fhir:v "Preservative concentration (e.g. 0.01%)" ] ;
+       fhir:min [ fhir:v "0"^^xsd:nonNegativeInteger ] ;
+       fhir:max [ fhir:v "1" ] ;
+       fhir:type ( [
+         fhir:code [
+           fhir:v "string"^^xsd:anyURI ;
+           fhir:l fhir:string
+         ]
+       ] )
+     ] )
+  ] . # 
+
+# -------------------------------------------------------------------------------------
+

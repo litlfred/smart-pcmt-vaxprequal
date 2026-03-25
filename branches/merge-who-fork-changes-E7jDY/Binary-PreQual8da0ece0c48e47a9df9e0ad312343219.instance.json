@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holder06fc63d243e39d8519007322a0fddc52"
+  },
+  "validityPeriod": {
+    "start": "2023-10-09"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/Covid19Product8da0ece0c48e47a9df9e0ad312343219"
+    }
+  ]
+}

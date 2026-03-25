@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holder6237d292dd8018497991076b85cae399"
+  },
+  "validityPeriod": {
+    "start": "2017-05-08"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/DiphtheriaTetanusPertussProduct2b5b9b19671826d92dff00f622588487"
+    }
+  ]
+}

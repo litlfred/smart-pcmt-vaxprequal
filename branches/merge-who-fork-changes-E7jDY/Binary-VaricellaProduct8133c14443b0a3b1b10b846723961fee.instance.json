@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "SKYVaricella Inj."
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturer00bfdffd8d8dbe60aabda0191bb814ec"
+  },
+  "doseQuantity": {
+    "value": 1,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "Varicella"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "Twovialsetactiveexcipient"
+      }
+    ]
+  }
+}

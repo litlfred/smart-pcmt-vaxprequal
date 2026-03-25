@@ -1,0 +1,116 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PreQualDatabaseMetadata"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PreQualDatabaseMetadata</b></p><a name=\"PreQualDatabaseMetadata\"> </a><a name=\"hcPreQualDatabaseMetadata\"> </a><p>This case-sensitive code system <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">FinishedVaccineProduct<a name=\"PreQualDatabaseMetadata-FinishedVaccineProduct\"> </a></td><td>Finished Vaccine Product</td></tr><tr><td style=\"white-space:nowrap\">PrequalificationStandard<a name=\"PreQualDatabaseMetadata-PrequalificationStandard\"> </a></td><td>Prequalification - Standard</td></tr><tr><td style=\"white-space:nowrap\">Prequalified<a name=\"PreQualDatabaseMetadata-Prequalified\"> </a></td><td>Prequalified</td></tr><tr><td style=\"white-space:nowrap\">WithdrawnWasPrequalified<a name=\"PreQualDatabaseMetadata-WithdrawnWasPrequalified\"> </a></td><td>Withdrawn: Was Prequalified</td></tr><tr><td style=\"white-space:nowrap\">LiquidReadytouse<a name=\"PreQualDatabaseMetadata-LiquidReadytouse\"> </a></td><td>Liquid: Ready to use</td></tr><tr><td style=\"white-space:nowrap\">Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse<a name=\"PreQualDatabaseMetadata-Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse\"> </a></td><td>Lyophilised active component to be reconstituted with excipient diluent before use</td></tr><tr><td style=\"white-space:nowrap\">Intradermal<a name=\"PreQualDatabaseMetadata-Intradermal\"> </a></td><td>Intradermal</td></tr><tr><td style=\"white-space:nowrap\">Intramuscular<a name=\"PreQualDatabaseMetadata-Intramuscular\"> </a></td><td>Intramuscular</td></tr><tr><td style=\"white-space:nowrap\">Intramuscularorsubcutaneous<a name=\"PreQualDatabaseMetadata-Intramuscularorsubcutaneous\"> </a></td><td>Intramuscular or subcutaneous</td></tr><tr><td style=\"white-space:nowrap\">Oral<a name=\"PreQualDatabaseMetadata-Oral\"> </a></td><td>Oral</td></tr><tr><td style=\"white-space:nowrap\">Subcutaneous<a name=\"PreQualDatabaseMetadata-Subcutaneous\"> </a></td><td>Subcutaneous</td></tr><tr><td style=\"white-space:nowrap\">Secondary<a name=\"PreQualDatabaseMetadata-Secondary\"> </a></td><td>Secondary</td></tr><tr><td style=\"white-space:nowrap\">ShippingContainer<a name=\"PreQualDatabaseMetadata-ShippingContainer\"> </a></td><td>Shipping Container</td></tr><tr><td style=\"white-space:nowrap\">Tertiary<a name=\"PreQualDatabaseMetadata-Tertiary\"> </a></td><td>Tertiary</td></tr><tr><td style=\"white-space:nowrap\">ActiveVaccine<a name=\"PreQualDatabaseMetadata-ActiveVaccine\"> </a></td><td>Active (Vaccine)</td></tr><tr><td style=\"white-space:nowrap\">Diluent<a name=\"PreQualDatabaseMetadata-Diluent\"> </a></td><td>Diluent</td></tr><tr><td style=\"white-space:nowrap\">Photo<a name=\"PreQualDatabaseMetadata-Photo\"> </a></td><td>Photo</td></tr><tr><td style=\"white-space:nowrap\">PhotoMainImage<a name=\"PreQualDatabaseMetadata-PhotoMainImage\"> </a></td><td>Photo-Main Image</td></tr><tr><td style=\"white-space:nowrap\">ProductInsert<a name=\"PreQualDatabaseMetadata-ProductInsert\"> </a></td><td>Product Insert</td></tr><tr><td style=\"white-space:nowrap\">VSPAR<a name=\"PreQualDatabaseMetadata-VSPAR\"> </a></td><td>VSPAR</td></tr><tr><td style=\"white-space:nowrap\">VaccineGeneralDocument<a name=\"PreQualDatabaseMetadata-VaccineGeneralDocument\"> </a></td><td>Vaccine General Document</td></tr><tr><td style=\"white-space:nowrap\">FVPManufacture<a name=\"PreQualDatabaseMetadata-FVPManufacture\"> </a></td><td>FVP Manufacture</td></tr><tr><td style=\"white-space:nowrap\">Accepted<a name=\"PreQualDatabaseMetadata-Accepted\"> </a></td><td>Accepted</td></tr><tr><td style=\"white-space:nowrap\">VxFVP<a name=\"PreQualDatabaseMetadata-VxFVP\"> </a></td><td>Vx FVP</td></tr><tr><td style=\"white-space:nowrap\">Active<a name=\"PreQualDatabaseMetadata-Active\"> </a></td><td>Active</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"^^xsd:anyURI ;
+     fhir:l <http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata>
+  ] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "PreQualDatabaseMetadata"] ; # 
+  fhir:title [ fhir:v "WHO PreQualification Database Metadata"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-03-24T15:01:31+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Coded metadata values from the WHO PreQualification database"] ; # 
+  fhir:caseSensitive [ fhir:v true] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "25"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "FinishedVaccineProduct" ] ;
+     fhir:display [ fhir:v "Finished Vaccine Product" ]
+  ] [
+     fhir:code [ fhir:v "PrequalificationStandard" ] ;
+     fhir:display [ fhir:v "Prequalification - Standard" ]
+  ] [
+     fhir:code [ fhir:v "Prequalified" ] ;
+     fhir:display [ fhir:v "Prequalified" ]
+  ] [
+     fhir:code [ fhir:v "WithdrawnWasPrequalified" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified" ]
+  ] [
+     fhir:code [ fhir:v "LiquidReadytouse" ] ;
+     fhir:display [ fhir:v "Liquid: Ready to use" ]
+  ] [
+     fhir:code [ fhir:v "Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse" ] ;
+     fhir:display [ fhir:v "Lyophilised active component to be reconstituted with excipient diluent before use" ]
+  ] [
+     fhir:code [ fhir:v "Intradermal" ] ;
+     fhir:display [ fhir:v "Intradermal" ]
+  ] [
+     fhir:code [ fhir:v "Intramuscular" ] ;
+     fhir:display [ fhir:v "Intramuscular" ]
+  ] [
+     fhir:code [ fhir:v "Intramuscularorsubcutaneous" ] ;
+     fhir:display [ fhir:v "Intramuscular or subcutaneous" ]
+  ] [
+     fhir:code [ fhir:v "Oral" ] ;
+     fhir:display [ fhir:v "Oral" ]
+  ] [
+     fhir:code [ fhir:v "Subcutaneous" ] ;
+     fhir:display [ fhir:v "Subcutaneous" ]
+  ] [
+     fhir:code [ fhir:v "Secondary" ] ;
+     fhir:display [ fhir:v "Secondary" ]
+  ] [
+     fhir:code [ fhir:v "ShippingContainer" ] ;
+     fhir:display [ fhir:v "Shipping Container" ]
+  ] [
+     fhir:code [ fhir:v "Tertiary" ] ;
+     fhir:display [ fhir:v "Tertiary" ]
+  ] [
+     fhir:code [ fhir:v "ActiveVaccine" ] ;
+     fhir:display [ fhir:v "Active (Vaccine)" ]
+  ] [
+     fhir:code [ fhir:v "Diluent" ] ;
+     fhir:display [ fhir:v "Diluent" ]
+  ] [
+     fhir:code [ fhir:v "Photo" ] ;
+     fhir:display [ fhir:v "Photo" ]
+  ] [
+     fhir:code [ fhir:v "PhotoMainImage" ] ;
+     fhir:display [ fhir:v "Photo-Main Image" ]
+  ] [
+     fhir:code [ fhir:v "ProductInsert" ] ;
+     fhir:display [ fhir:v "Product Insert" ]
+  ] [
+     fhir:code [ fhir:v "VSPAR" ] ;
+     fhir:display [ fhir:v "VSPAR" ]
+  ] [
+     fhir:code [ fhir:v "VaccineGeneralDocument" ] ;
+     fhir:display [ fhir:v "Vaccine General Document" ]
+  ] [
+     fhir:code [ fhir:v "FVPManufacture" ] ;
+     fhir:display [ fhir:v "FVP Manufacture" ]
+  ] [
+     fhir:code [ fhir:v "Accepted" ] ;
+     fhir:display [ fhir:v "Accepted" ]
+  ] [
+     fhir:code [ fhir:v "VxFVP" ] ;
+     fhir:display [ fhir:v "Vx FVP" ]
+  ] [
+     fhir:code [ fhir:v "Active" ] ;
+     fhir:display [ fhir:v "Active" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

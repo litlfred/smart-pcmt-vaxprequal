@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Binary xmlns="http://hl7.org/fhir">
+  <id value="PreQualBulkSupplier0013X0000498p3IQAQ"/>
+  <contentType value="application/fhir+json"/>
+  <data value="ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGNtdC12YXhwcmVxdWFsL1N0cnVjdHVyZURlZmluaXRpb24vUHJlUXVhbEJ1bGtTdXBwbGllciIsCiAgImJ1bGtTdXBwbGllcklkIjogewogICAgInN5c3RlbSI6ICJodHRwczovL2V4dHJhbmV0Lndoby5pbnQvcHJlcXVhbC9hcGkiLAogICAgInZhbHVlIjogIjAwMTNYMDAwMDQ5OHAzSVFBUSIKICB9LAogICJuYW1lIjogIlBUIEJpbyBGYXJtYSAoUGVyc2VybykiCn0K"/>
+</Binary>

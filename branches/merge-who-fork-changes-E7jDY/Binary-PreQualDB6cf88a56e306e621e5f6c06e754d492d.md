@@ -1,0 +1,64 @@
+# PreQualDB6cf88a56e306e621e5f6c06e754d492d - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDB6cf88a56e306e621e5f6c06e754d492d**
+
+## Binary: PreQualDB6cf88a56e306e621e5f6c06e754d492d
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2021-06-18",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "Rotavirusliveattenuated",
+        "display": "Rotavirus (live, attenuated)"
+      }
+    ]
+  },
+  "commercialName": "ROTAVAC 5D®",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Bharat Biotech International Limited"
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "6cf88a56e306e621e5f6c06e754d492d"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer23f34f1a92ebdeb8c55ddd34c31ad564"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/RotavirusliveattenuatedProduct6cf88a56e306e621e5f6c06e754d492d"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

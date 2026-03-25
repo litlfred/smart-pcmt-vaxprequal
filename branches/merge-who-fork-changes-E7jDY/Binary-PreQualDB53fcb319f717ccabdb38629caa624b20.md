@@ -1,0 +1,64 @@
+# PreQualDB53fcb319f717ccabdb38629caa624b20 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDB53fcb319f717ccabdb38629caa624b20**
+
+## Binary: PreQualDB53fcb319f717ccabdb38629caa624b20
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2019-02-14",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "Rotavirus",
+        "display": "Rotavirus"
+      }
+    ]
+  },
+  "commercialName": "Rotarix",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "PlasticTube",
+        "display": "Plastic Tube"
+      }
+    ]
+  },
+  "numDoses": 5,
+  "manufacturer": {
+    "text": "GlaxoSmithKline Biologicals SA"
+  },
+  "responsibleNRA": {
+    "text": "Federal Agency for Medicines and Health Products"
+  },
+  "index": {
+    "value": "53fcb319f717ccabdb38629caa624b20"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer214b31a3bf30c1816fab7b3f39ca25c9"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holdere0e3ed9114ce62feea705c24aceb2ee2"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/RotavirusProduct53fcb319f717ccabdb38629caa624b20"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

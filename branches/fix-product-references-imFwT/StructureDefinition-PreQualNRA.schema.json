@@ -1,0 +1,62 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/base/StructureDefinition-PreQualNRA.schema.json",
+  "title": "WHO PreQual NRA",
+  "description": "Logical model for the responsible National Regulatory Authority (NRA)\nfrom the WHO PreQual API (ProductDetails.NRADetails).",
+  "type": "object",
+  "properties": {
+    "resourceType": {
+      "type": "string",
+      "const": "PreQualNRA",
+      "description": "Resource type identifier for PreQualNRA logical model"
+    },
+    "nraId": {
+      "type": "object",
+      "description": "NRA organization ID"
+    },
+    "name": {
+      "type": "string",
+      "description": "Organization name"
+    },
+    "addressLine1": {
+      "type": "string",
+      "description": "Address line 1"
+    },
+    "country": {
+      "type": "string",
+      "description": "Country"
+    },
+    "website": {
+      "type": "string",
+      "description": "Website URL"
+    },
+    "organizationReference": {
+      "type": "object",
+      "description": "FHIR Organization reference"
+    }
+  },
+  "required": [
+    "resourceType",
+    "name",
+    "organizationReference"
+  ],
+  "allOf": [
+    {
+      "$ref": "./StructureDefinition-FHIRSchemaBase.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "resourceDefinition": {
+          "type": "string",
+          "format": "uri",
+          "const": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA"
+        },
+        "fhir:parent": {
+          "type": "string",
+          "const": "http://hl7.org/fhir/StructureDefinition/Base"
+        }
+      }
+    }
+  ]
+}

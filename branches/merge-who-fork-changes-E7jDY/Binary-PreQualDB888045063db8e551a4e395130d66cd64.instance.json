@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2025-01-09",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "InfluenzaseasonalTrivale",
+        "display": "Influenza, seasonal (Trivalent)"
+      }
+    ]
+  },
+  "commercialName": "FLU-M®",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "Saint Petersburg Scientific Research Institute of Vaccines and Serums of the FMBA of Russia"
+  },
+  "responsibleNRA": {
+    "text": "Centro para el Control Estatal de la Calidad de los Medicamentos"
+  },
+  "index": {
+    "value": "888045063db8e551a4e395130d66cd64"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer0a715f820926b2464f7113168d4f247c"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderce0f4cd586d4fa26a21297b87993de9a"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/InfluenzaseasonalTrivaleProduct888045063db8e551a4e395130d66cd64"
+  }
+}

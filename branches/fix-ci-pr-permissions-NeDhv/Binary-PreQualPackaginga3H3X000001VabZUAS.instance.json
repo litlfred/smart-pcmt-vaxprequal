@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "description": "Box of 36 cartons of 50 ampoules (1800 ampoules/1800 doses) [Dimensions 60x48x41 cm]",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VabZUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "volume": "60 x 48 x 41 cm",
+  "totalDoses": "1800",
+  "totalContainers": "1800"
+}

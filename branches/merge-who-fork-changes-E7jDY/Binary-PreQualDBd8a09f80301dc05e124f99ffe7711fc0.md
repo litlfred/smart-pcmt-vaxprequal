@@ -1,0 +1,64 @@
+# PreQualDBd8a09f80301dc05e124f99ffe7711fc0 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDBd8a09f80301dc05e124f99ffe7711fc0**
+
+## Binary: PreQualDBd8a09f80301dc05e124f99ffe7711fc0
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "1987-01-01",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "YellowFever",
+        "display": "Yellow Fever"
+      }
+    ]
+  },
+  "commercialName": "STAMARIL",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "VialAmpoule",
+        "display": "Vial + Ampoule"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "Sanofi Pasteur"
+  },
+  "responsibleNRA": {
+    "text": "Agence nationale de sécurité du médicament et des produits de santé"
+  },
+  "index": {
+    "value": "d8a09f80301dc05e124f99ffe7711fc0"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturere6f45c0f69a7b4cecd7421c4515ea3c5"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holdera1ed2fb3196a19ac1010392bdc5e8646"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/YellowFeverProductd8a09f80301dc05e124f99ffe7711fc0"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

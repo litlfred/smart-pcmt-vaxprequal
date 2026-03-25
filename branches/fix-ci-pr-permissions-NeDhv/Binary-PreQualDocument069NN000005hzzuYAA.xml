@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Binary xmlns="http://hl7.org/fhir">
+  <id value="PreQualDocument069NN000005hzzuYAA"/>
+  <contentType value="application/fhir+json"/>
+  <data value="ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGNtdC12YXhwcmVxdWFsL1N0cnVjdHVyZURlZmluaXRpb24vUHJlUXVhbERvY3VtZW50RGV0YWlsIiwKICAiZG9jdW1lbnRJZCI6IHsKICAgICJzeXN0ZW0iOiAiaHR0cHM6Ly9leHRyYW5ldC53aG8uaW50L3ByZXF1YWwvYXBpIiwKICAgICJ2YWx1ZSI6ICIwNjlOTjAwMDAwNWh6enVZQUEiCiAgfSwKICAiZG9jdW1lbnROYW1lIjogIkdlbmVyYWwtcHFfNjNfUm90YXZpcnVzXzFkb3NlX0dTS19wbGFzdGljX3R1YmVfaW5zdHJ1Y3Rpb25fc2hlZXQiLAogICJkb2N1bWVudFR5cGUiOiAiVmFjY2luZUdlbmVyYWxEb2N1bWVudCIsCiAgInZlcnNpb25JZCI6ICIwNjhOTjAwMDAwNXlqS1FZQVkiLAogICJmaWxlRXh0ZW5zaW9uIjogInBkZiIsCiAgImZpbGVUeXBlIjogIlBERiIKfQo="/>
+</Binary>

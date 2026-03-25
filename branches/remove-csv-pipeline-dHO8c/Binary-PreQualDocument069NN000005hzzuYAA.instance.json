@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005hzzuYAA"
+  },
+  "documentName": "General-pq_63_Rotavirus_1dose_GSK_plastic_tube_instruction_sheet",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005yjKQYAY",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

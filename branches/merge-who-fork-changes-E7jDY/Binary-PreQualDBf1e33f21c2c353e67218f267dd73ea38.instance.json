@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2006-09-04",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "Measles",
+        "display": "Measles"
+      }
+    ]
+  },
+  "commercialName": "Measles vaccine",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 20,
+  "manufacturer": {
+    "text": "PT Bio Farma (Persero)"
+  },
+  "responsibleNRA": {
+    "text": "National Agency of Drug and Food Control Indonesia"
+  },
+  "index": {
+    "value": "f1e33f21c2c353e67218f267dd73ea38"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer3ad507e03b3c8420f83f895f7122255f"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder9899e21a11ed6ac7b548ef6171579c60"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/MeaslesProductf1e33f21c2c353e67218f267dd73ea38"
+  }
+}

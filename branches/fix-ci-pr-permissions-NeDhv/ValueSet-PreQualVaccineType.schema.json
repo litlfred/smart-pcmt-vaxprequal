@@ -1,0 +1,45 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.schema.json",
+  "title": "WHO PreQualificaiton VaccineType  Schema",
+  "description": "JSON Schema for WHO PreQualificaiton VaccineType  ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+  "type": "object",
+  "required": [
+    "system",
+    "code"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "system": {
+      "type": "string",
+      "const": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+    },
+    "code": {
+      "type": "string",
+      "enum": [
+        "BCG",
+        "DT",
+        "DTwP",
+        "HepA",
+        "HepB",
+        "JE",
+        "LARV",
+        "M",
+        "MMR",
+        "MR",
+        "Malaria",
+        "TDV",
+        "TT",
+        "YF",
+        "bOPV",
+        "dT",
+        "tOPV"
+      ]
+    }
+  },
+  "narrative": "This schema validates Coding-shaped objects for the WHO PreQualificaiton VaccineType  ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.displays.json",
+  "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualVaccineType",
+  "fhir:version": "0.2.0",
+  "fhir:expansionTimestamp": "2026-03-24T15:03:39+00:00"
+}

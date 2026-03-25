@@ -1,0 +1,64 @@
+# PreQualDBc760d423dd3f53b4b1d83226d36a8f40 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDBc760d423dd3f53b4b1d83226d36a8f40**
+
+## Binary: PreQualDBc760d423dd3f53b4b1d83226d36a8f40
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2017-12-22",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "HepatitisAHumanDiploidCe",
+        "display": "Hepatitis A (Human Diploid Cell), Inactivated (Adult)"
+      }
+    ]
+  },
+  "commercialName": "HEALIVE",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Sinovac Biotech Co. Ltd"
+  },
+  "responsibleNRA": {
+    "text": "National Medical Products Administration"
+  },
+  "index": {
+    "value": "c760d423dd3f53b4b1d83226d36a8f40"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer56d509b36258f1c3e037132496afb0cb"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder6f85b90926148cce1ad5a1fa8afe673a"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/HepatitisAHumanDiploidCeProductc760d423dd3f53b4b1d83226d36a8f40"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

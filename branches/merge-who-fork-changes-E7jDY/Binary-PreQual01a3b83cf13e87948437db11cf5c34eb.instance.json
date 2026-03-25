@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holder8327c2d0eaf7c8d58e6036f3a9aee92d"
+  },
+  "validityPeriod": {
+    "start": "2022-10-14"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/YellowFeverProduct01a3b83cf13e87948437db11cf5c34eb"
+    }
+  ]
+}

@@ -1,0 +1,155 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+  },
+  "@id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-03-24T15:04:50.522122Z",
+  "@graph": [
+    {
+      "id": "#a3K3X000005atRtUAI",
+      "name": "FVP-P-447 (a3K3X000005atRtUAI)"
+    },
+    {
+      "id": "#a3K3X000005atSwUAI",
+      "name": "FVP-P-446 (a3K3X000005atSwUAI)"
+    },
+    {
+      "id": "#a3K3X000006MihsUAC",
+      "name": "FVP-P-62 (a3K3X000006MihsUAC)"
+    },
+    {
+      "id": "#a3K3X000006MihtUAC",
+      "name": "FVP-P-63 (a3K3X000006MihtUAC)"
+    },
+    {
+      "id": "#a3K3X000006MihuUAC",
+      "name": "FVP-P-64 (a3K3X000006MihuUAC)"
+    },
+    {
+      "id": "#a3K3X000006MihvUAC",
+      "name": "FVP-P-65 (a3K3X000006MihvUAC)"
+    },
+    {
+      "id": "#a3K3X000006MihwUAC",
+      "name": "FVP-P-66 (a3K3X000006MihwUAC)"
+    },
+    {
+      "id": "#a3K3X000006MihxUAC",
+      "name": "FVP-P-67 (a3K3X000006MihxUAC)"
+    },
+    {
+      "id": "#a3K3X000006MihyUAC",
+      "name": "FVP-P-68 (a3K3X000006MihyUAC)"
+    },
+    {
+      "id": "#a3K3X000006Mii0UAC",
+      "name": "FVP-P-61 (a3K3X000006Mii0UAC)"
+    },
+    {
+      "id": "#a3K3X000006Mii1UAC",
+      "name": "FVP-P-75 (a3K3X000006Mii1UAC)"
+    },
+    {
+      "id": "#a3K3X000006Mii2UAC",
+      "name": "FVP-P-76 (a3K3X000006Mii2UAC)"
+    },
+    {
+      "id": "#a3K3X000006Mii3UAC",
+      "name": "FVP-P-77 (a3K3X000006Mii3UAC)"
+    },
+    {
+      "id": "#a3K3X000006Mii5UAC",
+      "name": "FVP-P-311 (a3K3X000006Mii5UAC)"
+    },
+    {
+      "id": "#a3K3X000006Mii6UAC",
+      "name": "FVP-P-319 (a3K3X000006Mii6UAC)"
+    },
+    {
+      "id": "#a3K3X000006Mii7UAC",
+      "name": "FVP-P-71 (a3K3X000006Mii7UAC)"
+    },
+    {
+      "id": "#a3K3X000006Mii8UAC",
+      "name": "FVP-P-78 (a3K3X000006Mii8UAC)"
+    },
+    {
+      "id": "#a3K3X000006Mii9UAC",
+      "name": "FVP-P-79 (a3K3X000006Mii9UAC)"
+    },
+    {
+      "id": "#a3K3X000006MiiAUAS",
+      "name": "FVP-P-80 (a3K3X000006MiiAUAS)"
+    },
+    {
+      "id": "#a3K3X000006MiiBUAS",
+      "name": "FVP-P-329 (a3K3X000006MiiBUAS)"
+    },
+    {
+      "id": "#a3K3X000006MiiCUAS",
+      "name": "FVP-P-73 (a3K3X000006MiiCUAS)"
+    },
+    {
+      "id": "#a3K3X000006MiiDUAS",
+      "name": "FVP-P-74 (a3K3X000006MiiDUAS)"
+    },
+    {
+      "id": "#a3K3X000006MiiEUAS",
+      "name": "FVP-P-137 (a3K3X000006MiiEUAS)"
+    },
+    {
+      "id": "#a3K3X000006MiiFUAS",
+      "name": "FVP-P-136 (a3K3X000006MiiFUAS)"
+    },
+    {
+      "id": "#a3K3X000006MiiGUAS",
+      "name": "FVP-P-138 (a3K3X000006MiiGUAS)"
+    },
+    {
+      "id": "#a3K3X000006MiiHUAS",
+      "name": "FVP-P-141 (a3K3X000006MiiHUAS)"
+    },
+    {
+      "id": "#a3K3X000006MiiIUAS",
+      "name": "FVP-P-142 (a3K3X000006MiiIUAS)"
+    },
+    {
+      "id": "#a3K3X000006MiiJUAS",
+      "name": "FVP-P-144 (a3K3X000006MiiJUAS)"
+    },
+    {
+      "id": "#a3K3X000006MiiKUAS",
+      "name": "FVP-P-143 (a3K3X000006MiiKUAS)"
+    },
+    {
+      "id": "#a3K3X000006MiiLUAS",
+      "name": "FVP-P-272 (a3K3X000006MiiLUAS)"
+    },
+    {
+      "id": "#a3K3X000006MiiMUAS",
+      "name": "FVP-P-145 (a3K3X000006MiiMUAS)"
+    },
+    {
+      "id": "#a3K3X000006MiiNUAS",
+      "name": "FVP-P-124 (a3K3X000006MiiNUAS)"
+    },
+    {
+      "id": "#a3K3X000006MiiOUAS",
+      "name": "FVP-P-125 (a3K3X000006MiiOUAS)"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

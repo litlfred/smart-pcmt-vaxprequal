@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005i1aFYAQ"
+  },
+  "documentName": "pq_76_TT_10dose_BB-NCIPD_container_image",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005ykumYAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

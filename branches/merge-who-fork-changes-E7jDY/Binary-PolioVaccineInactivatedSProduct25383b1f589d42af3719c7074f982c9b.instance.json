@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin Strains"
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturereb31bd403f002800b14da9b2662b321c"
+  },
+  "doseQuantity": {
+    "value": 1,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "PolioVaccineInactivatedS"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "Vial"
+      }
+    ]
+  }
+}

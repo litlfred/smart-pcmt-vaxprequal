@@ -1,0 +1,64 @@
+# PreQualDB242d7b0c599da706838dbbdaa4d78d9b - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDB242d7b0c599da706838dbbdaa4d78d9b**
+
+## Binary: PreQualDB242d7b0c599da706838dbbdaa4d78d9b
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2017-08-11",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "cholerainactivatedoral",
+        "display": "cholera: inactivated oral"
+      }
+    ]
+  },
+  "commercialName": "Euvichol-Plus",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "PlasticTube",
+        "display": "Plastic Tube"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "EuBiologics Co., Ltd."
+  },
+  "responsibleNRA": {
+    "text": "Ministry of Food and Drug Safety"
+  },
+  "index": {
+    "value": "242d7b0c599da706838dbbdaa4d78d9b"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturercb2d11a53a6d9504a6a08ab51b9aabe7"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderd4e6bca678dea34fa256538a18200187"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/cholerainactivatedoralProduct242d7b0c599da706838dbbdaa4d78d9b"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

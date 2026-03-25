@@ -1,0 +1,26 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"PreQualManufacturer","PreQualManufacturer","","","",0,*,"","","","null {[]} {[]}
+","WHO PreQual Manufacturer","Logical model for the manufacturer/applicant organization
+from the WHO PreQual API (ProductDetails.ApplicantOrganization).","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"PreQualManufacturer.manufacturerId","PreQualManufacturer.manufacturerId","","","",0,1,"","","","Identifier {[]} {[]}
+","Manufacturer organization ID","Manufacturer organization ID","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.manufacturerId",0,1,"",""
+"PreQualManufacturer.name","PreQualManufacturer.name","","","",1,1,"","","","string {[]} {[]}
+","Organization name","Organization name","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.name",1,1,"",""
+"PreQualManufacturer.addressLine1","PreQualManufacturer.addressLine1","","","",0,1,"","","","string {[]} {[]}
+","Address line 1","Address line 1","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.addressLine1",0,1,"",""
+"PreQualManufacturer.city","PreQualManufacturer.city","","","",0,1,"","","","string {[]} {[]}
+","City","City","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.city",0,1,"",""
+"PreQualManufacturer.state","PreQualManufacturer.state","","","",0,1,"","","","string {[]} {[]}
+","State/Province","State/Province","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.state",0,1,"",""
+"PreQualManufacturer.country","PreQualManufacturer.country","","","",0,1,"","","","string {[]} {[]}
+","Country","Country","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.country",0,1,"",""
+"PreQualManufacturer.postalCode","PreQualManufacturer.postalCode","","","",0,1,"","","","string {[]} {[]}
+","Postal code","Postal code","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.postalCode",0,1,"",""
+"PreQualManufacturer.isoCountryCode","PreQualManufacturer.isoCountryCode","","","",0,1,"","","","string {[]} {[]}
+","ISO country code","ISO country code","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.isoCountryCode",0,1,"",""
+"PreQualManufacturer.region","PreQualManufacturer.region","","","",0,1,"","","","string {[]} {[]}
+","WHO region","WHO region","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.region",0,1,"",""
+"PreQualManufacturer.website","PreQualManufacturer.website","","","",0,1,"","","","string {[]} {[]}
+","Website URL","Website URL","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.website",0,1,"",""
+"PreQualManufacturer.organizationReference","PreQualManufacturer.organizationReference","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization]]}
+","FHIR Organization reference","FHIR Organization reference","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.organizationReference",1,1,"",""

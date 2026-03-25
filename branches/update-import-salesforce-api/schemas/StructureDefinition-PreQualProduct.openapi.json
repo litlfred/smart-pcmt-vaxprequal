@@ -1,0 +1,232 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "WHO PreQual Product API",
+    "description": "Logical model for WHO PreQual Product from the backend API\nwith additional data fields for referencing associated FHIR and logical model data objects.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/StructureDefinition-PreQualProduct.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the Logical Model StructureDefinition-PreQualProduct",
+        "description": "This endpoint serves the JSON Schema definition for the Logical Model StructureDefinition-PreQualProduct.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for StructureDefinition-PreQualProduct",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./StructureDefinition-PreQualProduct.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "StructureDefinition-PreQualProduct": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/base/StructureDefinition-PreQualProduct.schema.json",
+        "title": "WHO PreQual Product",
+        "description": "Logical model for WHO PreQual Product from the backend API\nwith additional data fields for referencing associated FHIR and logical model data objects.",
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "PreQualProduct",
+            "description": "Resource type identifier for PreQualProduct logical model"
+          },
+          "productId": {
+            "type": "object",
+            "description": "Vaccine Product ID (authoritative)"
+          },
+          "productName": {
+            "type": "string",
+            "description": "Product reference name (e.g. FVP-P-447)"
+          },
+          "productType": {
+            "type": "string",
+            "description": "Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)"
+          },
+          "dateOfPrequal": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date of prequalification acceptance"
+          },
+          "assessmentProcedure": {
+            "type": "string",
+            "description": "Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)"
+          },
+          "status": {
+            "type": "string",
+            "description": "Product status code from PreQualDatabaseMetadata (e.g. Prequalified)"
+          },
+          "pharmaceuticalForm": {
+            "type": "string",
+            "description": "Pharmaceutical form code from PreQualDatabaseMetadata"
+          },
+          "presentation": {
+            "type": "object",
+            "description": "Presentation (e.g. Vial, Ampoule)"
+          },
+          "numDoses": {
+            "type": "number",
+            "description": "Number of doses per primary container"
+          },
+          "vaccineFullName": {
+            "type": "string",
+            "description": "Vaccine full name"
+          },
+          "vaccineAbbreviatedName": {
+            "type": "string",
+            "description": "Vaccine abbreviated name"
+          },
+          "vaccineCommercialName": {
+            "type": "string",
+            "description": "Vaccine commercial name"
+          },
+          "vaccineTypeId": {
+            "type": "object",
+            "description": "Vaccine type ID"
+          },
+          "routeOfAdministration": {
+            "type": "string",
+            "description": "Route of administration code from PreQualDatabaseMetadata"
+          },
+          "applicantId": {
+            "type": "object",
+            "description": "Applicant/manufacturer organization ID (may be absent if not yet assigned)"
+          },
+          "applicantName": {
+            "type": "string",
+            "description": "Applicant/manufacturer organization name (always present from API data)"
+          },
+          "applicantAddress": {
+            "type": "object",
+            "description": "Applicant organization address"
+          },
+          "nraId": {
+            "type": "object",
+            "description": "NRA organization ID (may be absent if not yet assigned)"
+          },
+          "nraName": {
+            "type": "string",
+            "description": "Responsible NRA name (always present from API data)"
+          },
+          "nraCountry": {
+            "type": "string",
+            "description": "NRA country"
+          },
+          "shelfLife": {
+            "type": "string",
+            "description": "Shelf life (e.g. 24 months)"
+          },
+          "storageTemperature": {
+            "type": "string",
+            "description": "Storage temperature (e.g. 2 - 8°C)"
+          },
+          "diluent": {
+            "type": "string",
+            "description": "Diluent information"
+          },
+          "lastPublishingDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Last publishing date"
+          },
+          "publishingRemarks": {
+            "type": "string",
+            "description": "Publishing remarks"
+          },
+          "preservative": {
+            "type": "string",
+            "description": "Preservative name (e.g. Thiomersal)"
+          },
+          "preservativeConcentration": {
+            "type": "string",
+            "description": "Preservative concentration (e.g. 0.01%)"
+          },
+          "manufacturerReference": {
+            "type": "object",
+            "description": "Manufacturer FHIR Organization reference"
+          },
+          "responsibleNRAReference": {
+            "type": "object",
+            "description": "Responsible NRA FHIR Organization reference"
+          },
+          "productReference": {
+            "type": "object",
+            "description": "Product FHIR reference (when available from pcmt dependency)"
+          },
+          "manufacturerLM": {
+            "type": "object",
+            "description": "Manufacturer logical model instance reference"
+          },
+          "nraLM": {
+            "type": "object",
+            "description": "NRA logical model instance reference"
+          },
+          "vaccineLM": {
+            "type": "object",
+            "description": "Vaccine logical model instance reference"
+          },
+          "bulkSupplierLM": {
+            "type": "object",
+            "description": "Bulk supplier logical model instance reference"
+          },
+          "packagingLM": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "FHIR Reference"
+            },
+            "description": "Product packaging logical model instance references"
+          },
+          "documentLM": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "FHIR Reference"
+            },
+            "description": "Document detail logical model instance references"
+          },
+          "siteLM": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "FHIR Reference"
+            },
+            "description": "Site detail logical model instance references"
+          },
+          "ingredientLM": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "description": "FHIR Reference"
+            },
+            "description": "Product ingredient logical model instance references"
+          }
+        },
+        "required": [
+          "resourceType",
+          "productId",
+          "productName",
+          "productType",
+          "dateOfPrequal",
+          "status",
+          "presentation",
+          "vaccineCommercialName",
+          "applicantName",
+          "nraName",
+          "manufacturerReference",
+          "responsibleNRAReference"
+        ],
+        "resourceDefinition": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct",
+        "fhir:parent": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBAPI"
+      }
+    }
+  }
+}

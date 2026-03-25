@@ -1,0 +1,64 @@
+# PreQualDB94b97202e37b591c7b7da316ff2bca00 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDB94b97202e37b591c7b7da316ff2bca00**
+
+## Binary: PreQualDB94b97202e37b591c7b7da316ff2bca00
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2018-10-02",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "JapaneseEncephalitisVacc",
+        "display": "Japanese Encephalitis Vaccine (Inactivated) 6µg"
+      }
+    ]
+  },
+  "commercialName": "JEEV® (6µg)",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 5,
+  "manufacturer": {
+    "text": "Biological E. Limited"
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "94b97202e37b591c7b7da316ff2bca00"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer54a4cbdf74f251158fb034e8f5e1ff5b"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/JapaneseEncephalitisVaccProduct94b97202e37b591c7b7da316ff2bca00"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

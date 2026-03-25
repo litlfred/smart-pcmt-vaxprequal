@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2014-03-21",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "MeningococcalACYW135conj",
+        "display": "Meningococcal ACYW-135 (conjugate vaccine)"
+      }
+    ]
+  },
+  "commercialName": "Menactra",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Sanofi Pasteur Inc."
+  },
+  "responsibleNRA": {
+    "text": "CBER/FDA"
+  },
+  "index": {
+    "value": "4caa75a5785775ab99aa60248da4fc29"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturere22cd18269d4ef7420dadcc919bda6e0"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder9d7db6151eea8bf9048690e4b4504c90"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/MeningococcalACYW135conjProduct4caa75a5785775ab99aa60248da4fc29"
+  }
+}

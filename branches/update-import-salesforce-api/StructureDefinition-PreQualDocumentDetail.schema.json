@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/base/StructureDefinition-PreQualDocumentDetail.schema.json",
+  "title": "WHO PreQual Document Detail",
+  "description": "Logical model for document details\nfrom the WHO PreQual API (DocumentDetails).",
+  "type": "object",
+  "properties": {
+    "resourceType": {
+      "type": "string",
+      "const": "PreQualDocumentDetail",
+      "description": "Resource type identifier for PreQualDocumentDetail logical model"
+    },
+    "documentId": {
+      "type": "object",
+      "description": "Document ID"
+    },
+    "documentName": {
+      "type": "string",
+      "description": "Document name"
+    },
+    "documentType": {
+      "type": "string",
+      "description": "Document type code from PreQualDatabaseMetadata (e.g. ProductInsert, Photo, VSPAR)"
+    },
+    "versionId": {
+      "type": "string",
+      "description": "Document version ID"
+    },
+    "fileExtension": {
+      "type": "string",
+      "description": "File extension (e.g. pdf, jpg)"
+    },
+    "fileType": {
+      "type": "string",
+      "description": "File type (e.g. PDF, JPEG)"
+    }
+  },
+  "required": [
+    "resourceType"
+  ],
+  "allOf": [
+    {
+      "$ref": "./StructureDefinition-FHIRSchemaBase.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "resourceDefinition": {
+          "type": "string",
+          "format": "uri",
+          "const": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"
+        },
+        "fhir:parent": {
+          "type": "string",
+          "const": "http://hl7.org/fhir/StructureDefinition/Base"
+        }
+      }
+    }
+  ]
+}

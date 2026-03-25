@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holderd4e6bca678dea34fa256538a18200187"
+  },
+  "validityPeriod": {
+    "start": "2019-12-27"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/InfluenzaseasonalQuadrivProduct2329c9c335034cc9d169c85cb142f137"
+    }
+  ]
+}

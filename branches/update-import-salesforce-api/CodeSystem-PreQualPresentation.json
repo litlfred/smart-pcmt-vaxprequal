@@ -1,0 +1,41 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PreQualPresentation",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PreQualPresentation</b></p><a name=\"PreQualPresentation\"> </a><a name=\"hcPreQualPresentation\"> </a><p>This  code system <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">Ampoule<a name=\"PreQualPresentation-Ampoule\"> </a></td><td>Ampoule</td></tr><tr><td style=\"white-space:nowrap\">Plastictube<a name=\"PreQualPresentation-Plastictube\"> </a></td><td>Plastic tube</td></tr><tr><td style=\"white-space:nowrap\">Twovialsetactiveexcipient<a name=\"PreQualPresentation-Twovialsetactiveexcipient\"> </a></td><td>Two vial set (active + excipient)</td></tr><tr><td style=\"white-space:nowrap\">Vial<a name=\"PreQualPresentation-Vial\"> </a></td><td>Vial</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation",
+  "version" : "0.1.0",
+  "name" : "PreQualPresentation",
+  "title" : "WHO PreQualificaiton Vaccine Presentations",
+  "status" : "draft",
+  "date" : "2026-03-11T13:44:05+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "WHO PreQualificaiton Vaccine Presentations",
+  "content" : "complete",
+  "count" : 4,
+  "concept" : [{
+    "code" : "Ampoule",
+    "display" : "Ampoule"
+  },
+  {
+    "code" : "Plastictube",
+    "display" : "Plastic tube"
+  },
+  {
+    "code" : "Twovialsetactiveexcipient",
+    "display" : "Two vial set (active + excipient)"
+  },
+  {
+    "code" : "Vial",
+    "display" : "Vial"
+  }]
+}

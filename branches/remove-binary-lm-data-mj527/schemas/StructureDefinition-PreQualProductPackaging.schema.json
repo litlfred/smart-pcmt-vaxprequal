@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/base/StructureDefinition-PreQualProductPackaging.schema.json",
+  "title": "WHO PreQual Product Packaging",
+  "description": "Logical model for product packaging details\nfrom the WHO PreQual API (ProductPackaging).",
+  "type": "object",
+  "properties": {
+    "resourceType": {
+      "type": "string",
+      "const": "PreQualProductPackaging",
+      "description": "Resource type identifier for PreQualProductPackaging logical model"
+    },
+    "packagingId": {
+      "type": "object",
+      "description": "Packaging record ID"
+    },
+    "packagingType": {
+      "type": "string",
+      "description": "Packaging type code from PreQualDatabaseMetadata (e.g. Secondary, Tertiary, ShippingContainer)"
+    },
+    "componentPacked": {
+      "type": "string",
+      "description": "Component packed code from PreQualDatabaseMetadata (e.g. ActiveVaccine, Diluent)"
+    },
+    "coldChainVolume": {
+      "type": "string",
+      "description": "Cold chain volume per dose"
+    },
+    "description": {
+      "type": "string",
+      "description": "Packaging description"
+    },
+    "volume": {
+      "type": "string",
+      "description": "Packaging volume/dimensions"
+    },
+    "totalDoses": {
+      "type": "string",
+      "description": "Total doses in packaging"
+    },
+    "totalContainers": {
+      "type": "string",
+      "description": "Total containers in packaging"
+    },
+    "height": {
+      "type": "string",
+      "description": "Height"
+    },
+    "length": {
+      "type": "string",
+      "description": "Length"
+    },
+    "width": {
+      "type": "string",
+      "description": "Width"
+    },
+    "primaryContainers": {
+      "type": "string",
+      "description": "Number of primary containers"
+    }
+  },
+  "required": [
+    "resourceType",
+    "packagingId"
+  ],
+  "resourceDefinition": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "fhir:parent": "http://hl7.org/fhir/StructureDefinition/Base"
+}

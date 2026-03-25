@@ -1,0 +1,8 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualBulkSupplier",
+  "bulkSupplierId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3IQAQ"
+  },
+  "name": "PT Bio Farma (Persero)"
+}

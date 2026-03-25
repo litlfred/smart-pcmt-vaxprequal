@@ -1,0 +1,40 @@
+# PreQualPackaginga3H3X000001VaaoUAC - SMART Product Catalog v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualPackaginga3H3X000001VaaoUAC**
+
+## Example Binary: PreQualPackaginga3H3X000001VaaoUAC
+
+This content is an example of the [WHO PreQual Product Packaging](StructureDefinition-PreQualProductPackaging.md) Logical Model and is not a FHIR Resource
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaaoUAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "1.05",
+  "description": "Carton containing 3 vials (60 doses)[Dimensions: 5.4 x 5.3 x 2.2 cm]",
+  "height": "5.3",
+  "length": "5.4",
+  "width": "2.2",
+  "primaryContainers": "3"
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

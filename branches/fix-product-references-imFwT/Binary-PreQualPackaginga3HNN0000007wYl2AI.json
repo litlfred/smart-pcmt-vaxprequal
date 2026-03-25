@@ -1,0 +1,6 @@
+{
+  "resourceType" : "Binary",
+  "id" : "PreQualPackaginga3HNN0000007wYl2AI",
+  "contentType" : "application/fhir+json",
+  "data" : "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGNtdC12YXhwcmVxdWFsL1N0cnVjdHVyZURlZmluaXRpb24vUHJlUXVhbFByb2R1Y3RQYWNrYWdpbmciLAogICJwYWNrYWdpbmdJZCI6IHsKICAgICJzeXN0ZW0iOiAiaHR0cHM6Ly9leHRyYW5ldC53aG8uaW50L3ByZXF1YWwvYXBpIiwKICAgICJ2YWx1ZSI6ICJhM0hOTjAwMDAwMDd3WWwyQUkiCiAgfSwKICAicGFja2FnaW5nVHlwZSI6ICJTaGlwcGluZ0NvbnRhaW5lciIsCiAgImNvbXBvbmVudFBhY2tlZCI6ICJBY3RpdmVWYWNjaW5lIiwKICAidm9sdW1lIjogIjcxLjUgeCA2MC41IHggNjMuNSIsCiAgInRvdGFsRG9zZXMiOiAiMzYwMCIsCiAgInRvdGFsQ29udGFpbmVycyI6ICIxODAwIgp9Cg=="
+}

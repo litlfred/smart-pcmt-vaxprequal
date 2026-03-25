@@ -1,0 +1,117 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.displays.json",
+  "title": "WHO PreQualification Database Metadata Display Values",
+  "description": "Display values for WHO PreQualification Database Metadata ValueSet codes. Generated from FHIR expansions. Keys are code fragments (the part after '#' in the canonical IRI). The full IRI can be reconstructed as system + '#' + code.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes keyed by code fragment",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "description": "Display values for a specific code fragment by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "FinishedVaccineProduct": {
+      "en": "Finished Vaccine Product"
+    },
+    "PrequalificationStandard": {
+      "en": "Prequalification - Standard"
+    },
+    "Prequalified": {
+      "en": "Prequalified"
+    },
+    "WithdrawnWasPrequalified": {
+      "en": "Withdrawn: Was Prequalified"
+    },
+    "LiquidReadytouse": {
+      "en": "Liquid: Ready to use"
+    },
+    "Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse": {
+      "en": "Lyophilised active component to be reconstituted with excipient diluent before use"
+    },
+    "Intradermal": {
+      "en": "Intradermal"
+    },
+    "Intramuscular": {
+      "en": "Intramuscular"
+    },
+    "Intramuscularorsubcutaneous": {
+      "en": "Intramuscular or subcutaneous"
+    },
+    "Oral": {
+      "en": "Oral"
+    },
+    "Subcutaneous": {
+      "en": "Subcutaneous"
+    },
+    "Secondary": {
+      "en": "Secondary"
+    },
+    "ShippingContainer": {
+      "en": "Shipping Container"
+    },
+    "Tertiary": {
+      "en": "Tertiary"
+    },
+    "ActiveVaccine": {
+      "en": "Active (Vaccine)"
+    },
+    "Diluent": {
+      "en": "Diluent"
+    },
+    "Photo": {
+      "en": "Photo"
+    },
+    "PhotoMainImage": {
+      "en": "Photo-Main Image"
+    },
+    "ProductInsert": {
+      "en": "Product Insert"
+    },
+    "VSPAR": {
+      "en": "VSPAR"
+    },
+    "VaccineGeneralDocument": {
+      "en": "Vaccine General Document"
+    },
+    "FVPManufacture": {
+      "en": "FVP Manufacture"
+    },
+    "Accepted": {
+      "en": "Accepted"
+    },
+    "VxFVP": {
+      "en": "Vx FVP"
+    },
+    "Active": {
+      "en": "Active"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualDatabaseMetadata",
+  "fhir:version": "0.2.0",
+  "fhir:expansionTimestamp": "2026-03-24T15:03:39+00:00"
+}

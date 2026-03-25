@@ -1,0 +1,107 @@
+# PreQual Product: Measles Mumps and Rubella Vaccine Live Attenuated - MMR - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQual Product: Measles Mumps and Rubella Vaccine Live Attenuated - MMR**
+
+## Binary: PreQual Product: Measles Mumps and Rubella Vaccine Live Attenuated - MMR
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "productType": "FinishedVaccineProduct",
+  "dateOfPrequal": "2003-08-08",
+  "assessmentProcedure": "PrequalificationStandard",
+  "status": "Prequalified",
+  "pharmaceuticalForm": "Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 5,
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006MiiKUAS"
+  },
+  "productName": "FVP-P-143",
+  "vaccineFullName": "Measles, mumps, rubella combined vaccine (live, attenuated)",
+  "vaccineAbbreviatedName": "MMR",
+  "vaccineCommercialName": "Measles Mumps and Rubella Vaccine Live Attenuated",
+  "vaccineTypeId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSpaUAE"
+  },
+  "routeOfAdministration": "Subcutaneous",
+  "vialMonitor": "Type 14",
+  "multidoseVialPolicy": "WHO recommends that opened vials of this vaccine should be discarded 6 hours after opening or at the end of the immunization session, whichever comes first.",
+  "applicantId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00003cPkzfQAC"
+  },
+  "applicantName": "Serum Institute of India",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4fQAA"
+  },
+  "nraName": "Central Drugs Standard Control Organization (CDSCO)",
+  "nraCountry": "India",
+  "shelfLife": "30 months",
+  "storageTemperature": "2 - 8°C",
+  "diluent": "Water for injection",
+  "lastPublishingDate": "2024-09-10",
+  "publishingRemarks": "An extension of shelf life at 2-8°C  from 24 to 30 months was approved on 10 January 2018 and the Product Insert (PI) indicating this shelf life is part of this web listing. However for some time stock on-hand manufactured before this approval date may be supplied and the PI for these batches will still indicate a 24 month shelf life.",
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer0013X00003cPkzfQAC"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder0013X0000498p4fQAA"
+  },
+  "manufacturerLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer/PreQualManufacturer0013X00003cPkzfQAC"
+  },
+  "nraLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA/PreQualNRA0013X0000498p4fQAA"
+  },
+  "vaccineLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine/PreQualVaccinea3S3X000003cSpaUAE"
+  },
+  "packagingLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging/PreQualPackaginga3H3X000001VabQUAS"
+    }
+  ],
+  "documentLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail/PreQualDocument069NN000005iLQxYAM"
+    }
+  ],
+  "siteLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail/PreQualSite0013X00003cPkzfQAC"
+    }
+  ],
+  "ingredientLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient/PreQualIngredienta3K3X000006MiiKUASIng4"
+    }
+  ]
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

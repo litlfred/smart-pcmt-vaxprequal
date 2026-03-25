@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3PQAQ"
+  },
+  "name": "Sanofi Pasteur SA",
+  "addressLine1": "14 Espace Henry Vallée",
+  "city": "Lyon",
+  "country": "France",
+  "postalCode": "69007",
+  "isoCountryCode": "FRA",
+  "region": "EURO",
+  "website": "https://www.sanofipasteur.com/en/immunization-essentials/#preventable",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X0000498p3PQAQ"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine, Live (Oral)"
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturerfea9c0b58ceb56b0d925a05e74377afb"
+  },
+  "doseQuantity": {
+    "value": 20,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "PolioVaccineOralOPVBival"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "Vial"
+      }
+    ]
+  }
+}

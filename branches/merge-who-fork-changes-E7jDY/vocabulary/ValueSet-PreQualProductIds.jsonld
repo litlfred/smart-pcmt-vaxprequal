@@ -1,0 +1,1667 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "@id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-03-23T16:55:16.736914Z",
+  "@graph": [
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBPaediatricProduct0a80755033118a426f1d2a571df1b6df",
+      "name": "16/01/2025Hepatitis B (Paediatric)BEVAC®Vial1Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "HepatitisBPaediatricProduct0a80755033118a426f1d2a571df1b6df",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBProduct29a71534ef44b701da06062075100739",
+      "name": "20/01/2025Hepatitis BBEVAC®Vial1Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "HepatitisBProduct29a71534ef44b701da06062075100739",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HaemophilusinfluenzaetypProductf455a733c51ebd231f8e748ff2d54292",
+      "name": "01/04/1998Haemophilus influenzae type bAct-HIBVial1Sanofi PasteurAgence nationale de sécurité du médicament et des produits de santé",
+      "fhir:code": "HaemophilusinfluenzaetypProductf455a733c51ebd231f8e748ff2d54292",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct2b5b9b19671826d92dff00f622588487",
+      "name": "08/05/2017Diphtheria-Tetanus-Pertussis (acellular)AdacelVial1Sanofi Pasteur LimitedHealth Canada - Santé Canada",
+      "fhir:code": "DiphtheriaTetanusPertussProduct2b5b9b19671826d92dff00f622588487",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusProduct0b291aa3e71f93edc6e5020d6702012c",
+      "name": "11/03/1999Diphtheria-TetanusAdsorbed DT VaccineVial10PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "DiphtheriaTetanusProduct0b291aa3e71f93edc6e5020d6702012c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalTrivaleProductd748a38574e356813c814007a57c7781",
+      "name": "07/02/2020Influenza, seasonal (Trivalent)Afluria®Vial10Seqirus LimitedUS Food and Drug Administration- Office of Vaccine Research and Review",
+      "fhir:code": "InfluenzaseasonalTrivaleProductd748a38574e356813c814007a57c7781",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalQuadrivProduct0e15fb29d9353a3e14d4b6d4180efb5a",
+      "name": "05/03/2019Influenza, seasonal (Quadrivalent)Afluria® QuadrivalentVial10Seqirus LimitedUS Food and Drug Administration- Office of Vaccine Research and Review",
+      "fhir:code": "InfluenzaseasonalQuadrivProduct0e15fb29d9353a3e14d4b6d4180efb5a",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#VaricellaProduct68d1e94dee14002a478bb763192fd4c8",
+      "name": "14/02/2023VaricellaBARYCELA inj.Vial1GC Biopharma Corp.Ministry of Food and Drug Safety",
+      "fhir:code": "VaricellaProduct68d1e94dee14002a478bb763192fd4c8",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#BCGProducta225473ed705ece5111f5bfcaf99f216",
+      "name": "01/01/1987BCGBCG Freeze Dried Glutamate vaccineAmpoule10Japan BCG LaboratoryPharmaceutical and Medical Devices Agency",
+      "fhir:code": "BCGProducta225473ed705ece5111f5bfcaf99f216",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#BCGProducte40454e099c809e80e245d28528c4f40",
+      "name": "01/01/1987BCGBCG Freeze Dried Glutamate vaccineAmpoule20Japan BCG LaboratoryPharmaceutical and Medical Devices Agency",
+      "fhir:code": "BCGProducte40454e099c809e80e245d28528c4f40",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#BCGProductee4fa99e6bfabbc2a99fe3b0ec7f6db4",
+      "name": "29/05/2003BCGBCG VaccineVial20Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "BCGProductee4fa99e6bfabbc2a99fe3b0ec7f6db4",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#BCGProduct508c17fc4a3f649c75478d6bc83ab3b4",
+      "name": "03/12/2024BCGBCG VaccineVial + Ampoule20GreenSignal Bio Pharma Pvt LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "BCGProduct508c17fc4a3f649c75478d6bc83ab3b4",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#BCGProduct92b29c115b94bfd6959395add8189921",
+      "name": "01/02/1991BCGBCG VaccineAmpoule10BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)Bulgarian Drug Agency",
+      "fhir:code": "BCGProduct92b29c115b94bfd6959395add8189921",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#BCGProductfa2cfb4dc7d79771ed47d86a3efc9167",
+      "name": "01/02/1991BCGBCG VaccineAmpoule20BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)Bulgarian Drug Agency",
+      "fhir:code": "BCGProductfa2cfb4dc7d79771ed47d86a3efc9167",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#BCGProduct133dc209d46d1398e03c452ad1a537ed",
+      "name": "27/09/1994BCGBCG Vaccine AJVTwo vial set (active + excipient)10AJ Vaccines A/SDanish Medicines Agency",
+      "fhir:code": "BCGProduct133dc209d46d1398e03c452ad1a537ed",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBPaediatricProduct12ac64a6373a51fb383f4d55fc5e32b8",
+      "name": "16/01/2025Hepatitis B (Paediatric)BEVAC®Vial10Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "HepatitisBPaediatricProduct12ac64a6373a51fb383f4d55fc5e32b8",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBProduct790d33df8e93799f8894daabb900d356",
+      "name": "16/01/2025Hepatitis BBEVAC®Vial10Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "HepatitisBProduct790d33df8e93799f8894daabb900d356",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#Covid19Product8da0ece0c48e47a9df9e0ad312343219",
+      "name": "09/10/2023Covid-19BIMERVAXVial1HIPRA HUMAN HEALTH, S.L.UEuropean Medicines Agency",
+      "fhir:code": "Covid19Product8da0ece0c48e47a9df9e0ad312343219",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVTrivaProductfa4849f7532d522134f4102063af1617",
+      "name": "20/03/2015Polio Vaccine - Oral (OPV) TrivalentBIOPOLIOVial10Bharat Biotech International LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineOralOPVTrivaProductfa4849f7532d522134f4102063af1617",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVTrivaProduct4df3a93ab495d85b3583d0cd1ae3d83e",
+      "name": "20/03/2015Polio Vaccine - Oral (OPV) TrivalentBIOPOLIOVial20Bharat Biotech International LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineOralOPVTrivaProduct4df3a93ab495d85b3583d0cd1ae3d83e",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVBivalProduct16e883911ea0108b8213bc213c9972fe",
+      "name": "25/08/2017Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3BIOPOLIO B1/3Vial10Bharat Biotech International LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineOralOPVBivalProduct16e883911ea0108b8213bc213c9972fe",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVBivalProduct0e59118bc5938520115bac65a45be04d",
+      "name": "20/03/2015Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3BIOPOLIO B1/3Vial20Bharat Biotech International LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineOralOPVBivalProduct0e59118bc5938520115bac65a45be04d",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVBivalProductb62fbc87532804be42afa8d9050ef452",
+      "name": "16/11/2021Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine, Live (Oral)Vial10Panacea Biotec Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineOralOPVBivalProductb62fbc87532804be42afa8d9050ef452",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVBivalProduct02c099d69cd245e7fcd3280a96f1dccb",
+      "name": "07/12/2018Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine, Live (Oral)Vial20Panacea Biotec Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineOralOPVBivalProduct02c099d69cd245e7fcd3280a96f1dccb",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVBivalProductdecf3a77facc0b8f1443db5f7a806857",
+      "name": "05/11/2015Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3Bivalent Oral Poliomyelitis Vaccine Type 1&3 (bOPV 1&3)Vial10PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "PolioVaccineOralOPVBivalProductdecf3a77facc0b8f1443db5f7a806857",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVBivalProduct10aa94cef126e62542c2c45dc3604c0b",
+      "name": "26/05/2010Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3Bivalent Oral Poliomyelitis Vaccine Type 1&3 (bOPV 1&3)Vial20PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "PolioVaccineOralOPVBivalProduct10aa94cef126e62542c2c45dc3604c0b",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVBivalProduct26e6c50dfb385f223a12238dc6e202dd",
+      "name": "19/03/2010Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3Bivalent type 1&3 Oral Poliomyelitis vaccine, IP (bOPV1&3)Vial20Haffkine Bio Pharmaceutical Corporation LtdCentral Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineOralOPVBivalProduct26e6c50dfb385f223a12238dc6e202dd",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProductd86fa01b474096e0551b7c34b93fcdfc",
+      "name": "09/07/2013Diphtheria-Tetanus-Pertussis (acellular)BoostrixVial1GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "DiphtheriaTetanusPertussProductd86fa01b474096e0551b7c34b93fcdfc",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HumanPapillomavirusBivalProductb342f0044a178c79f90b581a4a5208ba",
+      "name": "14/10/2021Human Papillomavirus (Bivalent)Cecolin®Vial1Xiamen Innovax Biotech Co. Ltd.National Medical Products Administration",
+      "fhir:code": "HumanPapillomavirusBivalProductb342f0044a178c79f90b581a4a5208ba",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaPandemicH1N1Product8cb910c5702efa28db66bc22c8243188",
+      "name": "17/12/2009Influenza, Pandemic (H1N1)CelturaVial17Seqirus GmbHPaul-Ehrlich-Institut",
+      "fhir:code": "InfluenzaPandemicH1N1Product8cb910c5702efa28db66bc22c8243188",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HumanPapillomavirusBivalProduct90bc0971e6434227a7385b7965be0958",
+      "name": "08/07/2009Human Papillomavirus (Bivalent)CervarixVial1GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "HumanPapillomavirusBivalProduct90bc0971e6434227a7385b7965be0958",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HumanPapillomavirusBivalProductd74dd5ffaeebfbdedd5ee981b05b45f5",
+      "name": "08/07/2009Human Papillomavirus (Bivalent)CervarixVial2GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "HumanPapillomavirusBivalProductd74dd5ffaeebfbdedd5ee981b05b45f5",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#Covid19Product2afac141c6a2f5d7231a1db67e0613a5",
+      "name": "09/10/2024Covid-19Comirnaty®VialBioNTech Manufacturing GmbHEuropean Medicines Agency",
+      "fhir:code": "Covid19Product2afac141c6a2f5d7231a1db67e0613a5",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MalariaProduct88d9bdf685abb8563d94dae08fc1d860",
+      "name": "19/12/2023MalariaCYVACVial2Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MalariaProduct88d9bdf685abb8563d94dae08fc1d860",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DengueTetravalentliveattProduct8ffab92f1c77bcdc5b542565b27784b1",
+      "name": "25/03/2020Dengue Tetravalent (live, attenuated)DengvaxiaTwo vial set (active + excipient)5Sanofi PasteurAgence nationale de sécurité du médicament et des produits de santé",
+      "fhir:code": "DengueTetravalentliveattProduct8ffab92f1c77bcdc5b542565b27784b1",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusProducta0aba531248cc7cc61d06551ad5ff9d7",
+      "name": "09/05/2006Diphtheria-TetanusDiftetVial10BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)Bulgarian Drug Agency",
+      "fhir:code": "DiphtheriaTetanusProducta0aba531248cc7cc61d06551ad5ff9d7",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusProducta5dce7e8e00b2b288510772a7a75649c",
+      "name": "09/05/2006Diphtheria-TetanusDiftetVial20BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)Bulgarian Drug Agency",
+      "fhir:code": "DiphtheriaTetanusProducta5dce7e8e00b2b288510772a7a75649c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusProduct4ceaeaed5cbda00d6675bc8593b37b9f",
+      "name": "04/04/1995Diphtheria-TetanusDiphtheria and Tetanus Vaccine Adsorbed (Paediatric)Ampoule1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusProduct4ceaeaed5cbda00d6675bc8593b37b9f",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusProduct6fe64111c79a32586a23ac01403442ba",
+      "name": "04/04/1995Diphtheria-TetanusDiphtheria and Tetanus Vaccine Adsorbed (Pediatric)Vial10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusProduct6fe64111c79a32586a23ac01403442ba",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusProduct6049297c180d7c6e46f6a9a817dcabb3",
+      "name": "04/04/1995Diphtheria-TetanusDiphtheria and Tetanus Vaccine Adsorbed (Pediatric)Vial20Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusProduct6049297c180d7c6e46f6a9a817dcabb3",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusreducedProduct5fd73b2ccd79a39acb5eb336e53f8315",
+      "name": "04/04/1995Diphtheria-Tetanus (reduced antigen content)Diphtheria and Tetanus Vaccine Adsorbed for Adults and AdolescentsVial10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusreducedProduct5fd73b2ccd79a39acb5eb336e53f8315",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusreducedProduct5b6b854e1885d59887a4eea0f4bd7a0c",
+      "name": "04/04/1995Diphtheria-Tetanus (reduced antigen content)Diphtheria and Tetanus Vaccine Adsorbed for Adults and AdolescentsVial20Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusreducedProduct5b6b854e1885d59887a4eea0f4bd7a0c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusreducedProduct39c0ef6a00b0846fb19fe4ca8fb376f7",
+      "name": "04/04/1995Diphtheria-Tetanus (reduced antigen content)Diphtheria and Tetanus Vaccine Adsorbed for Adults and AdolescentsAmpoule1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusreducedProduct39c0ef6a00b0846fb19fe4ca8fb376f7",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProductc63556bc39df77ae14833feb5ac10a35",
+      "name": "04/04/1995Diphtheria-Tetanus-Pertussis (whole cell)Diphtheria-Tetanus-Pertussis Vaccine AdsorbedVial10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProductc63556bc39df77ae14833feb5ac10a35",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct927cff21ed0a901aa884339b766ee662",
+      "name": "04/04/1995Diphtheria-Tetanus-Pertussis (whole cell)Diphtheria-Tetanus-Pertussis Vaccine AdsorbedVial20Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProduct927cff21ed0a901aa884339b766ee662",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct7b8002a4a273e0a9f749c44ac968cf44",
+      "name": "04/04/1995Diphtheria-Tetanus-Pertussis (whole cell)Diphtheria-Tetanus-Pertussis Vaccine AdsorbedAmpoule1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProduct7b8002a4a273e0a9f749c44ac968cf44",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct2029c7c29c39910766a76fc788115bbc",
+      "name": "23/06/2010Diphtheria-Tetanus-Pertussis (whole cell)-Haemophilus influenzae type bDiphtheria, Tetanus, Pertussis and Haemophilus influenzae type b Conjugate VaccineVial + Ampoule1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProduct2029c7c29c39910766a76fc788115bbc",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct60c498d6555dec24de8a8ecc48ab1a02",
+      "name": "26/05/2010Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bDiphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate VaccineVial + Ampoule1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProduct60c498d6555dec24de8a8ecc48ab1a02",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct828f395532066d11d360768aa0793f54",
+      "name": "26/05/2010Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bDiphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate VaccineVial + Ampoule2Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProduct828f395532066d11d360768aa0793f54",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProductfdb459366fa4a85d1a7555bcad51264b",
+      "name": "26/05/2010Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bDiphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate VaccineVial + Ampoule10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProductfdb459366fa4a85d1a7555bcad51264b",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProducta438e46e3587ece79794373e69bafc4d",
+      "name": "22/09/2010Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bDiphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine AdsorbedVial1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProducta438e46e3587ece79794373e69bafc4d",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct08be2bd220651dc1c79b4d7f252461ef",
+      "name": "22/09/2010Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bDiphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine AdsorbedVial2Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProduct08be2bd220651dc1c79b4d7f252461ef",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct344e3ef97d8fe6c7d58c108f82a18dfb",
+      "name": "22/09/2010Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bDiphtheria, Tetanus, Pertussis, Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine AdsorbedVial10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProduct344e3ef97d8fe6c7d58c108f82a18dfb",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct456bd99d59edd5a285d7ca2451541021",
+      "name": "06/04/2001Diphtheria-Tetanus-Pertussis (whole cell)DTP VaccineVial10PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "DiphtheriaTetanusPertussProduct456bd99d59edd5a285d7ca2451541021",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#cholerainactivatedoralProductf1c03e02b729d1b9da196f4dbfe675f1",
+      "name": "25/10/2001cholera: inactivated oralDukoralVial + Buffer Sachet1Valneva Sweden ABMedical Products Agency",
+      "fhir:code": "cholerainactivatedoralProductf1c03e02b729d1b9da196f4dbfe675f1",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProductb45f38ad231b3faff40a3b3aa2d61cca",
+      "name": "02/10/2013Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bEasyfive-TTVial1Panacea Biotec Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProductb45f38ad231b3faff40a3b3aa2d61cca",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct4e2900c73c70158b90a240513998895d",
+      "name": "02/10/2013Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bEasyfive-TTVial10Panacea Biotec Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProduct4e2900c73c70158b90a240513998895d",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBProduct624c420054fd62b8831ca6db7627ac9a",
+      "name": "01/01/1987Hepatitis BEngerixVial1GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "HepatitisBProduct624c420054fd62b8831ca6db7627ac9a",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBProduct6ac3603e086e99d1f9727d94433b276f",
+      "name": "01/01/1987Hepatitis BEngerixVial10GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "HepatitisBProduct6ac3603e086e99d1f9727d94433b276f",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBProduct53bb991260516f314ee605085dd1ba2c",
+      "name": "01/01/1987Hepatitis BEngerixVial20GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "HepatitisBProduct53bb991260516f314ee605085dd1ba2c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#EbolaZairerVSVGZEBOVGPliProducta2f4a9e07cfeebbb99d5ae2e4cc0257f",
+      "name": "12/11/2019Ebola Zaire (rVSV∆G-ZEBOV-GP, live attenuated)ERVEBOVial1Merck Sharp & Dohme LLCEuropean Medicines Agency",
+      "fhir:code": "EbolaZairerVSVGZEBOVGPliProducta2f4a9e07cfeebbb99d5ae2e4cc0257f",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProductf949888fce8cdf016cfc06644a16afbb",
+      "name": "10/02/2016Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bEupentaVial1LG Chem LtdMinistry of Food and Drug Safety",
+      "fhir:code": "DiphtheriaTetanusPertussProductf949888fce8cdf016cfc06644a16afbb",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct9d194caa1c66fb809622f25ec6f79f5c",
+      "name": "10/02/2016Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bEupentaVial10LG Chem LtdMinistry of Food and Drug Safety",
+      "fhir:code": "DiphtheriaTetanusPertussProduct9d194caa1c66fb809622f25ec6f79f5c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedSProduct0854d534a200bbeffa8be0f57dad584a",
+      "name": "01/06/2021Polio Vaccine - Inactivated Sabin (sIPV)Eupolio Inj.Vial1LG Chem LtdMinistry of Food and Drug Safety",
+      "fhir:code": "PolioVaccineInactivatedSProduct0854d534a200bbeffa8be0f57dad584a",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedSProduct031f63df3184acdf0cb82f90f316b6c3",
+      "name": "21/12/2020Polio Vaccine - Inactivated Sabin (sIPV)Eupolio Inj.Vial5LG Chem LtdMinistry of Food and Drug Safety",
+      "fhir:code": "PolioVaccineInactivatedSProduct031f63df3184acdf0cb82f90f316b6c3",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBPaediatricProduct7431cfff77d30de2a89868b3bd4a2f9d",
+      "name": "21/01/2020Hepatitis B (Paediatric)Euvax BVial1LG Chem LtdMinistry of Food and Drug Safety",
+      "fhir:code": "HepatitisBPaediatricProduct7431cfff77d30de2a89868b3bd4a2f9d",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBProduct2c48b25fdefb970fc85dbb63e04fe744",
+      "name": "22/11/1996Hepatitis BEuvax BVial1LG Chem LtdMinistry of Food and Drug Safety",
+      "fhir:code": "HepatitisBProduct2c48b25fdefb970fc85dbb63e04fe744",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBProduct953ab5cac67cbb23eeab9e794501209d",
+      "name": "22/11/1996Hepatitis BEuvax BVial10LG Chem LtdMinistry of Food and Drug Safety",
+      "fhir:code": "HepatitisBProduct953ab5cac67cbb23eeab9e794501209d",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#cholerainactivatedoralProduct9e735ce376b3d71987e9c2054ba0590a",
+      "name": "23/12/2015cholera: inactivated oralEuvicholVial1EuBiologics Co., Ltd.Ministry of Food and Drug Safety",
+      "fhir:code": "cholerainactivatedoralProduct9e735ce376b3d71987e9c2054ba0590a",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#cholerainactivatedoralProduct242d7b0c599da706838dbbdaa4d78d9b",
+      "name": "11/08/2017cholera: inactivated oralEuvichol-PlusPlastic Tube1EuBiologics Co., Ltd.Ministry of Food and Drug Safety",
+      "fhir:code": "cholerainactivatedoralProduct242d7b0c599da706838dbbdaa4d78d9b",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#cholerainactivatedoralProductd628c6599248f979f6fdf6145e8606b0",
+      "name": "12/04/2024cholera: inactivated oralEuvichol®-SPlastic Tube1EuBiologics Co., Ltd.Ministry of Food and Drug Safety",
+      "fhir:code": "cholerainactivatedoralProductd628c6599248f979f6fdf6145e8606b0",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalTrivaleProduct888045063db8e551a4e395130d66cd64",
+      "name": "09/01/2025Influenza, seasonal (Trivalent)FLU-M®Vial10Saint Petersburg Scientific Research Institute of Vaccines and Serums of the FMBA of RussiaCentro para el Control Estatal de la Calidad de los Medicamentos",
+      "fhir:code": "InfluenzaseasonalTrivaleProduct888045063db8e551a4e395130d66cd64",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalQuadrivProduct8b43bd5416101efc433940c20e424971",
+      "name": "04/11/2015Influenza, seasonal (Quadrivalent)Fluzone Quadrivalent (labelled as FluQuadri in other markets)Vial1Sanofi Pasteur Inc.US Food and Drug Administration- Office of Vaccine Research and Review",
+      "fhir:code": "InfluenzaseasonalQuadrivProduct8b43bd5416101efc433940c20e424971",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalQuadrivProduct37f198a748f37e28fa533b43fb8b4ca4",
+      "name": "04/11/2015Influenza, seasonal (Quadrivalent)Fluzone Quadrivalent (labelled as FluQuadri in other markets)Vial10Sanofi Pasteur Inc.US Food and Drug Administration- Office of Vaccine Research and Review",
+      "fhir:code": "InfluenzaseasonalQuadrivProduct37f198a748f37e28fa533b43fb8b4ca4",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalTrivaleProducte6bf7aa0fe6620e314ba0c0c24a45d07",
+      "name": "09/07/2024Influenza, seasonal (Trivalent)Fluzone® (Fluprevli™ in other markets)Vial10Sanofi Pasteur Inc.US Food and Drug Administration- Office of Vaccine Research and Review",
+      "fhir:code": "InfluenzaseasonalTrivaleProducte6bf7aa0fe6620e314ba0c0c24a45d07",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaPandemicH1N1Productc76596a60cfa755021c2efe65100805b",
+      "name": "16/12/2009Influenza, Pandemic (H1N1)FocetriaVial10Seqirus Vaccines LimitedCBER/FDA",
+      "fhir:code": "InfluenzaPandemicH1N1Productc76596a60cfa755021c2efe65100805b",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HumanPapillomavirusNinevProduct6d6849ce69076acc0842734b9a0d375c",
+      "name": "09/02/2018Human Papillomavirus (Ninevalent)Gardasil 9Vial1Merck Sharp & Dohme LLCEuropean Medicines Agency",
+      "fhir:code": "HumanPapillomavirusNinevProduct6d6849ce69076acc0842734b9a0d375c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HumanPapillomavirusQuadrProduct551b21b1ec1a67bbb0009f875faf7823",
+      "name": "20/05/2009Human Papillomavirus (Quadrivalent)GardasilVial1Merck Sharp & Dohme LLCEuropean Medicines Agency",
+      "fhir:code": "HumanPapillomavirusQuadrProduct551b21b1ec1a67bbb0009f875faf7823",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalTrivaleProductf45d14eded02944191a947ce6ede1a69",
+      "name": "12/04/2011Influenza, seasonal (Trivalent)GC FLU  injVial1GC Biopharma Corp.Ministry of Food and Drug Safety",
+      "fhir:code": "InfluenzaseasonalTrivaleProductf45d14eded02944191a947ce6ede1a69",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalTrivaleProducte9f09e6a7002d6c130969c9ee5076b1d",
+      "name": "07/11/2012Influenza, seasonal (Trivalent)GC FLU Multi inj.Vial10GC Biopharma Corp.Ministry of Food and Drug Safety",
+      "fhir:code": "InfluenzaseasonalTrivaleProducte9f09e6a7002d6c130969c9ee5076b1d",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalQuadrivProductb9a1bcee5471105a80864fdc3ca80945",
+      "name": "21/12/2016Influenza, seasonal (Quadrivalent)GC FLU Quadrivalent inj.Vial1GC Biopharma Corp.Ministry of Food and Drug Safety",
+      "fhir:code": "InfluenzaseasonalQuadrivProductb9a1bcee5471105a80864fdc3ca80945",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalQuadrivProduct183176ddf9c8c8d8a60d3fa2d8ce467f",
+      "name": "03/04/2017Influenza, seasonal (Quadrivalent)GC FLU Quadrivalent Multi inj.Vial10GC Biopharma Corp.Ministry of Food and Drug Safety",
+      "fhir:code": "InfluenzaseasonalQuadrivProduct183176ddf9c8c8d8a60d3fa2d8ce467f",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaPandemicH1N1Product6a7cb8b1df3d2ff48b3e61cf5924c482",
+      "name": "11/05/2010Influenza, Pandemic (H1N1)Green Flu-SVial1GC Biopharma Corp.Ministry of Food and Drug Safety",
+      "fhir:code": "InfluenzaPandemicH1N1Product6a7cb8b1df3d2ff48b3e61cf5924c482",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HaemophilusinfluenzaetypProduct8c2914a22ad193c8db2d3ef514ff2d77",
+      "name": "17/11/2008Haemophilus influenzae type bHaemophilus influenzae type b Conjugate VaccineVial1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "HaemophilusinfluenzaetypProduct8c2914a22ad193c8db2d3ef514ff2d77",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisAHumanDiploidCeProducta1708bd501df3103f85e2df44bcf0003",
+      "name": "19/07/2013Hepatitis A (Human Diploid Cell), Inactivated (Adult)Havrix 1440 AdultVial1GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "HepatitisAHumanDiploidCeProducta1708bd501df3103f85e2df44bcf0003",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisAHumanDiploidCeProductbfeb5b5e99ae6a86b27432faa78da48c",
+      "name": "19/07/2013Hepatitis A (Human Diploid Cell), Inactivated (Paediatric)Havrix 720 JuniorVial1GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "HepatitisAHumanDiploidCeProductbfeb5b5e99ae6a86b27432faa78da48c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisAHumanDiploidCeProductb1b534f4defa78597b059a190a77b357",
+      "name": "22/12/2017Hepatitis A (Human Diploid Cell), Inactivated (Paediatric)HEALIVEVial1Sinovac Biotech Co. LtdNational Medical Products Administration",
+      "fhir:code": "HepatitisAHumanDiploidCeProductb1b534f4defa78597b059a190a77b357",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisAHumanDiploidCeProductc760d423dd3f53b4b1d83226d36a8f40",
+      "name": "22/12/2017Hepatitis A (Human Diploid Cell), Inactivated (Adult)HEALIVEVial1Sinovac Biotech Co. LtdNational Medical Products Administration",
+      "fhir:code": "HepatitisAHumanDiploidCeProductc760d423dd3f53b4b1d83226d36a8f40",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBProduct7402fe6f607aee04fc3800e7258809a9",
+      "name": "11/12/2001Hepatitis BHeberbiovac HBVial1Centro de Ingenieria Genetica y BiotecnologiaCentro para el Control Estatal de la Calidad de los Medicamentos",
+      "fhir:code": "HepatitisBProduct7402fe6f607aee04fc3800e7258809a9",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBProducta2e0420d94f1d5dcf054685ca8d84336",
+      "name": "11/12/2001Hepatitis BHeberbiovac HBVial10Centro de Ingenieria Genetica y BiotecnologiaCentro para el Control Estatal de la Calidad de los Medicamentos",
+      "fhir:code": "HepatitisBProducta2e0420d94f1d5dcf054685ca8d84336",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBProductc63592587d84458436293a1b52964f2d",
+      "name": "12/11/2004Hepatitis BHepatitis B Vaccine (rDNA) (Adult)Vial10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "HepatitisBProductc63592587d84458436293a1b52964f2d",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBProduct5d90a5f85cfbcea91790d1d66c17c8ed",
+      "name": "12/11/2004Hepatitis BHepatitis B Vaccine (rDNA) (Adult)Ampoule or Vial1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "HepatitisBProduct5d90a5f85cfbcea91790d1d66c17c8ed",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBProduct2c7bb1d3d1f6b656f2b91e6399ac8935",
+      "name": "12/11/2004Hepatitis BHepatitis B Vaccine (rDNA) (Paediatric)Vial10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "HepatitisBProduct2c7bb1d3d1f6b656f2b91e6399ac8935",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HepatitisBProductb2a3129f600781cc753b011290b09acb",
+      "name": "12/11/2004Hepatitis BHepatitis B Vaccine (rDNA) (Paedriatic)Ampoule or Vial1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "HepatitisBProductb2a3129f600781cc753b011290b09acb",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProductf4177b409d09d83e48630717437c5aea",
+      "name": "21/03/2024Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)HEXASIILVial1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProductf4177b409d09d83e48630717437c5aea",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct0e63b58e2976f385b77a9b5a356b68b5",
+      "name": "21/03/2024Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)HEXASIILVial10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProduct0e63b58e2976f385b77a9b5a356b68b5",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProductd54558e2851d29311ee7f90975827dc7",
+      "name": "19/12/2014Diphtheria-Tetanus-Pertussis (acellular)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)HexaximVial1Sanofi PasteurEuropean Medicines Agency",
+      "fhir:code": "DiphtheriaTetanusPertussProductd54558e2851d29311ee7f90975827dc7",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalTrivaleProduct30b66eeb49e7056ae34bdeae70658f8b",
+      "name": "25/05/2018Influenza, seasonal (Trivalent)IL-YANG FLU Vaccine INJ.Vial1IL-YANG PHARMACEUTICAL CO., LTD.Ministry of Food and Drug Safety",
+      "fhir:code": "InfluenzaseasonalTrivaleProduct30b66eeb49e7056ae34bdeae70658f8b",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#JapaneseEncephalitisVaccProduct25fc0fcf4e56d016e349a170104a5840",
+      "name": "18/09/2014Japanese Encephalitis Vaccine (live, attenuated)IMOJEV MDTwo vial set (active + excipient)4Global Biotech Products Co., LtdThai Food and Drug Administration",
+      "fhir:code": "JapaneseEncephalitisVaccProduct25fc0fcf4e56d016e349a170104a5840",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusreducedProduct01c42855480e72f00caf639ab9157baf",
+      "name": "22/07/1997Diphtheria-Tetanus (reduced antigen content)IMOVAX dT adultVial10Sanofi PasteurAgence nationale de sécurité du médicament et des produits de santé",
+      "fhir:code": "DiphtheriaTetanusreducedProduct01c42855480e72f00caf639ab9157baf",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedIProduct532ef986c8042bbb15fee24056fdc4ed",
+      "name": "09/12/2005Polio Vaccine - Inactivated (IPV)IMOVAX POLIOVial10Sanofi PasteurAgence nationale de sécurité du médicament et des produits de santé",
+      "fhir:code": "PolioVaccineInactivatedIProduct532ef986c8042bbb15fee24056fdc4ed",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#SmallpoxandMpoxvaccineLiProduct1b03f110ef15d36c9664465098d3adec",
+      "name": "13/09/2024Smallpox and Mpox vaccine (Live Modified Vaccinia Virus Ankara)Imvanex® (also approved under the name of JYNNEOS by the USFDA and IMVAMUNE by Health Canada)Vial1Bavarian Nordic A/SEuropean Medicines Agency",
+      "fhir:code": "SmallpoxandMpoxvaccineLiProduct1b03f110ef15d36c9664465098d3adec",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaPandemicH1N1Product13ecad42baa7d2234f337b12f32b52de",
+      "name": "28/01/2010Influenza, Pandemic (H1N1)Influenza A (H1N1) 2009 monovalent vaccineVial1Sanofi Pasteur Inc.CBER/FDA",
+      "fhir:code": "InfluenzaPandemicH1N1Product13ecad42baa7d2234f337b12f32b52de",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaPandemicH1N1Product967a1c59b6590047a341c18013831c4b",
+      "name": "28/01/2010Influenza, Pandemic (H1N1)Influenza A (H1N1) 2009 monovalent vaccineVial10Sanofi Pasteur Inc.CBER/FDA",
+      "fhir:code": "InfluenzaPandemicH1N1Product967a1c59b6590047a341c18013831c4b",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaPandemicH1N1Product4326726a809bbcd312e4f29a90082bb6",
+      "name": "25/02/2010Influenza, Pandemic (H1N1)Influenza A (H1N1) 2009 monovalent vaccineSprayer1MedImmuneCBER/FDA",
+      "fhir:code": "InfluenzaPandemicH1N1Product4326726a809bbcd312e4f29a90082bb6",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalTrivaleProduct5268d009fa44e51462fcdcbcbc80ebf3",
+      "name": "26/04/2021Influenza, seasonal (Trivalent)influenza trivalent vaccine (split virion, inactivated)Vial10Instituto ButantanAgencia Nacional da Vigilancia Sanitaria",
+      "fhir:code": "InfluenzaseasonalTrivaleProduct5268d009fa44e51462fcdcbcbc80ebf3",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalTrivaleProduct3ec4a63eb2160bf9a65d9fd69f5de160",
+      "name": "09/06/2015Influenza, seasonal (Trivalent)Influenza Vaccine (Split virion, inactivated)Vial1Hualan Biological Bacterin Inc.National Medical Products Administration",
+      "fhir:code": "InfluenzaseasonalTrivaleProduct3ec4a63eb2160bf9a65d9fd69f5de160",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalTrivaleProduct096666bb5a86521c6c6046227092334d",
+      "name": "20/10/2023Influenza, seasonal (Trivalent)Influenza Vaccine (Split Virion), InactivatedVial1Changchun Institute of Biological Products Co., LtdNational Medical Products Administration",
+      "fhir:code": "InfluenzaseasonalTrivaleProduct096666bb5a86521c6c6046227092334d",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalQuadrivProduct30fd25d892863f955ec6f9b57c328dbb",
+      "name": "19/02/2024Influenza, seasonal (Quadrivalent)Influvac® TetraVial1Abbott Biologicals BVMedicines Evaluation Board (MEB)",
+      "fhir:code": "InfluenzaseasonalQuadrivProduct30fd25d892863f955ec6f9b57c328dbb",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedIProduct087ff26057e89c006517428347dfbc3c",
+      "name": "23/12/2010Polio Vaccine - Inactivated (IPV)IPV Vaccine AJVVial1AJ Vaccines A/SDanish Medicines Agency",
+      "fhir:code": "PolioVaccineInactivatedIProduct087ff26057e89c006517428347dfbc3c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#JapaneseEncephalitisVaccProduct88482ae2796337d6f7832238bdf003fb",
+      "name": "08/10/2013Japanese Encephalitis Vaccine (live, attenuated)Japanese Encephalitis Vaccine Live (SA14-14-2)Two vial set (active + excipient)1Chengdu Institute of Biological Products Co.,LtdNational Medical Products Administration",
+      "fhir:code": "JapaneseEncephalitisVaccProduct88482ae2796337d6f7832238bdf003fb",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#JapaneseEncephalitisVaccProductc6a1b72f22ca5f875ca681973d42742c",
+      "name": "08/10/2013Japanese Encephalitis Vaccine (live, attenuated)Japanese Encephalitis Vaccine Live (SA14-14-2)Two vial set (active + excipient)5Chengdu Institute of Biological Products Co.,LtdNational Medical Products Administration",
+      "fhir:code": "JapaneseEncephalitisVaccProductc6a1b72f22ca5f875ca681973d42742c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#JapaneseEncephalitisVaccProduct030f186c51ac8780d767bcba8f2762b2",
+      "name": "03/08/2016Japanese Encephalitis Vaccine (Inactivated) (3µg Pediatric)JEEV® (3µg)Vial1Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "JapaneseEncephalitisVaccProduct030f186c51ac8780d767bcba8f2762b2",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#JapaneseEncephalitisVaccProduct436f9ace27daebdccddb8279b66a3e98",
+      "name": "02/10/2018Japanese Encephalitis Vaccine (Inactivated) (3µg Pediatric)JEEV® (3µg)Vial5Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "JapaneseEncephalitisVaccProduct436f9ace27daebdccddb8279b66a3e98",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#JapaneseEncephalitisVaccProduct7d5507cd0733a44eaa4072b888176783",
+      "name": "12/07/2013Japanese Encephalitis Vaccine (Inactivated) 6µgJEEV® (6µg)Vial1Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "JapaneseEncephalitisVaccProduct7d5507cd0733a44eaa4072b888176783",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#JapaneseEncephalitisVaccProduct94b97202e37b591c7b7da316ff2bca00",
+      "name": "02/10/2018Japanese Encephalitis Vaccine (Inactivated) 6µgJEEV® (6µg)Vial5Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "JapaneseEncephalitisVaccProduct94b97202e37b591c7b7da316ff2bca00",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesandRubellaProducta64cf480e98d911934cc1e33dd1d99dd",
+      "name": "24/09/2019Measles and RubellaMeasles and Rubella Vaccine (Live) (Attenuated, Freeze Dried)Vial + Ampoule1Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "MeaslesandRubellaProducta64cf480e98d911934cc1e33dd1d99dd",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesandRubellaProductd3425606d671107b4265df9a9b33c318",
+      "name": "24/09/2019Measles and RubellaMeasles and Rubella Vaccine (Live) (Attenuated, Freeze Dried)Vial + Ampoule5Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "MeaslesandRubellaProductd3425606d671107b4265df9a9b33c318",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesandRubellaProduct77c8d21c6e4f7faaa12d93564b5c97bc",
+      "name": "24/09/2019Measles and RubellaMeasles and Rubella Vaccine (Live) (Attenuated, Freeze Dried)Vial + Ampoule10Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "MeaslesandRubellaProduct77c8d21c6e4f7faaa12d93564b5c97bc",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesandRubellaProductb59a78efc3a033a13b483b20d386fca5",
+      "name": "18/07/2000Measles and RubellaMeasles and Rubella Vaccine, Live, AttenuatedVial1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MeaslesandRubellaProductb59a78efc3a033a13b483b20d386fca5",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesandRubellaProduct635f19b7add7fab78d60262e086e4543",
+      "name": "18/07/2000Measles and RubellaMeasles and Rubella Vaccine, Live, AttenuatedVial2Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MeaslesandRubellaProduct635f19b7add7fab78d60262e086e4543",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesandRubellaProduct65d4761f7dd7345dd02cd11109a1cf8c",
+      "name": "18/07/2000Measles and RubellaMeasles and Rubella Vaccine, Live, AttenuatedVial5Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MeaslesandRubellaProduct65d4761f7dd7345dd02cd11109a1cf8c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesandRubellaProduct9fa0f8f3b99bdc45a172ae498f3f0105",
+      "name": "18/07/2000Measles and RubellaMeasles and Rubella Vaccine, Live, AttenuatedVial10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MeaslesandRubellaProduct9fa0f8f3b99bdc45a172ae498f3f0105",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesProductf1e33f21c2c353e67218f267dd73ea38",
+      "name": "04/09/2006MeaslesMeasles vaccineVial20PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "MeaslesProductf1e33f21c2c353e67218f267dd73ea38",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesProductf4749d5c7dc03738b6fad169dd71fa00",
+      "name": "09/04/1997MeaslesMeasles vaccineVial + Ampoule10PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "MeaslesProductf4749d5c7dc03738b6fad169dd71fa00",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesProductaa790a232317076de88d43837608f860",
+      "name": "15/02/1993MeaslesMeasles Vaccine, Live, AttenuatedVial1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MeaslesProductaa790a232317076de88d43837608f860",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesProduct0269fa56eaf4988d90c519518ec6282e",
+      "name": "15/02/1993MeaslesMeasles Vaccine, Live, AttenuatedVial2Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MeaslesProduct0269fa56eaf4988d90c519518ec6282e",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesProduct8f5df4935259a7c2d8a2dc97918336fc",
+      "name": "15/02/1993MeaslesMeasles Vaccine, Live, AttenuatedVial5Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MeaslesProduct8f5df4935259a7c2d8a2dc97918336fc",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesProduct22043a8ed978f482a283310ca4b73aa0",
+      "name": "15/02/1993MeaslesMeasles Vaccine, Live, AttenuatedVial10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MeaslesProduct22043a8ed978f482a283310ca4b73aa0",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesMumpsandRubellaProductbe9b0af328a5e3832c8004f7ec7d7657",
+      "name": "08/08/2003Measles, Mumps and RubellaMeasles, Mumps and Rubella Vaccine, Live, AttenuatedVial1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MeaslesMumpsandRubellaProductbe9b0af328a5e3832c8004f7ec7d7657",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesMumpsandRubellaProduct3e4662a10c91ed08c81f3163d43da4eb",
+      "name": "08/08/2003Measles, Mumps and RubellaMeasles, Mumps and Rubella Vaccine, Live, AttenuatedVial2Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MeaslesMumpsandRubellaProduct3e4662a10c91ed08c81f3163d43da4eb",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesMumpsandRubellaProducta1b8577c56035c4ad388e6a93986a21e",
+      "name": "08/08/2003Measles, Mumps and RubellaMeasles, Mumps and Rubella Vaccine, Live, AttenuatedVial5Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MeaslesMumpsandRubellaProducta1b8577c56035c4ad388e6a93986a21e",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesMumpsandRubellaProduct83ee5151e18552493e5441543f6cc8cb",
+      "name": "08/08/2003Measles, Mumps and RubellaMeasles, Mumps and Rubella Vaccine, Live, AttenuatedVial10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MeaslesMumpsandRubellaProduct83ee5151e18552493e5441543f6cc8cb",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeningococcalACYW135conjProduct4caa75a5785775ab99aa60248da4fc29",
+      "name": "21/03/2014Meningococcal ACYW-135 (conjugate vaccine)MenactraVial1Sanofi Pasteur Inc.CBER/FDA",
+      "fhir:code": "MeningococcalACYW135conjProduct4caa75a5785775ab99aa60248da4fc29",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MenigococcalACYWXPolysacProduct62f4ead3da74f2f31a51006339af12fe",
+      "name": "06/07/2023Menigococcal ACYWX (Polysaccharide conjugate)MenFive™Vial + Ampoule1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MenigococcalACYWXPolysacProduct62f4ead3da74f2f31a51006339af12fe",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MenigococcalACYWXPolysacProduct6e9e4e4a66528692b80623cf9b12d209",
+      "name": "06/07/2023Menigococcal ACYWX (Polysaccharide conjugate)MenFive™Vial + Ampoule5Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MenigococcalACYWXPolysacProduct6e9e4e4a66528692b80623cf9b12d209",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeningococcalAConjugate5Product59a4a8dd61e6115a46849c83d7b6fd2c",
+      "name": "30/12/2014Meningococcal A Conjugate 5 µgMeningococcal A Conjugate 5 micrograms MenAfriVac 5µgVial + Ampoule10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MeningococcalAConjugate5Product59a4a8dd61e6115a46849c83d7b6fd2c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeningococcalAConjugate1Product41addf46a75c0e97534853e5745f15d0",
+      "name": "23/06/2010Meningococcal A Conjugate 10 µgMeningococcal A Conjugate MenAfriVacVial + Ampoule10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MeningococcalAConjugate1Product41addf46a75c0e97534853e5745f15d0",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeningococcalACYW135TetaProduct85e37fdf8b368c828f1e3bf048f6ca6d",
+      "name": "28/01/2022Meningococcal ACYW-135 Tetanus Toxoid (conjugate vaccine)MenQuadfiVial1Sanofi Pasteur Inc.European Medicines Agency",
+      "fhir:code": "MeningococcalACYW135TetaProduct85e37fdf8b368c828f1e3bf048f6ca6d",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeningococcalACYW135conjProduct95cae3b1768b8647e3f971137397d84f",
+      "name": "31/07/2013Meningococcal ACYW-135 (conjugate vaccine)MenveoTwo vial set (active + active)1GlaxoSmithKline Vaccines S.r.l.European Medicines Agency",
+      "fhir:code": "MeningococcalACYW135conjProduct95cae3b1768b8647e3f971137397d84f",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVMonovProductcea74be2c728329aad7b9b33ae16a0b1",
+      "name": "03/11/2009Polio Vaccine - Oral (OPV) Monovalent Type 1Monovalent Oral Poliomyelitis Vaccine Type 1 (mOPV1)Vial20PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "PolioVaccineOralOPVMonovProductcea74be2c728329aad7b9b33ae16a0b1",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVMonovProductef716e2b9567223ce6c95b090480ecfe",
+      "name": "21/06/2019Polio Vaccine - Oral (OPV) Monovalent Type 2Monovalent Oral Poliomyelitis Vaccine Type 2Vial20PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "PolioVaccineOralOPVMonovProductef716e2b9567223ce6c95b090480ecfe",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVMonovProductae7e506ca48a3aa605b188cd11eaceab",
+      "name": "03/11/2009Polio Vaccine - Oral (OPV) Monovalent Type 1Monovalent type 1 Oral Poliomyelitis vaccine, IP (mOPV1)Vial20Haffkine Bio Pharmaceutical Corporation LtdCentral Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineOralOPVMonovProductae7e506ca48a3aa605b188cd11eaceab",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MalariaProduct483f7a671c76d38fef929bed60c3934f",
+      "name": "15/07/2022MalariaMosquirixTwo vial set (active + active)2GlaxoSmithKline Biologicals SAEuropean Medicines Agency",
+      "fhir:code": "MalariaProduct483f7a671c76d38fef929bed60c3934f",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#EbolavaccineMVABNFilorecProducte447fe0b4d8469dedecdf17870fdae80",
+      "name": "27/04/2021Ebola vaccine (MVA-BN-Filo [recombinant])MvabeaVial1Janssen Cilag International N.V.European Medicines Agency",
+      "fhir:code": "EbolavaccineMVABNFilorecProducte447fe0b4d8469dedecdf17870fdae80",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#YellowFeverProductd2c75a15ed309658b3968519ddb31690",
+      "name": "26/03/2009Yellow Fevern/aAmpoule2Federal State Autonomous Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products», Russian Academy of SciencesFederal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation",
+      "fhir:code": "YellowFeverProductd2c75a15ed309658b3968519ddb31690",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#YellowFeverProduct771d1a5c0acaee3e2dc9d56af1aba49d",
+      "name": "26/03/2009Yellow Fevern/aAmpoule5Federal State Autonomous Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products», Russian Academy of SciencesFederal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation",
+      "fhir:code": "YellowFeverProduct771d1a5c0acaee3e2dc9d56af1aba49d",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#YellowFeverProducte929626497bdbb71adbe925f0c09c79f",
+      "name": "26/03/2009Yellow Fevern/aAmpoule10Federal State Autonomous Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products», Russian Academy of SciencesFederal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation",
+      "fhir:code": "YellowFeverProducte929626497bdbb71adbe925f0c09c79f",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaPandemicH1N1Product48693eb423ca747a21dc8951d0c84948",
+      "name": "26/11/2012Influenza, Pandemic (H1N1)NASOVAC Influenza Vaccine, Live Attenuated (Human) Freeze-DriedVial + Ampoule1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "InfluenzaPandemicH1N1Product48693eb423ca747a21dc8951d0c84948",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaPandemicH1N1Product7168c312db80310f2cd6012ffa5e2f8f",
+      "name": "26/11/2012Influenza, Pandemic (H1N1)NASOVAC Influenza Vaccine, Live Attenuated (Human) Freeze-DriedVial + Ampoule5Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "InfluenzaPandemicH1N1Product7168c312db80310f2cd6012ffa5e2f8f",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalTrivaleProducteb55e6f37bc19bec445ee030c5bce405",
+      "name": "30/09/2015Influenza, seasonal (Trivalent)Nasovac-S Influenza Vaccine, Live, Attenuated (Human)Vial + Ampoule1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "InfluenzaseasonalTrivaleProducteb55e6f37bc19bec445ee030c5bce405",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeningococcalACYW135conjProductb59403bf43f59483bc3d5811fbbe99ae",
+      "name": "31/08/2016Meningococcal ACYW-135 (conjugate vaccine)NimenrixVial + Ampoule1Pfizer Europe MA EEIGEuropean Medicines Agency",
+      "fhir:code": "MeningococcalACYW135conjProductb59403bf43f59483bc3d5811fbbe99ae",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusreducedProduct844b4cd71587aa7b05205985fadc54bf",
+      "name": "06/07/2011Diphtheria-Tetanus (reduced antigen content)noneVial10PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "DiphtheriaTetanusreducedProduct844b4cd71587aa7b05205985fadc54bf",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusreducedProduct2d90fb090e2c500ab939d14b59fe7b4c",
+      "name": "17/09/2014Diphtheria-Tetanus (reduced antigen content)None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE TdVial1Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusreducedProduct2d90fb090e2c500ab939d14b59fe7b4c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusreducedProduct765d85d2d2e92fc0aa155a4189f60843",
+      "name": "17/09/2014Diphtheria-Tetanus (reduced antigen content)None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE TdVial10Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusreducedProduct765d85d2d2e92fc0aa155a4189f60843",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusreducedProduct93f61c0e63644a7adbd43720ad096a6b",
+      "name": "09/03/2020Diphtheria-Tetanus (reduced antigen content)None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE TdVial20Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusreducedProduct93f61c0e63644a7adbd43720ad096a6b",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TetanusToxoidProductf9fde2170e347e77162f463b9c3a2753",
+      "name": "12/07/2012Tetanus ToxoidNone used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt.Vial1Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "TetanusToxoidProductf9fde2170e347e77162f463b9c3a2753",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TetanusToxoidProduct5d2f3b492c9af0f21b268c22a11400c0",
+      "name": "12/07/2012Tetanus ToxoidNone used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt.Vial10Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "TetanusToxoidProduct5d2f3b492c9af0f21b268c22a11400c0",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TetanusToxoidProduct28645bb5f0babbccee86ce69b98ec9d6",
+      "name": "21/12/2009Tetanus ToxoidNone used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt.Vial20Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "TetanusToxoidProduct28645bb5f0babbccee86ce69b98ec9d6",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct493bac374b484cee83f218d75bca265e",
+      "name": "18/05/2012Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bNone used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid).Vial1Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProduct493bac374b484cee83f218d75bca265e",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct588074b4bc22a6afb41276d6e3a1bc57",
+      "name": "27/11/2014Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bNone used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid).Vial2Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProduct588074b4bc22a6afb41276d6e3a1bc57",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct32779e6bf47670e22e3b351cfc5530c4",
+      "name": "27/11/2014Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bNone used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid).Vial5Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProduct32779e6bf47670e22e3b351cfc5530c4",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProducte3b135252953c7f29f4a82b3cdfded35",
+      "name": "18/05/2012Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bNone used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid).Vial10Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProducte3b135252953c7f29f4a82b3cdfded35",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct120c366956f5490de6fe5fa85ba7e9ae",
+      "name": "01/09/2011Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bNone used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Reconstituted).Two vial set (active + active)1Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProduct120c366956f5490de6fe5fa85ba7e9ae",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct520f511adb804a1ca5d7fa29d15799b3",
+      "name": "01/09/2011Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bNone used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Reconstituted).Two vial set (active + active)10Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProduct520f511adb804a1ca5d7fa29d15799b3",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProducta0ac41f8d8a64a093a5e07f7c9bbc8e4",
+      "name": "31/07/2014Diphtheria-Tetanus-Pertussis (whole cell)None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  TRIPVACVial1Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProducta0ac41f8d8a64a093a5e07f7c9bbc8e4",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct76f7fbefcf37814d2dbf2af5d784ad74",
+      "name": "31/07/2014Diphtheria-Tetanus-Pertussis (whole cell)None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  TRIPVACVial10Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "DiphtheriaTetanusPertussProduct76f7fbefcf37814d2dbf2af5d784ad74",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVMonovProductf6d840e9cf722a80b38d0be001f47caf",
+      "name": "14/01/2016Polio Vaccine - Oral (OPV) Monovalent Type 2ORAL MONOVALENT TYPE 2 POLIOMYELITIS VACCINE (mOPV2)Vial20Sanofi PasteurAgence nationale de sécurité du médicament et des produits de santé",
+      "fhir:code": "PolioVaccineOralOPVMonovProductf6d840e9cf722a80b38d0be001f47caf",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVTrivaProducte0bcdc085107751b3df34ad04620ac21",
+      "name": "31/08/2020Polio Vaccine - Oral (OPV) TrivalentOral Poliomyelitis Vaccines (Oral Drops)Vial20PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "PolioVaccineOralOPVTrivaProducte0bcdc085107751b3df34ad04620ac21",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaPandemicH5N1Product98147a8d5841bb5826a0742c93febdb7",
+      "name": "18/12/2020Influenza, Pandemic (H5N1)Pandemic Live Attenuated VaccineSprayer1AstraZeneca Pharmaceuticals LP.European Medicines Agency",
+      "fhir:code": "InfluenzaPandemicH5N1Product98147a8d5841bb5826a0742c93febdb7",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaPandemicH1N1Product088d100de56d00ac49ab0a216ffd4424",
+      "name": "22/01/2010Influenza, Pandemic (H1N1)PanenzaVial10Sanofi PasteurAgence nationale de sécurité du médicament et des produits de santé",
+      "fhir:code": "InfluenzaPandemicH1N1Product088d100de56d00ac49ab0a216ffd4424",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaPandemicH1N1Product526f1bed643beeed056c10f07a683f71",
+      "name": "01/12/2009Influenza, Pandemic (H1N1)PanvaxVial10Seqirus LimitedTherapeutic Goods Administration",
+      "fhir:code": "InfluenzaPandemicH1N1Product526f1bed643beeed056c10f07a683f71",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct4aadc8e795e664423aad5161f0118f34",
+      "name": "19/12/2014Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bPentabioVial5PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "DiphtheriaTetanusPertussProduct4aadc8e795e664423aad5161f0118f34",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusPertussProduct54d8790e5e5db152340b4fd96e6f2f11",
+      "name": "19/12/2014Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type bPentabioVial10PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "DiphtheriaTetanusPertussProduct54d8790e5e5db152340b4fd96e6f2f11",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedIProduct096d9e8c31e30cc1148311ee66359a50",
+      "name": "21/04/2020Polio Vaccine - Inactivated (IPV)PicovaxVial5AJ Vaccines A/SDanish Medicines Agency",
+      "fhir:code": "PolioVaccineInactivatedIProduct096d9e8c31e30cc1148311ee66359a50",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PneumococcalconjugateProduct81604632fc612703d280e60af24938ea",
+      "name": "18/12/2019Pneumococcal (conjugate)PNEUMOSIL®Vial1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "PneumococcalconjugateProduct81604632fc612703d280e60af24938ea",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PneumococcalconjugateProduct300c6fe07dc895ee2b3022528850d26e",
+      "name": "18/12/2019Pneumococcal (conjugate)PNEUMOSIL®Vial5Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "PneumococcalconjugateProduct300c6fe07dc895ee2b3022528850d26e",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PneumococcalconjugateProduct82c42719edaea37e1696ebde6674128c",
+      "name": "19/01/2024Pneumococcal (conjugate)PNEUMOSILVial10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "PneumococcalconjugateProduct82c42719edaea37e1696ebde6674128c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVMonovProduct7d442364610244382098e1c4a3ba54c3",
+      "name": "29/10/2009Polio Vaccine - Oral (OPV) Monovalent Type 1Polio Sabin Mono T1Vial10GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "PolioVaccineOralOPVMonovProduct7d442364610244382098e1c4a3ba54c3",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVMonovProduct4580ab03228ed6c70bb6c117b408f7e5",
+      "name": "29/10/2009Polio Vaccine - Oral (OPV) Monovalent Type 1Polio Sabin Mono T1Vial20GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "PolioVaccineOralOPVMonovProduct4580ab03228ed6c70bb6c117b408f7e5",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVMonovProduct7a252b223173567f21721ee15a36f057",
+      "name": "05/10/2010Polio Vaccine - Oral (OPV) Monovalent Type 3Polio Sabin Mono Three (oral)Vial10GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "PolioVaccineOralOPVMonovProduct7a252b223173567f21721ee15a36f057",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVMonovProductf22fcdfa611173d0afbce56d49867530",
+      "name": "05/10/2010Polio Vaccine - Oral (OPV) Monovalent Type 3Polio Sabin Mono Three (oral)Vial20GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "PolioVaccineOralOPVMonovProductf22fcdfa611173d0afbce56d49867530",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVMonovProduct1b2bdb769d38e0b45eb60707ff9a36cb",
+      "name": "11/05/2011Polio Vaccine - Oral (OPV) Monovalent Type 2Polio Sabin Mono Two (oral)Vial10GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "PolioVaccineOralOPVMonovProduct1b2bdb769d38e0b45eb60707ff9a36cb",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVMonovProductb4755cab194f57a5fecc8d890856bbdf",
+      "name": "11/05/2011Polio Vaccine - Oral (OPV) Monovalent Type 2Polio Sabin Mono Two (oral)Vial20GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "PolioVaccineOralOPVMonovProductb4755cab194f57a5fecc8d890856bbdf",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVBivalProduct14c88c2e9b35698b4726903940c58037",
+      "name": "29/10/2009Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3Polio Sabin One and ThreeVial10GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "PolioVaccineOralOPVBivalProduct14c88c2e9b35698b4726903940c58037",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVBivalProduct2d10261076734e48cd7b289de6ea802e",
+      "name": "29/10/2009Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3Polio Sabin One and ThreeVial20GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "PolioVaccineOralOPVBivalProduct2d10261076734e48cd7b289de6ea802e",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedIProductc726fd7210023aa5738617a79cae2b40",
+      "name": "06/12/2010Polio Vaccine - Inactivated (IPV)Poliomyelitis vaccineVial1Bilthoven Biologicals B.V.Medicines Evaluation Board (MEB)",
+      "fhir:code": "PolioVaccineInactivatedIProductc726fd7210023aa5738617a79cae2b40",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineNovelOralnOPProduct65b137f0201901bc43fc8759e4f35f35",
+      "name": "29/07/2024Polio Vaccine - Novel Oral (nOPV) Type 2Poliomyelitis Vaccine - Novel Oral (nOPV) Type 2Vial20Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineNovelOralnOPProduct65b137f0201901bc43fc8759e4f35f35",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineNovelOralnOPProduct278e9af5dc50904dd144a7ceb4d42dd7",
+      "name": "27/12/2023Polio Vaccine - Novel Oral (nOPV) Type 2Polio Vaccine - Novel Oral (nOPV) Type 2Vial50PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "PolioVaccineNovelOralnOPProduct278e9af5dc50904dd144a7ceb4d42dd7",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineNovelOralnOPProductab7589153ddbc7968e1749119c5b1678",
+      "name": "29/07/2024Polio Vaccine - Novel Oral (nOPV) Type 2Poliomyelitis Vaccine - Novel Oral (nOPV) Type 2Vial50Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineNovelOralnOPProductab7589153ddbc7968e1749119c5b1678",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedIProduct1d63ab46cee67d02439c47ed91439667",
+      "name": "28/10/2016Polio Vaccine - Inactivated (IPV)Poliomyelitis Vaccine (Inactivated)Vial1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineInactivatedIProduct1d63ab46cee67d02439c47ed91439667",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedIProduct13e82343f8e192fe6e3fbfbf2a47ffd7",
+      "name": "28/10/2016Polio Vaccine - Inactivated (IPV)Poliomyelitis Vaccine (Inactivated)Vial2Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineInactivatedIProduct13e82343f8e192fe6e3fbfbf2a47ffd7",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedIProductf8085a2bd9a1c84fba1adee2ec6f6fb1",
+      "name": "28/10/2016Polio Vaccine - Inactivated (IPV)Poliomyelitis Vaccine (Inactivated)Vial5Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineInactivatedIProductf8085a2bd9a1c84fba1adee2ec6f6fb1",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedIProductfea93261bf2f096ea48aed825522dc2d",
+      "name": "11/07/2019Polio Vaccine - Inactivated (IPV)Poliomyelitis Vaccine (Inactivated)Vial10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineInactivatedIProductfea93261bf2f096ea48aed825522dc2d",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVBivalProductdcbfa0a541c65032a917c39fa762c2f9",
+      "name": "21/12/2017Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3Poliomyelitis Vaccine (live, oral attenuated, human Diploid Cell), type 1 and 3Vial20Beijing Institute of Biological Products Co., Ltd.National Medical Products Administration",
+      "fhir:code": "PolioVaccineOralOPVBivalProductdcbfa0a541c65032a917c39fa762c2f9",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVBivalProduct06bf2d06adcc6d9e2bea8ac21846bb09",
+      "name": "22/10/2014Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3Poliomyelitis Vaccine (Oral), Bivalent types 1 and 3Vial10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineOralOPVBivalProduct06bf2d06adcc6d9e2bea8ac21846bb09",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVBivalProducta5416e91021f0c00915e4688ff508717",
+      "name": "04/02/2013Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3Poliomyelitis Vaccine (Oral), Bivalent types 1 and 3Vial20Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineOralOPVBivalProducta5416e91021f0c00915e4688ff508717",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedSProduct2050ea67709cfcde28a01f0546276e96",
+      "name": "06/06/2022Polio Vaccine - Inactivated Sabin (sIPV)Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin StrainsVial1Sinovac Biotech Co. LtdNational Medical Products Administration",
+      "fhir:code": "PolioVaccineInactivatedSProduct2050ea67709cfcde28a01f0546276e96",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedSProduct25383b1f589d42af3719c7074f982c9b",
+      "name": "15/02/2022Polio Vaccine - Inactivated Sabin (sIPV)Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin StrainsVial1Beijing Institute of Biological Products Co., Ltd.National Medical Products Administration",
+      "fhir:code": "PolioVaccineInactivatedSProduct25383b1f589d42af3719c7074f982c9b",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedSProductd554f4c3848920ca8bcd00d44afd18a4",
+      "name": "29/08/2024Polio Vaccine - Inactivated Sabin (sIPV)Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin StrainsVial5Sinovac Biotech Co. LtdNational Medical Products Administration",
+      "fhir:code": "PolioVaccineInactivatedSProductd554f4c3848920ca8bcd00d44afd18a4",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedIProduct3cde3a30cacdc23b9ec3bdf4ba9d23ff",
+      "name": "28/11/2014Polio Vaccine - Inactivated (IPV)Poliomyelitis vaccine multidoseVial5Bilthoven Biologicals B.V.Medicines Evaluation Board (MEB)",
+      "fhir:code": "PolioVaccineInactivatedIProduct3cde3a30cacdc23b9ec3bdf4ba9d23ff",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedIProduct4562bbd80c6e57dbe29b122817623854",
+      "name": "29/02/2024Polio Vaccine - Inactivated (IPV)Poliomyelitis vaccine multidoseVial10Bilthoven Biologicals B.V.Medicines Evaluation Board (MEB)",
+      "fhir:code": "PolioVaccineInactivatedIProduct4562bbd80c6e57dbe29b122817623854",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineOralOPVTrivaProductbd7faeaf3f0e633420fba396895d6cc9",
+      "name": "02/02/2006Polio Vaccine - Oral (OPV) TrivalentPolioviral vaccineVial20Haffkine Bio Pharmaceutical Corporation LtdCentral Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineOralOPVTrivaProductbd7faeaf3f0e633420fba396895d6cc9",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PneumococcalconjugateProductd76340c94c13863d00dcf437778fc804",
+      "name": "20/08/2010Pneumococcal (conjugate)Prevenar 13Vial1Pfizer Europe MA EEIGEuropean Medicines Agency",
+      "fhir:code": "PneumococcalconjugateProductd76340c94c13863d00dcf437778fc804",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PneumococcalconjugateProduct083cce20a86e6f530b905d4d6e72136c",
+      "name": "14/07/2016Pneumococcal (conjugate)Prevenar 13 Multidose VialVial4Pfizer Europe MA EEIGEuropean Medicines Agency",
+      "fhir:code": "PneumococcalconjugateProduct083cce20a86e6f530b905d4d6e72136c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesMumpsandRubellaProducta83fd7c161c4c48ad786e3ff49073adf",
+      "name": "09/03/2001Measles, Mumps and RubellaPriorixVial1GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "MeaslesMumpsandRubellaProducta83fd7c161c4c48ad786e3ff49073adf",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesMumpsandRubellaProduct5391a66b3bec700dd62d02c2687a9f2f",
+      "name": "21/12/2011Measles, Mumps and RubellaPriorixVial2GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "MeaslesMumpsandRubellaProduct5391a66b3bec700dd62d02c2687a9f2f",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DengueTetravalentliveattProducta742565a0d07d6c92f087a1c055ab278",
+      "name": "09/05/2024Dengue Tetravalent (live, attenuated)QdengaTwo vial set (active + excipient)1Takeda GmbH.European Medicines Agency",
+      "fhir:code": "DengueTetravalentliveattProducta742565a0d07d6c92f087a1c055ab278",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HaemophilusinfluenzaetypProduct99ca7b265fb87731abd4ff27d13b44cd",
+      "name": "26/04/2010Haemophilus influenzae type bQuimi-HibVial1Centro de Ingenieria Genetica y BiotecnologiaCentro para el Control Estatal de la Calidad de los Medicamentos",
+      "fhir:code": "HaemophilusinfluenzaetypProduct99ca7b265fb87731abd4ff27d13b44cd",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MalariaProduct34cd73607a9432893b41df94a5a9d0d2",
+      "name": "19/12/2023MalariaCYVACVial1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "MalariaProduct34cd73607a9432893b41df94a5a9d0d2",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RabiesProductf2b192bfc92c1c7871308ada29a061c4",
+      "name": "20/12/2018RabiesRabies Vaccine Inactivated (Freeze Dried)(RABIVAX-S)Vial + Ampoule1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "RabiesProductf2b192bfc92c1c7871308ada29a061c4",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#MeaslesMumpsandRubellaProductf53615897edbe997d964e625d344ccdc",
+      "name": "06/01/2009Measles, Mumps and RubellarHA M-M-R IIVial1Merck Sharp & Dohme LLCEuropean Medicines Agency",
+      "fhir:code": "MeaslesMumpsandRubellaProductf53615897edbe997d964e625d344ccdc",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RotavirusProduct0b0dd154bb4274f5fd8784b59e2fe275",
+      "name": "12/03/2009RotavirusRotarixPlastic Tube1GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "RotavirusProduct0b0dd154bb4274f5fd8784b59e2fe275",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RotavirusProduct53fcb319f717ccabdb38629caa624b20",
+      "name": "14/02/2019RotavirusRotarixPlastic Tube5GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "RotavirusProduct53fcb319f717ccabdb38629caa624b20",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RotavirusProductbc017d15d7f431bd0424354df11c18c8",
+      "name": "12/03/2009RotavirusRotarixApplicator1GlaxoSmithKline Biologicals SAFederal Agency for Medicines and Health Products",
+      "fhir:code": "RotavirusProductbc017d15d7f431bd0424354df11c18c8",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RotavirusliveattenuatedProductaba1269c8eed435e58d27f99062aab7f",
+      "name": "21/09/2018Rotavirus (live, attenuated)ROTASIILTwo vial set (active + excipient)1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "RotavirusliveattenuatedProductaba1269c8eed435e58d27f99062aab7f",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RotavirusliveattenuatedProduct846073e8efc59e6bde4f3aa8c7008f8e",
+      "name": "21/09/2018Rotavirus (live, attenuated)ROTASIILTwo vial set (active + excipient)2Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "RotavirusliveattenuatedProduct846073e8efc59e6bde4f3aa8c7008f8e",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RotavirusliveattenuatedProduct5d0aee9435820780b60fc3f11ce1cfb0",
+      "name": "13/09/2023Rotavirus (live, attenuated)ROTASIIL-LiquidVial1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "RotavirusliveattenuatedProduct5d0aee9435820780b60fc3f11ce1cfb0",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RotavirusliveattenuatedProduct84971742b6ec638f100087e1907dd8ad",
+      "name": "08/10/2021Rotavirus (live, attenuated)ROTASIIL-LiquidVial2Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "RotavirusliveattenuatedProduct84971742b6ec638f100087e1907dd8ad",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RotavirusliveattenuatedProducta28f27ab86847575f0c86632fa40e736",
+      "name": "18/02/2021Rotavirus (live, attenuated)ROTASIIL-LiquidPlastic Tube1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "RotavirusliveattenuatedProducta28f27ab86847575f0c86632fa40e736",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RotavirusliveattenuatedProductbab8551131e5a5ecce02dcb55bce1647",
+      "name": "28/01/2020Rotavirus (live, attenuated)ROTASIIL®ThermoTwo vial set (active + excipient)1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "RotavirusliveattenuatedProductbab8551131e5a5ecce02dcb55bce1647",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RotavirusliveattenuatedProductc988bcb87cb2a881e4e0193a1794c184",
+      "name": "28/01/2020Rotavirus (live, attenuated)ROTASIIL®ThermoTwo vial set (active + excipient)2Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "RotavirusliveattenuatedProductc988bcb87cb2a881e4e0193a1794c184",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RotavirusProductf4c0952b7ac2caea70a5dd2b4e44a705",
+      "name": "07/10/2008RotavirusRotateqPlastic Tube1Merck Sharp & Dohme LLCCBER/FDA",
+      "fhir:code": "RotavirusProductf4c0952b7ac2caea70a5dd2b4e44a705",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RotavirusliveattenuatedProducta4d4cf1eeafbb570eaec6b91bd8c1642",
+      "name": "05/01/2018Rotavirus (live, attenuated)RotavacVial5Bharat Biotech International LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "RotavirusliveattenuatedProducta4d4cf1eeafbb570eaec6b91bd8c1642",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RotavirusliveattenuatedProduct247d96f0d9d687ba45daac8fd4aef6e1",
+      "name": "05/01/2018Rotavirus (live, attenuated)RotavacVial10Bharat Biotech International LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "RotavirusliveattenuatedProduct247d96f0d9d687ba45daac8fd4aef6e1",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RotavirusliveattenuatedProduct6cf88a56e306e621e5f6c06e754d492d",
+      "name": "18/06/2021Rotavirus (live, attenuated)ROTAVAC 5D®Vial1Bharat Biotech International LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "RotavirusliveattenuatedProduct6cf88a56e306e621e5f6c06e754d492d",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RotavirusliveattenuatedProduct44f5911f2722c9c2ab4caa5e4a2ee009",
+      "name": "18/06/2021Rotavirus (live, attenuated)ROTAVAC 5D®Vial5Bharat Biotech International LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "RotavirusliveattenuatedProduct44f5911f2722c9c2ab4caa5e4a2ee009",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RubellaProductb58ecc88973c368d2929674f7588dcaf",
+      "name": "01/09/2006RubellaRubella Vaccine, Live, AttenuatedVial1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "RubellaProductb58ecc88973c368d2929674f7588dcaf",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RubellaProduct92d62b88e7a6bda1cdffd774c099112d",
+      "name": "01/09/2006RubellaRubella Vaccine, Live, AttenuatedVial2Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "RubellaProduct92d62b88e7a6bda1cdffd774c099112d",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RubellaProduct5256bec4bd8bae0e45743e9d569db466",
+      "name": "01/09/2006RubellaRubella Vaccine, Live, AttenuatedVial5Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "RubellaProduct5256bec4bd8bae0e45743e9d569db466",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RubellaProduct0bb48b4861045ee347f5539609d92bbd",
+      "name": "01/09/2006RubellaRubella Vaccine, Live, AttenuatedVial10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "RubellaProduct0bb48b4861045ee347f5539609d92bbd",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalTrivaleProduct1de83fee04f2d8630ea4ff089ae47443",
+      "name": "25/05/2018Influenza, seasonal (Trivalent)SerinfluVial1Abbott Biologicals BVMedicines Evaluation Board (MEB)",
+      "fhir:code": "InfluenzaseasonalTrivaleProduct1de83fee04f2d8630ea4ff089ae47443",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#cholerainactivatedoralProductbcc643f5ed406d46ed23bf1e0ff46cd1",
+      "name": "29/09/2011cholera: inactivated oralShancholVial1Sanofi Healthcare India Private LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "cholerainactivatedoralProductbcc643f5ed406d46ed23bf1e0ff46cd1",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedIProduct81ee9ba77c4419bbfe44a27cfd10027e",
+      "name": "01/10/2018Polio Vaccine - Inactivated (IPV)ShanIPV™Vial5Sanofi Healthcare India Private LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineInactivatedIProduct81ee9ba77c4419bbfe44a27cfd10027e",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PolioVaccineInactivatedIProduct8b13b5fcf5e9268b345775be7c3f077c",
+      "name": "22/04/2022Polio Vaccine - Inactivated (IPV)ShanIPV™Vial10Sanofi Healthcare India Private LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "PolioVaccineInactivatedIProduct8b13b5fcf5e9268b345775be7c3f077c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#YellowFeverProduct01a3b83cf13e87948437db11cf5c34eb",
+      "name": "14/10/2022Yellow FeverSinSaVac™Vial10Federal State Autonomous Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products», Russian Academy of SciencesFederal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation",
+      "fhir:code": "YellowFeverProduct01a3b83cf13e87948437db11cf5c34eb",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalQuadrivProduct857b54237833aa49172d24b749788cd8",
+      "name": "27/12/2019Influenza, seasonal (Quadrivalent)SKYCellflu Quadrivalent inj.Vial1SK Bioscience Co., Ltd.Ministry of Food and Drug Safety",
+      "fhir:code": "InfluenzaseasonalQuadrivProduct857b54237833aa49172d24b749788cd8",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalQuadrivProduct2329c9c335034cc9d169c85cb142f137",
+      "name": "27/12/2019Influenza, seasonal (Quadrivalent)SKYCellflu Quadrivalent Multi inj.Vial10SK Bioscience Co., Ltd.Ministry of Food and Drug Safety",
+      "fhir:code": "InfluenzaseasonalQuadrivProduct2329c9c335034cc9d169c85cb142f137",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalTrivaleProducta7caaed8ed28906a817fdfe7f26bb696",
+      "name": "15/05/2019Influenza, seasonal (Trivalent)SKYCellflu® inj.Vial1SK Bioscience Co., Ltd.Ministry of Food and Drug Safety",
+      "fhir:code": "InfluenzaseasonalTrivaleProducta7caaed8ed28906a817fdfe7f26bb696",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalTrivaleProductbc5b1b4b2ba40fb3b9743077a086766e",
+      "name": "08/04/2019Influenza, seasonal (Trivalent)SKYCellflu® Multi inj.Vial10SK Bioscience Co., Ltd.Ministry of Food and Drug Safety",
+      "fhir:code": "InfluenzaseasonalTrivaleProductbc5b1b4b2ba40fb3b9743077a086766e",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TyphoidConjugateProduct14f33effe6b84f89d3c5d07663cce92b",
+      "name": "21/02/2024Typhoid (Conjugate)SKYTyphoid Multi Inj.Vial5SK Bioscience Co., Ltd.Ministry of Food and Drug Safety",
+      "fhir:code": "TyphoidConjugateProduct14f33effe6b84f89d3c5d07663cce92b",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#VaricellaProduct8133c14443b0a3b1b10b846723961fee",
+      "name": "09/12/2019VaricellaSKYVaricella Inj.Two vial set (active + excipient)1SK Bioscience Co., Ltd.Ministry of Food and Drug Safety",
+      "fhir:code": "VaricellaProduct8133c14443b0a3b1b10b846723961fee",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#YellowFeverProductf82b015dfb3b1feeacd4c44d95b3b3ec",
+      "name": "20/03/2001Yellow FeverStabilized Yellow Fever VaccineAmpoule5Institut Pasteur de DakarMinistère de la Santé publique",
+      "fhir:code": "YellowFeverProductf82b015dfb3b1feeacd4c44d95b3b3ec",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#YellowFeverProduct223330a7c15da86b21cc363f591de002",
+      "name": "20/03/2001Yellow FeverStabilized Yellow Fever VaccineAmpoule10Institut Pasteur de DakarMinistère de la Santé publique",
+      "fhir:code": "YellowFeverProduct223330a7c15da86b21cc363f591de002",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#YellowFeverProductffea8448252ee58b7a92add05f0c3431",
+      "name": "20/03/2001Yellow FeverStabilized Yellow Fever VaccineAmpoule20Institut Pasteur de DakarMinistère de la Santé publique",
+      "fhir:code": "YellowFeverProductffea8448252ee58b7a92add05f0c3431",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#YellowFeverProductd8a09f80301dc05e124f99ffe7711fc0",
+      "name": "01/01/1987Yellow FeverSTAMARILVial + Ampoule10Sanofi PasteurAgence nationale de sécurité du médicament et des produits de santé",
+      "fhir:code": "YellowFeverProductd8a09f80301dc05e124f99ffe7711fc0",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PneumococcalconjugateProductfcf21ee9ff8e209c022200a4d776dda0",
+      "name": "30/10/2009Pneumococcal (conjugate)SynflorixVial1GlaxoSmithKline Biologicals SAEuropean Medicines Agency",
+      "fhir:code": "PneumococcalconjugateProductfcf21ee9ff8e209c022200a4d776dda0",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PneumococcalconjugateProduct0defc68f369dcb9815e2bc4a6ee5533f",
+      "name": "19/03/2010Pneumococcal (conjugate)SynflorixVial2GlaxoSmithKline Biologicals SAEuropean Medicines Agency",
+      "fhir:code": "PneumococcalconjugateProduct0defc68f369dcb9815e2bc4a6ee5533f",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#PneumococcalconjugateProduct1bc532b4004e4c37e8503a66c775e9cd",
+      "name": "16/10/2017Pneumococcal (conjugate)SynflorixVial4GlaxoSmithKline Biologicals SAEuropean Medicines Agency",
+      "fhir:code": "PneumococcalconjugateProduct1bc532b4004e4c37e8503a66c775e9cd",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusreducedProduct015e0d747befdc032a505ac960851497",
+      "name": "09/05/2006Diphtheria-Tetanus (reduced antigen content)TetadifVial10BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)Bulgarian Drug Agency",
+      "fhir:code": "DiphtheriaTetanusreducedProduct015e0d747befdc032a505ac960851497",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#DiphtheriaTetanusreducedProduct36463c650975ef84b1519bc55647a533",
+      "name": "09/05/2006Diphtheria-Tetanus (reduced antigen content)TetadifVial20BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)Bulgarian Drug Agency",
+      "fhir:code": "DiphtheriaTetanusreducedProduct36463c650975ef84b1519bc55647a533",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TetanusToxoidProduct3d3b58060f5dc09709e826ea5b7f635d",
+      "name": "04/04/1995Tetanus ToxoidTetanus  Toxoid Vaccine AdsorbedVial10Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "TetanusToxoidProduct3d3b58060f5dc09709e826ea5b7f635d",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TetanusToxoidProduct0cb7838cdb9015a56943ac3256e7c9e0",
+      "name": "04/04/1995Tetanus ToxoidTetanus  Toxoid Vaccine AdsorbedVial20Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "TetanusToxoidProduct0cb7838cdb9015a56943ac3256e7c9e0",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TetanusToxoidProduct918ff9b5bd4b52ff9f2adf81368501a5",
+      "name": "04/04/1995Tetanus ToxoidTetanus  Toxoid Vaccine AdsorbedAmpoule1Serum Institute of India Pvt. Ltd.Central Drugs Standard Control Organization",
+      "fhir:code": "TetanusToxoidProduct918ff9b5bd4b52ff9f2adf81368501a5",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TetanusToxoidProduct74a886b0b82debce2c05ff10507db46e",
+      "name": "09/05/2006Tetanus ToxoidTetatoxVial10BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)Bulgarian Drug Agency",
+      "fhir:code": "TetanusToxoidProduct74a886b0b82debce2c05ff10507db46e",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TetanusToxoidProduct1071c914359919dd58d72663a018511b",
+      "name": "09/05/2006Tetanus ToxoidTetatoxVial20BB- NCIPD Ltd. (Bul Bio-National Center of Infectious and Parasitic Diseases Ltd.)Bulgarian Drug Agency",
+      "fhir:code": "TetanusToxoidProduct1071c914359919dd58d72663a018511b",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TetanusToxoidProductda7044cc9c5d3a1c5e4cb5c88ee081f0",
+      "name": "11/03/1999Tetanus ToxoidTT vaccineVial10PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "TetanusToxoidProductda7044cc9c5d3a1c5e4cb5c88ee081f0",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TetanusToxoidProductf8b5e42854cc1ae2255649171e9a8e5c",
+      "name": "11/03/1999Tetanus ToxoidTT vaccineVial20PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "TetanusToxoidProductf8b5e42854cc1ae2255649171e9a8e5c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TetanusToxoidProductd0dc36feabc50a33cc8f2f89d2342919",
+      "name": "29/10/2003Tetanus ToxoidTT vaccineUniject1PT Bio Farma (Persero)National Agency of Drug and Food Control Indonesia",
+      "fhir:code": "TetanusToxoidProductd0dc36feabc50a33cc8f2f89d2342919",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TyphoidConjugateProductc8a79556c41225d558dae1807a41b38f",
+      "name": "22/12/2017Typhoid (Conjugate)Typbar-TCVVial1Bharat Biotech International LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "TyphoidConjugateProductc8a79556c41225d558dae1807a41b38f",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TyphoidConjugateProduct1bd8cf70f560d4ac1a937963c2fd44ba",
+      "name": "22/12/2017Typhoid (Conjugate)Typbar-TCVVial5Bharat Biotech International LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "TyphoidConjugateProduct1bd8cf70f560d4ac1a937963c2fd44ba",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TyphoidConjugateProduct2ae65ee169c9a71896965301d90f4ee2",
+      "name": "04/12/2020Typhoid (Conjugate)TYPHIBEV®Vial1Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "TyphoidConjugateProduct2ae65ee169c9a71896965301d90f4ee2",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TyphoidConjugateProduct888fc7936a47fcc7c2f59c465bb8e7ed",
+      "name": "04/12/2020Typhoid (Conjugate)TYPHIBEV®Vial5Biological E. LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "TyphoidConjugateProduct888fc7936a47fcc7c2f59c465bb8e7ed",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#VaricellaProduct0997806769699913a3f450d32a1932b4",
+      "name": "03/11/2022VaricellaVaricella Vaccine, LiveVial1Sinovac (Dalian) Vaccine Technology Co., Ltd.National Medical Products Administration",
+      "fhir:code": "VaricellaProduct0997806769699913a3f450d32a1932b4",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#VaricellaProduct640db8992fe6d85bb1aed3872583dd5c",
+      "name": "09/02/2018VaricellaVarivaxTwo vial set (active + excipient)1Merck Sharp & Dohme LLCCBER/FDA",
+      "fhir:code": "VaricellaProduct640db8992fe6d85bb1aed3872583dd5c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalTrivaleProduct60da9ef23c1068c0b6922abd7e25ff17",
+      "name": "30/06/2011Influenza, seasonal (Trivalent)VaxigripVial10Sanofi PasteurAgence nationale de sécurité du médicament et des produits de santé",
+      "fhir:code": "InfluenzaseasonalTrivaleProduct60da9ef23c1068c0b6922abd7e25ff17",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#InfluenzaseasonalQuadrivProducta39febbd4fc1b31f1ea3e43bc91baea0",
+      "name": "15/10/2020Influenza, seasonal (Quadrivalent)VaxigripTetraVial10Sanofi PasteurAgence nationale de sécurité du médicament et des produits de santé",
+      "fhir:code": "InfluenzaseasonalQuadrivProducta39febbd4fc1b31f1ea3e43bc91baea0",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RabiesProduct3a0b2112f0d5e10d24b6063b5e91a025",
+      "name": "06/02/2019RabiesVaxiRab NVial1Zydus Lifesciences LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "RabiesProduct3a0b2112f0d5e10d24b6063b5e91a025",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#RabiesProducte3f874e7b89ed3e777f03ede68bb6fe5",
+      "name": "22/06/2005RabiesVERORABVial1Sanofi PasteurAgence nationale de sécurité du médicament et des produits de santé",
+      "fhir:code": "RabiesProducte3f874e7b89ed3e777f03ede68bb6fe5",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#HumanPapillomavirusBivalProduct2ce0838fa87a21625f2bb12e269b26a2",
+      "name": "02/08/2024Human Papillomavirus (Bivalent)Walrinvax®Vial1Yuxi Zerun Biotechnology Co., LtdNational Medical Products Administration",
+      "fhir:code": "HumanPapillomavirusBivalProduct2ce0838fa87a21625f2bb12e269b26a2",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#YellowFeverProductab01f006f8b24113f4a28cb50bfe6d9d",
+      "name": "17/10/2001Yellow FeverYellow FeverTwo vial set (active + excipient)5Bio-Manguinhos/FiocruzAgencia Nacional da Vigilancia Sanitaria",
+      "fhir:code": "YellowFeverProductab01f006f8b24113f4a28cb50bfe6d9d",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#YellowFeverProduct5f0639d8e4d52afef089aa7148c5060c",
+      "name": "10/12/2007Yellow FeverYellow FeverTwo vial set (active + excipient)10Bio-Manguinhos/FiocruzAgencia Nacional da Vigilancia Sanitaria",
+      "fhir:code": "YellowFeverProduct5f0639d8e4d52afef089aa7148c5060c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#YellowFeverProducte0534dbc71a6cc09f56dce25216c538c",
+      "name": "17/10/2001Yellow FeverYellow FeverTwo vial set (active + excipient)50Bio-Manguinhos/FiocruzAgencia Nacional da Vigilancia Sanitaria",
+      "fhir:code": "YellowFeverProducte0534dbc71a6cc09f56dce25216c538c",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#EbolavaccineAd26ZEBOVGPrProduct72c1ff5266fc6bf3683b0076c250cbff",
+      "name": "27/04/2021Ebola vaccine (Ad26.ZEBOV-GP [recombinant])ZabdenoVial1Janssen Cilag International N.V.European Medicines Agency",
+      "fhir:code": "EbolavaccineAd26ZEBOVGPrProduct72c1ff5266fc6bf3683b0076c250cbff",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.jsonld#TyphoidConjugateProductaa2deeb320b1ef154bbde64ba6ce78fe",
+      "name": "21/10/2024Typhoid (Conjugate)ZyVac®Vial5Zydus Lifesciences LimitedCentral Drugs Standard Control Organization",
+      "fhir:code": "TyphoidConjugateProductaa2deeb320b1ef154bbde64ba6ce78fe",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualProductIds"
+    }
+  ]
+}

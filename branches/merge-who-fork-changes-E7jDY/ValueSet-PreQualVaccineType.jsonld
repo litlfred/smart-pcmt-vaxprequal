@@ -1,0 +1,251 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+  },
+  "@id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-03-23T16:56:13.592002Z",
+  "@graph": [
+    {
+      "id": "#BCG",
+      "name": "BCG"
+    },
+    {
+      "id": "#Covid19",
+      "name": "Covid-19"
+    },
+    {
+      "id": "#DengueTetravalentliveattenuated",
+      "name": "Dengue Tetravalent (live, attenuated)"
+    },
+    {
+      "id": "#DiphtheriaTetanus",
+      "name": "Diphtheria-Tetanus"
+    },
+    {
+      "id": "#DiphtheriaTetanusreducedantigencontent",
+      "name": "Diphtheria-Tetanus (reduced antigen content)"
+    },
+    {
+      "id": "#DiphtheriaTetanusPertussisacellular",
+      "name": "Diphtheria-Tetanus-Pertussis (acellular)"
+    },
+    {
+      "id": "#DiphtheriaTetanusPertussisacellularHepatitisBHaemophilusinfluenzaetypebPolioInactivated",
+      "name": "Diphtheria-Tetanus-Pertussis (acellular)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
+    },
+    {
+      "id": "#DiphtheriaTetanusPertussiswholecell",
+      "name": "Diphtheria-Tetanus-Pertussis (whole cell)"
+    },
+    {
+      "id": "#DiphtheriaTetanusPertussiswholecellHaemophilusinfluenzaetypeb",
+      "name": "Diphtheria-Tetanus-Pertussis (whole cell)-Haemophilus influenzae type b"
+    },
+    {
+      "id": "#DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb",
+      "name": "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
+    },
+    {
+      "id": "#DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypebPolioInactivated",
+      "name": "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
+    },
+    {
+      "id": "#EbolaZairerVSVGZEBOVGPliveattenuated",
+      "name": "Ebola Zaire (rVSV∆G-ZEBOV-GP, live attenuated)"
+    },
+    {
+      "id": "#EbolavaccineAd26ZEBOVGPrecombinant",
+      "name": "Ebola vaccine (Ad26.ZEBOV-GP [recombinant])"
+    },
+    {
+      "id": "#EbolavaccineMVABNFilorecombinant",
+      "name": "Ebola vaccine (MVA-BN-Filo [recombinant])"
+    },
+    {
+      "id": "#Haemophilusinfluenzaetypeb",
+      "name": "Haemophilus influenzae type b"
+    },
+    {
+      "id": "#HepatitisAHumanDiploidCellInactivatedAdult",
+      "name": "Hepatitis A (Human Diploid Cell), Inactivated (Adult)"
+    },
+    {
+      "id": "#HepatitisAHumanDiploidCellInactivatedPaediatric",
+      "name": "Hepatitis A (Human Diploid Cell), Inactivated (Paediatric)"
+    },
+    {
+      "id": "#HepatitisB",
+      "name": "Hepatitis B"
+    },
+    {
+      "id": "#HepatitisBPaediatric",
+      "name": "Hepatitis B (Paediatric)"
+    },
+    {
+      "id": "#HumanPapillomavirusBivalent",
+      "name": "Human Papillomavirus (Bivalent)"
+    },
+    {
+      "id": "#HumanPapillomavirusNinevalent",
+      "name": "Human Papillomavirus (Ninevalent)"
+    },
+    {
+      "id": "#HumanPapillomavirusQuadrivalent",
+      "name": "Human Papillomavirus (Quadrivalent)"
+    },
+    {
+      "id": "#InfluenzaPandemicH1N1",
+      "name": "Influenza, Pandemic (H1N1)"
+    },
+    {
+      "id": "#InfluenzaPandemicH5N1",
+      "name": "Influenza, Pandemic (H5N1)"
+    },
+    {
+      "id": "#InfluenzaseasonalQuadrivalent",
+      "name": "Influenza, seasonal (Quadrivalent)"
+    },
+    {
+      "id": "#InfluenzaseasonalTrivalent",
+      "name": "Influenza, seasonal (Trivalent)"
+    },
+    {
+      "id": "#JapaneseEncephalitisVaccineInactivated3µgPediatric",
+      "name": "Japanese Encephalitis Vaccine (Inactivated) (3µg Pediatric)"
+    },
+    {
+      "id": "#JapaneseEncephalitisVaccineInactivated6µg",
+      "name": "Japanese Encephalitis Vaccine (Inactivated) 6µg"
+    },
+    {
+      "id": "#JapaneseEncephalitisVaccineliveattenuated",
+      "name": "Japanese Encephalitis Vaccine (live, attenuated)"
+    },
+    {
+      "id": "#Malaria",
+      "name": "Malaria"
+    },
+    {
+      "id": "#Measles",
+      "name": "Measles"
+    },
+    {
+      "id": "#MeaslesandRubella",
+      "name": "Measles and Rubella"
+    },
+    {
+      "id": "#MeaslesMumpsandRubella",
+      "name": "Measles, Mumps and Rubella"
+    },
+    {
+      "id": "#MenigococcalACYWXPolysaccharideconjugate",
+      "name": "Menigococcal ACYWX (Polysaccharide conjugate)"
+    },
+    {
+      "id": "#MeningococcalAConjugate10µg",
+      "name": "Meningococcal A Conjugate 10 µg"
+    },
+    {
+      "id": "#MeningococcalAConjugate5µg",
+      "name": "Meningococcal A Conjugate 5 µg"
+    },
+    {
+      "id": "#MeningococcalACYW135conjugatevaccine",
+      "name": "Meningococcal ACYW-135 (conjugate vaccine)"
+    },
+    {
+      "id": "#MeningococcalACYW135TetanusToxoidconjugatevaccine",
+      "name": "Meningococcal ACYW-135 Tetanus Toxoid (conjugate vaccine)"
+    },
+    {
+      "id": "#Pneumococcalconjugate",
+      "name": "Pneumococcal (conjugate)"
+    },
+    {
+      "id": "#PolioVaccineInactivatedIPV",
+      "name": "Polio Vaccine - Inactivated (IPV)"
+    },
+    {
+      "id": "#PolioVaccineInactivatedSabinsIPV",
+      "name": "Polio Vaccine - Inactivated Sabin (sIPV)"
+    },
+    {
+      "id": "#PolioVaccineNovelOralnOPVType2",
+      "name": "Polio Vaccine - Novel Oral (nOPV) Type 2"
+    },
+    {
+      "id": "#PolioVaccineOralOPVBivalentTypes1and3",
+      "name": "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+    },
+    {
+      "id": "#PolioVaccineOralOPVMonovalentType1",
+      "name": "Polio Vaccine - Oral (OPV) Monovalent Type 1"
+    },
+    {
+      "id": "#PolioVaccineOralOPVMonovalentType2",
+      "name": "Polio Vaccine - Oral (OPV) Monovalent Type 2"
+    },
+    {
+      "id": "#PolioVaccineOralOPVMonovalentType3",
+      "name": "Polio Vaccine - Oral (OPV) Monovalent Type 3"
+    },
+    {
+      "id": "#PolioVaccineOralOPVTrivalent",
+      "name": "Polio Vaccine - Oral (OPV) Trivalent"
+    },
+    {
+      "id": "#Rabies",
+      "name": "Rabies"
+    },
+    {
+      "id": "#Rotavirus",
+      "name": "Rotavirus"
+    },
+    {
+      "id": "#Rotavirusliveattenuated",
+      "name": "Rotavirus (live, attenuated)"
+    },
+    {
+      "id": "#Rubella",
+      "name": "Rubella"
+    },
+    {
+      "id": "#SmallpoxandMpoxvaccineLiveModifiedVacciniaVirusAnkara",
+      "name": "Smallpox and Mpox vaccine (Live Modified Vaccinia Virus Ankara)"
+    },
+    {
+      "id": "#TetanusToxoid",
+      "name": "Tetanus Toxoid"
+    },
+    {
+      "id": "#TyphoidConjugate",
+      "name": "Typhoid (Conjugate)"
+    },
+    {
+      "id": "#Varicella",
+      "name": "Varicella"
+    },
+    {
+      "id": "#YellowFever",
+      "name": "Yellow Fever"
+    },
+    {
+      "id": "#cholerainactivatedoral",
+      "name": "cholera: inactivated oral"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

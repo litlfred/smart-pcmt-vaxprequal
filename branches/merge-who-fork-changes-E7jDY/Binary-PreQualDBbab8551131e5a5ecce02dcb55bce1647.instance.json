@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2020-01-28",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "Rotavirusliveattenuated",
+        "display": "Rotavirus (live, attenuated)"
+      }
+    ]
+  },
+  "commercialName": "ROTASIIL®Thermo",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Twovialsetactiveexcipient",
+        "display": "Two vial set (active + excipient)"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Serum Institute of India Pvt. Ltd."
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "bab8551131e5a5ecce02dcb55bce1647"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer35b3de1add41b53c8e37ce338f2ba545"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/RotavirusliveattenuatedProductbab8551131e5a5ecce02dcb55bce1647"
+  }
+}

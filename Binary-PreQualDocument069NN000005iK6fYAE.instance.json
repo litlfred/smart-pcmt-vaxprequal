@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iK6fYAE"
+  },
+  "documentName": "Package Insert-pq_146_147_148_149_Measles_SII_PI_PAHO-2022",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005z3PZYAY",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

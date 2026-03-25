@@ -1,0 +1,64 @@
+# PreQualDB1b03f110ef15d36c9664465098d3adec - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDB1b03f110ef15d36c9664465098d3adec**
+
+## Binary: PreQualDB1b03f110ef15d36c9664465098d3adec
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2024-09-13",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "SmallpoxandMpoxvaccineLi",
+        "display": "Smallpox and Mpox vaccine (Live Modified Vaccinia Virus Ankara)"
+      }
+    ]
+  },
+  "commercialName": "Imvanex® (also approved under the name of JYNNEOS by the USFDA and IMVAMUNE by Health Canada)",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Bavarian Nordic A/S"
+  },
+  "responsibleNRA": {
+    "text": "European Medicines Agency"
+  },
+  "index": {
+    "value": "1b03f110ef15d36c9664465098d3adec"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer49ba2034b576b9b30559303e880f9bc7"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder06fc63d243e39d8519007322a0fddc52"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/SmallpoxandMpoxvaccineLiProduct1b03f110ef15d36c9664465098d3adec"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

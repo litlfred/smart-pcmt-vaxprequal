@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2009-05-20",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "HumanPapillomavirusQuadr",
+        "display": "Human Papillomavirus (Quadrivalent)"
+      }
+    ]
+  },
+  "commercialName": "Gardasil",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Merck Sharp & Dohme LLC"
+  },
+  "responsibleNRA": {
+    "text": "European Medicines Agency"
+  },
+  "index": {
+    "value": "551b21b1ec1a67bbb0009f875faf7823"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer764b91fadf395103d4ce901372cc0882"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder06fc63d243e39d8519007322a0fddc52"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/HumanPapillomavirusQuadrProduct551b21b1ec1a67bbb0009f875faf7823"
+  }
+}

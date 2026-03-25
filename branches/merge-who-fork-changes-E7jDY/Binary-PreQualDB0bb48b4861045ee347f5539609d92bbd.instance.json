@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2006-09-01",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "Rubella",
+        "display": "Rubella"
+      }
+    ]
+  },
+  "commercialName": "Rubella Vaccine, Live, Attenuated",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "Serum Institute of India Pvt. Ltd."
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "0bb48b4861045ee347f5539609d92bbd"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer35b3de1add41b53c8e37ce338f2ba545"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/RubellaProduct0bb48b4861045ee347f5539609d92bbd"
+  }
+}

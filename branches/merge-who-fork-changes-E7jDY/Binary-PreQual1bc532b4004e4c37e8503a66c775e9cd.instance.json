@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holder06fc63d243e39d8519007322a0fddc52"
+  },
+  "validityPeriod": {
+    "start": "2017-10-16"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/PneumococcalconjugateProduct1bc532b4004e4c37e8503a66c775e9cd"
+    }
+  ]
+}

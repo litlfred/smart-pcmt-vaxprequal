@@ -1,0 +1,48 @@
+# PreQual01a3b83cf13e87948437db11cf5c34eb - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQual01a3b83cf13e87948437db11cf5c34eb**
+
+## Binary: PreQual01a3b83cf13e87948437db11cf5c34eb
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holder8327c2d0eaf7c8d58e6036f3a9aee92d"
+  },
+  "validityPeriod": {
+    "start": "2022-10-14"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/YellowFeverProduct01a3b83cf13e87948437db11cf5c34eb"
+    }
+  ]
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

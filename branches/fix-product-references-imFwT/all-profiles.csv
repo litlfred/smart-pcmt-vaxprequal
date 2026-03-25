@@ -1,0 +1,294 @@
+"Profile","Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)"
+"FinishedVaccineProducts","FinishedVaccineProducts","FinishedVaccineProducts","","","",0,*,"","","","null {[]} {[]}
+","WHO Vaccine PreQual DB - Finished Vaccine Products","WHO Vaccine PreQual DB - Finished Vaccine Products.
+Logical model for the WHO PreQual DB as provided by the backend API at:
+     https://extranet.who.int/prequal/vaccines/prequalified-vaccines
+This model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.
+Sub-objects with Identification.Id are modeled as separate logical models and linked via references.
+
+Key fields from the API (FinishedVaccineProducts):
+  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)
+  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)
+  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)
+  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification
+  ProductDetails.AssessmentProcedure - Assessment procedure code
+  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address
+  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)
+  ProductDetails.PharmaceuticalForm - Pharmaceutical form details
+  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses
+  ProductDetails.NRADetails - Responsible NRA with ID, name, address
+  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names
+  ProductDetails.StorageDetails - Storage temperature and shelf life
+  ProductDetails.Status - Prequalification status code","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.productId","FinishedVaccineProducts.productId","","","",1,1,"","","","Identifier {[]} {[]}
+","Vaccine Product ID (authoritative)","Vaccine Product ID (authoritative)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.productId",1,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.productName","FinishedVaccineProducts.productName","","","",1,1,"","","","string {[]} {[]}
+","Product reference name (e.g. FVP-P-447)","Product reference name (e.g. FVP-P-447)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.productName",1,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.productType","FinishedVaccineProducts.productType","","","",1,1,"","","","code {[]} {[]}
+","Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)","Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.productType",1,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.dateOfPrequal","FinishedVaccineProducts.dateOfPrequal","","","",1,1,"","","","dateTime {[]} {[]}
+","Date of prequalification acceptance","Date of prequalification acceptance","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.dateOfPrequal",1,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.assessmentProcedure","FinishedVaccineProducts.assessmentProcedure","","","",0,1,"","","","code {[]} {[]}
+","Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)","Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.assessmentProcedure",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.status","FinishedVaccineProducts.status","","","",1,1,"","","","code {[]} {[]}
+","Product status code from PreQualDatabaseMetadata (e.g. Prequalified)","Product status code from PreQualDatabaseMetadata (e.g. Prequalified)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.status",1,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.pharmaceuticalForm","FinishedVaccineProducts.pharmaceuticalForm","","","",0,1,"","","","code {[]} {[]}
+","Pharmaceutical form code from PreQualDatabaseMetadata","Pharmaceutical form code from PreQualDatabaseMetadata","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.pharmaceuticalForm",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.presentation","FinishedVaccineProducts.presentation","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Presentation (e.g. Vial, Ampoule)","Presentation (e.g. Vial, Ampoule)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.presentation",1,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.numDoses","FinishedVaccineProducts.numDoses","","","",0,1,"","","","decimal {[]} {[]}
+","Number of doses per primary container","Number of doses per primary container","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.numDoses",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.vaccineFullName","FinishedVaccineProducts.vaccineFullName","","","",0,1,"","","","string {[]} {[]}
+","Vaccine full name","Vaccine full name","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.vaccineFullName",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.vaccineAbbreviatedName","FinishedVaccineProducts.vaccineAbbreviatedName","","","",0,1,"","","","string {[]} {[]}
+","Vaccine abbreviated name","Vaccine abbreviated name","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.vaccineAbbreviatedName",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.vaccineCommercialName","FinishedVaccineProducts.vaccineCommercialName","","","",1,1,"","","","string {[]} {[]}
+","Vaccine commercial name","Vaccine commercial name","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.vaccineCommercialName",1,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.vaccineTypeId","FinishedVaccineProducts.vaccineTypeId","","","",0,1,"","","","Identifier {[]} {[]}
+","Vaccine type ID","Vaccine type ID","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.vaccineTypeId",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.routeOfAdministration","FinishedVaccineProducts.routeOfAdministration","","","",0,1,"","","","code {[]} {[]}
+","Route of administration code from PreQualDatabaseMetadata","Route of administration code from PreQualDatabaseMetadata","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.routeOfAdministration",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.vialMonitor","FinishedVaccineProducts.vialMonitor","","","",0,1,"","","","string {[]} {[]}
+","Vial monitor type (e.g. Type 14, Type 30)","Vial monitor type (e.g. Type 14, Type 30)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.vialMonitor",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.multidoseVialPolicy","FinishedVaccineProducts.multidoseVialPolicy","","","",0,1,"","","","string {[]} {[]}
+","Multidose vial policy text","Multidose vial policy text","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.multidoseVialPolicy",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.presentationOther","FinishedVaccineProducts.presentationOther","","","",0,1,"","","","string {[]} {[]}
+","Alternative presentation description when Presentation is 'Other'","Alternative presentation description when Presentation is 'Other'","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.presentationOther",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.applicantId","FinishedVaccineProducts.applicantId","","","",0,1,"","","","Identifier {[]} {[]}
+","Applicant/manufacturer organization ID (may be absent if not yet assigned)","Applicant/manufacturer organization ID (may be absent if not yet assigned)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.applicantId",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.applicantName","FinishedVaccineProducts.applicantName","","","",1,1,"","","","string {[]} {[]}
+","Applicant/manufacturer organization name (always present from API data)","Applicant/manufacturer organization name (always present from API data)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.applicantName",1,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.applicantAddress","FinishedVaccineProducts.applicantAddress","","","",0,1,"","","","Address {[]} {[]}
+","Applicant organization address","Applicant organization address","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.applicantAddress",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.nraId","FinishedVaccineProducts.nraId","","","",0,1,"","","","Identifier {[]} {[]}
+","NRA organization ID (may be absent if not yet assigned)","NRA organization ID (may be absent if not yet assigned)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.nraId",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.nraName","FinishedVaccineProducts.nraName","","","",1,1,"","","","string {[]} {[]}
+","Responsible NRA name (always present from API data)","Responsible NRA name (always present from API data)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.nraName",1,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.nraCountry","FinishedVaccineProducts.nraCountry","","","",0,1,"","","","string {[]} {[]}
+","NRA country","NRA country","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.nraCountry",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.shelfLife","FinishedVaccineProducts.shelfLife","","","",0,1,"","","","string {[]} {[]}
+","Shelf life (e.g. 24 months)","Shelf life (e.g. 24 months)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.shelfLife",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.storageTemperature","FinishedVaccineProducts.storageTemperature","","","",0,1,"","","","string {[]} {[]}
+","Storage temperature (e.g. 2 - 8°C)","Storage temperature (e.g. 2 - 8°C)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.storageTemperature",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.diluent","FinishedVaccineProducts.diluent","","","",0,1,"","","","string {[]} {[]}
+","Diluent information","Diluent information","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.diluent",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.lastPublishingDate","FinishedVaccineProducts.lastPublishingDate","","","",0,1,"","","","dateTime {[]} {[]}
+","Last publishing date","Last publishing date","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.lastPublishingDate",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.publishingRemarks","FinishedVaccineProducts.publishingRemarks","","","",0,1,"","","","string {[]} {[]}
+","Publishing remarks","Publishing remarks","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.publishingRemarks",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.preservative","FinishedVaccineProducts.preservative","","","",0,1,"","","","string {[]} {[]}
+","Preservative name (e.g. Thiomersal)","Preservative name (e.g. Thiomersal)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.preservative",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.preservativeConcentration","FinishedVaccineProducts.preservativeConcentration","","","",0,1,"","","","string {[]} {[]}
+","Preservative concentration (e.g. 0.01%)","Preservative concentration (e.g. 0.01%)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.preservativeConcentration",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.manufacturerLM","FinishedVaccineProducts.manufacturerLM","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer]]}
+","Manufacturer logical model instance reference (linked when ApplicantOrganization.Identification.Id is non-null)","Manufacturer logical model instance reference (linked when ApplicantOrganization.Identification.Id is non-null)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.manufacturerLM",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.nraLM","FinishedVaccineProducts.nraLM","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA]]}
+","NRA logical model instance reference (linked when NRADetails.Identification.Id is non-null)","NRA logical model instance reference (linked when NRADetails.Identification.Id is non-null)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.nraLM",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.vaccineLM","FinishedVaccineProducts.vaccineLM","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine]]}
+","Vaccine logical model instance reference (linked when VaccineDetails.Identification.Id is non-null)","Vaccine logical model instance reference (linked when VaccineDetails.Identification.Id is non-null)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.vaccineLM",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.bulkSupplierLM","FinishedVaccineProducts.bulkSupplierLM","","","",0,1,"","","","Reference {[]} {[CanonicalType[http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualBulkSupplier]]}
+","Bulk supplier logical model instance reference (linked when BulkSupplier.Id is non-null)","Bulk supplier logical model instance reference (linked when BulkSupplier.Id is non-null)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.bulkSupplierLM",0,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.packagingLM","FinishedVaccineProducts.packagingLM","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging]]}
+","Product packaging logical model instance references","Product packaging logical model instance references","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.packagingLM",0,*,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.documentLM","FinishedVaccineProducts.documentLM","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail]]}
+","Document detail logical model instance references","Document detail logical model instance references","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.documentLM",0,*,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.siteLM","FinishedVaccineProducts.siteLM","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail]]}
+","Site detail logical model instance references","Site detail logical model instance references","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.siteLM",0,*,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.ingredientLM","FinishedVaccineProducts.ingredientLM","","","",0,*,"","","","Reference {[]} {[CanonicalType[http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient]]}
+","Product ingredient logical model instance references","Product ingredient logical model instance references","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.ingredientLM",0,*,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.manufacturerReference","FinishedVaccineProducts.manufacturerReference","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization]]}
+","Manufacturer FHIR Organization reference","Manufacturer FHIR Organization reference","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.manufacturerReference",1,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.responsibleNRAReference","FinishedVaccineProducts.responsibleNRAReference","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization]]}
+","Responsible NRA FHIR Organization reference","Responsible NRA FHIR Organization reference","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.responsibleNRAReference",1,1,"",""
+"FinishedVaccineProducts","FinishedVaccineProducts.productReference","FinishedVaccineProducts.productReference","","","",0,1,"","","","Reference {[]} {[]}
+","Product FHIR reference (when available from pcmt dependency)","Product FHIR reference (when available from pcmt dependency)","","","","","","","","","",,,,,"",,,,"FinishedVaccineProducts.productReference",0,1,"",""
+"PreQualBulkSupplier","PreQualBulkSupplier","PreQualBulkSupplier","","","",0,*,"","","","null {[]} {[]}
+","WHO PreQual Bulk Supplier","Logical model for the bulk supplier organization
+from the WHO PreQual API (ProductDetails.BulkSupplier).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PreQualBulkSupplier","PreQualBulkSupplier.bulkSupplierId","PreQualBulkSupplier.bulkSupplierId","","","",0,1,"","","","Identifier {[]} {[]}
+","Bulk supplier organization ID","Bulk supplier organization ID","","","","","","","","","",,,,,"",,,,"PreQualBulkSupplier.bulkSupplierId",0,1,"",""
+"PreQualBulkSupplier","PreQualBulkSupplier.name","PreQualBulkSupplier.name","","","",0,1,"","","","string {[]} {[]}
+","Organization name","Organization name","","","","","","","","","",,,,,"",,,,"PreQualBulkSupplier.name",0,1,"",""
+"PreQualDB","PreQualDB","PreQualDB","","","",0,*,"","","","null {[]} {[]}
+","WHO Vaccine PreQual DB","WHO Vaccine PreQual DB.  Logical model for WHO PreQual DB as CSV file available at:
+     https://extranet.who.int/prequal/vaccines/prequalified-vaccines
+Columns of the CSV are as follows
+  1:Date of Prequalification  
+  2:Vaccine Type
+  3:Commercial Name
+  4:Presentation
+  5:No. of doses
+  6:Manufacturer
+  7:Responsible NRA
+","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PreQualDB","PreQualDB.dateOfPrequal","PreQualDB.dateOfPrequal","","","",1,1,"","","","dateTime {[]} {[]}
+","Date of Prequalification (DD/MM/YY)","Date of Prequalification (DD/MM/YY)","","","","","","","","","",,,,,"",,,,"PreQualDB.dateOfPrequal",1,1,"",""
+"PreQualDB","PreQualDB.vaccineType","PreQualDB.vaccineType","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Vaccine Type","Vaccine Type","","","","","","","","","",,,,,"",,,,"PreQualDB.vaccineType",1,1,"",""
+"PreQualDB","PreQualDB.commercialName","PreQualDB.commercialName","","","",1,1,"","","","string {[]} {[]}
+","Commercial Name","Commercial Name","","","","","","","","","",,,,,"",,,,"PreQualDB.commercialName",1,1,"",""
+"PreQualDB","PreQualDB.presentation","PreQualDB.presentation","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Presentation","Presentation","","","","","","","","","",,,,,"",,,,"PreQualDB.presentation",1,1,"",""
+"PreQualDB","PreQualDB.numDoses","PreQualDB.numDoses","","","",0,1,"","","","decimal {[]} {[]}
+","Number of doses","Number of doses","","","","","","","","","",,,,,"",,,,"PreQualDB.numDoses",0,1,"",""
+"PreQualDB","PreQualDB.manufacturer","PreQualDB.manufacturer","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Manufacturer","Manufacturer","","","","","","","","","",,,,,"",,,,"PreQualDB.manufacturer",1,1,"",""
+"PreQualDB","PreQualDB.responsibleNRA","PreQualDB.responsibleNRA","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Responsible NRA","Responsible NRA","","","","","","","","","",,,,,"",,,,"PreQualDB.responsibleNRA",1,1,"",""
+"PreQualDBwithIds","PreQualDBwithIds","PreQualDBwithIds","","","",0,*,"","","","null {[]} {[]}
+","WHO Vaccine PreQual DB with IDs","Logical model for WHO PreQual DB as CSV file available at:
+     https://extranet.who.int/prequal/vaccines/prequalified-vaccines
+Columns of the CSV are as follows
+with additional data fields for appropriately referencing associated data objects","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PreQualDBwithIds","PreQualDBwithIds.dateOfPrequal","PreQualDBwithIds.dateOfPrequal","","","",1,1,"","","","dateTime {[]} {[]}
+","Date of Prequalification (DD/MM/YY)","Date of Prequalification (DD/MM/YY)","","","","","","","","","",,,,,"",,,,"PreQualDB.dateOfPrequal",1,1,"",""
+"PreQualDBwithIds","PreQualDBwithIds.vaccineType","PreQualDBwithIds.vaccineType","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Vaccine Type","Vaccine Type","","","","","","","","","",,,,,"",,,,"PreQualDB.vaccineType",1,1,"",""
+"PreQualDBwithIds","PreQualDBwithIds.commercialName","PreQualDBwithIds.commercialName","","","",1,1,"","","","string {[]} {[]}
+","Commercial Name","Commercial Name","","","","","","","","","",,,,,"",,,,"PreQualDB.commercialName",1,1,"",""
+"PreQualDBwithIds","PreQualDBwithIds.presentation","PreQualDBwithIds.presentation","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Presentation","Presentation","","","","","","","","","",,,,,"",,,,"PreQualDB.presentation",1,1,"",""
+"PreQualDBwithIds","PreQualDBwithIds.numDoses","PreQualDBwithIds.numDoses","","","",0,1,"","","","decimal {[]} {[]}
+","Number of doses","Number of doses","","","","","","","","","",,,,,"",,,,"PreQualDB.numDoses",0,1,"",""
+"PreQualDBwithIds","PreQualDBwithIds.manufacturer","PreQualDBwithIds.manufacturer","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Manufacturer","Manufacturer","","","","","","","","","",,,,,"",,,,"PreQualDB.manufacturer",1,1,"",""
+"PreQualDBwithIds","PreQualDBwithIds.responsibleNRA","PreQualDBwithIds.responsibleNRA","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Responsible NRA","Responsible NRA","","","","","","","","","",,,,,"",,,,"PreQualDB.responsibleNRA",1,1,"",""
+"PreQualDBwithIds","PreQualDBwithIds.index","PreQualDBwithIds.index","","","",1,1,"","","","Identifier {[]} {[]}
+","An index or identifier of the prequalificaiton for the product.","An index or identifier of the prequalificaiton for the product.","","","","","","","","","",,,,,"",,,,"PreQualDBwithIds.index",1,1,"","is-a-prequal-product-id:Product ID comes from the PreQual Databatase {system = 'http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds'}
+"
+"PreQualDBwithIds","PreQualDBwithIds.manufacturerReference","PreQualDBwithIds.manufacturerReference","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization]]}
+","Manufacturer referecne","Manufacturer referecne","","","","","","","","","",,,,,"",,,,"PreQualDBwithIds.manufacturerReference",1,1,"",""
+"PreQualDBwithIds","PreQualDBwithIds.responsibleNRAReference","PreQualDBwithIds.responsibleNRAReference","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization]]}
+","Responsible NRA reference","Responsible NRA reference","","","","","","","","","",,,,,"",,,,"PreQualDBwithIds.responsibleNRAReference",1,1,"",""
+"PreQualDBwithIds","PreQualDBwithIds.productReference","PreQualDBwithIds.productReference","","","",0,1,"","","","Reference {[]} {[]}
+","Product reference (when available from pcmt dependency)","Product reference (when available from pcmt dependency)","","","","","","","","","",,,,,"",,,,"PreQualDBwithIds.productReference",0,1,"",""
+"PreQualDocumentDetail","PreQualDocumentDetail","PreQualDocumentDetail","","","",0,*,"","","","null {[]} {[]}
+","WHO PreQual Document Detail","Logical model for document details
+from the WHO PreQual API (DocumentDetails).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PreQualDocumentDetail","PreQualDocumentDetail.documentId","PreQualDocumentDetail.documentId","","","",0,1,"","","","Identifier {[]} {[]}
+","Document ID","Document ID","","","","","","","","","",,,,,"",,,,"PreQualDocumentDetail.documentId",0,1,"",""
+"PreQualDocumentDetail","PreQualDocumentDetail.documentName","PreQualDocumentDetail.documentName","","","",0,1,"","","","string {[]} {[]}
+","Document name","Document name","","","","","","","","","",,,,,"",,,,"PreQualDocumentDetail.documentName",0,1,"",""
+"PreQualDocumentDetail","PreQualDocumentDetail.documentType","PreQualDocumentDetail.documentType","","","",0,1,"","","","code {[]} {[]}
+","Document type code from PreQualDatabaseMetadata (e.g. ProductInsert, Photo, VSPAR)","Document type code from PreQualDatabaseMetadata (e.g. ProductInsert, Photo, VSPAR)","","","","","","","","","",,,,,"",,,,"PreQualDocumentDetail.documentType",0,1,"",""
+"PreQualDocumentDetail","PreQualDocumentDetail.versionId","PreQualDocumentDetail.versionId","","","",0,1,"","","","string {[]} {[]}
+","Document version ID","Document version ID","","","","","","","","","",,,,,"",,,,"PreQualDocumentDetail.versionId",0,1,"",""
+"PreQualDocumentDetail","PreQualDocumentDetail.fileExtension","PreQualDocumentDetail.fileExtension","","","",0,1,"","","","string {[]} {[]}
+","File extension (e.g. pdf, jpg)","File extension (e.g. pdf, jpg)","","","","","","","","","",,,,,"",,,,"PreQualDocumentDetail.fileExtension",0,1,"",""
+"PreQualDocumentDetail","PreQualDocumentDetail.fileType","PreQualDocumentDetail.fileType","","","",0,1,"","","","string {[]} {[]}
+","File type (e.g. PDF, JPEG)","File type (e.g. PDF, JPEG)","","","","","","","","","",,,,,"",,,,"PreQualDocumentDetail.fileType",0,1,"",""
+"PreQualManufacturer","PreQualManufacturer","PreQualManufacturer","","","",0,*,"","","","null {[]} {[]}
+","WHO PreQual Manufacturer","Logical model for the manufacturer/applicant organization
+from the WHO PreQual API (ProductDetails.ApplicantOrganization).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PreQualManufacturer","PreQualManufacturer.manufacturerId","PreQualManufacturer.manufacturerId","","","",0,1,"","","","Identifier {[]} {[]}
+","Manufacturer organization ID","Manufacturer organization ID","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.manufacturerId",0,1,"",""
+"PreQualManufacturer","PreQualManufacturer.name","PreQualManufacturer.name","","","",1,1,"","","","string {[]} {[]}
+","Organization name","Organization name","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.name",1,1,"",""
+"PreQualManufacturer","PreQualManufacturer.addressLine1","PreQualManufacturer.addressLine1","","","",0,1,"","","","string {[]} {[]}
+","Address line 1","Address line 1","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.addressLine1",0,1,"",""
+"PreQualManufacturer","PreQualManufacturer.city","PreQualManufacturer.city","","","",0,1,"","","","string {[]} {[]}
+","City","City","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.city",0,1,"",""
+"PreQualManufacturer","PreQualManufacturer.state","PreQualManufacturer.state","","","",0,1,"","","","string {[]} {[]}
+","State/Province","State/Province","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.state",0,1,"",""
+"PreQualManufacturer","PreQualManufacturer.country","PreQualManufacturer.country","","","",0,1,"","","","string {[]} {[]}
+","Country","Country","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.country",0,1,"",""
+"PreQualManufacturer","PreQualManufacturer.postalCode","PreQualManufacturer.postalCode","","","",0,1,"","","","string {[]} {[]}
+","Postal code","Postal code","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.postalCode",0,1,"",""
+"PreQualManufacturer","PreQualManufacturer.isoCountryCode","PreQualManufacturer.isoCountryCode","","","",0,1,"","","","string {[]} {[]}
+","ISO country code","ISO country code","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.isoCountryCode",0,1,"",""
+"PreQualManufacturer","PreQualManufacturer.region","PreQualManufacturer.region","","","",0,1,"","","","string {[]} {[]}
+","WHO region","WHO region","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.region",0,1,"",""
+"PreQualManufacturer","PreQualManufacturer.website","PreQualManufacturer.website","","","",0,1,"","","","string {[]} {[]}
+","Website URL","Website URL","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.website",0,1,"",""
+"PreQualManufacturer","PreQualManufacturer.organizationReference","PreQualManufacturer.organizationReference","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization]]}
+","FHIR Organization reference","FHIR Organization reference","","","","","","","","","",,,,,"",,,,"PreQualManufacturer.organizationReference",1,1,"",""
+"PreQualNRA","PreQualNRA","PreQualNRA","","","",0,*,"","","","null {[]} {[]}
+","WHO PreQual NRA","Logical model for the responsible National Regulatory Authority (NRA)
+from the WHO PreQual API (ProductDetails.NRADetails).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PreQualNRA","PreQualNRA.nraId","PreQualNRA.nraId","","","",0,1,"","","","Identifier {[]} {[]}
+","NRA organization ID","NRA organization ID","","","","","","","","","",,,,,"",,,,"PreQualNRA.nraId",0,1,"",""
+"PreQualNRA","PreQualNRA.name","PreQualNRA.name","","","",1,1,"","","","string {[]} {[]}
+","Organization name","Organization name","","","","","","","","","",,,,,"",,,,"PreQualNRA.name",1,1,"",""
+"PreQualNRA","PreQualNRA.addressLine1","PreQualNRA.addressLine1","","","",0,1,"","","","string {[]} {[]}
+","Address line 1","Address line 1","","","","","","","","","",,,,,"",,,,"PreQualNRA.addressLine1",0,1,"",""
+"PreQualNRA","PreQualNRA.country","PreQualNRA.country","","","",0,1,"","","","string {[]} {[]}
+","Country","Country","","","","","","","","","",,,,,"",,,,"PreQualNRA.country",0,1,"",""
+"PreQualNRA","PreQualNRA.website","PreQualNRA.website","","","",0,1,"","","","string {[]} {[]}
+","Website URL","Website URL","","","","","","","","","",,,,,"",,,,"PreQualNRA.website",0,1,"",""
+"PreQualNRA","PreQualNRA.organizationReference","PreQualNRA.organizationReference","","","",1,1,"","","","Reference {[]} {[CanonicalType[https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization]]}
+","FHIR Organization reference","FHIR Organization reference","","","","","","","","","",,,,,"",,,,"PreQualNRA.organizationReference",1,1,"",""
+"PreQualProductIngredient","PreQualProductIngredient","PreQualProductIngredient","","","",0,*,"","","","null {[]} {[]}
+","WHO PreQual Product Ingredient","Logical model for product ingredient details
+from the WHO PreQual API (ProductIngredients).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PreQualProductIngredient","PreQualProductIngredient.ingredientId","PreQualProductIngredient.ingredientId","","","",0,1,"","","","Identifier {[]} {[]}
+","Ingredient ID","Ingredient ID","","","","","","","","","",,,,,"",,,,"PreQualProductIngredient.ingredientId",0,1,"",""
+"PreQualProductIngredient","PreQualProductIngredient.ingredientType","PreQualProductIngredient.ingredientType","","","",0,1,"","","","code {[]} {[]}
+","Ingredient type code from PreQualDatabaseMetadata (e.g. VxFVP)","Ingredient type code from PreQualDatabaseMetadata (e.g. VxFVP)","","","","","","","","","",,,,,"",,,,"PreQualProductIngredient.ingredientType",0,1,"",""
+"PreQualProductIngredient","PreQualProductIngredient.unit","PreQualProductIngredient.unit","","","",0,1,"","","","string {[]} {[]}
+","Measurement unit","Measurement unit","","","","","","","","","",,,,,"",,,,"PreQualProductIngredient.unit",0,1,"",""
+"PreQualProductIngredient","PreQualProductIngredient.product","PreQualProductIngredient.product","","","",0,1,"","","","string {[]} {[]}
+","Product reference ID","Product reference ID","","","","","","","","","",,,,,"",,,,"PreQualProductIngredient.product",0,1,"",""
+"PreQualProductIngredient","PreQualProductIngredient.productComponentType","PreQualProductIngredient.productComponentType","","","",0,1,"","","","code {[]} {[]}
+","Product component type code from PreQualDatabaseMetadata (e.g. Diluent)","Product component type code from PreQualDatabaseMetadata (e.g. Diluent)","","","","","","","","","",,,,,"",,,,"PreQualProductIngredient.productComponentType",0,1,"",""
+"PreQualProductIngredient","PreQualProductIngredient.function","PreQualProductIngredient.function","","","",0,1,"","","","string {[]} {[]}
+","Ingredient function","Ingredient function","","","","","","","","","",,,,,"",,,,"PreQualProductIngredient.function",0,1,"",""
+"PreQualProductPackaging","PreQualProductPackaging","PreQualProductPackaging","","","",0,*,"","","","null {[]} {[]}
+","WHO PreQual Product Packaging","Logical model for product packaging details
+from the WHO PreQual API (ProductPackaging).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PreQualProductPackaging","PreQualProductPackaging.packagingId","PreQualProductPackaging.packagingId","","","",1,1,"","","","Identifier {[]} {[]}
+","Packaging record ID","Packaging record ID","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.packagingId",1,1,"",""
+"PreQualProductPackaging","PreQualProductPackaging.packagingType","PreQualProductPackaging.packagingType","","","",0,1,"","","","code {[]} {[]}
+","Packaging type code from PreQualDatabaseMetadata (e.g. Secondary, Tertiary, ShippingContainer)","Packaging type code from PreQualDatabaseMetadata (e.g. Secondary, Tertiary, ShippingContainer)","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.packagingType",0,1,"",""
+"PreQualProductPackaging","PreQualProductPackaging.componentPacked","PreQualProductPackaging.componentPacked","","","",0,1,"","","","code {[]} {[]}
+","Component packed code from PreQualDatabaseMetadata (e.g. ActiveVaccine, Diluent)","Component packed code from PreQualDatabaseMetadata (e.g. ActiveVaccine, Diluent)","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.componentPacked",0,1,"",""
+"PreQualProductPackaging","PreQualProductPackaging.coldChainVolume","PreQualProductPackaging.coldChainVolume","","","",0,1,"","","","string {[]} {[]}
+","Cold chain volume per dose","Cold chain volume per dose","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.coldChainVolume",0,1,"",""
+"PreQualProductPackaging","PreQualProductPackaging.description","PreQualProductPackaging.description","","","",0,1,"","","","string {[]} {[]}
+","Packaging description","Packaging description","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.description",0,1,"",""
+"PreQualProductPackaging","PreQualProductPackaging.volume","PreQualProductPackaging.volume","","","",0,1,"","","","string {[]} {[]}
+","Packaging volume/dimensions","Packaging volume/dimensions","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.volume",0,1,"",""
+"PreQualProductPackaging","PreQualProductPackaging.totalDoses","PreQualProductPackaging.totalDoses","","","",0,1,"","","","string {[]} {[]}
+","Total doses in packaging","Total doses in packaging","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.totalDoses",0,1,"",""
+"PreQualProductPackaging","PreQualProductPackaging.totalContainers","PreQualProductPackaging.totalContainers","","","",0,1,"","","","string {[]} {[]}
+","Total containers in packaging","Total containers in packaging","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.totalContainers",0,1,"",""
+"PreQualProductPackaging","PreQualProductPackaging.height","PreQualProductPackaging.height","","","",0,1,"","","","string {[]} {[]}
+","Height","Height","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.height",0,1,"",""
+"PreQualProductPackaging","PreQualProductPackaging.length","PreQualProductPackaging.length","","","",0,1,"","","","string {[]} {[]}
+","Length","Length","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.length",0,1,"",""
+"PreQualProductPackaging","PreQualProductPackaging.width","PreQualProductPackaging.width","","","",0,1,"","","","string {[]} {[]}
+","Width","Width","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.width",0,1,"",""
+"PreQualProductPackaging","PreQualProductPackaging.primaryContainers","PreQualProductPackaging.primaryContainers","","","",0,1,"","","","string {[]} {[]}
+","Number of primary containers","Number of primary containers","","","","","","","","","",,,,,"",,,,"PreQualProductPackaging.primaryContainers",0,1,"",""
+"PreQualSiteDetail","PreQualSiteDetail","PreQualSiteDetail","","","",0,*,"","","","null {[]} {[]}
+","WHO PreQual Site Detail","Logical model for manufacturing site details
+from the WHO PreQual API (SiteDetails).","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PreQualSiteDetail","PreQualSiteDetail.siteOrganizationId","PreQualSiteDetail.siteOrganizationId","","","",0,1,"","","","Identifier {[]} {[]}
+","Site organization ID","Site organization ID","","","","","","","","","",,,,,"",,,,"PreQualSiteDetail.siteOrganizationId",0,1,"",""
+"PreQualSiteDetail","PreQualSiteDetail.siteOrganizationName","PreQualSiteDetail.siteOrganizationName","","","",0,1,"","","","string {[]} {[]}
+","Site organization name","Site organization name","","","","","","","","","",,,,,"",,,,"PreQualSiteDetail.siteOrganizationName",0,1,"",""
+"PreQualSiteDetail","PreQualSiteDetail.addressLine1","PreQualSiteDetail.addressLine1","","","",0,1,"","","","string {[]} {[]}
+","Address line 1","Address line 1","","","","","","","","","",,,,,"",,,,"PreQualSiteDetail.addressLine1",0,1,"",""
+"PreQualSiteDetail","PreQualSiteDetail.city","PreQualSiteDetail.city","","","",0,1,"","","","string {[]} {[]}
+","City","City","","","","","","","","","",,,,,"",,,,"PreQualSiteDetail.city",0,1,"",""
+"PreQualSiteDetail","PreQualSiteDetail.state","PreQualSiteDetail.state","","","",0,1,"","","","string {[]} {[]}
+","State/Province","State/Province","","","","","","","","","",,,,,"",,,,"PreQualSiteDetail.state",0,1,"",""
+"PreQualSiteDetail","PreQualSiteDetail.country","PreQualSiteDetail.country","","","",0,1,"","","","string {[]} {[]}
+","Country","Country","","","","","","","","","",,,,,"",,,,"PreQualSiteDetail.country",0,1,"",""
+"PreQualSiteDetail","PreQualSiteDetail.postalCode","PreQualSiteDetail.postalCode","","","",0,1,"","","","string {[]} {[]}
+","Postal code","Postal code","","","","","","","","","",,,,,"",,,,"PreQualSiteDetail.postalCode",0,1,"",""
+"PreQualSiteDetail","PreQualSiteDetail.siteStatus","PreQualSiteDetail.siteStatus","","","",0,1,"","","","code {[]} {[]}
+","Site status code from PreQualDatabaseMetadata (e.g. Accepted)","Site status code from PreQualDatabaseMetadata (e.g. Accepted)","","","","","","","","","",,,,,"",,,,"PreQualSiteDetail.siteStatus",0,1,"",""
+"PreQualSiteDetail","PreQualSiteDetail.siteActivity","PreQualSiteDetail.siteActivity","","","",0,1,"","","","code {[]} {[]}
+","Site activity code from PreQualDatabaseMetadata (e.g. FVPManufacture)","Site activity code from PreQualDatabaseMetadata (e.g. FVPManufacture)","","","","","","","","","",,,,,"",,,,"PreQualSiteDetail.siteActivity",0,1,"",""
+"PreQualVaccine","PreQualVaccine","PreQualVaccine","","","",0,*,"","","","null {[]} {[]}
+","WHO PreQual Vaccine","Logical model for the vaccine type details
+from the WHO PreQual API (ProductDetails.VaccineDetails).
+Contains only vaccine-type-level fields that are stable across products.
+Product-specific fields (CommercialName, RouteOfAdministration) remain on FinishedVaccineProducts.","","","","","","","","","",,,,,"",,,,"Base",0,*,"",""
+"PreQualVaccine","PreQualVaccine.vaccineId","PreQualVaccine.vaccineId","","","",0,1,"","","","Identifier {[]} {[]}
+","Vaccine type ID","Vaccine type ID","","","","","","","","","",,,,,"",,,,"PreQualVaccine.vaccineId",0,1,"",""
+"PreQualVaccine","PreQualVaccine.fullName","PreQualVaccine.fullName","","","",0,1,"","","","string {[]} {[]}
+","Vaccine full name","Vaccine full name","","","","","","","","","",,,,,"",,,,"PreQualVaccine.fullName",0,1,"",""
+"PreQualVaccine","PreQualVaccine.abbreviatedName","PreQualVaccine.abbreviatedName","","","",0,1,"","","","string {[]} {[]}
+","Vaccine abbreviated name","Vaccine abbreviated name","","","","","","","","","",,,,,"",,,,"PreQualVaccine.abbreviatedName",0,1,"",""

@@ -1,0 +1,102 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "#/ValueSets.schema.json",
+  "title": "ValueSet Enumeration Schema",
+  "description": "JSON Schema defining the structure of the ValueSet enumeration endpoint response",
+  "type": "object",
+  "properties": {
+    "type": {
+      "type": "string",
+      "const": "valueset",
+      "description": "The type of schemas enumerated (valueset)"
+    },
+    "count": {
+      "type": "integer",
+      "description": "Total number of schemas available"
+    },
+    "schemas": {
+      "type": "array",
+      "description": "Array of available schemas",
+      "items": {
+        "type": "object",
+        "properties": {
+          "filename": {
+            "type": "string",
+            "description": "Schema filename"
+          },
+          "id": {
+            "type": "string",
+            "description": "Schema $id"
+          },
+          "title": {
+            "type": "string",
+            "description": "Schema title"
+          },
+          "description": {
+            "type": "string",
+            "description": "Schema description"
+          },
+          "url": {
+            "type": "string",
+            "description": "Relative URL to the schema file"
+          },
+          "valueSetUrl": {
+            "type": "string",
+            "description": "FHIR canonical URL of the ValueSet"
+          },
+          "codeCount": {
+            "type": "integer",
+            "description": "Number of codes in the ValueSet"
+          }
+        },
+        "required": [
+          "filename",
+          "title",
+          "url"
+        ]
+      }
+    }
+  },
+  "required": [
+    "type",
+    "count",
+    "schemas"
+  ],
+  "example": {
+    "type": "valueset",
+    "count": 4,
+    "schemas": [
+      {
+        "filename": "ValueSet-PreQualPresentation.schema.json",
+        "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualPresentation.schema.json",
+        "title": "WHO PreQualificaiton Presentation  Schema",
+        "description": "JSON Schema for WHO PreQualificaiton Presentation  ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-PreQualPresentation.schema.json",
+        "valueSetUrl": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualPresentation"
+      },
+      {
+        "filename": "ValueSets.schema.json",
+        "id": "#/ValueSets.schema.json",
+        "title": "ValueSet Enumeration Schema",
+        "description": "JSON Schema defining the structure of the ValueSet enumeration endpoint response",
+        "url": "./ValueSets.schema.json"
+      },
+      {
+        "filename": "ValueSet-PreQualVaccineType.schema.json",
+        "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.schema.json",
+        "title": "WHO PreQualificaiton VaccineType  Schema",
+        "description": "JSON Schema for WHO PreQualificaiton VaccineType  ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-PreQualVaccineType.schema.json",
+        "valueSetUrl": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualVaccineType"
+      },
+      {
+        "filename": "ValueSet-PreQualProductIds.schema.json",
+        "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.schema.json",
+        "title": "WHO PreQualificaiton Vaccine Product Ids Schema",
+        "description": "JSON Schema for WHO PreQualificaiton Vaccine Product Ids ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "url": "./ValueSet-PreQualProductIds.schema.json",
+        "valueSetUrl": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualProductIds"
+      }
+    ]
+  }
+}

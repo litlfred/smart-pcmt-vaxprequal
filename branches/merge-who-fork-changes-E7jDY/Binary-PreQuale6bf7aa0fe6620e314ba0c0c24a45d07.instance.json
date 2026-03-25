@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holder2df14aa8a419a11f1b47bb8c2a82636c"
+  },
+  "validityPeriod": {
+    "start": "2024-07-09"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/InfluenzaseasonalTrivaleProducte6bf7aa0fe6620e314ba0c0c24a45d07"
+    }
+  ]
+}

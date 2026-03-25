@@ -1,0 +1,64 @@
+# PreQualDB953ab5cac67cbb23eeab9e794501209d - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDB953ab5cac67cbb23eeab9e794501209d**
+
+## Binary: PreQualDB953ab5cac67cbb23eeab9e794501209d
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "1996-11-22",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "HepatitisB",
+        "display": "Hepatitis B"
+      }
+    ]
+  },
+  "commercialName": "Euvax B",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "LG Chem Ltd"
+  },
+  "responsibleNRA": {
+    "text": "Ministry of Food and Drug Safety"
+  },
+  "index": {
+    "value": "953ab5cac67cbb23eeab9e794501209d"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer83c80215b20b5251e1c62eac65c9e90a"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderd4e6bca678dea34fa256538a18200187"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/HepatitisBProduct953ab5cac67cbb23eeab9e794501209d"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

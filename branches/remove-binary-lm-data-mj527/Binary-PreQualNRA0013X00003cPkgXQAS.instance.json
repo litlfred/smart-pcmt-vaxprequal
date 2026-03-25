@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00003cPkgXQAS"
+  },
+  "name": "Bulgarian Drug Agency (BDA)",
+  "country": "Bulgaria",
+  "website": "www.bda.bg",
+  "organizationReference": {
+    "reference": "Organization/Holder0013X00003cPkgXQAS"
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "@id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-03-25T13:10:17.936227Z",
+  "@graph": [
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#BCG",
+      "name": "BCG",
+      "fhir:code": "BCG",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#DT",
+      "name": "DT",
+      "fhir:code": "DT",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#DTwP",
+      "name": "DTwP",
+      "fhir:code": "DTwP",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#HepA",
+      "name": "HepA",
+      "fhir:code": "HepA",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#HepB",
+      "name": "HepB",
+      "fhir:code": "HepB",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#JE",
+      "name": "JE",
+      "fhir:code": "JE",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#LARV",
+      "name": "LARV",
+      "fhir:code": "LARV",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#M",
+      "name": "M",
+      "fhir:code": "M",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#MMR",
+      "name": "MMR",
+      "fhir:code": "MMR",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#MR",
+      "name": "MR",
+      "fhir:code": "MR",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#Malaria",
+      "name": "Malaria",
+      "fhir:code": "Malaria",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#TDV",
+      "name": "TDV",
+      "fhir:code": "TDV",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#TT",
+      "name": "TT",
+      "fhir:code": "TT",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#YF",
+      "name": "YF",
+      "fhir:code": "YF",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#bOPV",
+      "name": "bOPV",
+      "fhir:code": "bOPV",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#dT",
+      "name": "dT",
+      "fhir:code": "dT",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld#tOPV",
+      "name": "tOPV",
+      "fhir:code": "tOPV",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+    }
+  ]
+}

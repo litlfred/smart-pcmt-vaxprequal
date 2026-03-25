@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2018-02-09",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "Varicella",
+        "display": "Varicella"
+      }
+    ]
+  },
+  "commercialName": "Varivax",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Twovialsetactiveexcipient",
+        "display": "Two vial set (active + excipient)"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Merck Sharp & Dohme LLC"
+  },
+  "responsibleNRA": {
+    "text": "CBER/FDA"
+  },
+  "index": {
+    "value": "640db8992fe6d85bb1aed3872583dd5c"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer764b91fadf395103d4ce901372cc0882"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder9d7db6151eea8bf9048690e4b4504c90"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/VaricellaProduct640db8992fe6d85bb1aed3872583dd5c"
+  }
+}

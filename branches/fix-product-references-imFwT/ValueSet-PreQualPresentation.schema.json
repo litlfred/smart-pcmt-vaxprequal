@@ -1,0 +1,32 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualPresentation.schema.json",
+  "title": "WHO PreQualificaiton Presentation  Schema",
+  "description": "JSON Schema for WHO PreQualificaiton Presentation  ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+  "type": "object",
+  "required": [
+    "system",
+    "code"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "system": {
+      "type": "string",
+      "const": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"
+    },
+    "code": {
+      "type": "string",
+      "enum": [
+        "Ampoule",
+        "Plastictube",
+        "Twovialsetactiveexcipient",
+        "Vial"
+      ]
+    }
+  },
+  "narrative": "This schema validates Coding-shaped objects for the WHO PreQualificaiton Presentation  ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualPresentation.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualPresentation.displays.json",
+  "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualPresentation",
+  "fhir:version": "0.1.0",
+  "fhir:expansionTimestamp": "2026-03-19T19:10:35+00:00"
+}

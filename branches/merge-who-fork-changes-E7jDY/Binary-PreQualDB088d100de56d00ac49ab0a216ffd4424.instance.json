@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2010-01-22",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "InfluenzaPandemicH1N1",
+        "display": "Influenza, Pandemic (H1N1)"
+      }
+    ]
+  },
+  "commercialName": "Panenza",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "Sanofi Pasteur"
+  },
+  "responsibleNRA": {
+    "text": "Agence nationale de sécurité du médicament et des produits de santé"
+  },
+  "index": {
+    "value": "088d100de56d00ac49ab0a216ffd4424"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturere6f45c0f69a7b4cecd7421c4515ea3c5"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holdera1ed2fb3196a19ac1010392bdc5e8646"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/InfluenzaPandemicH1N1Product088d100de56d00ac49ab0a216ffd4424"
+  }
+}

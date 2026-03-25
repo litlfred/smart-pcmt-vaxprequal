@@ -1,0 +1,36 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "Comirnaty®"
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturere9bbc99629b5c4f5c92009585b5deb4d"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "Covid19"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "Vial"
+      }
+    ]
+  }
+}

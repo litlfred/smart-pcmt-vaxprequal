@@ -1,0 +1,213 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.displays.json",
+  "title": "WHO PreQualificaiton VaccineType  Display Values",
+  "description": "Display values for WHO PreQualificaiton VaccineType  ValueSet codes. Generated from FHIR expansions. Keys are code fragments (the part after '#' in the canonical IRI). The full IRI can be reconstructed as system + '#' + code.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes keyed by code fragment",
+      "patternProperties": {
+        "^.+$": {
+          "type": "object",
+          "description": "Display values for a specific code fragment by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "BCG": {
+      "en": "BCG"
+    },
+    "Covid19": {
+      "en": "Covid-19"
+    },
+    "DengueTetravalentliveattenuated": {
+      "en": "Dengue Tetravalent (live, attenuated)"
+    },
+    "DiphtheriaTetanus": {
+      "en": "Diphtheria-Tetanus"
+    },
+    "DiphtheriaTetanusreducedantigencontent": {
+      "en": "Diphtheria-Tetanus (reduced antigen content)"
+    },
+    "DiphtheriaTetanusPertussisacellular": {
+      "en": "Diphtheria-Tetanus-Pertussis (acellular)"
+    },
+    "DiphtheriaTetanusPertussisacellularHepatitisBHaemophilusinfluenzaetypebPolioInactivated": {
+      "en": "Diphtheria-Tetanus-Pertussis (acellular)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
+    },
+    "DiphtheriaTetanusPertussiswholecell": {
+      "en": "Diphtheria-Tetanus-Pertussis (whole cell)"
+    },
+    "DiphtheriaTetanusPertussiswholecellHaemophilusinfluenzaetypeb": {
+      "en": "Diphtheria-Tetanus-Pertussis (whole cell)-Haemophilus influenzae type b"
+    },
+    "DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb": {
+      "en": "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b"
+    },
+    "DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypebPolioInactivated": {
+      "en": "Diphtheria-Tetanus-Pertussis (whole cell)-Hepatitis B-Haemophilus influenzae type b-Polio (Inactivated)"
+    },
+    "EbolaZairerVSVGZEBOVGPliveattenuated": {
+      "en": "Ebola Zaire (rVSV∆G-ZEBOV-GP, live attenuated)"
+    },
+    "EbolavaccineAd26ZEBOVGPrecombinant": {
+      "en": "Ebola vaccine (Ad26.ZEBOV-GP [recombinant])"
+    },
+    "EbolavaccineMVABNFilorecombinant": {
+      "en": "Ebola vaccine (MVA-BN-Filo [recombinant])"
+    },
+    "Haemophilusinfluenzaetypeb": {
+      "en": "Haemophilus influenzae type b"
+    },
+    "HepatitisAHumanDiploidCellInactivatedAdult": {
+      "en": "Hepatitis A (Human Diploid Cell), Inactivated (Adult)"
+    },
+    "HepatitisAHumanDiploidCellInactivatedPaediatric": {
+      "en": "Hepatitis A (Human Diploid Cell), Inactivated (Paediatric)"
+    },
+    "HepatitisB": {
+      "en": "Hepatitis B"
+    },
+    "HepatitisBPaediatric": {
+      "en": "Hepatitis B (Paediatric)"
+    },
+    "HumanPapillomavirusBivalent": {
+      "en": "Human Papillomavirus (Bivalent)"
+    },
+    "HumanPapillomavirusNinevalent": {
+      "en": "Human Papillomavirus (Ninevalent)"
+    },
+    "HumanPapillomavirusQuadrivalent": {
+      "en": "Human Papillomavirus (Quadrivalent)"
+    },
+    "InfluenzaPandemicH1N1": {
+      "en": "Influenza, Pandemic (H1N1)"
+    },
+    "InfluenzaPandemicH5N1": {
+      "en": "Influenza, Pandemic (H5N1)"
+    },
+    "InfluenzaseasonalQuadrivalent": {
+      "en": "Influenza, seasonal (Quadrivalent)"
+    },
+    "InfluenzaseasonalTrivalent": {
+      "en": "Influenza, seasonal (Trivalent)"
+    },
+    "JapaneseEncephalitisVaccineInactivated3µgPediatric": {
+      "en": "Japanese Encephalitis Vaccine (Inactivated) (3µg Pediatric)"
+    },
+    "JapaneseEncephalitisVaccineInactivated6µg": {
+      "en": "Japanese Encephalitis Vaccine (Inactivated) 6µg"
+    },
+    "JapaneseEncephalitisVaccineliveattenuated": {
+      "en": "Japanese Encephalitis Vaccine (live, attenuated)"
+    },
+    "Malaria": {
+      "en": "Malaria"
+    },
+    "Measles": {
+      "en": "Measles"
+    },
+    "MeaslesandRubella": {
+      "en": "Measles and Rubella"
+    },
+    "MeaslesMumpsandRubella": {
+      "en": "Measles, Mumps and Rubella"
+    },
+    "MenigococcalACYWXPolysaccharideconjugate": {
+      "en": "Menigococcal ACYWX (Polysaccharide conjugate)"
+    },
+    "MeningococcalAConjugate10µg": {
+      "en": "Meningococcal A Conjugate 10 µg"
+    },
+    "MeningococcalAConjugate5µg": {
+      "en": "Meningococcal A Conjugate 5 µg"
+    },
+    "MeningococcalACYW135conjugatevaccine": {
+      "en": "Meningococcal ACYW-135 (conjugate vaccine)"
+    },
+    "MeningococcalACYW135TetanusToxoidconjugatevaccine": {
+      "en": "Meningococcal ACYW-135 Tetanus Toxoid (conjugate vaccine)"
+    },
+    "Pneumococcalconjugate": {
+      "en": "Pneumococcal (conjugate)"
+    },
+    "PolioVaccineInactivatedIPV": {
+      "en": "Polio Vaccine - Inactivated (IPV)"
+    },
+    "PolioVaccineInactivatedSabinsIPV": {
+      "en": "Polio Vaccine - Inactivated Sabin (sIPV)"
+    },
+    "PolioVaccineNovelOralnOPVType2": {
+      "en": "Polio Vaccine - Novel Oral (nOPV) Type 2"
+    },
+    "PolioVaccineOralOPVBivalentTypes1and3": {
+      "en": "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+    },
+    "PolioVaccineOralOPVMonovalentType1": {
+      "en": "Polio Vaccine - Oral (OPV) Monovalent Type 1"
+    },
+    "PolioVaccineOralOPVMonovalentType2": {
+      "en": "Polio Vaccine - Oral (OPV) Monovalent Type 2"
+    },
+    "PolioVaccineOralOPVMonovalentType3": {
+      "en": "Polio Vaccine - Oral (OPV) Monovalent Type 3"
+    },
+    "PolioVaccineOralOPVTrivalent": {
+      "en": "Polio Vaccine - Oral (OPV) Trivalent"
+    },
+    "Rabies": {
+      "en": "Rabies"
+    },
+    "Rotavirus": {
+      "en": "Rotavirus"
+    },
+    "Rotavirusliveattenuated": {
+      "en": "Rotavirus (live, attenuated)"
+    },
+    "Rubella": {
+      "en": "Rubella"
+    },
+    "SmallpoxandMpoxvaccineLiveModifiedVacciniaVirusAnkara": {
+      "en": "Smallpox and Mpox vaccine (Live Modified Vaccinia Virus Ankara)"
+    },
+    "TetanusToxoid": {
+      "en": "Tetanus Toxoid"
+    },
+    "TyphoidConjugate": {
+      "en": "Typhoid (Conjugate)"
+    },
+    "Varicella": {
+      "en": "Varicella"
+    },
+    "YellowFever": {
+      "en": "Yellow Fever"
+    },
+    "cholerainactivatedoral": {
+      "en": "cholera: inactivated oral"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualVaccineType",
+  "fhir:version": "0.2.0",
+  "fhir:expansionTimestamp": "2026-03-23T16:54:53+00:00"
+}

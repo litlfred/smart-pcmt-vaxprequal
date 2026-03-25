@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vab1UAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "1.99",
+  "description": "Active: Carton of 20 ampoules (200 doses)[Dimensions: 14.5 x 9.8 x 2.8 cm]",
+  "height": "9.8",
+  "length": "14.5",
+  "width": "2.8",
+  "primaryContainers": "20"
+}

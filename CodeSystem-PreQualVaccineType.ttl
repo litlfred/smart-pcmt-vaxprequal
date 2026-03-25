@@ -1,0 +1,90 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PreQualVaccineType"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PreQualVaccineType</b></p><a name=\"PreQualVaccineType\"> </a><a name=\"hcPreQualVaccineType\"> </a><p>This  code system <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td></tr><tr><td style=\"white-space:nowrap\">BCG<a name=\"PreQualVaccineType-BCG\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DT<a name=\"PreQualVaccineType-DT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">DTwP<a name=\"PreQualVaccineType-DTwP\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HepA<a name=\"PreQualVaccineType-HepA\"> </a></td></tr><tr><td style=\"white-space:nowrap\">HepB<a name=\"PreQualVaccineType-HepB\"> </a></td></tr><tr><td style=\"white-space:nowrap\">JE<a name=\"PreQualVaccineType-JE\"> </a></td></tr><tr><td style=\"white-space:nowrap\">LARV<a name=\"PreQualVaccineType-LARV\"> </a></td></tr><tr><td style=\"white-space:nowrap\">M<a name=\"PreQualVaccineType-M\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MMR<a name=\"PreQualVaccineType-MMR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">MR<a name=\"PreQualVaccineType-MR\"> </a></td></tr><tr><td style=\"white-space:nowrap\">Malaria<a name=\"PreQualVaccineType-Malaria\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TDV<a name=\"PreQualVaccineType-TDV\"> </a></td></tr><tr><td style=\"white-space:nowrap\">TT<a name=\"PreQualVaccineType-TT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">YF<a name=\"PreQualVaccineType-YF\"> </a></td></tr><tr><td style=\"white-space:nowrap\">bOPV<a name=\"PreQualVaccineType-bOPV\"> </a></td></tr><tr><td style=\"white-space:nowrap\">dT<a name=\"PreQualVaccineType-dT\"> </a></td></tr><tr><td style=\"white-space:nowrap\">tOPV<a name=\"PreQualVaccineType-tOPV\"> </a></td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"^^xsd:anyURI ;
+     fhir:l <http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType>
+  ] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "PreQualVaccineType"] ; # 
+  fhir:title [ fhir:v "WHO PreQualificaiton Vaccine VaccineTypes"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:date [ fhir:v "2026-03-25T13:07:53+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "WHO PreQualificaiton Vaccine VaccineTypes"] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "17"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "BCG" ] ;
+     fhir:display [ fhir:v "BCG" ]
+  ] [
+     fhir:code [ fhir:v "DT" ] ;
+     fhir:display [ fhir:v "DT" ]
+  ] [
+     fhir:code [ fhir:v "DTwP" ] ;
+     fhir:display [ fhir:v "DTwP" ]
+  ] [
+     fhir:code [ fhir:v "HepA" ] ;
+     fhir:display [ fhir:v "HepA" ]
+  ] [
+     fhir:code [ fhir:v "HepB" ] ;
+     fhir:display [ fhir:v "HepB" ]
+  ] [
+     fhir:code [ fhir:v "JE" ] ;
+     fhir:display [ fhir:v "JE" ]
+  ] [
+     fhir:code [ fhir:v "LARV" ] ;
+     fhir:display [ fhir:v "LARV" ]
+  ] [
+     fhir:code [ fhir:v "M" ] ;
+     fhir:display [ fhir:v "M" ]
+  ] [
+     fhir:code [ fhir:v "MMR" ] ;
+     fhir:display [ fhir:v "MMR" ]
+  ] [
+     fhir:code [ fhir:v "MR" ] ;
+     fhir:display [ fhir:v "MR" ]
+  ] [
+     fhir:code [ fhir:v "Malaria" ] ;
+     fhir:display [ fhir:v "Malaria" ]
+  ] [
+     fhir:code [ fhir:v "TDV" ] ;
+     fhir:display [ fhir:v "TDV" ]
+  ] [
+     fhir:code [ fhir:v "TT" ] ;
+     fhir:display [ fhir:v "TT" ]
+  ] [
+     fhir:code [ fhir:v "YF" ] ;
+     fhir:display [ fhir:v "YF" ]
+  ] [
+     fhir:code [ fhir:v "bOPV" ] ;
+     fhir:display [ fhir:v "bOPV" ]
+  ] [
+     fhir:code [ fhir:v "dT" ] ;
+     fhir:display [ fhir:v "dT" ]
+  ] [
+     fhir:code [ fhir:v "tOPV" ] ;
+     fhir:display [ fhir:v "tOPV" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

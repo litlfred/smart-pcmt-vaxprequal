@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005hvDPYAY"
+  },
+  "documentName": "Container Photo (Bigger Higher Resolution)-pq_62_MMR_1dose_GSK_vial%2Bampl_image",
+  "documentType": "Photo",
+  "versionId": "068NN000005yebBYAQ",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

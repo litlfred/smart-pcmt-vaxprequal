@@ -1,0 +1,14 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00004993qnQAA"
+  },
+  "siteOrganizationName": "LG Chem Ltd (LGC)",
+  "addressLine1": "LG Twin Towers  128  Yeoui-daero  Yeongdeungpo-gu",
+  "city": "Seoul",
+  "country": "Republic of Korea",
+  "postalCode": "7336",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

@@ -1,0 +1,64 @@
+# PreQualDBa225473ed705ece5111f5bfcaf99f216 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDBa225473ed705ece5111f5bfcaf99f216**
+
+## Binary: PreQualDBa225473ed705ece5111f5bfcaf99f216
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "1987-01-01",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "BCG",
+        "display": "BCG"
+      }
+    ]
+  },
+  "commercialName": "BCG Freeze Dried Glutamate vaccine",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Ampoule",
+        "display": "Ampoule"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "Japan BCG Laboratory"
+  },
+  "responsibleNRA": {
+    "text": "Pharmaceutical and Medical Devices Agency"
+  },
+  "index": {
+    "value": "a225473ed705ece5111f5bfcaf99f216"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturerb9ce4b3161c0bb54b370a457d22926e0"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder4d70627b72cb75bcde38e52b0f1b7db2"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/BCGProducta225473ed705ece5111f5bfcaf99f216"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2022-06-06",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "PolioVaccineInactivatedS",
+        "display": "Polio Vaccine - Inactivated Sabin (sIPV)"
+      }
+    ]
+  },
+  "commercialName": "Poliomyelitis Vaccine (Vero Cell), Inactivated, Sabin Strains",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Sinovac Biotech Co. Ltd"
+  },
+  "responsibleNRA": {
+    "text": "National Medical Products Administration"
+  },
+  "index": {
+    "value": "2050ea67709cfcde28a01f0546276e96"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer56d509b36258f1c3e037132496afb0cb"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder6f85b90926148cce1ad5a1fa8afe673a"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/PolioVaccineInactivatedSProduct2050ea67709cfcde28a01f0546276e96"
+  }
+}

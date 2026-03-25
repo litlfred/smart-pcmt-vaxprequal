@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt."
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturer54a4cbdf74f251158fb034e8f5e1ff5b"
+  },
+  "doseQuantity": {
+    "value": 20,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "TetanusToxoid"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "Vial"
+      }
+    ]
+  }
+}

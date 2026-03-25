@@ -1,0 +1,9 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine",
+  "vaccineId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSoiUAE"
+  },
+  "fullName": "Dengue tetravalent vaccine (live, attenuated)",
+  "abbreviatedName": "TDV"
+}

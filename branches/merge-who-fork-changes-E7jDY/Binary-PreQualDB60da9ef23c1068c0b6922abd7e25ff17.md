@@ -1,0 +1,64 @@
+# PreQualDB60da9ef23c1068c0b6922abd7e25ff17 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDB60da9ef23c1068c0b6922abd7e25ff17**
+
+## Binary: PreQualDB60da9ef23c1068c0b6922abd7e25ff17
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2011-06-30",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "InfluenzaseasonalTrivale",
+        "display": "Influenza, seasonal (Trivalent)"
+      }
+    ]
+  },
+  "commercialName": "Vaxigrip",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "Sanofi Pasteur"
+  },
+  "responsibleNRA": {
+    "text": "Agence nationale de sécurité du médicament et des produits de santé"
+  },
+  "index": {
+    "value": "60da9ef23c1068c0b6922abd7e25ff17"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturere6f45c0f69a7b4cecd7421c4515ea3c5"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holdera1ed2fb3196a19ac1010392bdc5e8646"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/InfluenzaseasonalTrivaleProduct60da9ef23c1068c0b6922abd7e25ff17"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

@@ -1,0 +1,141 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.displays.json",
+  "title": "WHO PreQualificaiton Vaccine Product Ids Display Values",
+  "description": "Display values for WHO PreQualificaiton Vaccine Product Ids ValueSet codes. Generated from FHIR expansions.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes using IRI format to match JSON schema enum values",
+      "patternProperties": {
+        "^https?://.*": {
+          "type": "object",
+          "description": "Display values for a specific IRI-formatted code by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000005atRtUAI": {
+      "en": "FVP-P-447 (a3K3X000005atRtUAI)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000005atSwUAI": {
+      "en": "FVP-P-446 (a3K3X000005atSwUAI)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MihsUAC": {
+      "en": "FVP-P-62 (a3K3X000006MihsUAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MihtUAC": {
+      "en": "FVP-P-63 (a3K3X000006MihtUAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MihuUAC": {
+      "en": "FVP-P-64 (a3K3X000006MihuUAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MihvUAC": {
+      "en": "FVP-P-65 (a3K3X000006MihvUAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MihwUAC": {
+      "en": "FVP-P-66 (a3K3X000006MihwUAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MihxUAC": {
+      "en": "FVP-P-67 (a3K3X000006MihxUAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MihyUAC": {
+      "en": "FVP-P-68 (a3K3X000006MihyUAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006Mii0UAC": {
+      "en": "FVP-P-61 (a3K3X000006Mii0UAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006Mii1UAC": {
+      "en": "FVP-P-75 (a3K3X000006Mii1UAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006Mii2UAC": {
+      "en": "FVP-P-76 (a3K3X000006Mii2UAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006Mii3UAC": {
+      "en": "FVP-P-77 (a3K3X000006Mii3UAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006Mii5UAC": {
+      "en": "FVP-P-311 (a3K3X000006Mii5UAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006Mii6UAC": {
+      "en": "FVP-P-319 (a3K3X000006Mii6UAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006Mii7UAC": {
+      "en": "FVP-P-71 (a3K3X000006Mii7UAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006Mii8UAC": {
+      "en": "FVP-P-78 (a3K3X000006Mii8UAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006Mii9UAC": {
+      "en": "FVP-P-79 (a3K3X000006Mii9UAC)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MiiAUAS": {
+      "en": "FVP-P-80 (a3K3X000006MiiAUAS)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MiiBUAS": {
+      "en": "FVP-P-329 (a3K3X000006MiiBUAS)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MiiCUAS": {
+      "en": "FVP-P-73 (a3K3X000006MiiCUAS)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MiiDUAS": {
+      "en": "FVP-P-74 (a3K3X000006MiiDUAS)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MiiEUAS": {
+      "en": "FVP-P-137 (a3K3X000006MiiEUAS)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MiiFUAS": {
+      "en": "FVP-P-136 (a3K3X000006MiiFUAS)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MiiGUAS": {
+      "en": "FVP-P-138 (a3K3X000006MiiGUAS)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MiiHUAS": {
+      "en": "FVP-P-141 (a3K3X000006MiiHUAS)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MiiIUAS": {
+      "en": "FVP-P-142 (a3K3X000006MiiIUAS)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MiiJUAS": {
+      "en": "FVP-P-144 (a3K3X000006MiiJUAS)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MiiKUAS": {
+      "en": "FVP-P-143 (a3K3X000006MiiKUAS)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MiiLUAS": {
+      "en": "FVP-P-272 (a3K3X000006MiiLUAS)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MiiMUAS": {
+      "en": "FVP-P-145 (a3K3X000006MiiMUAS)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MiiNUAS": {
+      "en": "FVP-P-124 (a3K3X000006MiiNUAS)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds#a3K3X000006MiiOUAS": {
+      "en": "FVP-P-125 (a3K3X000006MiiOUAS)"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualProductIds",
+  "fhir:version": "0.2.0",
+  "fhir:expansionTimestamp": "2026-03-24T15:03:58.666436"
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iKMmYAM"
+  },
+  "documentName": "Package Insert-pq_138_139_140_141_MR_SII_PI-PAHO_2022",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005z3hIYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

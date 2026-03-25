@@ -1,0 +1,39 @@
+# PreQualSite0013X0000498p2wQAA - SMART Product Catalog v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualSite0013X0000498p2wQAA**
+
+## Example Binary: PreQualSite0013X0000498p2wQAA
+
+This content is an example of the [WHO PreQual Site Detail](StructureDefinition-PreQualSiteDetail.md) Logical Model and is not a FHIR Resource
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p2wQAA"
+  },
+  "siteOrganizationName": "Haffkine Bio Pharmaceutical Corporation Ltd",
+  "addressLine1": "Acharya Donde Marg, Parel",
+  "city": "Mumbai",
+  "country": "India",
+  "postalCode": "400 012",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

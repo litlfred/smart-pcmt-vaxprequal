@@ -1,0 +1,1039 @@
+{
+  "phase": "postprocessing",
+  "timestamp": "2026-03-19T19:11:42.088788",
+  "status": "completed",
+  "summary": {
+    "total_successes": 96,
+    "total_warnings": 5,
+    "total_errors": 0,
+    "files_processed_count": 48,
+    "files_expected_count": 1,
+    "files_missing_count": 1,
+    "completion_timestamp": "2026-03-19T19:11:42.982470"
+  },
+  "details": {
+    "successes": [
+      {
+        "message": "Starting generate_dak_api_hub.py post-processing",
+        "timestamp": "2026-03-19T19:11:42.088813"
+      },
+      {
+        "message": "Configured directories - Output: output, OpenAPI: input/openapi",
+        "timestamp": "2026-03-19T19:11:42.088818"
+      },
+      {
+        "message": "Loaded existing FHIR IG publisher QA file for merging",
+        "timestamp": "2026-03-19T19:11:42.088939"
+      },
+      {
+        "message": "[preprocessing] Starting update_sushi_config.py preprocessing",
+        "timestamp": "2026-03-19T19:11:42.089067"
+      },
+      {
+        "message": "[preprocessing] Successfully loaded sushi-config.yaml",
+        "timestamp": "2026-03-19T19:11:42.089071"
+      },
+      {
+        "message": "[preprocessing] Found smart-base dependency: smart.who.int.base",
+        "timestamp": "2026-03-19T19:11:42.089073"
+      },
+      {
+        "message": "[preprocessing] Created directory structure for input/pagecontent/dak-api.md",
+        "timestamp": "2026-03-19T19:11:42.089078"
+      },
+      {
+        "message": "[preprocessing] Successfully created dak-api.md with DAK_API_CONTENT marker",
+        "timestamp": "2026-03-19T19:11:42.089085"
+      },
+      {
+        "message": "[preprocessing] Found directory: input/fsh/models",
+        "timestamp": "2026-03-19T19:11:42.089089"
+      },
+      {
+        "message": "[preprocessing] Found 2 FSH files in input/fsh/models",
+        "timestamp": "2026-03-19T19:11:42.089096"
+      },
+      {
+        "message": "[preprocessing] Found Logical Model from FSH: PreQualDB",
+        "timestamp": "2026-03-19T19:11:42.089101",
+        "details": {
+          "source_file": "input/fsh/models/PreQualDB.fsh",
+          "title": "WHO Vaccine PreQual DB"
+        }
+      },
+      {
+        "message": "[preprocessing] Found Logical Model from FSH: FinishedVaccineProducts",
+        "timestamp": "2026-03-19T19:11:42.089104",
+        "details": {
+          "source_file": "input/fsh/models/PreQualDBAPI.fsh",
+          "title": "WHO Vaccine PreQual DB - Finished Vaccine Products"
+        }
+      },
+      {
+        "message": "[preprocessing] Found directory: input/fsh/valuesets",
+        "timestamp": "2026-03-19T19:11:42.089106"
+      },
+      {
+        "message": "[preprocessing] Found 4 FSH files in input/fsh/valuesets",
+        "timestamp": "2026-03-19T19:11:42.089108"
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: PreQualVaccineType",
+        "timestamp": "2026-03-19T19:11:42.089114",
+        "details": {
+          "source_file": "input/fsh/valuesets/PreQualVacccineTypes.fsh",
+          "title": "PreQualVaccineType"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: PreQualPresentation",
+        "timestamp": "2026-03-19T19:11:42.089116",
+        "details": {
+          "source_file": "input/fsh/valuesets/prequal_presentation.fsh",
+          "title": "PreQualPresentation"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: PreQualProductIds",
+        "timestamp": "2026-03-19T19:11:42.089122",
+        "details": {
+          "source_file": "input/fsh/valuesets/prequal_database_products_identifiers.fsh",
+          "title": "PreQualProductIds"
+        }
+      },
+      {
+        "message": "[preprocessing] Found ValueSet from FSH: PreQualDatabaseMetadata",
+        "timestamp": "2026-03-19T19:11:42.089125",
+        "details": {
+          "source_file": "input/fsh/valuesets/prequal_database_metadata.fsh",
+          "title": "WHO PreQualification Database Metadata"
+        }
+      },
+      {
+        "message": "[preprocessing] Ensured directory exists: input/pagecontent",
+        "timestamp": "2026-03-19T19:11:42.089127"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-PreQualVaccineType.md",
+        "timestamp": "2026-03-19T19:11:42.089129"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-PreQualPresentation.md",
+        "timestamp": "2026-03-19T19:11:42.089130"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-PreQualProductIds.md",
+        "timestamp": "2026-03-19T19:11:42.089131"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: ValueSet-PreQualDatabaseMetadata.md",
+        "timestamp": "2026-03-19T19:11:42.089133"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: StructureDefinition-PreQualDB.md",
+        "timestamp": "2026-03-19T19:11:42.089134"
+      },
+      {
+        "message": "[preprocessing] Created placeholder: StructureDefinition-FinishedVaccineProducts.md",
+        "timestamp": "2026-03-19T19:11:42.089135"
+      },
+      {
+        "message": "[preprocessing] Placeholder generation completed",
+        "timestamp": "2026-03-19T19:11:42.089136",
+        "details": {
+          "valuesets_found": 4,
+          "logical_models_found": 2,
+          "placeholder_files_created": 6
+        }
+      },
+      {
+        "message": "[preprocessing] Added dak-api.md to pages section",
+        "timestamp": "2026-03-19T19:11:42.089138"
+      },
+      {
+        "message": "[preprocessing] Added DAK API to menu Indices section",
+        "timestamp": "2026-03-19T19:11:42.089139"
+      },
+      {
+        "message": "[preprocessing] sushi-config.yaml updated successfully",
+        "timestamp": "2026-03-19T19:11:42.089140"
+      },
+      {
+        "message": "[preprocessing] update_sushi_config completed successfully",
+        "timestamp": "2026-03-19T19:11:42.089143"
+      },
+      {
+        "message": "Merged preprocessing QA report from input/temp/",
+        "timestamp": "2026-03-19T19:11:42.089176"
+      },
+      {
+        "message": "[valueset_schemas] Starting ValueSet schema generation",
+        "timestamp": "2026-03-19T19:11:42.089353"
+      },
+      {
+        "message": "[valueset_schemas] Configured paths - Expansions: output/expansions.json, Output: output",
+        "timestamp": "2026-03-19T19:11:42.089358"
+      },
+      {
+        "message": "[valueset_schemas] Successfully loaded expansions data from output/expansions.json",
+        "timestamp": "2026-03-19T19:11:42.089361"
+      },
+      {
+        "message": "[valueset_schemas] Successfully generated 4 ValueSet schemas",
+        "timestamp": "2026-03-19T19:11:42.089364"
+      },
+      {
+        "message": "Merged ValueSet schema generation QA report from input/temp/qa_valueset_schemas.json",
+        "timestamp": "2026-03-19T19:11:42.089376"
+      },
+      {
+        "message": "[logical_model_schemas] Script started",
+        "timestamp": "2026-03-19T19:11:42.089612",
+        "details": {
+          "input_directory": "output",
+          "output_directory": "output"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Input directory found",
+        "timestamp": "2026-03-19T19:11:42.089619",
+        "details": {
+          "directory": "output"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Found 33 StructureDefinition files",
+        "timestamp": "2026-03-19T19:11:42.089622",
+        "details": {
+          "directory": "output",
+          "file_count": 33
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Found 11 logical models",
+        "timestamp": "2026-03-19T19:11:42.089624",
+        "details": {
+          "models_found": 11,
+          "model_names": [
+            "PreQualVaccine",
+            "PreQualDBwithIds",
+            "PreQualDB",
+            "PreQualProductIngredient",
+            "PreQualSiteDetail",
+            "PreQualBulkSupplier",
+            "PreQualProductPackaging",
+            "PreQualDocumentDetail",
+            "PreQualNRA",
+            "FinishedVaccineProducts",
+            "PreQualManufacturer"
+          ]
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model PreQualVaccine",
+        "timestamp": "2026-03-19T19:11:42.089627"
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model PreQualDBwithIds",
+        "timestamp": "2026-03-19T19:11:42.089634"
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model PreQualDB",
+        "timestamp": "2026-03-19T19:11:42.089637"
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model PreQualProductIngredient",
+        "timestamp": "2026-03-19T19:11:42.089640"
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model PreQualSiteDetail",
+        "timestamp": "2026-03-19T19:11:42.089642"
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model PreQualBulkSupplier",
+        "timestamp": "2026-03-19T19:11:42.089648"
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model PreQualProductPackaging",
+        "timestamp": "2026-03-19T19:11:42.089650"
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model PreQualDocumentDetail",
+        "timestamp": "2026-03-19T19:11:42.089651"
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model PreQualNRA",
+        "timestamp": "2026-03-19T19:11:42.089652"
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model FinishedVaccineProducts",
+        "timestamp": "2026-03-19T19:11:42.089653"
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema for model PreQualManufacturer",
+        "timestamp": "2026-03-19T19:11:42.089655"
+      },
+      {
+        "message": "[logical_model_schemas] Generated 11 Logical Model schemas",
+        "timestamp": "2026-03-19T19:11:42.089656",
+        "details": {
+          "schemas_generated": 11,
+          "schema_files": [
+            "output/StructureDefinition-PreQualVaccine.schema.json",
+            "output/StructureDefinition-PreQualDBwithIds.schema.json",
+            "output/StructureDefinition-PreQualDB.schema.json",
+            "output/StructureDefinition-PreQualProductIngredient.schema.json",
+            "output/StructureDefinition-PreQualSiteDetail.schema.json",
+            "output/StructureDefinition-PreQualBulkSupplier.schema.json",
+            "output/StructureDefinition-PreQualProductPackaging.schema.json",
+            "output/StructureDefinition-PreQualDocumentDetail.schema.json",
+            "output/StructureDefinition-PreQualNRA.schema.json",
+            "output/StructureDefinition-FinishedVaccineProducts.schema.json",
+            "output/StructureDefinition-PreQualManufacturer.schema.json"
+          ]
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Successfully generated 11 logical model schemas",
+        "timestamp": "2026-03-19T19:11:42.089657",
+        "details": {
+          "schemas_generated": 11
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-03-19T19:11:42.089697",
+        "details": {
+          "model_name": "PreQualVaccine",
+          "schema_file": "output/StructureDefinition-PreQualVaccine.schema.json",
+          "properties_count": 4,
+          "required_fields": [
+            "resourceType"
+          ],
+          "timestamp": "2026-03-19T19:11:41.489356",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-03-19T19:11:42.089699",
+        "details": {
+          "model_name": "PreQualDBwithIds",
+          "schema_file": "output/StructureDefinition-PreQualDBwithIds.schema.json",
+          "properties_count": 12,
+          "required_fields": [
+            "resourceType",
+            "dateOfPrequal",
+            "vaccineType",
+            "commercialName",
+            "presentation",
+            "manufacturer",
+            "responsibleNRA",
+            "index",
+            "manufacturerReference",
+            "responsibleNRAReference"
+          ],
+          "timestamp": "2026-03-19T19:11:41.489877",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-03-19T19:11:42.089701",
+        "details": {
+          "model_name": "PreQualDB",
+          "schema_file": "output/StructureDefinition-PreQualDB.schema.json",
+          "properties_count": 8,
+          "required_fields": [
+            "resourceType",
+            "dateOfPrequal",
+            "vaccineType",
+            "commercialName",
+            "presentation",
+            "manufacturer",
+            "responsibleNRA"
+          ],
+          "timestamp": "2026-03-19T19:11:41.490304",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-03-19T19:11:42.089702",
+        "details": {
+          "model_name": "PreQualProductIngredient",
+          "schema_file": "output/StructureDefinition-PreQualProductIngredient.schema.json",
+          "properties_count": 7,
+          "required_fields": [
+            "resourceType"
+          ],
+          "timestamp": "2026-03-19T19:11:41.490686",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-03-19T19:11:42.089703",
+        "details": {
+          "model_name": "PreQualSiteDetail",
+          "schema_file": "output/StructureDefinition-PreQualSiteDetail.schema.json",
+          "properties_count": 10,
+          "required_fields": [
+            "resourceType"
+          ],
+          "timestamp": "2026-03-19T19:11:41.491901",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-03-19T19:11:42.089704",
+        "details": {
+          "model_name": "PreQualBulkSupplier",
+          "schema_file": "output/StructureDefinition-PreQualBulkSupplier.schema.json",
+          "properties_count": 3,
+          "required_fields": [
+            "resourceType"
+          ],
+          "timestamp": "2026-03-19T19:11:41.492303",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-03-19T19:11:42.089705",
+        "details": {
+          "model_name": "PreQualProductPackaging",
+          "schema_file": "output/StructureDefinition-PreQualProductPackaging.schema.json",
+          "properties_count": 13,
+          "required_fields": [
+            "resourceType",
+            "packagingId"
+          ],
+          "timestamp": "2026-03-19T19:11:41.492788",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-03-19T19:11:42.089707",
+        "details": {
+          "model_name": "PreQualDocumentDetail",
+          "schema_file": "output/StructureDefinition-PreQualDocumentDetail.schema.json",
+          "properties_count": 7,
+          "required_fields": [
+            "resourceType"
+          ],
+          "timestamp": "2026-03-19T19:11:41.493203",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-03-19T19:11:42.089708",
+        "details": {
+          "model_name": "PreQualNRA",
+          "schema_file": "output/StructureDefinition-PreQualNRA.schema.json",
+          "properties_count": 7,
+          "required_fields": [
+            "resourceType",
+            "name",
+            "organizationReference"
+          ],
+          "timestamp": "2026-03-19T19:11:41.493580",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-03-19T19:11:42.089709",
+        "details": {
+          "model_name": "FinishedVaccineProducts",
+          "schema_file": "output/StructureDefinition-FinishedVaccineProducts.schema.json",
+          "properties_count": 42,
+          "required_fields": [
+            "resourceType",
+            "productId",
+            "productName",
+            "productType",
+            "dateOfPrequal",
+            "status",
+            "presentation",
+            "vaccineCommercialName",
+            "applicantName",
+            "nraName",
+            "manufacturerReference",
+            "responsibleNRAReference"
+          ],
+          "timestamp": "2026-03-19T19:11:41.494307",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "[logical_model_schemas] Generated schema",
+        "timestamp": "2026-03-19T19:11:42.089711",
+        "details": {
+          "model_name": "PreQualManufacturer",
+          "schema_file": "output/StructureDefinition-PreQualManufacturer.schema.json",
+          "properties_count": 12,
+          "required_fields": [
+            "resourceType",
+            "name",
+            "organizationReference"
+          ],
+          "timestamp": "2026-03-19T19:11:41.494783",
+          "component": "logical_model_schemas"
+        }
+      },
+      {
+        "message": "Merged Logical Model schema generation QA report from input/temp/qa_logical_model_schemas.json",
+        "timestamp": "2026-03-19T19:11:42.089713"
+      },
+      {
+        "message": "[jsonld_vocabularies] Script started",
+        "timestamp": "2026-03-19T19:11:42.090913",
+        "details": {
+          "expansions_path": "output/expansions.json",
+          "output_directory": "output"
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Successfully loaded expansions data",
+        "timestamp": "2026-03-19T19:11:42.090918",
+        "details": {
+          "expansions_path": "output/expansions.json"
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Found FHIR Bundle",
+        "timestamp": "2026-03-19T19:11:42.090920",
+        "details": {
+          "resourceType": "Bundle"
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Found 4 entries in Bundle",
+        "timestamp": "2026-03-19T19:11:42.090921",
+        "details": {
+          "entry_count": 4
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet PreQualDatabaseMetadata",
+        "timestamp": "2026-03-19T19:11:42.090922",
+        "details": {
+          "valueset_id": "PreQualDatabaseMetadata",
+          "entry_index": 0
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 25 codes for ValueSet PreQualDatabaseMetadata",
+        "timestamp": "2026-03-19T19:11:42.090923",
+        "details": {
+          "valueset_id": "PreQualDatabaseMetadata",
+          "codes_count": 25
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet PreQualDatabaseMetadata",
+        "timestamp": "2026-03-19T19:11:42.090924"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet PreQualPresentation",
+        "timestamp": "2026-03-19T19:11:42.090926",
+        "details": {
+          "valueset_id": "PreQualPresentation",
+          "entry_index": 1
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 4 codes for ValueSet PreQualPresentation",
+        "timestamp": "2026-03-19T19:11:42.090927",
+        "details": {
+          "valueset_id": "PreQualPresentation",
+          "codes_count": 4
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet PreQualPresentation",
+        "timestamp": "2026-03-19T19:11:42.090933"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet PreQualProductIds",
+        "timestamp": "2026-03-19T19:11:42.090934",
+        "details": {
+          "valueset_id": "PreQualProductIds",
+          "entry_index": 2
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 33 codes for ValueSet PreQualProductIds",
+        "timestamp": "2026-03-19T19:11:42.090935",
+        "details": {
+          "valueset_id": "PreQualProductIds",
+          "codes_count": 33
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet PreQualProductIds",
+        "timestamp": "2026-03-19T19:11:42.090937"
+      },
+      {
+        "message": "[jsonld_vocabularies] Processing ValueSet PreQualVaccineType",
+        "timestamp": "2026-03-19T19:11:42.090938",
+        "details": {
+          "valueset_id": "PreQualVaccineType",
+          "entry_index": 3
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Extracted 17 codes for ValueSet PreQualVaccineType",
+        "timestamp": "2026-03-19T19:11:42.090939",
+        "details": {
+          "valueset_id": "PreQualVaccineType",
+          "codes_count": 17
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated JSON-LD vocabulary for ValueSet PreQualVaccineType",
+        "timestamp": "2026-03-19T19:11:42.090940"
+      },
+      {
+        "message": "[jsonld_vocabularies] Generated 4 JSON-LD vocabularies",
+        "timestamp": "2026-03-19T19:11:42.090941",
+        "details": {
+          "vocabularies_generated": 4
+        }
+      },
+      {
+        "message": "[jsonld_vocabularies] Successfully generated 4 JSON-LD vocabularies in output",
+        "timestamp": "2026-03-19T19:11:42.090943",
+        "details": {
+          "vocabularies_count": 4,
+          "output_directory": "output"
+        }
+      },
+      {
+        "message": "Merged JSON-LD vocabulary generation QA report from input/temp/qa_jsonld_vocabularies.json",
+        "timestamp": "2026-03-19T19:11:42.090952"
+      },
+      {
+        "message": "Output directory exists with 4328 items",
+        "timestamp": "2026-03-19T19:11:42.096367"
+      },
+      {
+        "message": "Output directory contents sampled",
+        "timestamp": "2026-03-19T19:11:42.098885",
+        "details": {
+          "sample_files": [
+            "StructureDefinition-PreQualBulkSupplier.csv",
+            "tbl_bck0512.png",
+            "StructureDefinition-PreQualDocumentDetail-definitions.html",
+            "Binary-PreQualIngredienta3K3X000006Mii6UACIng1.xml",
+            "tbl_bck101001.png",
+            "Binary-PreQualSite0013X0000498p4ZQAQ.html",
+            "Binary-PreQualDocument069NN000005iFy9YAE.xml",
+            "Binary-PreQualDocument069NN000005i3fGYAQ.json",
+            "Binary-PreQualVaccinea3S3X000003cSpuUAE.change.history.html",
+            "maps.html"
+          ]
+        }
+      },
+      {
+        "message": "Initializing DAK API components",
+        "timestamp": "2026-03-19T19:11:42.098951"
+      },
+      {
+        "message": "All components initialized successfully",
+        "timestamp": "2026-03-19T19:11:42.099024"
+      },
+      {
+        "message": "Starting schema file detection phase",
+        "timestamp": "2026-03-19T19:11:42.099076"
+      },
+      {
+        "message": "Schema detection completed",
+        "timestamp": "2026-03-19T19:11:42.104369",
+        "details": {
+          "valueset_schemas": 5,
+          "logical_model_schemas": 12,
+          "other_schemas": 0
+        }
+      },
+      {
+        "message": "Documentation summary completed",
+        "timestamp": "2026-03-19T19:11:42.303287",
+        "details": {
+          "valueset_schema_docs": 5,
+          "logical_model_schema_docs": 12,
+          "enumeration_endpoints": 2,
+          "jsonld_vocabularies": 4,
+          "openapi_docs": 20
+        }
+      },
+      {
+        "message": "Total content items to include in hub: 43",
+        "timestamp": "2026-03-19T19:11:42.303357"
+      },
+      {
+        "message": "Dynamic source loading applied to 1242 HTML files",
+        "timestamp": "2026-03-19T19:11:42.977228"
+      },
+      {
+        "message": "Starting DAK API hub post-processing phase",
+        "timestamp": "2026-03-19T19:11:42.977331"
+      },
+      {
+        "message": "DAK API hub post-processing completed successfully",
+        "timestamp": "2026-03-19T19:11:42.979396",
+        "details": {
+          "total_documentation_pages": 43,
+          "valueset_pages": 5,
+          "logical_model_pages": 12,
+          "enumeration_pages": 2,
+          "jsonld_references": 4,
+          "openapi_pages": 20
+        }
+      },
+      {
+        "message": "Generated OpenAPI index: output/openapi/index.html",
+        "timestamp": "2026-03-19T19:11:42.982458"
+      }
+    ],
+    "warnings": [
+      {
+        "message": "[preprocessing] dak-api.md does not exist, creating new file",
+        "timestamp": "2026-03-19T19:11:42.089146"
+      },
+      {
+        "message": "[preprocessing] Directory not found: fsh-generated/resources",
+        "timestamp": "2026-03-19T19:11:42.089148"
+      },
+      {
+        "message": "[preprocessing] Directory not found: input/resources",
+        "timestamp": "2026-03-19T19:11:42.089149"
+      },
+      {
+        "message": "[preprocessing] Directory not found: input/models",
+        "timestamp": "2026-03-19T19:11:42.089151"
+      },
+      {
+        "message": "[preprocessing] Directory not found: input/vocabulary",
+        "timestamp": "2026-03-19T19:11:42.089152"
+      }
+    ],
+    "errors": [],
+    "files_processed": [
+      {
+        "file": "[preprocessing] sushi-config.yaml",
+        "status": "loaded",
+        "timestamp": "2026-03-19T19:11:42.089154"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/dak-api.md",
+        "status": "created",
+        "timestamp": "2026-03-19T19:11:42.089156"
+      },
+      {
+        "file": "[preprocessing] input/fsh/models/PreQualDB.fsh",
+        "status": "logical_model_detected",
+        "timestamp": "2026-03-19T19:11:42.089157"
+      },
+      {
+        "file": "[preprocessing] input/fsh/models/PreQualDBAPI.fsh",
+        "status": "logical_model_detected",
+        "timestamp": "2026-03-19T19:11:42.089159"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/PreQualVacccineTypes.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-03-19T19:11:42.089160"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/prequal_presentation.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-03-19T19:11:42.089161"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/prequal_database_products_identifiers.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-03-19T19:11:42.089162"
+      },
+      {
+        "file": "[preprocessing] input/fsh/valuesets/prequal_database_metadata.fsh",
+        "status": "valueset_detected",
+        "timestamp": "2026-03-19T19:11:42.089164"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-PreQualVaccineType.md",
+        "status": "created",
+        "timestamp": "2026-03-19T19:11:42.089166"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-PreQualPresentation.md",
+        "status": "created",
+        "timestamp": "2026-03-19T19:11:42.089167"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-PreQualProductIds.md",
+        "status": "created",
+        "timestamp": "2026-03-19T19:11:42.089168"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/ValueSet-PreQualDatabaseMetadata.md",
+        "status": "created",
+        "timestamp": "2026-03-19T19:11:42.089170"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/StructureDefinition-PreQualDB.md",
+        "status": "created",
+        "timestamp": "2026-03-19T19:11:42.089171"
+      },
+      {
+        "file": "[preprocessing] input/pagecontent/StructureDefinition-FinishedVaccineProducts.md",
+        "status": "created",
+        "timestamp": "2026-03-19T19:11:42.089172"
+      },
+      {
+        "file": "[preprocessing] sushi-config.yaml",
+        "status": "updated",
+        "timestamp": "2026-03-19T19:11:42.089173"
+      },
+      {
+        "file": "[valueset_schemas] output/expansions.json",
+        "status": "loaded",
+        "timestamp": "2026-03-19T19:11:42.089372"
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-PreQualVaccine.schema.json",
+        "status": "success",
+        "timestamp": "2026-03-19T19:11:42.089660",
+        "details": {
+          "model_name": "PreQualVaccine",
+          "schema_size": 1232
+        }
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-PreQualDBwithIds.schema.json",
+        "status": "success",
+        "timestamp": "2026-03-19T19:11:42.089661",
+        "details": {
+          "model_name": "PreQualDBwithIds",
+          "schema_size": 2115
+        }
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-PreQualDB.schema.json",
+        "status": "success",
+        "timestamp": "2026-03-19T19:11:42.089667",
+        "details": {
+          "model_name": "PreQualDB",
+          "schema_size": 1683
+        }
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-PreQualProductIngredient.schema.json",
+        "status": "success",
+        "timestamp": "2026-03-19T19:11:42.089671",
+        "details": {
+          "model_name": "PreQualProductIngredient",
+          "schema_size": 1407
+        }
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-PreQualSiteDetail.schema.json",
+        "status": "success",
+        "timestamp": "2026-03-19T19:11:42.089673",
+        "details": {
+          "model_name": "PreQualSiteDetail",
+          "schema_size": 1548
+        }
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-PreQualBulkSupplier.schema.json",
+        "status": "success",
+        "timestamp": "2026-03-19T19:11:42.089676",
+        "details": {
+          "model_name": "PreQualBulkSupplier",
+          "schema_size": 1021
+        }
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-PreQualProductPackaging.schema.json",
+        "status": "success",
+        "timestamp": "2026-03-19T19:11:42.089679",
+        "details": {
+          "model_name": "PreQualProductPackaging",
+          "schema_size": 1901
+        }
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-PreQualDocumentDetail.schema.json",
+        "status": "success",
+        "timestamp": "2026-03-19T19:11:42.089681",
+        "details": {
+          "model_name": "PreQualDocumentDetail",
+          "schema_size": 1358
+        }
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-PreQualNRA.schema.json",
+        "status": "success",
+        "timestamp": "2026-03-19T19:11:42.089684",
+        "details": {
+          "model_name": "PreQualNRA",
+          "schema_size": 1286
+        }
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-FinishedVaccineProducts.schema.json",
+        "status": "success",
+        "timestamp": "2026-03-19T19:11:42.089690",
+        "details": {
+          "model_name": "FinishedVaccineProducts",
+          "schema_size": 6980
+        }
+      },
+      {
+        "file": "[logical_model_schemas] output/StructureDefinition-PreQualManufacturer.schema.json",
+        "status": "success",
+        "timestamp": "2026-03-19T19:11:42.089693",
+        "details": {
+          "model_name": "PreQualManufacturer",
+          "schema_size": 1657
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-PreQualDatabaseMetadata.jsonld",
+        "status": "success",
+        "timestamp": "2026-03-19T19:11:42.090945",
+        "details": {
+          "valueset_id": "PreQualDatabaseMetadata",
+          "codes_count": 25,
+          "vocab_size": 2125
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-PreQualPresentation.jsonld",
+        "status": "success",
+        "timestamp": "2026-03-19T19:11:42.090946",
+        "details": {
+          "valueset_id": "PreQualPresentation",
+          "codes_count": 4,
+          "vocab_size": 890
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-PreQualProductIds.jsonld",
+        "status": "success",
+        "timestamp": "2026-03-19T19:11:42.090948",
+        "details": {
+          "valueset_id": "PreQualProductIds",
+          "codes_count": 33,
+          "vocab_size": 3073
+        }
+      },
+      {
+        "file": "[jsonld_vocabularies] output/ValueSet-PreQualVaccineType.jsonld",
+        "status": "success",
+        "timestamp": "2026-03-19T19:11:42.090949",
+        "details": {
+          "valueset_id": "PreQualVaccineType",
+          "codes_count": 17,
+          "vocab_size": 1215
+        }
+      },
+      {
+        "file": "output/ValueSet-PreQualPresentation.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104381"
+      },
+      {
+        "file": "output/ValueSets.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104385"
+      },
+      {
+        "file": "output/ValueSet-PreQualVaccineType.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104388"
+      },
+      {
+        "file": "output/ValueSet-PreQualProductIds.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104391"
+      },
+      {
+        "file": "output/ValueSet-PreQualDatabaseMetadata.schema.json",
+        "status": "valueset_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104418"
+      },
+      {
+        "file": "output/StructureDefinition-PreQualSiteDetail.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104421"
+      },
+      {
+        "file": "output/StructureDefinition-PreQualDB.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104423"
+      },
+      {
+        "file": "output/StructureDefinition-PreQualProductIngredient.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104425"
+      },
+      {
+        "file": "output/StructureDefinition-PreQualBulkSupplier.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104427"
+      },
+      {
+        "file": "output/StructureDefinition-PreQualNRA.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104429"
+      },
+      {
+        "file": "output/StructureDefinition-PreQualProductPackaging.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104432"
+      },
+      {
+        "file": "output/StructureDefinition-FinishedVaccineProducts.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104434"
+      },
+      {
+        "file": "output/LogicalModels.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104436"
+      },
+      {
+        "file": "output/StructureDefinition-PreQualDocumentDetail.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104438"
+      },
+      {
+        "file": "output/StructureDefinition-PreQualManufacturer.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104440"
+      },
+      {
+        "file": "output/StructureDefinition-PreQualVaccine.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104442"
+      },
+      {
+        "file": "output/StructureDefinition-PreQualDBwithIds.schema.json",
+        "status": "logical_model_schema_detected",
+        "timestamp": "2026-03-19T19:11:42.104444"
+      }
+    ],
+    "files_expected": [
+      "output"
+    ],
+    "files_missing": [
+      "output"
+    ]
+  }
+}

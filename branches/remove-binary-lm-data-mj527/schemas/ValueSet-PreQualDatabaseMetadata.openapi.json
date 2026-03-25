@@ -1,0 +1,71 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "WHO PreQualification Database Metadata Schema API",
+    "description": "JSON Schema for WHO PreQualification Database Metadata ValueSet codes. Generated from FHIR expansions using IRI format.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-PreQualDatabaseMetadata.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-PreQualDatabaseMetadata",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-PreQualDatabaseMetadata.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-PreQualDatabaseMetadata",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-PreQualDatabaseMetadata.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-PreQualDatabaseMetadata": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.schema.json",
+        "title": "WHO PreQualification Database Metadata Schema",
+        "description": "JSON Schema for WHO PreQualification Database Metadata ValueSet codes. Generated from FHIR expansions using IRI format.",
+        "type": "string",
+        "enum": [
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#FinishedVaccineProduct",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#PrequalificationStandard",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#Prequalified",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#WithdrawnWasPrequalified",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#LiquidReadytouse",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#Intradermal",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#Intramuscular",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#Intramuscularorsubcutaneous",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#Oral",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#Subcutaneous",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#Secondary",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#ShippingContainer",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#Tertiary",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#ActiveVaccine",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#Diluent",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#Photo",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#PhotoMainImage",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#ProductInsert",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#VSPAR",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#VaccineGeneralDocument",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#FVPManufacture",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#Accepted",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#VxFVP",
+          "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata#Active"
+        ],
+        "narrative": "This schema validates IRI-formatted codes for the WHO PreQualification Database Metadata ValueSet. Each enum value includes the system URI in the format {systemuri}#{code} to match JSON-LD enumeration IRIs. Display values are available at http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.displays.json. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.displays.json",
+        "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualDatabaseMetadata",
+        "fhir:version": "0.2.0",
+        "fhir:expansionTimestamp": "2026-03-25T12:51:47.301635"
+      }
+    }
+  }
+}

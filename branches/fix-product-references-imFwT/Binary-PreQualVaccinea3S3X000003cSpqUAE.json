@@ -1,0 +1,6 @@
+{
+  "resourceType" : "Binary",
+  "id" : "PreQualVaccinea3S3X000003cSpqUAE",
+  "contentType" : "application/fhir+json",
+  "data" : "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGNtdC12YXhwcmVxdWFsL1N0cnVjdHVyZURlZmluaXRpb24vUHJlUXVhbFZhY2NpbmUiLAogICJ2YWNjaW5lSWQiOiB7CiAgICAic3lzdGVtIjogImh0dHBzOi8vZXh0cmFuZXQud2hvLmludC9wcmVxdWFsL2FwaSIsCiAgICAidmFsdWUiOiAiYTNTM1gwMDAwMDNjU3BxVUFFIgogIH0sCiAgImZ1bGxOYW1lIjogIlRldGFudXMgdmFjY2luZSAoYWRzb3JiZWQpIiwKICAiYWJicmV2aWF0ZWROYW1lIjogIlRUIgp9Cg=="
+}

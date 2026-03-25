@@ -1,0 +1,6 @@
+{
+  "resourceType" : "Binary",
+  "id" : "PreQualIngredienta3K3X000006MihyUACIng2",
+  "contentType" : "application/fhir+json",
+  "data" : "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGNtdC12YXhwcmVxdWFsL1N0cnVjdHVyZURlZmluaXRpb24vUHJlUXVhbFByb2R1Y3RJbmdyZWRpZW50IiwKICAiaW5ncmVkaWVudFR5cGUiOiAiVnhGVlAiLAogICJwcm9kdWN0IjogImEzSzNYMDAwMDA2TWloeVVBQyIsCiAgInByb2R1Y3RDb21wb25lbnRUeXBlIjogIkFjdGl2ZSIKfQo="
+}

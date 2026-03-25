@@ -1,0 +1,123 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+  },
+  "@id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-03-24T15:04:50.520800Z",
+  "@graph": [
+    {
+      "id": "#FinishedVaccineProduct",
+      "name": "Finished Vaccine Product"
+    },
+    {
+      "id": "#PrequalificationStandard",
+      "name": "Prequalification - Standard"
+    },
+    {
+      "id": "#Prequalified",
+      "name": "Prequalified"
+    },
+    {
+      "id": "#WithdrawnWasPrequalified",
+      "name": "Withdrawn: Was Prequalified"
+    },
+    {
+      "id": "#LiquidReadytouse",
+      "name": "Liquid: Ready to use"
+    },
+    {
+      "id": "#Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse",
+      "name": "Lyophilised active component to be reconstituted with excipient diluent before use"
+    },
+    {
+      "id": "#Intradermal",
+      "name": "Intradermal"
+    },
+    {
+      "id": "#Intramuscular",
+      "name": "Intramuscular"
+    },
+    {
+      "id": "#Intramuscularorsubcutaneous",
+      "name": "Intramuscular or subcutaneous"
+    },
+    {
+      "id": "#Oral",
+      "name": "Oral"
+    },
+    {
+      "id": "#Subcutaneous",
+      "name": "Subcutaneous"
+    },
+    {
+      "id": "#Secondary",
+      "name": "Secondary"
+    },
+    {
+      "id": "#ShippingContainer",
+      "name": "Shipping Container"
+    },
+    {
+      "id": "#Tertiary",
+      "name": "Tertiary"
+    },
+    {
+      "id": "#ActiveVaccine",
+      "name": "Active (Vaccine)"
+    },
+    {
+      "id": "#Diluent",
+      "name": "Diluent"
+    },
+    {
+      "id": "#Photo",
+      "name": "Photo"
+    },
+    {
+      "id": "#PhotoMainImage",
+      "name": "Photo-Main Image"
+    },
+    {
+      "id": "#ProductInsert",
+      "name": "Product Insert"
+    },
+    {
+      "id": "#VSPAR",
+      "name": "VSPAR"
+    },
+    {
+      "id": "#VaccineGeneralDocument",
+      "name": "Vaccine General Document"
+    },
+    {
+      "id": "#FVPManufacture",
+      "name": "FVP Manufacture"
+    },
+    {
+      "id": "#Accepted",
+      "name": "Accepted"
+    },
+    {
+      "id": "#VxFVP",
+      "name": "Vx FVP"
+    },
+    {
+      "id": "#Active",
+      "name": "Active"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}
