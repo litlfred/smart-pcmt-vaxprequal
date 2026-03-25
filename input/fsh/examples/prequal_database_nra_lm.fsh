@@ -1,7 +1,7 @@
 
 Instance: PreQualNRA0013X0000498p4bQAA
 InstanceOf: PreQualNRA
-Usage: #definition
+Usage: #example
 Title: "PreQual NRA: Agence nationale de sécurité du médicament et des produits de santé (ANSM)"
 Description: "WHO PreQual NRA: Agence nationale de sécurité du médicament et des produits de santé (ANSM) (France)"
 * nraId.system = "https://extranet.who.int/prequal/api"
@@ -13,7 +13,7 @@ Description: "WHO PreQual NRA: Agence nationale de sécurité du médicament et 
 
 Instance: PreQualNRA0013X00003cPkgXQAS
 InstanceOf: PreQualNRA
-Usage: #definition
+Usage: #example
 Title: "PreQual NRA: Bulgarian Drug Agency (BDA)"
 Description: "WHO PreQual NRA: Bulgarian Drug Agency (BDA) (Bulgaria)"
 * nraId.system = "https://extranet.who.int/prequal/api"
@@ -25,7 +25,7 @@ Description: "WHO PreQual NRA: Bulgarian Drug Agency (BDA) (Bulgaria)"
 
 Instance: PreQualNRA0013X0000498p4fQAA
 InstanceOf: PreQualNRA
-Usage: #definition
+Usage: #example
 Title: "PreQual NRA: Central Drugs Standard Control Organization (CDSCO)"
 Description: "WHO PreQual NRA: Central Drugs Standard Control Organization (CDSCO) (India)"
 * nraId.system = "https://extranet.who.int/prequal/api"
@@ -37,7 +37,7 @@ Description: "WHO PreQual NRA: Central Drugs Standard Control Organization (CDSC
 
 Instance: PreQualNRA0013X0000498p67QAA
 InstanceOf: PreQualNRA
-Usage: #definition
+Usage: #example
 Title: "PreQual NRA: Federal Agency for Medicines and Health Products  (FAMPH)"
 Description: "WHO PreQual NRA: Federal Agency for Medicines and Health Products  (FAMPH) (Belgium)"
 * nraId.system = "https://extranet.who.int/prequal/api"
@@ -49,7 +49,7 @@ Description: "WHO PreQual NRA: Federal Agency for Medicines and Health Products 
 
 Instance: PreQualNRA0013X00004993qyQAA
 InstanceOf: PreQualNRA
-Usage: #definition
+Usage: #example
 Title: "PreQual NRA: Ministry of Food and Drug Safety (MFDS)"
 Description: "WHO PreQual NRA: Ministry of Food and Drug Safety (MFDS) (Republic of Korea)"
 * nraId.system = "https://extranet.who.int/prequal/api"
@@ -61,7 +61,7 @@ Description: "WHO PreQual NRA: Ministry of Food and Drug Safety (MFDS) (Republic
 
 Instance: PreQualNRA0013X0000498p53QAA
 InstanceOf: PreQualNRA
-Usage: #definition
+Usage: #example
 Title: "PreQual NRA: Ministère de la Santé publique (DPM)"
 Description: "WHO PreQual NRA: Ministère de la Santé publique (DPM) (Senegal)"
 * nraId.system = "https://extranet.who.int/prequal/api"
@@ -72,7 +72,7 @@ Description: "WHO PreQual NRA: Ministère de la Santé publique (DPM) (Senegal)"
 
 Instance: PreQualNRA0013X0000498p4wQAA
 InstanceOf: PreQualNRA
-Usage: #definition
+Usage: #example
 Title: "PreQual NRA: National Medical Products Administration  (NMPA)"
 Description: "WHO PreQual NRA: National Medical Products Administration  (NMPA) (China)"
 * nraId.system = "https://extranet.who.int/prequal/api"
@@ -84,7 +84,7 @@ Description: "WHO PreQual NRA: National Medical Products Administration  (NMPA) 
 
 Instance: PreQualNRA0013X0000498p4mQAA
 InstanceOf: PreQualNRA
-Usage: #definition
+Usage: #example
 Title: "PreQual NRA: Pharmaceutical and Medical Devices Agency (PMDA)"
 Description: "WHO PreQual NRA: Pharmaceutical and Medical Devices Agency (PMDA) (Japan)"
 * nraId.system = "https://extranet.who.int/prequal/api"
