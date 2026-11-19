@@ -22,30 +22,44 @@ Key fields from the API (FinishedVaccineProducts):
   ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names
   ProductDetails.StorageDetails - Storage temperature and shelf life
   ProductDetails.Status - Prequalification status code
+
+Cardinality note:
+Only productId, productName and status are mandatory. Everything else is
+optional, because the source database de-publishes a product's detail when
+it leaves prequalified status: the record is retained with its identity,
+final status and publishing timestamp, and every other field is cleared.
+Those records are the authoritative history of a past prequalification, so
+the model has to be able to express them. A small number of currently
+prequalified products are also missing an individual field where a
+Salesforce denormalized name was never populated.
+Do not restore 1..1 on these elements without re-checking the live data;
+an earlier version of this model asserted that several were always present,
+which a full extract disproved.
 """
 * ^extension[http://hl7.org/fhir/tools/StructureDefinition/logical-target].valueBoolean = true
 * productId 1..1 Identifier "Vaccine Product ID (authoritative)"
 * productName 1..1 string "Product reference name (e.g. FVP-P-447)"
-* productType 1..1 code "Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)"
-* dateOfPrequal 1..1 dateTime "Date of prequalification acceptance"
+* productType 0..1 code "Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct). Absent on de-published records."
+* dateOfPrequal 0..1 dateTime "Date of prequalification acceptance. Absent on de-published records, and on a small number of prequalified products where the API does not carry it."
 * assessmentProcedure 0..1 code "Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)"
 * status 1..1 code "Product status code from PreQualDatabaseMetadata (e.g. Prequalified)"
 * pharmaceuticalForm 0..1 code "Pharmaceutical form code from PreQualDatabaseMetadata"
-* presentation 1..1 CodeableConcept "Presentation (e.g. Vial, Ampoule)"
+* presentation 0..1 CodeableConcept "Presentation (e.g. Vial, Ampoule). Absent on de-published records."
 * numDoses 0..1 decimal "Number of doses per primary container"
 * vaccineFullName 0..1 string "Vaccine full name"
 * vaccineAbbreviatedName 0..1 string "Vaccine abbreviated name"
-* vaccineCommercialName 1..1 string "Vaccine commercial name"
+* vaccineCommercialName 0..1 string "Vaccine commercial name. Absent on de-published records."
+* vaccineType 0..1 CodeableConcept "Vaccine type, coded from PreQualVaccineType. The code is the abbreviated name (e.g. TDV) and the display is the full name (e.g. Dengue tetravalent vaccine (live, attenuated))."
 * vaccineTypeId 0..1 Identifier "Vaccine type ID"
 * routeOfAdministration 0..1 code "Route of administration code from PreQualDatabaseMetadata"
 * vialMonitor 0..1 string "Vial monitor type (e.g. Type 14, Type 30)"
 * multidoseVialPolicy 0..1 string "Multidose vial policy text"
 * presentationOther 0..1 string "Alternative presentation description when Presentation is 'Other'"
 * applicantId 0..1 Identifier "Applicant/manufacturer organization ID (may be absent if not yet assigned)"
-* applicantName 1..1 string "Applicant/manufacturer organization name (always present from API data)"
+* applicantName 0..1 string "Applicant/manufacturer organization name. Absent on de-published records, and occasionally empty where the Salesforce denormalized name was not populated."
 * applicantAddress 0..1 Address "Applicant organization address"
 * nraId 0..1 Identifier "NRA organization ID (may be absent if not yet assigned)"
-* nraName 1..1 string "Responsible NRA name (always present from API data)"
+* nraName 0..1 string "Responsible NRA name. Absent on de-published records, and occasionally empty where the Salesforce denormalized name was not populated."
 * nraCountry 0..1 string "NRA country"
 * shelfLife 0..1 string "Shelf life (e.g. 24 months)"
 * storageTemperature 0..1 string "Storage temperature (e.g. 2 - 8°C)"
@@ -62,8 +76,8 @@ Key fields from the API (FinishedVaccineProducts):
 * documentLM 0..* Reference(PreQualDocumentDetail) "Document detail logical model instance references"
 * siteLM 0..* Reference(PreQualSiteDetail) "Site detail logical model instance references"
 * ingredientLM 0..* Reference(PreQualProductIngredient) "Product ingredient logical model instance references"
-* manufacturerReference 1..1 Reference(IHE.mCSD.Organization) "Manufacturer FHIR Organization reference"
-* responsibleNRAReference 1..1 Reference(IHE.mCSD.Organization) "Responsible NRA FHIR Organization reference"
+* manufacturerReference 0..1 Reference(IHE.mCSD.Organization) "Manufacturer FHIR Organization reference. Present only where an applicant name is available, since the Organization instance is keyed on that name."
+* responsibleNRAReference 0..1 Reference(IHE.mCSD.Organization) "Responsible NRA FHIR Organization reference. Present only where an NRA name is available, since the Organization instance is keyed on that name."
 * productReference 0..1 Reference "Product FHIR reference (when available from pcmt dependency)"
 
 

@@ -8,7 +8,7 @@
 <!--/badges-->
 
 # WHO SMART GUIDELINES
-
+ 
 This is an empty framework, to be used to create SMART Implementation Guides.
 
 Please see these [instructions](https://smart.who.int/ig-starter-kit/ig_setup.html#github-setup)
@@ -42,6 +42,143 @@ To run tests:
 ```bash
 python3 -m unittest tests/test_import_salesforce.py -v
 ```
+
+## Syncing from the ePQS SOA API
+
+The live data comes from the ePQS SOA REST service for finished vaccine
+products, for example:
+
+```
+https://soaprd.who.int/soa-infra/resources/EPQS/QueryFinishedVaccineProducts!1.0/RestService_FVP?Query=FinishedVaccineProduct&TimeStamp=2000-01-01T00:00:00.000Z
+```
+
+`Query` and `TimeStamp` are both bound directly into the service's SOQL. A
+request that omits `TimeStamp` fails the whole call with `StatusCode:
+FAULTED` and `Bind Parameter's value is empty`, so the importer always
+sends one, defaulting to `2000-01-01T00:00:00.000Z` for a full load.
+
+These services are published on the WHO intranet only, so every command
+below has to run from the WHO network or over VPN. Each environment
+(`soasi`, `soauat`, `soaprd`) has its **own password** for the shared
+`EPQSSoa` service account; using another environment's password returns
+HTTP 401. Test against UAT before pointing anything at production.
+
+Credentials are read from the environment and never committed:
+
+```bash
+export PREQUAL_API_ENDPOINT='https://soauat.who.int/soa-infra/resources/EPQS/QueryFinishedVaccineProducts!1.0/RestService_FVP?Query=FinishedVaccineProduct'
+export PREQUAL_API_USERNAME='EPQSSoa'
+export PREQUAL_API_PASSWORD='<password for that environment>'
+```
+
+On Windows PowerShell, set them with `$env:PREQUAL_API_ENDPOINT = '...'`
+and run `python` rather than `python3`.
+
+Full load, refreshing both the snapshot and the generated FSH:
+
+```bash
+python3 scripts/import_salesforce.py --save-raw data/prequal.json
+```
+
+Incremental load of everything published since a given date — `TimeStamp`
+filters on the Salesforce last-publishing-update field. It **must** be
+merged into the stored snapshot:
+
+```bash
+python3 scripts/import_salesforce.py \
+    --timestamp 2025-01-01T00:00:00.000Z \
+    --merge-with data/prequal.json \
+    --save-raw data/prequal.json
+```
+
+An incremental fetch returns only the products whose publishing date moved,
+and every generator rewrites its output file in full. Generating straight
+from a delta would therefore delete every product the delta does not
+mention — a one-product delta produces a one-product IG. `--merge-with`
+replays the delta over the stored snapshot first, so the result is identical
+to a full load; the script refuses to run `--timestamp` without it.
+
+Merging cannot detect a product removed from the source database
+altogether, so run a full load periodically.
+
+To keep only currently prequalified products, pass `--status` (repeatable).
+Omitted, every status is kept, including `Withdrawn: Was Prequalified`:
+
+```bash
+python3 scripts/import_salesforce.py --status Prequalified
+```
+
+### Pagination, and the 35-record ceiling
+
+The SOA services take `Query`, `TimeStamp`, `OffSet` and `Limit`, and they
+are **case sensitive**. A lowercase `offset=`/`limit=` is accepted by the
+HTTP layer and then ignored by the service, which keeps returning the first
+page. Because the importer de-duplicates by product Id, that used to show up
+as a stable ceiling of 35 unique products while the API reported 271
+available — the committed snapshot in `data/prequal.json` still carries the
+fingerprint of it (`"Limit": 2000, "TotalRecords": 271` alongside 35
+records).
+
+Two separate things cause that ceiling:
+
+1. **Parameter casing.** `scripts/import_salesforce.py` now builds request
+   URLs with the exact `OffSet`/`Limit` spellings and replaces any copy
+   already present in the configured endpoint, instead of appending a
+   second one that the service ignores.
+2. **A server-side row cap.** Each response carries at most a few dozen
+   parent rows regardless of the requested `Limit`, because the underlying
+   SOQL pulls four child collections per product. The requested `Limit` is
+   echoed back unchanged, so it cannot be trusted. Paging now advances by
+   the number of records actually returned.
+
+The importer also fails loudly rather than returning a short result set. It
+raises if a page contains no new records (the service is ignoring `OffSet`),
+and if the final count is below the `TotalRecords` the API reported. Use
+`--allow-partial` to downgrade the latter to a warning.
+
+If the deployed FVP service turns out not to implement `OffSet` at all —
+note it is still version `!1.0`, while the services that gained pagination
+were bumped to `!1.4`/`!2.x` — walk the `TimeStamp` filter forward instead:
+
+```bash
+python3 scripts/import_salesforce.py --pagination-strategy timestamp
+```
+
+### Confirming the API's behaviour
+
+To establish what the service actually honours before configuring a sync,
+run the probe from the WHO network:
+
+```bash
+python3 scripts/probe_prequal_api.py
+```
+
+It varies `Limit`, compares the record Ids returned at different `OffSet`
+values, repeats a request with lowercase parameters, and prints the page
+size and strategy the observations support.
+
+### Running a sync
+
+The sync is run by hand, from the WHO network or over VPN:
+
+```bash
+git checkout -b sync/prequal-$(date +%Y-%m-%d)
+python3 scripts/import_salesforce.py --save-raw data/prequal.json
+python3 -m unittest discover -s tests
+git add data/prequal.json input/fsh
+git commit -m "Sync PreQual vaccine products from ePQS SOA API"
+git push -u origin HEAD
+```
+
+Then open a pull request so the data change is reviewed before it reaches
+the IG. Check the product count in the diff: a large drop usually means an
+upstream publishing change rather than a data fix.
+
+There is deliberately no scheduled GitHub Actions workflow. The SOA
+services are not reachable from GitHub-hosted runners, and running them on
+a self-hosted runner registered to a public repository would let pull
+requests from forks execute code on a machine inside the WHO network. A
+scheduled sync belongs on an internal host that pushes outward to GitHub.
 
 ## Sample Generated Instances
 

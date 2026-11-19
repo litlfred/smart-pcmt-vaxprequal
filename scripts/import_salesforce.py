@@ -11,6 +11,14 @@ Environment variables:
   PREQUAL_API_USERNAME  - API username
   PREQUAL_API_PASSWORD  - API password
 
+The endpoint is one of the ePQS SOA REST services, e.g.
+  https://soauat.who.int/soa-infra/resources/EPQS/QueryFinishedVaccineProducts!1.0/
+    RestService_FVP?Query=FinishedVaccineProduct
+Pagination parameters are supplied by this script, so any OffSet/Limit
+already in the URL is replaced rather than duplicated.  TimeStamp is always
+sent, because the service binds it into its SOQL and faults without it.
+Each SOA environment has its own password for the EPQSSoa account.
+
 Usage:
   python scripts/import_salesforce.py [--output-dir DIR]
 """
@@ -22,10 +30,12 @@ import logging
 import os
 import re
 import sys
+import time
 import urllib.request
 import urllib.error
 import urllib.parse
 import base64
+from xml.etree import ElementTree
 
 logging.basicConfig(level=logging.INFO, format="%(levelname)s: %(message)s")
 logger = logging.getLogger(__name__)
@@ -85,75 +95,596 @@ def read_existing_codes(filepath):
     return codes
 
 
-def fetch_api_page(endpoint, username, password, offset=0, limit=100):
-    """Fetch a single page of results from the API using offset/limit pagination.
+# Pagination parameters understood by the ePQS SOA REST services.  The
+# services are case sensitive and only honour these exact spellings, so a
+# lowercase "offset=" is accepted by the HTTP layer and then silently
+# ignored by the service, which keeps returning the first page forever.
+PARAM_QUERY = "Query"
+PARAM_TIMESTAMP = "TimeStamp"
+PARAM_OFFSET = "OffSet"
+PARAM_LIMIT = "Limit"
 
-    The API returns an AdditionalInfo object with OffSet, Limit, and TotalRecords.
+# Query parameters this module manages itself.  Any copy already present in
+# the configured endpoint is dropped (whatever its casing) before the
+# canonical spelling is appended.
+MANAGED_PARAMS = {p.lower() for p in (PARAM_QUERY, PARAM_TIMESTAMP, PARAM_OFFSET, PARAM_LIMIT)}
+
+# The SOA services wrap Salesforce SOQL queries that pull four child
+# collections per product, so the number of parent rows a single response
+# can carry is small and is capped server side.  WHO's own example URLs use
+# Limit=20; asking for more does not fail, it just returns fewer records
+# than requested.
+DEFAULT_PAGE_SIZE = 20
+
+# Earliest publishing date to request when no incremental timestamp is given.
+# TimeStamp filters on the Salesforce last-publishing-update field, so this
+# has to pre-date the first prequalification record to get a full load.
+DEFAULT_TIMESTAMP = "2000-01-01T00:00:00.000Z"
+
+# Safety valve so a server that never advances cannot spin forever.
+MAX_REQUESTS = 500
+
+# Transient HTTP statuses worth retrying; the SOA gateway returns 502/504
+# when a Salesforce query runs long.
+RETRY_STATUSES = {429, 500, 502, 503, 504}
+
+
+class PreQualAPIError(Exception):
+    """Raised when the PreQual API cannot be paged through reliably."""
+
+
+def build_api_url(endpoint, offset=None, limit=None, timestamp=None, query=None):
+    """Build a request URL with correctly spelled pagination parameters.
+
+    Any pagination parameter already present in ``endpoint`` is removed and
+    re-added with the canonical casing the SOA services require, so a
+    configured endpoint copied from the WHO integration spreadsheet (which
+    ends in ``&OffSet=0&Limit=20``) is re-paginated rather than having a
+    second, ignored copy appended to it.
+
+    Args:
+        endpoint: Base API URL, optionally carrying query parameters.
+        offset: Record offset to request, or None to omit.
+        limit: Page size to request, or None to omit.
+        timestamp: TimeStamp filter value; falls back to the value already
+            present in the endpoint.
+        query: Query name; falls back to the value already in the endpoint.
+
+    Returns:
+        The full request URL as a string.
+    """
+    parts = urllib.parse.urlsplit(endpoint)
+    existing = urllib.parse.parse_qsl(parts.query, keep_blank_values=True)
+
+    passthrough = [(k, v) for k, v in existing if k.lower() not in MANAGED_PARAMS]
+    configured = {k.lower(): v for k, v in existing if k.lower() in MANAGED_PARAMS}
+
+    if query is None:
+        query = configured.get(PARAM_QUERY.lower())
+    if timestamp is None:
+        timestamp = configured.get(PARAM_TIMESTAMP.lower())
+    # TimeStamp is bound straight into the service's SOQL, so omitting it
+    # fails the whole call with "Bind Parameter's value is empty" rather
+    # than returning unfiltered results.  Never send the request without it.
+    if not timestamp:
+        timestamp = DEFAULT_TIMESTAMP
+
+    params = list(passthrough)
+    if query:
+        params.append((PARAM_QUERY, query))
+    if timestamp:
+        params.append((PARAM_TIMESTAMP, timestamp))
+    if offset is not None:
+        params.append((PARAM_OFFSET, str(offset)))
+    if limit is not None:
+        params.append((PARAM_LIMIT, str(limit)))
+
+    # Keep ":" and "." literal so TimeStamp stays readable in logs and in
+    # the SOA access logs the WHO integration team reads.
+    encoded = urllib.parse.urlencode(params, safe=":.", quote_via=urllib.parse.quote)
+    return urllib.parse.urlunsplit((parts.scheme, parts.netloc, parts.path, encoded, parts.fragment))
+
+
+def product_key(product):
+    """Return the stable identity of a product record.
+
+    Args:
+        product: A single FinishedVaccineProduct record.
+
+    Returns:
+        The Salesforce record Id, falling back to the human-readable Name
+        when the Id is absent.
+    """
+    identification = (product.get("ProductDetails") or {}).get("Identification") or {}
+    return identification.get("Id") or identification.get("Name")
+
+
+def product_timestamp(product):
+    """Return a product's last publishing date, or None when absent.
+
+    Args:
+        product: A single FinishedVaccineProduct record.
+
+    Returns:
+        The LastPublishingDate string, or None.
+    """
+    return (product.get("ProductDetails") or {}).get("LastPublishingDate")
+
+
+def parse_response(body):
+    """Parse a response body that may be JSON or XML.
+
+    The services return JSON for successful queries but report BPEL/JCA
+    faults as XML regardless of the Accept header, so a JSON-only client
+    reports a decode error instead of the fault the service actually sent.
+
+    Args:
+        body: Raw response body as text.
+
+    Returns:
+        Parsed response as a dict.  An XML fault is reduced to the same
+        ``{"Status": {...}}`` shape the JSON responses use.
+
+    Raises:
+        PreQualAPIError: If the body is neither JSON nor recognisable XML.
+    """
+    try:
+        return json.loads(body)
+    except ValueError:
+        pass
+
+    try:
+        root = ElementTree.fromstring(body)
+    except ElementTree.ParseError as exc:
+        raise PreQualAPIError(
+            f"Response was neither JSON nor XML ({exc}): {body[:300]}"
+        ) from exc
+
+    # Namespaces vary per service, so match on local tag names.
+    found = {}
+    for element in root.iter():
+        local = element.tag.rsplit("}", 1)[-1]
+        if local in ("StatusCode", "StatusMessage") and element.text:
+            found[local] = element.text.strip()
+
+    if not found:
+        raise PreQualAPIError(f"Unrecognised XML response: {body[:300]}")
+
+    return {"Status": {k: v for k, v in found.items()}}
+
+
+def check_response_status(data):
+    """Raise if the API reported a non-success status.
+
+    The SOA services answer with HTTP 200 and signal failures in the body,
+    so an unchecked response can look like an empty result set.
+
+    Args:
+        data: Parsed JSON response.
+
+    Raises:
+        PreQualAPIError: If StatusCode is present and is not SUCCESS.
+    """
+    status = data.get("Status") or {}
+    code = status.get("StatusCode")
+    if code is not None and str(code).upper() != "SUCCESS":
+        raise PreQualAPIError(
+            "API returned status %s: %s" % (code, status.get("StatusMessage") or status)
+        )
+
+
+def fetch_api_page(
+    endpoint,
+    username,
+    password,
+    offset=0,
+    limit=DEFAULT_PAGE_SIZE,
+    timestamp=None,
+    timeout=180,
+    retries=4,
+):
+    """Fetch a single page of results, retrying transient failures.
 
     Args:
         endpoint: Base API URL.
         username: API username.
         password: API password.
         offset: Record offset (0-based).
-        limit: Maximum number of results to return.
+        limit: Maximum number of results to request.
+        timestamp: TimeStamp filter value.
+        timeout: Per-request timeout in seconds.
+        retries: Number of retries for transient errors.
 
     Returns:
         Parsed JSON response.
+
+    Raises:
+        PreQualAPIError: If the request keeps failing or the body is not JSON.
     """
-    separator = "&" if "?" in endpoint else "?"
-    url = f"{endpoint}{separator}offset={offset}&limit={limit}"
-    logger.info("Fetching offset=%d limit=%d from %s", offset, limit, url)
+    url = build_api_url(endpoint, offset=offset, limit=limit, timestamp=timestamp)
+    logger.info("Fetching %s=%d %s=%d", PARAM_OFFSET, offset, PARAM_LIMIT, limit)
 
-    req = urllib.request.Request(url)
     credentials = base64.b64encode(f"{username}:{password}".encode("utf-8")).decode("ascii")
-    req.add_header("Authorization", f"Basic {credentials}")
-    req.add_header("Accept", "application/json")
 
-    with urllib.request.urlopen(req) as resp:
-        return json.loads(resp.read().decode("utf-8"))
+    last_error = None
+    for attempt in range(retries + 1):
+        if attempt:
+            delay = 2 ** attempt
+            logger.warning("Retrying in %ds (attempt %d/%d): %s", delay, attempt, retries, last_error)
+            time.sleep(delay)
+
+        req = urllib.request.Request(url)
+        req.add_header("Authorization", f"Basic {credentials}")
+        req.add_header("Accept", "application/json")
+        try:
+            with urllib.request.urlopen(req, timeout=timeout) as resp:
+                body = resp.read().decode("utf-8")
+        except urllib.error.HTTPError as exc:
+            if exc.code not in RETRY_STATUSES:
+                raise PreQualAPIError(f"HTTP {exc.code} from {url}: {exc.reason}") from exc
+            last_error = f"HTTP {exc.code} {exc.reason}"
+            continue
+        except (urllib.error.URLError, TimeoutError) as exc:
+            last_error = f"{type(exc).__name__}: {exc}"
+            continue
+
+        try:
+            # Faults parse successfully and are raised by the caller's status
+            # check, so they are not retried; only an unreadable body is.
+            return parse_response(body)
+        except PreQualAPIError as exc:
+            # A truncated or HTML error page is worth one more attempt.
+            last_error = str(exc)
+            continue
+
+    raise PreQualAPIError(f"Giving up on {url} after {retries} retries: {last_error}")
 
 
-def download_all_pages(endpoint, username, password, page_size=100):
-    """Download all pages of results from the API using offset/limit pagination.
+def _collect(products, seen, all_products):
+    """Append not-yet-seen products and report how many were new.
 
-    Uses AdditionalInfo.TotalRecords from the API response to determine
-    when all records have been fetched.
+    Args:
+        products: Records from the current page.
+        seen: Set of already collected product keys, updated in place.
+        all_products: Accumulator list, appended to in place.
+
+    Returns:
+        Number of records added.
+    """
+    added = 0
+    for product in products:
+        key = product_key(product)
+        if key in seen:
+            continue
+        seen.add(key)
+        all_products.append(product)
+        added += 1
+    return added
+
+
+def download_offset_pages(
+    endpoint,
+    username,
+    password,
+    page_size=DEFAULT_PAGE_SIZE,
+    timestamp=None,
+    timeout=180,
+):
+    """Download all records using OffSet/Limit pagination.
+
+    Advances by the number of records actually returned rather than by the
+    requested page size, because the services cap how many parent rows one
+    response can carry and return fewer records than asked for without
+    saying so.
 
     Args:
         endpoint: Base API URL.
         username: API username.
         password: API password.
-        page_size: Number of results per request.
+        page_size: Records to request per page.
+        timestamp: TimeStamp filter value.
+        timeout: Per-request timeout in seconds.
+
+    Returns:
+        Tuple of (list of records, TotalRecords reported by the API or None).
+
+    Raises:
+        PreQualAPIError: If the service stops making progress, which means
+            it is ignoring OffSet.
+    """
+    all_products = []
+    seen = set()
+    offset = 0
+    total_records = None
+
+    for request_number in range(1, MAX_REQUESTS + 1):
+        data = fetch_api_page(
+            endpoint, username, password, offset, page_size, timestamp, timeout
+        )
+        check_response_status(data)
+
+        products = data.get("FinishedVaccineProducts") or []
+        info = data.get("AdditionalInfo") or {}
+
+        if total_records is None:
+            total_records = info.get("TotalRecords")
+            if total_records is not None:
+                logger.info("API reports %s total records", total_records)
+
+        if not products:
+            logger.info("Empty page at offset %d; pagination complete", offset)
+            break
+
+        echoed = info.get(PARAM_OFFSET)
+        if echoed is not None and int(echoed) != offset:
+            logger.warning(
+                "Requested %s=%d but the API echoed %s; it may be ignoring the parameter",
+                PARAM_OFFSET,
+                offset,
+                echoed,
+            )
+
+        added = _collect(products, seen, all_products)
+        logger.info(
+            "Page %d: %d records (%d new), %d collected so far",
+            request_number,
+            len(products),
+            added,
+            len(all_products),
+        )
+
+        if added == 0:
+            # Every record on this page was already collected, so the
+            # service is returning the same window regardless of OffSet.
+            # Continuing would loop until MAX_REQUESTS and then silently
+            # yield only the first page's worth of products.
+            raise PreQualAPIError(
+                "API returned no new records at %s=%d (page of %d, all duplicates). "
+                "The service is ignoring %s, so offset pagination cannot complete. "
+                "Collected %d of %s records. Re-run with "
+                "--pagination-strategy timestamp, or ask the WHO integration team "
+                "for an FVP service version that implements %s."
+                % (
+                    PARAM_OFFSET,
+                    offset,
+                    len(products),
+                    PARAM_OFFSET,
+                    len(all_products),
+                    total_records,
+                    PARAM_OFFSET,
+                )
+            )
+
+        if len(products) < page_size:
+            logger.info(
+                "Service returned %d of %d requested records (server-side cap)",
+                len(products),
+                page_size,
+            )
+
+        offset += len(products)
+
+        if total_records is not None and len(all_products) >= int(total_records):
+            break
+    else:
+        raise PreQualAPIError(
+            f"Stopped after {MAX_REQUESTS} requests with {len(all_products)} records; "
+            "pagination is not terminating."
+        )
+
+    return all_products, total_records
+
+
+def download_timestamp_pages(
+    endpoint,
+    username,
+    password,
+    page_size=DEFAULT_PAGE_SIZE,
+    timestamp=None,
+    timeout=180,
+):
+    """Download all records by walking the TimeStamp filter forward.
+
+    Fallback for services that ignore OffSet.  TimeStamp filters on the
+    Salesforce last-publishing-update field with ``>=`` semantics, so each
+    request re-asks from the newest LastPublishingDate already collected and
+    relies on de-duplication to drop the overlap.
+
+    Args:
+        endpoint: Base API URL.
+        username: API username.
+        password: API password.
+        page_size: Records to request per page.
+        timestamp: Starting TimeStamp filter value.
+        timeout: Per-request timeout in seconds.
+
+    Returns:
+        Tuple of (list of records, TotalRecords reported by the API or None).
+
+    Raises:
+        PreQualAPIError: If the window cannot advance.
+    """
+    all_products = []
+    seen = set()
+    cursor = timestamp or DEFAULT_TIMESTAMP
+    total_records = None
+
+    for request_number in range(1, MAX_REQUESTS + 1):
+        data = fetch_api_page(
+            endpoint, username, password, 0, page_size, cursor, timeout
+        )
+        check_response_status(data)
+
+        products = data.get("FinishedVaccineProducts") or []
+        info = data.get("AdditionalInfo") or {}
+
+        if total_records is None:
+            total_records = info.get("TotalRecords")
+            if total_records is not None:
+                logger.info("API reports %s total records", total_records)
+
+        if not products:
+            logger.info("Empty page at %s=%s; walk complete", PARAM_TIMESTAMP, cursor)
+            break
+
+        added = _collect(products, seen, all_products)
+        logger.info(
+            "Window %d (%s>=%s): %d records (%d new), %d collected so far",
+            request_number,
+            PARAM_TIMESTAMP,
+            cursor,
+            len(products),
+            added,
+            len(all_products),
+        )
+
+        stamps = [product_timestamp(p) for p in products]
+        newest = max((s for s in stamps if s), default=None)
+        if newest is None:
+            raise PreQualAPIError(
+                "Records have no LastPublishingDate, so the %s window cannot be "
+                "advanced. Use --pagination-strategy offset instead." % PARAM_TIMESTAMP
+            )
+
+        if newest == cursor and added == 0:
+            # Nothing new and the window cannot move: every remaining record
+            # shares this timestamp, so a wider page size is the only way
+            # past it.
+            raise PreQualAPIError(
+                "Stuck at %s=%s: %d records share this timestamp and none are new. "
+                "Increase --page-size above %d to clear the window. "
+                "Collected %d of %s records."
+                % (PARAM_TIMESTAMP, cursor, len(products), page_size, len(all_products), total_records)
+            )
+
+        cursor = newest
+
+        if total_records is not None and len(all_products) >= int(total_records):
+            break
+    else:
+        raise PreQualAPIError(
+            f"Stopped after {MAX_REQUESTS} requests with {len(all_products)} records; "
+            "the timestamp walk is not terminating."
+        )
+
+    return all_products, total_records
+
+
+def download_all_pages(
+    endpoint,
+    username,
+    password,
+    page_size=DEFAULT_PAGE_SIZE,
+    timestamp=None,
+    strategy="offset",
+    timeout=180,
+    allow_partial=False,
+):
+    """Download every record the API reports, verifying the count.
+
+    Args:
+        endpoint: Base API URL.
+        username: API username.
+        password: API password.
+        page_size: Records to request per page.
+        timestamp: TimeStamp filter value; None requests a full load.
+        strategy: "offset" for OffSet/Limit paging, "timestamp" to walk the
+            TimeStamp filter forward for services that ignore OffSet.
+        timeout: Per-request timeout in seconds.
+        allow_partial: Warn instead of raising when fewer records arrive
+            than TotalRecords promised.
 
     Returns:
         List of FinishedVaccineProduct records.
+
+    Raises:
+        PreQualAPIError: On an unknown strategy, or on a short read unless
+            allow_partial is set.
     """
-    all_products = []
-    offset = 0
-    total_records = None
-    while True:
-        data = fetch_api_page(endpoint, username, password, offset, page_size)
-        products = data.get("FinishedVaccineProducts", [])
-        if not products:
-            break
-        all_products.extend(products)
+    if timestamp is None:
+        timestamp = DEFAULT_TIMESTAMP
 
-        # Use TotalRecords from API response to know when we're done
-        additional_info = data.get("AdditionalInfo", {})
-        if total_records is None:
-            total_records = additional_info.get("TotalRecords")
-            if total_records is not None:
-                logger.info("API reports %d total records", total_records)
+    if strategy == "offset":
+        downloader = download_offset_pages
+    elif strategy == "timestamp":
+        downloader = download_timestamp_pages
+    else:
+        raise PreQualAPIError(f"Unknown pagination strategy: {strategy}")
 
-        logger.info("Downloaded %d products (offset=%d)", len(products), offset)
-        offset += len(products)
+    products, total_records = downloader(
+        endpoint, username, password, page_size, timestamp, timeout
+    )
 
-        # Stop if we've fetched all records
-        if total_records is not None and offset >= total_records:
-            break
+    logger.info("Total products downloaded: %d", len(products))
 
-    logger.info("Total products downloaded: %d", len(all_products))
-    return all_products
+    if total_records is not None and len(products) < int(total_records):
+        message = (
+            "Downloaded %d records but the API reported %s total. The sync is "
+            "incomplete; do not publish this run." % (len(products), total_records)
+        )
+        if not allow_partial:
+            raise PreQualAPIError(message)
+        logger.warning(message)
+
+    return products
+
+
+def merge_products(existing, fetched):
+    """Merge fetched records into an existing snapshot, keyed on product id.
+
+    An incremental fetch returns only the products whose publishing date
+    moved, but every generator rewrites its whole output file from the list
+    it is given.  Generating straight from a delta therefore deletes every
+    product the delta does not mention.  Merging first restores the full
+    picture, with the fetched copy of a product replacing the stored one --
+    which is what makes a withdrawal apply correctly, since the fetched
+    copy is the cleared-down record.
+
+    Existing order is preserved and new products are appended, so the
+    generated FSH diff stays small and reviewable.
+
+    Note this cannot detect a product removed from the source database
+    altogether; only a full load can. Run one periodically.
+
+    Args:
+        existing: Products from the stored snapshot.
+        fetched: Products from this run's fetch.
+
+    Returns:
+        Tuple of (merged list, number added, number updated).
+    """
+    fetched_by_key = {}
+    for product in fetched:
+        fetched_by_key[product_key(product)] = product
+
+    merged = []
+    updated = 0
+    seen = set()
+    for product in existing:
+        key = product_key(product)
+        seen.add(key)
+        if key in fetched_by_key:
+            merged.append(fetched_by_key[key])
+            updated += 1
+        else:
+            merged.append(product)
+
+    added = 0
+    for product in fetched:
+        key = product_key(product)
+        if key not in seen:
+            merged.append(product)
+            added += 1
+
+    logger.info(
+        "Merged %d fetched records into %d stored: %d updated, %d added, %d total",
+        len(fetched),
+        len(existing),
+        updated,
+        added,
+        len(merged),
+    )
+    return merged, added, updated
 
 
 def load_json_file(path):
@@ -224,7 +755,7 @@ def extract_product_fields(product):
     sites = product.get("SiteDetails", []) or []
     ingredients = product.get("ProductIngredients", []) or []
 
-    return {
+    fields = {
         "sf_product_id": ident.get("Id", ""),
         "sf_product_name": ident.get("Name", ""),
         "product_type": details.get("Type", ""),
@@ -271,6 +802,75 @@ def extract_product_fields(product):
         "sites": sites,
         "ingredients": ingredients,
     }
+
+    # The API sends explicit nulls rather than omitting keys, so a
+    # .get(key, "") above still yields None for them.  Normalise every
+    # scalar to a string: without this, hashing a null name raises
+    # AttributeError and f-string formatting writes the literal "None"
+    # into the generated FSH.
+    for key, value in fields.items():
+        if value is None:
+            fields[key] = ""
+
+    return fields
+
+
+def backfill_names_from_ids(products):
+    """Fill in organization names that are empty but recoverable from their ID.
+
+    The API's applicant and NRA names are Salesforce denormalized copies
+    (``*_DN__c``), which are occasionally empty while the relationship ID is
+    intact.  Because the same organizations recur across products, a name
+    missing on one product can usually be recovered from another product
+    that shares the ID.  This repairs the label without inventing data: the
+    name always comes from the API's own value for that same ID.
+
+    Args:
+        products: List of normalized product field dicts, modified in place.
+
+    Returns:
+        Dict mapping entity label to the number of names filled.
+    """
+    filled = {}
+    for label, id_key, name_key in (
+        ("applicant", "applicant_id", "applicant_name"),
+        ("NRA", "nra_id", "nra_name"),
+    ):
+        directory = {}
+        for p in products:
+            if p.get(id_key) and p.get(name_key):
+                directory.setdefault(p[id_key], p[name_key])
+
+        count = 0
+        for p in products:
+            if p.get(name_key) or not p.get(id_key):
+                continue
+            recovered = directory.get(p[id_key])
+            if recovered:
+                p[name_key] = recovered
+                count += 1
+                logger.info(
+                    "Backfilled %s name for %s from id %s: %s",
+                    label,
+                    p.get("sf_product_name") or p.get("sf_product_id"),
+                    p[id_key],
+                    recovered,
+                )
+        filled[label] = count
+
+        unrecoverable = [
+            p for p in products if not p.get(name_key) and not p.get(id_key)
+        ]
+        if unrecoverable:
+            logger.info(
+                "%d product(s) have no %s name and no %s id, so the name "
+                "cannot be recovered from this extract",
+                len(unrecoverable),
+                label,
+                label,
+            )
+
+    return filled
 
 
 def generate_presentations_codesystem(products, output_dir):
@@ -322,6 +922,74 @@ def generate_presentations_codesystem(products, output_dir):
     logger.info("Generated presentations CodeSystem with %d codes", len(merged))
 
 
+def product_display(product):
+    """Return a readable display for a product code.
+
+    No combination of descriptive fields identifies a product uniquely: in
+    a full extract, 124 products share a commercial name, and even
+    commercial name, vaccine, applicant, presentation and dose count
+    together still leave collisions -- two genuine duplicate registrations
+    of the same product, and the de-published records, which carry no
+    detail at all.  The record name (FVP-P-nnn) is the only unique value,
+    so the description leads and the record name closes it in brackets as
+    the disambiguator: readable, and distinct by construction.
+
+    Args:
+        product: A normalized product field dict.
+
+    Returns:
+        A display string, never empty.
+    """
+    record = product.get("sf_product_name", "") or product.get("sf_product_id", "")
+    commercial = product.get("vaccine_commercial_name", "") or ""
+    abbreviated = product.get("vaccine_abbreviated_name", "") or ""
+    applicant = product.get("applicant_name", "") or ""
+    presentation = product.get("presentation", "") or ""
+    doses = product.get("num_doses", "") or ""
+
+    parts = []
+    if commercial and abbreviated:
+        parts.append(f"{commercial} ({abbreviated})")
+    elif commercial or abbreviated:
+        parts.append(commercial or abbreviated)
+    if applicant:
+        parts.append(applicant)
+    if presentation and doses:
+        parts.append(f"{presentation}, {doses} dose{'' if doses == '1' else 's'}")
+    elif presentation:
+        parts.append(presentation)
+
+    if not parts:
+        # A de-published record has only its identity and status left.
+        status = product.get("status", "") or ""
+        return f"{status} [{record}]" if status else record
+    return f"{', '.join(parts)} [{record}]"
+
+
+def vaccine_type_coding(product):
+    """Return the (code, display) a product's vaccine type is coded as.
+
+    The abbreviated name is the code because it is short and stable
+    ("TDV", "bOPV"), and the full name is the display because that is what
+    identifies the vaccine to a reader: "Dengue tetravalent vaccine (live,
+    attenuated)" rather than "TDV".  Either may be missing, so each falls
+    back to the other.
+
+    Args:
+        product: A normalized product field dict.
+
+    Returns:
+        Tuple of (code, display), both empty when the product names no
+        vaccine type.
+    """
+    abbreviated = product.get("vaccine_abbreviated_name", "") or ""
+    full = product.get("vaccine_full_name", "") or ""
+    label = abbreviated or full
+    if not label:
+        return "", ""
+    return sanitize_code(label), (full or abbreviated)
+
+
 def generate_vaccine_types_codesystem(products, output_dir):
     """Generate vaccine types CodeSystem and ValueSet FSH files.
 
@@ -339,16 +1007,17 @@ def generate_vaccine_types_codesystem(products, output_dir):
     # Build new codes from data
     new_codes = {}
     for p in products:
-        vax = p.get("vaccine_abbreviated_name", "")
-        if vax:
-            code = sanitize_code(vax)
-            new_codes[code] = f'* #{code} "{fsh_escape(vax)}"'
+        code, display = vaccine_type_coding(p)
+        if code:
+            new_codes[code] = f'* #{code} "{fsh_escape(display)}"'
 
-    # Merge: existing first, then new
+    # Codes no longer present in the data are kept, but a code the data
+    # still carries takes its display from this extract.  Preserving is
+    # meant to stop codes disappearing, not to freeze a display: these
+    # previously repeated the code ("TDV" displayed as "TDV"), which told
+    # a reader nothing about which vaccine it is.
     merged = dict(existing)
-    for code, line in new_codes.items():
-        if code not in merged:
-            merged[code] = line
+    merged.update(new_codes)
 
     with open(cs_path, "w", encoding="utf-8") as f:
         f.write('Alias: $vaccinetype = http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType\n')
@@ -371,6 +1040,113 @@ def generate_vaccine_types_codesystem(products, output_dir):
     logger.info("Generated vaccine types CodeSystem with %d codes", len(merged))
 
 
+def generate_product_vaccine_type_conceptmap(products, output_dir):
+    """Generate the product id -> vaccine type ConceptMap FSH file.
+
+    A product is a narrower concept than the vaccine type it belongs to
+    (Cervarix is one HPV vaccine), so each mapping is declared
+    source-is-narrower-than-target.
+
+    Every product is listed, including the de-published records, which
+    carry no vaccine type: those are marked noMap, so the map says they
+    were considered and have no target rather than leaving a reader to
+    wonder whether they were missed.
+
+    Args:
+        products: List of normalized product field dicts.
+        output_dir: Base output directory (e.g. input/fsh).
+    """
+    base = "http://smart.who.int/pcmt-vaxprequal"
+    path = os.path.join(output_dir, "conceptmaps", "prequal_product_to_vaccine_type.fsh")
+    os.makedirs(os.path.dirname(path), exist_ok=True)
+
+    # Sorted by product id so the generated file diffs cleanly between syncs.
+    entries = []
+    seen = set()
+    for product in products:
+        sf_id = product.get("sf_product_id", "")
+        if not sf_id or sf_id in seen:
+            continue
+        seen.add(sf_id)
+        code, display = vaccine_type_coding(product)
+        entries.append((sanitize_code(sf_id), product_display(product), code, display))
+    entries.sort()
+
+    mapped = sum(1 for e in entries if e[2])
+
+    with open(path, "w", encoding="utf-8") as f:
+        f.write("Instance: PreQualProductToVaccineType\n")
+        f.write("InstanceOf: ConceptMap\n")
+        f.write("Usage: #definition\n")
+        f.write(f'* url = "{base}/ConceptMap/PreQualProductToVaccineType"\n')
+        f.write('* name = "PreQualProductToVaccineType"\n')
+        f.write('* title = "WHO PreQual Vaccine Product to Vaccine Type"\n')
+        f.write("* status = #active\n")
+        f.write("* experimental = true\n")
+        f.write(
+            '* description = "Maps each WHO PreQual finished vaccine product '
+            "identifier to the vaccine type it belongs to. Products whose "
+            "detail has been de-published carry no vaccine type and are "
+            'marked as having no map."\n'
+        )
+        f.write(f'* sourceScopeCanonical = "{base}/ValueSet/PreQualProductIds"\n')
+        f.write(f'* targetScopeCanonical = "{base}/ValueSet/PreQualVaccineType"\n')
+        f.write(f'* group[0].source = "{base}/CodeSystem/PreQualProductIds"\n')
+        f.write(f'* group[0].target = "{base}/CodeSystem/PreQualVaccineType"\n')
+
+        for index, (entry_id, product_label, code, display) in enumerate(entries):
+            element = f"* group[0].element[{index}]"
+            f.write(f"\n{element}.code = #{entry_id}\n")
+            f.write(f'{element}.display = "{fsh_escape(product_label)}"\n')
+            if code:
+                f.write(f"{element}.target[0].code = #{code}\n")
+                f.write(f'{element}.target[0].display = "{fsh_escape(display)}"\n')
+                f.write(f"{element}.target[0].relationship = #source-is-narrower-than-target\n")
+            else:
+                f.write(f"{element}.noMap = true\n")
+
+    logger.info(
+        "Generated ConceptMap with %d product mappings (%d mapped, %d with no vaccine type)",
+        len(entries),
+        mapped,
+        len(entries) - mapped,
+    )
+
+
+def organizations_by_id(products, name_field, id_field, require_id=False):
+    """Collect one product per organization, keyed the way products reference it.
+
+    generate_products_and_authorizations references an organization by its
+    Salesforce ID (or the md5 of its name when it has none), so instances must
+    be keyed the same way.  Keying on the name instead emits duplicate
+    instances when an organization is renamed and drops one when two IDs
+    share a name.  When an ID appears under several names, the most recently
+    published product supplies the details.
+
+    Args:
+        products: List of normalized product field dicts.
+        name_field: Field holding the organization name.
+        id_field: Field holding the organization Salesforce ID.
+        require_id: Skip organizations that have no Salesforce ID.
+
+    Returns:
+        List of (instance_id, product) tuples sorted by organization name.
+    """
+    seen = {}
+    for p in products:
+        name = p.get(name_field, "")
+        sf_id = p.get(id_field, "")
+        if not name or (require_id and not sf_id):
+            continue
+        instance_id = sanitize_code(sf_id) if sf_id else md5hash(name)
+        current = seen.get(instance_id)
+        if current is None or (p.get("last_publishing_date") or "") >= (
+            current.get("last_publishing_date") or ""
+        ):
+            seen[instance_id] = p
+    return sorted(seen.items(), key=lambda item: (item[1][name_field], item[0]))
+
+
 def generate_manufacturers(products, output_dir):
     """Generate manufacturer Organization instances FSH file.
 
@@ -378,21 +1154,17 @@ def generate_manufacturers(products, output_dir):
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    seen = {}
-    for p in products:
-        name = p.get("applicant_name", "")
-        sf_id = p.get("applicant_id", "")
-        if name and name not in seen:
-            seen[name] = sf_id
+    seen = organizations_by_id(products, "applicant_name", "applicant_id")
 
     path = os.path.join(output_dir, "examples", "prequal_database_manufacturers.fsh")
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     with open(path, "w", encoding="utf-8") as f:
         f.write('Alias: $orgType = http://terminology.hl7.org/CodeSystem/organization-type\n')
-        for name, sf_id in sorted(seen.items()):
-            instance_id = sf_id if sf_id else md5hash(name)
-            f.write(f"\nInstance: Manufacturer{sanitize_code(instance_id)}\n")
+        for instance_id, p in seen:
+            name = p["applicant_name"]
+            sf_id = p.get("applicant_id", "")
+            f.write(f"\nInstance: Manufacturer{instance_id}\n")
             f.write("InstanceOf: IHE.mCSD.Organization\n")
             f.write("Usage: #example\n")
             f.write(f'Title: "PreQual Manufacturer: {fsh_escape(name)}"\n')
@@ -414,21 +1186,17 @@ def generate_holders(products, output_dir):
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    seen = {}
-    for p in products:
-        name = p.get("nra_name", "")
-        sf_id = p.get("nra_id", "")
-        if name and name not in seen:
-            seen[name] = sf_id
+    seen = organizations_by_id(products, "nra_name", "nra_id")
 
     path = os.path.join(output_dir, "examples", "prequal_database_holders.fsh")
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     with open(path, "w", encoding="utf-8") as f:
         f.write('Alias: $orgType = http://terminology.hl7.org/CodeSystem/organization-type\n')
-        for name, sf_id in sorted(seen.items()):
-            instance_id = sf_id if sf_id else md5hash(name)
-            f.write(f"\nInstance: Holder{sanitize_code(instance_id)}\n")
+        for instance_id, p in seen:
+            name = p["nra_name"]
+            sf_id = p.get("nra_id", "")
+            f.write(f"\nInstance: Holder{instance_id}\n")
             f.write("InstanceOf: IHE.mCSD.Organization\n")
             f.write("Usage: #example\n")
             f.write(f'Title: "PreQual NRA/Holder: {fsh_escape(name)}"\n')
@@ -450,20 +1218,15 @@ def generate_manufacturer_lm_instances(products, output_dir):
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    seen = {}
-    for p in products:
-        name = p.get("applicant_name", "")
-        sf_id = p.get("applicant_id", "")
-        if name and sf_id and name not in seen:
-            seen[name] = p
+    seen = organizations_by_id(products, "applicant_name", "applicant_id", require_id=True)
 
     path = os.path.join(output_dir, "examples", "prequal_database_manufacturer_lm.fsh")
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     with open(path, "w", encoding="utf-8") as f:
-        for name, p in sorted(seen.items()):
+        for instance_id, p in seen:
+            name = p["applicant_name"]
             sf_id = p.get("applicant_id", "")
-            instance_id = sanitize_code(sf_id)
             mfr_org_ref = f"Manufacturer{instance_id}"
 
             country = p.get("applicant_country", "") or ""
@@ -513,20 +1276,15 @@ def generate_nra_lm_instances(products, output_dir):
         products: List of normalized product field dicts.
         output_dir: Base output directory (e.g. input/fsh).
     """
-    seen = {}
-    for p in products:
-        name = p.get("nra_name", "")
-        sf_id = p.get("nra_id", "")
-        if name and sf_id and name not in seen:
-            seen[name] = p
+    seen = organizations_by_id(products, "nra_name", "nra_id", require_id=True)
 
     path = os.path.join(output_dir, "examples", "prequal_database_nra_lm.fsh")
     os.makedirs(os.path.dirname(path), exist_ok=True)
 
     with open(path, "w", encoding="utf-8") as f:
-        for name, p in sorted(seen.items()):
+        for instance_id, p in seen:
+            name = p["nra_name"]
             sf_id = p.get("nra_id", "")
-            instance_id = sanitize_code(sf_id)
             holder_org_ref = f"Holder{instance_id}"
 
             nra_country = p.get("nra_country", "") or ""
@@ -1095,6 +1853,7 @@ def generate_products_and_authorizations(products, output_dir):
 
     cs_entries = []
     generated_count = 0
+    depublished_count = 0
 
     with open(examples_path, "w", encoding="utf-8") as f:
         for i, p in enumerate(products, 1):
@@ -1112,10 +1871,20 @@ def generate_products_and_authorizations(products, output_dir):
             holder = p["nra_name"]
             holder_sf_id = p.get("nra_id", "")
 
-            # Skip products with missing essential data (e.g. withdrawn products)
+            # Every product is emitted, including de-published records that
+            # carry only an id, a name, a status and a publishing date.  Those
+            # are the authoritative record of a past prequalification, so the
+            # logical model makes all the detail optional rather than dropping
+            # them.  Fields are written only when present, below.
             if not commercial_name and not manufacturer and not holder:
-                logger.info("Skipping product %s (%s): missing essential data", sf_id, sf_name)
-                continue
+                logger.info(
+                    "Product %s (%s) is de-published (status %s): emitting "
+                    "identity and status only",
+                    sf_id,
+                    sf_name,
+                    p.get("status") or "unknown",
+                )
+                depublished_count += 1
 
             safe_sf_id = sanitize_code(sf_id) if sf_id else md5hash(str(i))
             mfr_ref_id = sanitize_code(manufacturer_sf_id) if manufacturer_sf_id else md5hash(manufacturer)
@@ -1134,7 +1903,9 @@ def generate_products_and_authorizations(products, output_dir):
             f.write(f"//\n\n")
 
             # LM Instance
-            status = p.get("status", "") or "Prequalified"
+            # No default: inventing "Prequalified" for a record whose status
+            # the API did not supply would assert something WHO has not.
+            status = p.get("status", "")
             product_type = p.get("product_type", "")
             assessment = p.get("assessment_procedure", "")
             pharm_form = p.get("pharmaceutical_form", "")
@@ -1164,7 +1935,8 @@ def generate_products_and_authorizations(products, output_dir):
                 f.write(f"* dateOfPrequal = {date}\n")
             if assessment:
                 f.write(f"* assessmentProcedure = #{sanitize_code(assessment)}\n")
-            f.write(f"* status = #{sanitize_code(status)}\n")
+            if status:
+                f.write(f"* status = #{sanitize_code(status)}\n")
             if pharm_form:
                 f.write(f"* pharmaceuticalForm = #{sanitize_code(pharm_form)}\n")
             if pres_code:
@@ -1182,7 +1954,15 @@ def generate_products_and_authorizations(products, output_dir):
                 f.write(f'* vaccineFullName = "{fsh_escape(p["vaccine_full_name"])}"\n')
             if p.get("vaccine_abbreviated_name"):
                 f.write(f'* vaccineAbbreviatedName = "{fsh_escape(p["vaccine_abbreviated_name"])}"\n')
-            f.write(f'* vaccineCommercialName = "{fsh_escape(commercial_name)}"\n')
+            if commercial_name:
+                f.write(f'* vaccineCommercialName = "{fsh_escape(commercial_name)}"\n')
+            # The coded vaccine type, so an instance states which vaccine it
+            # is without a reader having to resolve a Salesforce record id.
+            vax_type_code, vax_type_display = vaccine_type_coding(p)
+            if vax_type_code:
+                f.write('* vaccineType.coding.system = "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"\n')
+                f.write(f"* vaccineType.coding.code = #{vax_type_code}\n")
+                f.write(f'* vaccineType.coding.display = "{fsh_escape(vax_type_display)}"\n')
             vax_type_id = p.get("vaccine_type_id", "")
             if vax_type_id:
                 f.write(f'* vaccineTypeId.system = "https://extranet.who.int/prequal/api"\n')
@@ -1196,11 +1976,13 @@ def generate_products_and_authorizations(products, output_dir):
             if manufacturer_sf_id:
                 f.write(f'* applicantId.system = "https://extranet.who.int/prequal/api"\n')
                 f.write(f'* applicantId.value = "{fsh_escape(manufacturer_sf_id)}"\n')
-            f.write(f'* applicantName = "{fsh_escape(manufacturer)}"\n')
+            if manufacturer:
+                f.write(f'* applicantName = "{fsh_escape(manufacturer)}"\n')
             if holder_sf_id:
                 f.write(f'* nraId.system = "https://extranet.who.int/prequal/api"\n')
                 f.write(f'* nraId.value = "{fsh_escape(holder_sf_id)}"\n')
-            f.write(f'* nraName = "{fsh_escape(holder)}"\n')
+            if holder:
+                f.write(f'* nraName = "{fsh_escape(holder)}"\n')
             if nra_country:
                 f.write(f'* nraCountry = "{fsh_escape(nra_country)}"\n')
             if shelf_life:
@@ -1219,13 +2001,19 @@ def generate_products_and_authorizations(products, output_dir):
                 f.write(f'* preservative = "{fsh_escape(preservative)}"\n')
             if preservative_conc:
                 f.write(f'* preservativeConcentration = "{fsh_escape(preservative_conc)}"\n')
-            f.write(f"* manufacturerReference = Reference(Manufacturer{mfr_ref_id})\n")
-            f.write(f"* responsibleNRAReference = Reference(Holder{holder_ref_id}) // {fsh_escape(holder)}\n")
+            # generate_manufacturers/generate_holders key their instances on the
+            # organization name, so a product with no name has no instance to
+            # point at.  Referencing one anyway would fail the IG build.
+            if manufacturer:
+                f.write(f"* manufacturerReference = Reference(Manufacturer{mfr_ref_id})\n")
+            if holder:
+                f.write(f"* responsibleNRAReference = Reference(Holder{holder_ref_id}) // {fsh_escape(holder)}\n")
 
-            # LM instance references (only when sub-object has a non-null ID)
-            if manufacturer_sf_id:
+            # LM instance references (only when sub-object has a non-null ID;
+            # the LM generators also skip unnamed organizations)
+            if manufacturer and manufacturer_sf_id:
                 f.write(f"* manufacturerLM = Reference(PreQualManufacturer{mfr_ref_id})\n")
-            if holder_sf_id:
+            if holder and holder_sf_id:
                 f.write(f"* nraLM = Reference(PreQualNRA{holder_ref_id})\n")
             if vax_type_id:
                 vax_lm_ref_id = sanitize_code(vax_type_id)
@@ -1271,18 +2059,19 @@ def generate_products_and_authorizations(products, output_dir):
             f.write("\n")
 
             generated_count += 1
-            cs_entries.append((safe_sf_id, sf_id, sf_name))
+            cs_entries.append((safe_sf_id, sf_id, product_display(p)))
 
     # CodeSystem for product identifiers (additive — preserve existing codes)
     existing_ids = read_existing_codes(cs_path)
     new_id_codes = {}
-    for entry_id, sf_id, sf_name in cs_entries:
-        new_id_codes[entry_id] = f'* #{entry_id} "{fsh_escape(sf_name)} ({fsh_escape(sf_id)})"'
+    for entry_id, sf_id, display in cs_entries:
+        new_id_codes[entry_id] = f'* #{entry_id} "{fsh_escape(display)}"'
 
+    # A code no longer in the extract is kept, but one still present takes
+    # its display from the current data, so an improved display is applied
+    # rather than frozen out by the previously stored line.
     merged_ids = dict(existing_ids)
-    for code, line in new_id_codes.items():
-        if code not in merged_ids:
-            merged_ids[code] = line
+    merged_ids.update(new_id_codes)
 
     with open(cs_path, "w", encoding="utf-8") as f:
         f.write("\n")
@@ -1307,6 +2096,12 @@ def generate_products_and_authorizations(products, output_dir):
         f.write("* include codes from system $PreQualProductIds\n")
 
     logger.info("Generated %d product instances", generated_count)
+    if depublished_count:
+        logger.info(
+            "%d of %d are de-published records carrying identity and status only",
+            depublished_count,
+            len(products),
+        )
 
 
 def main():
@@ -1326,10 +2121,82 @@ def main():
     parser.add_argument(
         "--page-size",
         type=int,
-        default=100,
-        help="Number of records per API page (default: 100)",
+        default=DEFAULT_PAGE_SIZE,
+        help=(
+            "Records to request per API page (default: %d). The services cap "
+            "how many parent rows one response carries, so larger values are "
+            "silently trimmed." % DEFAULT_PAGE_SIZE
+        ),
+    )
+    parser.add_argument(
+        "--pagination-strategy",
+        choices=("offset", "timestamp"),
+        default="offset",
+        help=(
+            "How to page through results: 'offset' uses OffSet/Limit, "
+            "'timestamp' walks the TimeStamp filter forward for services "
+            "that ignore OffSet (default: offset)"
+        ),
+    )
+    parser.add_argument(
+        "--timestamp",
+        default=None,
+        help=(
+            "Only fetch products published on or after this ISO 8601 "
+            "timestamp, e.g. 2025-01-01T00:00:00.000Z (default: full load)"
+        ),
+    )
+    parser.add_argument(
+        "--save-raw",
+        default=None,
+        help="Write the combined raw API response to this path",
+    )
+    parser.add_argument(
+        "--allow-partial",
+        action="store_true",
+        help="Warn instead of failing when fewer records arrive than TotalRecords",
+    )
+    parser.add_argument(
+        "--merge-with",
+        default=None,
+        help=(
+            "Merge the fetched records into this existing snapshot (by "
+            "product id) before generating. Required with --timestamp, "
+            "because the generators rewrite each output file in full and an "
+            "unmerged delta would delete every product it does not mention"
+        ),
+    )
+    parser.add_argument(
+        "--no-backfill",
+        action="store_true",
+        help=(
+            "Do not recover empty applicant/NRA names from other products "
+            "sharing the same organization ID"
+        ),
+    )
+    parser.add_argument(
+        "--status",
+        action="append",
+        default=None,
+        help=(
+            "Only keep products with this ProductDetails.Status; repeatable. "
+            "Omit to keep every status (default)"
+        ),
     )
     args = parser.parse_args()
+
+    # An incremental fetch returns only what changed, and every generator
+    # rewrites its output file in full, so generating from an unmerged delta
+    # would delete every product the delta does not mention.
+    if args.timestamp and not args.merge_with:
+        logger.error(
+            "--timestamp performs an incremental fetch, which returns only "
+            "changed products. Generating from that alone would delete every "
+            "other product from the IG. Pass --merge-with data/prequal.json "
+            "to merge the delta into the stored snapshot first, or omit "
+            "--timestamp for a full load."
+        )
+        sys.exit(1)
 
     # Load data from API or local file
     if args.json_file:
@@ -1346,14 +2213,81 @@ def main():
             logger.error("PREQUAL_API_USERNAME and PREQUAL_API_PASSWORD environment variables are required")
             sys.exit(1)
 
-        raw_products = download_all_pages(endpoint, username, password, args.page_size)
+        try:
+            raw_products = download_all_pages(
+                endpoint,
+                username,
+                password,
+                page_size=args.page_size,
+                timestamp=args.timestamp,
+                strategy=args.pagination_strategy,
+                allow_partial=args.allow_partial,
+            )
+        except PreQualAPIError as exc:
+            logger.error("%s", exc)
+            sys.exit(1)
+
+    if args.merge_with:
+        if os.path.exists(args.merge_with):
+            stored = load_json_file(args.merge_with)
+            raw_products, _, _ = merge_products(stored, raw_products)
+        else:
+            logger.warning(
+                "%s does not exist yet, so there is nothing to merge into; "
+                "treating this run as a full load",
+                args.merge_with,
+            )
+
+    if args.status:
+        wanted = set(args.status)
+        before = len(raw_products)
+        raw_products = [
+            p
+            for p in raw_products
+            if (p.get("ProductDetails") or {}).get("Status") in wanted
+        ]
+        logger.info(
+            "Status filter %s kept %d of %d products",
+            sorted(wanted),
+            len(raw_products),
+            before,
+        )
 
     if not raw_products:
         logger.error("No products found")
         sys.exit(1)
 
+    if args.save_raw:
+        os.makedirs(os.path.dirname(args.save_raw) or ".", exist_ok=True)
+        with open(args.save_raw, "w", encoding="utf-8") as f:
+            json.dump(
+                {
+                    "FinishedVaccineProducts": raw_products,
+                    "AdditionalInfo": {
+                        "OffSet": 0,
+                        "Limit": len(raw_products),
+                        "TotalRecords": len(raw_products),
+                    },
+                    "Status": {"StatusCode": "SUCCESS"},
+                },
+                f,
+                indent=2,
+                ensure_ascii=False,
+            )
+        logger.info("Wrote raw snapshot of %d products to %s", len(raw_products), args.save_raw)
+
     # Extract normalized fields
     products = [extract_product_fields(p) for p in raw_products]
+
+    # Repair organization names that are empty but recoverable from their ID
+    # before anything is generated from them.
+    if not args.no_backfill:
+        filled = backfill_names_from_ids(products)
+        if any(filled.values()):
+            logger.info(
+                "Backfilled %s",
+                ", ".join(f"{n} {label} name(s)" for label, n in filled.items() if n),
+            )
 
     # Generate all FSH outputs
     os.makedirs(args.output_dir, exist_ok=True)
@@ -1372,6 +2306,7 @@ def main():
     generate_site_lm_instances(products, args.output_dir)
     generate_ingredient_lm_instances(products, args.output_dir)
     generate_products_and_authorizations(products, args.output_dir)
+    generate_product_vaccine_type_conceptmap(products, args.output_dir)
 
     logger.info("All FSH files generated successfully in %s", args.output_dir)
 
