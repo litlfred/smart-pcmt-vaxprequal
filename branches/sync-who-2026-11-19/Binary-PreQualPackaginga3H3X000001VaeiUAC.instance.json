@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaeiUAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box of 32 cartons of 25 vials (4000 doses/800 vials)[Dimensions: 17.2 x 25.5 x 47 cm]",
+  "volume": "17.2 x 25.5 x 47 cm",
+  "totalDoses": "4000",
+  "totalContainers": "800"
+}

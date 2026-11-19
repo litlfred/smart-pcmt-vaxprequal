@@ -1,0 +1,14 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3HNN0000007wbx2AA"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "0.55",
+  "height": "5.1",
+  "length": "11.5",
+  "width": "4.7",
+  "primaryContainers": "10"
+}

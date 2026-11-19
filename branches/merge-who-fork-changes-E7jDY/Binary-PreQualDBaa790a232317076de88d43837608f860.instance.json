@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "1993-02-15",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "Measles",
+        "display": "Measles"
+      }
+    ]
+  },
+  "commercialName": "Measles Vaccine, Live, Attenuated",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Serum Institute of India Pvt. Ltd."
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "aa790a232317076de88d43837608f860"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer35b3de1add41b53c8e37ce338f2ba545"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/MeaslesProductaa790a232317076de88d43837608f860"
+  }
+}

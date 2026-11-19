@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2014-09-17",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "DiphtheriaTetanusreduced",
+        "display": "Diphtheria-Tetanus (reduced antigen content)"
+      }
+    ]
+  },
+  "commercialName": "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "Biological E. Limited"
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "765d85d2d2e92fc0aa155a4189f60843"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer54a4cbdf74f251158fb034e8f5e1ff5b"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/DiphtheriaTetanusreducedProduct765d85d2d2e92fc0aa155a4189f60843"
+  }
+}

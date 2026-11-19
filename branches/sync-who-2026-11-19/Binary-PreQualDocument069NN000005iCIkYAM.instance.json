@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iCIkYAM"
+  },
+  "documentName": "pq_117_Dukoral_1dose_SSI_container_image_580",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005yvdGYAQ",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

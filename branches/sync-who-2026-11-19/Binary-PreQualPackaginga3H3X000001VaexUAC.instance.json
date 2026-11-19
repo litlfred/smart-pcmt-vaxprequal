@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaexUAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "2.91",
+  "description": "Active: Carton of 10 single dose vials (10 doses) [Dimensions: 2.3 x 2.3 x 5.5 cm]",
+  "height": "2.3",
+  "length": "2.3",
+  "width": "5.5",
+  "primaryContainers": "10"
+}

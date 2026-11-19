@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005i5hCYAQ"
+  },
+  "documentName": "FVP-P-111_Rabies_1dose_Sanofi_PI-2026",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068Vj00000WSseGIAT",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

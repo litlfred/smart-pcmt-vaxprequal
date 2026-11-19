@@ -1,0 +1,10 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "status": "WithdrawnWasPrequalified",
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006Mii4UAC"
+  },
+  "productName": "FVP-P-292",
+  "lastPublishingDate": "2025-07-08"
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2009-11-03",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "PolioVaccineOralOPVMonov",
+        "display": "Polio Vaccine - Oral (OPV) Monovalent Type 1"
+      }
+    ]
+  },
+  "commercialName": "Monovalent type 1 Oral Poliomyelitis vaccine, IP (mOPV1)",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 20,
+  "manufacturer": {
+    "text": "Haffkine Bio Pharmaceutical Corporation Ltd"
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "ae7e506ca48a3aa605b188cd11eaceab"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer42565af3e1da9c8e2b48128dd0b2b292"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/PolioVaccineOralOPVMonovProductae7e506ca48a3aa605b188cd11eaceab"
+  }
+}

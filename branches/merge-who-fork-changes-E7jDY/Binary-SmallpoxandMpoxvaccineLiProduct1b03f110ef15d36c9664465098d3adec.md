@@ -1,0 +1,64 @@
+# SmallpoxandMpoxvaccineLiProduct1b03f110ef15d36c9664465098d3adec - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **SmallpoxandMpoxvaccineLiProduct1b03f110ef15d36c9664465098d3adec**
+
+## Binary: SmallpoxandMpoxvaccineLiProduct1b03f110ef15d36c9664465098d3adec
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "Imvanex® (also approved under the name of JYNNEOS by the USFDA and IMVAMUNE by Health Canada)"
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturer49ba2034b576b9b30559303e880f9bc7"
+  },
+  "doseQuantity": {
+    "value": 1,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "SmallpoxandMpoxvaccineLi"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "Vial"
+      }
+    ]
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

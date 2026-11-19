@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "Yellow Fever"
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturer2633085cce399745d9a840a0e7459e1a"
+  },
+  "doseQuantity": {
+    "value": 5,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "YellowFever"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "Twovialsetactiveexcipient"
+      }
+    ]
+  }
+}

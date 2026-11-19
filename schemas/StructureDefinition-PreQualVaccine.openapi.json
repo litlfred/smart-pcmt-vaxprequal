@@ -1,0 +1,63 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "WHO PreQual Vaccine API",
+    "description": "Logical model for the vaccine type details\nfrom the WHO PreQual API (ProductDetails.VaccineDetails).\nContains only vaccine-type-level fields that are stable across products.\nProduct-specific fields (CommercialName, RouteOfAdministration) remain on FinishedVaccineProducts.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/StructureDefinition-PreQualVaccine.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the Logical Model StructureDefinition-PreQualVaccine",
+        "description": "This endpoint serves the JSON Schema definition for the Logical Model StructureDefinition-PreQualVaccine.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for StructureDefinition-PreQualVaccine",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./StructureDefinition-PreQualVaccine.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "StructureDefinition-PreQualVaccine": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/base/StructureDefinition-PreQualVaccine.schema.json",
+        "title": "WHO PreQual Vaccine",
+        "description": "Logical model for the vaccine type details\nfrom the WHO PreQual API (ProductDetails.VaccineDetails).\nContains only vaccine-type-level fields that are stable across products.\nProduct-specific fields (CommercialName, RouteOfAdministration) remain on FinishedVaccineProducts.",
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "PreQualVaccine",
+            "description": "Resource type identifier for PreQualVaccine logical model"
+          },
+          "vaccineId": {
+            "type": "object",
+            "description": "Vaccine type ID"
+          },
+          "fullName": {
+            "type": "string",
+            "description": "Vaccine full name"
+          },
+          "abbreviatedName": {
+            "type": "string",
+            "description": "Vaccine abbreviated name"
+          }
+        },
+        "required": [
+          "resourceType"
+        ],
+        "resourceDefinition": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine",
+        "fhir:parent": "http://hl7.org/fhir/StructureDefinition/Base"
+      }
+    }
+  }
+}

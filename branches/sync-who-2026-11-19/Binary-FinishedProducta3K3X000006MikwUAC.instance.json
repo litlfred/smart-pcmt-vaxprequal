@@ -1,0 +1,86 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "productType": "FinishedVaccineProduct",
+  "dateOfPrequal": "2010-04-26",
+  "assessmentProcedure": "PrequalificationStandard",
+  "status": "Prequalified",
+  "pharmaceuticalForm": "LiquidReadytouse",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006MikwUAC"
+  },
+  "productName": "FVP-P-197",
+  "vaccineFullName": "Haemophilus influenzae type b conjugate vaccine",
+  "vaccineAbbreviatedName": "Hib",
+  "vaccineCommercialName": "Quimi-Hib",
+  "vaccineType": {
+    "coding": [
+      {
+        "system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
+        "code": "Hib",
+        "display": "Haemophilus influenzae type b conjugate vaccine"
+      }
+    ]
+  },
+  "vaccineTypeId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSpHUAU"
+  },
+  "routeOfAdministration": "Intramuscular",
+  "vialMonitor": "Type 14",
+  "applicantId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3hQAA"
+  },
+  "applicantName": "Centro de Ingenieria Genetica y Biotecnologia (CIGB)",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4cQAA"
+  },
+  "nraName": "Centro para el Control Estatal de la Calidad de los Medicamentos (CECMED)",
+  "nraCountry": "Cuba",
+  "shelfLife": "36 months",
+  "storageTemperature": "2 - 8°C",
+  "lastPublishingDate": "2024-09-10",
+  "preservative": "Thiomersal",
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer0013X0000498p3hQAA"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder0013X0000498p4cQAA"
+  },
+  "manufacturerLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer/PreQualManufacturer0013X0000498p3hQAA"
+  },
+  "nraLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA/PreQualNRA0013X0000498p4cQAA"
+  },
+  "vaccineLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine/PreQualVaccinea3S3X000003cSpHUAU"
+  },
+  "packagingLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging/PreQualPackaginga3H3X000001VahmUAC"
+    }
+  ],
+  "siteLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail/PreQualSite0013X0000498p3hQAA"
+    }
+  ],
+  "ingredientLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient/PreQualIngredienta3K3X000006MikwUACIng1"
+    }
+  ]
+}

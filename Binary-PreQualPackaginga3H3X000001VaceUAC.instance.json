@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaceUAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "7.85",
+  "description": "Carton of 10 strips with 5 plastic tubes per strip (50 doses) [Dimensions: 11.1 x 5.7 x 6.2 cm]",
+  "height": "5.7",
+  "length": "11.1",
+  "width": "6.2",
+  "primaryContainers": "10"
+}

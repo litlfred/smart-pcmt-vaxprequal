@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kskCYAQ"
+  },
+  "documentName": "pq_367__Rotavac5D_1dose_BBIL_vial%26carton_image-2022",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000061eZYYAY",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

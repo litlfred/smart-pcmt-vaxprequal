@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005lHx0YAE"
+  },
+  "documentName": "pq_427_MenFive_1dose_SIIPL_vial%26ampoule_2023",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN00000623kkYAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

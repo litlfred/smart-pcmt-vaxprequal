@@ -1,0 +1,64 @@
+# PreQualDB59a4a8dd61e6115a46849c83d7b6fd2c - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDB59a4a8dd61e6115a46849c83d7b6fd2c**
+
+## Binary: PreQualDB59a4a8dd61e6115a46849c83d7b6fd2c
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2014-12-30",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "MeningococcalAConjugate5",
+        "display": "Meningococcal A Conjugate 5 µg"
+      }
+    ]
+  },
+  "commercialName": "Meningococcal A Conjugate 5 micrograms MenAfriVac 5µg",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "VialAmpoule",
+        "display": "Vial + Ampoule"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "Serum Institute of India Pvt. Ltd."
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "59a4a8dd61e6115a46849c83d7b6fd2c"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer35b3de1add41b53c8e37ce338f2ba545"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/MeningococcalAConjugate5Product59a4a8dd61e6115a46849c83d7b6fd2c"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

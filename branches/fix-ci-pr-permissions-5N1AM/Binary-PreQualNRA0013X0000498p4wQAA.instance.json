@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4wQAA"
+  },
+  "name": "National Medical Products Administration  (NMPA)",
+  "country": "China",
+  "website": "http://eng.sfda.gov.cn/WS03/CL0755/",
+  "organizationReference": {
+    "reference": "Organization/Holder0013X0000498p4wQAA"
+  }
+}

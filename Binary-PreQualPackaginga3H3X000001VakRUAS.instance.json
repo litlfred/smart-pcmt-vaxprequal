@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VakRUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "Diluent",
+  "description": "Box of 8 cartons of 100 ampoules/1600 doses (diluent) [Dimensions 32 x 20 x 39 cm]",
+  "volume": "32 x 20 x 39 cm",
+  "totalDoses": "1600",
+  "totalContainers": "800"
+}

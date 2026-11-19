@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kEEnYAM"
+  },
+  "documentName": "Package Insert-pq_270_JE_live_1dose_Chengdu_PI-2019",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000060yvBYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

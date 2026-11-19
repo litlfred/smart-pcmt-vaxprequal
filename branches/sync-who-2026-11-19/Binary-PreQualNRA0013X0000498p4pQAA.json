@@ -1,0 +1,6 @@
+{
+  "resourceType" : "Binary",
+  "id" : "PreQualNRA0013X0000498p4pQAA",
+  "contentType" : "application/fhir+json",
+  "data" : "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGNtdC12YXhwcmVxdWFsL1N0cnVjdHVyZURlZmluaXRpb24vUHJlUXVhbE5SQSIsCiAgIm5yYUlkIjogewogICAgInN5c3RlbSI6ICJodHRwczovL2V4dHJhbmV0Lndoby5pbnQvcHJlcXVhbC9hcGkiLAogICAgInZhbHVlIjogIjAwMTNYMDAwMDQ5OHA0cFFBQSIKICB9LAogICJuYW1lIjogIlBhdWwgRWhybGljaCBJbnN0aXR1dGUiLAogICJjb3VudHJ5IjogIkdlcm1hbnkiLAogICJ3ZWJzaXRlIjogInd3dy5wZWkuZGUiLAogICJvcmdhbml6YXRpb25SZWZlcmVuY2UiOiB7CiAgICAicmVmZXJlbmNlIjogIk9yZ2FuaXphdGlvbi9Ib2xkZXIwMDEzWDAwMDA0OThwNHBRQUEiCiAgfQp9Cg=="
+}

@@ -1,0 +1,14 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3uQAA"
+  },
+  "siteOrganizationName": "GPO-MBP Co.  Ltd. (GPO-MBP)",
+  "addressLine1": "241 Moo 7 (Plaengyo Ind. Estate)Tambon Huasamrong, Chachoengsao",
+  "city": "Amphoe Plaengyao",
+  "country": "Thailand",
+  "postalCode": "24190",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005huSQYAY"
+  },
+  "documentName": "Package Insert-pq_21_YF_%2010%20dose_Bio-Manguihnos_PI_062018",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005ydqAYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

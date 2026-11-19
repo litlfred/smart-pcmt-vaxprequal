@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "BCG Vaccine AJV"
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturer5dc54242e07048dc1f0433b45d61957c"
+  },
+  "doseQuantity": {
+    "value": 10,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "BCG"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "Twovialsetactiveexcipient"
+      }
+    ]
+  }
+}

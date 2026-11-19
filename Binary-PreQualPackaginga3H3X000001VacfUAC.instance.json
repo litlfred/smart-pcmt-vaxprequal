@@ -1,0 +1,11 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VacfUAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box [Dimensions: 70 x 70 x 50.5 cm] containing 128 (max.) to 64 (min.) cartons of 50 doses.",
+  "volume": "70 x 70 x 50.5 cm"
+}

@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holderf651f2cc6236f906af0a310308a8de06"
+  },
+  "validityPeriod": {
+    "start": "2001-10-25"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/cholerainactivatedoralProductf1c03e02b729d1b9da196f4dbfe675f1"
+    }
+  ]
+}

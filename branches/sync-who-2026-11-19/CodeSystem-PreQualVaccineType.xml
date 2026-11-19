@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="PreQualVaccineType"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem PreQualVaccineType</b></p><a name="PreQualVaccineType"> </a><a name="hcPreQualVaccineType"> </a><p>This  code system <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">BCG<a name="PreQualVaccineType-BCG"> </a></td><td>BCG</td></tr><tr><td style="white-space:nowrap">C19<a name="PreQualVaccineType-C19"> </a></td><td>Covid-19, protein subunit</td></tr><tr><td style="white-space:nowrap">DT<a name="PreQualVaccineType-DT"> </a></td><td>Diphtheria and tetanus vaccine (adsorbed)</td></tr><tr><td style="white-space:nowrap">DTaP<a name="PreQualVaccineType-DTaP"> </a></td><td>Diphtheria, tetanus and (acellular) pertussis vaccine (adsorbed)</td></tr><tr><td style="white-space:nowrap">DTaPHepBIPVHib<a name="PreQualVaccineType-DTaPHepBIPVHib"> </a></td><td>Diphtheria, tetanus, (acellular) pertussis, hepatitis b, poliomyelitis (inactivated) and Haemophilus influenzae type b conjugate vaccine (adsorbed)</td></tr><tr><td style="white-space:nowrap">DTwP<a name="PreQualVaccineType-DTwP"> </a></td><td>Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)</td></tr><tr><td style="white-space:nowrap">DTwPHepBHib<a name="PreQualVaccineType-DTwPHepBHib"> </a></td><td>Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)</td></tr><tr><td style="white-space:nowrap">DTwPHib<a name="PreQualVaccineType-DTwPHib"> </a></td><td>Diphtheria, tetanus, pertussis and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)</td></tr><tr><td style="white-space:nowrap">EBOV<a name="PreQualVaccineType-EBOV"> </a></td><td>Ebola vaccine (live, attenuated)</td></tr><tr><td style="white-space:nowrap">HPV<a name="PreQualVaccineType-HPV"> </a></td><td>Recombinant human papillomavirus virus-like particle vaccine (types 16,18)</td></tr><tr><td style="white-space:nowrap">HepA<a name="PreQualVaccineType-HepA"> </a></td><td>Hepatitis A vaccine (inactivated)</td></tr><tr><td style="white-space:nowrap">HepB<a name="PreQualVaccineType-HepB"> </a></td><td>Hepatitis B vaccine (recombinant)</td></tr><tr><td style="white-space:nowrap">Hib<a name="PreQualVaccineType-Hib"> </a></td><td>Haemophilus influenzae type b conjugate vaccine</td></tr><tr><td style="white-space:nowrap">IIV3<a name="PreQualVaccineType-IIV3"> </a></td><td>Influenza vaccine trivalent (split virion, inactivated)</td></tr><tr><td style="white-space:nowrap">IIV4<a name="PreQualVaccineType-IIV4"> </a></td><td>Influenza vaccine quadrivalent (split virion, inactivated)</td></tr><tr><td style="white-space:nowrap">IIVPandemic<a name="PreQualVaccineType-IIVPandemic"> </a></td><td>Human pandemic influenza vaccine</td></tr><tr><td style="white-space:nowrap">IPV<a name="PreQualVaccineType-IPV"> </a></td><td>Poliomyelitis vaccine (inactivated)</td></tr><tr><td style="white-space:nowrap">JE<a name="PreQualVaccineType-JE"> </a></td><td>Japanese encephalitis vaccine (live, attenuated) for human use</td></tr><tr><td style="white-space:nowrap">LARV<a name="PreQualVaccineType-LARV"> </a></td><td>Rotavirus vaccine (live attenuated) (oral)</td></tr><tr><td style="white-space:nowrap">M<a name="PreQualVaccineType-M"> </a></td><td>Measles vaccine (live, attenuated)</td></tr><tr><td style="white-space:nowrap">MMR<a name="PreQualVaccineType-MMR"> </a></td><td>Measles, mumps, rubella combined vaccine (live, attenuated)</td></tr><tr><td style="white-space:nowrap">MR<a name="PreQualVaccineType-MR"> </a></td><td>Measles, rubella combined vaccine (live, attenuated)</td></tr><tr><td style="white-space:nowrap">Malaria<a name="PreQualVaccineType-Malaria"> </a></td><td>Recombinant malaria vaccine</td></tr><tr><td style="white-space:nowrap">MenA<a name="PreQualVaccineType-MenA"> </a></td><td>Group A meningococcal conjugate vaccine</td></tr><tr><td style="white-space:nowrap">MenACYW135<a name="PreQualVaccineType-MenACYW135"> </a></td><td>Meningococcal conjugate vaccine tetravalent ( type A,C, Y, W-135)</td></tr><tr><td style="white-space:nowrap">MenACYWX<a name="PreQualVaccineType-MenACYWX"> </a></td><td>Meningococcal polysacharide conjugate vaccine (type A,C,Y,W,X)</td></tr><tr><td style="white-space:nowrap">OCV<a name="PreQualVaccineType-OCV"> </a></td><td>Inactivated oral cholera vaccine</td></tr><tr><td style="white-space:nowrap">PCV<a name="PreQualVaccineType-PCV"> </a></td><td>Pneumococcal conjugate vaccine</td></tr><tr><td style="white-space:nowrap">R<a name="PreQualVaccineType-R"> </a></td><td>Rubella vaccine (live, attenuated)</td></tr><tr><td style="white-space:nowrap">Rabies<a name="PreQualVaccineType-Rabies"> </a></td><td>Rabies vaccine for human use</td></tr><tr><td style="white-space:nowrap">TDV<a name="PreQualVaccineType-TDV"> </a></td><td>Dengue tetravalent vaccine (live, attenuated)</td></tr><tr><td style="white-space:nowrap">TT<a name="PreQualVaccineType-TT"> </a></td><td>Tetanus vaccine (adsorbed)</td></tr><tr><td style="white-space:nowrap">Typhoid<a name="PreQualVaccineType-Typhoid"> </a></td><td>Typhoid conjugate vaccine</td></tr><tr><td style="white-space:nowrap">VAR<a name="PreQualVaccineType-VAR"> </a></td><td>Varicella</td></tr><tr><td style="white-space:nowrap">YF<a name="PreQualVaccineType-YF"> </a></td><td>Yellow fever vaccine (live attenuated)</td></tr><tr><td style="white-space:nowrap">bOPV<a name="PreQualVaccineType-bOPV"> </a></td><td>Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)</td></tr><tr><td style="white-space:nowrap">dT<a name="PreQualVaccineType-dT"> </a></td><td>Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)</td></tr><tr><td style="white-space:nowrap">mOPV1<a name="PreQualVaccineType-mOPV1"> </a></td><td>Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 1)</td></tr><tr><td style="white-space:nowrap">mOPV2<a name="PreQualVaccineType-mOPV2"> </a></td><td>Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 2)</td></tr><tr><td style="white-space:nowrap">mOPV3<a name="PreQualVaccineType-mOPV3"> </a></td><td>Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 3)</td></tr><tr><td style="white-space:nowrap">nOPV2<a name="PreQualVaccineType-nOPV2"> </a></td><td>Poliomyelitis vaccines (novel, oral, live, attenuated,  type 2)</td></tr><tr><td style="white-space:nowrap">sIPV<a name="PreQualVaccineType-sIPV"> </a></td><td>Poliomyelitis vaccine (inactivated-Sabin)</td></tr><tr><td style="white-space:nowrap">tOPV<a name="PreQualVaccineType-tOPV"> </a></td><td>Poliomyelitis vaccines (trivalent live, oral, innactivated, type 1,2, 3)</td></tr></table></div>
+  </text>
+  <url value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+  <version value="0.2.0"/>
+  <name value="PreQualVaccineType"/>
+  <title value="WHO PreQualificaiton Vaccine VaccineTypes"/>
+  <status value="draft"/>
+  <date value="2026-11-19T07:54:24+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="WHO PreQualificaiton Vaccine VaccineTypes"/>
+  <content value="complete"/>
+  <count value="43"/>
+  <concept>
+    <code value="BCG"/>
+    <display value="BCG"/>
+  </concept>
+  <concept>
+    <code value="C19"/>
+    <display value="Covid-19, protein subunit"/>
+  </concept>
+  <concept>
+    <code value="DT"/>
+    <display value="Diphtheria and tetanus vaccine (adsorbed)"/>
+  </concept>
+  <concept>
+    <code value="DTaP"/>
+    <display value="Diphtheria, tetanus and (acellular) pertussis vaccine (adsorbed)"/>
+  </concept>
+  <concept>
+    <code value="DTaPHepBIPVHib"/>
+    <display value="Diphtheria, tetanus, (acellular) pertussis, hepatitis b, poliomyelitis (inactivated) and Haemophilus influenzae type b conjugate vaccine (adsorbed)"/>
+  </concept>
+  <concept>
+    <code value="DTwP"/>
+    <display value="Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"/>
+  </concept>
+  <concept>
+    <code value="DTwPHepBHib"/>
+    <display value="Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"/>
+  </concept>
+  <concept>
+    <code value="DTwPHib"/>
+    <display value="Diphtheria, tetanus, pertussis and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"/>
+  </concept>
+  <concept>
+    <code value="EBOV"/>
+    <display value="Ebola vaccine (live, attenuated)"/>
+  </concept>
+  <concept>
+    <code value="HPV"/>
+    <display value="Recombinant human papillomavirus virus-like particle vaccine (types 16,18)"/>
+  </concept>
+  <concept>
+    <code value="HepA"/>
+    <display value="Hepatitis A vaccine (inactivated)"/>
+  </concept>
+  <concept>
+    <code value="HepB"/>
+    <display value="Hepatitis B vaccine (recombinant)"/>
+  </concept>
+  <concept>
+    <code value="Hib"/>
+    <display value="Haemophilus influenzae type b conjugate vaccine"/>
+  </concept>
+  <concept>
+    <code value="IIV3"/>
+    <display value="Influenza vaccine trivalent (split virion, inactivated)"/>
+  </concept>
+  <concept>
+    <code value="IIV4"/>
+    <display value="Influenza vaccine quadrivalent (split virion, inactivated)"/>
+  </concept>
+  <concept>
+    <code value="IIVPandemic"/>
+    <display value="Human pandemic influenza vaccine"/>
+  </concept>
+  <concept>
+    <code value="IPV"/>
+    <display value="Poliomyelitis vaccine (inactivated)"/>
+  </concept>
+  <concept>
+    <code value="JE"/>
+    <display value="Japanese encephalitis vaccine (live, attenuated) for human use"/>
+  </concept>
+  <concept>
+    <code value="LARV"/>
+    <display value="Rotavirus vaccine (live attenuated) (oral)"/>
+  </concept>
+  <concept>
+    <code value="M"/>
+    <display value="Measles vaccine (live, attenuated)"/>
+  </concept>
+  <concept>
+    <code value="MMR"/>
+    <display value="Measles, mumps, rubella combined vaccine (live, attenuated)"/>
+  </concept>
+  <concept>
+    <code value="MR"/>
+    <display value="Measles, rubella combined vaccine (live, attenuated)"/>
+  </concept>
+  <concept>
+    <code value="Malaria"/>
+    <display value="Recombinant malaria vaccine"/>
+  </concept>
+  <concept>
+    <code value="MenA"/>
+    <display value="Group A meningococcal conjugate vaccine"/>
+  </concept>
+  <concept>
+    <code value="MenACYW135"/>
+    <display value="Meningococcal conjugate vaccine tetravalent ( type A,C, Y, W-135)"/>
+  </concept>
+  <concept>
+    <code value="MenACYWX"/>
+    <display value="Meningococcal polysacharide conjugate vaccine (type A,C,Y,W,X)"/>
+  </concept>
+  <concept>
+    <code value="OCV"/>
+    <display value="Inactivated oral cholera vaccine"/>
+  </concept>
+  <concept>
+    <code value="PCV"/>
+    <display value="Pneumococcal conjugate vaccine"/>
+  </concept>
+  <concept>
+    <code value="R"/>
+    <display value="Rubella vaccine (live, attenuated)"/>
+  </concept>
+  <concept>
+    <code value="Rabies"/>
+    <display value="Rabies vaccine for human use"/>
+  </concept>
+  <concept>
+    <code value="TDV"/>
+    <display value="Dengue tetravalent vaccine (live, attenuated)"/>
+  </concept>
+  <concept>
+    <code value="TT"/>
+    <display value="Tetanus vaccine (adsorbed)"/>
+  </concept>
+  <concept>
+    <code value="Typhoid"/>
+    <display value="Typhoid conjugate vaccine"/>
+  </concept>
+  <concept>
+    <code value="VAR"/>
+    <display value="Varicella"/>
+  </concept>
+  <concept>
+    <code value="YF"/>
+    <display value="Yellow fever vaccine (live attenuated)"/>
+  </concept>
+  <concept>
+    <code value="bOPV"/>
+    <display value="Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"/>
+  </concept>
+  <concept>
+    <code value="dT"/>
+    <display value="Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"/>
+  </concept>
+  <concept>
+    <code value="mOPV1"/>
+    <display value="Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 1)"/>
+  </concept>
+  <concept>
+    <code value="mOPV2"/>
+    <display value="Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 2)"/>
+  </concept>
+  <concept>
+    <code value="mOPV3"/>
+    <display value="Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 3)"/>
+  </concept>
+  <concept>
+    <code value="nOPV2"/>
+    <display value="Poliomyelitis vaccines (novel, oral, live, attenuated,  type 2)"/>
+  </concept>
+  <concept>
+    <code value="sIPV"/>
+    <display value="Poliomyelitis vaccine (inactivated-Sabin)"/>
+  </concept>
+  <concept>
+    <code value="tOPV"/>
+    <display value="Poliomyelitis vaccines (trivalent live, oral, innactivated, type 1,2, 3)"/>
+  </concept>
+</CodeSystem>

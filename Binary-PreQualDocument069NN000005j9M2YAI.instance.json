@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005j9M2YAI"
+  },
+  "documentName": "Package Insert-pq_267_268_HepA_GSK_PI-2023",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000005zu0oYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VahkUAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "40.1",
+  "description": "Single dose caron [Dimensions: 2.7 x 2.7 x 5.5 cm]",
+  "height": "2.7",
+  "length": "2.7",
+  "width": "5.5",
+  "primaryContainers": "1"
+}

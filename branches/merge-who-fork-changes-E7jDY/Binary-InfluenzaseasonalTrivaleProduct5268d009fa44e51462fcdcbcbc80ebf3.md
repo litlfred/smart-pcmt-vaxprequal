@@ -1,0 +1,64 @@
+# InfluenzaseasonalTrivaleProduct5268d009fa44e51462fcdcbcbc80ebf3 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **InfluenzaseasonalTrivaleProduct5268d009fa44e51462fcdcbcbc80ebf3**
+
+## Binary: InfluenzaseasonalTrivaleProduct5268d009fa44e51462fcdcbcbc80ebf3
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "influenza trivalent vaccine (split virion, inactivated)"
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturerd90d3c2e85175f2d2bde5bd3ff4f83e3"
+  },
+  "doseQuantity": {
+    "value": 10,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "InfluenzaseasonalTrivale"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "Vial"
+      }
+    ]
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

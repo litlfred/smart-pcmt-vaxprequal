@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kxwkYAA"
+  },
+  "documentName": "pq_338_SkyCellflu_10dose_SK_vial%2Bcarton_image",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000061jniYAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

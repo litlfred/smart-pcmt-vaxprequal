@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "description": "Carton of 10 vials (100 doses)[Dimensions: 12.5 x 5.5 x 5.7 cm]",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaaZUAS"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "3.92",
+  "height": "5.5",
+  "length": "12.5",
+  "width": "5.7",
+  "primaryContainers": "10"
+}

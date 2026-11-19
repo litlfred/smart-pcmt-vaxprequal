@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kvjmYAA"
+  },
+  "documentName": "pq_374_sIPV_20%20dose_BIBP_1%20vial%20carton",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000061hdzYAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

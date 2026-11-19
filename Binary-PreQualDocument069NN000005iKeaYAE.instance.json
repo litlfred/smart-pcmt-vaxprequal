@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iKeaYAE"
+  },
+  "documentName": "Container Photo (Bigger Higher Resolution)-pq_165_BCG_10dose_AJVaccines_container_image",
+  "documentType": "Photo",
+  "versionId": "068NN000005z3z6YAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

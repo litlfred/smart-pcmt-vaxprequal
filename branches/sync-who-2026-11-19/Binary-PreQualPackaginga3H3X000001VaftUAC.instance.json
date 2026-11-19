@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaftUAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "3.04",
+  "description": "Carton of 30 vials/300 doses. Dimensions: 14.9 x 12.5 x 4.9 .",
+  "height": "12.5",
+  "length": "14.9",
+  "width": "4.9",
+  "primaryContainers": "30"
+}

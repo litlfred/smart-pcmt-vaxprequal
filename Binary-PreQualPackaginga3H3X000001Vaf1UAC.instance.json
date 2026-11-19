@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vaf1UAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "26.25",
+  "description": "Carton of 1 single dose [Dimensions: 2.5 x 2.5 x 4.2 cm]",
+  "height": "2.5",
+  "length": "2.5",
+  "width": "4.2",
+  "primaryContainers": "1"
+}

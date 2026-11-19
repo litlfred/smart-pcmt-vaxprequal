@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iONGYA2"
+  },
+  "documentName": "Package Insert-pq_191_255_256_TT_liquid_BiolE_PI",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000005z7gAYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

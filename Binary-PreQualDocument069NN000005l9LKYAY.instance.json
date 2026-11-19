@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005l9LKYAY"
+  },
+  "documentName": "General-pq_451_MenFive_5dose_SIIPL_artwork_2023",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN0000061v7SYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VafbUAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Active: Box containing 30 cartons of 50 vials (1500 vials/ 7500 doses)[Dimensions: 58.5 x 47 x 39 cm]",
+  "volume": "58.5 x 47 x 39 cm",
+  "totalDoses": "7500",
+  "totalContainers": "1500"
+}

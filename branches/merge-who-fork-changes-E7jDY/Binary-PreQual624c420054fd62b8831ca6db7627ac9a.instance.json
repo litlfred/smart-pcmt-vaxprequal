@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holdere0e3ed9114ce62feea705c24aceb2ee2"
+  },
+  "validityPeriod": {
+    "start": "1987-01-01"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/HepatitisBProduct624c420054fd62b8831ca6db7627ac9a"
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iJycYAE"
+  },
+  "documentName": "Container Photo-pq_167_Rotateq_1dose_Merck_container_image_580",
+  "documentType": "Photo",
+  "versionId": "068NN000005z3HWYAY",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

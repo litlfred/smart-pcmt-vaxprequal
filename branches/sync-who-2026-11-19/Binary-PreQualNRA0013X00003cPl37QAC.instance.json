@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00003cPl37QAC"
+  },
+  "name": "Therapeutic Goods Administration (Australia)",
+  "country": "Australia",
+  "website": "tga.gov.au",
+  "organizationReference": {
+    "reference": "Organization/Holder0013X00003cPl37QAC"
+  }
+}

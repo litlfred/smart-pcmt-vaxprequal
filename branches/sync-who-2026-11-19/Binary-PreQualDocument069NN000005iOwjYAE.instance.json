@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iOwjYAE"
+  },
+  "documentName": "pq_210_H1N1_1dose_MedImmune_carton%2Bsprayer_image_510",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005z8FeYAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

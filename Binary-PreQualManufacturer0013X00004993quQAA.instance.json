@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00004993quQAA"
+  },
+  "name": "IL-YANG PHARMACEUTICAL CO.  LTD.",
+  "addressLine1": "110  Hagal-ro  Giheung-gu  Yongin-si",
+  "city": "Gyeonggi-do",
+  "country": "Republic of Korea",
+  "postalCode": "446-726",
+  "isoCountryCode": "KOR",
+  "region": "WPRO",
+  "website": "www.ilyang.co.kr/english/main.asp",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X00004993quQAA"
+  }
+}

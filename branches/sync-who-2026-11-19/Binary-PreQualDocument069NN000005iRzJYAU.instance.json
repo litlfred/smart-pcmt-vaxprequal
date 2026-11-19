@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iRzJYAU"
+  },
+  "documentName": "General-pq_187_mOPV1_20dose_Haffkine_label_artwork",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000005zB5JYAU",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

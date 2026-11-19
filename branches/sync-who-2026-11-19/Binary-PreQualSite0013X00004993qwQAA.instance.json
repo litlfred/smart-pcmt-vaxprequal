@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00004993qwQAA"
+  },
+  "siteOrganizationName": "SK Bioscience Co.  Ltd. (SK)",
+  "addressLine1": "310 Pangyo-ro  Bundang-gu",
+  "city": "Seongnam-si",
+  "state": "Gyeonggi-do",
+  "country": "Republic of Korea",
+  "postalCode": "13494",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

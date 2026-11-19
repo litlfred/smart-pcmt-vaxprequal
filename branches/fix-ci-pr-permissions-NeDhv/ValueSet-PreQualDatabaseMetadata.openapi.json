@@ -1,0 +1,85 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "WHO PreQualification Database Metadata Schema API",
+    "description": "JSON Schema for WHO PreQualification Database Metadata ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-PreQualDatabaseMetadata.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-PreQualDatabaseMetadata",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-PreQualDatabaseMetadata.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-PreQualDatabaseMetadata",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-PreQualDatabaseMetadata.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-PreQualDatabaseMetadata": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.schema.json",
+        "title": "WHO PreQualification Database Metadata Schema",
+        "description": "JSON Schema for WHO PreQualification Database Metadata ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "type": "object",
+        "required": [
+          "system",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "system": {
+            "type": "string",
+            "const": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "FinishedVaccineProduct",
+              "PrequalificationStandard",
+              "Prequalified",
+              "WithdrawnWasPrequalified",
+              "LiquidReadytouse",
+              "Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse",
+              "Intradermal",
+              "Intramuscular",
+              "Intramuscularorsubcutaneous",
+              "Oral",
+              "Subcutaneous",
+              "Secondary",
+              "ShippingContainer",
+              "Tertiary",
+              "ActiveVaccine",
+              "Diluent",
+              "Photo",
+              "PhotoMainImage",
+              "ProductInsert",
+              "VSPAR",
+              "VaccineGeneralDocument",
+              "FVPManufacture",
+              "Accepted",
+              "VxFVP",
+              "Active"
+            ]
+          }
+        },
+        "narrative": "This schema validates Coding-shaped objects for the WHO PreQualification Database Metadata ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.displays.json",
+        "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualDatabaseMetadata",
+        "fhir:version": "0.2.0",
+        "fhir:expansionTimestamp": "2026-03-24T15:03:39+00:00"
+      }
+    }
+  }
+}

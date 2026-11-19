@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "description": "Active: Box containing 4 000 amps. (80 000 doses)[Dimensions: 61 x 76 x 43 cm]",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaaNUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "volume": "61 x 76 x 43 cm",
+  "totalDoses": "80000",
+  "totalContainers": "4000"
+}

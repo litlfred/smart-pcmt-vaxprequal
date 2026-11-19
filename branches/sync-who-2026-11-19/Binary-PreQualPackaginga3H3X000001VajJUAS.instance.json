@@ -1,0 +1,11 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VajJUAS"
+  },
+  "packagingType": "ShippingContainer",
+  "componentPacked": "ActiveVaccine",
+  "totalDoses": "360",
+  "totalContainers": "720 vials"
+}

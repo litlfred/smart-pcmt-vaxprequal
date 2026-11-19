@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p67QAA"
+  },
+  "name": "Federal Agency for Medicines and Health Products  (FAMPH)",
+  "country": "Belgium",
+  "website": "www.fagg-afmps.be",
+  "organizationReference": {
+    "reference": "Organization/Holder0013X0000498p67QAA"
+  }
+}

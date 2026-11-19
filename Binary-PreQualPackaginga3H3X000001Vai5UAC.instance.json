@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vai5UAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Product case containing 144 single dose cartons (144 doses) [Dimensions 38.3 x 19.5 x 17.3 cm]",
+  "volume": "38.3 x 19.5 x 17.3 cm",
+  "totalDoses": "144",
+  "totalContainers": "144"
+}

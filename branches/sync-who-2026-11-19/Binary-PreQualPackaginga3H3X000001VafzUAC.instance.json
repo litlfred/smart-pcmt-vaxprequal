@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VafzUAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box containing 720 vials (3600 doses) [Dimensions: 43 x 53 x 66 cm].",
+  "volume": "43 x 53 x 66 cm.",
+  "totalDoses": "3600",
+  "totalContainers": "720"
+}

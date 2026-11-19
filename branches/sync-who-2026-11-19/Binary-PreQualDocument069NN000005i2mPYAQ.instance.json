@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005i2mPYAQ"
+  },
+  "documentName": "Package Insert-pq_24_25_HeberbiovacHB_CIGB_PI",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005ym6vYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005j0c6YAA"
+  },
+  "documentName": "Package Insert-pq_232_IPV_1dose_AJVaccines_PI-2023",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000005zlNKYAY",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

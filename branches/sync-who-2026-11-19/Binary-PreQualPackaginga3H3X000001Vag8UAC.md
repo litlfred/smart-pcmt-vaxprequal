@@ -1,0 +1,40 @@
+# PreQual Packaging: Carton of 50 vials (500 doses). Dimensions: 4.7 x 9.1 x 17.8 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQual Packaging: Carton of 50 vials (500 doses). Dimensions: 4.7 x 9.1 x 17.8**
+
+## Example Binary: PreQual Packaging: Carton of 50 vials (500 doses). Dimensions: 4.7 x 9.1 x 17.8
+
+This content is an example of the [WHO PreQual Product Packaging](StructureDefinition-PreQualProductPackaging.md) Logical Model and is not a FHIR Resource
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vag8UAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "1.52",
+  "description": "Carton of 50 vials (500 doses). Dimensions: 4.7 x 9.1 x 17.8",
+  "height": "9.1",
+  "length": "4.7",
+  "width": "17.8",
+  "primaryContainers": "50"
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

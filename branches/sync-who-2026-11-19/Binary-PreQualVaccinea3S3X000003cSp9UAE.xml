@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Binary xmlns="http://hl7.org/fhir">
+  <id value="PreQualVaccinea3S3X000003cSp9UAE"/>
+  <contentType value="application/fhir+json"/>
+  <data value="ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGNtdC12YXhwcmVxdWFsL1N0cnVjdHVyZURlZmluaXRpb24vUHJlUXVhbFZhY2NpbmUiLAogICJ2YWNjaW5lSWQiOiB7CiAgICAic3lzdGVtIjogImh0dHBzOi8vZXh0cmFuZXQud2hvLmludC9wcmVxdWFsL2FwaSIsCiAgICAidmFsdWUiOiAiYTNTM1gwMDAwMDNjU3A5VUFFIgogIH0sCiAgImZ1bGxOYW1lIjogIkRpcGh0aGVyaWEsIHRldGFudXMsIChhY2VsbHVsYXIpIHBlcnR1c3NpcywgaGVwYXRpdGlzIGIsIHBvbGlvbXllbGl0aXMgKGluYWN0aXZhdGVkKSBhbmQgSGFlbW9waGlsdXMgaW5mbHVlbnphZSB0eXBlIGIgY29uanVnYXRlIHZhY2NpbmUgKGFkc29yYmVkKSIsCiAgImFiYnJldmlhdGVkTmFtZSI6ICJEVGFQLUhlcEItSVBWLUhpYiIKfQo="/>
+</Binary>

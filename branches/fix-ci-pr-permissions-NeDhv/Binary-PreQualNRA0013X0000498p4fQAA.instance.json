@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4fQAA"
+  },
+  "name": "Central Drugs Standard Control Organization (CDSCO)",
+  "country": "India",
+  "website": "www.cdsco.nic.in",
+  "organizationReference": {
+    "reference": "Organization/Holder0013X0000498p4fQAA"
+  }
+}

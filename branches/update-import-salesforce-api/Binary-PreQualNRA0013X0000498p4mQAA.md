@@ -1,0 +1,38 @@
+# PreQualNRA0013X0000498p4mQAA - SMART Product Catalog v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualNRA0013X0000498p4mQAA**
+
+## Example Binary: PreQualNRA0013X0000498p4mQAA
+
+This content is an example of the [WHO PreQual NRA](StructureDefinition-PreQualNRA.md) Logical Model and is not a FHIR Resource
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4mQAA"
+  },
+  "name": "Pharmaceutical and Medical Devices Agency (PMDA)",
+  "country": "Japan",
+  "website": "https://www.pmda.go.jp/english/",
+  "organizationReference": {
+    "reference": "Organization/Holder0013X0000498p4mQAA"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

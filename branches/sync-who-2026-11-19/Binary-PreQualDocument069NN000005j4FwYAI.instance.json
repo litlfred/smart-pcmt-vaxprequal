@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005j4FwYAI"
+  },
+  "documentName": "Container Photo (Bigger Higher Resolution)-pq_261_H1N1_LAIV_5dose_container_image_NASOVAC",
+  "documentType": "Photo",
+  "versionId": "068NN000005zouiYAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

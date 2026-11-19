@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005j55YYAQ"
+  },
+  "documentName": "pq_256_TT_liquid_10doseBiolE_vial_image",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005zplwYAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

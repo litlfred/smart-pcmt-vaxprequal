@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005hstbYAA"
+  },
+  "documentName": "pq_17_TT_1dose_BioFarma_Unijet-pouch_image",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005ycIyYAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

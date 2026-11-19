@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4TQAQ"
+  },
+  "name": "AstraZeneca Pharmaceuticals LP.",
+  "addressLine1": "AstraZeneca Pharmaceuticals LP  3001 Red Lion Road",
+  "city": "Philadelphia",
+  "country": "United States of America",
+  "postalCode": "PA 19914-1124",
+  "isoCountryCode": "USA",
+  "region": "AMRO",
+  "website": "https://www.astrazeneca.com/",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X0000498p4TQAQ"
+  }
+}

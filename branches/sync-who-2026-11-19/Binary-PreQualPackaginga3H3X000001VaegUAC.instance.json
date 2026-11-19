@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaegUAC"
+  },
+  "packagingType": "ShippingContainer",
+  "componentPacked": "ActiveVaccine",
+  "volume": "120 x 100 x 160 cm",
+  "totalDoses": "30720",
+  "totalContainers": "30720 vials"
+}

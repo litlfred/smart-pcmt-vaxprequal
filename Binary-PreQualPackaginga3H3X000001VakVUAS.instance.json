@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VakVUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Inner carton of 800 vials (13600 doses) [Dimensions: 38.9 x 24.4 x 24.7 cm]",
+  "volume": "38.9 x 24.4 x 24.7 cm",
+  "totalDoses": "13600",
+  "totalContainers": "800"
+}

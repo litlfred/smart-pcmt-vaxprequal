@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iH8nYAE"
+  },
+  "documentName": "pq_139_MR_2dose_SII_vial%26ampoule_image-2022",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005z0LGYAY",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

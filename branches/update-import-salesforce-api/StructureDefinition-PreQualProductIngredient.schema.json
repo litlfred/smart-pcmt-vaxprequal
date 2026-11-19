@@ -1,0 +1,60 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/base/StructureDefinition-PreQualProductIngredient.schema.json",
+  "title": "WHO PreQual Product Ingredient",
+  "description": "Logical model for product ingredient details\nfrom the WHO PreQual API (ProductIngredients).",
+  "type": "object",
+  "properties": {
+    "resourceType": {
+      "type": "string",
+      "const": "PreQualProductIngredient",
+      "description": "Resource type identifier for PreQualProductIngredient logical model"
+    },
+    "ingredientId": {
+      "type": "object",
+      "description": "Ingredient ID"
+    },
+    "ingredientType": {
+      "type": "string",
+      "description": "Ingredient type code from PreQualDatabaseMetadata (e.g. VxFVP)"
+    },
+    "unit": {
+      "type": "string",
+      "description": "Measurement unit"
+    },
+    "product": {
+      "type": "string",
+      "description": "Product reference ID"
+    },
+    "productComponentType": {
+      "type": "string",
+      "description": "Product component type code from PreQualDatabaseMetadata (e.g. Diluent)"
+    },
+    "function": {
+      "type": "string",
+      "description": "Ingredient function"
+    }
+  },
+  "required": [
+    "resourceType"
+  ],
+  "allOf": [
+    {
+      "$ref": "./StructureDefinition-FHIRSchemaBase.schema.json"
+    },
+    {
+      "type": "object",
+      "properties": {
+        "resourceDefinition": {
+          "type": "string",
+          "format": "uri",
+          "const": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"
+        },
+        "fhir:parent": {
+          "type": "string",
+          "const": "http://hl7.org/fhir/StructureDefinition/Base"
+        }
+      }
+    }
+  ]
+}

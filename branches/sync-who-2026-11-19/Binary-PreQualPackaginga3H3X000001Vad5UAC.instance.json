@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vad5UAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box of 24 cartons of 36 vials (864 vials/ 4320 doses)[Dimensions: 57 x 46 x 37.5 cm]",
+  "volume": "57 x 46 x 37.5 cm",
+  "totalDoses": "4320",
+  "totalContainers": "864"
+}

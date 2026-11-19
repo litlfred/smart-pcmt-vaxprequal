@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005j1ICYAY"
+  },
+  "documentName": "Package Insert-pq_274_menactra_1dose_SP_PI_Eng_Spa",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000005zm0DYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

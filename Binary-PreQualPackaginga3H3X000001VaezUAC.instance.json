@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaezUAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Active: Box containing 300 single dose vials (300 doses)[Dimensions: 63.5 x 44.6 x 34 cm]",
+  "volume": "63.5 x 44.6 x 34 cm",
+  "totalDoses": "300",
+  "totalContainers": "300"
+}

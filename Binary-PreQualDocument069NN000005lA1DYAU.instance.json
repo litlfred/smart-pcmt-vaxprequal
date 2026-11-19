@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005lA1DYAU"
+  },
+  "documentName": "Package Insert-pq_353_HepB_TMF_1dose_LG_PI-2020_UNICEF",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000061voxYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

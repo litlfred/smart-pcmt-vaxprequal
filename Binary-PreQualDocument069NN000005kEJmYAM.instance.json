@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kEJmYAM"
+  },
+  "documentName": "Package Insert-pq_310_Nimenrix_1dose_Pfz_PI-082022",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000060z09YAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

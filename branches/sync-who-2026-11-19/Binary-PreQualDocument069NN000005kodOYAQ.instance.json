@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kodOYAQ"
+  },
+  "documentName": "Container Photo-pq_315_Euvichol-Plus_1dose_EuBiol_tube_image",
+  "documentType": "Photo",
+  "versionId": "068NN0000061aR9YAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

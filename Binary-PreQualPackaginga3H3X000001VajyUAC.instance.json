@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VajyUAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box 20 cartons (2000 doses) [Dimensions 24.3 x 21.7 x 10.8]",
+  "volume": "24.3 x 21.7 x 10.8",
+  "totalDoses": "2000",
+  "totalContainers": "200"
+}

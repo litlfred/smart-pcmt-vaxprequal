@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VahvUAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box containing 20 cartons of 10 monodose tubes (200 tubes) [Dimensions: 39.7 x 30.5 x 14.8 cm]",
+  "volume": "39.7 x 30.5 x 14.8 cm",
+  "totalDoses": "200",
+  "totalContainers": "200"
+}

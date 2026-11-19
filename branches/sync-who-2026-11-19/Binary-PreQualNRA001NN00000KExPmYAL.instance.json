@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "001NN00000KExPmYAL"
+  },
+  "name": "Heath Canada - PQ",
+  "country": "Canada",
+  "organizationReference": {
+    "reference": "Organization/Holder001NN00000KExPmYAL"
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005l6QUYAY"
+  },
+  "documentName": "Package Insert-pq_367_368_Rotavac5D_BBIL_PI-2023",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000061sB0YAI",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

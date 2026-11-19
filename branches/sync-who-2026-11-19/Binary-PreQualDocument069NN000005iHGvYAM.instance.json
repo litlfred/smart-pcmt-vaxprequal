@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iHGvYAM"
+  },
+  "documentName": "Container Photo-pq_152_Rubella_5dose_SIIPL_vial%26ampoule_image-2022",
+  "documentType": "Photo",
+  "versionId": "068NN000005z0TOYAY",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kIBxYAM"
+  },
+  "documentName": "pq_286_DTP_HepB_Hib_liquid_5dose_BiolE_vial_image_580",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN00000612ltYAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

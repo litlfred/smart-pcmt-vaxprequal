@@ -1,0 +1,64 @@
+# PreQualDB844b4cd71587aa7b05205985fadc54bf - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDB844b4cd71587aa7b05205985fadc54bf**
+
+## Binary: PreQualDB844b4cd71587aa7b05205985fadc54bf
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2011-07-06",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "DiphtheriaTetanusreduced",
+        "display": "Diphtheria-Tetanus (reduced antigen content)"
+      }
+    ]
+  },
+  "commercialName": "none",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "PT Bio Farma (Persero)"
+  },
+  "responsibleNRA": {
+    "text": "National Agency of Drug and Food Control Indonesia"
+  },
+  "index": {
+    "value": "844b4cd71587aa7b05205985fadc54bf"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer3ad507e03b3c8420f83f895f7122255f"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder9899e21a11ed6ac7b548ef6171579c60"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/DiphtheriaTetanusreducedProduct844b4cd71587aa7b05205985fadc54bf"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

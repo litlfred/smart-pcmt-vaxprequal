@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4OQAQ"
+  },
+  "name": "Seqirus GmbH",
+  "addressLine1": "Stefan-George-Ring 23",
+  "city": "München",
+  "country": "Germany",
+  "postalCode": "81929",
+  "isoCountryCode": "DEU",
+  "region": "EURO",
+  "website": "www.seqirus.de",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X0000498p4OQAQ"
+  }
+}

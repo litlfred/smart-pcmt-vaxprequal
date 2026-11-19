@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vag0UAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "0.76",
+  "description": "Carton of 50 vials (1000 doses) [Dimensions: 4.7 x 9.1 x 17.8 cm]",
+  "height": "9.1",
+  "length": "4.7",
+  "width": "17.8",
+  "primaryContainers": "50"
+}

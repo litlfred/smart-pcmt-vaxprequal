@@ -1,0 +1,72 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "productType": "FinishedVaccineProduct",
+  "dateOfPrequal": "2025-09-25",
+  "status": "Prequalified",
+  "pharmaceuticalForm": "LiquidReadytouse",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3KVj000000Wv1ZMAS"
+  },
+  "productName": "FVP-P-491",
+  "vaccineFullName": "Inactivated oral cholera vaccine",
+  "vaccineAbbreviatedName": "OCV",
+  "vaccineCommercialName": "Shanchol",
+  "vaccineType": {
+    "coding": [
+      {
+        "system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
+        "code": "OCV",
+        "display": "Inactivated oral cholera vaccine"
+      }
+    ]
+  },
+  "vaccineTypeId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSpVUAU"
+  },
+  "routeOfAdministration": "Oral",
+  "vialMonitor": "Type 30",
+  "applicantId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "001Vj00000kQmGGIA0"
+  },
+  "applicantName": "Shantha Biologics Private Limited",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4fQAA"
+  },
+  "nraName": "Central Drugs Standard Control Organization",
+  "nraCountry": "India",
+  "shelfLife": "30 months",
+  "storageTemperature": "2 - 8°C",
+  "lastPublishingDate": "2026-10-08",
+  "publishingRemarks": "Shanchol vaccine can be used in a controlled temperature chain (CTC) for up to fourteen (14) days at ambient temperatures not exceeding 40°C.  A CTC is initiated immediately prior to administration provided that the vaccine has not reached its expiry date and the vaccine vial monitor is still valid. Unopened vaccine vials should be discarded at the end of the fourteen (14) days at 40°C.  WHO recommends that CTC implementation only occur with appropriate planning training and guidance.  For more information, please contact vaccines@who.int",
+  "preservative": "Thiomersal",
+  "preservativeConcentration": "> 0.02% v/w",
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer001Vj00000kQmGGIA0"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder0013X0000498p4fQAA"
+  },
+  "manufacturerLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer/PreQualManufacturer001Vj00000kQmGGIA0"
+  },
+  "nraLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA/PreQualNRA0013X0000498p4fQAA"
+  },
+  "vaccineLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine/PreQualVaccinea3S3X000003cSpVUAU"
+  }
+}

@@ -1,0 +1,36 @@
+# PreQual Packaging: Diluent: Box containing 175 cartons of 20 ampoules (70 000 doses/ 3500 ampoules)[Dimensions: 46 x 31 x 33 cm] - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQual Packaging: Diluent: Box containing 175 cartons of 20 ampoules (70 000 doses/ 3500 ampoules)[Dimensions: 46 x 31 x 33 cm]**
+
+## Binary: PreQual Packaging: Diluent: Box containing 175 cartons of 20 ampoules (70 000 doses/ 3500 ampoules)[Dimensions: 46 x 31 x 33 cm]
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "description": "Diluent: Box containing 175 cartons of 20 ampoules (70 000 doses/ 3500 ampoules)[Dimensions: 46 x 31 x 33 cm]",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vab8UAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "Diluent",
+  "volume": "46 x 31 x 33 cm",
+  "totalDoses": "70000",
+  "totalContainers": "3500"
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

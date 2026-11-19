@@ -1,0 +1,93 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "productType": "FinishedVaccineProduct",
+  "dateOfPrequal": "2010-05-26",
+  "assessmentProcedure": "PrequalificationStandard",
+  "status": "Prequalified",
+  "pharmaceuticalForm": "Lyophilisedactivecomponenttobereconstitutedwithliquidactivecomponentbeforeuse",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "VialAmpoule",
+        "display": "Vial + Ampoule"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006Mil4UAC"
+  },
+  "productName": "FVP-P-194",
+  "vaccineFullName": "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)",
+  "vaccineAbbreviatedName": "DTwP-HepB+Hib",
+  "vaccineCommercialName": "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine",
+  "vaccineType": {
+    "coding": [
+      {
+        "system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
+        "code": "DTwPHepBHib",
+        "display": "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
+      }
+    ]
+  },
+  "vaccineTypeId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSoxUAE"
+  },
+  "routeOfAdministration": "Intramuscular",
+  "vialMonitor": "Type 14",
+  "applicantId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00003cPkzfQAC"
+  },
+  "applicantName": "Serum Institute of India",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4fQAA"
+  },
+  "nraName": "Central Drugs Standard Control Organization (CDSCO)",
+  "nraCountry": "India",
+  "shelfLife": "24 months",
+  "storageTemperature": "2 - 8°C",
+  "diluent": "Liquid active component",
+  "lastPublishingDate": "2024-09-10",
+  "preservative": "Thiomersal",
+  "preservativeConcentration": "0.01%",
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer0013X00003cPkzfQAC"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder0013X0000498p4fQAA"
+  },
+  "manufacturerLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer/PreQualManufacturer0013X00003cPkzfQAC"
+  },
+  "nraLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA/PreQualNRA0013X0000498p4fQAA"
+  },
+  "vaccineLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine/PreQualVaccinea3S3X000003cSoxUAE"
+  },
+  "packagingLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging/PreQualPackaginga3H3X000001VaiAUAS"
+    }
+  ],
+  "documentLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail/PreQualDocument069NN000005iQP7YAM"
+    }
+  ],
+  "siteLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail/PreQualSite0013X00003cPkzfQAC"
+    }
+  ],
+  "ingredientLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient/PreQualIngredienta3K3X000006Mil4UACIng7"
+    }
+  ]
+}

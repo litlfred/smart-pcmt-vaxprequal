@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4cQAA"
+  },
+  "name": "Centro para el Control Estatal de la Calidad de los Medicamentos (CECMED)",
+  "country": "Cuba",
+  "website": "www.cecmed.sld.cu",
+  "organizationReference": {
+    "reference": "Organization/Holder0013X0000498p4cQAA"
+  }
+}

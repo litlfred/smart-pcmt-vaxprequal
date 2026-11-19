@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VagdUAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "Diluent",
+  "coldChainVolume": "14.16",
+  "description": "Diluent:Carton of 50 vials (50 doses). [Dimensions: 17.9 x 9.2 x 4.3 cm]",
+  "height": "9.2",
+  "length": "17.9",
+  "width": "4.3",
+  "primaryContainers": "50"
+}

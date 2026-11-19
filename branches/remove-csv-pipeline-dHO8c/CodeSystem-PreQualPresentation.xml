@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="PreQualPresentation"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem PreQualPresentation</b></p><a name="PreQualPresentation"> </a><a name="hcPreQualPresentation"> </a><p>This  code system <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">Ampoule<a name="PreQualPresentation-Ampoule"> </a></td><td>Ampoule</td></tr><tr><td style="white-space:nowrap">Plastictube<a name="PreQualPresentation-Plastictube"> </a></td><td>Plastic tube</td></tr><tr><td style="white-space:nowrap">Twovialsetactiveexcipient<a name="PreQualPresentation-Twovialsetactiveexcipient"> </a></td><td>Two vial set (active + excipient)</td></tr><tr><td style="white-space:nowrap">Vial<a name="PreQualPresentation-Vial"> </a></td><td>Vial</td></tr></table></div>
+  </text>
+  <url value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualPresentation"/>
+  <version value="0.2.0"/>
+  <name value="PreQualPresentation"/>
+  <title value="WHO PreQualificaiton Vaccine Presentations"/>
+  <status value="draft"/>
+  <date value="2026-03-24T14:17:08+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="WHO PreQualificaiton Vaccine Presentations"/>
+  <content value="complete"/>
+  <count value="4"/>
+  <concept>
+    <code value="Ampoule"/>
+    <display value="Ampoule"/>
+  </concept>
+  <concept>
+    <code value="Plastictube"/>
+    <display value="Plastic tube"/>
+  </concept>
+  <concept>
+    <code value="Twovialsetactiveexcipient"/>
+    <display value="Two vial set (active + excipient)"/>
+  </concept>
+  <concept>
+    <code value="Vial"/>
+    <display value="Vial"/>
+  </concept>
+</CodeSystem>

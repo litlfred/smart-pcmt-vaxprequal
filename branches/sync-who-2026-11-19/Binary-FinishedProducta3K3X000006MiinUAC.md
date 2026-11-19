@@ -1,0 +1,101 @@
+# PreQual Product: IMOVAX POLIO - IPV - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQual Product: IMOVAX POLIO - IPV**
+
+## Example Binary: PreQual Product: IMOVAX POLIO - IPV
+
+This content is an example of the [WHO Vaccine PreQual DB - Finished Vaccine Products](StructureDefinition-FinishedVaccineProducts.md) Logical Model and is not a FHIR Resource
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "productType": "FinishedVaccineProduct",
+  "dateOfPrequal": "2005-12-09",
+  "assessmentProcedure": "PrequalificationStandard",
+  "status": "Prequalified",
+  "pharmaceuticalForm": "LiquidReadytouse",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006MiinUAC"
+  },
+  "productName": "FVP-P-98",
+  "vaccineFullName": "Poliomyelitis vaccine (inactivated)",
+  "vaccineAbbreviatedName": "IPV",
+  "vaccineCommercialName": "IMOVAX POLIO",
+  "vaccineType": {
+    "coding": [
+      {
+        "system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
+        "code": "IPV",
+        "display": "Poliomyelitis vaccine (inactivated)"
+      }
+    ]
+  },
+  "vaccineTypeId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSpeUAE"
+  },
+  "routeOfAdministration": "Intramuscularorsubcutaneous",
+  "vialMonitor": "Type 7",
+  "multidoseVialPolicy": "WHO recommends that opened vials of this vaccine may be used in subsequent immunization sessions (up to 28 days) if the conditions outlined in the WHO Policy Statement are met.",
+  "applicantId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3PQAQ"
+  },
+  "applicantName": "Sanofi Pasteur SA",
+  "shelfLife": "36 months",
+  "storageTemperature": "2 - 8°C",
+  "lastPublishingDate": "2024-09-10",
+  "preservative": "2-phenoxyethanol",
+  "preservativeConcentration": "5 mg/mL",
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer0013X0000498p3PQAQ"
+  },
+  "manufacturerLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer/PreQualManufacturer0013X0000498p3PQAQ"
+  },
+  "vaccineLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine/PreQualVaccinea3S3X000003cSpeUAE"
+  },
+  "packagingLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging/PreQualPackaginga3H3X000001VacSUAS"
+    }
+  ],
+  "siteLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail/PreQualSite0013X0000498p3PQAQ"
+    }
+  ],
+  "ingredientLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient/PreQualIngredienta3K3X000006MiinUACIng2"
+    }
+  ]
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

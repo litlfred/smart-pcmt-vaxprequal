@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VajoUAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "Diluent",
+  "coldChainVolume": "0.0",
+  "description": "Carton of 10 ampoules of diluent",
+  "primaryContainers": "10"
+}

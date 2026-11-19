@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VadFUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box containing 16 cartons of 10 sprayers (160 sprayers/160 doses)[Dimensions: 35.71 x 25.4 x 11.74 cm]",
+  "volume": "35.71 x 25.4 x 11.74 cm",
+  "totalDoses": "160",
+  "totalContainers": "160"
+}

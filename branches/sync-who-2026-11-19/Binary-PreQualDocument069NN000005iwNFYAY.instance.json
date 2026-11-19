@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iwNFYAY"
+  },
+  "documentName": "Container Photo-pq_245_bopv13_20dose_bharat_biotech_container_image_Nov16",
+  "documentType": "Photo",
+  "versionId": "068NN000005zh8TYAQ",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

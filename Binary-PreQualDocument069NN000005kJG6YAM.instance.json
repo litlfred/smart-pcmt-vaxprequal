@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kJG6YAM"
+  },
+  "documentName": "General-pq_325_bOPV_shipping%20box%20configuration-2023",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN00000613ekYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

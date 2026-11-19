@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kEwOYAU"
+  },
+  "documentName": "pq_298_Euvichol_1dose_Eubiol_vial%26carton_image",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000060zbBYAQ",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

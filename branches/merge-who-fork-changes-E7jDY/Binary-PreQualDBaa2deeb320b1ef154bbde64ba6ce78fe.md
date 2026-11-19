@@ -1,0 +1,64 @@
+# PreQualDBaa2deeb320b1ef154bbde64ba6ce78fe - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDBaa2deeb320b1ef154bbde64ba6ce78fe**
+
+## Binary: PreQualDBaa2deeb320b1ef154bbde64ba6ce78fe
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2024-10-21",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "TyphoidConjugate",
+        "display": "Typhoid (Conjugate)"
+      }
+    ]
+  },
+  "commercialName": "ZyVac®",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 5,
+  "manufacturer": {
+    "text": "Zydus Lifesciences Limited"
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "aa2deeb320b1ef154bbde64ba6ce78fe"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer71815e49a163acdd61581f32aa32c1b8"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/TyphoidConjugateProductaa2deeb320b1ef154bbde64ba6ce78fe"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

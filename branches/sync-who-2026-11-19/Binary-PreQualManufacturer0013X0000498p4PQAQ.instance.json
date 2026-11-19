@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4PQAQ"
+  },
+  "name": "Seqirus Australia Pty Ltd",
+  "addressLine1": "63 Poplar Road",
+  "city": "Parkville Victoria",
+  "country": "Australia",
+  "postalCode": "3052",
+  "isoCountryCode": "AUS",
+  "region": "WPRO",
+  "website": "www.seqirus.com.au",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X0000498p4PQAQ"
+  }
+}

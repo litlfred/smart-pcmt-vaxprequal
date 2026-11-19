@@ -1,0 +1,17 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4VQAQ"
+  },
+  "name": "Sinovac Vaccine Technology Co.  Ltd. (Sinovac (Dalian)",
+  "addressLine1": "No. 36  2nd Life Road  DD port  Economic and Technical Development Zone",
+  "city": "Dalian",
+  "country": "China",
+  "isoCountryCode": "CHN",
+  "region": "WPRO",
+  "website": "www.sinovac.com",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X0000498p4VQAQ"
+  }
+}

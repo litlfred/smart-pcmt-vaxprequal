@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005ksNfYAI"
+  },
+  "documentName": "Package Insert-pq_343_344_345_MR_BiolE_PI-2019",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000061eD3YAI",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

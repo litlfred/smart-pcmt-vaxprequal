@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005hwSWYAY"
+  },
+  "documentName": "Package Insert-pq_15_16_17_TT_BioFarma_PI-2021",
+  "documentType": "Photo",
+  "versionId": "068NN000005yfqGYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

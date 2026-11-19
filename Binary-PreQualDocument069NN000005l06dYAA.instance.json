@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005l06dYAA"
+  },
+  "documentName": "Package Insert-pq_330_331_Rotavirus_SII_PI-PAHO-2021",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000061lw0YAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

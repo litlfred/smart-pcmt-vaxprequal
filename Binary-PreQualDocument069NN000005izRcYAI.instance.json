@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005izRcYAI"
+  },
+  "documentName": "Container Photo (Bigger Higher Resolution)-pq_249_DTP-HepB-HiB_10dose_BiolE_carton%2Bvial_image",
+  "documentType": "Photo",
+  "versionId": "068NN000005zkCsYAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

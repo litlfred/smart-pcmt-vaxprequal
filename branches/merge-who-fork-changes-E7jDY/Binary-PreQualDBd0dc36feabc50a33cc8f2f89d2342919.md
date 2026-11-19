@@ -1,0 +1,64 @@
+# PreQualDBd0dc36feabc50a33cc8f2f89d2342919 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDBd0dc36feabc50a33cc8f2f89d2342919**
+
+## Binary: PreQualDBd0dc36feabc50a33cc8f2f89d2342919
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2003-10-29",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "TetanusToxoid",
+        "display": "Tetanus Toxoid"
+      }
+    ]
+  },
+  "commercialName": "TT vaccine",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Uniject",
+        "display": "Uniject"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "PT Bio Farma (Persero)"
+  },
+  "responsibleNRA": {
+    "text": "National Agency of Drug and Food Control Indonesia"
+  },
+  "index": {
+    "value": "d0dc36feabc50a33cc8f2f89d2342919"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer3ad507e03b3c8420f83f895f7122255f"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder9899e21a11ed6ac7b548ef6171579c60"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/TetanusToxoidProductd0dc36feabc50a33cc8f2f89d2342919"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

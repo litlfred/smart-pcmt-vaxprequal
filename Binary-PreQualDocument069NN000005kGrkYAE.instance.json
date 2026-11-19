@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kGrkYAE"
+  },
+  "documentName": "Package Insert-pq_327_Varicella_1dose_Merck_PI-2023",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000006129DYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

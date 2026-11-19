@@ -1,0 +1,37 @@
+# PreQualDocument069NN000005iLnTYAU - SMART Product Catalog v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDocument069NN000005iLnTYAU**
+
+## Example Binary: PreQualDocument069NN000005iLnTYAU
+
+This content is an example of the [WHO PreQual Document Detail](StructureDefinition-PreQualDocumentDetail.md) Logical Model and is not a FHIR Resource
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iLnTYAU"
+  },
+  "documentName": "Package Insert-pq_146_147_148_149_Measles_SII_PI_UNICEF-2022",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005z539YAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

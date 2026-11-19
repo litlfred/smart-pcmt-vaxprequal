@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3pQAA"
+  },
+  "siteOrganizationName": "Sanofi Healthcare India Private Limited",
+  "addressLine1": "Sanofi house  CTS-117B  L&T Bussiness Park  Saki Vihar Road  Powai",
+  "city": "Mumbai",
+  "state": "Maharashtra",
+  "country": "India",
+  "postalCode": "400072",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

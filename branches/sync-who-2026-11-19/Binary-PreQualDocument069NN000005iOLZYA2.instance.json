@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iOLZYA2"
+  },
+  "documentName": "pq_184_10dose_bOPV_1%263_GSK_container_image-2022",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005z7eTYAQ",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

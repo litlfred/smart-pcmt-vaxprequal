@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vag6UAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box containing 20 \"secondary packaging\" (100 vial/100 doses). Dimensions 31.8 x 15.9 x 15.4 cm.",
+  "volume": "31.8 x 15.9 x 15.4 cm.",
+  "totalDoses": "100",
+  "totalContainers": "100"
+}

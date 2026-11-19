@@ -1,0 +1,6 @@
+{
+  "resourceType" : "Binary",
+  "id" : "FinishedProducta3KNN0000001VJd2AM",
+  "contentType" : "application/fhir+json",
+  "data" : "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGNtdC12YXhwcmVxdWFsL1N0cnVjdHVyZURlZmluaXRpb24vRmluaXNoZWRWYWNjaW5lUHJvZHVjdHMiLAogICJzdGF0dXMiOiAiUmVqZWN0ZWRTY3JlZW5pbmciLAogICJwcm9kdWN0SWQiOiB7CiAgICAic3lzdGVtIjogImh0dHBzOi8vZXh0cmFuZXQud2hvLmludC9wcmVxdWFsL2FwaSIsCiAgICAidmFsdWUiOiAiYTNLTk4wMDAwMDAxVkpkMkFNIgogIH0sCiAgInByb2R1Y3ROYW1lIjogIkZWUC1QLTQ0NSIsCiAgImxhc3RQdWJsaXNoaW5nRGF0ZSI6ICIyMDI0LTA5LTEwIgp9Cg=="
+}

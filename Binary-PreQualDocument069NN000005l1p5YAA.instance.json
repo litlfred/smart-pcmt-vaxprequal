@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005l1p5YAA"
+  },
+  "documentName": "VPSAR (Vaccine Public Summary Assessment Report)-VPSAR%20SK%20bioscience%20SKYVaricella%20Vaccine_Final%203.12.2019_dated",
+  "documentType": "VSPAR",
+  "versionId": "068NN0000061neSYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

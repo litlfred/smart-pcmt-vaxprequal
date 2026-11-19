@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VacGUAS"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccineandDiluent",
+  "coldChainVolume": "50.55",
+  "description": "Carton of 5 vials (active) + 5 ampoules (diluent) [Dimensions: 8.3 x 2.1 x 14.5 cm]",
+  "height": "2.1",
+  "length": "8.3",
+  "width": "14.5",
+  "primaryContainers": "5"
+}

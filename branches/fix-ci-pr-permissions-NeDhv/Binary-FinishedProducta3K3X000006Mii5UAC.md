@@ -1,0 +1,105 @@
+# PreQual Product: HEALIVE - HepA - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQual Product: HEALIVE - HepA**
+
+## Binary: PreQual Product: HEALIVE - HepA
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "productType": "FinishedVaccineProduct",
+  "dateOfPrequal": "2017-12-22",
+  "assessmentProcedure": "PrequalificationStandard",
+  "status": "Prequalified",
+  "pharmaceuticalForm": "LiquidReadytouse",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006Mii5UAC"
+  },
+  "productName": "FVP-P-311",
+  "vaccineFullName": "Hepatitis A vaccine (inactivated)",
+  "vaccineAbbreviatedName": "HepA",
+  "vaccineCommercialName": "HEALIVE",
+  "vaccineTypeId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSpIUAU"
+  },
+  "routeOfAdministration": "Intramuscular",
+  "vialMonitor": "Type 30",
+  "applicantId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3ZQAQ"
+  },
+  "applicantName": "Sinovac Biotech Co. Ltd",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4wQAA"
+  },
+  "nraName": "National Medical Products Administration  (NMPA)",
+  "nraCountry": "China",
+  "shelfLife": "42 months",
+  "storageTemperature": "2 - 8°C",
+  "lastPublishingDate": "2024-09-10",
+  "publishingRemarks": "The pre-filled syringe presentation of this vaccine has not been prequalified by WHO.",
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer0013X0000498p3ZQAQ"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder0013X0000498p4wQAA"
+  },
+  "manufacturerLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer/PreQualManufacturer0013X0000498p3ZQAQ"
+  },
+  "nraLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA/PreQualNRA0013X0000498p4wQAA"
+  },
+  "vaccineLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine/PreQualVaccinea3S3X000003cSpIUAU"
+  },
+  "packagingLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging/PreQualPackaginga3H3X000001VaajUAC"
+    }
+  ],
+  "documentLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail/PreQualDocument069NN000005kHUSYA2"
+    }
+  ],
+  "siteLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail/PreQualSite0013X0000498p3ZQAQ"
+    }
+  ],
+  "ingredientLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient/PreQualIngredienta3K3X000006Mii5UACIng1"
+    }
+  ]
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

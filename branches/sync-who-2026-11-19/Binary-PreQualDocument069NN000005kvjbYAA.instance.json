@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kvjbYAA"
+  },
+  "documentName": "pq_330_Rotavius_1dose_SII_container_image",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000061hdoYAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

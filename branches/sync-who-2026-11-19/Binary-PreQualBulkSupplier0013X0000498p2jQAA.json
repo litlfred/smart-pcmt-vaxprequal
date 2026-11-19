@@ -1,0 +1,6 @@
+{
+  "resourceType" : "Binary",
+  "id" : "PreQualBulkSupplier0013X0000498p2jQAA",
+  "contentType" : "application/fhir+json",
+  "data" : "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGNtdC12YXhwcmVxdWFsL1N0cnVjdHVyZURlZmluaXRpb24vUHJlUXVhbEJ1bGtTdXBwbGllciIsCiAgImJ1bGtTdXBwbGllcklkIjogewogICAgInN5c3RlbSI6ICJodHRwczovL2V4dHJhbmV0Lndoby5pbnQvcHJlcXVhbC9hcGkiLAogICAgInZhbHVlIjogIjAwMTNYMDAwMDQ5OHAyalFBQSIKICB9LAogICJuYW1lIjogIkJ1bCBCaW8tTmF0aW9uYWwgQ2VudGVyIG9mIEluZmVjdGlvdXMgYW5kIFBhcmFzaXRpYyBEaXNlYXNlcyBMdGQuIgp9Cg=="
+}

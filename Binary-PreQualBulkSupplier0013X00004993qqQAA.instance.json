@@ -1,0 +1,8 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualBulkSupplier",
+  "bulkSupplierId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00004993qqQAA"
+  },
+  "name": "Janssen Vaccines Corp."
+}

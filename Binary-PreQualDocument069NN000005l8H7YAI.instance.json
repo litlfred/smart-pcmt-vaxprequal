@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005l8H7YAI"
+  },
+  "documentName": "pq_378_Varicella_1dose_Sinovac_container_image-2022",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000061u3GYAQ",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

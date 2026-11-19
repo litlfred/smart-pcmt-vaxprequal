@@ -1,0 +1,10 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "status": "DecisionPhase",
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3KNN0000001VJc2AM"
+  },
+  "productName": "FVP-P-464",
+  "lastPublishingDate": "2024-09-10"
+}

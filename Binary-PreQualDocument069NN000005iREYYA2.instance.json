@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iREYYA2"
+  },
+  "documentName": "Package Insert-pq_206_H1N1_CSL_PI_Panvax",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000005zAScYAM",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

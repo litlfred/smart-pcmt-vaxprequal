@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "description": "Box of 220 cartons of 10 vials (2 200 doses) [Dimensions: 57.5 x 53.5 x 49.0 cm]",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaaQUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "volume": "57.5 x 53.5 x 49.0 cm",
+  "totalDoses": "2200",
+  "totalContainers": "220"
+}

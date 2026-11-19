@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005ktd8YAA"
+  },
+  "documentName": "Package Insert-pq_333_JE_6%C2%B5g_5dose_BiolE_PI-2018",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000061fVjYAI",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

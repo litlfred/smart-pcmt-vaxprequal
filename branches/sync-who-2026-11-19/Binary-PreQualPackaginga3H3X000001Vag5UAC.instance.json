@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vag5UAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "14.38",
+  "description": "Carton of 5 monodose vials (5 doses). Dimensions: 76 x 22 x 43 mm",
+  "height": "2.2",
+  "length": "7.6",
+  "width": "4.3",
+  "primaryContainers": "1"
+}

@@ -1,0 +1,117 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "WHO PreQualificaiton VaccineType  Schema API",
+    "description": "JSON Schema for WHO PreQualificaiton VaccineType  ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSet-PreQualVaccineType.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSet-PreQualVaccineType",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSet-PreQualVaccineType.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSet-PreQualVaccineType",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSet-PreQualVaccineType.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSet-PreQualVaccineType": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.schema.json",
+        "title": "WHO PreQualificaiton VaccineType  Schema",
+        "description": "JSON Schema for WHO PreQualificaiton VaccineType  ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+        "type": "object",
+        "required": [
+          "system",
+          "code"
+        ],
+        "additionalProperties": false,
+        "properties": {
+          "system": {
+            "type": "string",
+            "const": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"
+          },
+          "code": {
+            "type": "string",
+            "enum": [
+              "BCG",
+              "Covid19",
+              "DengueTetravalentliveattenuated",
+              "DiphtheriaTetanus",
+              "DiphtheriaTetanusreducedantigencontent",
+              "DiphtheriaTetanusPertussisacellular",
+              "DiphtheriaTetanusPertussisacellularHepatitisBHaemophilusinfluenzaetypebPolioInactivated",
+              "DiphtheriaTetanusPertussiswholecell",
+              "DiphtheriaTetanusPertussiswholecellHaemophilusinfluenzaetypeb",
+              "DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypeb",
+              "DiphtheriaTetanusPertussiswholecellHepatitisBHaemophilusinfluenzaetypebPolioInactivated",
+              "EbolaZairerVSVGZEBOVGPliveattenuated",
+              "EbolavaccineAd26ZEBOVGPrecombinant",
+              "EbolavaccineMVABNFilorecombinant",
+              "Haemophilusinfluenzaetypeb",
+              "HepatitisAHumanDiploidCellInactivatedAdult",
+              "HepatitisAHumanDiploidCellInactivatedPaediatric",
+              "HepatitisB",
+              "HepatitisBPaediatric",
+              "HumanPapillomavirusBivalent",
+              "HumanPapillomavirusNinevalent",
+              "HumanPapillomavirusQuadrivalent",
+              "InfluenzaPandemicH1N1",
+              "InfluenzaPandemicH5N1",
+              "InfluenzaseasonalQuadrivalent",
+              "InfluenzaseasonalTrivalent",
+              "JapaneseEncephalitisVaccineInactivated3µgPediatric",
+              "JapaneseEncephalitisVaccineInactivated6µg",
+              "JapaneseEncephalitisVaccineliveattenuated",
+              "Malaria",
+              "Measles",
+              "MeaslesandRubella",
+              "MeaslesMumpsandRubella",
+              "MenigococcalACYWXPolysaccharideconjugate",
+              "MeningococcalAConjugate10µg",
+              "MeningococcalAConjugate5µg",
+              "MeningococcalACYW135conjugatevaccine",
+              "MeningococcalACYW135TetanusToxoidconjugatevaccine",
+              "Pneumococcalconjugate",
+              "PolioVaccineInactivatedIPV",
+              "PolioVaccineInactivatedSabinsIPV",
+              "PolioVaccineNovelOralnOPVType2",
+              "PolioVaccineOralOPVBivalentTypes1and3",
+              "PolioVaccineOralOPVMonovalentType1",
+              "PolioVaccineOralOPVMonovalentType2",
+              "PolioVaccineOralOPVMonovalentType3",
+              "PolioVaccineOralOPVTrivalent",
+              "Rabies",
+              "Rotavirus",
+              "Rotavirusliveattenuated",
+              "Rubella",
+              "SmallpoxandMpoxvaccineLiveModifiedVacciniaVirusAnkara",
+              "TetanusToxoid",
+              "TyphoidConjugate",
+              "Varicella",
+              "YellowFever",
+              "cholerainactivatedoral"
+            ]
+          }
+        },
+        "narrative": "This schema validates Coding-shaped objects for the WHO PreQualificaiton VaccineType  ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+        "fhir:displays": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.displays.json",
+        "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualVaccineType",
+        "fhir:version": "0.2.0",
+        "fhir:expansionTimestamp": "2026-03-23T16:54:53+00:00"
+      }
+    }
+  }
+}

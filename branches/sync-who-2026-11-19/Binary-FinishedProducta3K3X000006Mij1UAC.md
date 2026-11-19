@@ -1,0 +1,117 @@
+# PreQual Product: Monovalent Oral Poliomyelitis Vaccine Type 2 - mOPV2 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQual Product: Monovalent Oral Poliomyelitis Vaccine Type 2 - mOPV2**
+
+## Example Binary: PreQual Product: Monovalent Oral Poliomyelitis Vaccine Type 2 - mOPV2
+
+This content is an example of the [WHO Vaccine PreQual DB - Finished Vaccine Products](StructureDefinition-FinishedVaccineProducts.md) Logical Model and is not a FHIR Resource
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "productType": "FinishedVaccineProduct",
+  "dateOfPrequal": "2019-06-21",
+  "assessmentProcedure": "PrequalificationStandard",
+  "status": "Prequalified",
+  "pharmaceuticalForm": "LiquidReadytouse",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 20,
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006Mij1UAC"
+  },
+  "productName": "FVP-P-358",
+  "vaccineFullName": "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 2)",
+  "vaccineAbbreviatedName": "mOPV2",
+  "vaccineCommercialName": "Monovalent Oral Poliomyelitis Vaccine Type 2",
+  "vaccineType": {
+    "coding": [
+      {
+        "system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
+        "code": "mOPV2",
+        "display": "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 2)"
+      }
+    ]
+  },
+  "vaccineTypeId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSpgUAE"
+  },
+  "routeOfAdministration": "Oral",
+  "vialMonitor": "Type 2",
+  "multidoseVialPolicy": "WHO recommends that opened vials of this vaccine may be used in subsequent immunization sessions (up to 28 days) if the conditions outlined in the WHO Policy Statement are met.",
+  "applicantId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3IQAQ"
+  },
+  "applicantName": "PT Bio Farma (Persero)",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4xQAA"
+  },
+  "nraName": "National Agency of Drug and Food Control Indonesia (NADFCI)",
+  "nraCountry": "Indonesia",
+  "shelfLife": "24 months",
+  "storageTemperature": "-20°C",
+  "lastPublishingDate": "2024-09-10",
+  "publishingRemarks": "Effective date of Prequalification: 21/06/2019.",
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer0013X0000498p3IQAQ"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder0013X0000498p4xQAA"
+  },
+  "manufacturerLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer/PreQualManufacturer0013X0000498p3IQAQ"
+  },
+  "nraLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA/PreQualNRA0013X0000498p4xQAA"
+  },
+  "vaccineLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine/PreQualVaccinea3S3X000003cSpgUAE"
+  },
+  "packagingLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging/PreQualPackaginga3H3X000001Vad1UAC"
+    }
+  ],
+  "documentLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail/PreQualDocument069NN000005kwXbYAI"
+    }
+  ],
+  "siteLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail/PreQualSite0013X0000498p3IQAQ"
+    }
+  ],
+  "ingredientLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient/PreQualIngredienta3K3X000006Mij1UACIng1"
+    }
+  ]
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

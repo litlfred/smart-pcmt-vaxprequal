@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005l2N0YAI"
+  },
+  "documentName": "Package Insert-pq_352_AfluriaTIV_10dose_Seqirus_PI-2019",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000061oCNYAY",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

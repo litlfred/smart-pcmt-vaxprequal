@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005lBgIYAU"
+  },
+  "documentName": "pq_344_MR_5dose_BiolE_vial%26ampoule_imge",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000061xSQYAY",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

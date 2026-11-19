@@ -1,0 +1,19 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00004MjIYkQAN"
+  },
+  "name": "HIPRA HUMAN HEALTH, S.L.U",
+  "addressLine1": "Avda. la Selva. 135",
+  "city": "Amer",
+  "state": "Girona",
+  "country": "Spain",
+  "postalCode": "17170",
+  "isoCountryCode": "ESP",
+  "region": "EURO",
+  "website": "www.hipra.com",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X00004MjIYkQAN"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2012-07-12",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "TetanusToxoid",
+        "display": "Tetanus Toxoid"
+      }
+    ]
+  },
+  "commercialName": "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt.",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "Biological E. Limited"
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "5d2f3b492c9af0f21b268c22a11400c0"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer54a4cbdf74f251158fb034e8f5e1ff5b"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/TetanusToxoidProduct5d2f3b492c9af0f21b268c22a11400c0"
+  }
+}

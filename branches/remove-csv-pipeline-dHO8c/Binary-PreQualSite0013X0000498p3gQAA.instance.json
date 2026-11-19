@@ -1,0 +1,14 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3gQAA"
+  },
+  "siteOrganizationName": "GlaxoSmithKline Biologicals SA",
+  "addressLine1": "20 Avenue Fleming 1300 Wavre  Belgium",
+  "city": "Wavre",
+  "country": "Belgium",
+  "postalCode": "B-1300",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

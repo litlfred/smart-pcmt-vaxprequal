@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005lAPIYA2"
+  },
+  "documentName": "Container Photo-pq_371_HPV2_1dose_Xiamen_vaccine%26carton_image-2021",
+  "documentType": "Photo",
+  "versionId": "068NN0000061wBQYAY",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

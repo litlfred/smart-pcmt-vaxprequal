@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005i1VTYAY"
+  },
+  "documentName": "FVP-P-73-74_BCG_10doses_BB-NCIPB-EAD_vaccine_image-2025",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN00000Gq4nxYAB",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

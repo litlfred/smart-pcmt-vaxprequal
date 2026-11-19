@@ -1,0 +1,64 @@
+# PreQualDBcea74be2c728329aad7b9b33ae16a0b1 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDBcea74be2c728329aad7b9b33ae16a0b1**
+
+## Binary: PreQualDBcea74be2c728329aad7b9b33ae16a0b1
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2009-11-03",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "PolioVaccineOralOPVMonov",
+        "display": "Polio Vaccine - Oral (OPV) Monovalent Type 1"
+      }
+    ]
+  },
+  "commercialName": "Monovalent Oral Poliomyelitis Vaccine Type 1 (mOPV1)",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 20,
+  "manufacturer": {
+    "text": "PT Bio Farma (Persero)"
+  },
+  "responsibleNRA": {
+    "text": "National Agency of Drug and Food Control Indonesia"
+  },
+  "index": {
+    "value": "cea74be2c728329aad7b9b33ae16a0b1"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer3ad507e03b3c8420f83f895f7122255f"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder9899e21a11ed6ac7b548ef6171579c60"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/PolioVaccineOralOPVMonovProductcea74be2c728329aad7b9b33ae16a0b1"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

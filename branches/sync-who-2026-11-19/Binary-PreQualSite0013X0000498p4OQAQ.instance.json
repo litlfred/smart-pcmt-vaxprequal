@@ -1,0 +1,14 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4OQAQ"
+  },
+  "siteOrganizationName": "Seqirus GmbH",
+  "addressLine1": "Stefan-George-Ring 23",
+  "city": "München",
+  "country": "Germany",
+  "postalCode": "81929",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

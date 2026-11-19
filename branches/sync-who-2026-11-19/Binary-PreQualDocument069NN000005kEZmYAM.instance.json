@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kEZmYAM"
+  },
+  "documentName": "General-pq_253_254_DTP-HepB-Hib_BiolE_labels",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN0000060zGAYAY",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

@@ -1,0 +1,14 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4QQAQ"
+  },
+  "siteOrganizationName": "GlaxoSmithKline Vaccines S.r.l.",
+  "addressLine1": "Via Fiorentina 1",
+  "city": "Siena",
+  "country": "Italy",
+  "postalCode": "53100",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

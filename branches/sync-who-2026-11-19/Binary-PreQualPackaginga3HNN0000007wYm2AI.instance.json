@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3HNN0000007wYm2AI"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "7.77",
+  "description": "Carton box containing 10 strips of 5 plastic tubes",
+  "height": "11.0",
+  "length": "6.2",
+  "width": "5.7",
+  "primaryContainers": "50"
+}

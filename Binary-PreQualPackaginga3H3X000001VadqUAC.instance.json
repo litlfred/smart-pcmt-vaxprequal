@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VadqUAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "2.03",
+  "description": "Carton of 24 vials (480 doses) [Dimensions: 15 x 10 x 6.5 cm]",
+  "height": "10.0",
+  "length": "15.0",
+  "width": "6.5",
+  "primaryContainers": "24"
+}

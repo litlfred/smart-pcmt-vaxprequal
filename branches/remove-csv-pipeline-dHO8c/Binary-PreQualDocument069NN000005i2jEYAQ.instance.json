@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005i2jEYAQ"
+  },
+  "documentName": "Package Insert-pq_69_HepB_1dose_LG_PI-2020_PAHO",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005ym3kYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

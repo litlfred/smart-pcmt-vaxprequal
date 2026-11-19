@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005hjgcYAA"
+  },
+  "documentName": "Container Photo (Bigger Higher Resolution)-pq_15_TT_10dose_BioFarma_carton%2Bvial_image",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005yT18YAE",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

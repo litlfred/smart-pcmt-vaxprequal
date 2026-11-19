@@ -1,0 +1,10 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "status": "CancelledAssessment",
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006MiixUAC"
+  },
+  "productName": "FVP-P-391",
+  "lastPublishingDate": "2025-10-03"
+}

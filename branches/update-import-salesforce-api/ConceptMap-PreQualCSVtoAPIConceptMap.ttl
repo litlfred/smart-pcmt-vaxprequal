@@ -1,0 +1,66 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/pcmt-vaxprequal/ConceptMap/PreQualCSVtoAPIConceptMap> a fhir:ConceptMap ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PreQualCSVtoAPIConceptMap"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: ConceptMap PreQualCSVtoAPIConceptMap</b></p><a name=\"PreQualCSVtoAPIConceptMap\"> </a><a name=\"hcPreQualCSVtoAPIConceptMap\"> </a><p>Mapping from <a href=\"CodeSystem-PreQualProductIds.html\">http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</a> to https://extranet.who.int/prequal/api</p><br/><p><b>Group 1 </b>Mapping from <a href=\"CodeSystem-PreQualProductIds.html\">WHO PreQualificaiton Vaccine Product Ids</a> to <code>https://extranet.who.int/prequal/api</code></p><table class=\"grid\"><tr><td><b>Source Code</b></td><td><b>Relationship</b></td><td><b>Target Code</b></td></tr><tr><td>8d4be0b798546e105e856d14b7910ccb (HEALIVE - Sinovac Biotech Co. Ltd)</td><td><a href=\"http://hl7.org/fhir/R5/codesystem-concept-map-relationship.html#equivalent\" title=\"equivalent\">is equivalent to</a></td><td>a3K3X000006Mii5UAC (FVP-P-311)</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [
+     fhir:v "http://smart.who.int/pcmt-vaxprequal/ConceptMap/PreQualCSVtoAPIConceptMap"^^xsd:anyURI ;
+     fhir:l <http://smart.who.int/pcmt-vaxprequal/ConceptMap/PreQualCSVtoAPIConceptMap>
+  ] ; # 
+  fhir:version [ fhir:v "0.1.0"] ; # 
+  fhir:name [ fhir:v "PreQualCSVtoAPIConceptMap"] ; # 
+  fhir:title [ fhir:v "PreQual CSV to Vaccine Product ID Concept Map"] ; # 
+  fhir:status [ fhir:v "draft"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-03-11T13:44:05+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "Maps old CSV export MD5-based identifiers to authoritative vaccine product IDs"] ; # 
+  fhir:sourceScope [
+     a fhir:Uri ;
+     fhir:v "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"^^xsd:anyURI ;
+     fhir:l <http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds>
+  ] ; # 
+  fhir:targetScope [
+     a fhir:Uri ;
+     fhir:v "https://extranet.who.int/prequal/api"^^xsd:anyURI ;
+     fhir:l <https://extranet.who.int/prequal/api>
+  ] ; # 
+  fhir:group ( [
+     fhir:source [
+       fhir:v "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"^^xsd:anyURI ;
+       fhir:l <http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds>
+     ] ;
+     fhir:target [
+       fhir:v "https://extranet.who.int/prequal/api"^^xsd:anyURI ;
+       fhir:l <https://extranet.who.int/prequal/api>
+     ] ;
+     fhir:element ( [
+       fhir:code [ fhir:v "8d4be0b798546e105e856d14b7910ccb" ] ;
+       fhir:display [ fhir:v "HEALIVE - Sinovac Biotech Co. Ltd" ] ;
+       fhir:target ( [
+         fhir:code [ fhir:v "a3K3X000006Mii5UAC" ] ;
+         fhir:display [ fhir:v "FVP-P-311" ] ;
+         fhir:relationship [ fhir:v "equivalent" ]
+       ] )
+     ] )
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

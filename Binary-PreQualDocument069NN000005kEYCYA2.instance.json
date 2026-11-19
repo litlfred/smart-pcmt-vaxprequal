@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kEYCYA2"
+  },
+  "documentName": "pq_329_Seasonal_Flu_1dose_Il-Yang_vial%26carton_image",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000060zEZYAY",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

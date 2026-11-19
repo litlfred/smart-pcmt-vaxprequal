@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vac4UAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box of 78 cartons of 10 vials (780 vials/7800 doses) [Dimensions: 45 x 29.5 x 23.5 cm]",
+  "volume": "45 x 29.5 x 23.5 cm",
+  "totalDoses": "7800",
+  "totalContainers": "780"
+}

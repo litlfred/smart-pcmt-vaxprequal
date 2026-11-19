@@ -1,0 +1,64 @@
+# PreQualDBb62fbc87532804be42afa8d9050ef452 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDBb62fbc87532804be42afa8d9050ef452**
+
+## Binary: PreQualDBb62fbc87532804be42afa8d9050ef452
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2021-11-16",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "PolioVaccineOralOPVBival",
+        "display": "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+      }
+    ]
+  },
+  "commercialName": "Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine, Live (Oral)",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "Panacea Biotec Ltd."
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "b62fbc87532804be42afa8d9050ef452"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturerfea9c0b58ceb56b0d925a05e74377afb"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/PolioVaccineOralOPVBivalProductb62fbc87532804be42afa8d9050ef452"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

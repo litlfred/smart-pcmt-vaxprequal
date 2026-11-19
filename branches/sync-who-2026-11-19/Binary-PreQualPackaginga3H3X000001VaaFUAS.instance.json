@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaaFUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box of 68 cartons (680 doses) [Dimensions: 34.2 x 25.1 x 43.1 cm]",
+  "volume": "34.2 x 25.1 x 43.1 cm",
+  "totalDoses": "680",
+  "totalContainers": "680"
+}

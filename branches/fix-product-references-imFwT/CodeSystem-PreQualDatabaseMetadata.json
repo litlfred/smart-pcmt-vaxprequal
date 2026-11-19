@@ -1,0 +1,127 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "PreQualDatabaseMetadata",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PreQualDatabaseMetadata</b></p><a name=\"PreQualDatabaseMetadata\"> </a><a name=\"hcPreQualDatabaseMetadata\"> </a><p>This case-sensitive code system <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">FinishedVaccineProduct<a name=\"PreQualDatabaseMetadata-FinishedVaccineProduct\"> </a></td><td>Finished Vaccine Product</td></tr><tr><td style=\"white-space:nowrap\">PrequalificationStandard<a name=\"PreQualDatabaseMetadata-PrequalificationStandard\"> </a></td><td>Prequalification - Standard</td></tr><tr><td style=\"white-space:nowrap\">Prequalified<a name=\"PreQualDatabaseMetadata-Prequalified\"> </a></td><td>Prequalified</td></tr><tr><td style=\"white-space:nowrap\">WithdrawnWasPrequalified<a name=\"PreQualDatabaseMetadata-WithdrawnWasPrequalified\"> </a></td><td>Withdrawn: Was Prequalified</td></tr><tr><td style=\"white-space:nowrap\">LiquidReadytouse<a name=\"PreQualDatabaseMetadata-LiquidReadytouse\"> </a></td><td>Liquid: Ready to use</td></tr><tr><td style=\"white-space:nowrap\">Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse<a name=\"PreQualDatabaseMetadata-Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse\"> </a></td><td>Lyophilised active component to be reconstituted with excipient diluent before use</td></tr><tr><td style=\"white-space:nowrap\">Intradermal<a name=\"PreQualDatabaseMetadata-Intradermal\"> </a></td><td>Intradermal</td></tr><tr><td style=\"white-space:nowrap\">Intramuscular<a name=\"PreQualDatabaseMetadata-Intramuscular\"> </a></td><td>Intramuscular</td></tr><tr><td style=\"white-space:nowrap\">Intramuscularorsubcutaneous<a name=\"PreQualDatabaseMetadata-Intramuscularorsubcutaneous\"> </a></td><td>Intramuscular or subcutaneous</td></tr><tr><td style=\"white-space:nowrap\">Oral<a name=\"PreQualDatabaseMetadata-Oral\"> </a></td><td>Oral</td></tr><tr><td style=\"white-space:nowrap\">Subcutaneous<a name=\"PreQualDatabaseMetadata-Subcutaneous\"> </a></td><td>Subcutaneous</td></tr><tr><td style=\"white-space:nowrap\">Secondary<a name=\"PreQualDatabaseMetadata-Secondary\"> </a></td><td>Secondary</td></tr><tr><td style=\"white-space:nowrap\">ShippingContainer<a name=\"PreQualDatabaseMetadata-ShippingContainer\"> </a></td><td>Shipping Container</td></tr><tr><td style=\"white-space:nowrap\">Tertiary<a name=\"PreQualDatabaseMetadata-Tertiary\"> </a></td><td>Tertiary</td></tr><tr><td style=\"white-space:nowrap\">ActiveVaccine<a name=\"PreQualDatabaseMetadata-ActiveVaccine\"> </a></td><td>Active (Vaccine)</td></tr><tr><td style=\"white-space:nowrap\">Diluent<a name=\"PreQualDatabaseMetadata-Diluent\"> </a></td><td>Diluent</td></tr><tr><td style=\"white-space:nowrap\">Photo<a name=\"PreQualDatabaseMetadata-Photo\"> </a></td><td>Photo</td></tr><tr><td style=\"white-space:nowrap\">PhotoMainImage<a name=\"PreQualDatabaseMetadata-PhotoMainImage\"> </a></td><td>Photo-Main Image</td></tr><tr><td style=\"white-space:nowrap\">ProductInsert<a name=\"PreQualDatabaseMetadata-ProductInsert\"> </a></td><td>Product Insert</td></tr><tr><td style=\"white-space:nowrap\">VSPAR<a name=\"PreQualDatabaseMetadata-VSPAR\"> </a></td><td>VSPAR</td></tr><tr><td style=\"white-space:nowrap\">VaccineGeneralDocument<a name=\"PreQualDatabaseMetadata-VaccineGeneralDocument\"> </a></td><td>Vaccine General Document</td></tr><tr><td style=\"white-space:nowrap\">FVPManufacture<a name=\"PreQualDatabaseMetadata-FVPManufacture\"> </a></td><td>FVP Manufacture</td></tr><tr><td style=\"white-space:nowrap\">Accepted<a name=\"PreQualDatabaseMetadata-Accepted\"> </a></td><td>Accepted</td></tr><tr><td style=\"white-space:nowrap\">VxFVP<a name=\"PreQualDatabaseMetadata-VxFVP\"> </a></td><td>Vx FVP</td></tr><tr><td style=\"white-space:nowrap\">Active<a name=\"PreQualDatabaseMetadata-Active\"> </a></td><td>Active</td></tr></table></div>"
+  },
+  "url" : "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata",
+  "version" : "0.1.0",
+  "name" : "PreQualDatabaseMetadata",
+  "title" : "WHO PreQualification Database Metadata",
+  "status" : "active",
+  "experimental" : true,
+  "date" : "2026-03-19T19:07:29+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "Coded metadata values from the WHO PreQualification database",
+  "caseSensitive" : true,
+  "content" : "complete",
+  "count" : 25,
+  "concept" : [{
+    "code" : "FinishedVaccineProduct",
+    "display" : "Finished Vaccine Product"
+  },
+  {
+    "code" : "PrequalificationStandard",
+    "display" : "Prequalification - Standard"
+  },
+  {
+    "code" : "Prequalified",
+    "display" : "Prequalified"
+  },
+  {
+    "code" : "WithdrawnWasPrequalified",
+    "display" : "Withdrawn: Was Prequalified"
+  },
+  {
+    "code" : "LiquidReadytouse",
+    "display" : "Liquid: Ready to use"
+  },
+  {
+    "code" : "Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse",
+    "display" : "Lyophilised active component to be reconstituted with excipient diluent before use"
+  },
+  {
+    "code" : "Intradermal",
+    "display" : "Intradermal"
+  },
+  {
+    "code" : "Intramuscular",
+    "display" : "Intramuscular"
+  },
+  {
+    "code" : "Intramuscularorsubcutaneous",
+    "display" : "Intramuscular or subcutaneous"
+  },
+  {
+    "code" : "Oral",
+    "display" : "Oral"
+  },
+  {
+    "code" : "Subcutaneous",
+    "display" : "Subcutaneous"
+  },
+  {
+    "code" : "Secondary",
+    "display" : "Secondary"
+  },
+  {
+    "code" : "ShippingContainer",
+    "display" : "Shipping Container"
+  },
+  {
+    "code" : "Tertiary",
+    "display" : "Tertiary"
+  },
+  {
+    "code" : "ActiveVaccine",
+    "display" : "Active (Vaccine)"
+  },
+  {
+    "code" : "Diluent",
+    "display" : "Diluent"
+  },
+  {
+    "code" : "Photo",
+    "display" : "Photo"
+  },
+  {
+    "code" : "PhotoMainImage",
+    "display" : "Photo-Main Image"
+  },
+  {
+    "code" : "ProductInsert",
+    "display" : "Product Insert"
+  },
+  {
+    "code" : "VSPAR",
+    "display" : "VSPAR"
+  },
+  {
+    "code" : "VaccineGeneralDocument",
+    "display" : "Vaccine General Document"
+  },
+  {
+    "code" : "FVPManufacture",
+    "display" : "FVP Manufacture"
+  },
+  {
+    "code" : "Accepted",
+    "display" : "Accepted"
+  },
+  {
+    "code" : "VxFVP",
+    "display" : "Vx FVP"
+  },
+  {
+    "code" : "Active",
+    "display" : "Active"
+  }]
+}

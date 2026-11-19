@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005lFdRYAU"
+  },
+  "documentName": "pq_355_Rota_thermo_2dose_SIIPL_PI_container_image",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN00000621RBYAY",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

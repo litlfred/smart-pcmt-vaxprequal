@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00004993qnQAA"
+  },
+  "name": "LG Chem Ltd (LGC)",
+  "addressLine1": "LG Twin Towers  128  Yeoui-daero  Yeongdeungpo-gu",
+  "city": "Seoul",
+  "country": "Republic of Korea",
+  "postalCode": "7336",
+  "isoCountryCode": "KOR",
+  "region": "WPRO",
+  "website": "http://www.lgchem.com/",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X00004993qnQAA"
+  }
+}

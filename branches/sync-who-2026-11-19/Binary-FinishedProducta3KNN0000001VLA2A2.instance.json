@@ -1,0 +1,10 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "status": "UnderAssessment",
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3KNN0000001VLA2A2"
+  },
+  "productName": "FVP-P-426",
+  "lastPublishingDate": "2024-09-10"
+}

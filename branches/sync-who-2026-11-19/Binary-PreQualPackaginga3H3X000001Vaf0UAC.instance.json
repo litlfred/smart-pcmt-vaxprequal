@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vaf0UAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "Diluent",
+  "description": "Diluent: Box containing 300 ampoules (300 doses) [Dimensions: 20 x 13.2 x 14 cm]",
+  "volume": "20 x 13.2 x 14 cm",
+  "totalDoses": "300",
+  "totalContainers": "300"
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kwMIYAY"
+  },
+  "documentName": "pq_336_Rabies_1dose_SII_vial%26ampoule_image",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000061iEtYAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

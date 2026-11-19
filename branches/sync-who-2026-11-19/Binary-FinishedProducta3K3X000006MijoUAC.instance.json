@@ -1,0 +1,86 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "productType": "FinishedVaccineProduct",
+  "assessmentProcedure": "PrequalificationStandard",
+  "status": "Prequalified",
+  "pharmaceuticalForm": "Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006MijoUAC"
+  },
+  "productName": "FVP-P-330",
+  "vaccineFullName": "Rabies vaccine for human use",
+  "vaccineAbbreviatedName": "Rabies",
+  "vaccineCommercialName": "VaxiRab N",
+  "vaccineType": {
+    "coding": [
+      {
+        "system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
+        "code": "Rabies",
+        "display": "Rabies vaccine for human use"
+      }
+    ]
+  },
+  "vaccineTypeId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSppUAE"
+  },
+  "routeOfAdministration": "Intramuscular",
+  "vialMonitor": "Type 30",
+  "applicantId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00004CGPAwQAP"
+  },
+  "applicantName": "Zydus Lifescience Limited",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4fQAA"
+  },
+  "nraName": "Central Drugs Standard Control Organization (CDSCO)",
+  "nraCountry": "India",
+  "shelfLife": "36 months",
+  "storageTemperature": "2 - 8°C",
+  "diluent": "Water for injection",
+  "lastPublishingDate": "2024-09-10",
+  "publishingRemarks": "VaxiRab N can also be administered intradermally. Please refer to the Product Insert (PI).",
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer0013X00004CGPAwQAP"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder0013X0000498p4fQAA"
+  },
+  "manufacturerLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer/PreQualManufacturer0013X00004CGPAwQAP"
+  },
+  "nraLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA/PreQualNRA0013X0000498p4fQAA"
+  },
+  "vaccineLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine/PreQualVaccinea3S3X000003cSppUAE"
+  },
+  "packagingLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging/PreQualPackaginga3H3X000001Vaf0UAC"
+    }
+  ],
+  "siteLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail/PreQualSite0013X00003cPkgfQAC"
+    }
+  ],
+  "ingredientLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient/PreQualIngredienta3K3X000006MijoUACIng2"
+    }
+  ]
+}

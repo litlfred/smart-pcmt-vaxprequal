@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VajjUAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "5.99",
+  "description": "Carton of 10 ampoules (50 doses) [Dimensions: 9.0 x 3.5 x 9.5 cm]",
+  "height": "3.5",
+  "length": "9.0",
+  "width": "9.5",
+  "primaryContainers": "10"
+}

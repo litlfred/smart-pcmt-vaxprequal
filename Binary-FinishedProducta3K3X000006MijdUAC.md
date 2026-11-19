@@ -1,0 +1,110 @@
+# PreQual Product: Gardasil 9 - HPV - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQual Product: Gardasil 9 - HPV**
+
+## Example Binary: PreQual Product: Gardasil 9 - HPV
+
+This content is an example of the [WHO Vaccine PreQual DB - Finished Vaccine Products](StructureDefinition-FinishedVaccineProducts.md) Logical Model and is not a FHIR Resource
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "productType": "FinishedVaccineProduct",
+  "dateOfPrequal": "2018-02-09",
+  "assessmentProcedure": "PrequalificationStandard",
+  "status": "Prequalified",
+  "pharmaceuticalForm": "LiquidReadytouse",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006MijdUAC"
+  },
+  "productName": "FVP-P-306",
+  "vaccineFullName": "Recombinant human papillomavirus virus-like particle vaccine (types 6,11,16,18,31,33,45,52,58)",
+  "vaccineAbbreviatedName": "HPV",
+  "vaccineCommercialName": "Gardasil 9",
+  "vaccineType": {
+    "coding": [
+      {
+        "system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
+        "code": "HPV",
+        "display": "Recombinant human papillomavirus virus-like particle vaccine (types 6,11,16,18,31,33,45,52,58)"
+      }
+    ]
+  },
+  "vaccineTypeId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSpmUAE"
+  },
+  "routeOfAdministration": "Intramuscular",
+  "applicantId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p39QAA"
+  },
+  "applicantName": "Merck Sharp & Dohme LLC",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00003cPkkYQAS"
+  },
+  "nraName": "European Medicines Agency",
+  "nraCountry": "Netherlands",
+  "shelfLife": "36 months",
+  "storageTemperature": "2 - 8°C",
+  "lastPublishingDate": "2024-09-10",
+  "publishingRemarks": "The manufacturer has provided preliminary data suggesting that the stability profile is consistent with that of Gardasil 4- valent which uses a Vaccine Vial Monitor (VVM) Type 30. However the manufacturer has indicated it will not distribute the product with a VVM until final results have been analysed and the choice of VVM is approved.An image of the primary and secondary container are not yet available. The manufacturer has committed to supply these for publication before first supply through UN agencies.",
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer0013X0000498p39QAA"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder0013X00003cPkkYQAS"
+  },
+  "manufacturerLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer/PreQualManufacturer0013X0000498p39QAA"
+  },
+  "nraLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA/PreQualNRA0013X00003cPkkYQAS"
+  },
+  "vaccineLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine/PreQualVaccinea3S3X000003cSpmUAE"
+  },
+  "packagingLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging/PreQualPackaginga3H3X000001VaeVUAS"
+    }
+  ],
+  "siteLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail/PreQualSite0013X0000498p39QAA"
+    }
+  ],
+  "ingredientLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient/PreQualIngredienta3K3X000006MijdUACIng9"
+    }
+  ]
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

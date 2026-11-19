@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005l1naYAA"
+  },
+  "documentName": "Package Insert-pq_350_351_Pneumo_SIIPL_PI_UNICEF-2023",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000061ncxYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

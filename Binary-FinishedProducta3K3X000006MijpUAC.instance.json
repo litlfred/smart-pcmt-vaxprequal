@@ -1,0 +1,86 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "productType": "FinishedVaccineProduct",
+  "dateOfPrequal": "2018-05-25",
+  "assessmentProcedure": "PrequalificationAbridged",
+  "status": "Prequalified",
+  "pharmaceuticalForm": "LiquidReadytouse",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006MijpUAC"
+  },
+  "productName": "FVP-P-332",
+  "vaccineFullName": "Influenza vaccine trivalent (surface antigens, inactivated)",
+  "vaccineAbbreviatedName": "IIV3",
+  "vaccineCommercialName": "Serinflu",
+  "vaccineType": {
+    "coding": [
+      {
+        "system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
+        "code": "IIV3",
+        "display": "Influenza vaccine trivalent (surface antigens, inactivated)"
+      }
+    ]
+  },
+  "vaccineTypeId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSpNUAU"
+  },
+  "routeOfAdministration": "Intramuscularordeepsubcutaneous",
+  "vialMonitor": "Type 2",
+  "applicantId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4NQAQ"
+  },
+  "applicantName": "Abbott Biologicals BV",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00003qpCfYQAU"
+  },
+  "nraName": "Medicines Evaluation Board",
+  "nraCountry": "Netherlands",
+  "shelfLife": "12 months",
+  "storageTemperature": "2 - 8°C",
+  "lastPublishingDate": "2024-09-10",
+  "publishingRemarks": "The vaccine remains in specification for 12 months at 2-8°C. However due to the seasonal nature of production and to prevent confusion with vaccines of older or newer composition the standard procedure for vaccines manufactured for the Northern Hemisphere is to assign and expiry date of 30 June of the year following production. For vaccine manufacturer for use in the Southern hemisphere the assigned expiry date is 31 December of the year of production.Currently the manufacturer does not have a passive insulation solution for international transport that can be validated according to WHO Guidelines on the International Packaging and Shipping for Vaccines. International transport of the vaccines will use an active refrigerator.",
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer0013X0000498p4NQAQ"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder0013X00003qpCfYQAU"
+  },
+  "manufacturerLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer/PreQualManufacturer0013X0000498p4NQAQ"
+  },
+  "nraLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA/PreQualNRA0013X00003qpCfYQAU"
+  },
+  "vaccineLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine/PreQualVaccinea3S3X000003cSpNUAU"
+  },
+  "packagingLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging/PreQualPackaginga3H3X000001Vaf4UAC"
+    }
+  ],
+  "siteLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail/PreQualSite0013X0000498p4NQAQ"
+    }
+  ],
+  "ingredientLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient/PreQualIngredienta3K3X000006MijpUACIng3"
+    }
+  ]
+}

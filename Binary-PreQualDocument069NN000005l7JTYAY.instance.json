@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005l7JTYAY"
+  },
+  "documentName": "Package Insert-pq_350_351_Pneumo_SIIPL_PI_PAHO-2023",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000061t3zYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

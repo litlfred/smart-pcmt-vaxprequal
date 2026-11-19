@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VadUUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box of 299 cartons (2990 doses) [Dimensions 76.4x59.0x 51.5 cm]",
+  "volume": "76.4 x 59.0 x  51.5 cm",
+  "totalDoses": "2990",
+  "totalContainers": "2990"
+}

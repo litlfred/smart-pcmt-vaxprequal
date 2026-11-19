@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005hv0DYAQ"
+  },
+  "documentName": "Container Photo (Bigger Higher Resolution)-pq_18_Measles_10doses_BioFarma_carton%2Bvial_image",
+  "documentType": "Photo",
+  "versionId": "068NN000005yeNxYAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

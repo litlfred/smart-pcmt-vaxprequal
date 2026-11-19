@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005j4PhYAI"
+  },
+  "documentName": "General-pq_265_DTP_1dose_GSK_Leaflet-122022",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005zp2qYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

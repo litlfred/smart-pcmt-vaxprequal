@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iMl7YAE"
+  },
+  "documentName": "Container Photo-pq_176_YF_2dose_FSBSI_diluent_container_image",
+  "documentType": "Photo",
+  "versionId": "068NN000005z5zBYAQ",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

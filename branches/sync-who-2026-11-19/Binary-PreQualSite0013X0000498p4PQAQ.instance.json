@@ -1,0 +1,14 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4PQAQ"
+  },
+  "siteOrganizationName": "Seqirus Australia Pty Ltd",
+  "addressLine1": "63 Poplar Road",
+  "city": "Parkville Victoria",
+  "country": "Australia",
+  "postalCode": "3052",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4CQAQ"
+  },
+  "name": "Pfizer Europe MA EEIG (Pfizer)",
+  "addressLine1": "Boulevard de la Plaine 17",
+  "city": "Bruxelles",
+  "country": "Belgium",
+  "postalCode": "1050",
+  "isoCountryCode": "BEL",
+  "region": "EURO",
+  "website": "www.pfizer.com",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X0000498p4CQAQ"
+  }
+}

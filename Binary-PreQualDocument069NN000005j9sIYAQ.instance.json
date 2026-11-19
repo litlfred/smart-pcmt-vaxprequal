@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005j9sIYAQ"
+  },
+  "documentName": "General-pq_274_menactra_1dose_SP_VPSAR",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005zuYgYAI",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

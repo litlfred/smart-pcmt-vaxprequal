@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3HNN0000007wZ32AI"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "Diluent",
+  "description": "Box containing 24 cartons of 50 ampoules",
+  "volume": "37x32.5x33.5",
+  "totalDoses": "6000",
+  "totalContainers": "1200"
+}

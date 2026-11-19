@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "n/a"
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturer862ceefb75480e8caff5b111610aceb0"
+  },
+  "doseQuantity": {
+    "value": 2,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "YellowFever"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "Ampoule"
+      }
+    ]
+  }
+}

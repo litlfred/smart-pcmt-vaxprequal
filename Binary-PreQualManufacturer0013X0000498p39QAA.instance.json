@@ -1,0 +1,19 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p39QAA"
+  },
+  "name": "Merck Sharp & Dohme LLC",
+  "addressLine1": "351 N. Sumneytown Pike",
+  "city": "North Wales",
+  "state": "Pennsylvania",
+  "country": "United States of America",
+  "postalCode": "19454",
+  "isoCountryCode": "USA",
+  "region": "AMRO",
+  "website": "https://www.msd.com/",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X0000498p39QAA"
+  }
+}

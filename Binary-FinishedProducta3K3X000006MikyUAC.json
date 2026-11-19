@@ -1,0 +1,6 @@
+{
+  "resourceType" : "Binary",
+  "id" : "FinishedProducta3K3X000006MikyUAC",
+  "contentType" : "application/fhir+json",
+  "data" : "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGNtdC12YXhwcmVxdWFsL1N0cnVjdHVyZURlZmluaXRpb24vRmluaXNoZWRWYWNjaW5lUHJvZHVjdHMiLAogICJzdGF0dXMiOiAiV2l0aGRyYXduV2FzQWNjZXB0ZWQiLAogICJwcm9kdWN0SWQiOiB7CiAgICAic3lzdGVtIjogImh0dHBzOi8vZXh0cmFuZXQud2hvLmludC9wcmVxdWFsL2FwaSIsCiAgICAidmFsdWUiOiAiYTNLM1gwMDAwMDZNaWt5VUFDIgogIH0sCiAgInByb2R1Y3ROYW1lIjogIkZWUC1QLTE2MiIsCiAgImxhc3RQdWJsaXNoaW5nRGF0ZSI6ICIyMDIzLTEyLTIxIgp9Cg=="
+}

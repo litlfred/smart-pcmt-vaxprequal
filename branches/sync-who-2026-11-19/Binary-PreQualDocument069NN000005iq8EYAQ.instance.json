@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iq8EYAQ"
+  },
+  "documentName": "pq_231_IPV_1dose_BBio_vial_image",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005zarsYAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

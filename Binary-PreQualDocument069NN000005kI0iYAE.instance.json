@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kI0iYAE"
+  },
+  "documentName": "Container Photo-pq_327_Varicella_1dose_Merck_vial_image",
+  "documentType": "Photo",
+  "versionId": "068NN00000612cHYAQ",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

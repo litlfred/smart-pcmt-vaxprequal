@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaipUAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box of 135 cartons of 10 vials (1850 vials/1850 doses) [Dimension of 33.2 x 24.1 x 41.0 cm]",
+  "totalDoses": "1850",
+  "totalContainers": "1850"
+}

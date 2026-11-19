@@ -1,0 +1,78 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "productType": "FinishedVaccineProduct",
+  "dateOfPrequal": "2023-10-09",
+  "assessmentProcedure": "PrequalificationAbridged",
+  "status": "Prequalified",
+  "pharmaceuticalForm": "LiquidReadytouse",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3KNN0000001VJX2A2"
+  },
+  "productName": "FVP-P-453",
+  "vaccineFullName": "Covid-19, protein subunit",
+  "vaccineAbbreviatedName": "C-19",
+  "vaccineCommercialName": "BIRMEVAX",
+  "vaccineType": {
+    "coding": [
+      {
+        "system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
+        "code": "C19",
+        "display": "Covid-19, protein subunit"
+      }
+    ]
+  },
+  "vaccineTypeId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000005JUQgUAO"
+  },
+  "applicantId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00004MjIYkQAN"
+  },
+  "applicantName": "HIPRA HUMAN HEALTH, S.L.U",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00003cPkkYQAS"
+  },
+  "nraName": "European Medicines Agency",
+  "nraCountry": "Netherlands",
+  "shelfLife": "15 months",
+  "storageTemperature": "2 - 8°C",
+  "lastPublishingDate": "2024-09-10",
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer0013X00004MjIYkQAN"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder0013X00003cPkkYQAS"
+  },
+  "manufacturerLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer/PreQualManufacturer0013X00004MjIYkQAN"
+  },
+  "nraLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA/PreQualNRA0013X00003cPkkYQAS"
+  },
+  "vaccineLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine/PreQualVaccinea3S3X000005JUQgUAO"
+  },
+  "packagingLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging/PreQualPackaginga3HNN0000007wYw2AI"
+    }
+  ],
+  "ingredientLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient/PreQualIngredienta3KNN0000001VJX2A2Ing9"
+    }
+  ]
+}

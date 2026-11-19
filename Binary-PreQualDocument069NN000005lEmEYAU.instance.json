@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005lEmEYAU"
+  },
+  "documentName": "Package Insert-pq_363_369%20sIPV_LG_PI_UNICEF-2021",
+  "documentType": "ProductInsert",
+  "versionId": "068NN00000620ZyYAI",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

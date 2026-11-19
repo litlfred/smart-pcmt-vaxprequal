@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005ixo1YAA"
+  },
+  "documentName": "Package Insert-pq_262_bOPV_20dose_SII_PI",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000005ziarYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

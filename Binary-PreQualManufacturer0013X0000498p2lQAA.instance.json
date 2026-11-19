@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p2lQAA"
+  },
+  "name": "Bio-Manguinhos/Fiocruz",
+  "addressLine1": "Av. Brasil 4365-Centro Vinicius Fonseca - 5o andar. Manguinhos.",
+  "city": "Rio de Janeiro",
+  "country": "Brazil",
+  "postalCode": "21040-900",
+  "isoCountryCode": "BRA",
+  "region": "AMRO",
+  "website": "https://www.bio.fiocruz.br/en/",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X0000498p2lQAA"
+  }
+}

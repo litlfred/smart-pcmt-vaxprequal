@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p39QAA"
+  },
+  "siteOrganizationName": "Merck Sharp & Dohme LLC",
+  "addressLine1": "351 N. Sumneytown Pike",
+  "city": "North Wales",
+  "state": "Pennsylvania",
+  "country": "United States of America",
+  "postalCode": "19454",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

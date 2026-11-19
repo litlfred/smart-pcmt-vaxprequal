@@ -1,0 +1,117 @@
+# PreQual Product: None used on labelling for supply through UN agencies. Also marketed with labelled commercial name ComBE Five (Reconstituted). - DTwP-HepB+Hib - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQual Product: None used on labelling for supply through UN agencies. Also marketed with labelled commercial name ComBE Five (Reconstituted). - DTwP-HepB+Hib**
+
+## Example Binary: PreQual Product: None used on labelling for supply through UN agencies. Also marketed with labelled commercial name ComBE Five (Reconstituted). - DTwP-HepB+Hib
+
+This content is an example of the [WHO Vaccine PreQual DB - Finished Vaccine Products](StructureDefinition-FinishedVaccineProducts.md) Logical Model and is not a FHIR Resource
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "productType": "FinishedVaccineProduct",
+  "dateOfPrequal": "2011-08-31",
+  "assessmentProcedure": "PrequalificationStandard",
+  "status": "Prequalified",
+  "pharmaceuticalForm": "Lyophilisedactivecomponenttobereconstitutedwithliquidactivecomponentbeforeuse",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Twovialsetactiveactive",
+        "display": "Two vial set (active + active)"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006MilyUAC"
+  },
+  "productName": "FVP-P-247",
+  "vaccineFullName": "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)",
+  "vaccineAbbreviatedName": "DTwP-HepB+Hib",
+  "vaccineCommercialName": "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Reconstituted).",
+  "vaccineType": {
+    "coding": [
+      {
+        "system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
+        "code": "DTwPHepBHib",
+        "display": "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
+      }
+    ]
+  },
+  "vaccineTypeId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSoxUAE"
+  },
+  "routeOfAdministration": "Intramuscular",
+  "vialMonitor": "Type 14",
+  "applicantId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00003cPkfbQAC"
+  },
+  "applicantName": "Biological E. Limited",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4fQAA"
+  },
+  "nraName": "Central Drugs Standard Control Organization (CDSCO)",
+  "nraCountry": "India",
+  "shelfLife": "24 months",
+  "storageTemperature": "2 - 8°C",
+  "diluent": "Liquid active component",
+  "lastPublishingDate": "2024-09-10",
+  "preservative": "Thiomersal",
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer0013X00003cPkfbQAC"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder0013X0000498p4fQAA"
+  },
+  "manufacturerLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer/PreQualManufacturer0013X00003cPkfbQAC"
+  },
+  "nraLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA/PreQualNRA0013X0000498p4fQAA"
+  },
+  "vaccineLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine/PreQualVaccinea3S3X000003cSoxUAE"
+  },
+  "packagingLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging/PreQualPackaginga3H3X000001VakLUAS"
+    }
+  ],
+  "documentLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail/PreQualDocument069NN000005j4kXYAQ"
+    }
+  ],
+  "siteLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail/PreQualSite0013X00003cPkfbQAC"
+    }
+  ],
+  "ingredientLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient/PreQualIngredienta3K3X000006MilyUACIng6"
+    }
+  ]
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

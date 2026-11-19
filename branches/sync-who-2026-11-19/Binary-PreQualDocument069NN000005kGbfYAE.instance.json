@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kGbfYAE"
+  },
+  "documentName": "FVP-296_MenAconj_5mcg_SIIPL_PI-2026.pdf",
+  "documentType": "ProductInsert",
+  "versionId": "068Vj00000azPftIAE",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

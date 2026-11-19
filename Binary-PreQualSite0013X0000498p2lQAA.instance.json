@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p2lQAA"
+  },
+  "siteOrganizationName": "Bio-Manguinhos/Fiocruz",
+  "addressLine1": "Av. Brasil 4365-Centro Vinicius Fonseca - 5o andar. Manguinhos.",
+  "city": "Rio de Janeiro",
+  "state": "Rio de Janeiro",
+  "country": "Brazil",
+  "postalCode": "21040-900",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

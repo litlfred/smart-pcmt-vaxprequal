@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "1987-01-01",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "HepatitisB",
+        "display": "Hepatitis B"
+      }
+    ]
+  },
+  "commercialName": "Engerix",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 20,
+  "manufacturer": {
+    "text": "GlaxoSmithKline Biologicals SA"
+  },
+  "responsibleNRA": {
+    "text": "Federal Agency for Medicines and Health Products"
+  },
+  "index": {
+    "value": "53bb991260516f314ee605085dd1ba2c"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer214b31a3bf30c1816fab7b3f39ca25c9"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holdere0e3ed9114ce62feea705c24aceb2ee2"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/HepatitisBProduct53bb991260516f314ee605085dd1ba2c"
+  }
+}

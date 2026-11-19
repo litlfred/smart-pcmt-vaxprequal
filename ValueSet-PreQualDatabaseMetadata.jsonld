@@ -1,0 +1,179 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+  },
+  "@id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-11-19T08:05:05.087249Z",
+  "@graph": [
+    {
+      "id": "#FinishedVaccineProduct",
+      "name": "Finished Vaccine Product"
+    },
+    {
+      "id": "#EUL",
+      "name": "EUL"
+    },
+    {
+      "id": "#PrequalificationAbridged",
+      "name": "Prequalification - Abridged"
+    },
+    {
+      "id": "#PrequalificationStandard",
+      "name": "Prequalification - Standard"
+    },
+    {
+      "id": "#Acceptable",
+      "name": "Acceptable"
+    },
+    {
+      "id": "#CancelledAssessment",
+      "name": "Cancelled: Assessment"
+    },
+    {
+      "id": "#DecisionPhase",
+      "name": "Decision Phase"
+    },
+    {
+      "id": "#Prequalified",
+      "name": "Prequalified"
+    },
+    {
+      "id": "#RejectedScreening",
+      "name": "Rejected: Screening"
+    },
+    {
+      "id": "#UnderAssessment",
+      "name": "Under Assessment"
+    },
+    {
+      "id": "#UnderScreening",
+      "name": "Under Screening"
+    },
+    {
+      "id": "#WithdrawnWasAccepted",
+      "name": "Withdrawn: Was Accepted"
+    },
+    {
+      "id": "#WithdrawnWasPrequalified",
+      "name": "Withdrawn: Was Prequalified"
+    },
+    {
+      "id": "#LiquidActivecomponenttobemixedwithsecondcomponentbeforeuse",
+      "name": "Liquid: Active component to be mixed with second component before use"
+    },
+    {
+      "id": "#LiquidReadytouse",
+      "name": "Liquid: Ready to use"
+    },
+    {
+      "id": "#Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse",
+      "name": "Lyophilised active component to be reconstituted with excipient diluent before use"
+    },
+    {
+      "id": "#Lyophilisedactivecomponenttobereconstitutedwithliquidactivecomponentbeforeuse",
+      "name": "Lyophilised active component to be reconstituted with liquid active component before use"
+    },
+    {
+      "id": "#Intradermal",
+      "name": "Intradermal"
+    },
+    {
+      "id": "#Intramuscular",
+      "name": "Intramuscular"
+    },
+    {
+      "id": "#Intramuscularordeepsubcutaneous",
+      "name": "Intramuscular or deep subcutaneous"
+    },
+    {
+      "id": "#Intramuscularorsubcutaneous",
+      "name": "Intramuscular or subcutaneous"
+    },
+    {
+      "id": "#Intranasal",
+      "name": "Intranasal"
+    },
+    {
+      "id": "#Oral",
+      "name": "Oral"
+    },
+    {
+      "id": "#Subcutaneous",
+      "name": "Subcutaneous"
+    },
+    {
+      "id": "#Secondary",
+      "name": "Secondary"
+    },
+    {
+      "id": "#ShippingContainer",
+      "name": "Shipping Container"
+    },
+    {
+      "id": "#Tertiary",
+      "name": "Tertiary"
+    },
+    {
+      "id": "#ActiveVaccine",
+      "name": "Active (Vaccine)"
+    },
+    {
+      "id": "#ActiveVaccineandDiluent",
+      "name": "Active (Vaccine) and Diluent"
+    },
+    {
+      "id": "#Diluent",
+      "name": "Diluent"
+    },
+    {
+      "id": "#Photo",
+      "name": "Photo"
+    },
+    {
+      "id": "#PhotoMainImage",
+      "name": "Photo-Main Image"
+    },
+    {
+      "id": "#ProductInsert",
+      "name": "Product Insert"
+    },
+    {
+      "id": "#VSPAR",
+      "name": "VSPAR"
+    },
+    {
+      "id": "#VaccineGeneralDocument",
+      "name": "Vaccine General Document"
+    },
+    {
+      "id": "#FVPManufacture",
+      "name": "FVP Manufacture"
+    },
+    {
+      "id": "#Accepted",
+      "name": "Accepted"
+    },
+    {
+      "id": "#VxFVP",
+      "name": "Vx FVP"
+    },
+    {
+      "id": "#Active",
+      "name": "Active"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

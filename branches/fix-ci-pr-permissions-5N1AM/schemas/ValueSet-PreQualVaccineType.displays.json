@@ -1,0 +1,93 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.displays.json",
+  "title": "WHO PreQualificaiton VaccineType  Display Values",
+  "description": "Display values for WHO PreQualificaiton VaccineType  ValueSet codes. Generated from FHIR expansions.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes using IRI format to match JSON schema enum values",
+      "patternProperties": {
+        "^https?://.*": {
+          "type": "object",
+          "description": "Display values for a specific IRI-formatted code by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#BCG": {
+      "en": "BCG"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DT": {
+      "en": "DT"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DTwP": {
+      "en": "DTwP"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#HepA": {
+      "en": "HepA"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#HepB": {
+      "en": "HepB"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#JE": {
+      "en": "JE"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#LARV": {
+      "en": "LARV"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#M": {
+      "en": "M"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#MMR": {
+      "en": "MMR"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#MR": {
+      "en": "MR"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#Malaria": {
+      "en": "Malaria"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#TDV": {
+      "en": "TDV"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#TT": {
+      "en": "TT"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#YF": {
+      "en": "YF"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#bOPV": {
+      "en": "bOPV"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#dT": {
+      "en": "dT"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#tOPV": {
+      "en": "tOPV"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualVaccineType",
+  "fhir:version": "0.2.0",
+  "fhir:expansionTimestamp": "2026-03-24T15:03:58.666824"
+}

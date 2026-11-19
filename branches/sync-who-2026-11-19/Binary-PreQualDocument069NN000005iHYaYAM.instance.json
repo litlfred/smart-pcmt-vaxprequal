@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iHYaYAM"
+  },
+  "documentName": "Package Insert-pq_165_BCG_10dose_AJV_PI-2022",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005z0meYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

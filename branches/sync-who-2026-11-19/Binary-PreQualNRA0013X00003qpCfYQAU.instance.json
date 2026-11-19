@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00003qpCfYQAU"
+  },
+  "name": "Medicines Evaluation Board",
+  "country": "Netherlands",
+  "organizationReference": {
+    "reference": "Organization/Holder0013X00003qpCfYQAU"
+  }
+}

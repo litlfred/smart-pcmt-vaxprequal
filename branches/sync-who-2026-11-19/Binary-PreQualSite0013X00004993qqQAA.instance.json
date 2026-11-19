@@ -1,0 +1,14 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00004993qqQAA"
+  },
+  "siteOrganizationName": "Janssen Vaccines Corp.",
+  "addressLine1": "(Songdo-dong) 23  Harmony-ro 303 beon-gil",
+  "city": "Yeonsu-gu Incheon",
+  "country": "Republic of Korea",
+  "postalCode": "406-840",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

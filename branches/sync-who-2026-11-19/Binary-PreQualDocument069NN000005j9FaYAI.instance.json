@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005j9FaYAI"
+  },
+  "documentName": "Package Insert-pq_266_JEEV-6mcg_1dose_%20BiolE_PI-2019",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000005ztuMYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

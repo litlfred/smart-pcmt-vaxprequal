@@ -1,0 +1,17 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3KQAQ"
+  },
+  "name": "Federal State Budgetary Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products»  Russian Academy of Sciences",
+  "addressLine1": "Buiding 1  Premises 8  Village of Institute of Poliomyelitis  Settlement 'Moskovsky'",
+  "city": "Moscow Region",
+  "country": "Russian Federation",
+  "postalCode": "108819",
+  "isoCountryCode": "RUS",
+  "region": "EURO",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X0000498p3KQAQ"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vaf8UAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box of 28 cartons of 10 single dose vials (280 vials/ 280 doses)[Dimensions: 25.5 x 35.5 x 44.5 cm]",
+  "volume": "25.5 x 35.5 x 44.5 cm",
+  "totalDoses": "280",
+  "totalContainers": "280"
+}

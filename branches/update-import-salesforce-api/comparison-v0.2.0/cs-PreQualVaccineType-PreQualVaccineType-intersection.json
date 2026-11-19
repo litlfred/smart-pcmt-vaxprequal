@@ -1,0 +1,17 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "a1677029-8296-4043-bd1f-7d001720b3f2-9",
+  "url" : "http://hl7.org/fhir/comparison/CodeSystem/a1677029-8296-4043-bd1f-7d001720b3f2-9",
+  "name" : "IntersectionPreQualVaccineTypeAndPreQualVaccineType",
+  "title" : "Intersection of WHO PreQualificaiton Vaccine VaccineTypes And WHO PreQualificaiton Vaccine VaccineTypes",
+  "status" : "active",
+  "date" : "2026-03-11T13:47:11+00:00",
+  "concept" : [{
+    "code" : "BCG",
+    "display" : "BCG"
+  },
+  {
+    "code" : "Malaria",
+    "display" : "Malaria"
+  }]
+}

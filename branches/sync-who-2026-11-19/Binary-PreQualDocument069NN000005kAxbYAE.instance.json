@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kAxbYAE"
+  },
+  "documentName": "Container Photo (Bigger Higher Resolution)-PQ_285_menAconj_%205_mcg_SII_vial%2Bampl_image",
+  "documentType": "Photo",
+  "versionId": "068NN0000060vm3YAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

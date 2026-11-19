@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3HNN0000007wc82AA"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccineandDiluent",
+  "description": "Carton containg 200 boxes of 1 single dose vial + 200 ampoules of diluent",
+  "volume": "50 x 38 x 50",
+  "totalDoses": "200",
+  "totalContainers": "400"
+}

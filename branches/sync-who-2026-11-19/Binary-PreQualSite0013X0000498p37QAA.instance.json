@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p37QAA"
+  },
+  "siteOrganizationName": "MedImmune",
+  "addressLine1": "One MedImmune Way",
+  "city": "Gaithersburg  MD 20878",
+  "country": "United States of America",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

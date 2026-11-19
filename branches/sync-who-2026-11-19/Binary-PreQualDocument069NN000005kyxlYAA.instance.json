@@ -1,0 +1,11 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kyxlYAA"
+  },
+  "documentName": "Package Insert-pq_362_InfluenzaH5N1_1dose_AZ_PI-2022",
+  "versionId": "068NN0000061kn7YAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005lD8hYAE"
+  },
+  "documentName": "General-pq_381_Varicella__GC_VPASR-WHOPAR-2023",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN0000061yuoYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

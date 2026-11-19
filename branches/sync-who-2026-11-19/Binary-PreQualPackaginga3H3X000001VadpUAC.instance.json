@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VadpUAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "Diluent",
+  "description": "Diluent: Box containing 1200 vials (2400 doses) [Dimensions: 28.6 x 32.5 x 40.5 cm].",
+  "volume": "28.6 x 32.5 x 40.5 cm.",
+  "totalDoses": "2400",
+  "totalContainers": "1200"
+}

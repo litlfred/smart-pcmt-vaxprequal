@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kEZlYAM"
+  },
+  "documentName": "pq_271_JE_live_5doses_Chengdu_vials_image_580",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000060zG9YAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

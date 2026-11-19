@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kHUSYA2"
+  },
+  "documentName": "Package Insert-pq_323-324_HepA_1dose_Sinovac_PI-2022",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000006127dYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

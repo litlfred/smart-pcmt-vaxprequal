@@ -1,0 +1,787 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<StructureDefinition xmlns="http://hl7.org/fhir">
+  <id value="PreQualDBAPI"/>
+  <text>
+    <status value="extensions"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: StructureDefinition PreQualDBAPI</b></p><table border="0" cellpadding="0" cellspacing="0" style="border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;"><tr style="border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top"><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="The logical name of the element">Name</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Information about the use of the element">Flags</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Minimum and Maximum # of times the element can appear in the instance">Card.</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Reference to the type of the element">Type</a></th><th style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px" class="hierarchy"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Additional information about the element">Description &amp; Constraints</a><span style="float: right"><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/></a></span></th></tr><tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_element.gif" alt="." style="background-color: white; background-color: inherit" title="Element" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI" title="WHO Vaccine PreQual DB (API).  
+Logical model for the WHO PreQual DB as provided by the backend API at:
+     https://extranet.who.int/prequal/vaccines/prequalified-vaccines
+This model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.
+
+Key fields from the API (FinishedVaccineProducts):
+  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)
+  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)
+  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)
+  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification
+  ProductDetails.AssessmentProcedure - Assessment procedure code
+  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address
+  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)
+  ProductDetails.PharmaceuticalForm - Pharmaceutical form details
+  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses
+  ProductDetails.NRADetails - Responsible NRA with ID, name, address
+  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names
+  ProductDetails.StorageDetails - Storage temperature and shelf life
+  ProductDetails.Status - Prequalification status code">PreQualDBAPI</a><a name="PreQualDBAPI"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="opacity: 0.5">0</span><span style="opacity: 0.5">..</span><span style="opacity: 0.5">*</span></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/types.html#Base">Base</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">WHO Vaccine PreQual DB (API)<br/><span style="font-weight:bold">Instances of this logical model can be the target of a Reference</span></td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.productId" title="Vaccine Product ID (authoritative)">productId</a><a name="PreQualDBAPI.productId"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Vaccine Product ID (authoritative)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.productName" title="Product reference name (e.g. FVP-P-447)">productName</a><a name="PreQualDBAPI.productName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Product reference name (e.g. FVP-P-447)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.productType" title="Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)">productType</a><a name="PreQualDBAPI.productType"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.dateOfPrequal" title="Date of prequalification acceptance">dateOfPrequal</a><a name="PreQualDBAPI.dateOfPrequal"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Date of prequalification acceptance</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.assessmentProcedure" title="Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)">assessmentProcedure</a><a name="PreQualDBAPI.assessmentProcedure"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.status" title="Product status code from PreQualDatabaseMetadata (e.g. Prequalified)">status</a><a name="PreQualDBAPI.status"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Product status code from PreQualDatabaseMetadata (e.g. Prequalified)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.pharmaceuticalForm" title="Pharmaceutical form code from PreQualDatabaseMetadata">pharmaceuticalForm</a><a name="PreQualDBAPI.pharmaceuticalForm"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Pharmaceutical form code from PreQualDatabaseMetadata</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.presentation" title="Presentation (e.g. Vial, Ampoule)">presentation</a><a name="PreQualDBAPI.presentation"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#CodeableConcept">CodeableConcept</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Presentation (e.g. Vial, Ampoule)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.numDoses" title="Number of doses per primary container">numDoses</a><a name="PreQualDBAPI.numDoses"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#decimal">decimal</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Number of doses per primary container</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.vaccineFullName" title="Vaccine full name">vaccineFullName</a><a name="PreQualDBAPI.vaccineFullName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Vaccine full name</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.vaccineAbbreviatedName" title="Vaccine abbreviated name">vaccineAbbreviatedName</a><a name="PreQualDBAPI.vaccineAbbreviatedName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Vaccine abbreviated name</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.vaccineCommercialName" title="Vaccine commercial name">vaccineCommercialName</a><a name="PreQualDBAPI.vaccineCommercialName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Vaccine commercial name</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.vaccineTypeId" title="Vaccine type ID">vaccineTypeId</a><a name="PreQualDBAPI.vaccineTypeId"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Vaccine type ID</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.routeOfAdministration" title="Route of administration code from PreQualDatabaseMetadata">routeOfAdministration</a><a name="PreQualDBAPI.routeOfAdministration"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#code">code</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Route of administration code from PreQualDatabaseMetadata</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.applicantId" title="Applicant/manufacturer organization ID (may be absent if not yet assigned)">applicantId</a><a name="PreQualDBAPI.applicantId"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Applicant/manufacturer organization ID (may be absent if not yet assigned)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.applicantName" title="Applicant/manufacturer organization name (always present from API data)">applicantName</a><a name="PreQualDBAPI.applicantName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Applicant/manufacturer organization name (always present from API data)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.applicantAddress" title="Applicant organization address">applicantAddress</a><a name="PreQualDBAPI.applicantAddress"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Address">Address</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Applicant organization address</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_datatype.gif" alt="." style="background-color: white; background-color: inherit" title="Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.nraId" title="NRA organization ID (may be absent if not yet assigned)">nraId</a><a name="PreQualDBAPI.nraId"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#Identifier">Identifier</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">NRA organization ID (may be absent if not yet assigned)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.nraName" title="Responsible NRA name (always present from API data)">nraName</a><a name="PreQualDBAPI.nraName"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Responsible NRA name (always present from API data)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.nraCountry" title="NRA country">nraCountry</a><a name="PreQualDBAPI.nraCountry"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">NRA country</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.shelfLife" title="Shelf life (e.g. 24 months)">shelfLife</a><a name="PreQualDBAPI.shelfLife"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Shelf life (e.g. 24 months)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.storageTemperature" title="Storage temperature (e.g. 2 - 8°C)">storageTemperature</a><a name="PreQualDBAPI.storageTemperature"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Storage temperature (e.g. 2 - 8°C)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.diluent" title="Diluent information">diluent</a><a name="PreQualDBAPI.diluent"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Diluent information</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.lastPublishingDate" title="Last publishing date">lastPublishingDate</a><a name="PreQualDBAPI.lastPublishingDate"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#dateTime">dateTime</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Last publishing date</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.publishingRemarks" title="Publishing remarks">publishingRemarks</a><a name="PreQualDBAPI.publishingRemarks"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Publishing remarks</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: white; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.preservative" title="Preservative name (e.g. Thiomersal)">preservative</a><a name="PreQualDBAPI.preservative"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Preservative name (e.g. Thiomersal)</td></tr>
+<tr style="border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7"><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)" class="hierarchy"><img src="tbl_spacer.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="tbl_vjoin_end.png" alt="." style="background-color: inherit" class="hierarchy"/><img src="icon_primitive.png" alt="." style="background-color: #F7F7F7; background-color: inherit" title="Primitive Data Type" class="hierarchy"/> <a href="StructureDefinition-PreQualDBAPI-definitions.html#PreQualDBAPI.preservativeConcentration" title="Preservative concentration (e.g. 0.01%)">preservativeConcentration</a><a name="PreQualDBAPI.preservativeConcentration"> </a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"/><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">0..1</td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R5/datatypes.html#string">string</a></td><td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Preservative concentration (e.g. 0.01%)</td></tr>
+<tr><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr></table></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics">
+    <valueCode value="can-be-target"/>
+  </extension>
+  <url value="http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBAPI"/>
+  <version value="0.1.0"/>
+  <name value="PreQualDBAPI"/>
+  <title value="WHO Vaccine PreQual DB (API)"/>
+  <status value="draft"/>
+  <date value="2026-03-11T13:44:05+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="WHO Vaccine PreQual DB (API).  &#xA;Logical model for the WHO PreQual DB as provided by the backend API at:&#xA;     https://extranet.who.int/prequal/vaccines/prequalified-vaccines&#xA;This model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.&#xA;&#xA;Key fields from the API (FinishedVaccineProducts):&#xA;  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)&#xA;  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)&#xA;  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)&#xA;  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification&#xA;  ProductDetails.AssessmentProcedure - Assessment procedure code&#xA;  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address&#xA;  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)&#xA;  ProductDetails.PharmaceuticalForm - Pharmaceutical form details&#xA;  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses&#xA;  ProductDetails.NRADetails - Responsible NRA with ID, name, address&#xA;  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names&#xA;  ProductDetails.StorageDetails - Storage temperature and shelf life&#xA;  ProductDetails.Status - Prequalification status code"/>
+  <fhirVersion value="5.0.0"/>
+  <mapping>
+    <identity value="rim"/>
+    <uri value="http://hl7.org/v3"/>
+    <name value="RIM Mapping"/>
+  </mapping>
+  <kind value="logical"/>
+  <abstract value="false"/>
+  <type value="http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBAPI"/>
+  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Base"/>
+  <derivation value="specialization"/>
+  <snapshot>
+    <extension url="http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version">
+      <valueString value="5.0.0"/>
+    </extension>
+    <element id="PreQualDBAPI">
+      <path value="PreQualDBAPI"/>
+      <short value="WHO Vaccine PreQual DB (API)"/>
+      <definition value="WHO Vaccine PreQual DB (API).  &#xA;Logical model for the WHO PreQual DB as provided by the backend API at:&#xA;     https://extranet.who.int/prequal/vaccines/prequalified-vaccines&#xA;This model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.&#xA;&#xA;Key fields from the API (FinishedVaccineProducts):&#xA;  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)&#xA;  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)&#xA;  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)&#xA;  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification&#xA;  ProductDetails.AssessmentProcedure - Assessment procedure code&#xA;  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address&#xA;  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)&#xA;  ProductDetails.PharmaceuticalForm - Pharmaceutical form details&#xA;  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses&#xA;  ProductDetails.NRADetails - Responsible NRA with ID, name, address&#xA;  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names&#xA;  ProductDetails.StorageDetails - Storage temperature and shelf life&#xA;  ProductDetails.Status - Prequalification status code"/>
+      <min value="0"/>
+      <max value="*"/>
+      <base>
+        <path value="Base"/>
+        <min value="0"/>
+        <max value="*"/>
+      </base>
+      <isModifier value="false"/>
+      <mapping>
+        <identity value="rim"/>
+        <map value="n/a"/>
+      </mapping>
+    </element>
+    <element id="PreQualDBAPI.productId">
+      <path value="PreQualDBAPI.productId"/>
+      <short value="Vaccine Product ID (authoritative)"/>
+      <definition value="Vaccine Product ID (authoritative)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.productId"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.productName">
+      <path value="PreQualDBAPI.productName"/>
+      <short value="Product reference name (e.g. FVP-P-447)"/>
+      <definition value="Product reference name (e.g. FVP-P-447)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.productName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.productType">
+      <path value="PreQualDBAPI.productType"/>
+      <short value="Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)"/>
+      <definition value="Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.productType"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.dateOfPrequal">
+      <path value="PreQualDBAPI.dateOfPrequal"/>
+      <short value="Date of prequalification acceptance"/>
+      <definition value="Date of prequalification acceptance"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.dateOfPrequal"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.assessmentProcedure">
+      <path value="PreQualDBAPI.assessmentProcedure"/>
+      <short value="Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)"/>
+      <definition value="Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.assessmentProcedure"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.status">
+      <path value="PreQualDBAPI.status"/>
+      <short value="Product status code from PreQualDatabaseMetadata (e.g. Prequalified)"/>
+      <definition value="Product status code from PreQualDatabaseMetadata (e.g. Prequalified)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.status"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.pharmaceuticalForm">
+      <path value="PreQualDBAPI.pharmaceuticalForm"/>
+      <short value="Pharmaceutical form code from PreQualDatabaseMetadata"/>
+      <definition value="Pharmaceutical form code from PreQualDatabaseMetadata"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.pharmaceuticalForm"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.presentation">
+      <path value="PreQualDBAPI.presentation"/>
+      <short value="Presentation (e.g. Vial, Ampoule)"/>
+      <definition value="Presentation (e.g. Vial, Ampoule)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.presentation"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.numDoses">
+      <path value="PreQualDBAPI.numDoses"/>
+      <short value="Number of doses per primary container"/>
+      <definition value="Number of doses per primary container"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.numDoses"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.vaccineFullName">
+      <path value="PreQualDBAPI.vaccineFullName"/>
+      <short value="Vaccine full name"/>
+      <definition value="Vaccine full name"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.vaccineFullName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.vaccineAbbreviatedName">
+      <path value="PreQualDBAPI.vaccineAbbreviatedName"/>
+      <short value="Vaccine abbreviated name"/>
+      <definition value="Vaccine abbreviated name"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.vaccineAbbreviatedName"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.vaccineCommercialName">
+      <path value="PreQualDBAPI.vaccineCommercialName"/>
+      <short value="Vaccine commercial name"/>
+      <definition value="Vaccine commercial name"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.vaccineCommercialName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.vaccineTypeId">
+      <path value="PreQualDBAPI.vaccineTypeId"/>
+      <short value="Vaccine type ID"/>
+      <definition value="Vaccine type ID"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.vaccineTypeId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.routeOfAdministration">
+      <path value="PreQualDBAPI.routeOfAdministration"/>
+      <short value="Route of administration code from PreQualDatabaseMetadata"/>
+      <definition value="Route of administration code from PreQualDatabaseMetadata"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.routeOfAdministration"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.applicantId">
+      <path value="PreQualDBAPI.applicantId"/>
+      <short value="Applicant/manufacturer organization ID (may be absent if not yet assigned)"/>
+      <definition value="Applicant/manufacturer organization ID (may be absent if not yet assigned)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.applicantId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.applicantName">
+      <path value="PreQualDBAPI.applicantName"/>
+      <short value="Applicant/manufacturer organization name (always present from API data)"/>
+      <definition value="Applicant/manufacturer organization name (always present from API data)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.applicantName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.applicantAddress">
+      <path value="PreQualDBAPI.applicantAddress"/>
+      <short value="Applicant organization address"/>
+      <definition value="Applicant organization address"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.applicantAddress"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Address"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.nraId">
+      <path value="PreQualDBAPI.nraId"/>
+      <short value="NRA organization ID (may be absent if not yet assigned)"/>
+      <definition value="NRA organization ID (may be absent if not yet assigned)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.nraId"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.nraName">
+      <path value="PreQualDBAPI.nraName"/>
+      <short value="Responsible NRA name (always present from API data)"/>
+      <definition value="Responsible NRA name (always present from API data)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.nraName"/>
+        <min value="1"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.nraCountry">
+      <path value="PreQualDBAPI.nraCountry"/>
+      <short value="NRA country"/>
+      <definition value="NRA country"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.nraCountry"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.shelfLife">
+      <path value="PreQualDBAPI.shelfLife"/>
+      <short value="Shelf life (e.g. 24 months)"/>
+      <definition value="Shelf life (e.g. 24 months)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.shelfLife"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.storageTemperature">
+      <path value="PreQualDBAPI.storageTemperature"/>
+      <short value="Storage temperature (e.g. 2 - 8°C)"/>
+      <definition value="Storage temperature (e.g. 2 - 8°C)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.storageTemperature"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.diluent">
+      <path value="PreQualDBAPI.diluent"/>
+      <short value="Diluent information"/>
+      <definition value="Diluent information"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.diluent"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.lastPublishingDate">
+      <path value="PreQualDBAPI.lastPublishingDate"/>
+      <short value="Last publishing date"/>
+      <definition value="Last publishing date"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.lastPublishingDate"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.publishingRemarks">
+      <path value="PreQualDBAPI.publishingRemarks"/>
+      <short value="Publishing remarks"/>
+      <definition value="Publishing remarks"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.publishingRemarks"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.preservative">
+      <path value="PreQualDBAPI.preservative"/>
+      <short value="Preservative name (e.g. Thiomersal)"/>
+      <definition value="Preservative name (e.g. Thiomersal)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.preservative"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.preservativeConcentration">
+      <path value="PreQualDBAPI.preservativeConcentration"/>
+      <short value="Preservative concentration (e.g. 0.01%)"/>
+      <definition value="Preservative concentration (e.g. 0.01%)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <base>
+        <path value="PreQualDBAPI.preservativeConcentration"/>
+        <min value="0"/>
+        <max value="1"/>
+      </base>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </snapshot>
+  <differential>
+    <element id="PreQualDBAPI">
+      <path value="PreQualDBAPI"/>
+      <short value="WHO Vaccine PreQual DB (API)"/>
+      <definition value="WHO Vaccine PreQual DB (API).  &#xA;Logical model for the WHO PreQual DB as provided by the backend API at:&#xA;     https://extranet.who.int/prequal/vaccines/prequalified-vaccines&#xA;This model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.&#xA;&#xA;Key fields from the API (FinishedVaccineProducts):&#xA;  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)&#xA;  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)&#xA;  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)&#xA;  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification&#xA;  ProductDetails.AssessmentProcedure - Assessment procedure code&#xA;  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address&#xA;  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)&#xA;  ProductDetails.PharmaceuticalForm - Pharmaceutical form details&#xA;  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses&#xA;  ProductDetails.NRADetails - Responsible NRA with ID, name, address&#xA;  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names&#xA;  ProductDetails.StorageDetails - Storage temperature and shelf life&#xA;  ProductDetails.Status - Prequalification status code"/>
+    </element>
+    <element id="PreQualDBAPI.productId">
+      <path value="PreQualDBAPI.productId"/>
+      <short value="Vaccine Product ID (authoritative)"/>
+      <definition value="Vaccine Product ID (authoritative)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.productName">
+      <path value="PreQualDBAPI.productName"/>
+      <short value="Product reference name (e.g. FVP-P-447)"/>
+      <definition value="Product reference name (e.g. FVP-P-447)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.productType">
+      <path value="PreQualDBAPI.productType"/>
+      <short value="Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)"/>
+      <definition value="Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.dateOfPrequal">
+      <path value="PreQualDBAPI.dateOfPrequal"/>
+      <short value="Date of prequalification acceptance"/>
+      <definition value="Date of prequalification acceptance"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.assessmentProcedure">
+      <path value="PreQualDBAPI.assessmentProcedure"/>
+      <short value="Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)"/>
+      <definition value="Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.status">
+      <path value="PreQualDBAPI.status"/>
+      <short value="Product status code from PreQualDatabaseMetadata (e.g. Prequalified)"/>
+      <definition value="Product status code from PreQualDatabaseMetadata (e.g. Prequalified)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.pharmaceuticalForm">
+      <path value="PreQualDBAPI.pharmaceuticalForm"/>
+      <short value="Pharmaceutical form code from PreQualDatabaseMetadata"/>
+      <definition value="Pharmaceutical form code from PreQualDatabaseMetadata"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.presentation">
+      <path value="PreQualDBAPI.presentation"/>
+      <short value="Presentation (e.g. Vial, Ampoule)"/>
+      <definition value="Presentation (e.g. Vial, Ampoule)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="CodeableConcept"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.numDoses">
+      <path value="PreQualDBAPI.numDoses"/>
+      <short value="Number of doses per primary container"/>
+      <definition value="Number of doses per primary container"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="decimal"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.vaccineFullName">
+      <path value="PreQualDBAPI.vaccineFullName"/>
+      <short value="Vaccine full name"/>
+      <definition value="Vaccine full name"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.vaccineAbbreviatedName">
+      <path value="PreQualDBAPI.vaccineAbbreviatedName"/>
+      <short value="Vaccine abbreviated name"/>
+      <definition value="Vaccine abbreviated name"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.vaccineCommercialName">
+      <path value="PreQualDBAPI.vaccineCommercialName"/>
+      <short value="Vaccine commercial name"/>
+      <definition value="Vaccine commercial name"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.vaccineTypeId">
+      <path value="PreQualDBAPI.vaccineTypeId"/>
+      <short value="Vaccine type ID"/>
+      <definition value="Vaccine type ID"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.routeOfAdministration">
+      <path value="PreQualDBAPI.routeOfAdministration"/>
+      <short value="Route of administration code from PreQualDatabaseMetadata"/>
+      <definition value="Route of administration code from PreQualDatabaseMetadata"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="code"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.applicantId">
+      <path value="PreQualDBAPI.applicantId"/>
+      <short value="Applicant/manufacturer organization ID (may be absent if not yet assigned)"/>
+      <definition value="Applicant/manufacturer organization ID (may be absent if not yet assigned)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.applicantName">
+      <path value="PreQualDBAPI.applicantName"/>
+      <short value="Applicant/manufacturer organization name (always present from API data)"/>
+      <definition value="Applicant/manufacturer organization name (always present from API data)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.applicantAddress">
+      <path value="PreQualDBAPI.applicantAddress"/>
+      <short value="Applicant organization address"/>
+      <definition value="Applicant organization address"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Address"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.nraId">
+      <path value="PreQualDBAPI.nraId"/>
+      <short value="NRA organization ID (may be absent if not yet assigned)"/>
+      <definition value="NRA organization ID (may be absent if not yet assigned)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="Identifier"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.nraName">
+      <path value="PreQualDBAPI.nraName"/>
+      <short value="Responsible NRA name (always present from API data)"/>
+      <definition value="Responsible NRA name (always present from API data)"/>
+      <min value="1"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.nraCountry">
+      <path value="PreQualDBAPI.nraCountry"/>
+      <short value="NRA country"/>
+      <definition value="NRA country"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.shelfLife">
+      <path value="PreQualDBAPI.shelfLife"/>
+      <short value="Shelf life (e.g. 24 months)"/>
+      <definition value="Shelf life (e.g. 24 months)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.storageTemperature">
+      <path value="PreQualDBAPI.storageTemperature"/>
+      <short value="Storage temperature (e.g. 2 - 8°C)"/>
+      <definition value="Storage temperature (e.g. 2 - 8°C)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.diluent">
+      <path value="PreQualDBAPI.diluent"/>
+      <short value="Diluent information"/>
+      <definition value="Diluent information"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.lastPublishingDate">
+      <path value="PreQualDBAPI.lastPublishingDate"/>
+      <short value="Last publishing date"/>
+      <definition value="Last publishing date"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="dateTime"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.publishingRemarks">
+      <path value="PreQualDBAPI.publishingRemarks"/>
+      <short value="Publishing remarks"/>
+      <definition value="Publishing remarks"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.preservative">
+      <path value="PreQualDBAPI.preservative"/>
+      <short value="Preservative name (e.g. Thiomersal)"/>
+      <definition value="Preservative name (e.g. Thiomersal)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+    <element id="PreQualDBAPI.preservativeConcentration">
+      <path value="PreQualDBAPI.preservativeConcentration"/>
+      <short value="Preservative concentration (e.g. 0.01%)"/>
+      <definition value="Preservative concentration (e.g. 0.01%)"/>
+      <min value="0"/>
+      <max value="1"/>
+      <type>
+        <code value="string"/>
+      </type>
+    </element>
+  </differential>
+</StructureDefinition>

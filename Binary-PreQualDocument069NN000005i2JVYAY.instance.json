@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005i2JVYAY"
+  },
+  "documentName": "FVP-P-73-74_BCG_10doses_BB-NCIPB-EAD_diluent_image",
+  "documentType": "Photo",
+  "versionId": "068NN00000Gq6krYAB",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

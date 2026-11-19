@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005lFokYAE"
+  },
+  "documentName": "Package Insert-pq_376_Mosquirix_2dose_GSK_PI",
+  "documentType": "ProductInsert",
+  "versionId": "068NN00000621cUYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

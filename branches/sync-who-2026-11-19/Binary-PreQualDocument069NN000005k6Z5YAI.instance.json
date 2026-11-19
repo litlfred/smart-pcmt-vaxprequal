@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005k6Z5YAI"
+  },
+  "documentName": "Package Insert-pq_290_291_tOPV_bharat_PI",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000060rLuYAI",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

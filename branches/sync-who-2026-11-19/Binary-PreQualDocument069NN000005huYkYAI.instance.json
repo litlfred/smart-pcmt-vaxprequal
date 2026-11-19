@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005huYkYAI"
+  },
+  "documentName": "Package Insert-pq_09_DTP_10dose_BioFarma_PI-2022",
+  "documentType": "Photo",
+  "versionId": "068NN000005ydwUYAQ",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

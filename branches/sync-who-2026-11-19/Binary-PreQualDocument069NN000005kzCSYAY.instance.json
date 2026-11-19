@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kzCSYAY"
+  },
+  "documentName": "pq_375__sIPV_1dose_Sinovac_carton%26vial_image_2022.pdf",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000061l1qYAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

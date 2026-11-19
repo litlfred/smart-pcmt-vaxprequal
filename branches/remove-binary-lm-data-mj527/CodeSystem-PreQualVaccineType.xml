@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="PreQualVaccineType"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: CodeSystem PreQualVaccineType</b></p><a name="PreQualVaccineType"> </a><a name="hcPreQualVaccineType"> </a><p>This  code system <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType</code> defines the following codes:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td></tr><tr><td style="white-space:nowrap">BCG<a name="PreQualVaccineType-BCG"> </a></td></tr><tr><td style="white-space:nowrap">DT<a name="PreQualVaccineType-DT"> </a></td></tr><tr><td style="white-space:nowrap">DTwP<a name="PreQualVaccineType-DTwP"> </a></td></tr><tr><td style="white-space:nowrap">HepA<a name="PreQualVaccineType-HepA"> </a></td></tr><tr><td style="white-space:nowrap">HepB<a name="PreQualVaccineType-HepB"> </a></td></tr><tr><td style="white-space:nowrap">JE<a name="PreQualVaccineType-JE"> </a></td></tr><tr><td style="white-space:nowrap">LARV<a name="PreQualVaccineType-LARV"> </a></td></tr><tr><td style="white-space:nowrap">M<a name="PreQualVaccineType-M"> </a></td></tr><tr><td style="white-space:nowrap">MMR<a name="PreQualVaccineType-MMR"> </a></td></tr><tr><td style="white-space:nowrap">MR<a name="PreQualVaccineType-MR"> </a></td></tr><tr><td style="white-space:nowrap">Malaria<a name="PreQualVaccineType-Malaria"> </a></td></tr><tr><td style="white-space:nowrap">TDV<a name="PreQualVaccineType-TDV"> </a></td></tr><tr><td style="white-space:nowrap">TT<a name="PreQualVaccineType-TT"> </a></td></tr><tr><td style="white-space:nowrap">YF<a name="PreQualVaccineType-YF"> </a></td></tr><tr><td style="white-space:nowrap">bOPV<a name="PreQualVaccineType-bOPV"> </a></td></tr><tr><td style="white-space:nowrap">dT<a name="PreQualVaccineType-dT"> </a></td></tr><tr><td style="white-space:nowrap">tOPV<a name="PreQualVaccineType-tOPV"> </a></td></tr></table></div>
+  </text>
+  <url value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType"/>
+  <version value="0.2.0"/>
+  <name value="PreQualVaccineType"/>
+  <title value="WHO PreQualificaiton Vaccine VaccineTypes"/>
+  <status value="draft"/>
+  <date value="2026-03-25T12:49:39+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="WHO PreQualificaiton Vaccine VaccineTypes"/>
+  <content value="complete"/>
+  <count value="17"/>
+  <concept>
+    <code value="BCG"/>
+    <display value="BCG"/>
+  </concept>
+  <concept>
+    <code value="DT"/>
+    <display value="DT"/>
+  </concept>
+  <concept>
+    <code value="DTwP"/>
+    <display value="DTwP"/>
+  </concept>
+  <concept>
+    <code value="HepA"/>
+    <display value="HepA"/>
+  </concept>
+  <concept>
+    <code value="HepB"/>
+    <display value="HepB"/>
+  </concept>
+  <concept>
+    <code value="JE"/>
+    <display value="JE"/>
+  </concept>
+  <concept>
+    <code value="LARV"/>
+    <display value="LARV"/>
+  </concept>
+  <concept>
+    <code value="M"/>
+    <display value="M"/>
+  </concept>
+  <concept>
+    <code value="MMR"/>
+    <display value="MMR"/>
+  </concept>
+  <concept>
+    <code value="MR"/>
+    <display value="MR"/>
+  </concept>
+  <concept>
+    <code value="Malaria"/>
+    <display value="Malaria"/>
+  </concept>
+  <concept>
+    <code value="TDV"/>
+    <display value="TDV"/>
+  </concept>
+  <concept>
+    <code value="TT"/>
+    <display value="TT"/>
+  </concept>
+  <concept>
+    <code value="YF"/>
+    <display value="YF"/>
+  </concept>
+  <concept>
+    <code value="bOPV"/>
+    <display value="bOPV"/>
+  </concept>
+  <concept>
+    <code value="dT"/>
+    <display value="dT"/>
+  </concept>
+  <concept>
+    <code value="tOPV"/>
+    <display value="tOPV"/>
+  </concept>
+</CodeSystem>

@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VagTUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "Diluent",
+  "description": "Carton containing 20 boxes of 50 ampoules each (1000 ampoules/5000 doses)[Dimensions: 50.3 x 23.8 x 35.3 cm]",
+  "volume": "50.3 x 23.8 x 35.3 cm",
+  "totalDoses": "5000",
+  "totalContainers": "1000"
+}

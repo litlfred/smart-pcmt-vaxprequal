@@ -1,0 +1,82 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "productType": "FinishedVaccineProduct",
+  "dateOfPrequal": "2001-03-20",
+  "assessmentProcedure": "PrequalificationStandard",
+  "status": "Prequalified",
+  "pharmaceuticalForm": "Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Ampoule",
+        "display": "Ampoule"
+      }
+    ]
+  },
+  "numDoses": 5,
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006MihuUAC"
+  },
+  "productName": "FVP-P-64",
+  "vaccineFullName": "Yellow fever vaccine (live attenuated)",
+  "vaccineAbbreviatedName": "YF",
+  "vaccineCommercialName": "Stabilized Yellow Fever Vaccine",
+  "vaccineTypeId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSpuUAE"
+  },
+  "routeOfAdministration": "Intramuscularorsubcutaneous",
+  "vialMonitor": "Type 14",
+  "applicantId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X000049bJ9SQAU"
+  },
+  "applicantName": "Institut Pasteur de Dakar (IPD)",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p53QAA"
+  },
+  "nraName": "Ministère de la Santé publique (DPM)",
+  "nraCountry": "Senegal",
+  "shelfLife": "36 months",
+  "storageTemperature": "2 - 8°C",
+  "diluent": "Sodium chloride (0.9%)",
+  "lastPublishingDate": "2024-09-10",
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer0013X000049bJ9SQAU"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder0013X0000498p53QAA"
+  },
+  "manufacturerLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer/PreQualManufacturer0013X000049bJ9SQAU"
+  },
+  "nraLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA/PreQualNRA0013X0000498p53QAA"
+  },
+  "vaccineLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine/PreQualVaccinea3S3X000003cSpuUAE"
+  },
+  "packagingLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging/PreQualPackaginga3H3X000001VaaIUAS"
+    }
+  ],
+  "documentLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail/PreQualDocument069NN000005i24tYAA"
+    }
+  ],
+  "siteLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail/PreQualSite0013X000049bJ9SQAU"
+    }
+  ],
+  "ingredientLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient/PreQualIngredienta3K3X000006MihuUACIng1"
+    }
+  ]
+}

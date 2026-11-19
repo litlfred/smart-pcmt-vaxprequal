@@ -1,0 +1,16 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/pcmt-vaxprequal/Binary/PreQualIngredienta3K3X000006MiiKUASIng4> a fhir:Binary ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PreQualIngredienta3K3X000006MiiKUASIng4"] ; # 
+  fhir:contentType [ fhir:v "application/fhir+json"] ; # 
+  fhir:data [ fhir:v "ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGNtdC12YXhwcmVxdWFsL1N0cnVjdHVyZURlZmluaXRpb24vUHJlUXVhbFByb2R1Y3RJbmdyZWRpZW50IiwKICAiaW5ncmVkaWVudFR5cGUiOiAiVnhGVlAiLAogICJwcm9kdWN0IjogImEzSzNYMDAwMDA2TWlpS1VBUyIsCiAgInByb2R1Y3RDb21wb25lbnRUeXBlIjogIkFjdGl2ZSIKfQo="^^xsd:base64Binary] . # 
+
+# -------------------------------------------------------------------------------------
+

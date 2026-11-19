@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005izZkYAI"
+  },
+  "documentName": "Container Photo-pq_266_je_biologicale_container",
+  "documentType": "Photo",
+  "versionId": "068NN000005zkL0YAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

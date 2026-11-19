@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vag4UAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "54.0",
+  "description": "Carton of 1 monodose vial. Dimensions: 30 x 30 x 60 mm.",
+  "height": "3.0",
+  "length": "3.0",
+  "width": "6.0",
+  "primaryContainers": "1"
+}

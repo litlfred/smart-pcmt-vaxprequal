@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p6VQAQ"
+  },
+  "name": "Federal Service on Surveillance in Healthcare (ROSZDRAVNADZOR) of the Russian Federation",
+  "country": "Russian Federation",
+  "website": "http://www.roszdravnadzor.ru/en/medproducts/monitoring",
+  "organizationReference": {
+    "reference": "Organization/Holder0013X0000498p6VQAQ"
+  }
+}

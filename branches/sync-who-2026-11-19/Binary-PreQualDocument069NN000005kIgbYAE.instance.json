@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kIgbYAE"
+  },
+  "documentName": "Container Photo-pq_296_bOPV_1%263_10%20dose_BioFarma_container_image_2Dbarcode122022",
+  "documentType": "Photo",
+  "versionId": "068NN00000613A5YAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

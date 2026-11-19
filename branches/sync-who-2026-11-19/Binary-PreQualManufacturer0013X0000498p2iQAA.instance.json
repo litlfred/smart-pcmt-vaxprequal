@@ -1,0 +1,17 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p2iQAA"
+  },
+  "name": "Instituto Butantan",
+  "addressLine1": "Av. Vital Brazil 1500",
+  "city": "São Paulo",
+  "country": "Brazil",
+  "postalCode": "05503-900",
+  "isoCountryCode": "BRA",
+  "region": "AMRO",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X0000498p2iQAA"
+  }
+}

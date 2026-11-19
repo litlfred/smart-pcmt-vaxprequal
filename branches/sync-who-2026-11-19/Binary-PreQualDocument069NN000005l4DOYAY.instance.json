@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005l4DOYAY"
+  },
+  "documentName": "pq_347_VAricella_1dose_SK_container_image-2019",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000061q18YAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

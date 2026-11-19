@@ -1,0 +1,64 @@
+# PreQualDBf4749d5c7dc03738b6fad169dd71fa00 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDBf4749d5c7dc03738b6fad169dd71fa00**
+
+## Binary: PreQualDBf4749d5c7dc03738b6fad169dd71fa00
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "1997-04-09",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "Measles",
+        "display": "Measles"
+      }
+    ]
+  },
+  "commercialName": "Measles vaccine",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "VialAmpoule",
+        "display": "Vial + Ampoule"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "PT Bio Farma (Persero)"
+  },
+  "responsibleNRA": {
+    "text": "National Agency of Drug and Food Control Indonesia"
+  },
+  "index": {
+    "value": "f4749d5c7dc03738b6fad169dd71fa00"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer3ad507e03b3c8420f83f895f7122255f"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder9899e21a11ed6ac7b548ef6171579c60"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/MeaslesProductf4749d5c7dc03738b6fad169dd71fa00"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

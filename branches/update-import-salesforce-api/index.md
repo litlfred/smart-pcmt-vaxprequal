@@ -1,0 +1,6934 @@
+# Home - SMART Product Catalog v0.1.0
+
+* [**Table of Contents**](toc.md)
+* **Home**
+
+## Home
+
+| | |
+| :--- | :--- |
+| *Official URL*:http://smart.who.int/pcmt-vaxprequal/ImplementationGuide/smart.who.int.pcmt-vaxprequal | *Version*:0.1.0 |
+| Draft as of 2026-03-11 | *Computable Name*:SMARTPCMTDatasetVAXPreQual |
+
+ This DAK and set of implementation tools are still undergoing development. 
+
+ Content is for demonstration purposes only. 
+
+### Summary
+
+This WHO **[insert health domain here]** DAK **add content here**
+
+### L1 Narrative guidelines
+
+**[insert content here]**
+
+### L2 Operational guidelines
+
+The L2 **[insert health domain here]** Digital adaptation kit publications and implementations tools can be found here:
+
+* [Published DAK Document]()
+* [Link to core data dictionary]()
+* [Link to decision support logic]()
+* [Link to scheduling logic]()
+* [Link to indicators table]()
+* [Link to functional and non functional requirements]()
+
+### L3 Machine readable guidelines
+
+The L3 FHIR Implementation Guide for the **[insert health domain here]** SMART Guidelines is yet to be published. Links will be published here as soon as they're available.
+
+### L4 Executable guidelines
+
+Reference implementations representing the L4 layer for the **[insert health domain here]** SMART Guidelines are not yet available. Links will be published here as soon as they're available.
+
+### L5 Dynamic guidelines
+
+Content representing the L5 layer for the **[insert health domain here]** SMART Guidelines are not yet available. Links will be published here as soon as they're available.
+
+### News
+
+### Contact Us
+
+Please let us know about your experience in using the DAK and questions you may have by contacting us at [SMART@who.int](mailto:SMART@who.int?subject = DAK Feedback)
+
+### License
+
+This work is licensed under a [Creative Commons Attribution-NonCommercial-ShareAlike 3.0 IGO License](http://creativecommons.org/licenses/by-nc-sa/3.0/igo/).
+
+![](https://i.creativecommons.org/l/by-nc-sa/3.0/igo/88x31.png)
+
+### Providing Feedback
+
+ Feedback specific to this specification can provided through: 
+
+* Clicking on one of the Feedbacks link to the right of any section header
+* Sending an email to [SMART@who.int](mailto:SMART@who.int?subject = DAK Feedback)
+* Creating an issue on GitHub [pcmt-vaxprequal repository](https://github.com/WorldHealthOrganization/pcmt-vaxprequal)
+
+### Disclaimer
+
+The specification herewith documented is a demo working specification and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification or its consequences.
+
+This WHO **[insert health domain here]** Implementation Guide details how to use Health Level 7 (HL7) Fast Healthcare Interoperability Resources (FHIR) for consistent digital representation of **[insert health domain here]** services.
+
+ This implementation guide and set of artifacts are still undergoing development. 
+
+ Content is for demonstration purposes only. 
+
+### Summary
+
+This implementation guide includes a machine-readable representation of WHO guidelines for **[insert health domain here]**, as documented in the WHO Digital Adaptation Kit for **[insert health domain here]** (link forthcoming) and explicitly encodes computer-interoperable logic, including data models, terminologies, and logic expressions, in a computable language to support implementation of **[insert health domain here]** use cases by WHO Member States.
+
+The guide is part of the [WHO SMART Guidelines approach](https://www.who.int/teams/digital-health-and-innovation/smart-guidelines) to support countries to integrate WHO global health and data recommendations into digital systems accurately and consistently. It defines a series of FHIR Resources, Profiles, Extensions, and Terminology based on the WHO **[insert health domain here]** Digital Adaptation Kit (link forthcoming).
+
+Supporting guidance, recommendations, resources, and standards are included in the [References](references.md) and [Dependencies](dependencies.md).
+
+### About this implementation guide
+
+This implementation guide is broken into the following levels of [knowledge representation](https://hl7.org/fhir/uv/cpg/documentation-approach-06-01-levels-of-knowledge-representation.html):
+
+* [Home](index.md) - contains references to the guidance, guidelines, policies and recommendations underpinning this implementation guide.
+* [Business Requirements](business-requirements.md) - contains the requirements for this implementation guide including the definition of key concepts, use cases, and a data dictionary.
+* [Data Models and Exchange](data-models-and-exchange.md) - contains the data models and data exchange protocols with actors and transactions defined.
+* [Deployment Guidance ](deployment.md) - contains relevant technical specifications and guidance, testing resources, reference implementation materials, and supporting guidance for adaptation to local contexts.
+
+This guide is prepared to facilitate digital implementation of WHO **[insert health domain here]** guidelines by providing FHIR-based computable representations of and implementation guidance for using the key components of the WHO **[insert health domain here]** digital adaptation kit (DAK):
+
+* Health Interventions & Recommendations
+* Generic Personas
+* User Scenarios
+* Business Processes & Workflows
+* Core Data Elements
+* Decision Support Logic
+* Indicators & Monitoring
+* Functional & Non-functional Requirements
+
+This guide is a companion to the Digital Adaptation Kit (DAK) and should be used side-by-side with it. Implementers are strongly encouraged to make use of the Digital Adaptation Kit. The focus of this guide is on the explanation and use of the computable artifacts.
+
+This guide assumes use of the following resources:
+
+* [IPS Patient](http://hl7.org/fhir/uv/ips/StructureDefinition/Patient-uv-ips)
+* [CPG ActivityDefinitions](https://hl7.org/fhir/uv/cpg/artifacts.html#activitydefinition-index)
+* For a complete listing of the artifacts defined in this implementation guide, refer to the [Artifact Index](artifacts.md).
+* A complete offline copy of this implementation guide can be found on the [Downloads](downloads.md) page.
+* This Implementation Guide makes use of [Clinical Quality Language](https://cql.hl7.org/) for the decision support artifacts including the PlanDefinitions and Measures. They are used to express how a calculation should occur and can be used with a CQL engine in order to process the decision or indicator directly from the applicable FHIR resources. Links to this specification, the FHIR Clinical Practice Guidelines Speciciation, and other helpful resources can be found in the Support dropdown.
+
+### Disclaimer
+
+The specification herewith documented is a demo working specification and may not be used for any implementation purposes. This draft is provided without warranty of completeness or consistency and the official publication supersedes this draft. No liability can be inferred from the use or misuse of this specification or its consequences.
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "ImplementationGuide",
+  "id" : "smart.who.int.pcmt-vaxprequal",
+  "meta" : {
+    "profile" : ["http://smart.who.int/smart-base/ImplementationGuide-SGImplementationGuide"]
+  },
+  "url" : "http://smart.who.int/pcmt-vaxprequal/ImplementationGuide/smart.who.int.pcmt-vaxprequal",
+  "version" : "0.1.0",
+  "name" : "SMARTPCMTDatasetVAXPreQual",
+  "title" : "SMART Product Catalog",
+  "status" : "draft",
+  "date" : "2026-03-11T13:44:05+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "Data exchange specifications for Product Catalog supporting the SMART Guidelines",
+  "packageId" : "smart.who.int.pcmt-vaxprequal",
+  "license" : "CC0-1.0",
+  "fhirVersion" : ["5.0.0"],
+  "dependsOn" : [{
+    "id" : "hl7tx",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on HL7 Terminology"
+    }],
+    "uri" : "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+    "packageId" : "hl7.terminology.r5",
+    "version" : "7.1.0"
+  },
+  {
+    "id" : "hl7ext",
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-dependency-comment",
+      "valueMarkdown" : "Automatically added as a dependency - all IGs depend on the HL7 Extension Pack"
+    }],
+    "uri" : "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+    "packageId" : "hl7.fhir.uv.extensions.r5",
+    "version" : "5.2.0"
+  },
+  {
+    "id" : "smart_who_int_base",
+    "uri" : "http://smart.who.int/base/ImplementationGuide/smart.who.int.base",
+    "packageId" : "smart.who.int.base",
+    "version" : "current"
+  },
+  {
+    "id" : "IHE_ITI_mCSD",
+    "uri" : "https://profiles.ihe.net/ITI/mCSD/ImplementationGuide/ihe.iti.mcsd",
+    "packageId" : "ihe.iti.mcsd",
+    "version" : "3.8.0"
+  }],
+  "definition" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency",
+      "valueCode" : "hl7.fhir.uv.tools.r5#0.9.0"
+    }],
+    "resource" : [{
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Holder0013X00003cPkgXQAS"
+      },
+      "name" : "Holder0013X00003cPkgXQAS",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Holder0013X0000498p4bQAA"
+      },
+      "name" : "Holder0013X0000498p4bQAA",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Holder0013X0000498p4fQAA"
+      },
+      "name" : "Holder0013X0000498p4fQAA",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Holder0013X0000498p4mQAA"
+      },
+      "name" : "Holder0013X0000498p4mQAA",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Holder0013X0000498p4wQAA"
+      },
+      "name" : "Holder0013X0000498p4wQAA",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Holder0013X0000498p53QAA"
+      },
+      "name" : "Holder0013X0000498p53QAA",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Holder0013X0000498p67QAA"
+      },
+      "name" : "Holder0013X0000498p67QAA",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Holder0013X00004993qyQAA"
+      },
+      "name" : "Holder0013X00004993qyQAA",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Manufacturer0013X00003cPkzfQAC"
+      },
+      "name" : "Manufacturer0013X00003cPkzfQAC",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Manufacturer0013X0000498p2jQAA"
+      },
+      "name" : "Manufacturer0013X0000498p2jQAA",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Manufacturer0013X0000498p2qQAA"
+      },
+      "name" : "Manufacturer0013X0000498p2qQAA",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Manufacturer0013X0000498p2wQAA"
+      },
+      "name" : "Manufacturer0013X0000498p2wQAA",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Manufacturer0013X0000498p3gQAA"
+      },
+      "name" : "Manufacturer0013X0000498p3gQAA",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Manufacturer0013X0000498p3PQAQ"
+      },
+      "name" : "Manufacturer0013X0000498p3PQAQ",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Manufacturer0013X0000498p3ZQAQ"
+      },
+      "name" : "Manufacturer0013X0000498p3ZQAQ",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Manufacturer0013X0000498p4LQAQ"
+      },
+      "name" : "Manufacturer0013X0000498p4LQAQ",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Manufacturer0013X0000498p4ZQAQ"
+      },
+      "name" : "Manufacturer0013X0000498p4ZQAQ",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Manufacturer0013X00004993qnQAA"
+      },
+      "name" : "Manufacturer0013X00004993qnQAA",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Organization"
+      }],
+      "reference" : {
+        "reference" : "Organization/Manufacturer0013X000049bJ9SQAU"
+      },
+      "name" : "Manufacturer0013X000049bJ9SQAU",
+      "isExample" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ConceptMap"
+      }],
+      "reference" : {
+        "reference" : "ConceptMap/PreQualCSVtoAPIConceptMap"
+      },
+      "name" : "PreQual CSV to Vaccine Product ID Concept Map",
+      "description" : "Maps old CSV export MD5-based identifiers to authoritative vaccine product IDs",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualBulkSupplier0013X0000498p3IQAQ"
+      },
+      "name" : "PreQualBulkSupplier0013X0000498p3IQAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualBulkSupplier"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000005atRtUAI"
+      },
+      "name" : "PreQualDBa3K3X000005atRtUAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000005atSwUAI"
+      },
+      "name" : "PreQualDBa3K3X000005atSwUAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MihsUAC"
+      },
+      "name" : "PreQualDBa3K3X000006MihsUAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MihtUAC"
+      },
+      "name" : "PreQualDBa3K3X000006MihtUAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MihuUAC"
+      },
+      "name" : "PreQualDBa3K3X000006MihuUAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MihvUAC"
+      },
+      "name" : "PreQualDBa3K3X000006MihvUAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MihwUAC"
+      },
+      "name" : "PreQualDBa3K3X000006MihwUAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MihxUAC"
+      },
+      "name" : "PreQualDBa3K3X000006MihxUAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MihyUAC"
+      },
+      "name" : "PreQualDBa3K3X000006MihyUAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006Mii0UAC"
+      },
+      "name" : "PreQualDBa3K3X000006Mii0UAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006Mii1UAC"
+      },
+      "name" : "PreQualDBa3K3X000006Mii1UAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006Mii2UAC"
+      },
+      "name" : "PreQualDBa3K3X000006Mii2UAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006Mii3UAC"
+      },
+      "name" : "PreQualDBa3K3X000006Mii3UAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006Mii5UAC"
+      },
+      "name" : "PreQualDBa3K3X000006Mii5UAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006Mii6UAC"
+      },
+      "name" : "PreQualDBa3K3X000006Mii6UAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006Mii7UAC"
+      },
+      "name" : "PreQualDBa3K3X000006Mii7UAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006Mii8UAC"
+      },
+      "name" : "PreQualDBa3K3X000006Mii8UAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006Mii9UAC"
+      },
+      "name" : "PreQualDBa3K3X000006Mii9UAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MiiAUAS"
+      },
+      "name" : "PreQualDBa3K3X000006MiiAUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MiiBUAS"
+      },
+      "name" : "PreQualDBa3K3X000006MiiBUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MiiCUAS"
+      },
+      "name" : "PreQualDBa3K3X000006MiiCUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MiiDUAS"
+      },
+      "name" : "PreQualDBa3K3X000006MiiDUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MiiEUAS"
+      },
+      "name" : "PreQualDBa3K3X000006MiiEUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MiiFUAS"
+      },
+      "name" : "PreQualDBa3K3X000006MiiFUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MiiGUAS"
+      },
+      "name" : "PreQualDBa3K3X000006MiiGUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MiiHUAS"
+      },
+      "name" : "PreQualDBa3K3X000006MiiHUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MiiIUAS"
+      },
+      "name" : "PreQualDBa3K3X000006MiiIUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MiiJUAS"
+      },
+      "name" : "PreQualDBa3K3X000006MiiJUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MiiKUAS"
+      },
+      "name" : "PreQualDBa3K3X000006MiiKUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MiiLUAS"
+      },
+      "name" : "PreQualDBa3K3X000006MiiLUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MiiMUAS"
+      },
+      "name" : "PreQualDBa3K3X000006MiiMUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MiiNUAS"
+      },
+      "name" : "PreQualDBa3K3X000006MiiNUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDBa3K3X000006MiiOUAS"
+      },
+      "name" : "PreQualDBa3K3X000006MiiOUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005hpfqYAA"
+      },
+      "name" : "PreQualDocument069NN000005hpfqYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005hsVMYAY"
+      },
+      "name" : "PreQualDocument069NN000005hsVMYAY",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005huAeYAI"
+      },
+      "name" : "PreQualDocument069NN000005huAeYAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005huyhYAA"
+      },
+      "name" : "PreQualDocument069NN000005huyhYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005hvDPYAY"
+      },
+      "name" : "PreQualDocument069NN000005hvDPYAY",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005hwh7YAA"
+      },
+      "name" : "PreQualDocument069NN000005hwh7YAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005hwyuYAA"
+      },
+      "name" : "PreQualDocument069NN000005hwyuYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005hx6rYAA"
+      },
+      "name" : "PreQualDocument069NN000005hx6rYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005hxOcYAI"
+      },
+      "name" : "PreQualDocument069NN000005hxOcYAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005hykYYAQ"
+      },
+      "name" : "PreQualDocument069NN000005hykYYAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005hyvmYAA"
+      },
+      "name" : "PreQualDocument069NN000005hyvmYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005hyzMYAQ"
+      },
+      "name" : "PreQualDocument069NN000005hyzMYAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005hziIYAQ"
+      },
+      "name" : "PreQualDocument069NN000005hziIYAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005hzjwYAA"
+      },
+      "name" : "PreQualDocument069NN000005hzjwYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005hzTfYAI"
+      },
+      "name" : "PreQualDocument069NN000005hzTfYAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005hzzuYAA"
+      },
+      "name" : "PreQualDocument069NN000005hzzuYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i0HgYAI"
+      },
+      "name" : "PreQualDocument069NN000005i0HgYAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i0mQYAQ"
+      },
+      "name" : "PreQualDocument069NN000005i0mQYAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i0uTYAQ"
+      },
+      "name" : "PreQualDocument069NN000005i0uTYAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i0W8YAI"
+      },
+      "name" : "PreQualDocument069NN000005i0W8YAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i0XuYAI"
+      },
+      "name" : "PreQualDocument069NN000005i0XuYAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i1aFYAQ"
+      },
+      "name" : "PreQualDocument069NN000005i1aFYAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i1dXYAQ"
+      },
+      "name" : "PreQualDocument069NN000005i1dXYAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i1nFYAQ"
+      },
+      "name" : "PreQualDocument069NN000005i1nFYAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i1VTYAY"
+      },
+      "name" : "PreQualDocument069NN000005i1VTYAY",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i24tYAA"
+      },
+      "name" : "PreQualDocument069NN000005i24tYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i287YAA"
+      },
+      "name" : "PreQualDocument069NN000005i287YAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i2jEYAQ"
+      },
+      "name" : "PreQualDocument069NN000005i2jEYAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i2JVYAY"
+      },
+      "name" : "PreQualDocument069NN000005i2JVYAY",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i2OIYAY"
+      },
+      "name" : "PreQualDocument069NN000005i2OIYAY",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i2svYAA"
+      },
+      "name" : "PreQualDocument069NN000005i2svYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i2XxYAI"
+      },
+      "name" : "PreQualDocument069NN000005i2XxYAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i2ZZYAY"
+      },
+      "name" : "PreQualDocument069NN000005i2ZZYAY",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i3AhYAI"
+      },
+      "name" : "PreQualDocument069NN000005i3AhYAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i3fGYAQ"
+      },
+      "name" : "PreQualDocument069NN000005i3fGYAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i3IgYAI"
+      },
+      "name" : "PreQualDocument069NN000005i3IgYAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i48IYAQ"
+      },
+      "name" : "PreQualDocument069NN000005i48IYAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i4gCYAQ"
+      },
+      "name" : "PreQualDocument069NN000005i4gCYAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i4hmYAA"
+      },
+      "name" : "PreQualDocument069NN000005i4hmYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i4HzYAI"
+      },
+      "name" : "PreQualDocument069NN000005i4HzYAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i4mdYAA"
+      },
+      "name" : "PreQualDocument069NN000005i4mdYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i4mgYAA"
+      },
+      "name" : "PreQualDocument069NN000005i4mgYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i4umYAA"
+      },
+      "name" : "PreQualDocument069NN000005i4umYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i51DYAQ"
+      },
+      "name" : "PreQualDocument069NN000005i51DYAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i55zYAA"
+      },
+      "name" : "PreQualDocument069NN000005i55zYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i57cYAA"
+      },
+      "name" : "PreQualDocument069NN000005i57cYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i5aeYAA"
+      },
+      "name" : "PreQualDocument069NN000005i5aeYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i5CfYAI"
+      },
+      "name" : "PreQualDocument069NN000005i5CfYAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i5igYAA"
+      },
+      "name" : "PreQualDocument069NN000005i5igYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i5QyYAI"
+      },
+      "name" : "PreQualDocument069NN000005i5QyYAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i5UHYAY"
+      },
+      "name" : "PreQualDocument069NN000005i5UHYAY",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i5XUYAY"
+      },
+      "name" : "PreQualDocument069NN000005i5XUYAY",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i60aYAA"
+      },
+      "name" : "PreQualDocument069NN000005i60aYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i65LYAQ"
+      },
+      "name" : "PreQualDocument069NN000005i65LYAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i6DJYAY"
+      },
+      "name" : "PreQualDocument069NN000005i6DJYAY",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i7PWYAY"
+      },
+      "name" : "PreQualDocument069NN000005i7PWYAY",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i873YAA"
+      },
+      "name" : "PreQualDocument069NN000005i873YAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i8GtYAI"
+      },
+      "name" : "PreQualDocument069NN000005i8GtYAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i8GuYAI"
+      },
+      "name" : "PreQualDocument069NN000005i8GuYAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i9CoYAI"
+      },
+      "name" : "PreQualDocument069NN000005i9CoYAI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005i9hYYAQ"
+      },
+      "name" : "PreQualDocument069NN000005i9hYYAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iA7QYAU"
+      },
+      "name" : "PreQualDocument069NN000005iA7QYAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iAAVYA2"
+      },
+      "name" : "PreQualDocument069NN000005iAAVYA2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iAiPYAU"
+      },
+      "name" : "PreQualDocument069NN000005iAiPYAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iAIXYA2"
+      },
+      "name" : "PreQualDocument069NN000005iAIXYA2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iC2hYAE"
+      },
+      "name" : "PreQualDocument069NN000005iC2hYAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iCqdYAE"
+      },
+      "name" : "PreQualDocument069NN000005iCqdYAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iDEtYAM"
+      },
+      "name" : "PreQualDocument069NN000005iDEtYAM",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iEvgYAE"
+      },
+      "name" : "PreQualDocument069NN000005iEvgYAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iFlFYAU"
+      },
+      "name" : "PreQualDocument069NN000005iFlFYAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iFy9YAE"
+      },
+      "name" : "PreQualDocument069NN000005iFy9YAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iGB5YAM"
+      },
+      "name" : "PreQualDocument069NN000005iGB5YAM",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iGEMYA2"
+      },
+      "name" : "PreQualDocument069NN000005iGEMYA2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iGHVYA2"
+      },
+      "name" : "PreQualDocument069NN000005iGHVYA2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iGiyYAE"
+      },
+      "name" : "PreQualDocument069NN000005iGiyYAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iH8nYAE"
+      },
+      "name" : "PreQualDocument069NN000005iH8nYAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iHaBYAU"
+      },
+      "name" : "PreQualDocument069NN000005iHaBYAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iHf1YAE"
+      },
+      "name" : "PreQualDocument069NN000005iHf1YAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iIUfYAM"
+      },
+      "name" : "PreQualDocument069NN000005iIUfYAM",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iJ7LYAU"
+      },
+      "name" : "PreQualDocument069NN000005iJ7LYAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iJiVYAU"
+      },
+      "name" : "PreQualDocument069NN000005iJiVYAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iJTxYAM"
+      },
+      "name" : "PreQualDocument069NN000005iJTxYAM",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iJyYYAU"
+      },
+      "name" : "PreQualDocument069NN000005iJyYYAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iK6fYAE"
+      },
+      "name" : "PreQualDocument069NN000005iK6fYAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iK8HYAU"
+      },
+      "name" : "PreQualDocument069NN000005iK8HYAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iKkwYAE"
+      },
+      "name" : "PreQualDocument069NN000005iKkwYAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iKMmYAM"
+      },
+      "name" : "PreQualDocument069NN000005iKMmYAM",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iKRaYAM"
+      },
+      "name" : "PreQualDocument069NN000005iKRaYAM",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iKrOYAU"
+      },
+      "name" : "PreQualDocument069NN000005iKrOYAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iKTCYA2"
+      },
+      "name" : "PreQualDocument069NN000005iKTCYA2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iKWQYA2"
+      },
+      "name" : "PreQualDocument069NN000005iKWQYA2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iKxrYAE"
+      },
+      "name" : "PreQualDocument069NN000005iKxrYAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iL9AYAU"
+      },
+      "name" : "PreQualDocument069NN000005iL9AYAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iLcCYAU"
+      },
+      "name" : "PreQualDocument069NN000005iLcCYAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iLDxYAM"
+      },
+      "name" : "PreQualDocument069NN000005iLDxYAM",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iLInYAM"
+      },
+      "name" : "PreQualDocument069NN000005iLInYAM",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iLkDYAU"
+      },
+      "name" : "PreQualDocument069NN000005iLkDYAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iLnTYAU"
+      },
+      "name" : "PreQualDocument069NN000005iLnTYAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iLQxYAM"
+      },
+      "name" : "PreQualDocument069NN000005iLQxYAM",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005iLQyYAM"
+      },
+      "name" : "PreQualDocument069NN000005iLQyYAM",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005kEI2YAM"
+      },
+      "name" : "PreQualDocument069NN000005kEI2YAM",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005kEQ6YAM"
+      },
+      "name" : "PreQualDocument069NN000005kEQ6YAM",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005kErVYAU"
+      },
+      "name" : "PreQualDocument069NN000005kErVYAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005kEZlYAM"
+      },
+      "name" : "PreQualDocument069NN000005kEZlYAM",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005kFnaYAE"
+      },
+      "name" : "PreQualDocument069NN000005kFnaYAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005kGJsYAM"
+      },
+      "name" : "PreQualDocument069NN000005kGJsYAM",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005kHUSYA2"
+      },
+      "name" : "PreQualDocument069NN000005kHUSYA2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005kJG6YAM"
+      },
+      "name" : "PreQualDocument069NN000005kJG6YAM",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005kJhVYAU"
+      },
+      "name" : "PreQualDocument069NN000005kJhVYAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005knsbYAA"
+      },
+      "name" : "PreQualDocument069NN000005knsbYAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005lDn4YAE"
+      },
+      "name" : "PreQualDocument069NN000005lDn4YAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualDocument069NN000005lDwoYAE"
+      },
+      "name" : "PreQualDocument069NN000005lDwoYAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MihuUACIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MihuUACIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MihvUACIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MihvUACIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MihwUACIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MihwUACIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MihxUACIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MihxUACIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MihxUACIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MihxUACIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MihyUACIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MihyUACIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MihyUACIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MihyUACIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii0UACIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii0UACIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii0UACIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii0UACIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii0UACIng3"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii0UACIng3",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii0UACIng4"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii0UACIng4",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii1UACIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii1UACIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii1UACIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii1UACIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii2UACIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii2UACIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii2UACIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii2UACIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii3UACIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii3UACIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii3UACIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii3UACIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii3UACIng3"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii3UACIng3",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii5UACIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii5UACIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii6UACIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii6UACIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii6UACIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii6UACIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii7UACIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii7UACIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii8UACIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii8UACIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii8UACIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii8UACIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii8UACIng3"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii8UACIng3",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii9UACIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii9UACIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii9UACIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii9UACIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006Mii9UACIng3"
+      },
+      "name" : "PreQualIngredienta3K3X000006Mii9UACIng3",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiAUASIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiAUASIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiAUASIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiAUASIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiAUASIng3"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiAUASIng3",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiBUASIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiBUASIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiBUASIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiBUASIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiBUASIng3"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiBUASIng3",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiBUASIng4"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiBUASIng4",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiBUASIng5"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiBUASIng5",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiCUASIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiCUASIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiCUASIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiCUASIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiDUASIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiDUASIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiDUASIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiDUASIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiEUASIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiEUASIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiEUASIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiEUASIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiEUASIng3"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiEUASIng3",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiFUASIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiFUASIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiFUASIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiFUASIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiGUASIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiGUASIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiGUASIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiGUASIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiGUASIng3"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiGUASIng3",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiHUASIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiHUASIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiHUASIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiHUASIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiHUASIng3"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiHUASIng3",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiHUASIng4"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiHUASIng4",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiIUASIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiIUASIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiIUASIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiIUASIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiIUASIng3"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiIUASIng3",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiIUASIng4"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiIUASIng4",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiJUASIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiJUASIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiJUASIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiJUASIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiJUASIng3"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiJUASIng3",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiJUASIng4"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiJUASIng4",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiKUASIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiKUASIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiKUASIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiKUASIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiKUASIng3"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiKUASIng3",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiKUASIng4"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiKUASIng4",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiLUASIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiLUASIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiMUASIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiMUASIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiMUASIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiMUASIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiNUASIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiNUASIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiNUASIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiNUASIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiNUASIng3"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiNUASIng3",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiNUASIng4"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiNUASIng4",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiOUASIng1"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiOUASIng1",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiOUASIng2"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiOUASIng2",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiOUASIng3"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiOUASIng3",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualIngredienta3K3X000006MiiOUASIng4"
+      },
+      "name" : "PreQualIngredienta3K3X000006MiiOUASIng4",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualManufacturer0013X00003cPkzfQAC"
+      },
+      "name" : "PreQualManufacturer0013X00003cPkzfQAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualManufacturer0013X0000498p2jQAA"
+      },
+      "name" : "PreQualManufacturer0013X0000498p2jQAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualManufacturer0013X0000498p2qQAA"
+      },
+      "name" : "PreQualManufacturer0013X0000498p2qQAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualManufacturer0013X0000498p2wQAA"
+      },
+      "name" : "PreQualManufacturer0013X0000498p2wQAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualManufacturer0013X0000498p3gQAA"
+      },
+      "name" : "PreQualManufacturer0013X0000498p3gQAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualManufacturer0013X0000498p3PQAQ"
+      },
+      "name" : "PreQualManufacturer0013X0000498p3PQAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualManufacturer0013X0000498p3ZQAQ"
+      },
+      "name" : "PreQualManufacturer0013X0000498p3ZQAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualManufacturer0013X0000498p4LQAQ"
+      },
+      "name" : "PreQualManufacturer0013X0000498p4LQAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualManufacturer0013X0000498p4ZQAQ"
+      },
+      "name" : "PreQualManufacturer0013X0000498p4ZQAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualManufacturer0013X00004993qnQAA"
+      },
+      "name" : "PreQualManufacturer0013X00004993qnQAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualManufacturer0013X000049bJ9SQAU"
+      },
+      "name" : "PreQualManufacturer0013X000049bJ9SQAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualNRA0013X00003cPkgXQAS"
+      },
+      "name" : "PreQualNRA0013X00003cPkgXQAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualNRA0013X0000498p4bQAA"
+      },
+      "name" : "PreQualNRA0013X0000498p4bQAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualNRA0013X0000498p4fQAA"
+      },
+      "name" : "PreQualNRA0013X0000498p4fQAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualNRA0013X0000498p4mQAA"
+      },
+      "name" : "PreQualNRA0013X0000498p4mQAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualNRA0013X0000498p4wQAA"
+      },
+      "name" : "PreQualNRA0013X0000498p4wQAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualNRA0013X0000498p53QAA"
+      },
+      "name" : "PreQualNRA0013X0000498p53QAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualNRA0013X0000498p67QAA"
+      },
+      "name" : "PreQualNRA0013X0000498p67QAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualNRA0013X00004993qyQAA"
+      },
+      "name" : "PreQualNRA0013X00004993qyQAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaaUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaaUAC",
+      "description" : "Box containing 192 cartons of 10 vials (19200 doses / 1920 vials)[Dimensions: 5.8 x 5.8 x 5.3 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaabUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaabUAC",
+      "description" : "Carton of 10 vials (200 doses)[Dimensions: 12.5 x 5.5 x 5.7 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaBUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaBUAS",
+      "description" : "Carton of 1 tube [Dimensions: 5.3 x 8.7 x 2.5 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaacUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaacUAC",
+      "description" : "Box containing 192 cartons of 10 vials (38 400 doses /    1 920 vials)[Dimensions: 5.8 x 5.8 x 5.3 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaCUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaCUAS",
+      "description" : "Carton of 10 tubes [Dimensions: 12.8 x 8.7 x 2.5 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaadUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaadUAC",
+      "description" : "Carton of 10 vials (100 doses) [Dimensions: 12.5 x 5.5 x 5.7 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaDUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaDUAS",
+      "description" : "Carton of 50 tubes [Dimensions: 14.6 x 8.5 x 6.9 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaeUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaeUAC",
+      "description" : "Box containing 192 cartons of 10 vials (19 200 doses /     1 920 vials)  [Dimensions: 58 x 58 x 53 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaEUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaEUAS",
+      "description" : "Box of 220 cartons (220 doses) [Dimensions: 34.2 x 25.1 x 43.1 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaFUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaFUAS",
+      "description" : "Box of 68 cartons (680 doses) [Dimensions: 34.2 x 25.1 x 43.1 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaGUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaGUAS",
+      "description" : "Box of 30 cartons (1500 doses) [Dimensions: 34.2 x 25.1 x 43.1 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaHUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaHUAS",
+      "description" : "50",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaIUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaIUAS",
+      "description" : "10",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaajUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaajUAC",
+      "description" : "Carton of 1 single dose vial [Dimensions 3.0 x 2.0 x 5.4 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaJUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaJUAS",
+      "description" : "10",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaakUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaakUAC",
+      "description" : "Carton of 50 single dose vials (50 doses)[Dimensions: 16.3 x 8.5 x 4.4 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaKUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaKUAS",
+      "description" : "20",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaalUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaalUAC",
+      "description" : "Box containing 400 single dose cartons (400 doses)[Dimensions: 47 x 38 x 38 cm].",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaLUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaLUAS",
+      "description" : "Active: Carton of 100 ampoules (2 000 doses)[Dimensions: 13.6 x 13.3 x 8 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaamUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaamUAC",
+      "description" : "Box containing 1600 single dose cartons (1600 doses)[Dimensions: 84 x 64 x 71 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaMUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaMUAS",
+      "description" : "Diluent:Carton of 100 ampoules (2 000 doses)[Dimensions: 13.6 x 13.3 x 6.6 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaanUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaanUAC",
+      "description" : "Box containing 1500 vials (1500 doses)[Dimensions: 60 x 50 x 45 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaNUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaNUAS",
+      "description" : "Active: Box containing 4 000 amps. (80 000 doses)[Dimensions: 61 x 76 x 43 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaoUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaoUAC",
+      "description" : "Carton containing 3 vials (60 doses)[Dimensions: 5.4 x 5.3 x 2.2 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaOUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaOUAS",
+      "description" : "Diluent: Box containing 5000 amps (100 000 doses)[Dimensions: 75 x 41 x 37 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaapUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaapUAC",
+      "description" : "Box of 20 wrapped cartons containing 10 boxes of 3 vials each (600 vials/12000 doses)[Dimensions: 46 x 29.5 x 14 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaPUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaPUAS",
+      "description" : "Carton of 10 vials (10 doses) [Dimensions: 8.5 x 3.8 x 4.5 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaqUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaqUAC",
+      "description" : "Carton of 10 vials (100 paediatric doses) [Dimensions: 11.5 x 4.7 x 5.3 cm].",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaQUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaQUAS",
+      "description" : "Box of 220 cartons of 10 vials (2 200 doses) [Dimensions: 57.5 x 53.5 x 49.0 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaarUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaarUAC",
+      "description" : "Carton of 10 vials (100 adult doses) [Dimensions: 13.5x5.4x6.7 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaasUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaasUAC",
+      "description" : "box of 120 cartons of 10 vials (12000 doses) [dimensions: 57.5 x 53.5 x 49.0 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaatUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaatUAC",
+      "description" : "Carton of 10 vials (200 doses)  [Dimensions: 12.5 x 5.5 x 5.7 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaauUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaauUAC",
+      "description" : "Box containing 192 cartons of 10 vials (38 400 doses /    1920 vials) [Dimensions: 58 x 58 x 53 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaavUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaavUAC",
+      "description" : "Carton of 10 vials (100 doses) [Dimensions: 12.5 x 5.5 x 5.7 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaVUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaVUAS",
+      "description" : "Carton of 100 vials (active) [Dimensions 17.8 x 14.7 x 3.7 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaawUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaawUAC",
+      "description" : "Box containing 192 cartons of 10 vials (19 200 doses /     1 920 vials)  [Dimensions: 58 x 58 x 53 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaWUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaWUAS",
+      "description" : "Carton of 100 ampoules (diluent) [Dimensions 19 x 18 x 7.5 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaxUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaxUAC",
+      "description" : "Carton of 10 vials (200 doses)  [Dimensions: 12.5 x 5.5 x 5.7 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaXUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaXUAS",
+      "description" : "Box of 24 cartons of 100 vials (active) (2400 vials/ 2400 doses)[Dimensions 34 x 25 x 43 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaayUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaayUAC",
+      "description" : "Box containing 192 cartons of 10 vials (38 400 doses /    1920 vials) [Dimensions: 58 x 58 x 53 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaYUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaYUAS",
+      "description" : "Box of 8 cartons of 100 ampoules/800 doses (diluent) [Dimensions 32 x 20 x 39 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaazUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaazUAC",
+      "description" : "Carton of 5 vials (25 dose)[Dimensions: 77 x 35 x 48.5 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VaaZUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VaaZUAS",
+      "description" : "Carton of 10 vials (100 doses)[Dimensions: 12.5 x 5.5 x 5.7 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001Vab0UAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001Vab0UAC",
+      "description" : "Box containing 80 cartons of 5 vials (400 vials/2000 doses)[Dimensions: 393 x 147 x 207 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001Vab1UAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001Vab1UAC",
+      "description" : "Active: Carton of 20 ampoules (200 doses)[Dimensions: 14.5 x 9.8 x 2.8 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001Vab2UAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001Vab2UAC",
+      "description" : "Diluent:Carton of 20 ampoules (200 doses)[Dimensions: 14.5 x 5.7 x 2.6 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001Vab3UAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001Vab3UAC",
+      "description" : "Active: Box containing 175 cartons of 20 ampoules (35000 doses/ 3500 ampoules)[Dimensions: 58 x 58 x 53 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001Vab4UAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001Vab4UAC",
+      "description" : "Diluent: Box containing 175 cartons of 20 ampoules (35000 doses/3500 ampoules)[Dimensions: 46x x 31 x 33 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001Vab5UAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001Vab5UAC",
+      "description" : "Active: Carton of 20 ampoules (400 doses)[Dimensions: 14.5 x 9.8 x 2.8 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001Vab6UAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001Vab6UAC",
+      "description" : "Diluent:Carton of 20 ampoules (400 doses)[Dimensions: 14.5 x 5.7 x 2.6 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001Vab7UAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001Vab7UAC",
+      "description" : "Active: Box containing 175 cartons of 20 ampoules ( 70 000 doses/ 3500 ampoules )[Dimensions: 58 x 58 x 53 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001Vab8UAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001Vab8UAC",
+      "description" : "Diluent: Box containing 175 cartons of 20 ampoules (70 000 doses/ 3500 ampoules)[Dimensions: 46 x 31 x 33 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001Vab9UAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001Vab9UAC",
+      "description" : "Carton of 50 vials (active)(50 doses) [Dimensions 18.5x9.5x6.0 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabaUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabaUAC",
+      "description" : "carton of 50 vials (500 doses) [Dimensions 18.5x9.5x6.0 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabAUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabAUAS",
+      "description" : "Carton of 50 ampoules (diluent) [Dimesions 14.5x6.0x7.2 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabbUAC"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabbUAC",
+      "description" : "24 cartons of 50 vials (1200 vials/12000 doses) [Dimensions 60x48x41 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabBUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabBUAS",
+      "description" : "Box of 24 cartons of 50 vials (1200 vials / 1200 doses) [Dimensions 60x48x41 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabCUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabCUAS",
+      "description" : "Carton of 25 vials (500 doses) [Dimensions 13.3x13.3x6.0 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabDUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabDUAS",
+      "description" : "Box of 24 cartons of 25 vials (600 vials/12000 doses) [Dimensions 60x48x41 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabEUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabEUAS",
+      "description" : "Carton of 50 vials (active)(100 doses) [Dimensions 18.5x9.5x6.0 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabFUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabFUAS",
+      "description" : "Carton of 50 ampoules (diluent) [Dimensions 14.5x6.0x7.2 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabGUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabGUAS",
+      "description" : "Box of 24 cartons of 50 vials (1200 vials/2400 doses) [Dimensions 60x48x41 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabHUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabHUAS",
+      "description" : "Carton of 50 vials (active)(50 doses) [Dimensions 18.5x9.5x6.0]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabIUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabIUAS",
+      "description" : "Carton of 50 ampoules (diluent) [Dimensions 14.5x6.0x7.2 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabJUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabJUAS",
+      "description" : "Box of 24 cartons of 50 vials (1200 vials/1200 doses) [Dimensions 60x48x41 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabKUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabKUAS",
+      "description" : "Carton of 50 vials (active)(100 doses) [Dimensions 18.5x9.5x6.0 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabLUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabLUAS",
+      "description" : "Carton of 50 ampoules (diluent) [dimensions 14.5x6.0x7.2 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabMUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabMUAS",
+      "description" : "Box of 24 cartons of 50 vials (1200 vials/2400 doses) [Dimensions 60x48x41 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabNUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabNUAS",
+      "description" : "Carton of 50 vials (active)(500 doses) [Dimensions 18.5x9.5x6.0 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabOUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabOUAS",
+      "description" : "Carton of 50 ampoules (diluent) [Dimensions 10.5x8.7x17.2 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabPUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabPUAS",
+      "description" : "Box of 24 cartons of 50 vials (1200 vials / 12000 doses) [Dimensions 60x48x41 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabQUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabQUAS",
+      "description" : "Carton of 50 vials (active)(250 doses) [Dimensions 18.5x9.5x6.0 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabRUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabRUAS",
+      "description" : "Carton of 50 ampoules (diluent) [Dimensions 10.5x8.7x15.0 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabSUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabSUAS",
+      "description" : "Box of 24 cartons of 50 vials (1200 vials/6000 doses) [Dimensions 60x48x41 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabTUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabTUAS",
+      "description" : "Carton of 10 vials (active) [Dimensions 8.3 x 4.35 x 3.85 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabUUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabUUAS",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabVUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabVUAS",
+      "description" : "Carton of 50 vials (active)(50 doses) [Dimensions 18.5x9.5x6.0]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabWUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabWUAS",
+      "description" : "Carton of 50 ampoules (diluent) [Dimensions 14.5x6.0x7.2 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabXUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabXUAS",
+      "description" : "Box of 24 cartons of 50 vials (1200 vials/1200 doses) [Dimensions 60x48x41 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabYUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabYUAS",
+      "description" : "carton of 50 ampoules (50 doses) [Dimensions 14.5x6.0x7.0]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000001VabZUAS"
+      },
+      "name" : "PreQualPackaginga3H3X000001VabZUAS",
+      "description" : "Box of 36 cartons of 50 ampoules (1800 ampoules/1800 doses) [Dimensions 60x48x41 cm]",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000002OBWeUAO"
+      },
+      "name" : "PreQualPackaginga3H3X000002OBWeUAO",
+      "description" : "Carton of 50 vials (50 doses). Dimensions 18.5 x 9.5 x 4.0 cm",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000002OBWfUAO"
+      },
+      "name" : "PreQualPackaginga3H3X000002OBWfUAO",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3H3X000002OBWgUAO"
+      },
+      "name" : "PreQualPackaginga3H3X000002OBWgUAO",
+      "description" : "Box of 300 vials (300 doses). Dimensions: 31 x 19 x 9.3 cm",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3HNN0000007wYj2AI"
+      },
+      "name" : "PreQualPackaginga3HNN0000007wYj2AI",
+      "description" : "Carton of 50 vials (100 doses). Dimensions: 18.5 x 9.5 x 4.0 cm",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3HNN0000007wYk2AI"
+      },
+      "name" : "PreQualPackaginga3HNN0000007wYk2AI",
+      "description" : "Box containing 300 vials (600 doses). Dimensions: 31 x 19 x 9.3 cm",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualPackaginga3HNN0000007wYl2AI"
+      },
+      "name" : "PreQualPackaginga3HNN0000007wYl2AI",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualSite0013X00003cPkzfQAC"
+      },
+      "name" : "PreQualSite0013X00003cPkzfQAC",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualSite0013X0000498p2jQAA"
+      },
+      "name" : "PreQualSite0013X0000498p2jQAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualSite0013X0000498p2qQAA"
+      },
+      "name" : "PreQualSite0013X0000498p2qQAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualSite0013X0000498p2wQAA"
+      },
+      "name" : "PreQualSite0013X0000498p2wQAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualSite0013X0000498p3gQAA"
+      },
+      "name" : "PreQualSite0013X0000498p3gQAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualSite0013X0000498p3IQAQ"
+      },
+      "name" : "PreQualSite0013X0000498p3IQAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualSite0013X0000498p3PQAQ"
+      },
+      "name" : "PreQualSite0013X0000498p3PQAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualSite0013X0000498p3ZQAQ"
+      },
+      "name" : "PreQualSite0013X0000498p3ZQAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualSite0013X0000498p4LQAQ"
+      },
+      "name" : "PreQualSite0013X0000498p4LQAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualSite0013X0000498p4ZQAQ"
+      },
+      "name" : "PreQualSite0013X0000498p4ZQAQ",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualSite0013X00004993qnQAA"
+      },
+      "name" : "PreQualSite0013X00004993qnQAA",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualSite0013X000049bJ9SQAU"
+      },
+      "name" : "PreQualSite0013X000049bJ9SQAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSogUAE"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSogUAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSoiUAE"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSoiUAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSojUAE"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSojUAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSokUAE"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSokUAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSomUAE"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSomUAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSpaUAE"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSpaUAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSpbUAE"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSpbUAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSpiUAE"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSpiUAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSpIUAU"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSpIUAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSpjUAE"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSpjUAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSpJUAU"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSpJUAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSpnUAE"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSpnUAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSpqUAE"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSpqUAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSpuUAE"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSpuUAE",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSpXUAU"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSpXUAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSpYUAU"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSpYUAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/implementationguide-resource-format",
+        "valueCode" : "application/fhir+json"
+      },
+      {
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Binary"
+      }],
+      "reference" : {
+        "reference" : "Binary/PreQualVaccinea3S3X000003cSpZUAU"
+      },
+      "name" : "PreQualVaccinea3S3X000003cSpZUAU",
+      "isExample" : true,
+      "profile" : ["http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine"]
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PreQualBulkSupplier"
+      },
+      "name" : "WHO PreQual Bulk Supplier",
+      "description" : "Logical model for the bulk supplier organization\nfrom the WHO PreQual API (ProductDetails.BulkSupplier).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PreQualDocumentDetail"
+      },
+      "name" : "WHO PreQual Document Detail",
+      "description" : "Logical model for document details\nfrom the WHO PreQual API (DocumentDetails).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PreQualManufacturer"
+      },
+      "name" : "WHO PreQual Manufacturer",
+      "description" : "Logical model for the manufacturer/applicant organization\nfrom the WHO PreQual API (ProductDetails.ApplicantOrganization).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PreQualNRA"
+      },
+      "name" : "WHO PreQual NRA",
+      "description" : "Logical model for the responsible National Regulatory Authority (NRA)\nfrom the WHO PreQual API (ProductDetails.NRADetails).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PreQualProduct"
+      },
+      "name" : "WHO PreQual Product",
+      "description" : "Logical model for WHO PreQual Product from the backend API\nwith additional data fields for referencing associated FHIR and logical model data objects.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PreQualProductIngredient"
+      },
+      "name" : "WHO PreQual Product Ingredient",
+      "description" : "Logical model for product ingredient details\nfrom the WHO PreQual API (ProductIngredients).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PreQualProductPackaging"
+      },
+      "name" : "WHO PreQual Product Packaging",
+      "description" : "Logical model for product packaging details\nfrom the WHO PreQual API (ProductPackaging).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PreQualSiteDetail"
+      },
+      "name" : "WHO PreQual Site Detail",
+      "description" : "Logical model for manufacturing site details\nfrom the WHO PreQual API (SiteDetails).",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PreQualVaccine"
+      },
+      "name" : "WHO PreQual Vaccine",
+      "description" : "Logical model for the vaccine type details\nfrom the WHO PreQual API (ProductDetails.VaccineDetails).\nContains only vaccine-type-level fields that are stable across products.\nProduct-specific fields (CommercialName, RouteOfAdministration) remain on PreQualProduct.",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PreQualPresentation"
+      },
+      "name" : "WHO PreQualificaiton Presentation ",
+      "description" : "WHO PreQualificaiton Presentation",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/PreQualPresentation"
+      },
+      "name" : "WHO PreQualificaiton Vaccine Presentations",
+      "description" : "WHO PreQualificaiton Vaccine Presentations",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PreQualProductIds"
+      },
+      "name" : "WHO PreQualificaiton Vaccine Product Ids",
+      "description" : "WHO PreQualificaiton Vaccine Product Ids",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/PreQualProductIds"
+      },
+      "name" : "WHO PreQualificaiton Vaccine Product Ids",
+      "description" : "WHO PreQualificaiton Vaccine Product Ids",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/PreQualVaccineType"
+      },
+      "name" : "WHO PreQualificaiton Vaccine VaccineTypes",
+      "description" : "WHO PreQualificaiton Vaccine VaccineTypes",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PreQualVaccineType"
+      },
+      "name" : "WHO PreQualificaiton VaccineType ",
+      "description" : "WHO PreQualificaiton VaccineType",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ValueSet"
+      }],
+      "reference" : {
+        "reference" : "ValueSet/PreQualDatabaseMetadata"
+      },
+      "name" : "WHO PreQualification Database Metadata",
+      "description" : "Coded metadata values from the WHO PreQualification database",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "CodeSystem"
+      }],
+      "reference" : {
+        "reference" : "CodeSystem/PreQualDatabaseMetadata"
+      },
+      "name" : "WHO PreQualification Database Metadata",
+      "description" : "Coded metadata values from the WHO PreQualification database",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PreQualDB"
+      },
+      "name" : "WHO Vaccine PreQual DB",
+      "description" : "WHO Vaccine PreQual DB.  Logical model for WHO PreQual DB as CSV file available at:\n     https://extranet.who.int/prequal/vaccines/prequalified-vaccines\nColumns of the CSV are as follows\n  1:Date of Prequalification  \n  2:Vaccine Type\n  3:Commercial Name\n  4:Presentation\n  5:No. of doses\n  6:Manufacturer\n  7:Responsible NRA",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PreQualDBAPI"
+      },
+      "name" : "WHO Vaccine PreQual DB (API)",
+      "description" : "WHO Vaccine PreQual DB (API).  \nLogical model for the WHO PreQual DB as provided by the backend API at:\n     https://extranet.who.int/prequal/vaccines/prequalified-vaccines\nThis model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.\n\nKey fields from the API (FinishedVaccineProducts):\n  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)\n  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)\n  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)\n  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification\n  ProductDetails.AssessmentProcedure - Assessment procedure code\n  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address\n  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)\n  ProductDetails.PharmaceuticalForm - Pharmaceutical form details\n  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses\n  ProductDetails.NRADetails - Responsible NRA with ID, name, address\n  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names\n  ProductDetails.StorageDetails - Storage temperature and shelf life\n  ProductDetails.Status - Prequalification status code",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureDefinition:logical"
+      }],
+      "reference" : {
+        "reference" : "StructureDefinition/PreQualDBwithIds"
+      },
+      "name" : "WHO Vaccine PreQual DB with IDs",
+      "description" : "Logical model for WHO PreQual DB as CSV file available at:\n     https://extranet.who.int/prequal/vaccines/prequalified-vaccines\nColumns of the CSV are as follows\nwith additional data fields for appropriately referencing associated data objects",
+      "isExample" : false
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureMap"
+      }],
+      "reference" : {
+        "reference" : "StructureMap/PreQualDBtoProductAuthorizationLM"
+      },
+      "name" : "PreQualDBtoProductAuthorizationLM"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "StructureMap"
+      }],
+      "reference" : {
+        "reference" : "StructureMap/PreQualDBtoProductLM"
+      },
+      "name" : "PreQualDBtoProductLM"
+    }],
+    "page" : {
+      "sourceUrl" : "toc.html",
+      "name" : "toc.html",
+      "title" : "Table of Contents",
+      "generation" : "html",
+      "page" : [{
+        "sourceUrl" : "index.html",
+        "name" : "index.html",
+        "title" : "Home",
+        "generation" : "markdown",
+        "page" : [{
+          "sourceUrl" : "changes.html",
+          "name" : "changes.html",
+          "title" : "Changes",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "dependencies.html",
+          "name" : "dependencies.html",
+          "title" : "Dependencies",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "references.html",
+          "name" : "references.html",
+          "title" : "References",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "adapting.html",
+          "name" : "adapting.html",
+          "title" : "Adapting Guidelines for Country use",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "license.html",
+          "name" : "license.html",
+          "title" : "License",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "sourceUrl" : "business-requirements.html",
+        "name" : "business-requirements.html",
+        "title" : "Business Requirements",
+        "generation" : "markdown",
+        "page" : [{
+          "sourceUrl" : "concepts.html",
+          "name" : "concepts.html",
+          "title" : "Concepts",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "personas.html",
+          "name" : "personas.html",
+          "title" : "Generic Personas",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "scenarios.html",
+          "name" : "scenarios.html",
+          "title" : "User Scenarios",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "business-processes.html",
+          "name" : "business-processes.html",
+          "title" : "Business Processes",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "dictionary.html",
+          "name" : "dictionary.html",
+          "title" : "Data Dictionary",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "decision-logic.html",
+          "name" : "decision-logic.html",
+          "title" : "Decision-support logic",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "indicators.html",
+          "name" : "indicators.html",
+          "title" : "Indicator and Performance Metrics",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "functional-requirements.html",
+          "name" : "functional-requirements.html",
+          "title" : "Functional Requirements",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "non-functional-requirements.html",
+          "name" : "non-functional-requirements.html",
+          "title" : "Non-functional Requirements",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "sourceUrl" : "data-models-and-exchange.html",
+        "name" : "data-models-and-exchange.html",
+        "title" : "Data Models and Exchange",
+        "generation" : "markdown",
+        "page" : [{
+          "sourceUrl" : "system-actors.html",
+          "name" : "system-actors.html",
+          "title" : "System Actors",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "sequence-diagrams.html",
+          "name" : "sequence-diagrams.html",
+          "title" : "Sequence Diagrams",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "transactions.html",
+          "name" : "transactions.html",
+          "title" : "Transactions",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "indicators-measures.html",
+          "name" : "indicators-measures.html",
+          "title" : "Indicators and Measures",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "codings.html",
+          "name" : "codings.html",
+          "title" : "Codings",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "sourceUrl" : "deployment.html",
+        "name" : "deployment.html",
+        "title" : "Deployment",
+        "generation" : "markdown",
+        "page" : [{
+          "sourceUrl" : "security-privacy.html",
+          "name" : "security-privacy.html",
+          "title" : "Security and Privacy Considerations",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "testing.html",
+          "name" : "testing.html",
+          "title" : "Testing",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "test-data.html",
+          "name" : "test-data.html",
+          "title" : "Test Data",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "reference-implementations.html",
+          "name" : "reference-implementations.html",
+          "title" : "Reference Implementations",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "trust_domain.html",
+          "name" : "trust_domain.html",
+          "title" : "Trust Domains",
+          "generation" : "markdown"
+        },
+        {
+          "sourceUrl" : "downloads.html",
+          "name" : "downloads.html",
+          "title" : "Downloads",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "sourceUrl" : "indices.html",
+        "name" : "indices.html",
+        "title" : "Indices",
+        "generation" : "markdown",
+        "page" : [{
+          "sourceUrl" : "artifacts.html",
+          "name" : "artifacts.html",
+          "title" : "Artifact Index",
+          "generation" : "html"
+        },
+        {
+          "sourceUrl" : "maps.html",
+          "name" : "maps.html",
+          "title" : "Mappings",
+          "generation" : "markdown"
+        }]
+      },
+      {
+        "sourceUrl" : "dak-api.html",
+        "name" : "dak-api.html",
+        "title" : "DAK API Documentation Hub",
+        "generation" : "markdown"
+      }]
+    },
+    "parameter" : [{
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "copyrightyear"
+      },
+      "value" : "2023+"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "releaselabel"
+      },
+      "value" : "ci-build"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "autoload-resources"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/capabilities"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/examples"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/extensions"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/models"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/operations"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/profiles"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/vocabulary"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/maps"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/testing"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "input/history"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-resource"
+      },
+      "value" : "fsh-generated/resources"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "template/config"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-pages"
+      },
+      "value" : "input/images"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "template/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-liquid"
+      },
+      "value" : "input/liquid"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-qa"
+      },
+      "value" : "temp/qa"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-temp"
+      },
+      "value" : "temp/pages"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-output"
+      },
+      "value" : "output"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/guide-parameter-code",
+        "code" : "path-tx-cache"
+      },
+      "value" : "input-cache/txcache"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-suppressed-warnings"
+      },
+      "value" : "input/ignoreWarnings.txt"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "path-history"
+      },
+      "value" : "http://smart.who.int/pcmt-vaxprequal/history.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-html"
+      },
+      "value" : "template-page.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "template-md"
+      },
+      "value" : "template-page-md.html"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-contact"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-context"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-copyright"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-jurisdiction"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-license"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-publisher"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-version"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "apply-wg"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "active-tables"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "fmm-definition"
+      },
+      "value" : "http://hl7.org/fhir/versions.html#maturity"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "propagate-status"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "excludelogbinaryformat"
+      },
+      "value" : "true"
+    },
+    {
+      "code" : {
+        "system" : "http://hl7.org/fhir/tools/CodeSystem/ig-parameters",
+        "code" : "tabbed-snapshots"
+      },
+      "value" : "true"
+    }]
+  }
+}
+
+```

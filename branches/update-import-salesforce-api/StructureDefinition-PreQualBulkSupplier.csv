@@ -1,0 +1,8 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"PreQualBulkSupplier","PreQualBulkSupplier","","","",0,*,"","","","null {[]} {[]}
+","WHO PreQual Bulk Supplier","Logical model for the bulk supplier organization
+from the WHO PreQual API (ProductDetails.BulkSupplier).","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"PreQualBulkSupplier.bulkSupplierId","PreQualBulkSupplier.bulkSupplierId","","","",0,1,"","","","Identifier {[]} {[]}
+","Bulk supplier organization ID","Bulk supplier organization ID","","","","","","","","","",,,,,"",,,,"PreQualBulkSupplier.bulkSupplierId",0,1,"",""
+"PreQualBulkSupplier.name","PreQualBulkSupplier.name","","","",0,1,"","","","string {[]} {[]}
+","Organization name","Organization name","","","","","","","","","",,,,,"",,,,"PreQualBulkSupplier.name",0,1,"",""

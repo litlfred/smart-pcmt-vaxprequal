@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holderce0f4cd586d4fa26a21297b87993de9a"
+  },
+  "validityPeriod": {
+    "start": "2010-04-26"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/HaemophilusinfluenzaetypProduct99ca7b265fb87731abd4ff27d13b44cd"
+    }
+  ]
+}

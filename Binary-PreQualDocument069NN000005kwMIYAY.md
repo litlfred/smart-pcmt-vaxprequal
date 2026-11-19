@@ -1,0 +1,37 @@
+# PreQual Document: pq_336_Rabies_1dose_SII_vial%26ampoule_image - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQual Document: pq_336_Rabies_1dose_SII_vial%26ampoule_image**
+
+## Example Binary: PreQual Document: pq_336_Rabies_1dose_SII_vial%26ampoule_image
+
+This content is an example of the [WHO PreQual Document Detail](StructureDefinition-PreQualDocumentDetail.md) Logical Model and is not a FHIR Resource
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kwMIYAY"
+  },
+  "documentName": "pq_336_Rabies_1dose_SII_vial%26ampoule_image",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000061iEtYAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

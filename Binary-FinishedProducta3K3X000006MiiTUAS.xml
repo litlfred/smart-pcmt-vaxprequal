@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Binary xmlns="http://hl7.org/fhir">
+  <id value="FinishedProducta3K3X000006MiiTUAS"/>
+  <contentType value="application/fhir+json"/>
+  <data value="ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGNtdC12YXhwcmVxdWFsL1N0cnVjdHVyZURlZmluaXRpb24vRmluaXNoZWRWYWNjaW5lUHJvZHVjdHMiLAogICJzdGF0dXMiOiAiV2l0aGRyYXduV2FzUHJlcXVhbGlmaWVkIiwKICAicHJvZHVjdElkIjogewogICAgInN5c3RlbSI6ICJodHRwczovL2V4dHJhbmV0Lndoby5pbnQvcHJlcXVhbC9hcGkiLAogICAgInZhbHVlIjogImEzSzNYMDAwMDA2TWlpVFVBUyIKICB9LAogICJwcm9kdWN0TmFtZSI6ICJGVlAtUC0xMjgiLAogICJsYXN0UHVibGlzaGluZ0RhdGUiOiAiMjAyNS0wOS0wNSIKfQo="/>
+</Binary>

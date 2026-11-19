@@ -1,0 +1,87 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "WHO PreQual Site Detail API",
+    "description": "Logical model for manufacturing site details\nfrom the WHO PreQual API (SiteDetails).",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/StructureDefinition-PreQualSiteDetail.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the Logical Model StructureDefinition-PreQualSiteDetail",
+        "description": "This endpoint serves the JSON Schema definition for the Logical Model StructureDefinition-PreQualSiteDetail.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for StructureDefinition-PreQualSiteDetail",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./StructureDefinition-PreQualSiteDetail.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "StructureDefinition-PreQualSiteDetail": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/base/StructureDefinition-PreQualSiteDetail.schema.json",
+        "title": "WHO PreQual Site Detail",
+        "description": "Logical model for manufacturing site details\nfrom the WHO PreQual API (SiteDetails).",
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "PreQualSiteDetail",
+            "description": "Resource type identifier for PreQualSiteDetail logical model"
+          },
+          "siteOrganizationId": {
+            "type": "object",
+            "description": "Site organization ID"
+          },
+          "siteOrganizationName": {
+            "type": "string",
+            "description": "Site organization name"
+          },
+          "addressLine1": {
+            "type": "string",
+            "description": "Address line 1"
+          },
+          "city": {
+            "type": "string",
+            "description": "City"
+          },
+          "state": {
+            "type": "string",
+            "description": "State/Province"
+          },
+          "country": {
+            "type": "string",
+            "description": "Country"
+          },
+          "postalCode": {
+            "type": "string",
+            "description": "Postal code"
+          },
+          "siteStatus": {
+            "type": "string",
+            "description": "Site status code from PreQualDatabaseMetadata (e.g. Accepted)"
+          },
+          "siteActivity": {
+            "type": "string",
+            "description": "Site activity code from PreQualDatabaseMetadata (e.g. FVPManufacture)"
+          }
+        },
+        "required": [
+          "resourceType"
+        ],
+        "resourceDefinition": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+        "fhir:parent": "http://hl7.org/fhir/StructureDefinition/Base"
+      }
+    }
+  }
+}

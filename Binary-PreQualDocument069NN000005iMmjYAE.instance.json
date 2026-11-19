@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iMmjYAE"
+  },
+  "documentName": "Package Insert-pq_176_177_178_YF_FSBSI_PI",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005z60nYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

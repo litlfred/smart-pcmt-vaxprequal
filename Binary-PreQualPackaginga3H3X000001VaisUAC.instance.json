@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaisUAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "21.18",
+  "description": "Carton of 3 vials (3 doses). Dimensions: 5.45 x 5.3 x 2.2 cm",
+  "height": "5.3",
+  "length": "5.45",
+  "width": "2.2",
+  "primaryContainers": "3"
+}

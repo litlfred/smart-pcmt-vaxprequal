@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005i2XxYAI"
+  },
+  "documentName": "Package Insert-pq_72_HepB_10doses_LG_PI-2020_UNICEF",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005ylsTYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

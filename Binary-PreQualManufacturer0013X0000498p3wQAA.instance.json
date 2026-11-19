@@ -1,0 +1,16 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3wQAA"
+  },
+  "name": "Xiamen Innovax Biotech Co. Ltd.",
+  "addressLine1": "No.50  East Bian Hong Road. Haicang District",
+  "city": "Xiamen 361022",
+  "country": "China",
+  "isoCountryCode": "CHN",
+  "region": "WPRO",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X0000498p3wQAA"
+  }
+}

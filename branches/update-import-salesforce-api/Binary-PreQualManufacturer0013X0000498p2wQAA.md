@@ -1,0 +1,43 @@
+# PreQualManufacturer0013X0000498p2wQAA - SMART Product Catalog v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualManufacturer0013X0000498p2wQAA**
+
+## Example Binary: PreQualManufacturer0013X0000498p2wQAA
+
+This content is an example of the [WHO PreQual Manufacturer](StructureDefinition-PreQualManufacturer.md) Logical Model and is not a FHIR Resource
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p2wQAA"
+  },
+  "name": "Haffkine Bio Pharmaceutical Corporation Ltd",
+  "addressLine1": "Acharya Donde Marg, Parel",
+  "city": "Mumbai",
+  "country": "India",
+  "postalCode": "400 012",
+  "isoCountryCode": "IND",
+  "region": "SEARO",
+  "website": "http://vaccinehaffkine.com/",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X0000498p2wQAA"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

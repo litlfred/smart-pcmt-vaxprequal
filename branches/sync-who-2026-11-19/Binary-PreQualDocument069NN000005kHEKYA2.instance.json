@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kHEKYA2"
+  },
+  "documentName": "VPSAR (Vaccine Public Summary Assessment Report)-pq_284_Hexaxim_1dose_SP_VPSAR",
+  "documentType": "VSPAR",
+  "versionId": "068NN00000611t5YAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

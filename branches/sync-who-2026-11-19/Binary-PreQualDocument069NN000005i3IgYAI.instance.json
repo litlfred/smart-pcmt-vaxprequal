@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005i3IgYAI"
+  },
+  "documentName": "Package Insert-pq_64_OPV_20dose_Haffkine_PI",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005ymeoYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

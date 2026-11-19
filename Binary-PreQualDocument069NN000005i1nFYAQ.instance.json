@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005i1nFYAQ"
+  },
+  "documentName": "FVP-P-73-74_BCG_BB-NCIPD_EAD_ UNICEF_PI-2025",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN00000Gq52TYAR",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

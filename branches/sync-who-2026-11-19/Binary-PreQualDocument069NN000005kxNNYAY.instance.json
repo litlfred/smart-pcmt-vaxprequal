@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kxNNYAY"
+  },
+  "documentName": "Package Insert-pq_330_331_Rotavirus_SII_PI-UNICEF-2021",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000061jCjYAI",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

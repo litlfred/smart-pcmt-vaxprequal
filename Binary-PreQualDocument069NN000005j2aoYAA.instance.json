@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005j2aoYAA"
+  },
+  "documentName": "Package Insert-pq_248_249_DTP-HepB_Hib_BiolE_PI_%28En-Fr-Sp%29",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000005zntsYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

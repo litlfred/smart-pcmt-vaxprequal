@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005j1pxYAA"
+  },
+  "documentName": "Package Insert-pq_260_261_H1N1_LAIV_SII_PI_NASOVAC",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000005zmWNYAY",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

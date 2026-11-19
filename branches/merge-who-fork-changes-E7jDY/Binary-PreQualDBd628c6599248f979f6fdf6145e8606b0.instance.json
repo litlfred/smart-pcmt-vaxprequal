@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2024-04-12",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "cholerainactivatedoral",
+        "display": "cholera: inactivated oral"
+      }
+    ]
+  },
+  "commercialName": "Euvichol®-S",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "PlasticTube",
+        "display": "Plastic Tube"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "EuBiologics Co., Ltd."
+  },
+  "responsibleNRA": {
+    "text": "Ministry of Food and Drug Safety"
+  },
+  "index": {
+    "value": "d628c6599248f979f6fdf6145e8606b0"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturercb2d11a53a6d9504a6a08ab51b9aabe7"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderd4e6bca678dea34fa256538a18200187"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/cholerainactivatedoralProductd628c6599248f979f6fdf6145e8606b0"
+  }
+}

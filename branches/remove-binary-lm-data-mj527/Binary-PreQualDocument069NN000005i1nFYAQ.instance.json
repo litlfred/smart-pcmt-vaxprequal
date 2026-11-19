@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005i1nFYAQ"
+  },
+  "documentName": "Package Insert-pq_74_75_BCG_BB-NCIPD_PI-2019",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005yl7lYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

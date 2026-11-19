@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Binary xmlns="http://hl7.org/fhir">
+  <id value="PreQualIngredienta3K3X000006MilcUACIng1"/>
+  <contentType value="application/fhir+json"/>
+  <data value="ewogICJyZXNvdXJjZVR5cGUiOiAiaHR0cDovL3NtYXJ0Lndoby5pbnQvcGNtdC12YXhwcmVxdWFsL1N0cnVjdHVyZURlZmluaXRpb24vUHJlUXVhbFByb2R1Y3RJbmdyZWRpZW50IiwKICAiaW5ncmVkaWVudFR5cGUiOiAiVnhGVlAiLAogICJ1bml0IjogIsK1Zy9tbCIsCiAgInByb2R1Y3QiOiAiYTNLM1gwMDAwMDZNaWxjVUFDIiwKICAicHJvZHVjdENvbXBvbmVudFR5cGUiOiAiQWN0aXZlIgp9Cg=="/>
+</Binary>

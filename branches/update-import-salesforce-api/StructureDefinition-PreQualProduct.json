@@ -1,0 +1,807 @@
+{
+  "resourceType" : "StructureDefinition",
+  "id" : "PreQualProduct",
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: StructureDefinition PreQualProduct</b></p><table border=\"0\" cellpadding=\"0\" cellspacing=\"0\" style=\"border: 0px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top;\"><tr style=\"border: 1px #F0F0F0 solid; font-size: 11px; font-family: verdana; vertical-align: top\"><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"The logical name of the element\">Name</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Information about the use of the element\">Flags</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Minimum and Maximum # of times the element can appear in the instance\">Card.</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px; width: 100px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Reference to the type of the element\">Type</a></th><th style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; padding-top: 3px; padding-bottom: 3px\" class=\"hierarchy\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Additional information about the element\">Description &amp; Constraints</a><span style=\"float: right\"><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/></a></span></th></tr><tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck1.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_element.gif\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Element\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualProduct-definitions.html#PreQualProduct\" title=\"Logical model for WHO PreQual Product from the backend API\nwith additional data fields for referencing associated FHIR and logical model data objects.\">PreQualProduct</a><a name=\"PreQualProduct\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><span style=\"opacity: 0.5\">0</span><span style=\"opacity: 0.5\">..</span><span style=\"opacity: 0.5\">*</span></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"StructureDefinition-PreQualDBAPI.html\">PreQualDBAPI</a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">WHO PreQual Product<br/><br/>Elements defined in Ancestors:<a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Vaccine Product ID (authoritative)\">productId</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Product reference name (e.g. FVP-P-447)\">productName</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)\">productType</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Date of prequalification acceptance\">dateOfPrequal</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)\">assessmentProcedure</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Product status code from PreQualDatabaseMetadata (e.g. Prequalified)\">status</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Pharmaceutical form code from PreQualDatabaseMetadata\">pharmaceuticalForm</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Presentation (e.g. Vial, Ampoule)\">presentation</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Number of doses per primary container\">numDoses</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Vaccine full name\">vaccineFullName</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Vaccine abbreviated name\">vaccineAbbreviatedName</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Vaccine commercial name\">vaccineCommercialName</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Vaccine type ID\">vaccineTypeId</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Route of administration code from PreQualDatabaseMetadata\">routeOfAdministration</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Applicant/manufacturer organization ID (may be absent if not yet assigned)\">applicantId</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Applicant/manufacturer organization name (always present from API data)\">applicantName</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Applicant organization address\">applicantAddress</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"NRA organization ID (may be absent if not yet assigned)\">nraId</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Responsible NRA name (always present from API data)\">nraName</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"NRA country\">nraCountry</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Shelf life (e.g. 24 months)\">shelfLife</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Storage temperature (e.g. 2 - 8°C)\">storageTemperature</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Diluent information\">diluent</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Last publishing date\">lastPublishingDate</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Publishing remarks\">publishingRemarks</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Preservative name (e.g. Thiomersal)\">preservative</a>, <a href=\"StructureDefinition-PreQualDBAPI.html\" title=\"Preservative concentration (e.g. 0.01%)\">preservativeConcentration</a><br/><span style=\"font-weight:bold\">Instances of this logical model can be the target of a Reference</span></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualProduct-definitions.html#PreQualProduct.manufacturerReference\" title=\"Manufacturer FHIR Organization reference\">manufacturerReference</a><a name=\"PreQualProduct.manufacturerReference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"https://profiles.ihe.net/ITI/mCSD/3.8.0/StructureDefinition-IHE.mCSD.Organization.html\">mCSD Organization</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Manufacturer FHIR Organization reference</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualProduct-definitions.html#PreQualProduct.responsibleNRAReference\" title=\"Responsible NRA FHIR Organization reference\">responsibleNRAReference</a><a name=\"PreQualProduct.responsibleNRAReference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">1..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>(<a href=\"https://profiles.ihe.net/ITI/mCSD/3.8.0/StructureDefinition-IHE.mCSD.Organization.html\">mCSD Organization</a>)</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Responsible NRA FHIR Organization reference</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualProduct-definitions.html#PreQualProduct.productReference\" title=\"Product FHIR reference (when available from pcmt dependency)\">productReference</a><a name=\"PreQualProduct.productReference\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>()</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Product FHIR reference (when available from pcmt dependency)</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualProduct-definitions.html#PreQualProduct.manufacturerLM\" title=\"Manufacturer logical model instance reference\">manufacturerLM</a><a name=\"PreQualProduct.manufacturerLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>()</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Manufacturer logical model instance reference</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualProduct-definitions.html#PreQualProduct.nraLM\" title=\"NRA logical model instance reference\">nraLM</a><a name=\"PreQualProduct.nraLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>()</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">NRA logical model instance reference</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualProduct-definitions.html#PreQualProduct.vaccineLM\" title=\"Vaccine logical model instance reference\">vaccineLM</a><a name=\"PreQualProduct.vaccineLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>()</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Vaccine logical model instance reference</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualProduct-definitions.html#PreQualProduct.bulkSupplierLM\" title=\"Bulk supplier logical model instance reference\">bulkSupplierLM</a><a name=\"PreQualProduct.bulkSupplierLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..1</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>()</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Bulk supplier logical model instance reference</td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualProduct-definitions.html#PreQualProduct.packagingLM\" title=\"Product packaging logical model instance references\">packagingLM</a><a name=\"PreQualProduct.packagingLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>()</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Product packaging logical model instance references<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualProduct-definitions.html#PreQualProduct.documentLM\" title=\"Document detail logical model instance references\">documentLM</a><a name=\"PreQualProduct.documentLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>()</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Document detail logical model instance references<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: white\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck10.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: white; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualProduct-definitions.html#PreQualProduct.siteLM\" title=\"Site detail logical model instance references\">siteLM</a><a name=\"PreQualProduct.siteLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>()</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Site detail logical model instance references<br/></td></tr>\r\n<tr style=\"border: 0px #F0F0F0 solid; padding:0px; vertical-align: top; background-color: #F7F7F7\"><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px; white-space: nowrap; background-image: url(tbl_bck00.png)\" class=\"hierarchy\"><img src=\"tbl_spacer.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"tbl_vjoin_end.png\" alt=\".\" style=\"background-color: inherit\" class=\"hierarchy\"/><img src=\"icon_reference.png\" alt=\".\" style=\"background-color: #F7F7F7; background-color: inherit\" title=\"Reference to another Resource\" class=\"hierarchy\"/> <a href=\"StructureDefinition-PreQualProduct-definitions.html#PreQualProduct.ingredientLM\" title=\"Product ingredient logical model instance references\">ingredientLM</a><a name=\"PreQualProduct.ingredientLM\"> </a></td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"/><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">0..*</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\"><a href=\"http://hl7.org/fhir/R5/references.html\">Reference</a>()</td><td style=\"vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px\" class=\"hierarchy\">Product ingredient logical model instance references<br/></td></tr>\r\n<tr><td colspan=\"5\" class=\"hierarchy\"><br/><a href=\"https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views\" title=\"Legend for this format\"><img src=\"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC\" alt=\"doco\" style=\"background-color: inherit\"/> Documentation for this format</a></td></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+    "valueCode" : "can-be-target"
+  },
+  {
+    "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-type-characteristics",
+    "valueCode" : "can-be-target"
+  }],
+  "url" : "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct",
+  "version" : "0.1.0",
+  "name" : "PreQualProduct",
+  "title" : "WHO PreQual Product",
+  "status" : "draft",
+  "date" : "2026-03-11T13:44:05+00:00",
+  "publisher" : "WHO",
+  "contact" : [{
+    "name" : "WHO",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "http://who.int"
+    }]
+  }],
+  "description" : "Logical model for WHO PreQual Product from the backend API\nwith additional data fields for referencing associated FHIR and logical model data objects.",
+  "fhirVersion" : "5.0.0",
+  "mapping" : [{
+    "identity" : "rim",
+    "uri" : "http://hl7.org/v3",
+    "name" : "RIM Mapping"
+  }],
+  "kind" : "logical",
+  "abstract" : false,
+  "type" : "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProduct",
+  "baseDefinition" : "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBAPI",
+  "derivation" : "specialization",
+  "snapshot" : {
+    "extension" : [{
+      "url" : "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version",
+      "valueString" : "0.1.0"
+    }],
+    "element" : [{
+      "id" : "PreQualProduct",
+      "path" : "PreQualProduct",
+      "short" : "WHO PreQual Product",
+      "definition" : "Logical model for WHO PreQual Product from the backend API\nwith additional data fields for referencing associated FHIR and logical model data objects.",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "Base",
+        "min" : 0,
+        "max" : "*"
+      },
+      "isModifier" : false,
+      "mapping" : [{
+        "identity" : "rim",
+        "map" : "n/a"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.productId",
+      "path" : "PreQualProduct.productId",
+      "short" : "Vaccine Product ID (authoritative)",
+      "definition" : "Vaccine Product ID (authoritative)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.productId",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.productName",
+      "path" : "PreQualProduct.productName",
+      "short" : "Product reference name (e.g. FVP-P-447)",
+      "definition" : "Product reference name (e.g. FVP-P-447)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.productName",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.productType",
+      "path" : "PreQualProduct.productType",
+      "short" : "Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)",
+      "definition" : "Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.productType",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.dateOfPrequal",
+      "path" : "PreQualProduct.dateOfPrequal",
+      "short" : "Date of prequalification acceptance",
+      "definition" : "Date of prequalification acceptance",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.dateOfPrequal",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.assessmentProcedure",
+      "path" : "PreQualProduct.assessmentProcedure",
+      "short" : "Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)",
+      "definition" : "Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.assessmentProcedure",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.status",
+      "path" : "PreQualProduct.status",
+      "short" : "Product status code from PreQualDatabaseMetadata (e.g. Prequalified)",
+      "definition" : "Product status code from PreQualDatabaseMetadata (e.g. Prequalified)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.status",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.pharmaceuticalForm",
+      "path" : "PreQualProduct.pharmaceuticalForm",
+      "short" : "Pharmaceutical form code from PreQualDatabaseMetadata",
+      "definition" : "Pharmaceutical form code from PreQualDatabaseMetadata",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.pharmaceuticalForm",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.presentation",
+      "path" : "PreQualProduct.presentation",
+      "short" : "Presentation (e.g. Vial, Ampoule)",
+      "definition" : "Presentation (e.g. Vial, Ampoule)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.presentation",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "CodeableConcept"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.numDoses",
+      "path" : "PreQualProduct.numDoses",
+      "short" : "Number of doses per primary container",
+      "definition" : "Number of doses per primary container",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.numDoses",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "decimal"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.vaccineFullName",
+      "path" : "PreQualProduct.vaccineFullName",
+      "short" : "Vaccine full name",
+      "definition" : "Vaccine full name",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.vaccineFullName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.vaccineAbbreviatedName",
+      "path" : "PreQualProduct.vaccineAbbreviatedName",
+      "short" : "Vaccine abbreviated name",
+      "definition" : "Vaccine abbreviated name",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.vaccineAbbreviatedName",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.vaccineCommercialName",
+      "path" : "PreQualProduct.vaccineCommercialName",
+      "short" : "Vaccine commercial name",
+      "definition" : "Vaccine commercial name",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.vaccineCommercialName",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.vaccineTypeId",
+      "path" : "PreQualProduct.vaccineTypeId",
+      "short" : "Vaccine type ID",
+      "definition" : "Vaccine type ID",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.vaccineTypeId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.routeOfAdministration",
+      "path" : "PreQualProduct.routeOfAdministration",
+      "short" : "Route of administration code from PreQualDatabaseMetadata",
+      "definition" : "Route of administration code from PreQualDatabaseMetadata",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.routeOfAdministration",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "code"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.applicantId",
+      "path" : "PreQualProduct.applicantId",
+      "short" : "Applicant/manufacturer organization ID (may be absent if not yet assigned)",
+      "definition" : "Applicant/manufacturer organization ID (may be absent if not yet assigned)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.applicantId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.applicantName",
+      "path" : "PreQualProduct.applicantName",
+      "short" : "Applicant/manufacturer organization name (always present from API data)",
+      "definition" : "Applicant/manufacturer organization name (always present from API data)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.applicantName",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.applicantAddress",
+      "path" : "PreQualProduct.applicantAddress",
+      "short" : "Applicant organization address",
+      "definition" : "Applicant organization address",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.applicantAddress",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Address"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.nraId",
+      "path" : "PreQualProduct.nraId",
+      "short" : "NRA organization ID (may be absent if not yet assigned)",
+      "definition" : "NRA organization ID (may be absent if not yet assigned)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.nraId",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Identifier"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.nraName",
+      "path" : "PreQualProduct.nraName",
+      "short" : "Responsible NRA name (always present from API data)",
+      "definition" : "Responsible NRA name (always present from API data)",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.nraName",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.nraCountry",
+      "path" : "PreQualProduct.nraCountry",
+      "short" : "NRA country",
+      "definition" : "NRA country",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.nraCountry",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.shelfLife",
+      "path" : "PreQualProduct.shelfLife",
+      "short" : "Shelf life (e.g. 24 months)",
+      "definition" : "Shelf life (e.g. 24 months)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.shelfLife",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.storageTemperature",
+      "path" : "PreQualProduct.storageTemperature",
+      "short" : "Storage temperature (e.g. 2 - 8°C)",
+      "definition" : "Storage temperature (e.g. 2 - 8°C)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.storageTemperature",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.diluent",
+      "path" : "PreQualProduct.diluent",
+      "short" : "Diluent information",
+      "definition" : "Diluent information",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.diluent",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.lastPublishingDate",
+      "path" : "PreQualProduct.lastPublishingDate",
+      "short" : "Last publishing date",
+      "definition" : "Last publishing date",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.lastPublishingDate",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "dateTime"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.publishingRemarks",
+      "path" : "PreQualProduct.publishingRemarks",
+      "short" : "Publishing remarks",
+      "definition" : "Publishing remarks",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.publishingRemarks",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.preservative",
+      "path" : "PreQualProduct.preservative",
+      "short" : "Preservative name (e.g. Thiomersal)",
+      "definition" : "Preservative name (e.g. Thiomersal)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.preservative",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.preservativeConcentration",
+      "path" : "PreQualProduct.preservativeConcentration",
+      "short" : "Preservative concentration (e.g. 0.01%)",
+      "definition" : "Preservative concentration (e.g. 0.01%)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualDBAPI.preservativeConcentration",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "string"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.manufacturerReference",
+      "path" : "PreQualProduct.manufacturerReference",
+      "short" : "Manufacturer FHIR Organization reference",
+      "definition" : "Manufacturer FHIR Organization reference",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualProduct.manufacturerReference",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"]
+      }]
+    },
+    {
+      "id" : "PreQualProduct.responsibleNRAReference",
+      "path" : "PreQualProduct.responsibleNRAReference",
+      "short" : "Responsible NRA FHIR Organization reference",
+      "definition" : "Responsible NRA FHIR Organization reference",
+      "min" : 1,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualProduct.responsibleNRAReference",
+        "min" : 1,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"]
+      }]
+    },
+    {
+      "id" : "PreQualProduct.productReference",
+      "path" : "PreQualProduct.productReference",
+      "short" : "Product FHIR reference (when available from pcmt dependency)",
+      "definition" : "Product FHIR reference (when available from pcmt dependency)",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualProduct.productReference",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.manufacturerLM",
+      "path" : "PreQualProduct.manufacturerLM",
+      "short" : "Manufacturer logical model instance reference",
+      "definition" : "Manufacturer logical model instance reference",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualProduct.manufacturerLM",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.nraLM",
+      "path" : "PreQualProduct.nraLM",
+      "short" : "NRA logical model instance reference",
+      "definition" : "NRA logical model instance reference",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualProduct.nraLM",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.vaccineLM",
+      "path" : "PreQualProduct.vaccineLM",
+      "short" : "Vaccine logical model instance reference",
+      "definition" : "Vaccine logical model instance reference",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualProduct.vaccineLM",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.bulkSupplierLM",
+      "path" : "PreQualProduct.bulkSupplierLM",
+      "short" : "Bulk supplier logical model instance reference",
+      "definition" : "Bulk supplier logical model instance reference",
+      "min" : 0,
+      "max" : "1",
+      "base" : {
+        "path" : "PreQualProduct.bulkSupplierLM",
+        "min" : 0,
+        "max" : "1"
+      },
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.packagingLM",
+      "path" : "PreQualProduct.packagingLM",
+      "short" : "Product packaging logical model instance references",
+      "definition" : "Product packaging logical model instance references",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "PreQualProduct.packagingLM",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.documentLM",
+      "path" : "PreQualProduct.documentLM",
+      "short" : "Document detail logical model instance references",
+      "definition" : "Document detail logical model instance references",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "PreQualProduct.documentLM",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.siteLM",
+      "path" : "PreQualProduct.siteLM",
+      "short" : "Site detail logical model instance references",
+      "definition" : "Site detail logical model instance references",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "PreQualProduct.siteLM",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.ingredientLM",
+      "path" : "PreQualProduct.ingredientLM",
+      "short" : "Product ingredient logical model instance references",
+      "definition" : "Product ingredient logical model instance references",
+      "min" : 0,
+      "max" : "*",
+      "base" : {
+        "path" : "PreQualProduct.ingredientLM",
+        "min" : 0,
+        "max" : "*"
+      },
+      "type" : [{
+        "code" : "Reference"
+      }]
+    }]
+  },
+  "differential" : {
+    "element" : [{
+      "id" : "PreQualProduct",
+      "path" : "PreQualProduct",
+      "short" : "WHO PreQual Product",
+      "definition" : "Logical model for WHO PreQual Product from the backend API\nwith additional data fields for referencing associated FHIR and logical model data objects."
+    },
+    {
+      "id" : "PreQualProduct.manufacturerReference",
+      "path" : "PreQualProduct.manufacturerReference",
+      "short" : "Manufacturer FHIR Organization reference",
+      "definition" : "Manufacturer FHIR Organization reference",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"]
+      }]
+    },
+    {
+      "id" : "PreQualProduct.responsibleNRAReference",
+      "path" : "PreQualProduct.responsibleNRAReference",
+      "short" : "Responsible NRA FHIR Organization reference",
+      "definition" : "Responsible NRA FHIR Organization reference",
+      "min" : 1,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference",
+        "targetProfile" : ["https://profiles.ihe.net/ITI/mCSD/StructureDefinition/IHE.mCSD.Organization"]
+      }]
+    },
+    {
+      "id" : "PreQualProduct.productReference",
+      "path" : "PreQualProduct.productReference",
+      "short" : "Product FHIR reference (when available from pcmt dependency)",
+      "definition" : "Product FHIR reference (when available from pcmt dependency)",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.manufacturerLM",
+      "path" : "PreQualProduct.manufacturerLM",
+      "short" : "Manufacturer logical model instance reference",
+      "definition" : "Manufacturer logical model instance reference",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.nraLM",
+      "path" : "PreQualProduct.nraLM",
+      "short" : "NRA logical model instance reference",
+      "definition" : "NRA logical model instance reference",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.vaccineLM",
+      "path" : "PreQualProduct.vaccineLM",
+      "short" : "Vaccine logical model instance reference",
+      "definition" : "Vaccine logical model instance reference",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.bulkSupplierLM",
+      "path" : "PreQualProduct.bulkSupplierLM",
+      "short" : "Bulk supplier logical model instance reference",
+      "definition" : "Bulk supplier logical model instance reference",
+      "min" : 0,
+      "max" : "1",
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.packagingLM",
+      "path" : "PreQualProduct.packagingLM",
+      "short" : "Product packaging logical model instance references",
+      "definition" : "Product packaging logical model instance references",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.documentLM",
+      "path" : "PreQualProduct.documentLM",
+      "short" : "Document detail logical model instance references",
+      "definition" : "Document detail logical model instance references",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.siteLM",
+      "path" : "PreQualProduct.siteLM",
+      "short" : "Site detail logical model instance references",
+      "definition" : "Site detail logical model instance references",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference"
+      }]
+    },
+    {
+      "id" : "PreQualProduct.ingredientLM",
+      "path" : "PreQualProduct.ingredientLM",
+      "short" : "Product ingredient logical model instance references",
+      "definition" : "Product ingredient logical model instance references",
+      "min" : 0,
+      "max" : "*",
+      "type" : [{
+        "code" : "Reference"
+      }]
+    }]
+  }
+}

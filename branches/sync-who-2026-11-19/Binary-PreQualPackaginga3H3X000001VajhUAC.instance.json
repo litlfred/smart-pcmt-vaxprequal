@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VajhUAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "Diluent",
+  "description": "Box of 192 cartons  of 10 ampoules (1920 ampoules/3840 doses)[Dimensions: 77.5 x 57.5 x 40.5 cm]",
+  "volume": "77.5 x 57.5 x 40.5 cm",
+  "totalDoses": "3840",
+  "totalContainers": "1920"
+}

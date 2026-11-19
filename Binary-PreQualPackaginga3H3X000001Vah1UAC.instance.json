@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vah1UAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box containing 16 cartons of 50 vials of Hib component [Dimensions: 60 x 48 x 41 cm]",
+  "volume": "60 x 48 x 41 cm",
+  "totalDoses": "1600",
+  "totalContainers": "800"
+}

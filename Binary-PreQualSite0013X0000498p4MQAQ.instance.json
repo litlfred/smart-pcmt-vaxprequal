@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4MQAQ"
+  },
+  "siteOrganizationName": "Sanofi Pasteur Limited",
+  "addressLine1": "1755 Steeles Avenue West",
+  "city": "Toronto",
+  "state": "Ontario",
+  "country": "Canada",
+  "postalCode": "M2R 3T4",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

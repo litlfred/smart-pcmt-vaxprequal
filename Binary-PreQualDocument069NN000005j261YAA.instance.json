@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005j261YAA"
+  },
+  "documentName": "Package Insert-PQ_235_236_GSK%20mOPV210%2620d_PI_2011",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000005zmmPYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VadMUAS"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "2.93",
+  "description": "Akylux tray of 280 vials [Dimensions: 41.5 x 22 x 4.5 cm]",
+  "height": "22.0",
+  "length": "41.5",
+  "width": "4.5",
+  "primaryContainers": "280"
+}

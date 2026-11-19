@@ -1,0 +1,19 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "001Vj00000kQmGGIA0"
+  },
+  "name": "Shantha Biologics Private Limited",
+  "addressLine1": "Survey No. 274, Athvelli Village, Medchal Mandal Medchal-Malkajgiri District.",
+  "city": "Hyderabad",
+  "state": "Telangana",
+  "country": "India",
+  "postalCode": "501401",
+  "isoCountryCode": "IND",
+  "region": "SEARO",
+  "website": "https://shanthabiologics.com/",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer001Vj00000kQmGGIA0"
+  }
+}

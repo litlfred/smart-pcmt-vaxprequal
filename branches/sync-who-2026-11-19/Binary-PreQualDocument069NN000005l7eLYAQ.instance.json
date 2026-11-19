@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005l7eLYAQ"
+  },
+  "documentName": "pq_363_sIPV_5dose_LG_vial_image-2020",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000061tOrYAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

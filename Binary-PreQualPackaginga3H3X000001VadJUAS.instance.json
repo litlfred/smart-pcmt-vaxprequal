@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VadJUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box containing 32 cartons of 48 vials (1536 doses)[Dimensions: 42 x 52 x 65 cm]",
+  "volume": "42 x 52 x 65 cm",
+  "totalDoses": "1536",
+  "totalContainers": "1536"
+}

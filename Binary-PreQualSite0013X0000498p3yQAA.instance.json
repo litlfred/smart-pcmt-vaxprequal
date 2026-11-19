@@ -1,0 +1,14 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3yQAA"
+  },
+  "siteOrganizationName": "Bilthoven Biologicals B.V.",
+  "addressLine1": "Antonie van Leeuwenhoeklaan 9-13",
+  "city": "Bilthoven",
+  "country": "Netherlands",
+  "postalCode": "3721 MA",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

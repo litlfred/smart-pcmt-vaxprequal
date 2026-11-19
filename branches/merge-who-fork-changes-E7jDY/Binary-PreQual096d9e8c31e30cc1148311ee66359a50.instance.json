@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holdera5a3d2d85f2b1e0fcd688a9dbd32e328"
+  },
+  "validityPeriod": {
+    "start": "2020-04-21"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/PolioVaccineInactivatedIProduct096d9e8c31e30cc1148311ee66359a50"
+    }
+  ]
+}

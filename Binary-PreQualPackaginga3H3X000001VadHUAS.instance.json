@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VadHUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "Diluent",
+  "description": "Box containing 2000 plastic ampoules (2000 doses).[Dimensions: 52.5 x 52.5 x 72.5 cm]",
+  "volume": "52.5 x 52.5 x 72.5 cm",
+  "totalDoses": "2000",
+  "totalContainers": "2000"
+}

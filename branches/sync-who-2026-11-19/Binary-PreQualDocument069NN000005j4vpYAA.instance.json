@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005j4vpYAA"
+  },
+  "documentName": "pq_249_DTP-HepB-Hib_10dose_BiolE_vials_image_580",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005zpXNYAY",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

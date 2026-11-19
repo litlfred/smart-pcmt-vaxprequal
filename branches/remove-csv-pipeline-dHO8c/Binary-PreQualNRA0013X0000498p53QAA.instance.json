@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p53QAA"
+  },
+  "name": "Ministère de la Santé publique (DPM)",
+  "country": "Senegal",
+  "organizationReference": {
+    "reference": "Organization/Holder0013X0000498p53QAA"
+  }
+}

@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/Product",
+  "status": "active",
+  "name": [
+    {
+      "nameType": "official",
+      "value": "IMOJEV MD"
+    }
+  ],
+  "manufacturer": {
+    "reference": "Organization/Manufacturerda09c528947d845f1825eb19e76df745"
+  },
+  "doseQuantity": {
+    "value": 4,
+    "code": "doses",
+    "system": "http://unitsofmeasure.org"
+  },
+  "classification": [
+    {
+      "coding": [
+        {
+          "code": "JapaneseEncephalitisVacc"
+        }
+      ]
+    }
+  ],
+  "unitOfUse": {
+    "coding": [
+      {
+        "code": "doses"
+      }
+    ]
+  },
+  "dosageForm": {
+    "coding": [
+      {
+        "code": "Twovialsetactiveexcipient"
+      }
+    ]
+  }
+}

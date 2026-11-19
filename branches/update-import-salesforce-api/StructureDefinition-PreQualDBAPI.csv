@@ -1,0 +1,75 @@
+"Id","Path","Slice Name","Alias(s)","Label","Min","Max","Must Support?","Is Modifier?","Is Summary?","Type(s)","Short","Definition","Comments","Requirements","Default Value","Meaning When Missing","Fixed Value","Pattern","Example","Minimum Value","Maximum Value","Maximum Length","Binding Strength","Binding Description","Binding Value Set","Code","Slicing Discriminator","Slicing Description","Slicing Ordered","Slicing Rules","Base Path","Base Min","Base Max","Condition(s)","Constraint(s)","Mapping: RIM Mapping"
+"PreQualDBAPI","PreQualDBAPI","","","",0,*,"","","","null {[]} {[]}
+","WHO Vaccine PreQual DB (API)","WHO Vaccine PreQual DB (API).  
+Logical model for the WHO PreQual DB as provided by the backend API at:
+     https://extranet.who.int/prequal/vaccines/prequalified-vaccines
+This model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.
+
+Key fields from the API (FinishedVaccineProducts):
+  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)
+  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)
+  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)
+  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification
+  ProductDetails.AssessmentProcedure - Assessment procedure code
+  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address
+  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)
+  ProductDetails.PharmaceuticalForm - Pharmaceutical form details
+  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses
+  ProductDetails.NRADetails - Responsible NRA with ID, name, address
+  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names
+  ProductDetails.StorageDetails - Storage temperature and shelf life
+  ProductDetails.Status - Prequalification status code","","","","","","","","","",,,,,"",,,,"Base",0,*,"","","n/a"
+"PreQualDBAPI.productId","PreQualDBAPI.productId","","","",1,1,"","","","Identifier {[]} {[]}
+","Vaccine Product ID (authoritative)","Vaccine Product ID (authoritative)","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.productId",1,1,"",""
+"PreQualDBAPI.productName","PreQualDBAPI.productName","","","",1,1,"","","","string {[]} {[]}
+","Product reference name (e.g. FVP-P-447)","Product reference name (e.g. FVP-P-447)","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.productName",1,1,"",""
+"PreQualDBAPI.productType","PreQualDBAPI.productType","","","",1,1,"","","","code {[]} {[]}
+","Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)","Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.productType",1,1,"",""
+"PreQualDBAPI.dateOfPrequal","PreQualDBAPI.dateOfPrequal","","","",1,1,"","","","dateTime {[]} {[]}
+","Date of prequalification acceptance","Date of prequalification acceptance","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.dateOfPrequal",1,1,"",""
+"PreQualDBAPI.assessmentProcedure","PreQualDBAPI.assessmentProcedure","","","",0,1,"","","","code {[]} {[]}
+","Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)","Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.assessmentProcedure",0,1,"",""
+"PreQualDBAPI.status","PreQualDBAPI.status","","","",1,1,"","","","code {[]} {[]}
+","Product status code from PreQualDatabaseMetadata (e.g. Prequalified)","Product status code from PreQualDatabaseMetadata (e.g. Prequalified)","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.status",1,1,"",""
+"PreQualDBAPI.pharmaceuticalForm","PreQualDBAPI.pharmaceuticalForm","","","",0,1,"","","","code {[]} {[]}
+","Pharmaceutical form code from PreQualDatabaseMetadata","Pharmaceutical form code from PreQualDatabaseMetadata","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.pharmaceuticalForm",0,1,"",""
+"PreQualDBAPI.presentation","PreQualDBAPI.presentation","","","",1,1,"","","","CodeableConcept {[]} {[]}
+","Presentation (e.g. Vial, Ampoule)","Presentation (e.g. Vial, Ampoule)","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.presentation",1,1,"",""
+"PreQualDBAPI.numDoses","PreQualDBAPI.numDoses","","","",0,1,"","","","decimal {[]} {[]}
+","Number of doses per primary container","Number of doses per primary container","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.numDoses",0,1,"",""
+"PreQualDBAPI.vaccineFullName","PreQualDBAPI.vaccineFullName","","","",0,1,"","","","string {[]} {[]}
+","Vaccine full name","Vaccine full name","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.vaccineFullName",0,1,"",""
+"PreQualDBAPI.vaccineAbbreviatedName","PreQualDBAPI.vaccineAbbreviatedName","","","",0,1,"","","","string {[]} {[]}
+","Vaccine abbreviated name","Vaccine abbreviated name","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.vaccineAbbreviatedName",0,1,"",""
+"PreQualDBAPI.vaccineCommercialName","PreQualDBAPI.vaccineCommercialName","","","",1,1,"","","","string {[]} {[]}
+","Vaccine commercial name","Vaccine commercial name","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.vaccineCommercialName",1,1,"",""
+"PreQualDBAPI.vaccineTypeId","PreQualDBAPI.vaccineTypeId","","","",0,1,"","","","Identifier {[]} {[]}
+","Vaccine type ID","Vaccine type ID","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.vaccineTypeId",0,1,"",""
+"PreQualDBAPI.routeOfAdministration","PreQualDBAPI.routeOfAdministration","","","",0,1,"","","","code {[]} {[]}
+","Route of administration code from PreQualDatabaseMetadata","Route of administration code from PreQualDatabaseMetadata","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.routeOfAdministration",0,1,"",""
+"PreQualDBAPI.applicantId","PreQualDBAPI.applicantId","","","",0,1,"","","","Identifier {[]} {[]}
+","Applicant/manufacturer organization ID (may be absent if not yet assigned)","Applicant/manufacturer organization ID (may be absent if not yet assigned)","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.applicantId",0,1,"",""
+"PreQualDBAPI.applicantName","PreQualDBAPI.applicantName","","","",1,1,"","","","string {[]} {[]}
+","Applicant/manufacturer organization name (always present from API data)","Applicant/manufacturer organization name (always present from API data)","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.applicantName",1,1,"",""
+"PreQualDBAPI.applicantAddress","PreQualDBAPI.applicantAddress","","","",0,1,"","","","Address {[]} {[]}
+","Applicant organization address","Applicant organization address","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.applicantAddress",0,1,"",""
+"PreQualDBAPI.nraId","PreQualDBAPI.nraId","","","",0,1,"","","","Identifier {[]} {[]}
+","NRA organization ID (may be absent if not yet assigned)","NRA organization ID (may be absent if not yet assigned)","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.nraId",0,1,"",""
+"PreQualDBAPI.nraName","PreQualDBAPI.nraName","","","",1,1,"","","","string {[]} {[]}
+","Responsible NRA name (always present from API data)","Responsible NRA name (always present from API data)","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.nraName",1,1,"",""
+"PreQualDBAPI.nraCountry","PreQualDBAPI.nraCountry","","","",0,1,"","","","string {[]} {[]}
+","NRA country","NRA country","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.nraCountry",0,1,"",""
+"PreQualDBAPI.shelfLife","PreQualDBAPI.shelfLife","","","",0,1,"","","","string {[]} {[]}
+","Shelf life (e.g. 24 months)","Shelf life (e.g. 24 months)","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.shelfLife",0,1,"",""
+"PreQualDBAPI.storageTemperature","PreQualDBAPI.storageTemperature","","","",0,1,"","","","string {[]} {[]}
+","Storage temperature (e.g. 2 - 8°C)","Storage temperature (e.g. 2 - 8°C)","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.storageTemperature",0,1,"",""
+"PreQualDBAPI.diluent","PreQualDBAPI.diluent","","","",0,1,"","","","string {[]} {[]}
+","Diluent information","Diluent information","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.diluent",0,1,"",""
+"PreQualDBAPI.lastPublishingDate","PreQualDBAPI.lastPublishingDate","","","",0,1,"","","","dateTime {[]} {[]}
+","Last publishing date","Last publishing date","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.lastPublishingDate",0,1,"",""
+"PreQualDBAPI.publishingRemarks","PreQualDBAPI.publishingRemarks","","","",0,1,"","","","string {[]} {[]}
+","Publishing remarks","Publishing remarks","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.publishingRemarks",0,1,"",""
+"PreQualDBAPI.preservative","PreQualDBAPI.preservative","","","",0,1,"","","","string {[]} {[]}
+","Preservative name (e.g. Thiomersal)","Preservative name (e.g. Thiomersal)","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.preservative",0,1,"",""
+"PreQualDBAPI.preservativeConcentration","PreQualDBAPI.preservativeConcentration","","","",0,1,"","","","string {[]} {[]}
+","Preservative concentration (e.g. 0.01%)","Preservative concentration (e.g. 0.01%)","","","","","","","","","",,,,,"",,,,"PreQualDBAPI.preservativeConcentration",0,1,"",""

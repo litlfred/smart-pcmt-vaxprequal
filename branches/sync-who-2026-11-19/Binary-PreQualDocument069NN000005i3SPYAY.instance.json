@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005i3SPYAY"
+  },
+  "documentName": "pq_270_DTP-HB-Hib_10dose_Panacea_vial_image-2022",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005ymoYYAQ",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

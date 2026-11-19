@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005l7kpYAA"
+  },
+  "documentName": "General-pq_323_IPV_5dose_AJ_VPASR",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN0000061tVLYAY",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

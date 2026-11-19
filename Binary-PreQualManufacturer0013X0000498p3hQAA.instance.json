@@ -1,0 +1,17 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3hQAA"
+  },
+  "name": "Centro de Ingenieria Genetica y Biotecnologia (CIGB)",
+  "addressLine1": "Ave. 31 e/ 158 y 190Cubanacán  apartado 6162",
+  "city": "Havana",
+  "country": "Cuba",
+  "postalCode": "10600",
+  "isoCountryCode": "CUB",
+  "region": "AMRO",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X0000498p3hQAA"
+  }
+}

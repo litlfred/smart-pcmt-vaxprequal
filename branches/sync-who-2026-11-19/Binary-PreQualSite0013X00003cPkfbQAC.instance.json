@@ -1,0 +1,14 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00003cPkfbQAC"
+  },
+  "siteOrganizationName": "Biological E. Limited",
+  "addressLine1": "18/1 and 3, Azambad",
+  "city": "Hyderabad",
+  "country": "India",
+  "postalCode": "500 020",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iFiFYAU"
+  },
+  "documentName": "pq_150_Rubella_1dose_SIIPL_vial%26ampoule_image-2022",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005yz5zYAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

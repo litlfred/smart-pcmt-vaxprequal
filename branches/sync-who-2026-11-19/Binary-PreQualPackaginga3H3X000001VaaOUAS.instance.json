@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaaOUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "Diluent",
+  "description": "Diluent: Box containing 5000 amps (100 000 doses)[Dimensions: 75 x 41 x 37 cm]",
+  "volume": "75 x 41 x 37 cm",
+  "totalDoses": "100000",
+  "totalContainers": "5000"
+}

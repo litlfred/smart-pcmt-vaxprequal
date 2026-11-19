@@ -1,0 +1,171 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.displays.json",
+  "title": "WHO PreQualificaiton VaccineType  Display Values",
+  "description": "Display values for WHO PreQualificaiton VaccineType  ValueSet codes. Generated from FHIR expansions.",
+  "type": "object",
+  "properties": {
+    "fhir:displays": {
+      "type": "object",
+      "description": "Multilingual display values for ValueSet codes using IRI format to match JSON schema enum values",
+      "patternProperties": {
+        "^https?://.*": {
+          "type": "object",
+          "description": "Display values for a specific IRI-formatted code by language",
+          "properties": {
+            "en": {
+              "type": "string",
+              "description": "English display value"
+            }
+          },
+          "patternProperties": {
+            "^[a-z]{2}(-[A-Z]{2})?$": {
+              "type": "string",
+              "description": "Display value in the specified language (ISO 639-1 code)"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "required": [
+    "fhir:displays"
+  ],
+  "additionalProperties": true,
+  "fhir:displays": {
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#BCG": {
+      "en": "BCG"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#C19": {
+      "en": "Covid-19, protein subunit"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DT": {
+      "en": "Diphtheria and tetanus vaccine (adsorbed)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DTaP": {
+      "en": "Diphtheria, tetanus and (acellular) pertussis vaccine (adsorbed)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DTaPHepBIPVHib": {
+      "en": "Diphtheria, tetanus, (acellular) pertussis, hepatitis b, poliomyelitis (inactivated) and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DTwP": {
+      "en": "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DTwPHepBHib": {
+      "en": "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#DTwPHib": {
+      "en": "Diphtheria, tetanus, pertussis and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#EBOV": {
+      "en": "Ebola vaccine (live, attenuated)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#HPV": {
+      "en": "Recombinant human papillomavirus virus-like particle vaccine (types 16,18)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#HepA": {
+      "en": "Hepatitis A vaccine (inactivated)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#HepB": {
+      "en": "Hepatitis B vaccine (recombinant)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#Hib": {
+      "en": "Haemophilus influenzae type b conjugate vaccine"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#IIV3": {
+      "en": "Influenza vaccine trivalent (split virion, inactivated)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#IIV4": {
+      "en": "Influenza vaccine quadrivalent (split virion, inactivated)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#IIVPandemic": {
+      "en": "Human pandemic influenza vaccine"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#IPV": {
+      "en": "Poliomyelitis vaccine (inactivated)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#JE": {
+      "en": "Japanese encephalitis vaccine (live, attenuated) for human use"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#LARV": {
+      "en": "Rotavirus vaccine (live attenuated) (oral)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#M": {
+      "en": "Measles vaccine (live, attenuated)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#MMR": {
+      "en": "Measles, mumps, rubella combined vaccine (live, attenuated)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#MR": {
+      "en": "Measles, rubella combined vaccine (live, attenuated)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#Malaria": {
+      "en": "Recombinant malaria vaccine"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#MenA": {
+      "en": "Group A meningococcal conjugate vaccine"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#MenACYW135": {
+      "en": "Meningococcal conjugate vaccine tetravalent ( type A,C, Y, W-135)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#MenACYWX": {
+      "en": "Meningococcal polysacharide conjugate vaccine (type A,C,Y,W,X)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#OCV": {
+      "en": "Inactivated oral cholera vaccine"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#PCV": {
+      "en": "Pneumococcal conjugate vaccine"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#R": {
+      "en": "Rubella vaccine (live, attenuated)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#Rabies": {
+      "en": "Rabies vaccine for human use"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#TDV": {
+      "en": "Dengue tetravalent vaccine (live, attenuated)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#TT": {
+      "en": "Tetanus vaccine (adsorbed)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#Typhoid": {
+      "en": "Typhoid conjugate vaccine"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#VAR": {
+      "en": "Varicella"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#YF": {
+      "en": "Yellow fever vaccine (live attenuated)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#bOPV": {
+      "en": "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#dT": {
+      "en": "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#mOPV1": {
+      "en": "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 1)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#mOPV2": {
+      "en": "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 2)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#mOPV3": {
+      "en": "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 3)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#nOPV2": {
+      "en": "Poliomyelitis vaccines (novel, oral, live, attenuated,  type 2)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#sIPV": {
+      "en": "Poliomyelitis vaccine (inactivated-Sabin)"
+    },
+    "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType#tOPV": {
+      "en": "Poliomyelitis vaccines (trivalent live, oral, innactivated, type 1,2, 3)"
+    }
+  },
+  "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualVaccineType",
+  "fhir:version": "0.2.0",
+  "fhir:expansionTimestamp": "2026-11-19T07:56:27.061791"
+}

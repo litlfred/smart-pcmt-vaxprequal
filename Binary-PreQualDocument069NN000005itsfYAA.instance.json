@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005itsfYAA"
+  },
+  "documentName": "Container Photo-PQ_246_Td_Vaccine_10dose_biofarma",
+  "documentType": "Photo",
+  "versionId": "068NN000005zecHYAQ",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

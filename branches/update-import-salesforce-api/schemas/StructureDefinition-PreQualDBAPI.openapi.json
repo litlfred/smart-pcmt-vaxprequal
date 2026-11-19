@@ -1,0 +1,170 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "WHO Vaccine PreQual DB (API) API",
+    "description": "WHO Vaccine PreQual DB (API).  \nLogical model for the WHO PreQual DB as provided by the backend API at:\n     https://extranet.who.int/prequal/vaccines/prequalified-vaccines\nThis model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.\n\nKey fields from the API (FinishedVaccineProducts):\n  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)\n  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)\n  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)\n  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification\n  ProductDetails.AssessmentProcedure - Assessment procedure code\n  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address\n  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)\n  ProductDetails.PharmaceuticalForm - Pharmaceutical form details\n  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses\n  ProductDetails.NRADetails - Responsible NRA with ID, name, address\n  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names\n  ProductDetails.StorageDetails - Storage temperature and shelf life\n  ProductDetails.Status - Prequalification status code",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/StructureDefinition-PreQualDBAPI.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the Logical Model StructureDefinition-PreQualDBAPI",
+        "description": "This endpoint serves the JSON Schema definition for the Logical Model StructureDefinition-PreQualDBAPI.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for StructureDefinition-PreQualDBAPI",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./StructureDefinition-PreQualDBAPI.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "StructureDefinition-PreQualDBAPI": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "http://smart.who.int/base/StructureDefinition-PreQualDBAPI.schema.json",
+        "title": "WHO Vaccine PreQual DB (API)",
+        "description": "WHO Vaccine PreQual DB (API).  \nLogical model for the WHO PreQual DB as provided by the backend API at:\n     https://extranet.who.int/prequal/vaccines/prequalified-vaccines\nThis model provides authoritative vaccine product IDs and a richer data structure compared to the CSV export.\n\nKey fields from the API (FinishedVaccineProducts):\n  ProductDetails.Identification.Id - Vaccine Product ID (authoritative)\n  ProductDetails.Identification.Name - Product reference name (e.g. FVP-P-447)\n  ProductDetails.Type - Product type code (e.g. Finished Vaccine Product)\n  ProductDetails.DateOfPreQualifiedAcceptance - Date of prequalification\n  ProductDetails.AssessmentProcedure - Assessment procedure code\n  ProductDetails.ApplicantOrganization - Manufacturer/applicant with ID, name, address\n  ProductDetails.Presentation - Presentation form (Vial, Ampoule, etc.)\n  ProductDetails.PharmaceuticalForm - Pharmaceutical form details\n  ProductDetails.DosageDetails.NoOfDosagesPerPrimaryContainer - Number of doses\n  ProductDetails.NRADetails - Responsible NRA with ID, name, address\n  ProductDetails.VaccineDetails - Vaccine type with full, abbreviated, and commercial names\n  ProductDetails.StorageDetails - Storage temperature and shelf life\n  ProductDetails.Status - Prequalification status code",
+        "type": "object",
+        "properties": {
+          "resourceType": {
+            "type": "string",
+            "const": "PreQualDBAPI",
+            "description": "Resource type identifier for PreQualDBAPI logical model"
+          },
+          "productId": {
+            "type": "object",
+            "description": "Vaccine Product ID (authoritative)"
+          },
+          "productName": {
+            "type": "string",
+            "description": "Product reference name (e.g. FVP-P-447)"
+          },
+          "productType": {
+            "type": "string",
+            "description": "Product type code from PreQualDatabaseMetadata (e.g. FinishedVaccineProduct)"
+          },
+          "dateOfPrequal": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Date of prequalification acceptance"
+          },
+          "assessmentProcedure": {
+            "type": "string",
+            "description": "Assessment procedure code from PreQualDatabaseMetadata (e.g. PrequalificationStandard)"
+          },
+          "status": {
+            "type": "string",
+            "description": "Product status code from PreQualDatabaseMetadata (e.g. Prequalified)"
+          },
+          "pharmaceuticalForm": {
+            "type": "string",
+            "description": "Pharmaceutical form code from PreQualDatabaseMetadata"
+          },
+          "presentation": {
+            "type": "object",
+            "description": "Presentation (e.g. Vial, Ampoule)"
+          },
+          "numDoses": {
+            "type": "number",
+            "description": "Number of doses per primary container"
+          },
+          "vaccineFullName": {
+            "type": "string",
+            "description": "Vaccine full name"
+          },
+          "vaccineAbbreviatedName": {
+            "type": "string",
+            "description": "Vaccine abbreviated name"
+          },
+          "vaccineCommercialName": {
+            "type": "string",
+            "description": "Vaccine commercial name"
+          },
+          "vaccineTypeId": {
+            "type": "object",
+            "description": "Vaccine type ID"
+          },
+          "routeOfAdministration": {
+            "type": "string",
+            "description": "Route of administration code from PreQualDatabaseMetadata"
+          },
+          "applicantId": {
+            "type": "object",
+            "description": "Applicant/manufacturer organization ID (may be absent if not yet assigned)"
+          },
+          "applicantName": {
+            "type": "string",
+            "description": "Applicant/manufacturer organization name (always present from API data)"
+          },
+          "applicantAddress": {
+            "type": "object",
+            "description": "Applicant organization address"
+          },
+          "nraId": {
+            "type": "object",
+            "description": "NRA organization ID (may be absent if not yet assigned)"
+          },
+          "nraName": {
+            "type": "string",
+            "description": "Responsible NRA name (always present from API data)"
+          },
+          "nraCountry": {
+            "type": "string",
+            "description": "NRA country"
+          },
+          "shelfLife": {
+            "type": "string",
+            "description": "Shelf life (e.g. 24 months)"
+          },
+          "storageTemperature": {
+            "type": "string",
+            "description": "Storage temperature (e.g. 2 - 8°C)"
+          },
+          "diluent": {
+            "type": "string",
+            "description": "Diluent information"
+          },
+          "lastPublishingDate": {
+            "type": "string",
+            "format": "date-time",
+            "description": "Last publishing date"
+          },
+          "publishingRemarks": {
+            "type": "string",
+            "description": "Publishing remarks"
+          },
+          "preservative": {
+            "type": "string",
+            "description": "Preservative name (e.g. Thiomersal)"
+          },
+          "preservativeConcentration": {
+            "type": "string",
+            "description": "Preservative concentration (e.g. 0.01%)"
+          }
+        },
+        "required": [
+          "resourceType",
+          "productId",
+          "productName",
+          "productType",
+          "dateOfPrequal",
+          "status",
+          "presentation",
+          "vaccineCommercialName",
+          "applicantName",
+          "nraName"
+        ],
+        "resourceDefinition": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBAPI",
+        "fhir:parent": "http://hl7.org/fhir/StructureDefinition/Base"
+      }
+    }
+  }
+}

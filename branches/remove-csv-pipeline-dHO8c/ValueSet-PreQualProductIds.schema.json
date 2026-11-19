@@ -1,0 +1,61 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.schema.json",
+  "title": "WHO PreQualificaiton Vaccine Product Ids Schema",
+  "description": "JSON Schema for WHO PreQualificaiton Vaccine Product Ids ValueSet codes. Values are represented as Coding objects with 'system' and 'code' properties.",
+  "type": "object",
+  "required": [
+    "system",
+    "code"
+  ],
+  "additionalProperties": false,
+  "properties": {
+    "system": {
+      "type": "string",
+      "const": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"
+    },
+    "code": {
+      "type": "string",
+      "enum": [
+        "a3K3X000005atRtUAI",
+        "a3K3X000005atSwUAI",
+        "a3K3X000006MihsUAC",
+        "a3K3X000006MihtUAC",
+        "a3K3X000006MihuUAC",
+        "a3K3X000006MihvUAC",
+        "a3K3X000006MihwUAC",
+        "a3K3X000006MihxUAC",
+        "a3K3X000006MihyUAC",
+        "a3K3X000006Mii0UAC",
+        "a3K3X000006Mii1UAC",
+        "a3K3X000006Mii2UAC",
+        "a3K3X000006Mii3UAC",
+        "a3K3X000006Mii5UAC",
+        "a3K3X000006Mii6UAC",
+        "a3K3X000006Mii7UAC",
+        "a3K3X000006Mii8UAC",
+        "a3K3X000006Mii9UAC",
+        "a3K3X000006MiiAUAS",
+        "a3K3X000006MiiBUAS",
+        "a3K3X000006MiiCUAS",
+        "a3K3X000006MiiDUAS",
+        "a3K3X000006MiiEUAS",
+        "a3K3X000006MiiFUAS",
+        "a3K3X000006MiiGUAS",
+        "a3K3X000006MiiHUAS",
+        "a3K3X000006MiiIUAS",
+        "a3K3X000006MiiJUAS",
+        "a3K3X000006MiiKUAS",
+        "a3K3X000006MiiLUAS",
+        "a3K3X000006MiiMUAS",
+        "a3K3X000006MiiNUAS",
+        "a3K3X000006MiiOUAS"
+      ]
+    }
+  },
+  "narrative": "This schema validates Coding-shaped objects for the WHO PreQualificaiton Vaccine Product Ids ValueSet. Each value must be an object with 'system' (CodeSystem URI) and 'code' (fragment after '#') properties. Display values are available at http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.displays.json. The canonical IRI for a code can be reconstructed as system + '#' + code. For a complete listing of all ValueSets, see artifacts.html#terminology-value-sets.",
+  "fhir:displays": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.displays.json",
+  "fhir:valueSet": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualProductIds",
+  "fhir:version": "0.2.0",
+  "fhir:expansionTimestamp": "2026-03-24T14:19:03+00:00"
+}

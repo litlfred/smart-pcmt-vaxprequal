@@ -1,0 +1,14 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4CQAQ"
+  },
+  "siteOrganizationName": "Pfizer Europe MA EEIG (Pfizer)",
+  "addressLine1": "Boulevard de la Plaine 17",
+  "city": "Bruxelles",
+  "country": "Belgium",
+  "postalCode": "1050",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

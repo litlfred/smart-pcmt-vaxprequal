@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kGOgYAM"
+  },
+  "documentName": "Package Insert-pq_253_254_286_289_penta_liquid_BiolE_PI",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000061154YAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

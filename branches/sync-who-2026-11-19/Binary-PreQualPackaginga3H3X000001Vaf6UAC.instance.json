@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vaf6UAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box of 450 cartons of 1 multidose vial (4500 doses) [Dimensions: 44.4 x 23.5 x 25.2 cm]",
+  "volume": "44.4 x 23.5 x 25.2 cm",
+  "totalDoses": "4500",
+  "totalContainers": "450"
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iR1dYAE"
+  },
+  "documentName": "Package Insert-pq_180_181_HPV_GSK_Leaflet-2022",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005zAFhYAM",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

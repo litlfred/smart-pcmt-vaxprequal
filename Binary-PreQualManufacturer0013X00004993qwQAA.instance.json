@@ -1,0 +1,19 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00004993qwQAA"
+  },
+  "name": "SK Bioscience Co.  Ltd. (SK)",
+  "addressLine1": "310 Pangyo-ro  Bundang-gu",
+  "city": "Seongnam-si",
+  "state": "Gyeonggi-do",
+  "country": "Republic of Korea",
+  "postalCode": "13494",
+  "isoCountryCode": "KOR",
+  "region": "WPRO",
+  "website": "www.skchemicals.com",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X00004993qwQAA"
+  }
+}

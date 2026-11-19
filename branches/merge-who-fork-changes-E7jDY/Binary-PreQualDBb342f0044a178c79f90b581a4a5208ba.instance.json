@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2021-10-14",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "HumanPapillomavirusBival",
+        "display": "Human Papillomavirus (Bivalent)"
+      }
+    ]
+  },
+  "commercialName": "Cecolin®",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Xiamen Innovax Biotech Co. Ltd."
+  },
+  "responsibleNRA": {
+    "text": "National Medical Products Administration"
+  },
+  "index": {
+    "value": "b342f0044a178c79f90b581a4a5208ba"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturera5cc87bbf41f05f69cabde633c076a70"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder6f85b90926148cce1ad5a1fa8afe673a"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/HumanPapillomavirusBivalProductb342f0044a178c79f90b581a4a5208ba"
+  }
+}

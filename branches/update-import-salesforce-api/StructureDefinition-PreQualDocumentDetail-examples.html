@@ -1,0 +1,1097 @@
+<!-- get modelType -->
+
+
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE HTML>
+<html xml:lang="en" xmlns="http://www.w3.org/1999/xhtml" lang="en">
+  <head>
+    <meta content="text/html;charset=utf-8" http-equiv="Content-Type"/>
+    <title>WHO PreQual Document Detail - Examples - SMART Product Catalog v0.1.0</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="author" content="http://hl7.org/fhir"/>
+
+    <link href="fhir.css" rel="stylesheet"/>
+    <link href="assets/css/fa-all.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap core CSS -->
+    <link href="assets/css/bootstrap-fhir.css" rel="stylesheet"/>
+
+    <!-- Project extras -->
+    <link href="assets/css/project.css" rel="stylesheet"/>
+    <link href="assets/css/pygments-manni.css" rel="stylesheet"/>
+    <link href="assets/css/jquery-ui.css" rel="stylesheet"/>
+  	<link href="assets/css/prism.css" rel="stylesheet" />
+    <!-- Placeholder for child template CSS declarations -->
+    <link href="assets/css/who.css" rel="stylesheet"/>
+    <link href="assets/css/lforms.min.css" rel="stylesheet"/>
+
+
+    <script type="text/javascript" src="fhir-table-scripts.js"> </script>
+
+    <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+    <script src="assets/js/html5shiv.js"></script>
+    <script src="assets/js/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Favicons -->
+    <link rel="fhir-logo" sizes="144x144" href="assets/ico/icon-fhir-144.png"/>
+    <link rel="fhir-logo" sizes="114x114" href="assets/ico/icon-fhir-114.png"/>
+    <link rel="fhir-logo" sizes="72x72" href="assets/ico/icon-fhir-72.png"/>
+    <link rel="fhir-logo" href="assets/ico/icon-fhir-57.png"/>
+    <link rel="shortcut icon" href="assets/ico/favicon.png"/>
+  </head>
+  <body onload="document.body.style.opacity='1'">
+
+	  <script src="assets/js/prism.js"></script>
+
+    <style type="text/css">h2{--heading-prefix:"5.1.2"}
+    h3,h4,h5,h6{--heading-prefix:"5.1.2"}</style>
+    <div id="segment-header" class="segment">  <!-- segment-header -->
+
+      <div id="segment-navbar" class="segment">  <!-- segment-navbar -->
+        <div id="stripe"> </div>
+        <div class="container">  <!-- container -->
+          <!-- HEADER CONTENT -->
+  
+          <nav class="navbar navbar-inverse">
+            <!--status-bar-->
+            <div class="container">
+              <button data-target=".navbar-inverse-collapse" class="navbar-toggle" data-toggle="collapse" type="button">
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+                <span class="icon-bar"> </span>
+              </button>
+              <a class="navbar-brand hidden" href="http://hl7.org/fhir/R5/index.html">FHIR</a>
+              <div class="nav-collapse collapse navbar-inverse-collapse">
+                <!-- menu.xml  -->
+
+<ul xmlns="http://www.w3.org/1999/xhtml" class="nav navbar-nav">
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Home
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="index.html">Summary</a>
+      </li>
+      <li>
+        <a href="changes.html">Changes</a>
+      </li>
+      <li>
+        <a href="dependencies.html">Dependencies</a>
+      </li>
+      <li>
+        <a href="references.html">References</a>
+      </li>
+      <li>
+        <a href="adapting.html">Adapting Guidelines for Country use</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Business Requirements
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="concepts.html">Concepts</a>
+      </li>
+      <li>
+        <a href="personas.html">Generic Personas</a>
+      </li>
+      <li>
+        <a href="scenarios.html">User Scenarios</a>
+      </li>
+      <li>
+        <a href="business-processes.html">Business Processes</a>
+      </li>
+      <li>
+        <a href="dictionary.html">Data Dictionary</a>
+      </li>
+      <li>
+        <a href="decision-logic.html">Decision-support Logic</a>
+      </li>
+      <li>
+        <a href="indicators.html">Indicator and Performance Metrics</a>
+      </li>
+      <li>
+        <a href="functional-requirements.html">Functional Requirements</a>
+      </li>
+      <li>
+        <a href="non-functional-requirements.html">Non-functional Requirements</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Data Models and Exchange
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="system-actors.html">System Actors</a>
+      </li>
+      <li>
+        <a href="sequence-diagrams.html">Sequence Diagrams</a>
+      </li>
+      <li>
+        <a href="transactions.html">Transactions</a>
+      </li>
+      <li>
+        <a href="indicators-measures.html">Indicators and Measures</a>
+      </li>
+      <li>
+        <a href="codings.html">Codings</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Deployment
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="security-privacy.html">Security and Privacy Considerations</a>
+      </li>
+      <li>
+        <a href="testing.html">Testing</a>
+      </li>
+      <li>
+        <a href="test-data.html">Test Data</a>
+      </li>
+      <li>
+        <a href="reference-implementations.html">Reference Implementations</a>
+      </li>
+      <li>
+        <a href="trust_domain.html">Trust Domains</a>
+      </li>
+      <li>
+        <a href="downloads.html">Downloads</a>
+      </li>
+    </ul>
+  </li>
+  <li class="dropdown">
+    <a data-toggle="dropdown" href="#" class="dropdown-toggle">Indices
+      <b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu">
+      <li>
+        <a href="artifacts.html">Artifact Index</a>
+      </li>
+      <li>
+        <a href="maps.html">Mappings</a>
+      </li>
+      <li>
+        <a href="dak-api.html">DAK API</a>
+      </li>
+    </ul>
+  </li>
+</ul>
+              </div>  <!-- /.nav-collapse -->
+
+              <div class="sf_colsIn col-md-8  navbar-right-container" data-sf-element="LanguageSelectorSearch" data-placeholder-label="Language Selector and Search" style="display: flex; justify-content: flex-end; align-items: center;">
+                <!-- This div will be pushed to the right -->
+                <div class="language-selector" style="margin-left: auto; background-color: #00477d; color: white;">
+                  <i class="fa fa-language fa-lg"></i>
+                  <label for="language-selector"> </label>
+                  <select onChange="openLink(value)" id="language-selector" name="language-selector">
+                    <option disabled selected>Select language</option>
+                    <option value="en" class="selected">English</option>
+                  </select>
+                  <i class="fas fa-angle-down"></i>
+                </div>
+                <!-- Search Content -->
+              </div>
+            </div>  <!-- /.container -->
+          </nav>  <!-- /.navbar -->
+        <!-- /HEADER CONTENT -->
+        </div>  <!-- /container -->
+      </div>  <!-- /segment-navbar -->
+      
+
+      <div class="container" style=" justify-content: space-between; align-items: left;">
+
+        <!-- Placeholder for child template header declarations -->
+<div id="project-nav">
+    <a id="who-logo" no-external="true" href="index.html">
+        
+    </a>
+</div>
+
+ <div id="family-nav">
+  <a id="fhir-logo" no-external="true" href="http://hl7.org/fhir">  </a>
+</div> 
+
+
+        <div id="ig-status" class="ig-status-draft">
+          <p><span style="font-size:12pt;font-weight:bold">SMART Product Catalog</span>
+            <br/>
+            <span style="display:inline-block;">0.1.0 - ci-build
+
+
+            </span>
+          </p>
+        </div>
+      </div> <!-- /container -->
+    </div>  <!-- /segment-header -->
+
+
+    <!--status-bar-->
+
+    <div id="segment-breadcrumb" class="segment">  <!-- segment-breadcrumb -->
+      <div class="container">  <!-- container -->
+        <ul class="breadcrumb">
+          <li><a href='toc.html'><b>Table of Contents</b></a></li><li><a href='indices.html'><b>Indices</b></a></li><li><a href='artifacts.html'><b>Artifact Index</b></a></li><li><b>WHO PreQual Document Detail</b></li>
+
+        </ul>
+      </div>  <!-- /container -->
+    </div>  <!-- /segment-breadcrumb -->
+
+    <a name="top"> </a>
+    <div id="segment-content" class="segment">  <!-- segment-content -->
+      <div class="container">  <!-- container -->
+        <div class="row">
+          <div class="inner-wrapper">
+
+<div style="counter-reset: section 6" class="col-12">
+  <!--ReleaseHeader--><p id="publish-box">SMART Product Catalog, published by WHO. This guide is not an authorized publication; it is the continuous build for version 0.1.0  built by the FHIR (HL7&reg; FHIR&reg; Standard) CI Build. This version is based on the current content of <a href='https://github.com/litlfred/smart-pcmt-vaxprequal/tree/copilot/update-import-salesforce-api'>https://github.com/litlfred/smart-pcmt-vaxprequal/tree/copilot/update-import-salesforce-api</a> and changes regularly. See the <a href='http://smart.who.int/pcmt-vaxprequal/history.html'>Directory of published versions</a></p><!--EndReleaseHeader-->
+  
+
+
+
+
+
+
+
+
+
+
+
+<ul class="nav nav-tabs">
+
+  <li>
+    <a href="StructureDefinition-PreQualDocumentDetail.html">Content</a>
+  </li>
+
+
+
+  <li>
+    <a href="StructureDefinition-PreQualDocumentDetail-definitions.html">Detailed Descriptions</a>
+  </li>
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-PreQualDocumentDetail-mappings.html">Mappings</a>
+    </li>
+  
+
+
+
+
+
+
+  
+    
+      <li class="active">
+        <a href="#">Examples</a>
+      </li>
+    
+  
+
+
+
+
+  
+    <li>
+      <a href="StructureDefinition-PreQualDocumentDetail.profile.xml.html">XML</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-PreQualDocumentDetail.profile.json.html">JSON</a>
+    </li>
+  
+
+
+  
+    <li>
+      <a href="StructureDefinition-PreQualDocumentDetail.profile.ttl.html">TTL</a>
+    </li>
+  
+
+
+
+<li role="presentation"><a href="StructureDefinition-PreQualDocumentDetail.schema.json.html">JSON Schema</a></li>
+</ul>
+
+
+  <a name="root"> </a>
+  <h2 id="root">Logical Model: PreQualDocumentDetail - Examples</h2>
+
+  <table class="colsd">
+    <tr>
+
+      <td colspan="2">
+        
+          Draft
+          
+            as of 2026-03-11
+          
+        
+      </td>
+
+    </tr>
+  </table>
+
+
+   <!-- insert intro if present -->
+    
+
+
+
+
+
+  <p>Examples for the PreQualDocumentDetail Profile.</p>
+  <table style="grid">
+    <tbody>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005hpfqYAA.html">PreQualDocument069NN000005hpfqYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005hsVMYAY.html">PreQualDocument069NN000005hsVMYAY</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005huAeYAI.html">PreQualDocument069NN000005huAeYAI</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005huyhYAA.html">PreQualDocument069NN000005huyhYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005hvDPYAY.html">PreQualDocument069NN000005hvDPYAY</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005hwh7YAA.html">PreQualDocument069NN000005hwh7YAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005hwyuYAA.html">PreQualDocument069NN000005hwyuYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005hx6rYAA.html">PreQualDocument069NN000005hx6rYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005hxOcYAI.html">PreQualDocument069NN000005hxOcYAI</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005hykYYAQ.html">PreQualDocument069NN000005hykYYAQ</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005hyvmYAA.html">PreQualDocument069NN000005hyvmYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005hyzMYAQ.html">PreQualDocument069NN000005hyzMYAQ</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005hzTfYAI.html">PreQualDocument069NN000005hzTfYAI</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005hziIYAQ.html">PreQualDocument069NN000005hziIYAQ</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005hzjwYAA.html">PreQualDocument069NN000005hzjwYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005hzzuYAA.html">PreQualDocument069NN000005hzzuYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i0HgYAI.html">PreQualDocument069NN000005i0HgYAI</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i0W8YAI.html">PreQualDocument069NN000005i0W8YAI</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i0XuYAI.html">PreQualDocument069NN000005i0XuYAI</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i0mQYAQ.html">PreQualDocument069NN000005i0mQYAQ</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i0uTYAQ.html">PreQualDocument069NN000005i0uTYAQ</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i1VTYAY.html">PreQualDocument069NN000005i1VTYAY</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i1aFYAQ.html">PreQualDocument069NN000005i1aFYAQ</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i1dXYAQ.html">PreQualDocument069NN000005i1dXYAQ</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i1nFYAQ.html">PreQualDocument069NN000005i1nFYAQ</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i24tYAA.html">PreQualDocument069NN000005i24tYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i287YAA.html">PreQualDocument069NN000005i287YAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i2JVYAY.html">PreQualDocument069NN000005i2JVYAY</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i2OIYAY.html">PreQualDocument069NN000005i2OIYAY</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i2XxYAI.html">PreQualDocument069NN000005i2XxYAI</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i2ZZYAY.html">PreQualDocument069NN000005i2ZZYAY</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i2jEYAQ.html">PreQualDocument069NN000005i2jEYAQ</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i2svYAA.html">PreQualDocument069NN000005i2svYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i3AhYAI.html">PreQualDocument069NN000005i3AhYAI</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i3IgYAI.html">PreQualDocument069NN000005i3IgYAI</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i3fGYAQ.html">PreQualDocument069NN000005i3fGYAQ</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i48IYAQ.html">PreQualDocument069NN000005i48IYAQ</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i4HzYAI.html">PreQualDocument069NN000005i4HzYAI</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i4gCYAQ.html">PreQualDocument069NN000005i4gCYAQ</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i4hmYAA.html">PreQualDocument069NN000005i4hmYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i4mdYAA.html">PreQualDocument069NN000005i4mdYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i4mgYAA.html">PreQualDocument069NN000005i4mgYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i4umYAA.html">PreQualDocument069NN000005i4umYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i51DYAQ.html">PreQualDocument069NN000005i51DYAQ</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i55zYAA.html">PreQualDocument069NN000005i55zYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i57cYAA.html">PreQualDocument069NN000005i57cYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i5CfYAI.html">PreQualDocument069NN000005i5CfYAI</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i5QyYAI.html">PreQualDocument069NN000005i5QyYAI</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i5UHYAY.html">PreQualDocument069NN000005i5UHYAY</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i5XUYAY.html">PreQualDocument069NN000005i5XUYAY</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i5aeYAA.html">PreQualDocument069NN000005i5aeYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i5igYAA.html">PreQualDocument069NN000005i5igYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i60aYAA.html">PreQualDocument069NN000005i60aYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i65LYAQ.html">PreQualDocument069NN000005i65LYAQ</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i6DJYAY.html">PreQualDocument069NN000005i6DJYAY</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i7PWYAY.html">PreQualDocument069NN000005i7PWYAY</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i873YAA.html">PreQualDocument069NN000005i873YAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i8GtYAI.html">PreQualDocument069NN000005i8GtYAI</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i8GuYAI.html">PreQualDocument069NN000005i8GuYAI</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i9CoYAI.html">PreQualDocument069NN000005i9CoYAI</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005i9hYYAQ.html">PreQualDocument069NN000005i9hYYAQ</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iA7QYAU.html">PreQualDocument069NN000005iA7QYAU</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iAAVYA2.html">PreQualDocument069NN000005iAAVYA2</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iAIXYA2.html">PreQualDocument069NN000005iAIXYA2</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iAiPYAU.html">PreQualDocument069NN000005iAiPYAU</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iC2hYAE.html">PreQualDocument069NN000005iC2hYAE</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iCqdYAE.html">PreQualDocument069NN000005iCqdYAE</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iDEtYAM.html">PreQualDocument069NN000005iDEtYAM</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iEvgYAE.html">PreQualDocument069NN000005iEvgYAE</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iFlFYAU.html">PreQualDocument069NN000005iFlFYAU</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iFy9YAE.html">PreQualDocument069NN000005iFy9YAE</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iGB5YAM.html">PreQualDocument069NN000005iGB5YAM</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iGEMYA2.html">PreQualDocument069NN000005iGEMYA2</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iGHVYA2.html">PreQualDocument069NN000005iGHVYA2</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iGiyYAE.html">PreQualDocument069NN000005iGiyYAE</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iH8nYAE.html">PreQualDocument069NN000005iH8nYAE</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iHaBYAU.html">PreQualDocument069NN000005iHaBYAU</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iHf1YAE.html">PreQualDocument069NN000005iHf1YAE</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iIUfYAM.html">PreQualDocument069NN000005iIUfYAM</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iJ7LYAU.html">PreQualDocument069NN000005iJ7LYAU</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iJTxYAM.html">PreQualDocument069NN000005iJTxYAM</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iJiVYAU.html">PreQualDocument069NN000005iJiVYAU</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iJyYYAU.html">PreQualDocument069NN000005iJyYYAU</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iK6fYAE.html">PreQualDocument069NN000005iK6fYAE</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iK8HYAU.html">PreQualDocument069NN000005iK8HYAU</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iKMmYAM.html">PreQualDocument069NN000005iKMmYAM</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iKRaYAM.html">PreQualDocument069NN000005iKRaYAM</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iKTCYA2.html">PreQualDocument069NN000005iKTCYA2</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iKWQYA2.html">PreQualDocument069NN000005iKWQYA2</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iKkwYAE.html">PreQualDocument069NN000005iKkwYAE</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iKrOYAU.html">PreQualDocument069NN000005iKrOYAU</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iKxrYAE.html">PreQualDocument069NN000005iKxrYAE</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iL9AYAU.html">PreQualDocument069NN000005iL9AYAU</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iLDxYAM.html">PreQualDocument069NN000005iLDxYAM</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iLInYAM.html">PreQualDocument069NN000005iLInYAM</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iLQxYAM.html">PreQualDocument069NN000005iLQxYAM</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iLQyYAM.html">PreQualDocument069NN000005iLQyYAM</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iLcCYAU.html">PreQualDocument069NN000005iLcCYAU</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iLkDYAU.html">PreQualDocument069NN000005iLkDYAU</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005iLnTYAU.html">PreQualDocument069NN000005iLnTYAU</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005kEI2YAM.html">PreQualDocument069NN000005kEI2YAM</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005kEQ6YAM.html">PreQualDocument069NN000005kEQ6YAM</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005kEZlYAM.html">PreQualDocument069NN000005kEZlYAM</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005kErVYAU.html">PreQualDocument069NN000005kErVYAU</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005kFnaYAE.html">PreQualDocument069NN000005kFnaYAE</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005kGJsYAM.html">PreQualDocument069NN000005kGJsYAM</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005kHUSYA2.html">PreQualDocument069NN000005kHUSYA2</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005kJG6YAM.html">PreQualDocument069NN000005kJG6YAM</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005kJhVYAU.html">PreQualDocument069NN000005kJhVYAU</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005knsbYAA.html">PreQualDocument069NN000005knsbYAA</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005lDn4YAE.html">PreQualDocument069NN000005lDn4YAE</a>
+          </td>
+        </tr>
+      
+        <tr>
+          <td>
+            <a href="Binary-PreQualDocument069NN000005lDwoYAE.html">PreQualDocument069NN000005lDwoYAE</a>
+          </td>
+        </tr>
+      
+    </tbody>
+  </table>
+
+
+<!-- insert notes if present -->
+
+
+
+
+</div>
+
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /row -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-content -->
+
+<script type="text/javascript" src="assets/js/jquery.js"> </script>     <!-- note keep space here, otherwise it will be transformed to empty tag -> fails -->
+<script type="text/javascript" src="assets/js/jquery-ui.min.js"> </script>
+
+<script type="text/javascript" src="assets/js/tabs.js"> </script>
+
+<script type="text/javascript" src="assets/js/window-hash.js"> </script>
+<a name="bottom"> </a>
+<div id="segment-footer" igtool="footer" class="segment">  <!-- segment-footer -->
+<div class="container">  <!-- container -->
+
+<div class="inner-wrapper">
+  <p>
+    IG &#169; 2023+ <a style="color:var(--footer-hyperlink-text-color)" href="http://who.int">WHO</a>.  Package smart.who.int.pcmt-vaxprequal#0.1.0 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R5/">FHIR 5.0.0</a>. Generated <span title="Wed, Mar 11, 2026 13:44+0000">2026-03-11</span>
+    <br/>
+    <span style="color: var(--footer-highlight-text-color)">
+                Links: <a style="color: var(--footer-hyperlink-text-color)" href="toc.html">Table of Contents</a> |
+                 <a style="color: var(--footer-hyperlink-text-color)" href="qa.html">QA Report</a>
+                 
+                
+| <a style="color: #81BEF7" target="_blank" href="http://smart.who.int/pcmt-vaxprequal/history.html">Version History</a> | <a style="color: #81BEF7" rel="license" href="license.html">License</a>
+    </span>
+  </p>
+</div>  <!-- /inner-wrapper -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-footer -->
+
+<div id="segment-post-footer" class="segment hidden">  <!-- segment-post-footer -->
+<div class="container">  <!-- container -->
+</div>  <!-- /container -->
+</div>  <!-- /segment-post-footer -->
+
+<!-- JS and analytics only. -->
+<!-- Bootstrap core JavaScript
+================================================== -->
+<!-- Placed at the end of the document so the pages load faster -->
+<script type="text/javascript" src="assets/js/bootstrap.min.js"> </script>
+<script type="text/javascript" src="assets/js/respond.min.js"> </script>
+<script type="text/javascript" src="assets/js/anchor.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard.min.js"> </script>
+<script type="text/javascript" src="assets/js/clipboard-btn.js"> </script>
+<script type="text/javascript" src="assets/js/anchor-hover.js"> </script>
+<!-- Analytics Below
+================================================== -->
+
+
+
+

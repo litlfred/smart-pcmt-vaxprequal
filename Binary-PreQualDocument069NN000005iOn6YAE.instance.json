@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iOn6YAE"
+  },
+  "documentName": "Container Photo-pq_187_mOPV1_20dose_Haffkine_vial_image",
+  "documentType": "Photo",
+  "versionId": "068NN000005z860YAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

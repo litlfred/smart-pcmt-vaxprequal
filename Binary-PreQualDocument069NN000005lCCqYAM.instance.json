@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005lCCqYAM"
+  },
+  "documentName": "-FVP-P-463_PNEUMOSIL_10dose_SIIPL_PI-2024",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000061xyxYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

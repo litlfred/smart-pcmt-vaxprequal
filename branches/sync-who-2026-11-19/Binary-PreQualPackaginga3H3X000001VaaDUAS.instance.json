@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaaDUAS"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "17.13",
+  "description": "Carton of 50 tubes [Dimensions: 14.6 x 8.5 x 6.9 cm]",
+  "height": "8.5",
+  "length": "14.6",
+  "width": "6.9",
+  "primaryContainers": "1"
+}

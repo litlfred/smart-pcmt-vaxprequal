@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VafQUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box containing 160 cartons of 10 vials (1600 doses)[Dimensions: 64.5 x 74.5 x 6.5 cm]",
+  "volume": "64.5 x 74.5 x 6.5 cm",
+  "totalDoses": "1600",
+  "totalContainers": "1600"
+}

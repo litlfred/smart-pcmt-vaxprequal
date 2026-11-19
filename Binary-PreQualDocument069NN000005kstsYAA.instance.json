@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kstsYAA"
+  },
+  "documentName": "Container Photo-pq_318_Pneumococcal_4dose_GSK_container_image-2022",
+  "documentType": "Photo",
+  "versionId": "068NN0000061ejEYAQ",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

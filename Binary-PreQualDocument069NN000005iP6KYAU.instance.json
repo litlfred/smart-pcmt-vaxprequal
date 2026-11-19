@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iP6KYAU"
+  },
+  "documentName": "Package Insert-pq_192_199_318_Pneumococcal_GSK_PI_2022",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000005z8PEYAY",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

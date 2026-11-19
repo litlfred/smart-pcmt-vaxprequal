@@ -1,0 +1,7 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient",
+  "ingredientType": "VxFVP",
+  "unit": "CCID50",
+  "product": "a3KNN0000001VL72AM",
+  "productComponentType": "Active"
+}

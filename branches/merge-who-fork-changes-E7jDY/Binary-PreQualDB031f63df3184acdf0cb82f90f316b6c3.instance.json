@@ -1,0 +1,41 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2020-12-21",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "PolioVaccineInactivatedS",
+        "display": "Polio Vaccine - Inactivated Sabin (sIPV)"
+      }
+    ]
+  },
+  "commercialName": "Eupolio Inj.",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 5,
+  "manufacturer": {
+    "text": "LG Chem Ltd"
+  },
+  "responsibleNRA": {
+    "text": "Ministry of Food and Drug Safety"
+  },
+  "index": {
+    "value": "031f63df3184acdf0cb82f90f316b6c3"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer83c80215b20b5251e1c62eac65c9e90a"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderd4e6bca678dea34fa256538a18200187"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/PolioVaccineInactivatedSProduct031f63df3184acdf0cb82f90f316b6c3"
+  }
+}

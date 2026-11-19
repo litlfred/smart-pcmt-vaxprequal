@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005j4O1YAI"
+  },
+  "documentName": "General-pq_261_H1N1_LAIV_diluent_5dose_SII_label",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005zp1BYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

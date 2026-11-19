@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "description": "Carton of 100 vials (active) [Dimensions 17.8 x 14.7 x 3.7 cm]",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaaVUAS"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "9.68",
+  "height": "14.7",
+  "length": "17.8",
+  "width": "3.7",
+  "primaryContainers": "100"
+}

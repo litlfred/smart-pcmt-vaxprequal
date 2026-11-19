@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaivUAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box containing 23 cartons of 600 vials (13 800 vials/69 000 dose)[Dimensions: 120 x 100 x 155 cm]",
+  "volume": "120 x 100 x 155 cm",
+  "totalDoses": "69000",
+  "totalContainers": "13800"
+}

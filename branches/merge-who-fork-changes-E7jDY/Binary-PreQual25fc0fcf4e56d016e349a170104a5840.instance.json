@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holderff846f1753a67d1fcaa62a05358b9ff4"
+  },
+  "validityPeriod": {
+    "start": "2014-09-18"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/JapaneseEncephalitisVaccProduct25fc0fcf4e56d016e349a170104a5840"
+    }
+  ]
+}

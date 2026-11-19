@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VacuUAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccineandDiluent",
+  "description": "Box containing 170 cartons of 5 vaccine vials + 5 diluent vials (1700 vials/ 850 doses)[Dimensions: 64.5 x 74.5 x 68.5]",
+  "volume": "64.5 x 74.5 x 68.5",
+  "totalDoses": "850",
+  "totalContainers": "1700"
+}

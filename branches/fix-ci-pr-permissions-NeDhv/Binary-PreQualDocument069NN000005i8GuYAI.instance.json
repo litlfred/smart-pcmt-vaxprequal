@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005i8GuYAI"
+  },
+  "documentName": "Container Photo (Bigger Higher Resolution)-pq_126_DTP_10dose_SII_container_image_VVM",
+  "documentType": "Photo",
+  "versionId": "068NN000005yredYAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

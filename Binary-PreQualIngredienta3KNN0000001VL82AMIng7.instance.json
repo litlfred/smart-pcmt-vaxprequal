@@ -1,0 +1,6 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient",
+  "ingredientType": "VxFVP",
+  "unit": "µg",
+  "product": "a3KNN0000001VL82AM"
+}

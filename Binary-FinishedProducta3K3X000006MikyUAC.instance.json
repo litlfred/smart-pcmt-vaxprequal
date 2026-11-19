@@ -1,0 +1,10 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "status": "WithdrawnWasAccepted",
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006MikyUAC"
+  },
+  "productName": "FVP-P-162",
+  "lastPublishingDate": "2023-12-21"
+}

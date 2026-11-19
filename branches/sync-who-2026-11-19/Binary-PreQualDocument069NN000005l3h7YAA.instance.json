@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005l3h7YAA"
+  },
+  "documentName": "Package Insert-pq_339_Afluria_QIV_10dose_Seqirus_PI_VVM_NH-2020-2021",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000061pWTYAY",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

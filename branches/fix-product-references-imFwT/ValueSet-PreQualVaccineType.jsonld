@@ -1,0 +1,91 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+  },
+  "@id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-03-19T19:11:41.825170Z",
+  "@graph": [
+    {
+      "id": "#BCG",
+      "name": "BCG"
+    },
+    {
+      "id": "#DT",
+      "name": "DT"
+    },
+    {
+      "id": "#DTwP",
+      "name": "DTwP"
+    },
+    {
+      "id": "#HepA",
+      "name": "HepA"
+    },
+    {
+      "id": "#HepB",
+      "name": "HepB"
+    },
+    {
+      "id": "#JE",
+      "name": "JE"
+    },
+    {
+      "id": "#LARV",
+      "name": "LARV"
+    },
+    {
+      "id": "#M",
+      "name": "M"
+    },
+    {
+      "id": "#MMR",
+      "name": "MMR"
+    },
+    {
+      "id": "#MR",
+      "name": "MR"
+    },
+    {
+      "id": "#Malaria",
+      "name": "Malaria"
+    },
+    {
+      "id": "#TDV",
+      "name": "TDV"
+    },
+    {
+      "id": "#TT",
+      "name": "TT"
+    },
+    {
+      "id": "#YF",
+      "name": "YF"
+    },
+    {
+      "id": "#bOPV",
+      "name": "bOPV"
+    },
+    {
+      "id": "#dT",
+      "name": "dT"
+    },
+    {
+      "id": "#tOPV",
+      "name": "tOPV"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

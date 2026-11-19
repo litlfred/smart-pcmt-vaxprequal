@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VaihUAC"
+  },
+  "packagingType": "Secondary",
+  "componentPacked": "ActiveVaccine",
+  "coldChainVolume": "11.28",
+  "description": "Carton of 25 vials [Dimensions 9.9x7.7x3.7] cm",
+  "height": "7.7",
+  "length": "9.9",
+  "width": "3.7",
+  "primaryContainers": "100"
+}

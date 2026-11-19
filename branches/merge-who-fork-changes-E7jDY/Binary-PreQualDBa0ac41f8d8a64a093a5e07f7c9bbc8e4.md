@@ -1,0 +1,64 @@
+# PreQualDBa0ac41f8d8a64a093a5e07f7c9bbc8e4 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDBa0ac41f8d8a64a093a5e07f7c9bbc8e4**
+
+## Binary: PreQualDBa0ac41f8d8a64a093a5e07f7c9bbc8e4
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2014-07-31",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "DiphtheriaTetanusPertuss",
+        "display": "Diphtheria-Tetanus-Pertussis (whole cell)"
+      }
+    ]
+  },
+  "commercialName": "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  TRIPVAC",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Biological E. Limited"
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "a0ac41f8d8a64a093a5e07f7c9bbc8e4"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer54a4cbdf74f251158fb034e8f5e1ff5b"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/DiphtheriaTetanusPertussProducta0ac41f8d8a64a093a5e07f7c9bbc8e4"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

@@ -1,0 +1,93 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "productType": "FinishedVaccineProduct",
+  "dateOfPrequal": "2019-04-08",
+  "assessmentProcedure": "PrequalificationStandard",
+  "status": "Prequalified",
+  "pharmaceuticalForm": "LiquidReadytouse",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006MijwUAC"
+  },
+  "productName": "FVP-P-340",
+  "vaccineFullName": "Influenza vaccine trivalent (surface antigens, inactivated)",
+  "vaccineAbbreviatedName": "IIV3",
+  "vaccineCommercialName": "SKYCellflu® Multi inj.",
+  "vaccineType": {
+    "coding": [
+      {
+        "system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
+        "code": "IIV3",
+        "display": "Influenza vaccine trivalent (surface antigens, inactivated)"
+      }
+    ]
+  },
+  "vaccineTypeId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSpNUAU"
+  },
+  "routeOfAdministration": "Intramuscular",
+  "vialMonitor": "Type 7",
+  "multidoseVialPolicy": "WHO recommends that opened vials of this vaccine may be used in subsequent immunization sessions (up to 28 days) if the conditions outlined in the WHO Policy Statement are met.",
+  "applicantId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00004993qwQAA"
+  },
+  "applicantName": "SK Bioscience Co.  Ltd. (SK)",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00004993qyQAA"
+  },
+  "nraName": "Ministry of Food and Drug Safety (MFDS)",
+  "nraCountry": "Republic of Korea",
+  "shelfLife": "12 months",
+  "storageTemperature": "2 - 8°C",
+  "lastPublishingDate": "2024-09-10",
+  "preservative": "Thiomersal",
+  "preservativeConcentration": "0.1 mg/mL",
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer0013X00004993qwQAA"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder0013X00004993qyQAA"
+  },
+  "manufacturerLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer/PreQualManufacturer0013X00004993qwQAA"
+  },
+  "nraLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA/PreQualNRA0013X00004993qyQAA"
+  },
+  "vaccineLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine/PreQualVaccinea3S3X000003cSpNUAU"
+  },
+  "packagingLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging/PreQualPackaginga3H3X000001VafIUAS"
+    }
+  ],
+  "documentLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail/PreQualDocument069NN000005l1tqYAA"
+    }
+  ],
+  "siteLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail/PreQualSite0013X00004993qwQAA"
+    }
+  ],
+  "ingredientLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient/PreQualIngredienta3K3X000006MijwUACIng4"
+    }
+  ]
+}

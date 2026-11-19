@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VafcUAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "Diluent",
+  "description": "Diluent: Box containing 30 cartons of 50 ampoules (1500 amp./7500 doses)[Dimensions: 42.5 x 33 x 19.5 cm]",
+  "volume": "42.5 x 33 x 19.5 cm",
+  "totalDoses": "7500",
+  "totalContainers": "1500"
+}

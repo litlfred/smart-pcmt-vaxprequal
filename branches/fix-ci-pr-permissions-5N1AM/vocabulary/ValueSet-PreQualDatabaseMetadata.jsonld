@@ -1,0 +1,167 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    }
+  },
+  "@id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-03-24T15:03:58.768589Z",
+  "@graph": [
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#FinishedVaccineProduct",
+      "name": "Finished Vaccine Product",
+      "fhir:code": "FinishedVaccineProduct",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#PrequalificationStandard",
+      "name": "Prequalification - Standard",
+      "fhir:code": "PrequalificationStandard",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#Prequalified",
+      "name": "Prequalified",
+      "fhir:code": "Prequalified",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#WithdrawnWasPrequalified",
+      "name": "Withdrawn: Was Prequalified",
+      "fhir:code": "WithdrawnWasPrequalified",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#LiquidReadytouse",
+      "name": "Liquid: Ready to use",
+      "fhir:code": "LiquidReadytouse",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse",
+      "name": "Lyophilised active component to be reconstituted with excipient diluent before use",
+      "fhir:code": "Lyophilisedactivecomponenttobereconstitutedwithexcipientdiluentbeforeuse",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#Intradermal",
+      "name": "Intradermal",
+      "fhir:code": "Intradermal",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#Intramuscular",
+      "name": "Intramuscular",
+      "fhir:code": "Intramuscular",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#Intramuscularorsubcutaneous",
+      "name": "Intramuscular or subcutaneous",
+      "fhir:code": "Intramuscularorsubcutaneous",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#Oral",
+      "name": "Oral",
+      "fhir:code": "Oral",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#Subcutaneous",
+      "name": "Subcutaneous",
+      "fhir:code": "Subcutaneous",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#Secondary",
+      "name": "Secondary",
+      "fhir:code": "Secondary",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#ShippingContainer",
+      "name": "Shipping Container",
+      "fhir:code": "ShippingContainer",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#Tertiary",
+      "name": "Tertiary",
+      "fhir:code": "Tertiary",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#ActiveVaccine",
+      "name": "Active (Vaccine)",
+      "fhir:code": "ActiveVaccine",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#Diluent",
+      "name": "Diluent",
+      "fhir:code": "Diluent",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#Photo",
+      "name": "Photo",
+      "fhir:code": "Photo",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#PhotoMainImage",
+      "name": "Photo-Main Image",
+      "fhir:code": "PhotoMainImage",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#ProductInsert",
+      "name": "Product Insert",
+      "fhir:code": "ProductInsert",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#VSPAR",
+      "name": "VSPAR",
+      "fhir:code": "VSPAR",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#VaccineGeneralDocument",
+      "name": "Vaccine General Document",
+      "fhir:code": "VaccineGeneralDocument",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#FVPManufacture",
+      "name": "FVP Manufacture",
+      "fhir:code": "FVPManufacture",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#Accepted",
+      "name": "Accepted",
+      "fhir:code": "Accepted",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#VxFVP",
+      "name": "Vx FVP",
+      "fhir:code": "VxFVP",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    },
+    {
+      "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualDatabaseMetadata.jsonld#Active",
+      "name": "Active",
+      "fhir:code": "Active",
+      "fhir:CodeSystem": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualDatabaseMetadata"
+    }
+  ]
+}

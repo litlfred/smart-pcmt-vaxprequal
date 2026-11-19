@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VagEUAS"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Box of 130 cartons containing 10 vials each (1 300 vials/ 13 000 doses)[Dimensions: 65 x 51 x 60 cm].",
+  "volume": "65 x 51 x 60 cm.",
+  "totalDoses": "13000",
+  "totalContainers": "1300"
+}

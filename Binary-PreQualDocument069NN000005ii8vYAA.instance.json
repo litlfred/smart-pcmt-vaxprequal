@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005ii8vYAA"
+  },
+  "documentName": "Package Insert-pq_214_H1N1_Sanofi_Fr_PI_%20Panenza",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000005zSyzYAE",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

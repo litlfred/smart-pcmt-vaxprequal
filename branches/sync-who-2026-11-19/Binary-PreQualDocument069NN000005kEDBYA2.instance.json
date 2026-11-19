@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kEDBYA2"
+  },
+  "documentName": "Container Photo (Bigger Higher Resolution)-pq_270_JE_live_1dose_Chengdu_vial%2Bampl_image",
+  "documentType": "Photo",
+  "versionId": "068NN0000060ytZYAQ",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

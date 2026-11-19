@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001VagkUAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Polyurethane container of 378 cartons of 5 vials (1890 doses) [Dimensions: 65.4 x 55.8 x 66.6 cm]",
+  "volume": "65.4 x 55.8 x 66.6 cm",
+  "totalDoses": "1890",
+  "totalContainers": "1890"
+}

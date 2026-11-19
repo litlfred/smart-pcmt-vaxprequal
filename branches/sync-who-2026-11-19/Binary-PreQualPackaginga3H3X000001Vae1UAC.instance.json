@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vae1UAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "Diluent",
+  "description": "Box of 24 cartons of 50 ampoules (diluent) (1200 ampoules/12000 doses) [61x54x53 cm]",
+  "volume": "61 x 54 x 53 cm",
+  "totalDoses": "12000",
+  "totalContainers": "1200"
+}

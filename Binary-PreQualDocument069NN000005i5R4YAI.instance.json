@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005i5R4YAI"
+  },
+  "documentName": "Package Insert-pq_117_Dukoral_1dose_SSI_PI_updated_2012-07-05",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005yonCYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kDAhYAM"
+  },
+  "documentName": "Container Photo (Bigger Higher Resolution)-pq_290_tOPV_20dose_bharat_container_image_580",
+  "documentType": "Photo",
+  "versionId": "068NN0000060xxXYAQ",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

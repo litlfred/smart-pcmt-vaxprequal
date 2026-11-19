@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iLcCYAU"
+  },
+  "documentName": "Package Insert-pq_142_143_144_145_MMR_SIIPL_PI_UNICEF-2022",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005z4tUYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

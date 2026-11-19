@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005ky05YAA"
+  },
+  "documentName": "pq_350_Pneumo_1dose_SIIPL_vial_image_30mm",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000061jsjYAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

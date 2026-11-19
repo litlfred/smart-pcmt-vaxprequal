@@ -1,0 +1,92 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "productType": "FinishedVaccineProduct",
+  "dateOfPrequal": "2009-07-08",
+  "assessmentProcedure": "PrequalificationStandard",
+  "status": "Prequalified",
+  "pharmaceuticalForm": "LiquidReadytouse",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 2,
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006MikeUAC"
+  },
+  "productName": "FVP-P-180",
+  "vaccineFullName": "Recombinant human papillomavirus virus-like particle vaccine (types 16,18)",
+  "vaccineAbbreviatedName": "HPV",
+  "vaccineCommercialName": "Cervarix",
+  "vaccineType": {
+    "coding": [
+      {
+        "system": "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualVaccineType",
+        "code": "HPV",
+        "display": "Recombinant human papillomavirus virus-like particle vaccine (types 16,18)"
+      }
+    ]
+  },
+  "vaccineTypeId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSplUAE"
+  },
+  "routeOfAdministration": "Intramuscular",
+  "vialMonitor": "Type 30",
+  "multidoseVialPolicy": "WHO recommends that opened vials of this vaccine should be discarded 6 hours after opening or at the end of the immunization session, whichever comes first.",
+  "applicantId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3gQAA"
+  },
+  "applicantName": "GlaxoSmithKline Biologicals SA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p67QAA"
+  },
+  "nraName": "Federal Agency for Medicines and Health Products  (FAMPH)",
+  "nraCountry": "Belgium",
+  "shelfLife": "60 months",
+  "storageTemperature": "2 - 8°C",
+  "lastPublishingDate": "2024-09-10",
+  "publishingRemarks": "July 2014: Product Insert updated to include a two dose schedule for recipients aged 9-14 yearsA two dose preservative-free liquid presentation is a novel presentation for UN supported EPI programmes.  Web statement on two-dose presentation of preservative-free Human Papilloma Vaccine from GlaxoSmithKline (GSK) (Cervarix™) attached.",
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer0013X0000498p3gQAA"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder0013X0000498p67QAA"
+  },
+  "manufacturerLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer/PreQualManufacturer0013X0000498p3gQAA"
+  },
+  "nraLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA/PreQualNRA0013X0000498p67QAA"
+  },
+  "vaccineLM": {
+    "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine/PreQualVaccinea3S3X000003cSplUAE"
+  },
+  "packagingLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging/PreQualPackaginga3H3X000001VagwUAC"
+    }
+  ],
+  "documentLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail/PreQualDocument069NN000005iR1dYAE"
+    }
+  ],
+  "siteLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail/PreQualSite0013X0000498p3gQAA"
+    }
+  ],
+  "ingredientLM": [
+    {
+      "reference": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductIngredient/PreQualIngredienta3K3X000006MikeUACIng2"
+    }
+  ]
+}

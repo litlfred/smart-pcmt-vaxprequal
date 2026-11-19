@@ -1,0 +1,37 @@
+# PreQualDocument069NN000005i1dXYAQ - SMART Product Catalog v0.1.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDocument069NN000005i1dXYAQ**
+
+## Example Binary: PreQualDocument069NN000005i1dXYAQ
+
+This content is an example of the [WHO PreQual Document Detail](StructureDefinition-PreQualDocumentDetail.md) Logical Model and is not a FHIR Resource
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005i1dXYAQ"
+  },
+  "documentName": "Container Photo (Bigger Higher Resolution)-pq_66_YF_20dose_IPD_carton%2Bampl_image",
+  "documentType": "Photo",
+  "versionId": "068NN000005yky3YAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

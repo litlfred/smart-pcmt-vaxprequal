@@ -1,0 +1,18 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4NQAQ"
+  },
+  "name": "Abbott Biologicals BV",
+  "addressLine1": "C.J. van Houtenlaan 36  P.O. Box 900",
+  "city": "Weesp",
+  "country": "Netherlands",
+  "postalCode": "NL-1381 DA",
+  "isoCountryCode": "NLD",
+  "region": "EURO",
+  "website": "http://www.abbott.com",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X0000498p4NQAQ"
+  }
+}

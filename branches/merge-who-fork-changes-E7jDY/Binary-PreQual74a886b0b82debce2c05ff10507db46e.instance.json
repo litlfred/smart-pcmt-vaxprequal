@@ -1,0 +1,25 @@
+{
+  "resourceType": "http://smart.who.int/pcmt/StructureDefinition/ProductAuthorization",
+  "status": "active",
+  "type": "prequal",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "display": "WHO"
+        }
+      ]
+    }
+  ],
+  "holder": {
+    "reference": "Organization/Holder2249658a617cfcc38ca334756748dcd0"
+  },
+  "validityPeriod": {
+    "start": "2006-05-09"
+  },
+  "product": [
+    {
+      "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/TetanusToxoidProduct74a886b0b82debce2c05ff10507db46e"
+    }
+  ]
+}

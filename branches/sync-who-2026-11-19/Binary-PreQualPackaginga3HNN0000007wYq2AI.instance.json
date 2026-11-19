@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3HNN0000007wYq2AI"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Shipping box contains 20 plastic wraps",
+  "volume": "38.5 x 23.7 x 18.1",
+  "totalDoses": "200",
+  "totalContainers": "200"
+}

@@ -1,0 +1,10 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "status": "WithdrawnWasPrequalified",
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006MihzUAC"
+  },
+  "productName": "FVP-P-27",
+  "lastPublishingDate": "2023-10-30"
+}

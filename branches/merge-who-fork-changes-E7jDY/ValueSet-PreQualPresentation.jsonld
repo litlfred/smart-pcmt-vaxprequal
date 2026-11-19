@@ -1,0 +1,67 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualPresentation.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualPresentation"
+  },
+  "@id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualPresentation.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-03-23T16:56:13.588635Z",
+  "@graph": [
+    {
+      "id": "#Ampoule",
+      "name": "Ampoule"
+    },
+    {
+      "id": "#AmpouleorVial",
+      "name": "Ampoule or Vial"
+    },
+    {
+      "id": "#Applicator",
+      "name": "Applicator"
+    },
+    {
+      "id": "#PlasticTube",
+      "name": "Plastic Tube"
+    },
+    {
+      "id": "#Sprayer",
+      "name": "Sprayer"
+    },
+    {
+      "id": "#Twovialsetactiveactive",
+      "name": "Two vial set (active + active)"
+    },
+    {
+      "id": "#Twovialsetactiveexcipient",
+      "name": "Two vial set (active + excipient)"
+    },
+    {
+      "id": "#Uniject",
+      "name": "Uniject"
+    },
+    {
+      "id": "#Vial",
+      "name": "Vial"
+    },
+    {
+      "id": "#VialAmpoule",
+      "name": "Vial + Ampoule"
+    },
+    {
+      "id": "#VialBufferSachet",
+      "name": "Vial + Buffer Sachet"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

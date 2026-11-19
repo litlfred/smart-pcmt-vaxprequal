@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005isDVYAY"
+  },
+  "documentName": "Container Photo (Bigger Higher Resolution)-pq_232_IPV_1dose_SSI_carton%2Bvial_image_01-16",
+  "documentType": "Photo",
+  "versionId": "068NN000005zcx7YAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

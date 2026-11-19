@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4xQAA"
+  },
+  "name": "National Agency of Drug and Food Control Indonesia (NADFCI)",
+  "country": "Indonesia",
+  "website": "http://www.pom.go.id/",
+  "organizationReference": {
+    "reference": "Organization/Holder0013X0000498p4xQAA"
+  }
+}

@@ -1,0 +1,195 @@
+{
+  "@context": {
+    "@version": 1.1,
+    "@base": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld",
+    "name": "http://www.w3.org/2000/01/rdf-schema#label",
+    "fhir": "https://smart.who.int/base/DataTypes.jsonld#",
+    "id": "@id",
+    "generatedAt": {
+      "@id": "http://www.w3.org/ns/prov#generatedAtTime",
+      "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+    },
+    "fhir:CodeSystem": {
+      "@type": "@id"
+    },
+    "cs": "http://smart.who.int/pcmt-vaxprequal/CodeSystem-PreQualVaccineType"
+  },
+  "@id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.jsonld",
+  "@type": "http://www.w3.org/ns/prov#Entity",
+  "generatedAt": "2026-11-19T07:57:11.759955Z",
+  "@graph": [
+    {
+      "id": "#BCG",
+      "name": "BCG"
+    },
+    {
+      "id": "#C19",
+      "name": "Covid-19, protein subunit"
+    },
+    {
+      "id": "#DT",
+      "name": "Diphtheria and tetanus vaccine (adsorbed)"
+    },
+    {
+      "id": "#DTaP",
+      "name": "Diphtheria, tetanus and (acellular) pertussis vaccine (adsorbed)"
+    },
+    {
+      "id": "#DTaPHepBIPVHib",
+      "name": "Diphtheria, tetanus, (acellular) pertussis, hepatitis b, poliomyelitis (inactivated) and Haemophilus influenzae type b conjugate vaccine (adsorbed)"
+    },
+    {
+      "id": "#DTwP",
+      "name": "Diphtheria, tetanus and (whole cell) pertussis vaccine (adsorbed)"
+    },
+    {
+      "id": "#DTwPHepBHib",
+      "name": "Diphtheria, tetanus, pertussis, hepatitis B and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
+    },
+    {
+      "id": "#DTwPHib",
+      "name": "Diphtheria, tetanus, pertussis and (+) Haemophilus influenzae type b conjugate vaccine (adsorbed)"
+    },
+    {
+      "id": "#EBOV",
+      "name": "Ebola vaccine (live, attenuated)"
+    },
+    {
+      "id": "#HPV",
+      "name": "Recombinant human papillomavirus virus-like particle vaccine (types 16,18)"
+    },
+    {
+      "id": "#HepA",
+      "name": "Hepatitis A vaccine (inactivated)"
+    },
+    {
+      "id": "#HepB",
+      "name": "Hepatitis B vaccine (recombinant)"
+    },
+    {
+      "id": "#Hib",
+      "name": "Haemophilus influenzae type b conjugate vaccine"
+    },
+    {
+      "id": "#IIV3",
+      "name": "Influenza vaccine trivalent (split virion, inactivated)"
+    },
+    {
+      "id": "#IIV4",
+      "name": "Influenza vaccine quadrivalent (split virion, inactivated)"
+    },
+    {
+      "id": "#IIVPandemic",
+      "name": "Human pandemic influenza vaccine"
+    },
+    {
+      "id": "#IPV",
+      "name": "Poliomyelitis vaccine (inactivated)"
+    },
+    {
+      "id": "#JE",
+      "name": "Japanese encephalitis vaccine (live, attenuated) for human use"
+    },
+    {
+      "id": "#LARV",
+      "name": "Rotavirus vaccine (live attenuated) (oral)"
+    },
+    {
+      "id": "#M",
+      "name": "Measles vaccine (live, attenuated)"
+    },
+    {
+      "id": "#MMR",
+      "name": "Measles, mumps, rubella combined vaccine (live, attenuated)"
+    },
+    {
+      "id": "#MR",
+      "name": "Measles, rubella combined vaccine (live, attenuated)"
+    },
+    {
+      "id": "#Malaria",
+      "name": "Recombinant malaria vaccine"
+    },
+    {
+      "id": "#MenA",
+      "name": "Group A meningococcal conjugate vaccine"
+    },
+    {
+      "id": "#MenACYW135",
+      "name": "Meningococcal conjugate vaccine tetravalent ( type A,C, Y, W-135)"
+    },
+    {
+      "id": "#MenACYWX",
+      "name": "Meningococcal polysacharide conjugate vaccine (type A,C,Y,W,X)"
+    },
+    {
+      "id": "#OCV",
+      "name": "Inactivated oral cholera vaccine"
+    },
+    {
+      "id": "#PCV",
+      "name": "Pneumococcal conjugate vaccine"
+    },
+    {
+      "id": "#R",
+      "name": "Rubella vaccine (live, attenuated)"
+    },
+    {
+      "id": "#Rabies",
+      "name": "Rabies vaccine for human use"
+    },
+    {
+      "id": "#TDV",
+      "name": "Dengue tetravalent vaccine (live, attenuated)"
+    },
+    {
+      "id": "#TT",
+      "name": "Tetanus vaccine (adsorbed)"
+    },
+    {
+      "id": "#Typhoid",
+      "name": "Typhoid conjugate vaccine"
+    },
+    {
+      "id": "#VAR",
+      "name": "Varicella"
+    },
+    {
+      "id": "#YF",
+      "name": "Yellow fever vaccine (live attenuated)"
+    },
+    {
+      "id": "#bOPV",
+      "name": "Poliomyelitis vaccines (bivalent live, oral, innactivated, type 1, 3)"
+    },
+    {
+      "id": "#dT",
+      "name": "Diphtheria and tetanus vaccine (adsorbed, reduced diphtheria antigen content)"
+    },
+    {
+      "id": "#mOPV1",
+      "name": "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 1)"
+    },
+    {
+      "id": "#mOPV2",
+      "name": "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 2)"
+    },
+    {
+      "id": "#mOPV3",
+      "name": "Poliomyelitis vaccines (monovalent oral, live, attenuated,  type 3)"
+    },
+    {
+      "id": "#nOPV2",
+      "name": "Poliomyelitis vaccines (novel, oral, live, attenuated,  type 2)"
+    },
+    {
+      "id": "#sIPV",
+      "name": "Poliomyelitis vaccine (inactivated-Sabin)"
+    },
+    {
+      "id": "#tOPV",
+      "name": "Poliomyelitis vaccines (trivalent live, oral, innactivated, type 1,2, 3)"
+    }
+  ],
+  "fhir:CodeSystem": "cs"
+}

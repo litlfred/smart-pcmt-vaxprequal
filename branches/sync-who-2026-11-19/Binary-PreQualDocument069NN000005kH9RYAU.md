@@ -1,0 +1,37 @@
+# PreQual Document: Container Photo-pq_275_DTP_10dose_BiolE_vial_image_2018 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQual Document: Container Photo-pq_275_DTP_10dose_BiolE_vial_image_2018**
+
+## Example Binary: PreQual Document: Container Photo-pq_275_DTP_10dose_BiolE_vial_image_2018
+
+This content is an example of the [WHO PreQual Document Detail](StructureDefinition-PreQualDocumentDetail.md) Logical Model and is not a FHIR Resource
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kH9RYAU"
+  },
+  "documentName": "Container Photo-pq_275_DTP_10dose_BiolE_vial_image_2018",
+  "documentType": "Photo",
+  "versionId": "068NN00000611oDYAQ",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

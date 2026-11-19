@@ -1,0 +1,15 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3cQAA"
+  },
+  "siteOrganizationName": "Bharat Biotech International Limited",
+  "addressLine1": "Sy. No. 230  231 & 235  Genome Valley  Turkapally  Shameerpet Mandal  Medchal-Malkajgiri District",
+  "city": "Hyderabad",
+  "state": "Telangana",
+  "country": "India",
+  "postalCode": "500 078",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

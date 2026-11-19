@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005lA9BYAU"
+  },
+  "documentName": "General-pq_360_361_Typhoid_BE_PI-2020",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN0000061taAYAQ",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

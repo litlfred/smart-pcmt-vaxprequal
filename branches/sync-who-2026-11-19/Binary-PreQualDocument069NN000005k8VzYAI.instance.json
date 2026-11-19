@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005k8VzYAI"
+  },
+  "documentName": "Container Photo -FVP-P-285_Hexaxim_1dose_SanofiW_container-image",
+  "documentType": "Photo",
+  "versionId": "068NN0000060tIpYAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

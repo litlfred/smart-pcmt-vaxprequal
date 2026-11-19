@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iMA6YAM"
+  },
+  "documentName": "Container Photo-pq_180_hpv_gsk_1dose_container_image_thumb",
+  "documentType": "Photo",
+  "versionId": "068NN000005z5KwYAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

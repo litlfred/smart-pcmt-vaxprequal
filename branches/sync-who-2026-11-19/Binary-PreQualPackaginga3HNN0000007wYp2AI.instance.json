@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3HNN0000007wYp2AI"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Plastic grap containing 10 secondary cartons.",
+  "volume": "7.2 x 3.9 x 22",
+  "totalDoses": "10",
+  "totalContainers": "10"
+}

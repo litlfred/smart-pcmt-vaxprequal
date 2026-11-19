@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iNPqYAM"
+  },
+  "documentName": "pq_209_H1N1_1dose_GCK_carton%2Bvial_image_580",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005z6h7YAA",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

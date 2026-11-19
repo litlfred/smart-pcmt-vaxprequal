@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005lIeXYAU"
+  },
+  "documentName": "pq_377_YF_10dose_FSBSI_vaccine%26diluent_image-122022",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN00000624QfYAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

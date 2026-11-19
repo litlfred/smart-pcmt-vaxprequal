@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00003cPkkYQAS"
+  },
+  "name": "European Medicines Agency",
+  "country": "Netherlands",
+  "website": "http://www.ema.europa.eu/ema/",
+  "organizationReference": {
+    "reference": "Organization/Holder0013X00003cPkkYQAS"
+  }
+}

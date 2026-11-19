@@ -1,0 +1,64 @@
+# PreQualDB483f7a671c76d38fef929bed60c3934f - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDB483f7a671c76d38fef929bed60c3934f**
+
+## Binary: PreQualDB483f7a671c76d38fef929bed60c3934f
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2022-07-15",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "Malaria",
+        "display": "Malaria"
+      }
+    ]
+  },
+  "commercialName": "Mosquirix",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Twovialsetactiveactive",
+        "display": "Two vial set (active + active)"
+      }
+    ]
+  },
+  "numDoses": 2,
+  "manufacturer": {
+    "text": "GlaxoSmithKline Biologicals SA"
+  },
+  "responsibleNRA": {
+    "text": "European Medicines Agency"
+  },
+  "index": {
+    "value": "483f7a671c76d38fef929bed60c3934f"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer214b31a3bf30c1816fab7b3f39ca25c9"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder06fc63d243e39d8519007322a0fddc52"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/MalariaProduct483f7a671c76d38fef929bed60c3934f"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

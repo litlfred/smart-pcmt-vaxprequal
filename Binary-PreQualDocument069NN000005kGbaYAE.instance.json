@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005kGbaYAE"
+  },
+  "documentName": "General-pq_279_Td_1dose_BiologicalE_carton_image_580",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN00000611HyYAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

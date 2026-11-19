@@ -1,0 +1,854 @@
+@prefix fhir: <http://hl7.org/fhir/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+# - resource -------------------------------------------------------------------
+
+<http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds> a fhir:CodeSystem ;
+  fhir:nodeRole fhir:treeRoot ;
+  fhir:id [ fhir:v "PreQualProductIds"] ; # 
+  fhir:text [
+     fhir:status [ fhir:v "generated" ] ;
+     fhir:div [ fhir:v "<div xmlns=\"http://www.w3.org/1999/xhtml\"><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem PreQualProductIds</b></p><a name=\"PreQualProductIds\"> </a><a name=\"hcPreQualProductIds\"> </a><p>This case-insensitive code system <code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style=\"white-space:nowrap\">a3K3X000005atRtUAI<a name=\"PreQualProductIds-a3K3X000005atRtUAI\"> </a></td><td>CYVAC (Malaria), Serum Institute of India, Vial, 2 doses [FVP-P-447]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000005atSwUAI<a name=\"PreQualProductIds-a3K3X000005atSwUAI\"> </a></td><td>CYVAC (Malaria), Serum Institute of India, Vial, 1 dose [FVP-P-446]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MihsUAC<a name=\"PreQualProductIds-a3K3X000006MihsUAC\"> </a></td><td>Rotarix (LARV), GlaxoSmithKline Biologicals SA, Plastic tube, 1 dose [FVP-P-62]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MihtUAC<a name=\"PreQualProductIds-a3K3X000006MihtUAC\"> </a></td><td>Polioviral vaccine (tOPV), Haffkine Bio Pharmaceutical Corporation Ltd, Vial, 20 doses [FVP-P-63]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MihuUAC<a name=\"PreQualProductIds-a3K3X000006MihuUAC\"> </a></td><td>Stabilized Yellow Fever Vaccine (YF), Institut Pasteur de Dakar (IPD), Ampoule, 5 doses [FVP-P-64]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MihvUAC<a name=\"PreQualProductIds-a3K3X000006MihvUAC\"> </a></td><td>Stabilized Yellow Fever Vaccine (YF), Institut Pasteur de Dakar (IPD), Ampoule, 20 doses [FVP-P-65]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MihwUAC<a name=\"PreQualProductIds-a3K3X000006MihwUAC\"> </a></td><td>Stabilized Yellow Fever Vaccine (YF), Institut Pasteur de Dakar (IPD), Ampoule, 10 doses [FVP-P-66]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MihxUAC<a name=\"PreQualProductIds-a3K3X000006MihxUAC\"> </a></td><td>BCG Freeze Dried Glutamate vaccine (BCG), Japan BCG Laboratory (JBL), Ampoule, 20 doses [FVP-P-67]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MihyUAC<a name=\"PreQualProductIds-a3K3X000006MihyUAC\"> </a></td><td>Euvax B (HepB), LG Chem Ltd (LGC), Vial, 1 dose [FVP-P-68]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MihzUAC<a name=\"PreQualProductIds-a3K3X000006MihzUAC\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-27]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii0UAC<a name=\"PreQualProductIds-a3K3X000006Mii0UAC\"> </a></td><td>Priorix (MMR), GlaxoSmithKline Biologicals SA, Vial, 1 dose [FVP-P-61]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii1UAC<a name=\"PreQualProductIds-a3K3X000006Mii1UAC\"> </a></td><td>Tetatox (TT), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Vial, 10 doses [FVP-P-75]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii2UAC<a name=\"PreQualProductIds-a3K3X000006Mii2UAC\"> </a></td><td>Tetatox (TT), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Vial, 20 doses [FVP-P-76]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii3UAC<a name=\"PreQualProductIds-a3K3X000006Mii3UAC\"> </a></td><td>Diftet (DT), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Vial, 10 doses [FVP-P-77]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii4UAC<a name=\"PreQualProductIds-a3K3X000006Mii4UAC\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-292]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii5UAC<a name=\"PreQualProductIds-a3K3X000006Mii5UAC\"> </a></td><td>HEALIVE (HepA), Sinovac Biotech Co. Ltd, Vial, 1 dose [FVP-P-311]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii6UAC<a name=\"PreQualProductIds-a3K3X000006Mii6UAC\"> </a></td><td>Poliomyelitis Vaccine (live oral attenuated human Diploid Cell) type 1 and 3 (bOPV), Beijing Institute of Biological Products Co., Ltd., Vial, 20 doses [FVP-P-319]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii7UAC<a name=\"PreQualProductIds-a3K3X000006Mii7UAC\"> </a></td><td>Euvax B (HepB), LG Chem Ltd (LGC), Vial, 10 doses [FVP-P-71]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii8UAC<a name=\"PreQualProductIds-a3K3X000006Mii8UAC\"> </a></td><td>Diftet (DT), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Vial, 20 doses [FVP-P-78]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mii9UAC<a name=\"PreQualProductIds-a3K3X000006Mii9UAC\"> </a></td><td>Tetadif (dT), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Vial, 10 doses [FVP-P-79]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiAUAS<a name=\"PreQualProductIds-a3K3X000006MiiAUAS\"> </a></td><td>Tetadif (dT), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Vial, 20 doses [FVP-P-80]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiBUAS<a name=\"PreQualProductIds-a3K3X000006MiiBUAS\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-329]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiCUAS<a name=\"PreQualProductIds-a3K3X000006MiiCUAS\"> </a></td><td>BCG Vaccine (BCG), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Ampoule, 10 doses [FVP-P-73]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiDUAS<a name=\"PreQualProductIds-a3K3X000006MiiDUAS\"> </a></td><td>BCG Vaccine (BCG), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Ampoule, 20 doses [FVP-P-74]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiEUAS<a name=\"PreQualProductIds-a3K3X000006MiiEUAS\"> </a></td><td>Measles and Rubella Vaccine Live Attenuated (MR), Serum Institute of India, Vial, 1 dose [FVP-P-137]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiFUAS<a name=\"PreQualProductIds-a3K3X000006MiiFUAS\"> </a></td><td>Tetanus  Toxoid Vaccine Adsorbed (TT), Serum Institute of India, Vial, 20 doses [FVP-P-136]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiGUAS<a name=\"PreQualProductIds-a3K3X000006MiiGUAS\"> </a></td><td>Measles and Rubella Vaccine Live Attenuated (MR), Serum Institute of India, Vial, 2 doses [FVP-P-138]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiHUAS<a name=\"PreQualProductIds-a3K3X000006MiiHUAS\"> </a></td><td>Measles Mumps and Rubella Vaccine Live Attenuated (MMR), Serum Institute of India, Vial, 1 dose [FVP-P-141]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiIUAS<a name=\"PreQualProductIds-a3K3X000006MiiIUAS\"> </a></td><td>Measles Mumps and Rubella Vaccine Live Attenuated (MMR), Serum Institute of India, Vial, 2 doses [FVP-P-142]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiJUAS<a name=\"PreQualProductIds-a3K3X000006MiiJUAS\"> </a></td><td>Measles Mumps and Rubella Vaccine Live Attenuated (MMR), Serum Institute of India, Vial, 10 doses [FVP-P-144]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiKUAS<a name=\"PreQualProductIds-a3K3X000006MiiKUAS\"> </a></td><td>Measles Mumps and Rubella Vaccine Live Attenuated (MMR), Serum Institute of India, Vial, 5 doses [FVP-P-143]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiLUAS<a name=\"PreQualProductIds-a3K3X000006MiiLUAS\"> </a></td><td>Japanese Encephalitis Vaccine Live (SA14-14-2) (JE), Chengdu Institute of Biological Products Co. Ltd, Two vial set (active + excipient), 5 doses [FVP-P-272]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiMUAS<a name=\"PreQualProductIds-a3K3X000006MiiMUAS\"> </a></td><td>Measles Vaccine Live Attenuated (M), Serum Institute of India, Vial, 1 dose [FVP-P-145]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiNUAS<a name=\"PreQualProductIds-a3K3X000006MiiNUAS\"> </a></td><td>Diphtheria-Tetanus-Pertussis Vaccine Adsorbed (DTwP), Serum Institute of India, Ampoule, 1 dose [FVP-P-124]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiOUAS<a name=\"PreQualProductIds-a3K3X000006MiiOUAS\"> </a></td><td>Diphtheria-Tetanus-Pertussis Vaccine Adsorbed (DTwP), Serum Institute of India, Vial, 10 doses [FVP-P-125]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiPUAS<a name=\"PreQualProductIds-a3K3X000006MiiPUAS\"> </a></td><td>Diphtheria-Tetanus-Pertussis Vaccine Adsorbed (DTwP), Serum Institute of India, Vial, 20 doses [FVP-P-126]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiQUAS<a name=\"PreQualProductIds-a3K3X000006MiiQUAS\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-127]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiRUAS<a name=\"PreQualProductIds-a3K3X000006MiiRUAS\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-104]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiSUAS<a name=\"PreQualProductIds-a3K3X000006MiiSUAS\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-105]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiTUAS<a name=\"PreQualProductIds-a3K3X000006MiiTUAS\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-128]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiUUAS<a name=\"PreQualProductIds-a3K3X000006MiiUUAS\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-129]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiVUAS<a name=\"PreQualProductIds-a3K3X000006MiiVUAS\"> </a></td><td>Hepatitis B Vaccine (rDNA) (Adult) (HepB), Serum Institute of India, Vial, 10 doses [FVP-P-130]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiWUAS<a name=\"PreQualProductIds-a3K3X000006MiiWUAS\"> </a></td><td>Hepatitis B Vaccine (rDNA) (Adult) (HepB), Serum Institute of India, Vial, 1 dose [FVP-P-131]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiXUAS<a name=\"PreQualProductIds-a3K3X000006MiiXUAS\"> </a></td><td>Hepatitis B Vaccine (rDNA) (Paediatric) (HepB), Serum Institute of India, Vial, 10 doses [FVP-P-132]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiYUAS<a name=\"PreQualProductIds-a3K3X000006MiiYUAS\"> </a></td><td>Hepatitis B Vaccine (rDNA) (Paedriatic) (HepB), Serum Institute of India, Vial, 1 dose [FVP-P-133]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiZUAS<a name=\"PreQualProductIds-a3K3X000006MiiZUAS\"> </a></td><td>Tetanus  Toxoid Vaccine Adsorbed (TT), Serum Institute of India, Ampoule, 1 dose [FVP-P-134]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiaUAC<a name=\"PreQualProductIds-a3K3X000006MiiaUAC\"> </a></td><td>Panvax (IIVPandemic), Seqirus Australia Pty Ltd, Vial, 10 doses [FVP-P-205]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiibUAC<a name=\"PreQualProductIds-a3K3X000006MiibUAC\"> </a></td><td>IPV Vaccine SSI (IPV), AJ Vaccines A/S, Vial, 1 dose [FVP-P-231]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiicUAC<a name=\"PreQualProductIds-a3K3X000006MiicUAC\"> </a></td><td>Japanese Encephalitis Vaccine Live (SA14-14-2) (JE), Chengdu Institute of Biological Products Co. Ltd, Two vial set (active + excipient), 1 dose [FVP-P-271]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiidUAC<a name=\"PreQualProductIds-a3K3X000006MiidUAC\"> </a></td><td>Measles and Rubella Vaccine Live Attenuated (MR), Serum Institute of India, Vial, 5 doses [FVP-P-139]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiigUAC<a name=\"PreQualProductIds-a3K3X000006MiigUAC\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-109]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiihUAC<a name=\"PreQualProductIds-a3K3X000006MiihUAC\"> </a></td><td>VERORAB (Rabies), Sanofi Pasteur SA, Vial, 1 dose [FVP-P-111]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiiUAC<a name=\"PreQualProductIds-a3K3X000006MiiiUAC\"> </a></td><td>STAMARIL (YF), Sanofi Pasteur SA, Vial + Ampoule, 10 doses [FVP-P-112]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiijUAC<a name=\"PreQualProductIds-a3K3X000006MiijUAC\"> </a></td><td>Tetanus  Toxoid Vaccine Adsorbed (TT), Serum Institute of India, Vial, 10 doses [FVP-P-135]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiikUAC<a name=\"PreQualProductIds-a3K3X000006MiikUAC\"> </a></td><td>Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents (dT), Serum Institute of India, Vial, 10 doses [FVP-P-122]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiilUAC<a name=\"PreQualProductIds-a3K3X000006MiilUAC\"> </a></td><td>Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents (dT), Serum Institute of India, Vial, 20 doses [FVP-P-123]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiimUAC<a name=\"PreQualProductIds-a3K3X000006MiimUAC\"> </a></td><td>Measles and Rubella Vaccine Live Attenuated (MR), Serum Institute of India, Vial, 10 doses [FVP-P-140]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiinUAC<a name=\"PreQualProductIds-a3K3X000006MiinUAC\"> </a></td><td>IMOVAX POLIO (IPV), Sanofi Pasteur SA, Vial, 10 doses [FVP-P-98]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiioUAC<a name=\"PreQualProductIds-a3K3X000006MiioUAC\"> </a></td><td>Diphtheria and Tetanus Vaccine Adsorbed (Paediatric) (DT), Serum Institute of India, Ampoule, 1 dose [FVP-P-118]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiipUAC<a name=\"PreQualProductIds-a3K3X000006MiipUAC\"> </a></td><td>Diphtheria and Tetanus Vaccine Adsorbed (Pediatric) (DT), Serum Institute of India, Vial, 10 doses [FVP-P-119]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiqUAC<a name=\"PreQualProductIds-a3K3X000006MiiqUAC\"> </a></td><td>Diphtheria and Tetanus Vaccine Adsorbed (Pediatric) (DT), Serum Institute of India, Vial, 20 doses [FVP-P-120]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiirUAC<a name=\"PreQualProductIds-a3K3X000006MiirUAC\"> </a></td><td>Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents (dT), Serum Institute of India, Ampoule, 1 dose [FVP-P-121]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiisUAC<a name=\"PreQualProductIds-a3K3X000006MiisUAC\"> </a></td><td>BCG Vaccine (BCG), Serum Institute of India, Vial, 20 doses [FVP-P-117]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiitUAC<a name=\"PreQualProductIds-a3K3X000006MiitUAC\"> </a></td><td>BIOPOLIO B1/3 (bOPV), Bharat Biotech International Limited, Vial, 10 doses [FVP-P-337]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiuUAC<a name=\"PreQualProductIds-a3K3X000006MiiuUAC\"> </a></td><td>Euvichol-Plus (OCV), EuBiologics Co.  Ltd., Plastic tube, 1 dose [FVP-P-336]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiivUAC<a name=\"PreQualProductIds-a3K3X000006MiivUAC\"> </a></td><td>BCG Freeze Dried Glutamate vaccine (BCG), Japan BCG Laboratory (JBL), Ampoule, 10 doses [FVP-P-338]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiwUAC<a name=\"PreQualProductIds-a3K3X000006MiiwUAC\"> </a></td><td>Eupolio Inj. (sIPV), LG Chem Ltd (LGC), Vial, 5 doses [FVP-P-390]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiixUAC<a name=\"PreQualProductIds-a3K3X000006MiixUAC\"> </a></td><td>Cancelled: Assessment [FVP-P-391]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiiyUAC<a name=\"PreQualProductIds-a3K3X000006MiiyUAC\"> </a></td><td>Measles and Rubella Vaccine (Live) (Attenuated Freeze Dried) (MR), Biological E. Limited, Vial + Ampoule, 1 dose [FVP-P-342]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiizUAC<a name=\"PreQualProductIds-a3K3X000006MiizUAC\"> </a></td><td>Rotavac (LARV), Bharat Biotech International Limited, Vial, 10 doses [FVP-P-343]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mij0UAC<a name=\"PreQualProductIds-a3K3X000006Mij0UAC\"> </a></td><td>SKYVaricella Inj. (VAR), SK Bioscience Co.  Ltd. (SK), Two vial set (active + excipient), 1 dose [FVP-P-356]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mij1UAC<a name=\"PreQualProductIds-a3K3X000006Mij1UAC\"> </a></td><td>Monovalent Oral Poliomyelitis Vaccine Type 2 (mOPV2), PT Bio Farma (Persero), Vial, 20 doses [FVP-P-358]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mij2UAC<a name=\"PreQualProductIds-a3K3X000006Mij2UAC\"> </a></td><td>JEEV® (6µg) (JE), Biological E. Limited, Vial, 5 doses [FVP-P-359]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mij3UAC<a name=\"PreQualProductIds-a3K3X000006Mij3UAC\"> </a></td><td>Typbar-TCV (Typhoid), Bharat Biotech International Limited, Vial, 5 doses [FVP-P-347]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mij4UAC<a name=\"PreQualProductIds-a3K3X000006Mij4UAC\"> </a></td><td>Afluria® Quadrivalent (IIV4), Seqirus Australia Pty Ltd, Vial, 10 doses [FVP-P-350]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mij5UAC<a name=\"PreQualProductIds-a3K3X000006Mij5UAC\"> </a></td><td>None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td (dT), Biological E. Limited, Vial, 1 dose [FVP-P-279]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mij6UAC<a name=\"PreQualProductIds-a3K3X000006Mij6UAC\"> </a></td><td>None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td (dT), Biological E. Limited, Vial, 10 doses [FVP-P-280]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mij7UAC<a name=\"PreQualProductIds-a3K3X000006Mij7UAC\"> </a></td><td>Dukoral (OCV), Valneva Sweden AB, Vial + Buffer sachet, 1 dose [FVP-P-116]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mij8UAC<a name=\"PreQualProductIds-a3K3X000006Mij8UAC\"> </a></td><td>Pandemic Live Attenuated Vaccine (IIVPandemic), AstraZeneca Pharmaceuticals LP., Sprayer, 1 dose [FVP-P-376]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mij9UAC<a name=\"PreQualProductIds-a3K3X000006Mij9UAC\"> </a></td><td>ROTASIIL-Liquid (LARV), Serum Institute of India, Plastic tube, 1 dose [FVP-P-378]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijAUAS<a name=\"PreQualProductIds-a3K3X000006MijAUAS\"> </a></td><td>TYPHIBEV® (Typhoid), Biological E. Limited, Vial, 1 dose [FVP-P-379]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijBUAS<a name=\"PreQualProductIds-a3K3X000006MijBUAS\"> </a></td><td>Poliomyelitis Vaccine (Oral) Bivalent types 1 and 3 (bOPV), Serum Institute of India, Vial, 10 doses [FVP-P-281]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijCUAS<a name=\"PreQualProductIds-a3K3X000006MijCUAS\"> </a></td><td>Poliomyelitis vaccine multidose suspension for injection 2.5 mL (IPV), Bilthoven Biologicals B.V., Vial, 5 doses [FVP-P-283]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijDUAS<a name=\"PreQualProductIds-a3K3X000006MijDUAS\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-284]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijEUAS<a name=\"PreQualProductIds-a3K3X000006MijEUAS\"> </a></td><td>Hexaxim (DTaP-HepB-IPV-Hib), Sanofi Pasteur SA, Vial, 1 dose [FVP-P-285]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijFUAS<a name=\"PreQualProductIds-a3K3X000006MijFUAS\"> </a></td><td>Eupenta (DTwP-HepB-Hib), LG Chem Ltd (LGC), Vial, 1 dose [FVP-P-304]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijGUAS<a name=\"PreQualProductIds-a3K3X000006MijGUAS\"> </a></td><td>Eupenta (DTwP-HepB-Hib), LG Chem Ltd (LGC), Vial, 10 doses [FVP-P-305]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijHUAS<a name=\"PreQualProductIds-a3K3X000006MijHUAS\"> </a></td><td>ERVEBO (EBOV), Merck Sharp &amp; Dohme LLC, Vial, 1 dose [FVP-P-383]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijIUAS<a name=\"PreQualProductIds-a3K3X000006MijIUAS\"> </a></td><td>PNEUMOSIL® (PCV), Serum Institute of India, Vial, 1 dose [FVP-P-384]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijJUAS<a name=\"PreQualProductIds-a3K3X000006MijJUAS\"> </a></td><td>PNEUMOSIL® (PCV), Serum Institute of India, Vial, 5 doses [FVP-P-385]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijKUAS<a name=\"PreQualProductIds-a3K3X000006MijKUAS\"> </a></td><td>Euvax B (HepB), LG Chem Ltd (LGC), Vial, 1 dose [FVP-P-394]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijLUAS<a name=\"PreQualProductIds-a3K3X000006MijLUAS\"> </a></td><td>ROTASIIL®Thermo (LARV), Serum Institute of India, Two vial set (active + excipient), 1 dose [FVP-P-396]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijMUAS<a name=\"PreQualProductIds-a3K3X000006MijMUAS\"> </a></td><td>ROTASIIL®Thermo (LARV), Serum Institute of India, Two vial set (active + excipient), 2 doses [FVP-P-397]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijNUAS<a name=\"PreQualProductIds-a3K3X000006MijNUAS\"> </a></td><td>None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td (dT), Biological E. Limited, Vial, 20 doses [FVP-P-399]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijOUAS<a name=\"PreQualProductIds-a3K3X000006MijOUAS\"> </a></td><td>Oral Poliomyelitis Vaccines (Oral Drops) (tOPV), PT Bio Farma (Persero), Vial, 20 doses [FVP-P-400]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijPUAS<a name=\"PreQualProductIds-a3K3X000006MijPUAS\"> </a></td><td>VaxigripTetra (IIV4), Sanofi Pasteur SA, Vial, 10 doses [FVP-P-401]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijQUAS<a name=\"PreQualProductIds-a3K3X000006MijQUAS\"> </a></td><td>Meningococcal A Conjugate 5 micrograms MenAfriVac 5µg (MenA), Serum Institute of India, Vial + Ampoule, 10 doses [FVP-P-286]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijRUAS<a name=\"PreQualProductIds-a3K3X000006MijRUAS\"> </a></td><td>None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid). (DTwP-HepB-Hib), Biological E. Limited, Vial, 5 doses [FVP-P-287]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijSUAS<a name=\"PreQualProductIds-a3K3X000006MijSUAS\"> </a></td><td>None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid). (DTwP-HepB-Hib), Biological E. Limited, Vial, 2 doses [FVP-P-288]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijTUAS<a name=\"PreQualProductIds-a3K3X000006MijTUAS\"> </a></td><td>Poliomyelitis Vaccine (Inactivated) (IPV), Serum Institute of India, Vial, 5 doses [FVP-P-289]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijUUAS<a name=\"PreQualProductIds-a3K3X000006MijUUAS\"> </a></td><td>BIOPOLIO (tOPV), Bharat Biotech International Limited, Vial, 20 doses [FVP-P-290]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijVUAS<a name=\"PreQualProductIds-a3K3X000006MijVUAS\"> </a></td><td>BIOPOLIO (tOPV), Bharat Biotech International Limited, Vial, 10 doses [FVP-P-291]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijWUAS<a name=\"PreQualProductIds-a3K3X000006MijWUAS\"> </a></td><td>IL-YANG FLU Vaccine INJ. (IIV3), IL-YANG PHARMACEUTICAL CO.  LTD., Vial, 1 dose [FVP-P-293]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijZUAS<a name=\"PreQualProductIds-a3K3X000006MijZUAS\"> </a></td><td>Bivalent Oral Poliomyelitis Vaccine Type 1&amp;3 (bOPV 1&amp;3) (bOPV), PT Bio Farma (Persero), Vial, 10 doses [FVP-P-297]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijaUAC<a name=\"PreQualProductIds-a3K3X000006MijaUAC\"> </a></td><td>ROTASIIL (LARV), Serum Institute of India, Two vial set (active + excipient), 2 doses [FVP-P-355]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijbUAC<a name=\"PreQualProductIds-a3K3X000006MijbUAC\"> </a></td><td>Euvichol (OCV), EuBiologics Co.  Ltd., Vial, 1 dose [FVP-P-298]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijcUAC<a name=\"PreQualProductIds-a3K3X000006MijcUAC\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-299]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijdUAC<a name=\"PreQualProductIds-a3K3X000006MijdUAC\"> </a></td><td>Gardasil 9 (HPV), Merck Sharp &amp; Dohme LLC, Vial, 1 dose [FVP-P-306]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijeUAC<a name=\"PreQualProductIds-a3K3X000006MijeUAC\"> </a></td><td>Pentabio (DTwP-HepB-Hib), PT Bio Farma (Persero), Vial, 5 doses [FVP-P-308]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijfUAC<a name=\"PreQualProductIds-a3K3X000006MijfUAC\"> </a></td><td>Pentabio (DTwP-HepB-Hib), PT Bio Farma (Persero), Vial, 10 doses [FVP-P-309]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijgUAC<a name=\"PreQualProductIds-a3K3X000006MijgUAC\"> </a></td><td>influenza trivalent vaccine (split virion inactivated) (IIV3), Instituto Butantan, Vial, 10 doses [FVP-P-312]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijhUAC<a name=\"PreQualProductIds-a3K3X000006MijhUAC\"> </a></td><td>Varivax (VAR), Merck Sharp &amp; Dohme LLC, Two vial set (active + excipient), 1 dose [FVP-P-313]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijiUAC<a name=\"PreQualProductIds-a3K3X000006MijiUAC\"> </a></td><td>Rotavac (LARV), Bharat Biotech International Limited, Vial, 5 doses [FVP-P-314]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijjUAC<a name=\"PreQualProductIds-a3K3X000006MijjUAC\"> </a></td><td>JEEV® (3µg) (JE), Biological E. Limited, Vial, 1 dose [FVP-P-321]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijkUAC<a name=\"PreQualProductIds-a3K3X000006MijkUAC\"> </a></td><td>Rabies Vaccine Inactivated (Freeze Dried)(RABIVAX-S) (Rabies), Serum Institute of India, Vial + Ampoule, 1 dose [FVP-P-322]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijlUAC<a name=\"PreQualProductIds-a3K3X000006MijlUAC\"> </a></td><td>ROTASIIL (LARV), Serum Institute of India, Two vial set (active + excipient), 1 dose [FVP-P-323]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijmUAC<a name=\"PreQualProductIds-a3K3X000006MijmUAC\"> </a></td><td>Poliomyelitis Vaccine (Inactivated) (IPV), Serum Institute of India, Vial, 2 doses [FVP-P-324]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijnUAC<a name=\"PreQualProductIds-a3K3X000006MijnUAC\"> </a></td><td>Poliomyelitis Vaccine (Inactivated) (IPV), Serum Institute of India, Vial, 1 dose [FVP-P-325]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijoUAC<a name=\"PreQualProductIds-a3K3X000006MijoUAC\"> </a></td><td>VaxiRab N (Rabies), Zydus Lifescience Limited, Vial, 1 dose [FVP-P-330]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijpUAC<a name=\"PreQualProductIds-a3K3X000006MijpUAC\"> </a></td><td>Serinflu (IIV3), Abbott Biologicals BV, Vial, 1 dose [FVP-P-332]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijqUAC<a name=\"PreQualProductIds-a3K3X000006MijqUAC\"> </a></td><td>AGRIFLU (IIV3), Seqirus UK Limited, Vial, 10 doses [FVP-P-316]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijrUAC<a name=\"PreQualProductIds-a3K3X000006MijrUAC\"> </a></td><td>Typbar-TCV (Typhoid), Bharat Biotech International Limited, Vial, 1 dose [FVP-P-318]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijsUAC<a name=\"PreQualProductIds-a3K3X000006MijsUAC\"> </a></td><td>None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid). (DTwP-HepB-Hib), Biological E. Limited, Vial, 10 doses [FVP-P-275]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijtUAC<a name=\"PreQualProductIds-a3K3X000006MijtUAC\"> </a></td><td>None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  TRIPVAC (DTwP), Biological E. Limited, Vial, 1 dose [FVP-P-277]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijuUAC<a name=\"PreQualProductIds-a3K3X000006MijuUAC\"> </a></td><td>None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  TRIPVAC (DTwP), Biological E. Limited, Vial, 10 doses [FVP-P-278]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijvUAC<a name=\"PreQualProductIds-a3K3X000006MijvUAC\"> </a></td><td>SKYCellflu® inj. (IIV3), SK Bioscience Co.  Ltd. (SK), Vial, 1 dose [FVP-P-339]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijwUAC<a name=\"PreQualProductIds-a3K3X000006MijwUAC\"> </a></td><td>SKYCellflu® Multi inj. (IIV3), SK Bioscience Co.  Ltd. (SK), Vial, 10 doses [FVP-P-340]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijxUAC<a name=\"PreQualProductIds-a3K3X000006MijxUAC\"> </a></td><td>Synflorix (PCV), GlaxoSmithKline Biologicals SA, Vial, 4 doses [FVP-P-341]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijyUAC<a name=\"PreQualProductIds-a3K3X000006MijyUAC\"> </a></td><td>JEEV® (3µg) (JE), Biological E. Limited, Vial, 5 doses [FVP-P-360]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MijzUAC<a name=\"PreQualProductIds-a3K3X000006MijzUAC\"> </a></td><td>ROTAVAC 5D® (LARV), Bharat Biotech International Limited, Vial, 1 dose [FVP-P-362]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mik0UAC<a name=\"PreQualProductIds-a3K3X000006Mik0UAC\"> </a></td><td>SKYCellflu Quadrivalent inj. (IIV4), SK Bioscience Co.  Ltd. (SK), Vial, 1 dose [FVP-P-364]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mik1UAC<a name=\"PreQualProductIds-a3K3X000006Mik1UAC\"> </a></td><td>SKYCellflu Quadrivalent Multi inj. (IIV4), SK Bioscience Co.  Ltd. (SK), Vial, 10 doses [FVP-P-365]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mik2UAC<a name=\"PreQualProductIds-a3K3X000006Mik2UAC\"> </a></td><td>Afluria® (IIV3), Seqirus Australia Pty Ltd, Vial, 10 doses [FVP-P-367]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mik3UAC<a name=\"PreQualProductIds-a3K3X000006Mik3UAC\"> </a></td><td>Poliomyelitis Vaccine (Inactivated) (IPV), Serum Institute of India, Vial, 10 doses [FVP-P-372]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mik4UAC<a name=\"PreQualProductIds-a3K3X000006Mik4UAC\"> </a></td><td>Measles and Rubella Vaccine (Live) (Attenuated Freeze Dried) (MR), Biological E. Limited, Vial + Ampoule, 5 doses [FVP-P-374]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mik5UAC<a name=\"PreQualProductIds-a3K3X000006Mik5UAC\"> </a></td><td>Measles and Rubella Vaccine (Live) (Attenuated Freeze Dried) (MR), Biological E. Limited, Vial + Ampoule, 10 doses [FVP-P-375]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mik6UAC<a name=\"PreQualProductIds-a3K3X000006Mik6UAC\"> </a></td><td>TYPHIBEV® (Typhoid), Biological E. Limited, Vial, 5 doses [FVP-P-408]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mik7UAC<a name=\"PreQualProductIds-a3K3X000006Mik7UAC\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-409]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mik8UAC<a name=\"PreQualProductIds-a3K3X000006Mik8UAC\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-410]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mik9UAC<a name=\"PreQualProductIds-a3K3X000006Mik9UAC\"> </a></td><td>ROTAVAC 5D® (LARV), Bharat Biotech International Limited, Vial, 5 doses [FVP-P-412]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikAUAS<a name=\"PreQualProductIds-a3K3X000006MikAUAS\"> </a></td><td>Eupolio Inj. (sIPV), LG Chem Ltd (LGC), Vial, 1 dose [FVP-P-415]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikBUAS<a name=\"PreQualProductIds-a3K3X000006MikBUAS\"> </a></td><td>ROTASIIL-Liquid (LARV), Serum Institute of India, Vial, 2 doses [FVP-P-419]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikCUAS<a name=\"PreQualProductIds-a3K3X000006MikCUAS\"> </a></td><td>Mosquirix (Malaria), GlaxoSmithKline Biologicals SA, Two vial set (active + active), 2 doses [FVP-P-424]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikDUAS<a name=\"PreQualProductIds-a3K3X000006MikDUAS\"> </a></td><td>TT vaccine (TT), PT Bio Farma (Persero), Vial, 10 doses [FVP-P-14]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikEUAS<a name=\"PreQualProductIds-a3K3X000006MikEUAS\"> </a></td><td>ShanIPV™ (IPV), Sanofi Healthcare India Private Limited, Vial, 10 doses [FVP-P-432]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikFUAS<a name=\"PreQualProductIds-a3K3X000006MikFUAS\"> </a></td><td>GCFLU Quadrivalent Multi inj. (IIV4), GC Biopharma Corporation, Vial, 10 doses [FVP-P-331]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikGUAS<a name=\"PreQualProductIds-a3K3X000006MikGUAS\"> </a></td><td>ShanIPV™ (IPV), Sanofi Healthcare India Private Limited, Vial, 5 doses [FVP-P-333]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikHUAS<a name=\"PreQualProductIds-a3K3X000006MikHUAS\"> </a></td><td>Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine Live (Oral) (bOPV), Panacea Biotec Ltd., Vial, 20 doses [FVP-P-335]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikIUAS<a name=\"PreQualProductIds-a3K3X000006MikIUAS\"> </a></td><td>DTwP, Sanofi Healthcare India Private Limited [FVP-P-app8]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikJUAS<a name=\"PreQualProductIds-a3K3X000006MikJUAS\"> </a></td><td>Heberbiovac HB (HepB), Centro de Ingenieria Genetica y Biotecnologia (CIGB), Vial, 1 dose [FVP-P-23]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikKUAS<a name=\"PreQualProductIds-a3K3X000006MikKUAS\"> </a></td><td>Heberbiovac HB (HepB), Centro de Ingenieria Genetica y Biotecnologia (CIGB), Vial, 10 doses [FVP-P-24]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikLUAS<a name=\"PreQualProductIds-a3K3X000006MikLUAS\"> </a></td><td>MenQuadfi (MenACYW-135), Sanofi Pasteur Inc., Vial, 1 dose [FVP-P-417]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikMUAS<a name=\"PreQualProductIds-a3K3X000006MikMUAS\"> </a></td><td>Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine Live (Oral) (bOPV), Panacea Biotec Ltd., Vial, 10 doses [FVP-P-422]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikNUAS<a name=\"PreQualProductIds-a3K3X000006MikNUAS\"> </a></td><td>TT vaccine (TT), PT Bio Farma (Persero), Vial, 20 doses [FVP-P-15]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikOUAS<a name=\"PreQualProductIds-a3K3X000006MikOUAS\"> </a></td><td>TT vaccine (TT), PT Bio Farma (Persero), Uniject, 1 dose [FVP-P-16]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikPUAS<a name=\"PreQualProductIds-a3K3X000006MikPUAS\"> </a></td><td>Measles vaccine (M), PT Bio Farma (Persero), Vial + Ampoule, 10 doses [FVP-P-17]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikSUAS<a name=\"PreQualProductIds-a3K3X000006MikSUAS\"> </a></td><td>Adsorbed DT Vaccine (DT), PT Bio Farma (Persero), Vial, 10 doses [FVP-P-7]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikTUAS<a name=\"PreQualProductIds-a3K3X000006MikTUAS\"> </a></td><td>DTP Vaccine (DTwP), PT Bio Farma (Persero), Vial, 10 doses [FVP-P-8]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikUUAS<a name=\"PreQualProductIds-a3K3X000006MikUUAS\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-21]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikVUAS<a name=\"PreQualProductIds-a3K3X000006MikVUAS\"> </a></td><td>Yellow Fever (YF), Bio-Manguinhos/Fiocruz, Two vial set (active + excipient), 5 doses [FVP-P-19]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikWUAS<a name=\"PreQualProductIds-a3K3X000006MikWUAS\"> </a></td><td>Yellow Fever (YF), Bio-Manguinhos/Fiocruz, Two vial set (active + excipient), 10 doses [FVP-P-20]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikXUAS<a name=\"PreQualProductIds-a3K3X000006MikXUAS\"> </a></td><td>Fluzone Quadrivalent (IIV4), Sanofi Pasteur Inc., Vial, 1 dose [FVP-P-295]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikYUAS<a name=\"PreQualProductIds-a3K3X000006MikYUAS\"> </a></td><td>Fluzone Quadrivalent (IIV4), Sanofi Pasteur Inc., Vial, 10 doses [FVP-P-296]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikZUAS<a name=\"PreQualProductIds-a3K3X000006MikZUAS\"> </a></td><td>Nimenrix (MenACYW-135), Pfizer Europe MA EEIG (Pfizer), Vial + Ampoule, 1 dose [FVP-P-301]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikaUAC<a name=\"PreQualProductIds-a3K3X000006MikaUAC\"> </a></td><td>GCFLU Quadrivalent inj. (IIV4), GC Biopharma Corporation, Vial, 1 dose [FVP-P-307]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikbUAC<a name=\"PreQualProductIds-a3K3X000006MikbUAC\"> </a></td><td>Adacel (DTaP), Sanofi Pasteur Limited, Vial, 1 dose [FVP-P-315]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikcUAC<a name=\"PreQualProductIds-a3K3X000006MikcUAC\"> </a></td><td>Prevenar 13 Multidose Vial (PCV), Pfizer Europe MA EEIG (Pfizer), Vial, 4 doses [FVP-P-317]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikdUAC<a name=\"PreQualProductIds-a3K3X000006MikdUAC\"> </a></td><td>Cervarix (HPV), GlaxoSmithKline Biologicals SA, Vial, 1 dose [FVP-P-179]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikeUAC<a name=\"PreQualProductIds-a3K3X000006MikeUAC\"> </a></td><td>Cervarix (HPV), GlaxoSmithKline Biologicals SA, Vial, 2 doses [FVP-P-180]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikfUAC<a name=\"PreQualProductIds-a3K3X000006MikfUAC\"> </a></td><td>Bivalent type 1&amp;3 Oral Poliomyelitis vaccine IP (bOPV1&amp;3) (bOPV), Haffkine Bio Pharmaceutical Corporation Ltd, Vial, 20 doses [FVP-P-200]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikgUAC<a name=\"PreQualProductIds-a3K3X000006MikgUAC\"> </a></td><td>Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine (DTwP-HepB+Hib), Serum Institute of India, Vial + Ampoule, 2 doses [FVP-P-203]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikhUAC<a name=\"PreQualProductIds-a3K3X000006MikhUAC\"> </a></td><td>Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine (DTwP-HepB+Hib), Serum Institute of India, Vial + Ampoule, 10 doses [FVP-P-204]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikiUAC<a name=\"PreQualProductIds-a3K3X000006MikiUAC\"> </a></td><td>Rubella Vaccine Live Attenuated (R), Serum Institute of India, Vial, 10 doses [FVP-P-152]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikjUAC<a name=\"PreQualProductIds-a3K3X000006MikjUAC\"> </a></td><td>Measles Vaccine Live Attenuated (M), Serum Institute of India, Vial, 2 doses [FVP-P-146]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikkUAC<a name=\"PreQualProductIds-a3K3X000006MikkUAC\"> </a></td><td>Measles Vaccine Live Attenuated (M), Serum Institute of India, Vial, 5 doses [FVP-P-147]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiklUAC<a name=\"PreQualProductIds-a3K3X000006MiklUAC\"> </a></td><td>Measles Vaccine Live Attenuated (M), Serum Institute of India, Vial, 10 doses [FVP-P-148]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikmUAC<a name=\"PreQualProductIds-a3K3X000006MikmUAC\"> </a></td><td>Polio Sabin Mono T1 (mOPV1), GlaxoSmithKline Biologicals SA, Vial, 10 doses [FVP-P-181]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiknUAC<a name=\"PreQualProductIds-a3K3X000006MiknUAC\"> </a></td><td>Rubella Vaccine Live Attenuated (R), Serum Institute of India, Vial, 1 dose [FVP-P-149]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikoUAC<a name=\"PreQualProductIds-a3K3X000006MikoUAC\"> </a></td><td>Rubella Vaccine Live Attenuated (R), Serum Institute of India, Vial, 2 doses [FVP-P-150]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikpUAC<a name=\"PreQualProductIds-a3K3X000006MikpUAC\"> </a></td><td>Rubella Vaccine Live Attenuated (R), Serum Institute of India, Vial, 5 doses [FVP-P-151]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikqUAC<a name=\"PreQualProductIds-a3K3X000006MikqUAC\"> </a></td><td>Polio Sabin Mono T1 (mOPV1), GlaxoSmithKline Biologicals SA, Vial, 20 doses [FVP-P-182]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikrUAC<a name=\"PreQualProductIds-a3K3X000006MikrUAC\"> </a></td><td>Polio Sabin One and Three (bOPV), GlaxoSmithKline Biologicals SA, Vial, 10 doses [FVP-P-183]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiksUAC<a name=\"PreQualProductIds-a3K3X000006MiksUAC\"> </a></td><td>Polio Sabin One and Three (bOPV), GlaxoSmithKline Biologicals SA, Vial, 20 doses [FVP-P-184]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiktUAC<a name=\"PreQualProductIds-a3K3X000006MiktUAC\"> </a></td><td>Haemophilus influenzae type b Conjugate Vaccine (Hib), Serum Institute of India, Vial, 1 dose [FVP-P-185]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikuUAC<a name=\"PreQualProductIds-a3K3X000006MikuUAC\"> </a></td><td>None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt. (TT), Biological E. Limited, Vial, 20 doses [FVP-P-190]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikvUAC<a name=\"PreQualProductIds-a3K3X000006MikvUAC\"> </a></td><td>Synflorix (PCV), GlaxoSmithKline Biologicals SA, Vial, 1 dose [FVP-P-191]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikwUAC<a name=\"PreQualProductIds-a3K3X000006MikwUAC\"> </a></td><td>Quimi-Hib (Hib), Centro de Ingenieria Genetica y Biotecnologia (CIGB), Vial, 1 dose [FVP-P-197]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikxUAC<a name=\"PreQualProductIds-a3K3X000006MikxUAC\"> </a></td><td>Synflorix (PCV), GlaxoSmithKline Biologicals SA, Vial, 2 doses [FVP-P-198]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikyUAC<a name=\"PreQualProductIds-a3K3X000006MikyUAC\"> </a></td><td>Withdrawn: Was Accepted [FVP-P-162]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MikzUAC<a name=\"PreQualProductIds-a3K3X000006MikzUAC\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-163]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mil0UAC<a name=\"PreQualProductIds-a3K3X000006Mil0UAC\"> </a></td><td>Rotateq (LARV), Merck Sharp &amp; Dohme LLC, Plastic tube, 1 dose [FVP-P-166]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mil1UAC<a name=\"PreQualProductIds-a3K3X000006Mil1UAC\"> </a></td><td>rHA M-M-R II (MMR), Merck Sharp &amp; Dohme LLC, Vial, 1 dose [FVP-P-167]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mil2UAC<a name=\"PreQualProductIds-a3K3X000006Mil2UAC\"> </a></td><td>Rotarix (LARV), GlaxoSmithKline Biologicals SA, Applicator, 1 dose [FVP-P-173]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mil3UAC<a name=\"PreQualProductIds-a3K3X000006Mil3UAC\"> </a></td><td>Gardasil (HPV), Merck Sharp &amp; Dohme LLC, Vial, 1 dose [FVP-P-178]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mil4UAC<a name=\"PreQualProductIds-a3K3X000006Mil4UAC\"> </a></td><td>Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine (DTwP-HepB+Hib), Serum Institute of India, Vial + Ampoule, 1 dose [FVP-P-194]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mil5UAC<a name=\"PreQualProductIds-a3K3X000006Mil5UAC\"> </a></td><td>Bivalent Oral Poliomyelitis Vaccine Type 1&amp;3 (bOPV 1&amp;3) (bOPV), PT Bio Farma (Persero), Vial, 20 doses [FVP-P-195]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mil6UAC<a name=\"PreQualProductIds-a3K3X000006Mil6UAC\"> </a></td><td>Meningococcal A Conjugate MenAfriVac (MenA), Serum Institute of India, Vial + Ampoule, 10 doses [FVP-P-196]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mil7UAC<a name=\"PreQualProductIds-a3K3X000006Mil7UAC\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-257]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mil8UAC<a name=\"PreQualProductIds-a3K3X000006Mil8UAC\"> </a></td><td>NASOVAC Influenza Vaccine Live Attenuated (Human) Freeze-Dried (IIVPandemic), Serum Institute of India, Vial + Ampoule, 5 doses [FVP-P-258]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mil9UAC<a name=\"PreQualProductIds-a3K3X000006Mil9UAC\"> </a></td><td>None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt. (TT), Biological E. Limited, Vial, 1 dose [FVP-P-259]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilAUAS<a name=\"PreQualProductIds-a3K3X000006MilAUAS\"> </a></td><td>None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt. (TT), Biological E. Limited, Vial, 10 doses [FVP-P-260]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilBUAS<a name=\"PreQualProductIds-a3K3X000006MilBUAS\"> </a></td><td>JEEV® (6µg) (JE), Biological E. Limited, Vial, 1 dose [FVP-P-263]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilCUAS<a name=\"PreQualProductIds-a3K3X000006MilCUAS\"> </a></td><td>Havrix 1440 Adult (HepA), GlaxoSmithKline Biologicals SA, Vial, 1 dose [FVP-P-264]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilDUAS<a name=\"PreQualProductIds-a3K3X000006MilDUAS\"> </a></td><td>Havrix 720 Junior (HepA), GlaxoSmithKline Biologicals SA, Vial, 1 dose [FVP-P-265]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilEUAS<a name=\"PreQualProductIds-a3K3X000006MilEUAS\"> </a></td><td>Boostrix (DTaP), GlaxoSmithKline Biologicals SA, Vial, 1 dose [FVP-P-266]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilFUAS<a name=\"PreQualProductIds-a3K3X000006MilFUAS\"> </a></td><td>None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid). (DTwP-HepB-Hib), Biological E. Limited, Vial, 1 dose [FVP-P-274]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilGUAS<a name=\"PreQualProductIds-a3K3X000006MilGUAS\"> </a></td><td>Poliomyelitis Vaccines (Vero Cell), Inactivated, Sabin Strains (sIPV), Beijing Institute of Biological Products Co., Ltd., Vial, 1 dose [FVP-P-369]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilHUAS<a name=\"PreQualProductIds-a3K3X000006MilHUAS\"> </a></td><td>Picovax (IPV), AJ Vaccines A/S, Vial, 5 doses [FVP-P-371]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilLUAS<a name=\"PreQualProductIds-a3K3X000006MilLUAS\"> </a></td><td>Poliomyelitis Vaccine (Vero Cell) Inactivated Sabin Strains (sIPV), Sinovac Biotech Co. Ltd, Vial, 1 dose [FVP-P-387]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilMUAS<a name=\"PreQualProductIds-a3K3X000006MilMUAS\"> </a></td><td>Cecolin® (HPV), Xiamen Innovax Biotech Co. Ltd., Vial, 1 dose [FVP-P-389]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilNUAS<a name=\"PreQualProductIds-a3K3X000006MilNUAS\"> </a></td><td>Green Flu-S (IIVPandemic), GC Biopharma Corporation, Vial, 1 dose [FVP-P-208]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilOUAS<a name=\"PreQualProductIds-a3K3X000006MilOUAS\"> </a></td><td>Influenza A (H1N1) 2009 monovalent vaccine (IIVPandemic), Sanofi Pasteur Inc., Vial, 1 dose [FVP-P-214]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilPUAS<a name=\"PreQualProductIds-a3K3X000006MilPUAS\"> </a></td><td>Influenza A (H1N1) 2009 monovalent vaccine (IIVPandemic), Sanofi Pasteur Inc., Vial, 10 doses [FVP-P-215]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilQUAS<a name=\"PreQualProductIds-a3K3X000006MilQUAS\"> </a></td><td>Poliomyelitis vaccine (IPV), Bilthoven Biologicals B.V., Vial, 1 dose [FVP-P-230]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilRUAS<a name=\"PreQualProductIds-a3K3X000006MilRUAS\"> </a></td><td>GC FLU  inj (IIV3), GC Biopharma Corporation, Vial, 1 dose [FVP-P-233]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilSUAS<a name=\"PreQualProductIds-a3K3X000006MilSUAS\"> </a></td><td>GC FLU Multi inj. (IIV3), GC Biopharma Corporation, Vial, 10 doses [FVP-P-256]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilTUAS<a name=\"PreQualProductIds-a3K3X000006MilTUAS\"> </a></td><td>Menveo (MenACYW-135), GlaxoSmithKline Vaccines S.r.l., Two vial set (active + active), 1 dose [FVP-P-267]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilUUAS<a name=\"PreQualProductIds-a3K3X000006MilUUAS\"> </a></td><td>Menactra (MenACYW-135), Sanofi Pasteur Inc., Vial, 1 dose [FVP-P-269]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilVUAS<a name=\"PreQualProductIds-a3K3X000006MilVUAS\"> </a></td><td>Easyfive-TT (DTwP-HepB-Hib), Panacea Biotec Ltd., Vial, 1 dose [FVP-P-270]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilWUAS<a name=\"PreQualProductIds-a3K3X000006MilWUAS\"> </a></td><td>IMOJEV MD (JE), GPO-MBP Co.  Ltd. (GPO-MBP), Two vial set (active + excipient), 4 doses [FVP-P-276]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilXUAS<a name=\"PreQualProductIds-a3K3X000006MilXUAS\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-249]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilYUAS<a name=\"PreQualProductIds-a3K3X000006MilYUAS\"> </a></td><td>Easyfive-TT (DTwP-HepB-Hib), Panacea Biotec Ltd., Vial, 10 doses [FVP-P-87]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilZUAS<a name=\"PreQualProductIds-a3K3X000006MilZUAS\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-92]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilaUAC<a name=\"PreQualProductIds-a3K3X000006MilaUAC\"> </a></td><td>Engerix (HepB), GlaxoSmithKline Biologicals SA, Vial, 1 dose [FVP-P-38]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilbUAC<a name=\"PreQualProductIds-a3K3X000006MilbUAC\"> </a></td><td>Engerix (HepB), GlaxoSmithKline Biologicals SA, Vial, 10 doses [FVP-P-39]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilcUAC<a name=\"PreQualProductIds-a3K3X000006MilcUAC\"> </a></td><td>Engerix (HepB), GlaxoSmithKline Biologicals SA, Vial, 20 doses [FVP-P-40]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MildUAC<a name=\"PreQualProductIds-a3K3X000006MildUAC\"> </a></td><td>Sinsavac (YF), Federal State Budgetary Scientific Institution «Chumakov Federal Scientific Center for Research &amp; Development of Immune-And Biological Products»  Russian Academy of Sciences, Vial, 10 doses [FVP-P-436]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MileUAC<a name=\"PreQualProductIds-a3K3X000006MileUAC\"> </a></td><td>Monovalent type 1 Oral Poliomyelitis vaccine IP (mOPV1) (mOPV1), Haffkine Bio Pharmaceutical Corporation Ltd, Vial, 20 doses [FVP-P-186]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilfUAC<a name=\"PreQualProductIds-a3K3X000006MilfUAC\"> </a></td><td>Monovalent Oral Poliomyelitis Vaccine Type 1 (mOPV1) (mOPV1), PT Bio Farma (Persero), Vial, 20 doses [FVP-P-189]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilgUAC<a name=\"PreQualProductIds-a3K3X000006MilgUAC\"> </a></td><td>BCG Vaccine AJV (BCG), AJ Vaccines A/S, Two vial set (active + excipient), 10 doses [FVP-P-164]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilhUAC<a name=\"PreQualProductIds-a3K3X000006MilhUAC\"> </a></td><td>none (YF), Federal State Budgetary Scientific Institution «Chumakov Federal Scientific Center for Research &amp; Development of Immune-And Biological Products»  Russian Academy of Sciences, Ampoule, 2 doses [FVP-P-175]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiliUAC<a name=\"PreQualProductIds-a3K3X000006MiliUAC\"> </a></td><td>none (YF), Federal State Budgetary Scientific Institution «Chumakov Federal Scientific Center for Research &amp; Development of Immune-And Biological Products»  Russian Academy of Sciences, Ampoule, 5 doses [FVP-P-176]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiljUAC<a name=\"PreQualProductIds-a3K3X000006MiljUAC\"> </a></td><td>none (YF), Federal State Budgetary Scientific Institution «Chumakov Federal Scientific Center for Research &amp; Development of Immune-And Biological Products»  Russian Academy of Sciences, Ampoule, 10 doses [FVP-P-177]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilkUAC<a name=\"PreQualProductIds-a3K3X000006MilkUAC\"> </a></td><td>Polio Sabin Mono Two (oral) (mOPV2), GlaxoSmithKline Biologicals SA, Vial, 20 doses [FVP-P-234]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MillUAC<a name=\"PreQualProductIds-a3K3X000006MillUAC\"> </a></td><td>Polio Sabin Mono Two (oral) (mOPV2), GlaxoSmithKline Biologicals SA, Vial, 10 doses [FVP-P-235]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilmUAC<a name=\"PreQualProductIds-a3K3X000006MilmUAC\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-237]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilnUAC<a name=\"PreQualProductIds-a3K3X000006MilnUAC\"> </a></td><td>Vaxigrip (IIV3), Sanofi Pasteur SA, Vial, 10 doses [FVP-P-238]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiloUAC<a name=\"PreQualProductIds-a3K3X000006MiloUAC\"> </a></td><td>Measles vaccine (M), PT Bio Farma (Persero), Vial, 20 doses [FVP-P-252]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilpUAC<a name=\"PreQualProductIds-a3K3X000006MilpUAC\"> </a></td><td>Poliomyelitis Vaccine (Oral) Bivalent types 1 and 3 (bOPV), Serum Institute of India, Vial, 20 doses [FVP-P-253]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilqUAC<a name=\"PreQualProductIds-a3K3X000006MilqUAC\"> </a></td><td>Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed (DTwP-HepB-Hib), Serum Institute of India, Vial, 1 dose [FVP-P-223]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilrUAC<a name=\"PreQualProductIds-a3K3X000006MilrUAC\"> </a></td><td>Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed (DTwP-HepB-Hib), Serum Institute of India, Vial, 2 doses [FVP-P-224]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilsUAC<a name=\"PreQualProductIds-a3K3X000006MilsUAC\"> </a></td><td>Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed (DTwP-HepB-Hib), Serum Institute of India, Vial, 10 doses [FVP-P-225]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiltUAC<a name=\"PreQualProductIds-a3K3X000006MiltUAC\"> </a></td><td>Polio Sabin Mono Three (oral) (mOPV3), GlaxoSmithKline Biologicals SA, Vial, 10 doses [FVP-P-227]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MiluUAC<a name=\"PreQualProductIds-a3K3X000006MiluUAC\"> </a></td><td>Polio Sabin Mono Three (oral) (mOPV3), GlaxoSmithKline Biologicals SA, Vial, 20 doses [FVP-P-228]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilvUAC<a name=\"PreQualProductIds-a3K3X000006MilvUAC\"> </a></td><td>BIOPOLIO B1/3 (bOPV), Bharat Biotech International Limited, Vial, 20 doses [FVP-P-244]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilwUAC<a name=\"PreQualProductIds-a3K3X000006MilwUAC\"> </a></td><td>none (dT), PT Bio Farma (Persero), Vial, 10 doses [FVP-P-245]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilxUAC<a name=\"PreQualProductIds-a3K3X000006MilxUAC\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-246]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilyUAC<a name=\"PreQualProductIds-a3K3X000006MilyUAC\"> </a></td><td>None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Reconstituted). (DTwP-HepB+Hib), Biological E. Limited, Two vial set (active + active), 1 dose [FVP-P-247]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006MilzUAC<a name=\"PreQualProductIds-a3K3X000006MilzUAC\"> </a></td><td>None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Reconstituted). (DTwP-HepB+Hib), Biological E. Limited, Two vial set (active + active), 10 doses [FVP-P-248]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mim0UAC<a name=\"PreQualProductIds-a3K3X000006Mim0UAC\"> </a></td><td>Priorix (MMR), GlaxoSmithKline Biologicals SA, Vial, 2 doses [FVP-P-251]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mim1UAC<a name=\"PreQualProductIds-a3K3X000006Mim1UAC\"> </a></td><td>Influenza A (H1N1) 2009 monovalent vaccine (IIVPandemic), MedImmune, Sprayer, 1 dose [FVP-P-209]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mim2UAC<a name=\"PreQualProductIds-a3K3X000006Mim2UAC\"> </a></td><td>Celtura (IIVPandemic), Seqirus GmbH, Vial, 17 doses [FVP-P-210]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mim3UAC<a name=\"PreQualProductIds-a3K3X000006Mim3UAC\"> </a></td><td>Panenza (IIVPandemic), Sanofi Pasteur SA, Vial, 10 doses [FVP-P-213]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mim4UAC<a name=\"PreQualProductIds-a3K3X000006Mim4UAC\"> </a></td><td>Diphtheria Tetanus Pertussis and Haemophilus influenzae type b Conjugate Vaccine (DTwP+Hib), Serum Institute of India, Vial + Ampoule, 1 dose [FVP-P-216]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mim5UAC<a name=\"PreQualProductIds-a3K3X000006Mim5UAC\"> </a></td><td>Rotarix (LARV), GlaxoSmithKline Biologicals SA, Plastic tube, 5 doses [FVP-P-363]</td></tr><tr><td style=\"white-space:nowrap\">a3K3X000006Mim6UAC<a name=\"PreQualProductIds-a3K3X000006Mim6UAC\"> </a></td><td>HEALIVE (HepA), Sinovac Biotech Co. Ltd, Vial, 1 dose [FVP-P-344]</td></tr><tr><td style=\"white-space:nowrap\">a3KNN0000001VJV2A2<a name=\"PreQualProductIds-a3KNN0000001VJV2A2\"> </a></td><td>Euvichol-S (OCV), EuBiologics Co.  Ltd., Plastic tube, 1 dose [FVP-P-456]</td></tr><tr><td style=\"white-space:nowrap\">a3KNN0000001VJW2A2<a name=\"PreQualProductIds-a3KNN0000001VJW2A2\"> </a></td><td>Influeza Vaccine (Split Virion), Inactivated (IIV3), Vial, 1 dose [FVP-P-455]</td></tr><tr><td style=\"white-space:nowrap\">a3KNN0000001VJX2A2<a name=\"PreQualProductIds-a3KNN0000001VJX2A2\"> </a></td><td>BIRMEVAX (C-19), HIPRA HUMAN HEALTH, S.L.U, Vial, 1 dose [FVP-P-453]</td></tr><tr><td style=\"white-space:nowrap\">a3KNN0000001VJY2A2<a name=\"PreQualProductIds-a3KNN0000001VJY2A2\"> </a></td><td>ROTASIIL-Liquid (LARV), Serum Institute of India, Vial, 1 dose [FVP-P-452]</td></tr><tr><td style=\"white-space:nowrap\">a3KNN0000001VJZ2A2<a name=\"PreQualProductIds-a3KNN0000001VJZ2A2\"> </a></td><td>MenFive (MenACYWX), Serum Institute of India, Vial, 5 doses [FVP-P-451]</td></tr><tr><td style=\"white-space:nowrap\">a3KNN0000001VJa2AM<a name=\"PreQualProductIds-a3KNN0000001VJa2AM\"> </a></td><td>PNEUMOSIL® (PCV), Serum Institute of India, Vial, 10 doses [FVP-P-463]</td></tr><tr><td style=\"white-space:nowrap\">a3KNN0000001VJb2AM<a name=\"PreQualProductIds-a3KNN0000001VJb2AM\"> </a></td><td>Under Screening [FVP-P-460]</td></tr><tr><td style=\"white-space:nowrap\">a3KNN0000001VJc2AM<a name=\"PreQualProductIds-a3KNN0000001VJc2AM\"> </a></td><td>Decision Phase [FVP-P-464]</td></tr><tr><td style=\"white-space:nowrap\">a3KNN0000001VJd2AM<a name=\"PreQualProductIds-a3KNN0000001VJd2AM\"> </a></td><td>Rejected: Screening [FVP-P-445]</td></tr><tr><td style=\"white-space:nowrap\">a3KNN0000001VJe2AM<a name=\"PreQualProductIds-a3KNN0000001VJe2AM\"> </a></td><td>BARYCELA inj. (VAR), GC Biopharma Corporation, Vial, 1 dose [FVP-P-406]</td></tr><tr><td style=\"white-space:nowrap\">a3KNN0000001VJf2AM<a name=\"PreQualProductIds-a3KNN0000001VJf2AM\"> </a></td><td>Withdrawn: Was Prequalified [FVP-P-423]</td></tr><tr><td style=\"white-space:nowrap\">a3KNN0000001VL72AM<a name=\"PreQualProductIds-a3KNN0000001VL72AM\"> </a></td><td>Novel Oral Poliomyelitis Vaccine Type 2 (nOPV2) (nOPV2), PT Bio Farma (Persero), Vial, 50 doses [FVP-P-404]</td></tr><tr><td style=\"white-space:nowrap\">a3KNN0000001VL82AM<a name=\"PreQualProductIds-a3KNN0000001VL82AM\"> </a></td><td>MenFive (MenACYWX), Serum Institute of India, Vial, 1 dose [FVP-P-427]</td></tr><tr><td style=\"white-space:nowrap\">a3KNN0000001VL92AM<a name=\"PreQualProductIds-a3KNN0000001VL92AM\"> </a></td><td>None (VAR), Sinovac Vaccine Technology Co.  Ltd. (Sinovac (Dalian), Vial, 1 dose [FVP-P-403]</td></tr><tr><td style=\"white-space:nowrap\">a3KNN0000001VLA2A2<a name=\"PreQualProductIds-a3KNN0000001VLA2A2\"> </a></td><td>Under Assessment [FVP-P-426]</td></tr><tr><td style=\"white-space:nowrap\">a3KVj000000Wv1ZMAS<a name=\"PreQualProductIds-a3KVj000000Wv1ZMAS\"> </a></td><td>Shanchol (OCV), Shantha Biologics Private Limited, Vial, 1 dose [FVP-P-491]</td></tr></table></div>"^^rdf:XMLLiteral ]
+  ] ; # 
+  fhir:url [ fhir:v "http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualProductIds"^^xsd:anyURI] ; # 
+  fhir:version [ fhir:v "0.2.0"] ; # 
+  fhir:name [ fhir:v "PreQualProductIds"] ; # 
+  fhir:title [ fhir:v "WHO PreQualificaiton Vaccine Product Ids"] ; # 
+  fhir:status [ fhir:v "active"] ; # 
+  fhir:experimental [ fhir:v true] ; # 
+  fhir:date [ fhir:v "2026-11-19T07:54:24+00:00"^^xsd:dateTime] ; # 
+  fhir:publisher [ fhir:v "WHO"] ; # 
+  fhir:contact ( [
+     fhir:name [ fhir:v "WHO" ] ;
+     fhir:telecom ( [
+       fhir:system [ fhir:v "url" ] ;
+       fhir:value [ fhir:v "http://who.int" ]
+     ] )
+  ] ) ; # 
+  fhir:description [ fhir:v "WHO PreQualificaiton Vaccine Product Ids"] ; # 
+  fhir:caseSensitive [ fhir:v false] ; # 
+  fhir:content [ fhir:v "complete"] ; # 
+  fhir:count [ fhir:v "272"^^xsd:nonNegativeInteger] ; # 
+  fhir:concept ( [
+     fhir:code [ fhir:v "a3K3X000005atRtUAI" ] ;
+     fhir:display [ fhir:v "CYVAC (Malaria), Serum Institute of India, Vial, 2 doses [FVP-P-447]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000005atSwUAI" ] ;
+     fhir:display [ fhir:v "CYVAC (Malaria), Serum Institute of India, Vial, 1 dose [FVP-P-446]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MihsUAC" ] ;
+     fhir:display [ fhir:v "Rotarix (LARV), GlaxoSmithKline Biologicals SA, Plastic tube, 1 dose [FVP-P-62]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MihtUAC" ] ;
+     fhir:display [ fhir:v "Polioviral vaccine (tOPV), Haffkine Bio Pharmaceutical Corporation Ltd, Vial, 20 doses [FVP-P-63]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MihuUAC" ] ;
+     fhir:display [ fhir:v "Stabilized Yellow Fever Vaccine (YF), Institut Pasteur de Dakar (IPD), Ampoule, 5 doses [FVP-P-64]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MihvUAC" ] ;
+     fhir:display [ fhir:v "Stabilized Yellow Fever Vaccine (YF), Institut Pasteur de Dakar (IPD), Ampoule, 20 doses [FVP-P-65]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MihwUAC" ] ;
+     fhir:display [ fhir:v "Stabilized Yellow Fever Vaccine (YF), Institut Pasteur de Dakar (IPD), Ampoule, 10 doses [FVP-P-66]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MihxUAC" ] ;
+     fhir:display [ fhir:v "BCG Freeze Dried Glutamate vaccine (BCG), Japan BCG Laboratory (JBL), Ampoule, 20 doses [FVP-P-67]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MihyUAC" ] ;
+     fhir:display [ fhir:v "Euvax B (HepB), LG Chem Ltd (LGC), Vial, 1 dose [FVP-P-68]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MihzUAC" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-27]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii0UAC" ] ;
+     fhir:display [ fhir:v "Priorix (MMR), GlaxoSmithKline Biologicals SA, Vial, 1 dose [FVP-P-61]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii1UAC" ] ;
+     fhir:display [ fhir:v "Tetatox (TT), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Vial, 10 doses [FVP-P-75]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii2UAC" ] ;
+     fhir:display [ fhir:v "Tetatox (TT), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Vial, 20 doses [FVP-P-76]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii3UAC" ] ;
+     fhir:display [ fhir:v "Diftet (DT), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Vial, 10 doses [FVP-P-77]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii4UAC" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-292]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii5UAC" ] ;
+     fhir:display [ fhir:v "HEALIVE (HepA), Sinovac Biotech Co. Ltd, Vial, 1 dose [FVP-P-311]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii6UAC" ] ;
+     fhir:display [ fhir:v "Poliomyelitis Vaccine (live oral attenuated human Diploid Cell) type 1 and 3 (bOPV), Beijing Institute of Biological Products Co., Ltd., Vial, 20 doses [FVP-P-319]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii7UAC" ] ;
+     fhir:display [ fhir:v "Euvax B (HepB), LG Chem Ltd (LGC), Vial, 10 doses [FVP-P-71]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii8UAC" ] ;
+     fhir:display [ fhir:v "Diftet (DT), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Vial, 20 doses [FVP-P-78]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mii9UAC" ] ;
+     fhir:display [ fhir:v "Tetadif (dT), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Vial, 10 doses [FVP-P-79]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiAUAS" ] ;
+     fhir:display [ fhir:v "Tetadif (dT), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Vial, 20 doses [FVP-P-80]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiBUAS" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-329]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiCUAS" ] ;
+     fhir:display [ fhir:v "BCG Vaccine (BCG), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Ampoule, 10 doses [FVP-P-73]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiDUAS" ] ;
+     fhir:display [ fhir:v "BCG Vaccine (BCG), Bul Bio-National Center of Infectious and Parasitic Diseases Ltd., Ampoule, 20 doses [FVP-P-74]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiEUAS" ] ;
+     fhir:display [ fhir:v "Measles and Rubella Vaccine Live Attenuated (MR), Serum Institute of India, Vial, 1 dose [FVP-P-137]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiFUAS" ] ;
+     fhir:display [ fhir:v "Tetanus  Toxoid Vaccine Adsorbed (TT), Serum Institute of India, Vial, 20 doses [FVP-P-136]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiGUAS" ] ;
+     fhir:display [ fhir:v "Measles and Rubella Vaccine Live Attenuated (MR), Serum Institute of India, Vial, 2 doses [FVP-P-138]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiHUAS" ] ;
+     fhir:display [ fhir:v "Measles Mumps and Rubella Vaccine Live Attenuated (MMR), Serum Institute of India, Vial, 1 dose [FVP-P-141]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiIUAS" ] ;
+     fhir:display [ fhir:v "Measles Mumps and Rubella Vaccine Live Attenuated (MMR), Serum Institute of India, Vial, 2 doses [FVP-P-142]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiJUAS" ] ;
+     fhir:display [ fhir:v "Measles Mumps and Rubella Vaccine Live Attenuated (MMR), Serum Institute of India, Vial, 10 doses [FVP-P-144]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiKUAS" ] ;
+     fhir:display [ fhir:v "Measles Mumps and Rubella Vaccine Live Attenuated (MMR), Serum Institute of India, Vial, 5 doses [FVP-P-143]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiLUAS" ] ;
+     fhir:display [ fhir:v "Japanese Encephalitis Vaccine Live (SA14-14-2) (JE), Chengdu Institute of Biological Products Co. Ltd, Two vial set (active + excipient), 5 doses [FVP-P-272]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiMUAS" ] ;
+     fhir:display [ fhir:v "Measles Vaccine Live Attenuated (M), Serum Institute of India, Vial, 1 dose [FVP-P-145]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiNUAS" ] ;
+     fhir:display [ fhir:v "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed (DTwP), Serum Institute of India, Ampoule, 1 dose [FVP-P-124]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiOUAS" ] ;
+     fhir:display [ fhir:v "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed (DTwP), Serum Institute of India, Vial, 10 doses [FVP-P-125]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiPUAS" ] ;
+     fhir:display [ fhir:v "Diphtheria-Tetanus-Pertussis Vaccine Adsorbed (DTwP), Serum Institute of India, Vial, 20 doses [FVP-P-126]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiQUAS" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-127]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiRUAS" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-104]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiSUAS" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-105]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiTUAS" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-128]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiUUAS" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-129]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiVUAS" ] ;
+     fhir:display [ fhir:v "Hepatitis B Vaccine (rDNA) (Adult) (HepB), Serum Institute of India, Vial, 10 doses [FVP-P-130]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiWUAS" ] ;
+     fhir:display [ fhir:v "Hepatitis B Vaccine (rDNA) (Adult) (HepB), Serum Institute of India, Vial, 1 dose [FVP-P-131]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiXUAS" ] ;
+     fhir:display [ fhir:v "Hepatitis B Vaccine (rDNA) (Paediatric) (HepB), Serum Institute of India, Vial, 10 doses [FVP-P-132]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiYUAS" ] ;
+     fhir:display [ fhir:v "Hepatitis B Vaccine (rDNA) (Paedriatic) (HepB), Serum Institute of India, Vial, 1 dose [FVP-P-133]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiZUAS" ] ;
+     fhir:display [ fhir:v "Tetanus  Toxoid Vaccine Adsorbed (TT), Serum Institute of India, Ampoule, 1 dose [FVP-P-134]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiaUAC" ] ;
+     fhir:display [ fhir:v "Panvax (IIVPandemic), Seqirus Australia Pty Ltd, Vial, 10 doses [FVP-P-205]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiibUAC" ] ;
+     fhir:display [ fhir:v "IPV Vaccine SSI (IPV), AJ Vaccines A/S, Vial, 1 dose [FVP-P-231]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiicUAC" ] ;
+     fhir:display [ fhir:v "Japanese Encephalitis Vaccine Live (SA14-14-2) (JE), Chengdu Institute of Biological Products Co. Ltd, Two vial set (active + excipient), 1 dose [FVP-P-271]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiidUAC" ] ;
+     fhir:display [ fhir:v "Measles and Rubella Vaccine Live Attenuated (MR), Serum Institute of India, Vial, 5 doses [FVP-P-139]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiigUAC" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-109]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiihUAC" ] ;
+     fhir:display [ fhir:v "VERORAB (Rabies), Sanofi Pasteur SA, Vial, 1 dose [FVP-P-111]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiiUAC" ] ;
+     fhir:display [ fhir:v "STAMARIL (YF), Sanofi Pasteur SA, Vial + Ampoule, 10 doses [FVP-P-112]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiijUAC" ] ;
+     fhir:display [ fhir:v "Tetanus  Toxoid Vaccine Adsorbed (TT), Serum Institute of India, Vial, 10 doses [FVP-P-135]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiikUAC" ] ;
+     fhir:display [ fhir:v "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents (dT), Serum Institute of India, Vial, 10 doses [FVP-P-122]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiilUAC" ] ;
+     fhir:display [ fhir:v "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents (dT), Serum Institute of India, Vial, 20 doses [FVP-P-123]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiimUAC" ] ;
+     fhir:display [ fhir:v "Measles and Rubella Vaccine Live Attenuated (MR), Serum Institute of India, Vial, 10 doses [FVP-P-140]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiinUAC" ] ;
+     fhir:display [ fhir:v "IMOVAX POLIO (IPV), Sanofi Pasteur SA, Vial, 10 doses [FVP-P-98]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiioUAC" ] ;
+     fhir:display [ fhir:v "Diphtheria and Tetanus Vaccine Adsorbed (Paediatric) (DT), Serum Institute of India, Ampoule, 1 dose [FVP-P-118]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiipUAC" ] ;
+     fhir:display [ fhir:v "Diphtheria and Tetanus Vaccine Adsorbed (Pediatric) (DT), Serum Institute of India, Vial, 10 doses [FVP-P-119]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiqUAC" ] ;
+     fhir:display [ fhir:v "Diphtheria and Tetanus Vaccine Adsorbed (Pediatric) (DT), Serum Institute of India, Vial, 20 doses [FVP-P-120]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiirUAC" ] ;
+     fhir:display [ fhir:v "Diphtheria and Tetanus Vaccine Adsorbed for Adults and Adolescents (dT), Serum Institute of India, Ampoule, 1 dose [FVP-P-121]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiisUAC" ] ;
+     fhir:display [ fhir:v "BCG Vaccine (BCG), Serum Institute of India, Vial, 20 doses [FVP-P-117]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiitUAC" ] ;
+     fhir:display [ fhir:v "BIOPOLIO B1/3 (bOPV), Bharat Biotech International Limited, Vial, 10 doses [FVP-P-337]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiuUAC" ] ;
+     fhir:display [ fhir:v "Euvichol-Plus (OCV), EuBiologics Co.  Ltd., Plastic tube, 1 dose [FVP-P-336]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiivUAC" ] ;
+     fhir:display [ fhir:v "BCG Freeze Dried Glutamate vaccine (BCG), Japan BCG Laboratory (JBL), Ampoule, 10 doses [FVP-P-338]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiwUAC" ] ;
+     fhir:display [ fhir:v "Eupolio Inj. (sIPV), LG Chem Ltd (LGC), Vial, 5 doses [FVP-P-390]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiixUAC" ] ;
+     fhir:display [ fhir:v "Cancelled: Assessment [FVP-P-391]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiiyUAC" ] ;
+     fhir:display [ fhir:v "Measles and Rubella Vaccine (Live) (Attenuated Freeze Dried) (MR), Biological E. Limited, Vial + Ampoule, 1 dose [FVP-P-342]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiizUAC" ] ;
+     fhir:display [ fhir:v "Rotavac (LARV), Bharat Biotech International Limited, Vial, 10 doses [FVP-P-343]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mij0UAC" ] ;
+     fhir:display [ fhir:v "SKYVaricella Inj. (VAR), SK Bioscience Co.  Ltd. (SK), Two vial set (active + excipient), 1 dose [FVP-P-356]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mij1UAC" ] ;
+     fhir:display [ fhir:v "Monovalent Oral Poliomyelitis Vaccine Type 2 (mOPV2), PT Bio Farma (Persero), Vial, 20 doses [FVP-P-358]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mij2UAC" ] ;
+     fhir:display [ fhir:v "JEEV® (6µg) (JE), Biological E. Limited, Vial, 5 doses [FVP-P-359]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mij3UAC" ] ;
+     fhir:display [ fhir:v "Typbar-TCV (Typhoid), Bharat Biotech International Limited, Vial, 5 doses [FVP-P-347]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mij4UAC" ] ;
+     fhir:display [ fhir:v "Afluria® Quadrivalent (IIV4), Seqirus Australia Pty Ltd, Vial, 10 doses [FVP-P-350]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mij5UAC" ] ;
+     fhir:display [ fhir:v "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td (dT), Biological E. Limited, Vial, 1 dose [FVP-P-279]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mij6UAC" ] ;
+     fhir:display [ fhir:v "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td (dT), Biological E. Limited, Vial, 10 doses [FVP-P-280]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mij7UAC" ] ;
+     fhir:display [ fhir:v "Dukoral (OCV), Valneva Sweden AB, Vial + Buffer sachet, 1 dose [FVP-P-116]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mij8UAC" ] ;
+     fhir:display [ fhir:v "Pandemic Live Attenuated Vaccine (IIVPandemic), AstraZeneca Pharmaceuticals LP., Sprayer, 1 dose [FVP-P-376]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mij9UAC" ] ;
+     fhir:display [ fhir:v "ROTASIIL-Liquid (LARV), Serum Institute of India, Plastic tube, 1 dose [FVP-P-378]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijAUAS" ] ;
+     fhir:display [ fhir:v "TYPHIBEV® (Typhoid), Biological E. Limited, Vial, 1 dose [FVP-P-379]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijBUAS" ] ;
+     fhir:display [ fhir:v "Poliomyelitis Vaccine (Oral) Bivalent types 1 and 3 (bOPV), Serum Institute of India, Vial, 10 doses [FVP-P-281]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijCUAS" ] ;
+     fhir:display [ fhir:v "Poliomyelitis vaccine multidose suspension for injection 2.5 mL (IPV), Bilthoven Biologicals B.V., Vial, 5 doses [FVP-P-283]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijDUAS" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-284]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijEUAS" ] ;
+     fhir:display [ fhir:v "Hexaxim (DTaP-HepB-IPV-Hib), Sanofi Pasteur SA, Vial, 1 dose [FVP-P-285]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijFUAS" ] ;
+     fhir:display [ fhir:v "Eupenta (DTwP-HepB-Hib), LG Chem Ltd (LGC), Vial, 1 dose [FVP-P-304]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijGUAS" ] ;
+     fhir:display [ fhir:v "Eupenta (DTwP-HepB-Hib), LG Chem Ltd (LGC), Vial, 10 doses [FVP-P-305]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijHUAS" ] ;
+     fhir:display [ fhir:v "ERVEBO (EBOV), Merck Sharp & Dohme LLC, Vial, 1 dose [FVP-P-383]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijIUAS" ] ;
+     fhir:display [ fhir:v "PNEUMOSIL® (PCV), Serum Institute of India, Vial, 1 dose [FVP-P-384]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijJUAS" ] ;
+     fhir:display [ fhir:v "PNEUMOSIL® (PCV), Serum Institute of India, Vial, 5 doses [FVP-P-385]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijKUAS" ] ;
+     fhir:display [ fhir:v "Euvax B (HepB), LG Chem Ltd (LGC), Vial, 1 dose [FVP-P-394]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijLUAS" ] ;
+     fhir:display [ fhir:v "ROTASIIL®Thermo (LARV), Serum Institute of India, Two vial set (active + excipient), 1 dose [FVP-P-396]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijMUAS" ] ;
+     fhir:display [ fhir:v "ROTASIIL®Thermo (LARV), Serum Institute of India, Two vial set (active + excipient), 2 doses [FVP-P-397]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijNUAS" ] ;
+     fhir:display [ fhir:v "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BE Td (dT), Biological E. Limited, Vial, 20 doses [FVP-P-399]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijOUAS" ] ;
+     fhir:display [ fhir:v "Oral Poliomyelitis Vaccines (Oral Drops) (tOPV), PT Bio Farma (Persero), Vial, 20 doses [FVP-P-400]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijPUAS" ] ;
+     fhir:display [ fhir:v "VaxigripTetra (IIV4), Sanofi Pasteur SA, Vial, 10 doses [FVP-P-401]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijQUAS" ] ;
+     fhir:display [ fhir:v "Meningococcal A Conjugate 5 micrograms MenAfriVac 5µg (MenA), Serum Institute of India, Vial + Ampoule, 10 doses [FVP-P-286]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijRUAS" ] ;
+     fhir:display [ fhir:v "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid). (DTwP-HepB-Hib), Biological E. Limited, Vial, 5 doses [FVP-P-287]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijSUAS" ] ;
+     fhir:display [ fhir:v "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid). (DTwP-HepB-Hib), Biological E. Limited, Vial, 2 doses [FVP-P-288]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijTUAS" ] ;
+     fhir:display [ fhir:v "Poliomyelitis Vaccine (Inactivated) (IPV), Serum Institute of India, Vial, 5 doses [FVP-P-289]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijUUAS" ] ;
+     fhir:display [ fhir:v "BIOPOLIO (tOPV), Bharat Biotech International Limited, Vial, 20 doses [FVP-P-290]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijVUAS" ] ;
+     fhir:display [ fhir:v "BIOPOLIO (tOPV), Bharat Biotech International Limited, Vial, 10 doses [FVP-P-291]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijWUAS" ] ;
+     fhir:display [ fhir:v "IL-YANG FLU Vaccine INJ. (IIV3), IL-YANG PHARMACEUTICAL CO.  LTD., Vial, 1 dose [FVP-P-293]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijZUAS" ] ;
+     fhir:display [ fhir:v "Bivalent Oral Poliomyelitis Vaccine Type 1&3 (bOPV 1&3) (bOPV), PT Bio Farma (Persero), Vial, 10 doses [FVP-P-297]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijaUAC" ] ;
+     fhir:display [ fhir:v "ROTASIIL (LARV), Serum Institute of India, Two vial set (active + excipient), 2 doses [FVP-P-355]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijbUAC" ] ;
+     fhir:display [ fhir:v "Euvichol (OCV), EuBiologics Co.  Ltd., Vial, 1 dose [FVP-P-298]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijcUAC" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-299]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijdUAC" ] ;
+     fhir:display [ fhir:v "Gardasil 9 (HPV), Merck Sharp & Dohme LLC, Vial, 1 dose [FVP-P-306]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijeUAC" ] ;
+     fhir:display [ fhir:v "Pentabio (DTwP-HepB-Hib), PT Bio Farma (Persero), Vial, 5 doses [FVP-P-308]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijfUAC" ] ;
+     fhir:display [ fhir:v "Pentabio (DTwP-HepB-Hib), PT Bio Farma (Persero), Vial, 10 doses [FVP-P-309]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijgUAC" ] ;
+     fhir:display [ fhir:v "influenza trivalent vaccine (split virion inactivated) (IIV3), Instituto Butantan, Vial, 10 doses [FVP-P-312]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijhUAC" ] ;
+     fhir:display [ fhir:v "Varivax (VAR), Merck Sharp & Dohme LLC, Two vial set (active + excipient), 1 dose [FVP-P-313]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijiUAC" ] ;
+     fhir:display [ fhir:v "Rotavac (LARV), Bharat Biotech International Limited, Vial, 5 doses [FVP-P-314]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijjUAC" ] ;
+     fhir:display [ fhir:v "JEEV® (3µg) (JE), Biological E. Limited, Vial, 1 dose [FVP-P-321]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijkUAC" ] ;
+     fhir:display [ fhir:v "Rabies Vaccine Inactivated (Freeze Dried)(RABIVAX-S) (Rabies), Serum Institute of India, Vial + Ampoule, 1 dose [FVP-P-322]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijlUAC" ] ;
+     fhir:display [ fhir:v "ROTASIIL (LARV), Serum Institute of India, Two vial set (active + excipient), 1 dose [FVP-P-323]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijmUAC" ] ;
+     fhir:display [ fhir:v "Poliomyelitis Vaccine (Inactivated) (IPV), Serum Institute of India, Vial, 2 doses [FVP-P-324]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijnUAC" ] ;
+     fhir:display [ fhir:v "Poliomyelitis Vaccine (Inactivated) (IPV), Serum Institute of India, Vial, 1 dose [FVP-P-325]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijoUAC" ] ;
+     fhir:display [ fhir:v "VaxiRab N (Rabies), Zydus Lifescience Limited, Vial, 1 dose [FVP-P-330]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijpUAC" ] ;
+     fhir:display [ fhir:v "Serinflu (IIV3), Abbott Biologicals BV, Vial, 1 dose [FVP-P-332]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijqUAC" ] ;
+     fhir:display [ fhir:v "AGRIFLU (IIV3), Seqirus UK Limited, Vial, 10 doses [FVP-P-316]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijrUAC" ] ;
+     fhir:display [ fhir:v "Typbar-TCV (Typhoid), Bharat Biotech International Limited, Vial, 1 dose [FVP-P-318]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijsUAC" ] ;
+     fhir:display [ fhir:v "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid). (DTwP-HepB-Hib), Biological E. Limited, Vial, 10 doses [FVP-P-275]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijtUAC" ] ;
+     fhir:display [ fhir:v "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  TRIPVAC (DTwP), Biological E. Limited, Vial, 1 dose [FVP-P-277]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijuUAC" ] ;
+     fhir:display [ fhir:v "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  TRIPVAC (DTwP), Biological E. Limited, Vial, 10 doses [FVP-P-278]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijvUAC" ] ;
+     fhir:display [ fhir:v "SKYCellflu® inj. (IIV3), SK Bioscience Co.  Ltd. (SK), Vial, 1 dose [FVP-P-339]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijwUAC" ] ;
+     fhir:display [ fhir:v "SKYCellflu® Multi inj. (IIV3), SK Bioscience Co.  Ltd. (SK), Vial, 10 doses [FVP-P-340]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijxUAC" ] ;
+     fhir:display [ fhir:v "Synflorix (PCV), GlaxoSmithKline Biologicals SA, Vial, 4 doses [FVP-P-341]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijyUAC" ] ;
+     fhir:display [ fhir:v "JEEV® (3µg) (JE), Biological E. Limited, Vial, 5 doses [FVP-P-360]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MijzUAC" ] ;
+     fhir:display [ fhir:v "ROTAVAC 5D® (LARV), Bharat Biotech International Limited, Vial, 1 dose [FVP-P-362]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mik0UAC" ] ;
+     fhir:display [ fhir:v "SKYCellflu Quadrivalent inj. (IIV4), SK Bioscience Co.  Ltd. (SK), Vial, 1 dose [FVP-P-364]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mik1UAC" ] ;
+     fhir:display [ fhir:v "SKYCellflu Quadrivalent Multi inj. (IIV4), SK Bioscience Co.  Ltd. (SK), Vial, 10 doses [FVP-P-365]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mik2UAC" ] ;
+     fhir:display [ fhir:v "Afluria® (IIV3), Seqirus Australia Pty Ltd, Vial, 10 doses [FVP-P-367]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mik3UAC" ] ;
+     fhir:display [ fhir:v "Poliomyelitis Vaccine (Inactivated) (IPV), Serum Institute of India, Vial, 10 doses [FVP-P-372]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mik4UAC" ] ;
+     fhir:display [ fhir:v "Measles and Rubella Vaccine (Live) (Attenuated Freeze Dried) (MR), Biological E. Limited, Vial + Ampoule, 5 doses [FVP-P-374]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mik5UAC" ] ;
+     fhir:display [ fhir:v "Measles and Rubella Vaccine (Live) (Attenuated Freeze Dried) (MR), Biological E. Limited, Vial + Ampoule, 10 doses [FVP-P-375]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mik6UAC" ] ;
+     fhir:display [ fhir:v "TYPHIBEV® (Typhoid), Biological E. Limited, Vial, 5 doses [FVP-P-408]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mik7UAC" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-409]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mik8UAC" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-410]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mik9UAC" ] ;
+     fhir:display [ fhir:v "ROTAVAC 5D® (LARV), Bharat Biotech International Limited, Vial, 5 doses [FVP-P-412]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikAUAS" ] ;
+     fhir:display [ fhir:v "Eupolio Inj. (sIPV), LG Chem Ltd (LGC), Vial, 1 dose [FVP-P-415]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikBUAS" ] ;
+     fhir:display [ fhir:v "ROTASIIL-Liquid (LARV), Serum Institute of India, Vial, 2 doses [FVP-P-419]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikCUAS" ] ;
+     fhir:display [ fhir:v "Mosquirix (Malaria), GlaxoSmithKline Biologicals SA, Two vial set (active + active), 2 doses [FVP-P-424]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikDUAS" ] ;
+     fhir:display [ fhir:v "TT vaccine (TT), PT Bio Farma (Persero), Vial, 10 doses [FVP-P-14]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikEUAS" ] ;
+     fhir:display [ fhir:v "ShanIPV™ (IPV), Sanofi Healthcare India Private Limited, Vial, 10 doses [FVP-P-432]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikFUAS" ] ;
+     fhir:display [ fhir:v "GCFLU Quadrivalent Multi inj. (IIV4), GC Biopharma Corporation, Vial, 10 doses [FVP-P-331]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikGUAS" ] ;
+     fhir:display [ fhir:v "ShanIPV™ (IPV), Sanofi Healthcare India Private Limited, Vial, 5 doses [FVP-P-333]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikHUAS" ] ;
+     fhir:display [ fhir:v "Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine Live (Oral) (bOPV), Panacea Biotec Ltd., Vial, 20 doses [FVP-P-335]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikIUAS" ] ;
+     fhir:display [ fhir:v "DTwP, Sanofi Healthcare India Private Limited [FVP-P-app8]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikJUAS" ] ;
+     fhir:display [ fhir:v "Heberbiovac HB (HepB), Centro de Ingenieria Genetica y Biotecnologia (CIGB), Vial, 1 dose [FVP-P-23]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikKUAS" ] ;
+     fhir:display [ fhir:v "Heberbiovac HB (HepB), Centro de Ingenieria Genetica y Biotecnologia (CIGB), Vial, 10 doses [FVP-P-24]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikLUAS" ] ;
+     fhir:display [ fhir:v "MenQuadfi (MenACYW-135), Sanofi Pasteur Inc., Vial, 1 dose [FVP-P-417]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikMUAS" ] ;
+     fhir:display [ fhir:v "Bivalent OPV Type 1 and 3 Poliomyelitis Vaccine Live (Oral) (bOPV), Panacea Biotec Ltd., Vial, 10 doses [FVP-P-422]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikNUAS" ] ;
+     fhir:display [ fhir:v "TT vaccine (TT), PT Bio Farma (Persero), Vial, 20 doses [FVP-P-15]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikOUAS" ] ;
+     fhir:display [ fhir:v "TT vaccine (TT), PT Bio Farma (Persero), Uniject, 1 dose [FVP-P-16]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikPUAS" ] ;
+     fhir:display [ fhir:v "Measles vaccine (M), PT Bio Farma (Persero), Vial + Ampoule, 10 doses [FVP-P-17]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikSUAS" ] ;
+     fhir:display [ fhir:v "Adsorbed DT Vaccine (DT), PT Bio Farma (Persero), Vial, 10 doses [FVP-P-7]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikTUAS" ] ;
+     fhir:display [ fhir:v "DTP Vaccine (DTwP), PT Bio Farma (Persero), Vial, 10 doses [FVP-P-8]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikUUAS" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-21]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikVUAS" ] ;
+     fhir:display [ fhir:v "Yellow Fever (YF), Bio-Manguinhos/Fiocruz, Two vial set (active + excipient), 5 doses [FVP-P-19]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikWUAS" ] ;
+     fhir:display [ fhir:v "Yellow Fever (YF), Bio-Manguinhos/Fiocruz, Two vial set (active + excipient), 10 doses [FVP-P-20]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikXUAS" ] ;
+     fhir:display [ fhir:v "Fluzone Quadrivalent (IIV4), Sanofi Pasteur Inc., Vial, 1 dose [FVP-P-295]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikYUAS" ] ;
+     fhir:display [ fhir:v "Fluzone Quadrivalent (IIV4), Sanofi Pasteur Inc., Vial, 10 doses [FVP-P-296]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikZUAS" ] ;
+     fhir:display [ fhir:v "Nimenrix (MenACYW-135), Pfizer Europe MA EEIG (Pfizer), Vial + Ampoule, 1 dose [FVP-P-301]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikaUAC" ] ;
+     fhir:display [ fhir:v "GCFLU Quadrivalent inj. (IIV4), GC Biopharma Corporation, Vial, 1 dose [FVP-P-307]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikbUAC" ] ;
+     fhir:display [ fhir:v "Adacel (DTaP), Sanofi Pasteur Limited, Vial, 1 dose [FVP-P-315]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikcUAC" ] ;
+     fhir:display [ fhir:v "Prevenar 13 Multidose Vial (PCV), Pfizer Europe MA EEIG (Pfizer), Vial, 4 doses [FVP-P-317]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikdUAC" ] ;
+     fhir:display [ fhir:v "Cervarix (HPV), GlaxoSmithKline Biologicals SA, Vial, 1 dose [FVP-P-179]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikeUAC" ] ;
+     fhir:display [ fhir:v "Cervarix (HPV), GlaxoSmithKline Biologicals SA, Vial, 2 doses [FVP-P-180]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikfUAC" ] ;
+     fhir:display [ fhir:v "Bivalent type 1&3 Oral Poliomyelitis vaccine IP (bOPV1&3) (bOPV), Haffkine Bio Pharmaceutical Corporation Ltd, Vial, 20 doses [FVP-P-200]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikgUAC" ] ;
+     fhir:display [ fhir:v "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine (DTwP-HepB+Hib), Serum Institute of India, Vial + Ampoule, 2 doses [FVP-P-203]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikhUAC" ] ;
+     fhir:display [ fhir:v "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine (DTwP-HepB+Hib), Serum Institute of India, Vial + Ampoule, 10 doses [FVP-P-204]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikiUAC" ] ;
+     fhir:display [ fhir:v "Rubella Vaccine Live Attenuated (R), Serum Institute of India, Vial, 10 doses [FVP-P-152]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikjUAC" ] ;
+     fhir:display [ fhir:v "Measles Vaccine Live Attenuated (M), Serum Institute of India, Vial, 2 doses [FVP-P-146]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikkUAC" ] ;
+     fhir:display [ fhir:v "Measles Vaccine Live Attenuated (M), Serum Institute of India, Vial, 5 doses [FVP-P-147]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiklUAC" ] ;
+     fhir:display [ fhir:v "Measles Vaccine Live Attenuated (M), Serum Institute of India, Vial, 10 doses [FVP-P-148]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikmUAC" ] ;
+     fhir:display [ fhir:v "Polio Sabin Mono T1 (mOPV1), GlaxoSmithKline Biologicals SA, Vial, 10 doses [FVP-P-181]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiknUAC" ] ;
+     fhir:display [ fhir:v "Rubella Vaccine Live Attenuated (R), Serum Institute of India, Vial, 1 dose [FVP-P-149]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikoUAC" ] ;
+     fhir:display [ fhir:v "Rubella Vaccine Live Attenuated (R), Serum Institute of India, Vial, 2 doses [FVP-P-150]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikpUAC" ] ;
+     fhir:display [ fhir:v "Rubella Vaccine Live Attenuated (R), Serum Institute of India, Vial, 5 doses [FVP-P-151]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikqUAC" ] ;
+     fhir:display [ fhir:v "Polio Sabin Mono T1 (mOPV1), GlaxoSmithKline Biologicals SA, Vial, 20 doses [FVP-P-182]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikrUAC" ] ;
+     fhir:display [ fhir:v "Polio Sabin One and Three (bOPV), GlaxoSmithKline Biologicals SA, Vial, 10 doses [FVP-P-183]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiksUAC" ] ;
+     fhir:display [ fhir:v "Polio Sabin One and Three (bOPV), GlaxoSmithKline Biologicals SA, Vial, 20 doses [FVP-P-184]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiktUAC" ] ;
+     fhir:display [ fhir:v "Haemophilus influenzae type b Conjugate Vaccine (Hib), Serum Institute of India, Vial, 1 dose [FVP-P-185]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikuUAC" ] ;
+     fhir:display [ fhir:v "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt. (TT), Biological E. Limited, Vial, 20 doses [FVP-P-190]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikvUAC" ] ;
+     fhir:display [ fhir:v "Synflorix (PCV), GlaxoSmithKline Biologicals SA, Vial, 1 dose [FVP-P-191]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikwUAC" ] ;
+     fhir:display [ fhir:v "Quimi-Hib (Hib), Centro de Ingenieria Genetica y Biotecnologia (CIGB), Vial, 1 dose [FVP-P-197]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikxUAC" ] ;
+     fhir:display [ fhir:v "Synflorix (PCV), GlaxoSmithKline Biologicals SA, Vial, 2 doses [FVP-P-198]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikyUAC" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Accepted [FVP-P-162]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MikzUAC" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-163]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mil0UAC" ] ;
+     fhir:display [ fhir:v "Rotateq (LARV), Merck Sharp & Dohme LLC, Plastic tube, 1 dose [FVP-P-166]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mil1UAC" ] ;
+     fhir:display [ fhir:v "rHA M-M-R II (MMR), Merck Sharp & Dohme LLC, Vial, 1 dose [FVP-P-167]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mil2UAC" ] ;
+     fhir:display [ fhir:v "Rotarix (LARV), GlaxoSmithKline Biologicals SA, Applicator, 1 dose [FVP-P-173]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mil3UAC" ] ;
+     fhir:display [ fhir:v "Gardasil (HPV), Merck Sharp & Dohme LLC, Vial, 1 dose [FVP-P-178]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mil4UAC" ] ;
+     fhir:display [ fhir:v "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine (DTwP-HepB+Hib), Serum Institute of India, Vial + Ampoule, 1 dose [FVP-P-194]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mil5UAC" ] ;
+     fhir:display [ fhir:v "Bivalent Oral Poliomyelitis Vaccine Type 1&3 (bOPV 1&3) (bOPV), PT Bio Farma (Persero), Vial, 20 doses [FVP-P-195]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mil6UAC" ] ;
+     fhir:display [ fhir:v "Meningococcal A Conjugate MenAfriVac (MenA), Serum Institute of India, Vial + Ampoule, 10 doses [FVP-P-196]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mil7UAC" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-257]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mil8UAC" ] ;
+     fhir:display [ fhir:v "NASOVAC Influenza Vaccine Live Attenuated (Human) Freeze-Dried (IIVPandemic), Serum Institute of India, Vial + Ampoule, 5 doses [FVP-P-258]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mil9UAC" ] ;
+     fhir:display [ fhir:v "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt. (TT), Biological E. Limited, Vial, 1 dose [FVP-P-259]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilAUAS" ] ;
+     fhir:display [ fhir:v "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  BEtt. (TT), Biological E. Limited, Vial, 10 doses [FVP-P-260]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilBUAS" ] ;
+     fhir:display [ fhir:v "JEEV® (6µg) (JE), Biological E. Limited, Vial, 1 dose [FVP-P-263]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilCUAS" ] ;
+     fhir:display [ fhir:v "Havrix 1440 Adult (HepA), GlaxoSmithKline Biologicals SA, Vial, 1 dose [FVP-P-264]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilDUAS" ] ;
+     fhir:display [ fhir:v "Havrix 720 Junior (HepA), GlaxoSmithKline Biologicals SA, Vial, 1 dose [FVP-P-265]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilEUAS" ] ;
+     fhir:display [ fhir:v "Boostrix (DTaP), GlaxoSmithKline Biologicals SA, Vial, 1 dose [FVP-P-266]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilFUAS" ] ;
+     fhir:display [ fhir:v "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Liquid). (DTwP-HepB-Hib), Biological E. Limited, Vial, 1 dose [FVP-P-274]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilGUAS" ] ;
+     fhir:display [ fhir:v "Poliomyelitis Vaccines (Vero Cell), Inactivated, Sabin Strains (sIPV), Beijing Institute of Biological Products Co., Ltd., Vial, 1 dose [FVP-P-369]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilHUAS" ] ;
+     fhir:display [ fhir:v "Picovax (IPV), AJ Vaccines A/S, Vial, 5 doses [FVP-P-371]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilLUAS" ] ;
+     fhir:display [ fhir:v "Poliomyelitis Vaccine (Vero Cell) Inactivated Sabin Strains (sIPV), Sinovac Biotech Co. Ltd, Vial, 1 dose [FVP-P-387]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilMUAS" ] ;
+     fhir:display [ fhir:v "Cecolin® (HPV), Xiamen Innovax Biotech Co. Ltd., Vial, 1 dose [FVP-P-389]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilNUAS" ] ;
+     fhir:display [ fhir:v "Green Flu-S (IIVPandemic), GC Biopharma Corporation, Vial, 1 dose [FVP-P-208]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilOUAS" ] ;
+     fhir:display [ fhir:v "Influenza A (H1N1) 2009 monovalent vaccine (IIVPandemic), Sanofi Pasteur Inc., Vial, 1 dose [FVP-P-214]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilPUAS" ] ;
+     fhir:display [ fhir:v "Influenza A (H1N1) 2009 monovalent vaccine (IIVPandemic), Sanofi Pasteur Inc., Vial, 10 doses [FVP-P-215]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilQUAS" ] ;
+     fhir:display [ fhir:v "Poliomyelitis vaccine (IPV), Bilthoven Biologicals B.V., Vial, 1 dose [FVP-P-230]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilRUAS" ] ;
+     fhir:display [ fhir:v "GC FLU  inj (IIV3), GC Biopharma Corporation, Vial, 1 dose [FVP-P-233]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilSUAS" ] ;
+     fhir:display [ fhir:v "GC FLU Multi inj. (IIV3), GC Biopharma Corporation, Vial, 10 doses [FVP-P-256]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilTUAS" ] ;
+     fhir:display [ fhir:v "Menveo (MenACYW-135), GlaxoSmithKline Vaccines S.r.l., Two vial set (active + active), 1 dose [FVP-P-267]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilUUAS" ] ;
+     fhir:display [ fhir:v "Menactra (MenACYW-135), Sanofi Pasteur Inc., Vial, 1 dose [FVP-P-269]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilVUAS" ] ;
+     fhir:display [ fhir:v "Easyfive-TT (DTwP-HepB-Hib), Panacea Biotec Ltd., Vial, 1 dose [FVP-P-270]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilWUAS" ] ;
+     fhir:display [ fhir:v "IMOJEV MD (JE), GPO-MBP Co.  Ltd. (GPO-MBP), Two vial set (active + excipient), 4 doses [FVP-P-276]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilXUAS" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-249]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilYUAS" ] ;
+     fhir:display [ fhir:v "Easyfive-TT (DTwP-HepB-Hib), Panacea Biotec Ltd., Vial, 10 doses [FVP-P-87]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilZUAS" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-92]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilaUAC" ] ;
+     fhir:display [ fhir:v "Engerix (HepB), GlaxoSmithKline Biologicals SA, Vial, 1 dose [FVP-P-38]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilbUAC" ] ;
+     fhir:display [ fhir:v "Engerix (HepB), GlaxoSmithKline Biologicals SA, Vial, 10 doses [FVP-P-39]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilcUAC" ] ;
+     fhir:display [ fhir:v "Engerix (HepB), GlaxoSmithKline Biologicals SA, Vial, 20 doses [FVP-P-40]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MildUAC" ] ;
+     fhir:display [ fhir:v "Sinsavac (YF), Federal State Budgetary Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products»  Russian Academy of Sciences, Vial, 10 doses [FVP-P-436]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MileUAC" ] ;
+     fhir:display [ fhir:v "Monovalent type 1 Oral Poliomyelitis vaccine IP (mOPV1) (mOPV1), Haffkine Bio Pharmaceutical Corporation Ltd, Vial, 20 doses [FVP-P-186]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilfUAC" ] ;
+     fhir:display [ fhir:v "Monovalent Oral Poliomyelitis Vaccine Type 1 (mOPV1) (mOPV1), PT Bio Farma (Persero), Vial, 20 doses [FVP-P-189]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilgUAC" ] ;
+     fhir:display [ fhir:v "BCG Vaccine AJV (BCG), AJ Vaccines A/S, Two vial set (active + excipient), 10 doses [FVP-P-164]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilhUAC" ] ;
+     fhir:display [ fhir:v "none (YF), Federal State Budgetary Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products»  Russian Academy of Sciences, Ampoule, 2 doses [FVP-P-175]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiliUAC" ] ;
+     fhir:display [ fhir:v "none (YF), Federal State Budgetary Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products»  Russian Academy of Sciences, Ampoule, 5 doses [FVP-P-176]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiljUAC" ] ;
+     fhir:display [ fhir:v "none (YF), Federal State Budgetary Scientific Institution «Chumakov Federal Scientific Center for Research & Development of Immune-And Biological Products»  Russian Academy of Sciences, Ampoule, 10 doses [FVP-P-177]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilkUAC" ] ;
+     fhir:display [ fhir:v "Polio Sabin Mono Two (oral) (mOPV2), GlaxoSmithKline Biologicals SA, Vial, 20 doses [FVP-P-234]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MillUAC" ] ;
+     fhir:display [ fhir:v "Polio Sabin Mono Two (oral) (mOPV2), GlaxoSmithKline Biologicals SA, Vial, 10 doses [FVP-P-235]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilmUAC" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-237]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilnUAC" ] ;
+     fhir:display [ fhir:v "Vaxigrip (IIV3), Sanofi Pasteur SA, Vial, 10 doses [FVP-P-238]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiloUAC" ] ;
+     fhir:display [ fhir:v "Measles vaccine (M), PT Bio Farma (Persero), Vial, 20 doses [FVP-P-252]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilpUAC" ] ;
+     fhir:display [ fhir:v "Poliomyelitis Vaccine (Oral) Bivalent types 1 and 3 (bOPV), Serum Institute of India, Vial, 20 doses [FVP-P-253]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilqUAC" ] ;
+     fhir:display [ fhir:v "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed (DTwP-HepB-Hib), Serum Institute of India, Vial, 1 dose [FVP-P-223]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilrUAC" ] ;
+     fhir:display [ fhir:v "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed (DTwP-HepB-Hib), Serum Institute of India, Vial, 2 doses [FVP-P-224]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilsUAC" ] ;
+     fhir:display [ fhir:v "Diphtheria Tetanus Pertussis Hepatitis B and Haemophilus influenzae type b Conjugate Vaccine Adsorbed (DTwP-HepB-Hib), Serum Institute of India, Vial, 10 doses [FVP-P-225]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiltUAC" ] ;
+     fhir:display [ fhir:v "Polio Sabin Mono Three (oral) (mOPV3), GlaxoSmithKline Biologicals SA, Vial, 10 doses [FVP-P-227]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MiluUAC" ] ;
+     fhir:display [ fhir:v "Polio Sabin Mono Three (oral) (mOPV3), GlaxoSmithKline Biologicals SA, Vial, 20 doses [FVP-P-228]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilvUAC" ] ;
+     fhir:display [ fhir:v "BIOPOLIO B1/3 (bOPV), Bharat Biotech International Limited, Vial, 20 doses [FVP-P-244]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilwUAC" ] ;
+     fhir:display [ fhir:v "none (dT), PT Bio Farma (Persero), Vial, 10 doses [FVP-P-245]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilxUAC" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-246]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilyUAC" ] ;
+     fhir:display [ fhir:v "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Reconstituted). (DTwP-HepB+Hib), Biological E. Limited, Two vial set (active + active), 1 dose [FVP-P-247]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006MilzUAC" ] ;
+     fhir:display [ fhir:v "None used on labelling for supply through UN agencies.     Also marketed with labelled commercial name  ComBE Five (Reconstituted). (DTwP-HepB+Hib), Biological E. Limited, Two vial set (active + active), 10 doses [FVP-P-248]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mim0UAC" ] ;
+     fhir:display [ fhir:v "Priorix (MMR), GlaxoSmithKline Biologicals SA, Vial, 2 doses [FVP-P-251]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mim1UAC" ] ;
+     fhir:display [ fhir:v "Influenza A (H1N1) 2009 monovalent vaccine (IIVPandemic), MedImmune, Sprayer, 1 dose [FVP-P-209]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mim2UAC" ] ;
+     fhir:display [ fhir:v "Celtura (IIVPandemic), Seqirus GmbH, Vial, 17 doses [FVP-P-210]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mim3UAC" ] ;
+     fhir:display [ fhir:v "Panenza (IIVPandemic), Sanofi Pasteur SA, Vial, 10 doses [FVP-P-213]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mim4UAC" ] ;
+     fhir:display [ fhir:v "Diphtheria Tetanus Pertussis and Haemophilus influenzae type b Conjugate Vaccine (DTwP+Hib), Serum Institute of India, Vial + Ampoule, 1 dose [FVP-P-216]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mim5UAC" ] ;
+     fhir:display [ fhir:v "Rotarix (LARV), GlaxoSmithKline Biologicals SA, Plastic tube, 5 doses [FVP-P-363]" ]
+  ] [
+     fhir:code [ fhir:v "a3K3X000006Mim6UAC" ] ;
+     fhir:display [ fhir:v "HEALIVE (HepA), Sinovac Biotech Co. Ltd, Vial, 1 dose [FVP-P-344]" ]
+  ] [
+     fhir:code [ fhir:v "a3KNN0000001VJV2A2" ] ;
+     fhir:display [ fhir:v "Euvichol-S (OCV), EuBiologics Co.  Ltd., Plastic tube, 1 dose [FVP-P-456]" ]
+  ] [
+     fhir:code [ fhir:v "a3KNN0000001VJW2A2" ] ;
+     fhir:display [ fhir:v "Influeza Vaccine (Split Virion), Inactivated (IIV3), Vial, 1 dose [FVP-P-455]" ]
+  ] [
+     fhir:code [ fhir:v "a3KNN0000001VJX2A2" ] ;
+     fhir:display [ fhir:v "BIRMEVAX (C-19), HIPRA HUMAN HEALTH, S.L.U, Vial, 1 dose [FVP-P-453]" ]
+  ] [
+     fhir:code [ fhir:v "a3KNN0000001VJY2A2" ] ;
+     fhir:display [ fhir:v "ROTASIIL-Liquid (LARV), Serum Institute of India, Vial, 1 dose [FVP-P-452]" ]
+  ] [
+     fhir:code [ fhir:v "a3KNN0000001VJZ2A2" ] ;
+     fhir:display [ fhir:v "MenFive (MenACYWX), Serum Institute of India, Vial, 5 doses [FVP-P-451]" ]
+  ] [
+     fhir:code [ fhir:v "a3KNN0000001VJa2AM" ] ;
+     fhir:display [ fhir:v "PNEUMOSIL® (PCV), Serum Institute of India, Vial, 10 doses [FVP-P-463]" ]
+  ] [
+     fhir:code [ fhir:v "a3KNN0000001VJb2AM" ] ;
+     fhir:display [ fhir:v "Under Screening [FVP-P-460]" ]
+  ] [
+     fhir:code [ fhir:v "a3KNN0000001VJc2AM" ] ;
+     fhir:display [ fhir:v "Decision Phase [FVP-P-464]" ]
+  ] [
+     fhir:code [ fhir:v "a3KNN0000001VJd2AM" ] ;
+     fhir:display [ fhir:v "Rejected: Screening [FVP-P-445]" ]
+  ] [
+     fhir:code [ fhir:v "a3KNN0000001VJe2AM" ] ;
+     fhir:display [ fhir:v "BARYCELA inj. (VAR), GC Biopharma Corporation, Vial, 1 dose [FVP-P-406]" ]
+  ] [
+     fhir:code [ fhir:v "a3KNN0000001VJf2AM" ] ;
+     fhir:display [ fhir:v "Withdrawn: Was Prequalified [FVP-P-423]" ]
+  ] [
+     fhir:code [ fhir:v "a3KNN0000001VL72AM" ] ;
+     fhir:display [ fhir:v "Novel Oral Poliomyelitis Vaccine Type 2 (nOPV2) (nOPV2), PT Bio Farma (Persero), Vial, 50 doses [FVP-P-404]" ]
+  ] [
+     fhir:code [ fhir:v "a3KNN0000001VL82AM" ] ;
+     fhir:display [ fhir:v "MenFive (MenACYWX), Serum Institute of India, Vial, 1 dose [FVP-P-427]" ]
+  ] [
+     fhir:code [ fhir:v "a3KNN0000001VL92AM" ] ;
+     fhir:display [ fhir:v "None (VAR), Sinovac Vaccine Technology Co.  Ltd. (Sinovac (Dalian), Vial, 1 dose [FVP-P-403]" ]
+  ] [
+     fhir:code [ fhir:v "a3KNN0000001VLA2A2" ] ;
+     fhir:display [ fhir:v "Under Assessment [FVP-P-426]" ]
+  ] [
+     fhir:code [ fhir:v "a3KVj000000Wv1ZMAS" ] ;
+     fhir:display [ fhir:v "Shanchol (OCV), Shantha Biologics Private Limited, Vial, 1 dose [FVP-P-491]" ]
+  ] ) . # 
+
+# -------------------------------------------------------------------------------------
+

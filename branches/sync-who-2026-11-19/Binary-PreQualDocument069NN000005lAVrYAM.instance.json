@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005lAVrYAM"
+  },
+  "documentName": "Package Insert-pq_381_Varicella__GC_PI-2023",
+  "documentType": "ProductInsert",
+  "versionId": "068NN0000061wI1YAI",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

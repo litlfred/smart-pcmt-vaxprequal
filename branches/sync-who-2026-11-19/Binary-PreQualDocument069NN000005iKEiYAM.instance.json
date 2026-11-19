@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iKEiYAM"
+  },
+  "documentName": "Package Insert-pq_179_HPV4_1dose_Merck_PI_WHO-translations_112022",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005z3ZEYAY",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

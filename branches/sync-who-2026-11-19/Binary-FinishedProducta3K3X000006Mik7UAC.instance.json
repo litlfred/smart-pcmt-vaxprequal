@@ -1,0 +1,10 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/FinishedVaccineProducts",
+  "status": "WithdrawnWasPrequalified",
+  "productId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3K3X000006Mik7UAC"
+  },
+  "productName": "FVP-P-409",
+  "lastPublishingDate": "2026-05-22"
+}

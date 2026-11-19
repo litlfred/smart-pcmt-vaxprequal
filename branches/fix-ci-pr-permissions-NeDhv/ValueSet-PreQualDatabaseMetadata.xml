@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="PreQualDatabaseMetadata"/>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><p class="res-header-id"><b>Generated Narrative: ValueSet PreQualDatabaseMetadata</b></p><a name="PreQualDatabaseMetadata"> </a><a name="hcPreQualDatabaseMetadata"> </a><ul><li>Include all codes defined in <a href="CodeSystem-PreQualDatabaseMetadata.html"><code>http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;0.2.0</span></li></ul></div>
+  </text>
+  <url value="http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualDatabaseMetadata"/>
+  <version value="0.2.0"/>
+  <name value="PreQualDatabaseMetadata"/>
+  <title value="WHO PreQualification Database Metadata"/>
+  <status value="draft"/>
+  <date value="2026-03-24T15:01:36+00:00"/>
+  <publisher value="WHO"/>
+  <contact>
+    <name value="WHO"/>
+    <telecom>
+      <system value="url"/>
+      <value value="http://who.int"/>
+    </telecom>
+  </contact>
+  <description value="Coded metadata values from the WHO PreQualification database"/>
+  <compose>
+    <include>
+      <system value="http://smart.who.int/pcmt-vaxprequal/CodeSystem/PreQualDatabaseMetadata"/>
+    </include>
+  </compose>
+</ValueSet>

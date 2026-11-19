@@ -1,0 +1,19 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualManufacturer",
+  "manufacturerId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X00004CGPAwQAP"
+  },
+  "name": "Zydus Lifescience Limited",
+  "addressLine1": "Survey No. 536 Khoraj (Gandhinagar), Near Vaishanodevi Circle",
+  "city": "Ahmedabad",
+  "state": "Gujarat",
+  "country": "India",
+  "postalCode": "382481",
+  "isoCountryCode": "IND",
+  "region": "SEARO",
+  "website": "www.zyduslife.com",
+  "organizationReference": {
+    "reference": "Organization/Manufacturer0013X00004CGPAwQAP"
+  }
+}

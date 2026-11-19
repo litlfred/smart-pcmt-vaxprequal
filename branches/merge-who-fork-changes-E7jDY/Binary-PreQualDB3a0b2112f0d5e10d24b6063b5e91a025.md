@@ -1,0 +1,64 @@
+# PreQualDB3a0b2112f0d5e10d24b6063b5e91a025 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDB3a0b2112f0d5e10d24b6063b5e91a025**
+
+## Binary: PreQualDB3a0b2112f0d5e10d24b6063b5e91a025
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2019-02-06",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "Rabies",
+        "display": "Rabies"
+      }
+    ]
+  },
+  "commercialName": "VaxiRab N",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 1,
+  "manufacturer": {
+    "text": "Zydus Lifesciences Limited"
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "3a0b2112f0d5e10d24b6063b5e91a025"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer71815e49a163acdd61581f32aa32c1b8"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/RabiesProduct3a0b2112f0d5e10d24b6063b5e91a025"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

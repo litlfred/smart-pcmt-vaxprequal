@@ -1,0 +1,14 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p3hQAA"
+  },
+  "siteOrganizationName": "Centro de Ingenieria Genetica y Biotecnologia (CIGB)",
+  "addressLine1": "Ave. 31 e/ 158 y 190Cubanacán  apartado 6162",
+  "city": "Havana",
+  "country": "Cuba",
+  "postalCode": "10600",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iK3PYAU"
+  },
+  "documentName": "Package Insert-pq_174_Rota-liquid_1dose_GSK_PI_applicator-2022",
+  "documentType": "VaccineGeneralDocument",
+  "versionId": "068NN000005z3MKYAY",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

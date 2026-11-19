@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005ksifYAA"
+  },
+  "documentName": "pq_63_339_Rota_GSK_container%20image_2Dbarcode_2021",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN0000061eY2YAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

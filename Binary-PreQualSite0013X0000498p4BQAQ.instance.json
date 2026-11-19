@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p4BQAQ"
+  },
+  "siteOrganizationName": "Sanofi Pasteur Inc.",
+  "addressLine1": "Discovery Drive  Swiftwater",
+  "country": "United States of America",
+  "postalCode": "PA 18370",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

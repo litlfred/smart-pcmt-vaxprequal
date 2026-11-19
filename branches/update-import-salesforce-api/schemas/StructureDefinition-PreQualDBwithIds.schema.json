@@ -1,0 +1,73 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "http://smart.who.int/base/StructureDefinition-PreQualDBwithIds.schema.json",
+  "title": "WHO Vaccine PreQual DB with IDs",
+  "description": "Logical model for WHO PreQual DB as CSV file available at:\n     https://extranet.who.int/prequal/vaccines/prequalified-vaccines\nColumns of the CSV are as follows\nwith additional data fields for appropriately referencing associated data objects",
+  "type": "object",
+  "properties": {
+    "resourceType": {
+      "type": "string",
+      "const": "PreQualDBwithIds",
+      "description": "Resource type identifier for PreQualDBwithIds logical model"
+    },
+    "dateOfPrequal": {
+      "type": "string",
+      "format": "date-time",
+      "description": "Date of Prequalification (DD/MM/YY)"
+    },
+    "vaccineType": {
+      "type": "object",
+      "description": "Vaccine Type"
+    },
+    "commercialName": {
+      "type": "string",
+      "description": "Commercial Name"
+    },
+    "presentation": {
+      "type": "object",
+      "description": "Presentation"
+    },
+    "numDoses": {
+      "type": "number",
+      "description": "Number of doses"
+    },
+    "manufacturer": {
+      "type": "object",
+      "description": "Manufacturer"
+    },
+    "responsibleNRA": {
+      "type": "object",
+      "description": "Responsible NRA"
+    },
+    "index": {
+      "type": "object",
+      "description": "An index or identifier of the prequalificaiton for the product."
+    },
+    "manufacturerReference": {
+      "type": "object",
+      "description": "Manufacturer referecne"
+    },
+    "responsibleNRAReference": {
+      "type": "object",
+      "description": "Responsible NRA reference"
+    },
+    "productReference": {
+      "type": "object",
+      "description": "Product reference (when available from pcmt dependency)"
+    }
+  },
+  "required": [
+    "resourceType",
+    "dateOfPrequal",
+    "vaccineType",
+    "commercialName",
+    "presentation",
+    "manufacturer",
+    "responsibleNRA",
+    "index",
+    "manufacturerReference",
+    "responsibleNRAReference"
+  ],
+  "resourceDefinition": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "fhir:parent": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDB"
+}

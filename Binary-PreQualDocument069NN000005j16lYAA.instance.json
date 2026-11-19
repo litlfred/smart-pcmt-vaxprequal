@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005j16lYAA"
+  },
+  "documentName": "Package Insert-pq_18_19_Measles_BioFarma_PI",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000005zlolYAA",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

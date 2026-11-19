@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iEvgYAE"
+  },
+  "documentName": "pq_143_MMR_2dose_SII_vial%26diluent_image-2022",
+  "documentType": "PhotoMainImage",
+  "versionId": "068NN000005yyL3YAI",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

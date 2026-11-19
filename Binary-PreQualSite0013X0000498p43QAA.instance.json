@@ -1,0 +1,14 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualSiteDetail",
+  "siteOrganizationId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p43QAA"
+  },
+  "siteOrganizationName": "Valneva Sweden AB",
+  "addressLine1": "Gunnar Asplunds Allé 16",
+  "city": "Solna",
+  "country": "Sweden",
+  "postalCode": "SE-17163",
+  "siteStatus": "Accepted",
+  "siteActivity": "FVPManufacture"
+}

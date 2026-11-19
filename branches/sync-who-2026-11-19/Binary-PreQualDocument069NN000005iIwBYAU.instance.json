@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iIwBYAU"
+  },
+  "documentName": "Package Insert-pq_201_bOPV_HBPCL_PI_01_2016",
+  "documentType": "ProductInsert",
+  "versionId": "068NN000005z2DUYAY",
+  "fileExtension": "pdf",
+  "fileType": "PDF"
+}

@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3HNN0000007wYy2AI"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Carton box containing 12 secondary boxes of 50 vials.",
+  "volume": "42.0x15.5x34.5",
+  "totalDoses": "600",
+  "totalContainers": "600"
+}

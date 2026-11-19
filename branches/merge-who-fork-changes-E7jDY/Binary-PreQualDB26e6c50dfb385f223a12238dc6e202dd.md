@@ -1,0 +1,64 @@
+# PreQualDB26e6c50dfb385f223a12238dc6e202dd - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDB26e6c50dfb385f223a12238dc6e202dd**
+
+## Binary: PreQualDB26e6c50dfb385f223a12238dc6e202dd
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2010-03-19",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "PolioVaccineOralOPVBival",
+        "display": "Polio Vaccine - Oral (OPV) Bivalent Types 1 and 3"
+      }
+    ]
+  },
+  "commercialName": "Bivalent type 1&3 Oral Poliomyelitis vaccine, IP (bOPV1&3)",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 20,
+  "manufacturer": {
+    "text": "Haffkine Bio Pharmaceutical Corporation Ltd"
+  },
+  "responsibleNRA": {
+    "text": "Central Drugs Standard Control Organization"
+  },
+  "index": {
+    "value": "26e6c50dfb385f223a12238dc6e202dd"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturer42565af3e1da9c8e2b48128dd0b2b292"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holderf79f23b4c5122fd96b2c87cc385157fc"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/PolioVaccineOralOPVBivalProduct26e6c50dfb385f223a12238dc6e202dd"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

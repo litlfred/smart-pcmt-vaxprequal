@@ -1,0 +1,12 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDocumentDetail",
+  "documentId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "069NN000005iS5nYAE"
+  },
+  "documentName": "Container Photo (Bigger Higher Resolution)-pq_197_MenAconj_10dose_SII_container_image",
+  "documentType": "Photo",
+  "versionId": "068NN000005zBOgYAM",
+  "fileExtension": "jpg",
+  "fileType": "JPG"
+}

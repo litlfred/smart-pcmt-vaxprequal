@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualProductPackaging",
+  "packagingId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3H3X000001Vad0UAC"
+  },
+  "packagingType": "Tertiary",
+  "componentPacked": "ActiveVaccine",
+  "description": "Type 2. Box containing 1400 vials (28 000 doses)[Dimensions: 52 x 52 x 53 cm)",
+  "volume": "52 x 52 x 53 cm",
+  "totalDoses": "28000",
+  "totalContainers": "1400"
+}

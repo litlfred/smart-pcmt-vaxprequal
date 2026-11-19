@@ -1,0 +1,9 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualVaccine",
+  "vaccineId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "a3S3X000003cSp9UAE"
+  },
+  "fullName": "Diphtheria, tetanus, (acellular) pertussis, hepatitis b, poliomyelitis (inactivated) and Haemophilus influenzae type b conjugate vaccine (adsorbed)",
+  "abbreviatedName": "DTaP-HepB-IPV-Hib"
+}

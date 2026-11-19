@@ -1,0 +1,64 @@
+# PreQualDB37f198a748f37e28fa533b43fb8b4ca4 - SMART Product Dataset for Prequalified Vaccines v0.2.0
+
+* [**Table of Contents**](toc.md)
+* [**Indices**](indices.md)
+* [**Artifact Index**](artifacts.md)
+* **PreQualDB37f198a748f37e28fa533b43fb8b4ca4**
+
+## Binary: PreQualDB37f198a748f37e28fa533b43fb8b4ca4
+
+```
+
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualDBwithIds",
+  "dateOfPrequal": "2015-11-04",
+  "vaccineType": {
+    "coding": [
+      {
+        "code": "InfluenzaseasonalQuadriv",
+        "display": "Influenza, seasonal (Quadrivalent)"
+      }
+    ]
+  },
+  "commercialName": "Fluzone Quadrivalent (labelled as FluQuadri in other markets)",
+  "presentation": {
+    "coding": [
+      {
+        "system": "https://extranet.who.int/prequal/vaccines/prequalified-vaccines",
+        "code": "Vial",
+        "display": "Vial"
+      }
+    ]
+  },
+  "numDoses": 10,
+  "manufacturer": {
+    "text": "Sanofi Pasteur Inc."
+  },
+  "responsibleNRA": {
+    "text": "US Food and Drug Administration- Office of Vaccine Research and Review"
+  },
+  "index": {
+    "value": "37f198a748f37e28fa533b43fb8b4ca4"
+  },
+  "manufacturerReference": {
+    "reference": "Organization/Manufacturere22cd18269d4ef7420dadcc919bda6e0"
+  },
+  "responsibleNRAReference": {
+    "reference": "Organization/Holder2df14aa8a419a11f1b47bb8c2a82636c"
+  },
+  "productReference": {
+    "reference": "http://smart.who.int/pcmt/StructureDefinition/Product/InfluenzaseasonalQuadrivProduct37f198a748f37e28fa533b43fb8b4ca4"
+  }
+}
+
+```
+
+
+
+## Resource Binary Content
+
+application/fhir+json:
+
+```
+{snip}
+```

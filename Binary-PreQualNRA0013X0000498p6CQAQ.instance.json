@@ -1,0 +1,13 @@
+{
+  "resourceType": "http://smart.who.int/pcmt-vaxprequal/StructureDefinition/PreQualNRA",
+  "nraId": {
+    "system": "https://extranet.who.int/prequal/api",
+    "value": "0013X0000498p6CQAQ"
+  },
+  "name": "US Food and Drug Administration- Office of Vaccine Research and Review (US FDA)",
+  "country": "United States of America",
+  "website": "https://www.fda.gov/AboutFDA/CentersOffices/OfficeofMedicalProductsandTobacco/CBER/default.htm",
+  "organizationReference": {
+    "reference": "Organization/Holder0013X0000498p6CQAQ"
+  }
+}

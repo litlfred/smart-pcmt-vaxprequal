@@ -1,0 +1,120 @@
+{
+  "openapi": "3.1.0",
+  "info": {
+    "title": "ValueSet Enumeration Schema API",
+    "description": "JSON Schema defining the structure of the ValueSet enumeration endpoint response",
+    "version": "1.0.0"
+  },
+  "paths": {
+    "/ValueSets.schema.json": {
+      "get": {
+        "summary": "JSON Schema definition for the enumeration ValueSets",
+        "description": "This endpoint serves the JSON Schema definition for the enumeration ValueSets.",
+        "responses": {
+          "200": {
+            "description": "The JSON Schema for ValueSets",
+            "content": {
+              "application/schema+json": {
+                "schema": {
+                  "$ref": "./ValueSets.schema.json"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "ValueSets": {
+        "$schema": "https://json-schema.org/draft/2020-12/schema",
+        "$id": "#/ValueSets.schema.json",
+        "title": "ValueSet Enumeration Schema",
+        "description": "JSON Schema defining the structure of the ValueSet enumeration endpoint response",
+        "type": "object",
+        "properties": {
+          "type": {
+            "type": "string",
+            "const": "valueset"
+          },
+          "count": {
+            "type": "integer"
+          },
+          "schemas": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "filename": {
+                  "type": "string"
+                },
+                "id": {
+                  "type": "string"
+                },
+                "title": {
+                  "type": "string"
+                },
+                "description": {
+                  "type": "string"
+                },
+                "url": {
+                  "type": "string"
+                },
+                "valueSetUrl": {
+                  "type": "string"
+                },
+                "codeCount": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "filename",
+                "title",
+                "url"
+              ]
+            }
+          }
+        },
+        "required": [
+          "type",
+          "count",
+          "schemas"
+        ],
+        "example": {
+          "type": "valueset",
+          "count": 3,
+          "schemas": [
+            {
+              "filename": "ValueSet-PreQualPresentation.schema.json",
+              "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualPresentation.schema.json",
+              "title": "WHO PreQualificaiton Presentation  Schema",
+              "description": "JSON Schema for WHO PreQualificaiton Presentation  ValueSet codes. Generated from FHIR expansions using IRI format.",
+              "url": "./ValueSet-PreQualPresentation.schema.json",
+              "valueSetUrl": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualPresentation",
+              "codeCount": 11
+            },
+            {
+              "filename": "ValueSet-PreQualVaccineType.schema.json",
+              "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualVaccineType.schema.json",
+              "title": "WHO PreQualificaiton VaccineType  Schema",
+              "description": "JSON Schema for WHO PreQualificaiton VaccineType  ValueSet codes. Generated from FHIR expansions using IRI format.",
+              "url": "./ValueSet-PreQualVaccineType.schema.json",
+              "valueSetUrl": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualVaccineType",
+              "codeCount": 57
+            },
+            {
+              "filename": "ValueSet-PreQualProductIds.schema.json",
+              "id": "http://smart.who.int/pcmt-vaxprequal/ValueSet-PreQualProductIds.schema.json",
+              "title": "WHO PreQualificaiton Vaccine Product Ids Schema",
+              "description": "JSON Schema for WHO PreQualificaiton Vaccine Product Ids ValueSet codes. Generated from FHIR expansions using IRI format.",
+              "url": "./ValueSet-PreQualProductIds.schema.json",
+              "valueSetUrl": "http://smart.who.int/pcmt-vaxprequal/ValueSet/PreQualProductIds",
+              "codeCount": 275
+            }
+          ]
+        }
+      }
+    }
+  }
+}
